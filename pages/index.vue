@@ -36,6 +36,44 @@
         </div>
       </div>
     </div>
+
+    <!-- Pembatas -->
+    <div class="container mx-auto bg-red-600 rounded-2xl p-6 md:p-10 text-white">
+      <div class="flex flex-col md:flex-row justify-between items-start gap-8">
+        
+        <!-- Mission -->
+        <div class="flex items-start gap-4 flex-1">
+          <img
+            src="C:\Users\Admin\company-profile-website\assets\index\mission.png"
+            alt="Mission"
+            class="w-10 h-10 mt-1"
+          />
+          <div>
+            <h3 class="text-lg font-bold mb-1">Our Mission</h3>
+            <p class="text-sm md:text-base leading-relaxed">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+              the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of.
+            </p>
+          </div>
+        </div>
+
+        <!-- Vision -->
+        <div class="flex items-start gap-4 flex-1">
+          <img
+            src="C:\Users\Admin\company-profile-website\assets\index\vision.png"
+            alt="Vision"
+            class="w-10 h-10 mt-1"
+          />
+          <div>
+            <h3 class="text-lg font-bold mb-1">Our Vision</h3>
+            <p class="text-sm md:text-base leading-relaxed">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+              the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 
