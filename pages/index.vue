@@ -154,20 +154,24 @@
         </div>
       </div>
 
-      <!-- TIMELINE SECTION - DIPERBESAR -->
+      <!-- TIMELINE SECTION - RESPONSIVE FIXED -->
        <div class="min-h-screen flex items-center justify-center relative z-10">
         <div class="container mx-auto bg-black py-20 px-4 sm:px-6 lg:px-8 text-white">
           <h2 class="text-3xl font-bold mb-10 text-center text-red-600">Our Journey</h2>
 
         <div class="relative">
-          <!-- Gradient overlays -->
-          <div class="absolute left-0 top-0 bottom-0 w-10 md:w-20 bg-gradient-to-r from-black to-transparent z-20 pointer-events-none"></div>
-          <div class="absolute right-0 top-0 bottom-0 w-10 md:w-20 bg-gradient-to-l from-black to-transparent z-20 pointer-events-none"></div>
+          <!-- Gradient overlays - Only for mobile and tablet -->
+          <div class="absolute left-0 top-0 bottom-0 w-10 md:w-20 xl:w-0 bg-gradient-to-r from-black to-transparent z-20 pointer-events-none"></div>
+          <div class="absolute right-0 top-0 bottom-0 w-10 md:w-20 xl:w-0 bg-gradient-to-l from-black to-transparent z-20 pointer-events-none"></div>
           
-          <!-- Scroll container with improved drag -->
+          <!-- Scroll container with improved responsiveness -->
           <div
             id="timeline-scroll"
-            class="overflow-x-auto scroll-smooth snap-x snap-mandatory cursor-grab active:cursor-grabbing no-scrollbar"
+            :class="[
+              'timeline-container',
+              'overflow-x-auto scroll-smooth snap-x snap-mandatory cursor-grab active:cursor-grabbing no-scrollbar',
+              'xl:overflow-visible xl:cursor-default'
+            ]"
             ref="timelineRef"
             @scroll="handleCardScroll"
             @mousedown="startDrag"
@@ -175,36 +179,77 @@
             @mouseup="endDrag"
             @mouseleave="endDrag"
           >
-            <!-- UBAH: Perbesar gap dan padding -->
-            <div class="flex gap-6 w-max pl-[calc(50%-200px)] pr-[calc(50%-200px)] 
-                      sm:pl-[calc(50%-200px)] sm:pr-[calc(50%-200px)] 
-                      md:pl-[calc(50%-200px)] md:pr-[calc(50%-200px)] 
-                      lg:pl-[calc(50%-200px)] lg:pr-[calc(50%-200px)]">
+            <!-- Responsive padding and layout -->
+            <div :class="[
+              'timeline-wrapper flex gap-3 sm:gap-4 md:gap-6 w-max',
+              // Mobile: center single card
+              'pl-[calc(50%-140px)] pr-[calc(50%-140px)]',
+              // Tablet: center for better viewing
+              'sm:pl-[calc(50%-160px)] sm:pr-[calc(50%-160px)]',
+              'md:pl-[calc(50%-200px)] md:pr-[calc(50%-200px)]',
+              // Desktop: show all cards, no padding needed
+              'xl:pl-0 xl:pr-0 xl:w-full xl:justify-center xl:max-w-none'
+            ]">
               
-              <!-- Timeline items - DIPERBESAR -->             
+              <!-- Timeline items - Fully responsive -->             
               <div
                 v-for="(year, index) in timelineYears"
                 :key="year"
                 :class="[
-                  'timeline-item snap-center transition-all duration-300 ease-in-out transform',
-                  'w-[300px] h-[400px]',
-                  'bg-zinc-900 p-8 rounded-xl shrink-0 flex flex-col',
-                  activeCard === index ? 'scale-105 opacity-100 z-10 shadow-lg' : 'scale-95 opacity-70'
+                  'timeline-item snap-center transition-all duration-300 ease-in-out transform shrink-0 flex flex-col',
+                  'bg-zinc-900 rounded-xl',
+                  // Mobile sizing - increased height and optimized padding
+                  'w-[280px] h-[420px] p-4',
+                  // Small tablet sizing  
+                  'sm:w-[300px] sm:h-[440px] sm:p-5',
+                  // Medium tablet sizing
+                  'md:w-[320px] md:h-[460px] md:p-6',
+                  // Desktop sizing - smaller to fit all
+                  'xl:w-[280px] xl:h-[380px] xl:p-5',
+                  '2xl:w-[300px] 2xl:h-[400px] 2xl:p-6',
+                  // Active states for mobile/tablet only
+                  'xl:scale-100 xl:opacity-100',
+                  activeCard === index && 'xl:scale-100' ? 'scale-105 opacity-100 z-10 shadow-lg xl:shadow-xl' : 'scale-95 opacity-70 xl:opacity-100 xl:scale-100'
                 ]"
               >
-                <!-- PERBESAR GAMBAR -->
-                <div class="rounded-lg overflow-hidden mb-6 bg-gray-300 w-full h-[240px] flex-shrink-0"></div>
-                <!-- PERBESAR FONT -->
-                <h3 class="text-xl font-bold text-red-500 mb-4">{{ year }}</h3>
-                <p class="text-base leading-relaxed text-white break-words overflow-hidden text-ellipsis">
-                  {{ timelineDescriptions[index] }}
-                </p>
+                <!-- Image container - responsive with reduced mobile height -->
+                <div :class="[
+                  'rounded-lg overflow-hidden mb-3 bg-gray-300 w-full flex-shrink-0',
+                  'h-[160px]',
+                  'sm:h-[180px] sm:mb-4', 
+                  'md:h-[200px] md:mb-5',
+                  'xl:h-[200px] xl:mb-4',
+                  '2xl:h-[220px] 2xl:mb-5'
+                ]"></div>
+                
+                <!-- Content - responsive typography with flex-grow -->
+                <div class="flex flex-col flex-grow">
+                  <h3 :class="[
+                    'font-bold text-red-500 mb-2',
+                    'text-lg',
+                    'sm:text-xl sm:mb-3',
+                    'md:text-xl sm:mb-3',
+                    'xl:text-lg xl:mb-3',
+                    '2xl:text-xl 2xl:mb-4'
+                  ]">{{ year }}</h3>
+                  
+                  <p :class="[
+                    'text-white break-words leading-relaxed flex-grow',
+                    'text-sm leading-[1.4]',
+                    'sm:text-sm sm:leading-[1.5]',
+                    'md:text-base md:leading-[1.5]',
+                    'xl:text-sm xl:leading-[1.4]',
+                    '2xl:text-base 2xl:leading-[1.5]'
+                  ]">
+                    {{ timelineDescriptions[index] }}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
       
-          <!-- Mobile indicators -->
-          <div class="flex justify-center mt-6 gap-2 md:hidden">
+          <!-- Mobile indicators - hidden on desktop -->
+          <div class="flex justify-center mt-6 gap-2 xl:hidden">
             <div 
               v-for="(year, index) in timelineYears" 
               :key="'dot-'+year"
@@ -248,33 +293,40 @@ const scrollLeft = ref(0);
 const timelineRef = ref(null);
 
 const startDrag = (e) => {
+  // Disable drag on desktop
+  if (window.innerWidth >= 1280) return;
+  
   isDragging.value = true;
   startX.value = e.pageX - timelineRef.value.offsetLeft;
   scrollLeft.value = timelineRef.value.scrollLeft;
   timelineRef.value.style.cursor = 'grabbing';
-  timelineRef.value.style.scrollSnapType = 'none'; // Disable snap during drag
+  timelineRef.value.style.scrollSnapType = 'none';
 };
 
 const onDrag = (e) => {
-  if (!isDragging.value) return;
+  if (!isDragging.value || window.innerWidth >= 1280) return;
   e.preventDefault();
   const x = e.pageX - timelineRef.value.offsetLeft;
-  const walk = (x - startX.value) * 2; // Adjust multiplier for sensitivity
+  const walk = (x - startX.value) * 2;
   timelineRef.value.scrollLeft = scrollLeft.value - walk;
 };
 
 const endDrag = () => {
+  if (window.innerWidth >= 1280) return;
+  
   isDragging.value = false;
   if (timelineRef.value) {
     timelineRef.value.style.cursor = 'grab';
-    timelineRef.value.style.scrollSnapType = 'x mandatory'; // Re-enable snap
+    timelineRef.value.style.scrollSnapType = 'x mandatory';
   }
 };
 
 // Handle scroll to detect active card
 const activeCard = ref(0);
 const handleCardScroll = () => {
-  if (isDragging.value) return; // Skip during drag
+  // Skip on desktop where all cards are visible
+  if (window.innerWidth >= 1280) return;
+  if (isDragging.value) return;
   
   const items = document.querySelectorAll('.timeline-item');
   let closestIndex = 0;
@@ -297,25 +349,32 @@ const handleCardScroll = () => {
 
 // Initialize timeline position
 const initTimeline = () => {
+  // On desktop, show all cards, no need to center
+  if (window.innerWidth >= 1280) {
+    activeCard.value = -1; // No active card on desktop
+    return;
+  }
+  
   const items = document.querySelectorAll('.timeline-item');
   if (items.length > 0) {
     const middleIndex = Math.floor(items.length / 2);
     activeCard.value = middleIndex;
-    // items[middleIndex].scrollIntoView({ 
-    //   behavior: 'auto', 
-    //   inline: 'center',
-    //   block: 'nearest'
-    // });
   }
+};
+
+// Handle window resize
+const handleResize = () => {
+  initTimeline();
+  handleCardScroll();
 };
 
 onMounted(() => {
   initTimeline();
-  window.addEventListener('resize', handleCardScroll);
+  window.addEventListener('resize', handleResize);
 });
 
 onBeforeUnmount(() => {
-  window.removeEventListener('resize', handleCardScroll);
+  window.removeEventListener('resize', handleResize);
 });
 
 const scrollToSection = () => {
@@ -345,6 +404,51 @@ const scrollToSection = () => {
   display: none; /* Chrome, Safari, Opera */
 }
 
+/* Timeline specific styles */
+.timeline-container {
+  transition: all 0.3s ease;
+}
+
+/* Desktop: Remove scroll behavior and show all cards */
+@media (min-width: 1280px) {
+  .timeline-container {
+    overflow-x: visible !important;
+    scroll-snap-type: none !important;
+    cursor: default !important;
+  }
+  
+  .timeline-wrapper {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 1.5rem !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+  
+  .timeline-item {
+    transform: none !important;
+    opacity: 1 !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  .timeline-item:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4) !important;
+  }
+}
+
+/* Extra large desktop: Show all 8 cards in 2 rows */
+@media (min-width: 1536px) {
+  .timeline-wrapper {
+    grid-template-columns: repeat(4, 1fr) !important;
+    grid-template-rows: repeat(2, 1fr) !important;
+    gap: 2rem !important;
+    max-width: 1400px !important;
+  }
+}
+
 /* Smooth transitions */
 .timeline-item {
   transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
@@ -357,70 +461,25 @@ const scrollToSection = () => {
   cursor: grabbing;
 }
 
-/* Better transition for active card */
-.timeline-item {
-  transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-/* Timeline cards styling - DIPERBESAR */
-.timeline-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
+/* Text overflow handling */
 .timeline-item p {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 5; /* Ditambah dari 4 ke 5 lines */
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
 
-/* Responsive adjustments for mobile - DISESUAIKAN */
 @media (max-width: 640px) {
-  .timeline-item {
-    width: 280px !important;
-    height: 360px !important;
-    padding: 20px;
-  }
-  
-  .timeline-item .bg-gray-300 {
-    height: 180px !important;
-  }
-  
-  .timeline-item h3 {
-    font-size: 18px;
-    margin-bottom: 12px;
-  }
-  
   .timeline-item p {
-    font-size: 14px;
-    line-height: 1.4;
-    -webkit-line-clamp: 4;
+    overflow: visible !important;    
+    display: block !important;           
   }
 }
 
-@media (max-width: 480px) {
-  .timeline-item {
-    width: 260px !important;
-    height: 340px !important;
-    padding: 16px;
-  }
-  
-  .timeline-item .bg-gray-300 {
-    height: 160px !important;
-  }
-  
-  .timeline-item h3 {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  
+@media (min-width: 1280px) {
   .timeline-item p {
-    font-size: 13px;
-    line-height: 1.3;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 5;
   }
 }
 </style>
