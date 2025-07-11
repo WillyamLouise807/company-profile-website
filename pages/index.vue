@@ -1,179 +1,242 @@
 <template>
-  <section class="bg-black bg-cover bg-top bg-no-repeat text-white font-poppins">
-    <!-- HERO FULLSCREEN -->
-    <div class="min-h-screen flex items-center justify-center">
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-black p-6 md:p-10 rounded-2xl flex flex-col md:flex-row items-center md:items-stretch gap-8 md:gap-14 w-full max-w-6xl mx-auto shadow-lg">
-          <div class="flex justify-center items-center md:items-start">
-            <img
-              src="/assets/index/gambar awal.png"
-              alt="Gambar Utama"
-              class="rounded-lg w-64 h-72 md:w-80 md:h-96 object-cover"
-            />
-          </div>
+  <!-- Main container with background -->
+  <div class="relative">
+     <!-- Background image that follows content -->
+    <div class="absolute inset-0 -z-10">
+      <img 
+        src="assets\bg-image.png" 
+        alt="Background"
+        class="w-full h-full object-cover"
+      />
+      <!-- Dark overlay for content sections -->
+      <div class="absolute inset-0"></div>
+    </div>
 
-          <div class="flex flex-col justify-center items-center md:items-start text-center md:text-left mx-auto max-w-lg h-full">
-            <h1 class="text-2xl md:text-4xl font-extrabold text-red-600 leading-snug mb-4">
-              MENCIPTAKAN <br />
-              AKSESORIS ALUMUNIUM <br />
-              YANG BERKUALITAS
-            </h1>
+    <!-- Content container -->
+    <section class="relative text-white font-poppins">
 
-            <div class="flex gap-4 flex-wrap justify-center md:justify-start mb-6">
-              <img src="/assets/index/badge-premium.png" alt="Premium" class="w-16 h-16" />
-              <img src="/assets/index/badge-best.png" alt="Best" class="w-16 h-16" />
-              <img src="/assets/index/badge-10years.png" alt="10 Years" class="w-16 h-16" />
+       <!-- <div class="flex gap-4 flex-wrap justify-center md:justify-start mb-6">
+                <img src="assets\index\badge-premium.png" alt="Premium" class="w-16 h-16" />
+                <img src="assets\index\badge-best.png" alt="Best" class="w-16 h-16" />
+                <img src="assets\index\badge-10years.png" alt="10 Years" class="w-16 h-16" />
+              </div> -->
+              
+      <!-- HERO SECTION -->
+      <section class="relative min-h-screen flex items-center justify-center bg-black z-10 text-white font-poppins">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="p-6 md:p-10 rounded-2xl flex flex-col md:flex-row items-center gap-8 md:gap-14 max-w-6xl mx-auto shadow-lg backdrop-blur-sm bg-black/80">
+            
+            <!-- Image -->
+            <div class="flex justify-center items-center">
+              <img
+                src="assets/index/gambar awal.png"
+                alt="Gambar Utama"
+                class="rounded-lg w-64 h-72 md:w-80 md:h-96 object-cover"
+              />
             </div>
 
-            <button
-              @click="scrollToSection"
-              class="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg font-semibold transition"
-            >
-              About Us
-            </button>
+            <!-- Text Content -->
+            <div class="flex flex-col justify-center items-center md:items-start text-center md:text-left max-w-lg h-full">
+              <h1 class="text-2xl md:text-4xl font-extrabold text-red-600 leading-snug mb-6">
+                MENCIPTAKAN <br />
+                AKSESORIS ALUMUNIUM <br />
+                YANG BERKUALITAS
+              </h1>
+
+              <button
+                @click="scrollToSection"
+                class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-semibold transition duration-300"
+              >
+                About Us
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <!-- ABOUT GBJ SECTION -->
-    <div id="about-gbj" class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 flex justify-center items-center">
-      <div class="bg-black p-6 md:p-10 rounded-2xl flex flex-col md:flex-row gap-8 md:gap-14 items-center w-full max-w-6xl shadow-lg">
-        <div class="flex flex-col items-center md:items-start text-center md:text-left">
-          <img
-            src="/assets/index/gambar awal.png"
-            alt="Gambar Utama"
-            class="rounded-lg w-64 h-72 md:w-80 md:h-96 object-cover mb-4 max-w-full"
-          />
-        </div>
-        <div class="flex items-start gap-4 flex-1 text-white">
-          <div>
-            <h3 class="text-lg font-bold mb-1">About GBJ</h3>
-            <p class="text-sm md:text-base leading-relaxed">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry...
-            </p>
+      <!-- ABOUT GBJ SECTION -->      
+      <section id="about-gbj" class="relative z-10 bg-black/90 py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
+          <div class="bg-black/80 backdrop-blur-sm shadow-xl rounded-2xl p-6 sm:p-10 flex flex-col md:flex-row gap-10 w-full max-w-6xl items-center md:items-start">
+            
+            <!-- Gambar -->
+            <div class="w-full md:w-auto flex justify-center md:justify-start">
+              <img
+                src="assets/index/gambar awal.png"
+                alt="Gambar Utama"
+                class="rounded-xl object-cover w-64 h-72 sm:w-72 sm:h-80 md:w-80 md:h-96 transition duration-300"
+              />
+            </div>
+            
+            <!-- Konten Teks -->
+            <div class="text-white w-full space-y-4 text-sm sm:text-base leading-relaxed">
+              <h3 class="text-xl sm:text-2xl font-bold text-red-500">About GBJ</h3>
+              <p><strong>PT Global Bestindo Jaya</strong> merupakan perusahaan yang bergerak di bidang penyediaan perangkat keamanan dan sistem penguncian pintu untuk properti dan bangunan.</p>
+
+              <p>Berawal dari Batam sejak tahun 2015, kami resmi berdiri di Jakarta pada tahun 2018 sebagai bentuk ekspansi dan komitmen kami untuk menjangkau pasar nasional yang lebih luas.</p>
+
+              <p>Melalui merek <strong>Glatino</strong>, kami menghadirkan solusi produk-produk berkualitas tinggi yang dirancang untuk memenuhi kebutuhan keamanan rumah dan bangunan modern di Indonesia.</p>
+
+              <p>Jutaan unit produk Glatino telah digunakan di berbagai proyek perumahan, gedung perkantoran, hingga properti komersial di seluruh Indonesia.</p>
+
+              <p>Glatino terus mengembangkan produk dengan mengadopsi teknologi terkini seperti <strong>AI</strong> dan <strong>IoT</strong> untuk menciptakan perangkat pintar yang mendukung gaya hidup modern.</p>
+
+              <p><strong>Bersama Glatino, hidup lebih aman, nyaman, dan cerdas.</strong></p>
+            </div>
+
           </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <!-- MISSION & VISION -->
-    <div class="container mx-auto bg-red-600 rounded-2xl p-6 md:p-10 text-white">
-      <div class="flex flex-col md:flex-row justify-between items-start gap-8">
-        <div class="flex items-start gap-4 flex-1">
-          <img src="/assets/index/mission.png" alt="Mission" class="w-10 h-10 mt-1" />
-          <div>
-            <h3 class="text-lg font-bold mb-1">Our Mission</h3>
-            <p class="text-sm md:text-base leading-relaxed">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            </p>
-          </div>
-        </div>
-        <div class="flex items-start gap-4 flex-1">
-          <img src="/assets/index/vision.png" alt="Vision" class="w-10 h-10 mt-1" />
-          <div>
-            <h3 class="text-lg font-bold mb-1">Our Vision</h3>
-            <p class="text-sm md:text-base leading-relaxed">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CATALOG & EVENTS -->
-    <div class="w-full bg-red-600 rounded-t-3xl py-12 px-4 sm:px-6 lg:px-8 my-36">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-        <div class="bg-black bg-opacity-50 p-6 rounded-3xl text-white">
-          <h2 class="text-3xl text-center font-semibold mb-4">Events</h2>
-          <p class="text-sm font-semibold">27 Juli, 2025 09:30 AM - 12:00 PM WIB</p>
-          <p class="text-xs mb-6">Bakti Sosial Panti Asuhan</p>
-          <a href="#" class="text-sm underline block mt-16 text-center">View All &gt;</a>
-        </div>
-        <div class="bg-black bg-opacity-50 p-6 rounded-3xl text-white">
-          <h2 class="text-3xl text-center font-semibold mb-4">Our Product</h2>
-          <div class="bg-gray-200 h-48 w-48 mb-2 mx-auto"></div>
-          <p class="text-center text-sm mb-4">Engsel Pintu</p>
-          <div class="bg-gray-200 h-48 w-48 mb-2 mx-auto"></div>
-          <p class="text-center text-sm mb-4">Engsel Pintu</p>
-          <a href="/product" class="text-sm underline block mt-16 text-center">View All &gt;</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- TIMELINE (FIXED VERSION) -->
-    <!-- TIMELINE RESPONSIVE UNTUK HP, TABLET, DAN PC -->
-  <!-- TIMELINE SECTION -->
-  <div class="container mx-auto bg-black py-20 px-4 sm:px-6 lg:px-8 text-white">
-    <h2 class="text-3xl font-bold mb-10 text-center text-red-600">Our Journey</h2>
-
-    <div class="relative">
-      <!-- Gradient overlays -->
-      <div class="absolute left-0 top-0 bottom-0 w-10 md:w-20 bg-gradient-to-r from-black to-transparent z-20 pointer-events-none"></div>
-      <div class="absolute right-0 top-0 bottom-0 w-10 md:w-20 bg-gradient-to-l from-black to-transparent z-20 pointer-events-none"></div>
+      <!-- MISSION & VISION -->
+<div class="relative z-10 bg-red-600/90 py-12">
+  <div class="container mx-auto rounded-2xl p-6 md:p-10 text-white backdrop-blur-sm">
+    <div class="flex flex-col md:flex-row justify-between items-start gap-8">
       
-      <!-- Scroll container with improved drag -->
-      <div
-        id="timeline-scroll"
-        class="overflow-x-auto scroll-smooth snap-x snap-mandatory cursor-grab active:cursor-grabbing no-scrollbar"
-        ref="timelineRef"
-        @scroll="handleCardScroll"
-        @mousedown="startDrag"
-        @mousemove="onDrag"
-        @mouseup="endDrag"
-        @mouseleave="endDrag"
-      >
-        <div class="flex gap-4 w-max pl-[calc(50%-120px)] pr-[calc(50%-120px)] 
-                   sm:pl-[calc(50%-140px)] sm:pr-[calc(50%-140px)] 
-                   md:pl-[calc(50%-160px)] md:pr-[calc(50%-160px)] 
-                   lg:pl-[calc(50%-180px)] lg:pr-[calc(50%-180px)]">
-          
-          <!-- Timeline items -->
-          <div
-            v-for="(year, index) in timelineYears"
-            :key="year"
-            :class="[
-              'timeline-item snap-center transition-all duration-300 ease-in-out transform',
-              'min-w-[240px] sm:min-w-[280px] md:min-w-[320px] lg:min-w-[360px]',
-              'bg-zinc-900 p-4 rounded-xl shrink-0 flex flex-col',
-              activeCard === index ? 'scale-105 opacity-100 z-10 shadow-lg' : 'scale-95 opacity-70'
-            ]"
-          >
-            <div class="rounded-lg overflow-hidden mb-3 aspect-video bg-gray-300 w-full flex-shrink-0"></div>
-            <h3 class="text-sm sm:text-base font-bold text-red-500 mb-1">{{ year }}</h3>
-            <p class="text-xs sm:text-sm leading-snug text-white">
-              {{ timelineDescriptions[index] }}
-            </p>
-          </div>
+      <!-- Mission -->
+      <div class="flex items-start gap-4 flex-1">
+        <img src="assets/index/mission.png" alt="Mission" class="w-10 h-10 mt-1" />
+        <div>
+          <h3 class="text-lg font-bold mb-2">Our Mission</h3>
+          <ul class="list-disc pl-5 space-y-2 text-sm md:text-base leading-relaxed">
+            <li>
+              Menyediakan produk-produk penguncian dan aksesoris pintu berkualitas tinggi dengan harga kompetitif dan teknologi terkini.
+            </li>
+            <li>
+              Mengutamakan pelayanan prima dan kepuasan pelanggan dalam setiap aspek bisnis kami.
+            </li>
+            <li>
+              Meningkatkan kapabilitas sumber daya manusia melalui pelatihan berkelanjutan untuk menciptakan layanan yang profesional dan responsif.
+            </li>
+            <li>
+              Menjadi mitra terpercaya bagi pelaku industri properti di Indonesia dan Asia Tenggara.
+            </li>
+          </ul>
         </div>
       </div>
-      
-      <!-- Mobile indicators -->
-      <div class="flex justify-center mt-6 gap-2 md:hidden">
-        <div 
-          v-for="(year, index) in timelineYears" 
-          :key="'dot-'+year"
-          class="w-2 h-2 rounded-full transition-all"
-          :class="activeCard === index ? 'bg-red-500 w-4' : 'bg-gray-500'"
-        ></div>
+
+      <!-- Vision -->
+      <div class="flex items-start gap-4 flex-1">
+        <img src="assets/index/vision.png" alt="Vision" class="w-10 h-10 mt-1" />
+        <div>
+          <h3 class="text-lg font-bold mb-2">Our Vision</h3>
+          <p class="text-sm md:text-base leading-relaxed">
+            Dengan mengusung semangat “Smart Security for Modern Living”, PT Global Bestindo Jaya berkomitmen menjadi perusahaan penyedia solusi keamanan rumah dan bangunan yang terdepan, terpercaya, dan inovatif di Indonesia.
+          </p>
+          <p class="mt-4 text-sm md:text-base leading-relaxed">
+            Kami memiliki visi untuk membentuk masa depan industri keamanan yang lebih pintar dan terintegrasi melalui produk-produk berbasis <strong>AI dan IoT</strong>, serta terus mengedukasi masyarakat Indonesia tentang pentingnya sistem keamanan modern dalam kehidupan sehari-hari.
+          </p>
+        </div>
       </div>
+
     </div>
   </div>
-  </section>
+</div>
+
+
+      <!-- CATALOG & EVENTS -->
+      <div class="relative z-10 bg-red-600/90 rounded-t-3xl py-12 px-4 sm:px-6 lg:px-8 my-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div class="bg-black/70 p-6 rounded-3xl text-white backdrop-blur-sm">
+            <h2 class="text-3xl text-center font-semibold mb-4">Events</h2>
+            <p class="text-sm font-semibold">27 Juli, 2025 09:30 AM - 12:00 PM WIB</p>
+            <p class="text-xs mb-6">Bakti Sosial Panti Asuhan</p>
+            <a href="#" class="text-sm underline block mt-16 text-center">View All &gt;</a>
+          </div>
+          <div class="bg-black/70 p-6 rounded-3xl text-white backdrop-blur-sm">
+            <h2 class="text-3xl text-center font-semibold mb-4">Our Product</h2>
+            <div class="bg-gray-200 h-48 w-48 mb-2 mx-auto"></div>
+            <p class="text-center text-sm mb-4">Engsel Pintu</p>
+            <div class="bg-gray-200 h-48 w-48 mb-2 mx-auto"></div>
+            <p class="text-center text-sm mb-4">Engsel Pintu</p>
+            <a href="/product" class="text-sm underline block mt-16 text-center">View All &gt;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- TIMELINE SECTION -->
+       <div class="min-h-screen flex items-center justify-center relative z-10">
+        <div class="container mx-auto bg-black py-20 px-4 sm:px-6 lg:px-8 text-white">
+          <h2 class="text-3xl font-bold mb-10 text-center text-red-600">Our Journey</h2>
+
+        <div class="relative">
+          <!-- Gradient overlays -->
+          <div class="absolute left-0 top-0 bottom-0 w-10 md:w-20 bg-gradient-to-r from-black to-transparent z-20 pointer-events-none"></div>
+          <div class="absolute right-0 top-0 bottom-0 w-10 md:w-20 bg-gradient-to-l from-black to-transparent z-20 pointer-events-none"></div>
+          
+          <!-- Scroll container with improved drag -->
+          <div
+            id="timeline-scroll"
+            class="overflow-x-auto scroll-smooth snap-x snap-mandatory cursor-grab active:cursor-grabbing no-scrollbar"
+            ref="timelineRef"
+            @scroll="handleCardScroll"
+            @mousedown="startDrag"
+            @mousemove="onDrag"
+            @mouseup="endDrag"
+            @mouseleave="endDrag"
+          >
+            <div class="flex gap-4 w-max pl-[calc(50%-120px)] pr-[calc(50%-120px)] 
+                      sm:pl-[calc(50%-140px)] sm:pr-[calc(50%-140px)] 
+                      md:pl-[calc(50%-160px)] md:pr-[calc(50%-160px)] 
+                      lg:pl-[calc(50%-180px)] lg:pr-[calc(50%-180px)]">
+              
+              <!-- Timeline items -->             
+              <div
+                v-for="(year, index) in timelineYears"
+                :key="year"
+                :class="[
+                  'timeline-item snap-center transition-all duration-300 ease-in-out transform',
+                  'min-w-[240px] sm:min-w-[280px] md:min-w-[320px] lg:min-w-[360px]',
+                  'bg-zinc-900 p-4 rounded-xl shrink-0 flex flex-col',
+                  activeCard === index ? 'scale-105 opacity-100 z-10 shadow-lg' : 'scale-95 opacity-70'
+                ]"
+              >
+                <div class="rounded-lg overflow-hidden mb-3 aspect-video bg-gray-300 w-full flex-shrink-0"></div>
+                <h3 class="text-sm sm:text-base font-bold text-red-500 mb-1">{{ year }}</h3>
+                <!-- Perbaikan di sini: tambahkan break-words, max-w-full, dan text-sm untuk mobile -->
+                <p class="text-xs sm:text-sm leading-snug text-white break-words max-w-full">
+                  {{ timelineDescriptions[index] }}
+                </p>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Mobile indicators -->
+          <div class="flex justify-center mt-6 gap-2 md:hidden">
+            <div 
+              v-for="(year, index) in timelineYears" 
+              :key="'dot-'+year"
+              class="w-2 h-2 rounded-full transition-all"
+              :class="activeCard === index ? 'bg-red-500 w-4' : 'bg-gray-500'"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <FooterComponent />
+    </section>
+  </div>
 </template>
 
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 
+
+// Import FooterComponent dari file yang sama di folder 'pages'
+import FooterComponent from './footer.vue'
+
 // Timeline data
-const timelineYears = [2020, 2021, 2022, 2023, 2024, 2025];
+const timelineYears = [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
 const timelineDescriptions = [
-  "Pendirian & peluncuran produk pertama",
-  "Ekspansi pasar ke seluruh Indonesia",
-  "Peluncuran line produk premium",
-  "Peningkatan kapasitas produksi 200%",
-  "Penghargaan sebagai perusahaan terbaik",
-  "Ekspansi ke pasar internasional"
+  "PT Global Bestino Jaya resmi berdiri dengan fokus pada produk berkualitas tinggi untuk kebutuhan nasional.",
+  "Memperluas jaringan distribusi dan menjalin kemitraan strategis dengan berbagai mitra retail nasional.",
+  "Meluncurkan produk unggulan pertama yang menjadi fondasi pertumbuhan perusahaan di tahun-tahun berikutnya.",
+  "Melakukan ekspansi pasar ke seluruh wilayah Indonesia guna memperkuat jangkauan distribusi nasional.",
+  "Menghadirkan lini produk premium sebagai bentuk inovasi dan peningkatan standar kualitas perusahaan.",
+  "Membuka gudang baru di Surabaya untuk mempercepat pengiriman ke wilayah Indonesia Timur secara efisien.",
+  "Melakukan diversifikasi usaha dan memperkuat sistem operasional melalui integrasi teknologi digital.",
+  "Meluncurkan akun Instagram resmi sebagai langkah awal transformasi digital dan pendekatan ke pelanggan."
 ];
 
 // Drag functionality
@@ -236,11 +299,11 @@ const initTimeline = () => {
   if (items.length > 0) {
     const middleIndex = Math.floor(items.length / 2);
     activeCard.value = middleIndex;
-    items[middleIndex].scrollIntoView({ 
-      behavior: 'auto', 
-      inline: 'center',
-      block: 'nearest'
-    });
+    // items[middleIndex].scrollIntoView({ 
+    //   behavior: 'auto', 
+    //   inline: 'center',
+    //   block: 'nearest'
+    // });
   }
 };
 
@@ -252,6 +315,16 @@ onMounted(() => {
 onBeforeUnmount(() => {
   window.removeEventListener('resize', handleCardScroll);
 });
+
+const scrollToSection = () => {
+  const section = document.getElementById('about-gbj');
+  if (section) {
+    section.scrollIntoView({ 
+      behavior: 'smooth',
+      block: 'start'
+    });
+  }
+};
 </script>
 
 <style scoped>
@@ -292,5 +365,22 @@ onBeforeUnmount(() => {
 /* Better transition for active card */
 .timeline-item {
   transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Tambahkan ini di bagian bawah style scoped */
+.timeline-item p {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 640px) {
+  .timeline-item {
+    min-width: 280px !important; /* Sedikit lebih lebar untuk mobile */
+    padding: 12px; /* Padding lebih kecil */
+  }
+  
+  .timeline-item p {
+    font-size: 11px; /* Ukuran font lebih kecil di mobile */
+    line-height: 1.4; /* Tinggi garis lebih ketat */
+  }
 }
 </style>
