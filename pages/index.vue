@@ -103,22 +103,26 @@
 
     <!-- TIMELINE (FIXED VERSION) -->
     <!-- TIMELINE RESPONSIVE UNTUK HP, TABLET, DAN PC -->
+  <!-- TIMELINE SECTION -->
   <div class="container mx-auto bg-black py-20 px-4 sm:px-6 lg:px-8 text-white">
     <h2 class="text-3xl font-bold mb-10 text-center text-red-600">Our Journey</h2>
 
     <div class="relative">
-      <!-- Gradien overlay untuk HP dan Tablet -->
+      <!-- Gradient overlays -->
       <div class="absolute left-0 top-0 bottom-0 w-10 md:w-20 bg-gradient-to-r from-black to-transparent z-20 pointer-events-none"></div>
       <div class="absolute right-0 top-0 bottom-0 w-10 md:w-20 bg-gradient-to-l from-black to-transparent z-20 pointer-events-none"></div>
       
-      <!-- Scroll container utama -->
+      <!-- Scroll container with improved drag -->
       <div
         id="timeline-scroll"
         class="overflow-x-auto scroll-smooth snap-x snap-mandatory cursor-grab active:cursor-grabbing no-scrollbar"
         ref="timelineRef"
         @scroll="handleCardScroll"
+        @mousedown="startDrag"
+        @mousemove="onDrag"
+        @mouseup="endDrag"
+        @mouseleave="endDrag"
       >
-        <!-- Container dengan padding dinamis untuk semua device -->
         <div class="flex gap-4 w-max pl-[calc(50%-120px)] pr-[calc(50%-120px)] 
                    sm:pl-[calc(50%-140px)] sm:pr-[calc(50%-140px)] 
                    md:pl-[calc(50%-160px)] md:pr-[calc(50%-160px)] 
@@ -144,7 +148,7 @@
         </div>
       </div>
       
-      <!-- Navigation dots untuk mobile -->
+      <!-- Mobile indicators -->
       <div class="flex justify-center mt-6 gap-2 md:hidden">
         <div 
           v-for="(year, index) in timelineYears" 
@@ -161,7 +165,7 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 
-// Data timeline
+// Timeline data
 const timelineYears = [2020, 2021, 2022, 2023, 2024, 2025];
 const timelineDescriptions = [
   "Pendirian & peluncuran produk pertama",
@@ -172,16 +176,41 @@ const timelineDescriptions = [
   "Ekspansi ke pasar internasional"
 ];
 
-const scrollToSection = () => {
-  const section = document.getElementById('about-gbj');
-  if (section) section.scrollIntoView({ behavior: 'smooth' });
+// Drag functionality
+const isDragging = ref(false);
+const startX = ref(0);
+const scrollLeft = ref(0);
+const timelineRef = ref(null);
+
+const startDrag = (e) => {
+  isDragging.value = true;
+  startX.value = e.pageX - timelineRef.value.offsetLeft;
+  scrollLeft.value = timelineRef.value.scrollLeft;
+  timelineRef.value.style.cursor = 'grabbing';
+  timelineRef.value.style.scrollSnapType = 'none'; // Disable snap during drag
 };
 
-const currentSection = ref('home');
-const activeCard = ref(0);
+const onDrag = (e) => {
+  if (!isDragging.value) return;
+  e.preventDefault();
+  const x = e.pageX - timelineRef.value.offsetLeft;
+  const walk = (x - startX.value) * 2; // Adjust multiplier for sensitivity
+  timelineRef.value.scrollLeft = scrollLeft.value - walk;
+};
 
-// Handle scroll untuk highlight card yang aktif
+const endDrag = () => {
+  isDragging.value = false;
+  if (timelineRef.value) {
+    timelineRef.value.style.cursor = 'grab';
+    timelineRef.value.style.scrollSnapType = 'x mandatory'; // Re-enable snap
+  }
+};
+
+// Handle scroll to detect active card
+const activeCard = ref(0);
 const handleCardScroll = () => {
+  if (isDragging.value) return; // Skip during drag
+  
   const items = document.querySelectorAll('.timeline-item');
   let closestIndex = 0;
   let minDistance = Infinity;
@@ -201,11 +230,10 @@ const handleCardScroll = () => {
   activeCard.value = closestIndex;
 };
 
-// Inisialisasi timeline
+// Initialize timeline position
 const initTimeline = () => {
   const items = document.querySelectorAll('.timeline-item');
   if (items.length > 0) {
-    // Scroll ke item tengah saat pertama load
     const middleIndex = Math.floor(items.length / 2);
     activeCard.value = middleIndex;
     items[middleIndex].scrollIntoView({ 
@@ -216,51 +244,12 @@ const initTimeline = () => {
   }
 };
 
-// Drag to scroll functionality
-const setupDragScroll = () => {
-  const slider = document.getElementById('timeline-scroll');
-  if (!slider) return;
-
-  let isDown = false;
-  let startX;
-  let scrollLeft;
-
-  slider.addEventListener('mousedown', (e) => {
-    isDown = true;
-    slider.style.cursor = 'grabbing';
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-  });
-
-  slider.addEventListener('mouseleave', () => {
-    isDown = false;
-    slider.style.cursor = 'grab';
-  });
-
-  slider.addEventListener('mouseup', () => {
-    isDown = false;
-    slider.style.cursor = 'grab';
-  });
-
-  slider.addEventListener('mousemove', (e) => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 2;
-    slider.scrollLeft = scrollLeft - walk;
-  });
-};
-
 onMounted(() => {
-  window.addEventListener('scroll', handleScroll);
-  window.addEventListener('resize', handleCardScroll);
-  
   initTimeline();
-  setupDragScroll();
+  window.addEventListener('resize', handleCardScroll);
 });
 
 onBeforeUnmount(() => {
-  window.removeEventListener('scroll', handleScroll);
   window.removeEventListener('resize', handleCardScroll);
 });
 </script>
@@ -291,5 +280,17 @@ onBeforeUnmount(() => {
   .timeline-item {
     min-width: 240px !important;
   }
+}
+
+.cursor-grab {
+  cursor: grab;
+}
+.cursor-grabbing {
+  cursor: grabbing;
+}
+
+/* Better transition for active card */
+.timeline-item {
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 </style>
