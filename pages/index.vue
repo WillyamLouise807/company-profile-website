@@ -16,9 +16,9 @@
     <section class="relative text-white font-poppins">
 
        <!-- <div class="flex gap-4 flex-wrap justify-center md:justify-start mb-6">
-                <img src="assets\index\badge-premium.png" alt="Premium" class="w-16 h-16" />
-                <img src="assets\index\badge-best.png" alt="Best" class="w-16 h-16" />
-                <img src="assets\index\badge-10years.png" alt="10 Years" class="w-16 h-16" />
+            <img src="C:\Users\nardi\Project Web Willyam\company-profile-website\assets\index\badge-premium.png" class="w-16 h-16" />
+            <img src="C:\Users\nardi\Project Web Willyam\company-profile-website\assets\index\badge-best.png" alt="Best" class="w-16 h-16" />
+            <img src="C:\Users\nardi\Project Web Willyam\company-profile-website\assets\index\badge-10years.png" alt="10 Years" class="w-16 h-16" />
               </div> -->
               
       <!-- HERO SECTION -->
@@ -121,7 +121,7 @@
         <div>
           <h3 class="text-lg font-bold mb-2">Our Vision</h3>
           <p class="text-sm md:text-base leading-relaxed">
-            Dengan mengusung semangat “Smart Security for Modern Living”, PT Global Bestindo Jaya berkomitmen menjadi perusahaan penyedia solusi keamanan rumah dan bangunan yang terdepan, terpercaya, dan inovatif di Indonesia.
+            Dengan mengusung semangat "Smart Security for Modern Living", PT Global Bestindo Jaya berkomitmen menjadi perusahaan penyedia solusi keamanan rumah dan bangunan yang terdepan, terpercaya, dan inovatif di Indonesia.
           </p>
           <p class="mt-4 text-sm md:text-base leading-relaxed">
             Kami memiliki visi untuk membentuk masa depan industri keamanan yang lebih pintar dan terintegrasi melalui produk-produk berbasis <strong>AI dan IoT</strong>, serta terus mengedukasi masyarakat Indonesia tentang pentingnya sistem keamanan modern dalam kehidupan sehari-hari.
@@ -154,7 +154,7 @@
         </div>
       </div>
 
-      <!-- TIMELINE SECTION -->
+      <!-- TIMELINE SECTION - DIPERBESAR -->
        <div class="min-h-screen flex items-center justify-center relative z-10">
         <div class="container mx-auto bg-black py-20 px-4 sm:px-6 lg:px-8 text-white">
           <h2 class="text-3xl font-bold mb-10 text-center text-red-600">Our Journey</h2>
@@ -175,26 +175,28 @@
             @mouseup="endDrag"
             @mouseleave="endDrag"
           >
-            <div class="flex gap-4 w-max pl-[calc(50%-120px)] pr-[calc(50%-120px)] 
-                      sm:pl-[calc(50%-140px)] sm:pr-[calc(50%-140px)] 
-                      md:pl-[calc(50%-160px)] md:pr-[calc(50%-160px)] 
-                      lg:pl-[calc(50%-180px)] lg:pr-[calc(50%-180px)]">
+            <!-- UBAH: Perbesar gap dan padding -->
+            <div class="flex gap-6 w-max pl-[calc(50%-200px)] pr-[calc(50%-200px)] 
+                      sm:pl-[calc(50%-200px)] sm:pr-[calc(50%-200px)] 
+                      md:pl-[calc(50%-200px)] md:pr-[calc(50%-200px)] 
+                      lg:pl-[calc(50%-200px)] lg:pr-[calc(50%-200px)]">
               
-              <!-- Timeline items -->             
+              <!-- Timeline items - DIPERBESAR -->             
               <div
                 v-for="(year, index) in timelineYears"
                 :key="year"
                 :class="[
                   'timeline-item snap-center transition-all duration-300 ease-in-out transform',
-                  'min-w-[240px] sm:min-w-[280px] md:min-w-[320px] lg:min-w-[360px]',
-                  'bg-zinc-900 p-4 rounded-xl shrink-0 flex flex-col',
+                  'w-[300px] h-[400px]',
+                  'bg-zinc-900 p-8 rounded-xl shrink-0 flex flex-col',
                   activeCard === index ? 'scale-105 opacity-100 z-10 shadow-lg' : 'scale-95 opacity-70'
                 ]"
               >
-                <div class="rounded-lg overflow-hidden mb-3 aspect-video bg-gray-300 w-full flex-shrink-0"></div>
-                <h3 class="text-sm sm:text-base font-bold text-red-500 mb-1">{{ year }}</h3>
-                <!-- Perbaikan di sini: tambahkan break-words, max-w-full, dan text-sm untuk mobile -->
-                <p class="text-xs sm:text-sm leading-snug text-white break-words max-w-full">
+                <!-- PERBESAR GAMBAR -->
+                <div class="rounded-lg overflow-hidden mb-6 bg-gray-300 w-full h-[240px] flex-shrink-0"></div>
+                <!-- PERBESAR FONT -->
+                <h3 class="text-xl font-bold text-red-500 mb-4">{{ year }}</h3>
+                <p class="text-base leading-relaxed text-white break-words overflow-hidden text-ellipsis">
                   {{ timelineDescriptions[index] }}
                 </p>
               </div>
@@ -348,13 +350,6 @@ const scrollToSection = () => {
   transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Responsive font sizes */
-@media (max-width: 640px) {
-  .timeline-item {
-    min-width: 240px !important;
-  }
-}
-
 .cursor-grab {
   cursor: grab;
 }
@@ -367,20 +362,87 @@ const scrollToSection = () => {
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-/* Tambahkan ini di bagian bawah style scoped */
-.timeline-item p {
-  overflow-wrap: anywhere;
+/* Timeline cards styling - FULL TEXT DISPLAY FOR ALL DEVICES */
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Changed from space-between */
 }
 
+/* UNIVERSAL TEXT SETTING - NO CONSTRAINTS FOR ANY DEVICE */
+.timeline-item p {
+  overflow: visible !important;        /* Allow text overflow */
+  text-overflow: unset !important;     /* No ellipsis (...) */
+  display: block !important;           /* Normal block display */
+  -webkit-line-clamp: unset !important; /* No line limit */
+  -webkit-box-orient: unset !important; /* Reset orientation */
+  white-space: normal !important;      /* Normal text wrapping */
+  word-wrap: break-word !important;    /* Break long words */
+  line-height: 1.5 !important;        /* Readable spacing */
+}
+
+/* Mobile adjustments - Taller cards for more text space */
 @media (max-width: 640px) {
   .timeline-item {
-    min-width: 280px !important; /* Sedikit lebih lebar untuk mobile */
-    padding: 12px; /* Padding lebih kecil */
+    width: 280px !important;
+    height: 450px !important;  /* Increased height */
+    padding: 20px;
+  }
+  
+  .timeline-item .bg-gray-300 {
+    height: 160px !important;  /* Smaller image */
+  }
+  
+  .timeline-item h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
   }
   
   .timeline-item p {
-    font-size: 11px; /* Ukuran font lebih kecil di mobile */
-    line-height: 1.4; /* Tinggi garis lebih ketat */
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-item {
+    width: 260px !important;
+    height: 420px !important;  /* Increased height */
+    padding: 16px;
+  }
+  
+  .timeline-item .bg-gray-300 {
+    height: 140px !important;  /* Smaller image */
+  }
+  
+  .timeline-item h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .timeline-item p {
+    font-size: 13px;
+  }
+}
+
+/* Tablet adjustments - Ensure enough space */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .timeline-item {
+    height: 450px !important;  /* Increased height */
+  }
+  
+  .timeline-item .bg-gray-300 {
+    height: 180px !important;  /* Smaller image for more text space */
+  }
+}
+
+/* Desktop adjustments - Ensure enough space */
+@media (min-width: 1025px) {
+  .timeline-item {
+    height: 480px !important;  /* Increased height */
+  }
+  
+  .timeline-item .bg-gray-300 {
+    height: 200px !important;  /* Smaller image for more text space */
   }
 }
 </style>
