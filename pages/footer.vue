@@ -59,13 +59,11 @@
       <p><strong>Email:</strong> info@example.com</p>
     </div>
   </div>
-
-  <!-- Footer Bottom -->
-  <div class="mt-10 border-t border-gray-700 py-6 text-sm text-center bg-red-700 text-white">
+</footer>
+<!-- Footer Bottom -->
+  <div class=" border-t border-gray-700 py-6 text-sm text-center bg-red-700 text-white">
     <p>© Copyright <strong>PT Global Bestindo Jaya</strong> All Rights Reserved</p>
   </div>
-</footer>
-
 
 </template>
 

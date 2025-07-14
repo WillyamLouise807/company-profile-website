@@ -39,19 +39,19 @@
       </h1>
       <p class="text-sm text-center sm:text-base md:text-lg text-white/80 mb-6">
         Kami senang mendengar dari Anda! Isi formulir di bawah dan kami akan segera menghubungi Anda kembali.
-      </p>
+      </p>      
 
+      <!-- Form Section (Top) -->
       <div class="mx-auto bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 sm:p-8 shadow-2xl mb-10">
-        <form action="https://formspree.io/f/xeozjzdz" method="POST">
+        <form @submit.prevent="submitForm">
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             <!-- First Name -->
             <div>
               <label class="block text-sm text-white font-semibold mb-2">Nama Depan</label>
               <input
-                name="first_name"
+                v-model="namaDepan"
                 type="text"
                 placeholder="Nama Depan"
-                required
                 class="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white focus:ring-cyan-700 focus:border-cyan-700"
               />
             </div>
@@ -60,10 +60,9 @@
             <div>
               <label class="block text-sm text-white font-semibold mb-2">Nama Belakang</label>
               <input
-                name="last_name"
+                v-model="namaBelakang"
                 type="text"
                 placeholder="Nama Belakang"
-                required
                 class="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white focus:ring-cyan-700 focus:border-cyan-700"
               />
             </div>
@@ -72,10 +71,9 @@
             <div class="sm:col-span-2">
               <label class="block text-sm text-white font-semibold mb-2">Email</label>
               <input
-                name="email"
+                v-model="email"
                 type="email"
                 placeholder="Email"
-                required
                 class="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white focus:ring-cyan-700 focus:border-cyan-700"
               />
             </div>
@@ -84,7 +82,7 @@
             <div class="sm:col-span-2">
               <label class="block text-sm text-white font-semibold mb-2">Subject</label>
               <input
-                name="subject"
+                v-model="subject"
                 type="text"
                 placeholder="Subject"
                 class="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white focus:ring-cyan-700 focus:border-cyan-700"
@@ -99,7 +97,7 @@
                   +62
                 </span>
                 <input
-                  name="phone"
+                  v-model="phone"
                   type="tel"
                   placeholder="821-0123-4567"
                   class="w-full px-4 py-3 rounded-r-lg border border-gray-300 bg-white focus:ring-cyan-700 focus:border-cyan-700"
@@ -111,30 +109,23 @@
             <div class="sm:col-span-2">
               <label class="block text-sm text-white font-semibold mb-2">Pesan</label>
               <textarea
-                name="message"
+                v-model="message"
                 rows="4"
                 placeholder="Tuliskan pesan yang ingin Anda sampaikan pada kami!"
                 class="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white focus:ring-cyan-700 focus:border-cyan-700"
               ></textarea>
             </div>
-
-            <!-- Hidden honeypot (anti spam) -->
-            <input type="text" name="_gotcha" style="display:none" />
-
-            <!-- Redirect optional -->
-            <input type="hidden" name="_next" value="/thanks" />
           </div>
 
-          <!-- Submit Button -->
+          <!-- Buttons -->
           <div class="flex justify-end mt-6 sm:mt-8 space-x-4">
-            <!-- <button
-              type="submit"
-              class="w-full sm:w-auto px-6 py-3 bg-cyan-700 text-white font-semibold rounded-lg hover:bg-cyan-800 transition"
+            <button
+              type="button"
+              class="px-6 py-2.5 bg-gray-300 text-gray-800 rounded-lg hover:bg-gray-200 transition duration-300"
             >
-              Kirim
-            </button> -->
-
-             <button
+              Batalkan
+            </button>
+            <button
               type="submit"
               class="px-6 py-2.5 bg-red-700 text-white rounded-lg hover:bg-red-600 transition duration-300"
             >
@@ -198,7 +189,7 @@
           <div class="flex items-start space-x-4">
             <div class="bg-red-600 p-3 rounded">
               <!-- Icon Clock -->
-             <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
@@ -213,11 +204,39 @@
       </div>
     </div>
   </div>
-  
   <FooterComponent />
 </template>
 
 <script lang="ts" setup>
+import { ref } from 'vue'
+import axios from 'axios'
+
+const namaDepan = ref('')
+const namaBelakang = ref('')
+const email = ref('')
+const subject = ref('')
+const phone = ref('')
+const message = ref('')
+
+const submitForm = async () => {
+  try {
+    const res = await axios.post('http://localhost:3000/send-email', {
+      namaDepan: namaDepan.value,
+      namaBelakang: namaBelakang.value,
+      email: email.value,
+      subject: subject.value,
+      phone: phone.value,
+      message: message.value,
+    })
+
+    alert('Email berhasil dikirim!')
+  } catch (error: any) {
+  console.error('DETAIL ERROR:', error?.response?.data || error)
+  alert('Terjadi kesalahan saat mengirim email.')
+  }
+}
+
+
 import FooterComponent from './footer.vue'
 
 import bgImage from '@/assets/contact/bg-image.png'
