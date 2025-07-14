@@ -1,7 +1,7 @@
 <template>
   <!-- Main container with background -->
   <div class="relative">
-     <!-- Background image that follows content -->
+    <!-- Background image that follows content -->
     <div class="absolute inset-0 -z-10">
       <img 
         src="assets\bg-image.png" 
@@ -155,7 +155,7 @@
       </div>
 
       <!-- TIMELINE SECTION - DIPERBESAR -->
-       <div class="min-h-screen flex items-center justify-center relative z-10">
+      <div class="min-h-screen flex items-center justify-center relative z-10">
         <div class="container mx-auto bg-black py-20 px-4 sm:px-6 lg:px-8 text-white">
           <h2 class="text-3xl font-bold mb-10 text-center text-red-600">Our Journey</h2>
 
@@ -174,10 +174,11 @@
             @mousemove="onDrag"
             @mouseup="endDrag"
             @mouseleave="endDrag"
+            style="scroll-padding: 0 calc(50% - 150px);"
           >
             <!-- UBAH: Perbesar gap dan padding -->
-            <div class="flex gap-6 w-max pl-[calc(50%-200px)] pr-[calc(50%-200px)] 
-                      sm:pl-[calc(50%-200px)] sm:pr-[calc(50%-200px)] 
+            <div class="flex gap-6 w-max pl-[calc(50%-150px)] pr-[calc(50%-150px)] 
+                      sm:pl-[calc(50%-150px)] sm:pr-[calc(50%-150px)] 
                       md:pl-[calc(50%-200px)] md:pr-[calc(50%-200px)] 
                       lg:pl-[calc(50%-200px)] lg:pr-[calc(50%-200px)]">
               
@@ -190,8 +191,7 @@
                   'w-[300px] h-[400px]',
                   'bg-zinc-900 p-8 rounded-xl shrink-0 flex flex-col',
                   activeCard === index ? 'scale-105 opacity-100 z-10 shadow-lg' : 'scale-95 opacity-70'
-                ]"
-              >
+                ]">
                 <!-- PERBESAR GAMBAR -->
                 <div class="rounded-lg overflow-hidden mb-6 bg-gray-300 w-full h-[240px] flex-shrink-0"></div>
                 <!-- PERBESAR FONT -->
