@@ -218,7 +218,7 @@
 </template>
 
 <script lang="ts" setup>
-import FooterComponent from './footer.vue'
+import FooterComponent from '../components/footer.vue'
 
 import bgImage from '@/assets/contact/bg-image.png'
 </script>

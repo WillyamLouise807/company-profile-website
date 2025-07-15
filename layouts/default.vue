@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-black text-white shadow-md fixed top-0 left-0 right-0 z-50 text-xs sm:text-sm md:text-base">
+  <header class="bg-black text-white shadow-md fixed top-0 left-0 right-0 z-50 text-xs sm:text-sm md:text-base font-poppins">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
 
       <!-- Logo -->
@@ -230,3 +230,9 @@ onBeforeUnmount(() => {
   window.removeEventListener('scroll', handleScroll)
 })
 </script>
+
+<style>
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+</style>

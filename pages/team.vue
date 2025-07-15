@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="font-poppins">
     <!-- Hero Section -->
     <section class="relative w-full h-screen flex items-center justify-center text-center overflow-hidden">
       <!-- Background -->
@@ -12,7 +12,7 @@
       <div class="absolute inset-0 bg-black/40 backdrop-blur-sm z-[-2]"></div>
 
       <!-- White Gradient Fade (BOTTOM) -->
-      <div class="absolute bottom-0 left-0 right-0 h-48 z-[-1] bg-gradient-to-b from-transparent to-white"></div>
+      <div class="absolute bottom-0 left-0 right-0 h-48 z-[-1] bg-gradient-to-b from-transparent to-[#1A1A1A]"></div>
 
       <!-- Text Content -->
       <div class="relative z-10 px-4 max-w-4xl text-white">
@@ -29,17 +29,17 @@
     </section>
 
     <!-- Struktur Organisasi -->
-    <section id="structure-section" class="py-16 px-4 md:px-20 bg-white">
+    <section id="structure-section" class="py-16 px-4 md:px-20 bg-gradient-to-b from-[#1A1A1A] to-black">
       <div class="max-w-screen-xl mx-auto">
         <img
           src="@/assets/team/struktur-organisasi.png"
           alt="Struktur Organisasi"
-          class="w-full h-auto object-contain"
+          class="w-full h-auto object-contain rounded-3xl"
         />
       </div>
 
       <!-- Penjelasan Warna -->
-      <div class="max-w-screen-xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="max-w-screen-xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 ">
         <div
           v-for="(item, index) in colorDescriptions"
           :key="index"
@@ -50,8 +50,8 @@
             :style="{ backgroundColor: item.color }"
           ></div>
           <div>
-            <p class="font-semibold text-gray-800">{{ item.title }}</p>
-            <p class="text-sm italic text-gray-600">{{ item.subtitle }}</p>
+            <p class="font-semibold text-gray-500">{{ item.title }}</p>
+            <p class="text-sm italic text-gray-100">{{ item.subtitle }}</p>
           </div>
         </div>
       </div>
@@ -62,7 +62,7 @@
 
 <script setup>
 // Import FooterComponent dari file yang sama di folder 'pages'
-import FooterComponent from './footer.vue'
+import FooterComponent from '../components/footer.vue'
 
 import bgImage from '@/assets/team/bg-img-team.jpeg'
 
@@ -129,3 +129,9 @@ const colorDescriptions = [
   },
 ]
 </script>
+
+<style scoped>
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+</style>

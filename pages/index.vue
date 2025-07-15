@@ -15,7 +15,7 @@
     <!-- Content container -->
     <section class="relative text-white font-poppins">
 
-       <!-- <div class="flex gap-4 flex-wrap justify-center md:justify-start mb-6">
+      <!-- <div class="flex gap-4 flex-wrap justify-center md:justify-start mb-6">
             <img src="C:\Users\nardi\Project Web Willyam\company-profile-website\assets\index\badge-premium.png" class="w-16 h-16" />
             <img src="C:\Users\nardi\Project Web Willyam\company-profile-website\assets\index\badge-best.png" alt="Best" class="w-16 h-16" />
             <img src="C:\Users\nardi\Project Web Willyam\company-profile-website\assets\index\badge-10years.png" alt="10 Years" class="w-16 h-16" />
@@ -89,49 +89,48 @@
       </section>
 
       <!-- MISSION & VISION -->
-<div class="relative z-10 bg-red-600/90 py-12">
-  <div class="container mx-auto rounded-2xl p-6 md:p-10 text-white backdrop-blur-sm">
-    <div class="flex flex-col md:flex-row justify-between items-start gap-8">
-      
-      <!-- Mission -->
-      <div class="flex items-start gap-4 flex-1">
-        <img src="assets/index/mission.png" alt="Mission" class="w-10 h-10 mt-1" />
-        <div>
-          <h3 class="text-lg font-bold mb-2">Our Mission</h3>
-          <ul class="list-disc pl-5 space-y-2 text-sm md:text-base leading-relaxed">
-            <li>
-              Menyediakan produk-produk penguncian dan aksesoris pintu berkualitas tinggi dengan harga kompetitif dan teknologi terkini.
-            </li>
-            <li>
-              Mengutamakan pelayanan prima dan kepuasan pelanggan dalam setiap aspek bisnis kami.
-            </li>
-            <li>
-              Meningkatkan kapabilitas sumber daya manusia melalui pelatihan berkelanjutan untuk menciptakan layanan yang profesional dan responsif.
-            </li>
-            <li>
-              Menjadi mitra terpercaya bagi pelaku industri properti di Indonesia dan Asia Tenggara.
-            </li>
-          </ul>
+      <div class="relative z-10 bg-red-600/90 py-12">
+        <div class="container mx-auto rounded-2xl p-6 md:p-10 text-white backdrop-blur-sm">
+          <div class="flex flex-col md:flex-row justify-between items-start gap-8">
+            
+            <!-- Mission -->
+            <div class="flex items-start gap-4 flex-1">
+              <img src="assets/index/mission.png" alt="Mission" class="w-10 h-10 mt-1" />
+              <div>
+                <h3 class="text-lg font-bold mb-2">Our Mission</h3>
+                <ul class="list-disc pl-5 space-y-2 text-sm md:text-base leading-relaxed">
+                  <li>
+                    Menyediakan produk-produk penguncian dan aksesoris pintu berkualitas tinggi dengan harga kompetitif dan teknologi terkini.
+                  </li>
+                  <li>
+                    Mengutamakan pelayanan prima dan kepuasan pelanggan dalam setiap aspek bisnis kami.
+                  </li>
+                  <li>
+                    Meningkatkan kapabilitas sumber daya manusia melalui pelatihan berkelanjutan untuk menciptakan layanan yang profesional dan responsif.
+                  </li>
+                  <li>
+                    Menjadi mitra terpercaya bagi pelaku industri properti di Indonesia dan Asia Tenggara.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Vision -->
+            <div class="flex items-start gap-4 flex-1">
+              <img src="assets/index/vision.png" alt="Vision" class="w-10 h-10 mt-1" />
+              <div>
+                <h3 class="text-lg font-bold mb-2">Our Vision</h3>
+                <p class="text-sm md:text-base leading-relaxed">
+                  Dengan mengusung semangat "Smart Security for Modern Living", PT Global Bestindo Jaya berkomitmen menjadi perusahaan penyedia solusi keamanan rumah dan bangunan yang terdepan, terpercaya, dan inovatif di Indonesia.
+                </p>
+                <p class="mt-4 text-sm md:text-base leading-relaxed">
+                  Kami memiliki visi untuk membentuk masa depan industri keamanan yang lebih pintar dan terintegrasi melalui produk-produk berbasis <strong>AI dan IoT</strong>, serta terus mengedukasi masyarakat Indonesia tentang pentingnya sistem keamanan modern dalam kehidupan sehari-hari.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-      <!-- Vision -->
-      <div class="flex items-start gap-4 flex-1">
-        <img src="assets/index/vision.png" alt="Vision" class="w-10 h-10 mt-1" />
-        <div>
-          <h3 class="text-lg font-bold mb-2">Our Vision</h3>
-          <p class="text-sm md:text-base leading-relaxed">
-            Dengan mengusung semangat "Smart Security for Modern Living", PT Global Bestindo Jaya berkomitmen menjadi perusahaan penyedia solusi keamanan rumah dan bangunan yang terdepan, terpercaya, dan inovatif di Indonesia.
-          </p>
-          <p class="mt-4 text-sm md:text-base leading-relaxed">
-            Kami memiliki visi untuk membentuk masa depan industri keamanan yang lebih pintar dan terintegrasi melalui produk-produk berbasis <strong>AI dan IoT</strong>, serta terus mengedukasi masyarakat Indonesia tentang pentingnya sistem keamanan modern dalam kehidupan sehari-hari.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
 
 
       <!-- CATALOG & EVENTS -->
@@ -216,7 +215,7 @@
         <!-- FLOATING WHATSAPP BUBBLE -->
         <div class="fixed bottom-6 right-6 z-50">
           <a 
-            href="https://wa.me/6281218818898?text=Halo,%20saya%20tertarik%20dengan%20produk%20Glatino"
+            href="https://wa.me/6282180655152npm?text=Halo,%20saya%20tertarik%20dengan%20produk%20Glatino"
             target="_blank"
             class="whatsapp-bubble group flex items-center justify-center w-16 h-16 bg-green-500 hover:bg-green-600 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110"
           >
@@ -241,7 +240,7 @@
         </div>
       </div>
     </div>
-  <FooterComponent />
+    <FooterComponent />
     </section>
   </div>
 </template>
@@ -251,7 +250,7 @@ import { ref, onMounted, onBeforeUnmount } from 'vue'
 
 
 // Import FooterComponent dari file yang sama di folder 'pages'
-import FooterComponent from './footer.vue'
+import FooterComponent from '../components/footer.vue'
 
 // Timeline data
 const timelineYears = [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
