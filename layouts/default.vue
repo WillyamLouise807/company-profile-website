@@ -29,7 +29,7 @@
         <NuxtLink
           to="/product"
           @click="closeMenus"
-          :class="[route.path === '/product' ? 'text-red-600 font-bold' : 'hover:text-red-500']"
+          :class="[route.path.startsWith('/product') || route.path.startsWith('/produk') ? 'text-red-600 font-bold' : 'hover:text-red-500']"
         >
           Product
         </NuxtLink>
@@ -101,13 +101,13 @@
         @click.prevent="scrollToAbout"
         :class="[activeSection === 'about' && route.path === '/' ? 'text-red-600 font-bold' : 'hover:text-red-500']"
       >
-        About
+        About Us
       </NuxtLink>
       <NuxtLink
         to="/product"
         class="block"
         @click="closeMenus"
-        :class="[route.path === '/product' ? 'text-red-600 font-bold' : 'hover:text-red-500']"
+        :class="[route.path.startsWith('/product') || route.path.startsWith('/produk') ? 'text-red-600 font-bold' : 'hover:text-red-500']"
       >
         Product
       </NuxtLink>
