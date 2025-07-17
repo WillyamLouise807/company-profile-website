@@ -22,16 +22,16 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Door Lock 820</h1>
           <p class="text-gray-400 text-base sm:text-lg mb-6 leading-relaxed">
-            Dengan desain simpel dan pilihan warna yang elegan, handle pintu Glatino Model C bisa jadi pilihan tepat...
+            Set handle kunci Glatino tipe HR-820, hadir dengan desain simpel berbahan aluminium yang kokoh. Ukurannya compact dan cocok untuk berbagai jenis pintu, baik untuk kamar tidur, kamar mandi, maupun ruang kerja.
           </p>
 
           <div class="mb-6 space-y-1">
             <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
             <p class="capitalize text-sm sm:text-base">Warna: {{ selectedColorLabel }}</p>
             <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Material Aluminium</p>
+            <p class="capitalize text-sm sm:text-base">Material: Aluminium</p>
             <!-- <p class="capitalize text-sm sm:text-base">Anak Kunci dapat 3pcs</p> -->
-            <p class="capitalize text-sm sm:text-base">Type AL GLT HR-820</p>
+            <p class="capitalize text-sm sm:text-base">Type: AL GLT HR-820</p>
           </div>
 
           <!-- Marketplace -->
@@ -66,7 +66,7 @@
               :key="index"
               class="group cursor-pointer text-center border rounded-xl p-3 transition hover:shadow-md"
               :class="{
-                'ring-2 ring-blue-500 border-blue-500': selectedColor === color.name,
+                'ring-2 ring-red-600 border-red-600': selectedColor === color.name,
                 'border-gray-700': selectedColor !== color.name
               }"
               @click="selectColor(color)"
@@ -75,7 +75,7 @@
                 class="w-8 h-8 mx-auto rounded-full border"
                 :style="{ backgroundColor: color.hex }"
               />
-              <p class="text-xs mt-2 font-medium capitalize group-hover:text-blue-400">
+              <p class="text-xs mt-2 font-medium capitalize group-hover:text-red-600">
                 {{ color.label }}
               </p>
             </div>

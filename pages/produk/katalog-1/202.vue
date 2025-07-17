@@ -22,7 +22,7 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Door Lock 202</h1>
           <p class="text-gray-400 text-base sm:text-lg mb-6 leading-relaxed">
-            Dengan desain simpel dan pilihan warna yang elegan, handle pintu Glatino Model C bisa jadi pilihan tepat...
+            Desain elegan & lengkap dengan material Stainless SUS 304. Warna menarik, kuat, dan cocok untuk berbagai jenis pintu rumah Anda.
           </p>
 
           <div class="mb-6 space-y-1">
@@ -66,7 +66,7 @@
               :key="index"
               class="group cursor-pointer text-center border rounded-xl p-3 transition hover:shadow-md"
               :class="{
-                'ring-2 ring-blue-500 border-blue-500': selectedColor === color.name,
+                'ring-2 ring-red-600 border-red-600': selectedColor === color.name,
                 'border-gray-700': selectedColor !== color.name
               }"
               @click="selectColor(color)"
@@ -75,7 +75,7 @@
                 class="w-8 h-8 mx-auto rounded-full border"
                 :style="{ backgroundColor: color.hex }"
               />
-              <p class="text-xs mt-2 font-medium capitalize group-hover:text-blue-400">
+              <p class="text-xs mt-2 font-medium capitalize group-hover:text-red-600">
                 {{ color.label }}
               </p>
             </div>

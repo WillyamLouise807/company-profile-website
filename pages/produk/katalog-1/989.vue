@@ -22,26 +22,26 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Door Lock 989</h1>
           <p class="text-gray-400 text-base sm:text-lg mb-6 leading-relaxed">
-            Dengan desain simpel dan pilihan warna yang elegan, handle pintu Glatino Model C bisa jadi pilihan tepat...
+            Glatino AL/GLT 989 dirancang sebagai solusi handle set lengkap untuk pintu aluminium atau kayu minimalis. Dilengkapi silinder dan 3 anak kunci, produk ini memberikan kemudahan dalam penggunaan serta keamanan yang andal untuk berbagai jenis ruangan.
           </p>
 
           <div class="mb-6 space-y-1">
             <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
             <p class="capitalize text-sm sm:text-base">Warna: {{ selectedColorLabel }}</p>
             <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Material: Stainless SUS 304</p>
-            <!-- <p class="capitalize text-sm sm:text-base">Anak Kunci dapat 3pcs</p> -->
-            <p class="capitalize text-sm sm:text-base">Type AL/GLT 989</p>
+            <p class="capitalize text-sm sm:text-base">Material: Stainless Steel</p>
+            <p class="capitalize text-sm sm:text-base">Cylinder: Dilengkapi 3 Anak Kunci</p>
+            <p class="capitalize text-sm sm:text-base">Type: AL/GLT 989 WH / NB</p>
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
             <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
             <div class="flex flex-wrap justify-center md:justify-start items-center gap-6">
-              <a href="https://www.tokopedia.com/glatino-official-store/glatino-glt-989-lockset-type-bahan-aluminium-kunci-pintu-set-handle-lengkap-1731487333655152366?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
+              <a href="https://www.tokopedia.com/glatino-official-store/glatino-glt-989-lockexpert-set-kunci-pintu-premium-material-aluminium-anti-karat-1730953809704421102?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="@/assets/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
-              <a href="https://shopee.co.id/Glatino-GLT-989-LockSet-Type-Bahan-Aluminium-Kunci-Pintu-Set-Handle-Lengkap-i.1442585495.27222737426?sp_atk=dd827fd3-6e37-4abb-b37d-dab9dcaef53f&xptdk=dd827fd3-6e37-4abb-b37d-dab9dcaef53f" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
+              <a href="https://shopee.co.id/Glatino-GLT-989-LockExpert-Set-Kunci-Pintu-Material-Aluminium-Anti-Karat-i.1442585495.26572826327?sp_atk=728eeddf-3b78-4375-97ae-2cb18512ea41&xptdk=728eeddf-3b78-4375-97ae-2cb18512ea41" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="@/assets/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>
@@ -66,7 +66,7 @@
               :key="index"
               class="group cursor-pointer text-center border rounded-xl p-3 transition hover:shadow-md"
               :class="{
-                'ring-2 ring-blue-500 border-blue-500': selectedColor === color.name,
+                'ring-2 ring-red-600 border-red-600': selectedColor === color.name,
                 'border-gray-700': selectedColor !== color.name
               }"
               @click="selectColor(color)"
@@ -75,7 +75,7 @@
                 class="w-8 h-8 mx-auto rounded-full border"
                 :style="{ backgroundColor: color.hex }"
               />
-              <p class="text-xs mt-2 font-medium capitalize group-hover:text-blue-400">
+              <p class="text-xs mt-2 font-medium capitalize group-hover:text-red-600">
                 {{ color.label }}
               </p>
             </div>

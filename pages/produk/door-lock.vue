@@ -13,7 +13,7 @@
       <!-- Content Container -->
       <div class="container mx-auto h-full px-4 relative z-10 flex flex-col">
         <!-- Breadcrumb -->
-        <div class="text-white text-sm opacity-80 pt-36">
+        <div class="text-white text-sm opacity-80 pt-20 sm:pt-28 md:pt-36">
           <NuxtLink to="/product" class="hover:underline">Product</NuxtLink> / <span>Door Lock</span>
         </div>
 
@@ -116,23 +116,30 @@ const doorLockProducts = [
   {
     id: 7,
     name: "Handle Only",
-    description: "LockExpert Set Kunci Pintu Premium Material Aluminium Anti Karat",
+    description: "Kepala Handle SS 201/ Tarikan Tanam Pintu Geser Sliding Door Material Aluminium",
     slug: "handle-only",
     image: new URL('@/assets/product/door-lock/handle-only.png', import.meta.url).href
   },
   {
     id: 8,
     name: "Expanda",
-    description: "LockExpert Set Kunci Pintu Premium Material Aluminium Anti Karat",
+    description: "Set Kunci Pintu Handle Kawat Nyamuk Type Door Loock Premium",
     slug: "expanda",
     image: new URL('@/assets/product/door-lock/expanda.png', import.meta.url).href
   },
   {
     id: 9,
-    name: "Kamar Mandi",
-    description: "LockExpert Set Kunci Pintu Premium Material Aluminium Anti Karat",
-    slug: "kamar-mandi",
-    image: new URL('@/assets/product/door-lock/kamar-mandi.png', import.meta.url).href
+    name: "802",
+    description: "LockStyle Set Kunci Pintu Untuk Kamar Mandi Bahan Aluminium Anti Karat",
+    slug: "802",
+    image: new URL('@/assets/product/door-lock/802.png', import.meta.url).href
+  },
+  {
+    id: 10,
+    name: "902",
+    description: "Bathroom Buddy Kunci Kamar mandi Material Aluminium Anti Karat",
+    slug: "902",
+    image: new URL('@/assets/product/door-lock/902.png', import.meta.url).href
   }
 ]
 </script>

@@ -17,7 +17,7 @@
       </nav>
 
       <!-- Product Content -->
-      <div class="flex flex-col-reverse md:grid md:grid-cols-2 gap-10 items-start">
+      <div class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Door Lock 201</h1>
@@ -41,7 +41,7 @@
           <!-- Marketplace -->
           <div class="mb-8">
             <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
-            <div class="flex flex-wrap justify-center md:justify-start items-center gap-6">
+            <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store/glatino-glt-201-premiumlock-kunci-pintu-set-handle-material-aluminium-1731487588150839022?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="@/assets/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
@@ -53,7 +53,7 @@
         </div>
 
         <!-- Gambar & Pilihan Warna -->
-        <div class="space-y-6 flex flex-col items-center">
+        <div class="space-y-6 flex flex-col items-center w-full">
           <transition name="fade" mode="out-in">
             <img
               :key="selectedImage"
@@ -70,7 +70,7 @@
               :key="index"
               class="group cursor-pointer text-center border rounded-xl p-3 transition hover:shadow-md"
               :class="{
-                'ring-2 ring-blue-500 border-blue-500': selectedColor === color.name,
+                'ring-2 ring-red-600 border-red-600': selectedColor === color.name,
                 'border-gray-700': selectedColor !== color.name
               }"
               @click="selectColor(color)"
@@ -119,7 +119,6 @@
   </div>
   <FooterComponent />
 </template>
-
 
 <script lang="ts" setup>
 import FooterComponent from '@/components/footer.vue'

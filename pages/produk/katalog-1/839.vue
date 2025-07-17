@@ -22,26 +22,27 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Door Lock 839</h1>
           <p class="text-gray-400 text-base sm:text-lg mb-6 leading-relaxed">
-            Dengan desain simpel dan pilihan warna yang elegan, handle pintu Glatino Model C bisa jadi pilihan tepat...
+            Handle kunci pintu Glatino GLT 839 dirancang khusus untuk pintu aluminium 9055. Dilengkapi lockcase stainless dan silinder kuningan berkualitas, set ini memberikan keamanan optimal dengan desain yang tetap modern dan fungsional.
           </p>
 
           <div class="mb-6 space-y-1">
             <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
             <p class="capitalize text-sm sm:text-base">Warna: {{ selectedColorLabel }}</p>
             <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Material: Stainless SUS 304</p>
-            <!-- <p class="capitalize text-sm sm:text-base">Anak Kunci dapat 3pcs</p> -->
-            <p class="capitalize text-sm sm:text-base">Type AL/GLT 839</p>
+            <p class="capitalize text-sm sm:text-base">Material: Stainless 8520 (85x20 mm)</p>
+            <p class="capitalize text-sm sm:text-base">Cylinder: Kuningan 60 mm + 3 Computer Key</p>
+            <p class="capitalize text-sm sm:text-base">Type: GLT 839 / Kunci Pintu Aluminium 9055</p>
+            <p class="capitalize text-sm sm:text-base">Ukuran Body: 24 cm x 17,5 cm x 3 cm</p>
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
             <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
             <div class="flex flex-wrap justify-center md:justify-start items-center gap-6">
-              <a href="https://www.tokopedia.com/glatino-official-store/glatino-glt-839-lockset-type-bahan-aluminium-kunci-pintu-set-handle-lengkap-1731487333655152366?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
+              <a href="https://www.tokopedia.com/glatino-official-store/glatino-glt-839-keypro-set-kunci-pintu-handle-premium-door-lock-aluminium-1731488448606340846?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="@/assets/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
-              <a href="https://shopee.co.id/Glatino-GLT-839-LockSet-Type-Bahan-Aluminium-Kunci-Pintu-Set-Handle-Lengkap-i.1442585495.27222737426?sp_atk=dd827fd3-6e37-4abb-b37d-dab9dcaef53f&xptdk=dd827fd3-6e37-4abb-b37d-dab9dcaef53f" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
+              <a href="https://shopee.co.id/Glatino-GLT-839-KeyPro-Set-Kunci-Pintu-Handle-Premium-Door-Lock-Aluminium-i.1442585495.25740333980?sp_atk=21cb9d49-2c8c-43e7-90aa-67c0fc9a9a5d&xptdk=21cb9d49-2c8c-43e7-90aa-67c0fc9a9a5d" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="@/assets/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>
@@ -66,7 +67,7 @@
               :key="index"
               class="group cursor-pointer text-center border rounded-xl p-3 transition hover:shadow-md"
               :class="{
-                'ring-2 ring-blue-500 border-blue-500': selectedColor === color.name,
+                'ring-2 ring-red-600 border-red-600': selectedColor === color.name,
                 'border-gray-700': selectedColor !== color.name
               }"
               @click="selectColor(color)"
@@ -75,7 +76,7 @@
                 class="w-8 h-8 mx-auto rounded-full border"
                 :style="{ backgroundColor: color.hex }"
               />
-              <p class="text-xs mt-2 font-medium capitalize group-hover:text-blue-400">
+              <p class="text-xs mt-2 font-medium capitalize group-hover:text-red-600">
                 {{ color.label }}
               </p>
             </div>

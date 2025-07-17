@@ -90,9 +90,9 @@ const products = [
     route: '/produk/door-lock',
   },
   {
-    title: 'Smart Lock',
-    description: 'View all Smart Lock products',
-    slug: 'smart-lock',
+    title: 'Mortise Lock',
+    description: 'View all Mortise Lock products',
+    slug: 'mortise-lock',
     image: new URL('@/assets/product/Door-Lock.png', import.meta.url).href,
     logo: new URL('@/assets/product/GLATINO - RED - LOGO.png', import.meta.url).href,
   },
