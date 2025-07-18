@@ -21,7 +21,7 @@
         <div class="flex-grow flex items-center justify-center">
           <div class="text-center max-w-2xl mx-auto text-white transform -translate-y-6 ">
             <h1 class="text-2xl sm:text-3xl font-semibold leading-relaxed mb-6">Mortise Lock Series</h1>
-            <p class="text-lg">Koleksi lengkap dari series Mortise Lock</p>
+            <p class="text-lg">Rangkaian kunci mortise berkualitas tinggi untuk keamanan maksimal dan daya tahan jangka panjang.</p>
           </div>
         </div>
       </div>
@@ -31,7 +31,7 @@
     <!-- Daftar Produk dalam Kategori -->
       <section class="py-16 px-4 sm:px-6 lg:px-12 bg-black">
         <div class="max-w-7xl mx-auto">
-          <h2 class="text-2xl font-bold mb-8 text-center">Produk Mortise Lock</h2>
+          <h2 class="text-2xl font-bold mb-8 text-center text-white">Produk Mortise Lock</h2>
           
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
             <div 
@@ -74,28 +74,28 @@ const mortiseLockProducts = [
   {
     id: 1,
     name: "GLT-808",
-    description: "Elan Series Set Kunci Pintu Hight Quality Material Aluminium",
+    description: "Mortise Lock Body Perol + Cylinder Material Aluminium Premium Anti Karat",
     slug: "808",
     image: new URL('@/assets/product/mortise-lock/808.png', import.meta.url).href
   },
   {
     id: 2,
     name: "GLT-909",
-    description: "Lock Set Type Bahan Aluminium Kunci Pintu Set Handle Lengkap",
+    description: "Mortise Lock Body Perol + Cylinder Material Aluminium Premium Anti Karat",
     slug: "909",
     image: new URL('@/assets/product/mortise-lock/909.png', import.meta.url).href
   },
   {
     id: 3,
     name: "GT-910",
-    description: "Lock Case Kunci Pintu Set Premium Stainless Steel",
+    description: "Mortise Lock Body Perol + Cylinder Material Aluminium Premium Anti Karat",
     slug: "910",
     image: new URL('@/assets/product/mortise-lock/910.png', import.meta.url).href
   },
   {
     id: 4,
     name: "GLT-911",
-    description: "KeyPro Set Kunci Pintu Handle Premium mortise Lock Aluminium",
+    description: "Mortise Lock Body Perol + Cylinder Material Aluminium Premium Anti Karat",
     slug: "911",
     image: new URL('@/assets/product/mortise-lock/911.png', import.meta.url).href
   },
