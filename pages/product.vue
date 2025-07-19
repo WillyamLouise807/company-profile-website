@@ -110,6 +110,13 @@ const products = [
     image: new URL('@/assets/product/floor-hinge.png', import.meta.url).href,
     logo: new URL('@/assets/product/GLATINO - RED - LOGO.png', import.meta.url).href,
   },
+  {
+    title: 'Patch Fitting',
+    description: 'View all Patch Fitting products',
+    slug: 'patch-fitting',
+    image: new URL('@/assets/product/patch-fitting.png', import.meta.url).href,
+    logo: new URL('@/assets/product/GLATINO - RED - LOGO.png', import.meta.url).href,
+  },
 ]
 </script>
 
