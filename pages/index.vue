@@ -1,30 +1,38 @@
 <template>
   <!-- Main container with background -->
   <div class="relative">
-    <!-- Background image that follows content -->
+    <!-- Background image for all devices -->
     <div class="absolute inset-0 -z-10">
+      <!-- Smartphone -->
       <img 
-        src="assets\bg-image.png" 
-        alt="Background"
-        class="w-full h-full object-cover"
+        src="assets/bg-image-smartphone.jpg" 
+        alt="Background Mobile"
+        class="block sm:hidden w-full h-screen object-cover"
       />
-      <!-- Dark overlay for content sections -->
-      <div class="absolute inset-0"></div>
+      <!-- Tablet -->
+      <img 
+        src="assets/bg-image-tablet.jpg" 
+        alt="Background Tablet"
+        class="hidden sm:block lg:hidden w-full h-screen object-cover"
+      />
+      <!-- Desktop -->
+      <img 
+        src="assets/bg-image-dekstop.jpg" 
+        alt="Background Desktop"
+        class="hidden lg:block w-full h-screen object-cover"
+      />
+
+      <!-- NEW: Gradient fade to white at bottom -->
+      <div class="absolute bottom-0 w-full h-screen bg-gradient-to-b from-transparent to-white"></div>
     </div>
 
     <!-- Content container -->
     <section class="relative text-white font-poppins">
-
-      <!-- <div class="flex gap-4 flex-wrap justify-center md:justify-start mb-6">
-            <img src="C:\Users\nardi\Project Web Willyam\company-profile-website\assets\index\badge-premium.png" class="w-16 h-16" />
-            <img src="C:\Users\nardi\Project Web Willyam\company-profile-website\assets\index\badge-best.png" alt="Best" class="w-16 h-16" />
-            <img src="C:\Users\nardi\Project Web Willyam\company-profile-website\assets\index\badge-10years.png" alt="10 Years" class="w-16 h-16" />
-              </div> -->
               
       <!-- HERO SECTION -->
       <section class="relative min-h-screen flex items-center justify-center z-10 text-white font-poppins">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="p-6 md:p-10 rounded-2xl flex flex-col md:flex-row items-center gap-8 md:gap-14 max-w-6xl mx-auto shadow-lg backdrop-blur-sm ">
+          <div class="p-6 md:p-10 rounded-2xl flex flex-col md:flex-row items-center gap-8 md:gap-14 max-w-6xl mx-auto shadow-md backdrop-blur-sm ">
             
             <!-- Image -->
             <div class="flex justify-center items-center">
@@ -55,21 +63,21 @@
       </section>
 
       <!-- ABOUT GBJ SECTION -->      
-      <section id="about-gbj" class="relative z-10 bg-black/90 py-20">
+      <section id="about-gbj" class="relative z-10 bg-white/90 py-20">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
-          <div class="bg-black/80 backdrop-blur-sm shadow-xl rounded-2xl p-6 sm:p-10 flex flex-col md:flex-row gap-10 w-full max-w-6xl items-center md:items-start">
+          <div class="bg-grey/10 backdrop-blur-sm shadow-xl rounded-2xl p-6 sm:p-10 flex flex-col md:flex-row gap-10 w-full max-w-6xl items-center md:items-start">
             
             <!-- Gambar -->
             <div class="w-full md:w-auto flex justify-center md:justify-start">
               <img
                 src="assets/index/gambar awal.png"
                 alt="Gambar Utama"
-                class="rounded-xl object-cover w-64 h-72 sm:w-72 sm:h-80 md:w-80 md:h-96 transition duration-300"
+                class="rounded-xl object-contain w-full max-w-md md:max-w-lg lg:max-w-xl h-auto transition duration-300"
               />
             </div>
             
             <!-- Konten Teks -->
-            <div class="text-white w-full space-y-4 text-sm sm:text-base leading-relaxed">
+            <div class="text-black w-full space-y-4 text-sm sm:text-base leading-relaxed">
               <h3 class="text-xl sm:text-2xl font-bold text-red-500">About GBJ</h3>
               <p><strong>PT Global Bestindo Jaya</strong> merupakan perusahaan yang bergerak di bidang penyediaan perangkat keamanan dan sistem penguncian pintu untuk properti dan bangunan.</p>
 
@@ -77,9 +85,7 @@
 
               <p>Melalui merek <strong>Glatino</strong>, kami menghadirkan solusi produk-produk berkualitas tinggi yang dirancang untuk memenuhi kebutuhan keamanan rumah dan bangunan modern di Indonesia.</p>
 
-              <p>Jutaan unit produk Glatino telah digunakan di berbagai proyek perumahan, gedung perkantoran, hingga properti komersial di seluruh Indonesia.</p>
-
-              <p>Glatino terus mengembangkan produk dengan mengadopsi teknologi terkini seperti <strong>AI</strong> dan <strong>IoT</strong> untuk menciptakan perangkat pintar yang mendukung gaya hidup modern.</p>
+              <p>Jutaan unit produk Glatino telah digunakan di berbagai proyek perumahan, gedung perkantoran, hingga properti komersial di seluruh Indonesia.</p>        
 
               <p><strong>Bersama Glatino, hidup lebih aman, nyaman, dan cerdas.</strong></p>
             </div>
@@ -121,10 +127,10 @@
               <div>
                 <h3 class="text-lg font-bold mb-2">Our Vision</h3>
                 <p class="text-sm md:text-base leading-relaxed">
-                  Dengan mengusung semangat "Smart Security for Modern Living", PT Global Bestindo Jaya berkomitmen menjadi perusahaan penyedia solusi keamanan rumah dan bangunan yang terdepan, terpercaya, dan inovatif di Indonesia.
+                  Dengan mengusung semangat <span class="italic"> "Smart Security for Modern Living"</span>, PT Global Bestindo Jaya berkomitmen menjadi perusahaan penyedia solusi keamanan rumah dan bangunan yang terdepan, terpercaya, dan inovatif di Indonesia.
                 </p>
                 <p class="mt-4 text-sm md:text-base leading-relaxed">
-                  Kami memiliki visi untuk membentuk masa depan industri keamanan yang lebih pintar dan terintegrasi melalui produk-produk berbasis <strong>AI dan IoT</strong>, serta terus mengedukasi masyarakat Indonesia tentang pentingnya sistem keamanan modern dalam kehidupan sehari-hari.
+                  Kami memiliki visi untuk membentuk masa depan industri keamanan yang lebih pintar dan praktis melalui produk-produk smart security seperti akses pintu berbasis sidik jari, pengenalan wajah, dan kontrol suara. Kami juga terus berupaya mengedukasi masyarakat Indonesia akan pentingnya sistem keamanan modern dalam kehidupan sehari-hari.
                 </p>
               </div>
             </div>
@@ -136,13 +142,13 @@
       <!-- CATALOG & EVENTS -->
       <div class="relative z-10 bg-red-600/90 rounded-t-3xl py-12 px-4 sm:px-6 lg:px-8 my-12">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          <div class="bg-black/70 p-6 rounded-3xl text-white backdrop-blur-sm">
+          <div class="bg-white p-6 rounded-3xl text-black backdrop-blur-sm">
             <h2 class="text-3xl text-center font-semibold mb-4">Events</h2>
             <p class="text-sm font-semibold">27 Juli, 2025 09:30 AM - 12:00 PM WIB</p>
             <p class="text-xs mb-6">Bakti Sosial Panti Asuhan</p>
             <a href="#" class="text-sm underline block mt-16 text-center">View All &gt;</a>
           </div>
-          <div class="bg-black/70 p-6 rounded-3xl text-white backdrop-blur-sm">
+          <div class="bg-white p-6 rounded-3xl text-black backdrop-blur-sm">
             <h2 class="text-3xl text-center font-semibold mb-4">Our Product</h2>
             <div class="bg-gray-200 h-48 w-48 mb-2 mx-auto"></div>
             <p class="text-center text-sm mb-4">Engsel Pintu</p>
@@ -153,92 +159,71 @@
         </div>
       </div>
 
-      <!-- TIMELINE SECTION - DIPERBESAR -->
+      <!-- TIMELINE SECTION - PUTIH MERAH -->
       <div class="min-h-screen flex items-center justify-center relative z-10">
-        <div class="container mx-auto bg-black py-20 px-4 sm:px-6 lg:px-8 text-white">
+        <div class="container mx-auto bg-white py-20 px-4 sm:px-6 lg:px-8 text-gray-800">
           <h2 class="text-3xl font-bold mb-10 text-center text-red-600">Our Journey</h2>
 
-        <div class="relative">
-          <!-- Gradient overlays -->
-          <div class="absolute left-0 top-0 bottom-0 w-10 md:w-20 bg-gradient-to-r from-black to-transparent z-20 pointer-events-none"></div>
-          <div class="absolute right-0 top-0 bottom-0 w-10 md:w-20 bg-gradient-to-l from-black to-transparent z-20 pointer-events-none"></div>
-          
-          <!-- Scroll container with improved drag -->
-          <div
-            id="timeline-scroll"
-            class="overflow-x-auto scroll-smooth snap-x snap-mandatory cursor-grab active:cursor-grabbing no-scrollbar"
-            ref="timelineRef"
-            @scroll="handleCardScroll"
-            @mousedown="startDrag"
-            @mousemove="onDrag"
-            @mouseup="endDrag"
-            @mouseleave="endDrag"
-            style="scroll-padding: 0 calc(50% - 150px);"
-          >
-            <!-- UBAH: Perbesar gap dan padding -->
-            <div class="flex gap-6 w-max pl-[calc(50%-150px)] pr-[calc(50%-150px)] 
-                      sm:pl-[calc(50%-150px)] sm:pr-[calc(50%-150px)] 
-                      md:pl-[calc(50%-200px)] md:pr-[calc(50%-200px)] 
-                      lg:pl-[calc(50%-200px)] lg:pr-[calc(50%-200px)]">
-              
-              <!-- Timeline items - DIPERBESAR -->             
-              <div
-                v-for="(year, index) in timelineYears"
-                :key="year"
-                :class="[
-                  'timeline-item snap-center transition-all duration-300 ease-in-out transform',
-                  'w-[300px] h-[400px]',
-                  'bg-zinc-900 p-8 rounded-xl shrink-0 flex flex-col',
-                  activeCard === index ? 'scale-105 opacity-100 z-10 shadow-lg' : 'scale-95 opacity-70'
-                ]">
-                <!-- PERBESAR GAMBAR -->
-                <div class="rounded-lg overflow-hidden mb-6 bg-gray-300 w-full h-[240px] flex-shrink-0"></div>
-                <!-- PERBESAR FONT -->
-                <h3 class="text-xl font-bold text-red-500 mb-4">{{ year }}</h3>
-                <p class="text-base leading-relaxed text-white break-words overflow-hidden text-ellipsis">
-                  {{ timelineDescriptions[index] }}
-                </p>
+          <div class="relative">
+            <!-- Optional: bisa pakai gradient di sisi kiri/kanan -->
+            <div class="absolute left-0 top-0 bottom-0 w-10 md:w-20 bg-gradient-to-r from-white to-transparent z-20 pointer-events-none"></div>
+            <div class="absolute right-0 top-0 bottom-0 w-10 md:w-20 bg-gradient-to-l from-white to-transparent z-20 pointer-events-none"></div>
+            
+            <!-- Scrollable timeline -->
+            <div
+              id="timeline-scroll"
+              class="overflow-x-auto scroll-smooth snap-x snap-mandatory cursor-grab active:cursor-grabbing no-scrollbar"
+              ref="timelineRef"
+              @scroll="handleCardScroll"
+              @mousedown="startDrag"
+              @mousemove="onDrag"
+              @mouseup="endDrag"
+              @mouseleave="endDrag"
+              style="scroll-padding: 0 calc(50% - 150px);"
+            >
+              <div class="flex gap-6 w-max pl-[calc(50%-150px)] pr-[calc(50%-150px)] 
+                          sm:pl-[calc(50%-150px)] sm:pr-[calc(50%-150px)] 
+                          md:pl-[calc(50%-200px)] md:pr-[calc(50%-200px)] 
+                          lg:pl-[calc(50%-200px)] lg:pr-[calc(50%-200px)]">
+                
+                <!-- Timeline items - PUTIH MERAH -->
+                <div
+                  v-for="(year, index) in timelineYears"
+                  :key="year"
+                  :class="[ 
+                    'timeline-item snap-center transition-all duration-300 ease-in-out transform',
+                    'w-[300px] h-[400px] bg-white border border-gray-200 p-8 rounded-xl shrink-0 flex flex-col shadow-md select-none',
+                    activeCard === index ? 'scale-105 opacity-100 z-10 shadow-lg' : 'scale-95 opacity-80'
+                  ]"
+                >
+                  <div class="rounded-lg overflow-hidden mb-6 bg-gray-200 w-full h-[240px] flex-shrink-0">
+                    <img 
+                      :src="timelineImages[index]" 
+                      alt=""
+                      draggable="false"
+                      class="w-full h-full object-contain select-none pointer-events-none"
+                    />
+                  </div>
+                  <h3 class="text-xl font-bold text-red-600 mb-4">{{ year }}</h3>
+                  <p class="text-base leading-relaxed text-gray-700 break-words overflow-hidden text-ellipsis">
+                    {{ timelineDescriptions[index] }}
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-      
-          <!-- Mobile indicators -->
-          <div class="flex justify-center mt-6 gap-2 md:hidden">
-            <div 
-              v-for="(year, index) in timelineYears" 
-              :key="'dot-'+year"
-              class="w-2 h-2 rounded-full transition-all"
-              :class="activeCard === index ? 'bg-red-500 w-4' : 'bg-gray-500'"
-            ></div>
-          </div>
-        </div>
-        <!-- FLOATING WHATSAPP BUBBLE -->
-        <div class="fixed bottom-6 right-6 z-50">
-          <a 
-            href="https://wa.me/6282180655152npm?text=Halo,%20saya%20tertarik%20dengan%20produk%20Glatino"
-            target="_blank"
-            class="whatsapp-bubble group flex items-center justify-center w-16 h-16 bg-green-500 hover:bg-green-600 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110"
-          >
-            <!-- WhatsApp Icon -->
-            <svg 
-              class="w-8 h-8 text-white group-hover:scale-110 transition-transform duration-300" 
-              fill="currentColor" 
-              viewBox="0 0 24 24"
-            >
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.893 3.106"/>
-            </svg>
-            
-            <!-- Pulse Animation -->
-            <div class="absolute inset-0 rounded-full bg-green-400 animate-ping opacity-30"></div>
-          </a>
-          
-          <!-- Tooltip -->
-          <div class="tooltip absolute bottom-20 right-0 bg-black text-white px-3 py-2 rounded-lg text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
-            Chat with us on WhatsApp
-            <div class="absolute -bottom-1 right-4 w-2 h-2 bg-black transform rotate-45"></div>
+
+            <!-- Mobile indicators -->
+            <div class="flex justify-center mt-6 gap-2 md:hidden">
+              <div 
+                v-for="(year, index) in timelineYears" 
+                :key="'dot-'+year"
+                class="w-2 h-2 rounded-full transition-all"
+                :class="activeCard === index ? 'bg-red-600 w-4' : 'bg-gray-400'"
+              ></div>
+            </div>
           </div>
         </div>
-      </div>
+
     </div>
     <FooterComponent />
     </section>
@@ -252,6 +237,16 @@ import { ref, onMounted, onBeforeUnmount } from 'vue'
 // Import FooterComponent dari file yang sama di folder 'pages'
 import FooterComponent from '../components/footer.vue'
 
+//Import Gambar Our Journey
+import img2018 from '@/assets/index/2018.jpeg'
+import img2019 from '@/assets/index/2019.jpeg'
+import img2020 from '@/assets/index/2020.jpeg'
+import img2021 from '@/assets/index/2021.jpeg'
+import img2022 from '@/assets/index/2022.jpeg'
+import img2023 from '@/assets/index/2023.jpeg'
+import img2024 from '@/assets/index/2024.jpeg'
+import img2025 from '@/assets/index/2025.jpeg'
+
 // Timeline data
 const timelineYears = [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
 const timelineDescriptions = [
@@ -264,6 +259,12 @@ const timelineDescriptions = [
   "Melakukan diversifikasi usaha dan memperkuat sistem operasional melalui integrasi teknologi digital.",
   "Meluncurkan akun Instagram resmi sebagai langkah awal transformasi digital dan pendekatan ke pelanggan."
 ];
+
+const timelineImages = [
+  img2018, img2019, img2020, img2021,
+  img2022, img2023, img2024, img2025
+];
+
 
 // Drag functionality
 const isDragging = ref(false);
