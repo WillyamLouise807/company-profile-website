@@ -9,10 +9,10 @@
       ></div>
 
       <!-- Dark Blur Overlay -->
-      <div class="absolute inset-0 bg-black/40 backdrop-blur-sm z-[-2]"></div>
+      <div class="absolute inset-0 bg-black/20 backdrop-blur-sm z-[-2]"></div>
 
       <!-- White Gradient Fade (BOTTOM) -->
-      <div class="absolute bottom-0 left-0 right-0 h-48 z-[-1] bg-gradient-to-b from-transparent to-[#1A1A1A]"></div>
+      <div class="absolute bottom-0 left-0 right-0 h-48 z-[-1] bg-gradient-to-b from-transparent to-white"></div>
 
       <!-- Text Content -->
       <div class="relative z-10 px-4 max-w-4xl text-white">
@@ -28,34 +28,48 @@
       </div>
     </section>
 
-    <!-- Struktur Organisasi -->
-    <section id="structure-section" class="py-16 px-4 md:px-20 bg-gradient-to-b from-[#1A1A1A] to-black">
-      <div class="max-w-screen-xl mx-auto">
-        <img
-          src="@/assets/team/struktur-organisasi.png"
-          alt="Struktur Organisasi"
-          class="w-full h-auto object-contain rounded-3xl"
-        />
-      </div>
+   <!-- Struktur Organisasi -->
+    <section id="structure-section" class="py-16 px-4 md:px-20 bg-gradient-to-b from-transparent to-white">
+      <div class="bg-white text-black font-poppins py-16 px-4 sm:px-6 lg:px-12">
+    <div class="max-w-full mx-auto text-center">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-6">Struktur Organisasi</h2>
 
-      <!-- Penjelasan Warna -->
-      <div class="max-w-screen-xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 ">
-        <div
-          v-for="(item, index) in colorDescriptions"
-          :key="index"
-          class="flex items-start space-x-4"
-        >
-          <div
-            class="w-6 h-6 mt-1 rounded-sm flex-shrink-0"
-            :style="{ backgroundColor: item.color }"
-          ></div>
-          <div>
-            <p class="font-semibold text-gray-500">{{ item.title }}</p>
-            <p class="text-sm italic text-gray-100">{{ item.subtitle }}</p>
-          </div>
+      <img
+        :src="strukturOrganisasi"
+        alt="Struktur Organisasi"
+        class="rounded-xl shadow-md mx-auto w-full cursor-zoom-in bg-gray-100 p-4"
+        @click="toggleZoom"
+      />
+
+      <p class="text-sm text-gray-500 mt-3">Klik gambar untuk memperbesar</p>
+
+      <!-- Modal Zoom -->
+      <div
+        v-if="isZoomOpen"
+        class="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-4"
+        @click.self="toggleZoom"
+      >
+        <div class="bg-[#111] p-4 md:p-6 rounded-xl shadow-2xl max-w-5xl w-full">
+          <img :src="strukturOrganisasi" alt="Zoomed Struktur Organisasi" class="w-full object-contain" />
         </div>
       </div>
+    </div>
+  </div>
     </section>
+
+    <!-- 🔍 Zoom Modal -->
+    <div
+      v-if="isZoomOpen"
+      class="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-4"
+      @click.self="toggleZoom"
+    >
+      <img
+        src="@/assets/team/struktur-organisasi.png"
+        alt="Zoom Struktur Organisasi"
+        class="max-w-full max-h-full object-contain rounded-xl shadow-2xl"
+      />
+    </div>
+
     <FooterComponent />
   </div>
 </template>
@@ -63,8 +77,14 @@
 <script setup>
 // Import FooterComponent dari file yang sama di folder 'pages'
 import FooterComponent from '../components/footer.vue'
-
+import strukturOrganisasi from '@/assets/team/struktur-organisasi.png'
 import bgImage from '@/assets/team/bg-img-team.jpeg'
+
+const isZoomOpen = ref(false)
+const toggleZoom = () => {
+  isZoomOpen.value = !isZoomOpen.value
+}
+
 
 const scrollToStructure = () => {
   const el = document.getElementById('structure-section')

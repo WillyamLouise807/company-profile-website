@@ -178,7 +178,7 @@ const colors = [
   }
 ]
 
-const selectedColor = ref(colors[0].name)
+const selectedColor = ref(colors[0]?.name ?? '')
 const selectedSize = ref<'25' | '30'>('30')
 const sizes = ['25', '30'] as const
 

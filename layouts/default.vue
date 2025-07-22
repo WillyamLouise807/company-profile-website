@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-white text-black shadow-md fixed top-0 left-0 right-0 z-50 text-sm font-poppins border-b border-gray-200">
+  <header class="bg-white text-black fixed top-0 left-0 right-0 z-50 text-sm font-poppins">
     <div class="container mx-auto px-2 py-3 md:px-4 md:py-4 flex justify-between items-center">
       <!-- Logo -->
       <NuxtLink to="/" class="flex items-center space-x-2 min-w-0">

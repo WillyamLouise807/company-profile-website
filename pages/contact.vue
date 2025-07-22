@@ -138,7 +138,7 @@
               </div>
               <div>
                 <h4 class="text-lg font-semibold text-red-600">Alamat</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>Jurumudi Batuceper Km.19 No.37 Kota Tangerang, Banten 15000 Indonesia</p>
               </div>
             </div>
             <!-- Telepon -->
@@ -152,7 +152,7 @@
               </div>
               <div>
                 <h4 class="text-lg font-semibold text-red-600">Call Us</h4>
-                <p>+1 5589 55488 55</p>
+                <p>+62 213 8764 362</p>
               </div>
             </div>
             <!-- Email -->
@@ -185,7 +185,7 @@
               </div>
               <div>
                 <h4 class="text-lg font-semibold text-red-600">Email</h4>
-                <p>info@example.com</p>
+                <p>globalbestindojaya.gbj@gmail.com</p>
               </div>
             </div>
           </div>

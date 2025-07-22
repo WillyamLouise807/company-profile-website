@@ -1,27 +1,27 @@
 <template>
-  <div class="bg-black">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 py-10 mt-10 font-poppins text-white">
+  <div class="bg-white text-gray-800">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 py-10 mt-10 font-poppins">
       <!-- Breadcrumb -->
-      <nav class="text-xs text-gray-400 mb-6" aria-label="Breadcrumb">
+      <nav class="text-xs text-gray-500 mb-6" aria-label="Breadcrumb">
         <ol class="flex flex-wrap items-center gap-2">
           <li>
-            <RouterLink to="/product" class="hover:underline text-white font-medium">Product</RouterLink>
+            <RouterLink to="/product" class="hover:underline text-black font-medium">Product</RouterLink>
           </li>
           <li>/</li>
           <li>
-            <RouterLink to="/produk/door-lock" class="hover:underline text-white font-medium">Door Lock</RouterLink>
+            <RouterLink to="/produk/door-lock" class="hover:underline text-black font-medium">Door Lock</RouterLink>
           </li>
           <li>/</li>
-          <li class="text-white font-semibold">802</li>
+          <li class="text-black font-semibold">802</li>
         </ol>
       </nav>
 
-      <!-- Product Content -->
+      <!-- Konten -->
       <div class="flex flex-col-reverse md:grid md:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Door Lock 802</h1>
-          <p class="text-gray-400 text-base sm:text-lg mb-6 leading-relaxed">
+          <p class="text-gray-600 text-base sm:text-lg mb-6 leading-relaxed">
             Kunci pintu kamar mandi dari Glatino hadir dengan model knob yang simpel dan praktis. Sudah lengkap dalam satu set, produk ini siap langsung dipasang untuk memberikan kenyamanan dan privasi di area kamar mandi Anda.
           </p>
 
@@ -39,24 +39,24 @@
           <div class="mb-8">
             <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
             <div class="flex flex-wrap justify-center md:justify-start items-center gap-6">
-              <a href="https://www.tokopedia.com/glatino-official-store/glatino-km-802-lockstyle-set-kunci-pintu-untuk-kamar-mandi-bahan-aluminium-anti-karat-1731490150199035630?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
+              <a href="https://www.tokopedia.com/glatino-official-store/glatino-km-802-lockstyle-set-kunci-pintu-untuk-kamar-mandi-bahan-aluminium-anti-karat-1731490150199035630" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="@/assets/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
-              <a href="https://shopee.co.id/Glatino-KM-802-LockStyle-Set-Kunci-Pintu-Untuk-Kamar-Mandi-Bahan-Aluminium-Anti-Karat-i.1442585495.28973152615?sp_atk=b8c5e6a5-187c-4035-b325-32b3eb37dc8a&xptdk=b8c5e6a5-187c-4035-b325-32b3eb37dc8a" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
+              <a href="https://shopee.co.id/Glatino-KM-802-LockStyle-Set-Kunci-Pintu-Untuk-Kamar-Mandi-Bahan-Aluminium-Anti-Karat-i.1442585495.28973152615" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="@/assets/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>
           </div>
         </div>
 
-        <!-- Gambar & Pilihan -->
+        <!-- Gambar & Opsi -->
         <div class="space-y-6 flex flex-col items-center">
           <transition name="fade" mode="out-in">
             <img
               :key="selectedImage"
               :src="selectedImage"
               :alt="selectedColorLabel"
-              class="rounded-2xl shadow-lg w-full aspect-video object-contain bg-[#1a1a1a]"
+              class="rounded-2xl shadow-lg w-full aspect-video object-contain bg-gray-100"
             />
           </transition>
 
@@ -68,7 +68,7 @@
               class="group cursor-pointer text-center border rounded-xl p-3 transition hover:shadow-md"
               :class="{
                 'ring-2 ring-red-600 border-red-600': selectedColor === color.name,
-                'border-gray-700': selectedColor !== color.name
+                'border-gray-300': selectedColor !== color.name
               }"
               @click="selectColor(color)"
             >
@@ -83,7 +83,7 @@
           </div>
 
           <!-- Ukuran -->
-          <div class="flex gap-4 mt-4">
+          <div class="flex gap-4 mt-4 flex-wrap justify-center">
             <button
               v-for="size in sizes"
               :key="size"
@@ -92,7 +92,7 @@
                 'px-4 py-2 border rounded-lg text-sm font-semibold',
                 selectedSize === size
                   ? 'bg-red-600 text-white border-red-600'
-                  : 'bg-gray-800 text-gray-300 border-gray-600 hover:bg-gray-700'
+                  : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-100'
               ]"
             >
               Ukuran {{ size }}
@@ -102,7 +102,7 @@
       </div>
 
       <!-- Dimensi -->
-      <div class="mt-14 border-t border-gray-700 pt-10">
+      <div class="mt-14 border-t border-gray-200 pt-10">
         <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div
@@ -113,21 +113,21 @@
             <img
               :src="item.src"
               :alt="'Ukuran ' + item.label"
-              class="rounded-xl shadow-md max-w-md w-full bg-[#1a1a1a] p-4 cursor-zoom-in"
+              class="rounded-xl shadow-md max-w-md w-full bg-gray-100 p-4 cursor-zoom-in"
               @click="zoomImage(item.src)"
             />
-            <p class="text-sm text-gray-400 mt-2 text-center">*Ukuran {{ item.label }}</p>
+            <p class="text-sm text-gray-500 mt-2 text-center">*Ukuran {{ item.label }}</p>
           </div>
         </div>
       </div>
 
-      <!-- Zoom Modal -->
+      <!-- Zoom -->
       <div
         v-if="isZoomOpen"
         class="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
         @click.self="toggleZoom"
       >
-        <div class="bg-[#111] p-4 md:p-6 rounded-xl shadow-2xl max-w-4xl w-full">
+        <div class="bg-white p-4 md:p-6 rounded-xl shadow-2xl max-w-4xl w-full">
           <img
             :src="zoomedImage"
             alt="Zoomed Ukuran Door Lock 802"
@@ -154,49 +154,31 @@ import putih25 from '@/assets/product/door-lock/802/putih-25.png'
 import putih30 from '@/assets/product/door-lock/802/putih-30.png'
 
 // Gambar dimensi
-import ukuran25 from '@/assets/product/door-lock/802/ukuran-putih.png'
-import ukuran30 from '@/assets/product/door-lock/802/ukuran-putih.png'
+import ukuran25 from '@/assets/product/door-lock/802/ukuran-hitam.png'
+import ukuran30 from '@/assets/product/door-lock/802/ukuran-hitam.png'
 
-// Warna & gambar berdasarkan ukuran
 const colors = [
-  {
-    name: 'hitam',
-    label: 'Hitam',
-    hex: '#1f1f1f',
-    images: { '25': hitam25, '30': hitam30 }
-  },
-  {
-    name: 'beige',
-    label: 'Beige',
-    hex: '#8B4513',
-    images: { '25': beige25, '30': beige30 }
-  },
-  {
-    name: 'putih',
-    label: 'Putih',
-    hex: '#eeeeee',
-    images: { '25': putih25, '30': putih30 }
-  }
+  { name: 'hitam', label: 'Hitam', hex: '#1f1f1f', images: { '25': hitam25, '30': hitam30 } },
+  { name: 'beige', label: 'Beige', hex: '#8B4513', images: { '25': beige25, '30': beige30 } },
+  { name: 'putih', label: 'Putih', hex: '#eeeeee', images: { '25': putih25, '30': putih30 } }
 ]
 
-const selectedColor = ref(colors[0].name)
+const selectedColor = ref(colors[0]?.name ?? '')
 const selectedSize = ref<'25' | '30'>('30')
 const sizes = ['25', '30'] as const
 
 const selectedColorLabel = computed(() => {
   return colors.find(c => c.name === selectedColor.value)?.label || ''
 })
-
 const selectedImage = computed(() => {
   const color = colors.find(c => c.name === selectedColor.value)
   return color?.images[selectedSize.value] || ''
 })
-
 function selectColor(color: typeof colors[number]) {
   selectedColor.value = color.name
 }
 
-// Dimensi produk
+// Dimensi
 const ukuranImages = [
   { label: '25', src: ukuran25 },
   { label: '30', src: ukuran30 }

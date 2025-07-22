@@ -6,16 +6,15 @@
       class="absolute inset-0 bg-cover bg-center bg-no-repeat z-[-3]"
       :style="{ backgroundImage: `url(${bgImage})` }"
     ></div>
-    <div class="absolute inset-0 bg-black/40 backdrop-blur-sm z-[-2]"></div>
-    <div class="absolute bottom-0 left-0 right-0 h-48 z-[-1] bg-gradient-to-b from-transparent to-black"></div>
+    <div class="absolute inset-0 bg-white/70 backdrop-blur-md z-[-2]"></div>
+    <div class="absolute bottom-0 left-0 right-0 h-48 z-[-1] bg-gradient-to-b from-transparent to-white"></div>
 
     <!-- Container -->
     <div class="container mx-auto h-full px-4 relative z-10 flex flex-col">
-
-      <!-- Main Content centered vertically -->
-      <div class="flex-grow flex items-center justify-center">
-        <div class="text-center max-w-2xl mx-auto">
-          <h1 class="text-2xl sm:text-3xl font-semibold text-white leading-relaxed mb-6">
+      <!-- Main Content -->
+      <div class="flex-grow flex items-center justify-center text-center">
+        <div class="max-w-2xl mx-auto text-red-800">
+          <h1 class="text-2xl sm:text-3xl font-semibold leading-relaxed mb-6">
             Produk-produk Glatino dirancang untuk menghadirkan keamanan dan kenyamanan maksimal bagi rumah dan bangunan modern.
           </h1>
 
@@ -28,7 +27,8 @@
 
           <button
             @click="scrollToProduct"
-            class="bg-white text-black px-6 py-3 rounded-full hover:bg-gray-300 transition">
+            class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full transition"
+          >
             See More
           </button>
         </div>
@@ -38,23 +38,24 @@
 
   <!-- Product Catalog -->
   <div id="product-catalog">
-    <section class="bg-black text-white py-16 px-4 sm:px-6 lg:px-12 font-poppins">
-      <div class="max-w-7xl mx-auto">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    <section class="bg-white text-black py-16 px-4 sm:px-6 lg:px-12 font-poppins">
+      <div class="max-w-full mx-auto">
+        <h2 class="text-2xl font-bold mb-10 text-center text-red-700">Kategori Produk</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <div
             v-for="(product, index) in products"
             :key="index"
-            class="bg-[#1A1A1A] rounded-xl overflow-hidden shadow-md flex flex-col items-center pb-6 transition transform hover:scale-[1.02]"
+            class="bg-white rounded-xl border border-gray-200 shadow-sm flex flex-col items-center pb-6 transition transform hover:scale-[1.02]"
           >
-            <img :src="product.logo" alt="Logo" class="h-20 w-auto mt-4 mb-2" />
+            <img :src="product.logo" alt="Logo" class="h-14 mt-4 mb-2" />
             <div class="w-full px-4">
-              <img :src="product.image" :alt="product.title" class="w-full max-h-64 object-contain mx-auto" />
+              <img :src="product.image" :alt="product.title" class="w-full max-h-60 object-contain mx-auto" />
             </div>
             <div class="text-center px-4 mt-4">
-              <h3 class="text-lg text-white font-bold">{{ product.title }}</h3>
-              <p class="text-sm text-white">{{ product.description }}</p>
+              <h3 class="text-lg font-bold text-red-700">{{ product.title }}</h3>
+              <p class="text-sm text-gray-600">{{ product.description }}</p>
 
-              <!-- 🟢 Link ke halaman detail -->
               <NuxtLink
                 :to="'/produk/' + product.slug"
                 class="mt-4 bg-red-600 text-white text-sm px-5 py-2 rounded-full hover:bg-red-800 transition inline-block"
@@ -87,7 +88,6 @@ const products = [
     slug: 'door-lock',
     image: new URL('@/assets/product/Door-Lock.png', import.meta.url).href,
     logo: new URL('@/assets/product/GLATINO - RED - LOGO.png', import.meta.url).href,
-    route: '/produk/door-lock',
   },
   {
     title: 'Mortise Lock',

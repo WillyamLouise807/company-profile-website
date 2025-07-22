@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-white text-black px-6 py-10 lg:px-20 font-poppins">
+  <footer class="bg-white border-t border-red-700 text-black px-6 py-10 lg:px-20 font-poppins">
     <div class="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
       
       <!-- Company Info -->
@@ -55,13 +55,13 @@
       <div>
         <h3 class="text-lg font-semibold text-red-600 mb-4">Contact Us</h3>
         <p>Jurumudi Batuceper Km.19 No.37<br />Kota Tangerang, Banten 15000<br />Indonesia</p>
-        <p class="mt-2"><strong>Phone:</strong> +1 5589 55488 55</p>
-        <p><strong>Email:</strong> info@example.com</p>
+        <p class="mt-2"><strong>Phone:</strong> +62 213 8764 362</p>
+        <p><strong>Email:</strong> globalbestindojaya.gbj@gmail.com</p>
       </div>
     </div>
   </footer>
 <!-- Footer Bottom -->
-  <div class=" border-t border-gray-700 py-6 text-sm text-center bg-red-700 text-white font-poppins">
+  <div class="border-t border-gray-700 py-6 text-sm text-center bg-red-700 text-white font-poppins">
     <p>© Copyright <strong>PT Global Bestindo Jaya</strong> All Rights Reserved</p>
   </div>
 

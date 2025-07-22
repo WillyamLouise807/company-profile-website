@@ -1,18 +1,18 @@
 <template>
-  <div class="bg-black">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 py-10 mt-10 font-poppins text-white">
+  <div class="bg-white">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 py-10 mt-10 font-poppins text-black">
       <!-- Breadcrumb -->
       <nav class="text-xs text-gray-400 mb-6" aria-label="Breadcrumb">
         <ol class="flex flex-wrap items-center gap-2">
           <li>
-            <RouterLink to="/product" class="hover:underline text-white font-medium">Product</RouterLink>
+            <RouterLink to="/product" class="hover:underline text-black font-medium">Product</RouterLink>
           </li>
           <li>/</li>
           <li>
-            <RouterLink to="/produk/mortise-lock" class="hover:underline text-white font-medium">Mortise Lock</RouterLink>
+            <RouterLink to="/produk/mortise-lock" class="hover:underline text-black font-medium">Mortise Lock</RouterLink>
           </li>
           <li>/</li>
-          <li class="text-white font-semibold">910</li>
+          <li class="text-black font-semibold">910</li>
         </ol>
       </nav>
 
@@ -21,7 +21,7 @@
         <!-- Deskripsi -->
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Mortise Lock 910</h1>
-          <p class="text-gray-400 text-base sm:text-lg mb-6 leading-relaxed">
+          <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
             Mortise lock Glatino dirancang untuk memberikan keamanan maksimal dengan tampilan yang tetap rapi dan modern. Menggunakan bahan aluminium premium yang kokoh, produk ini cocok digunakan untuk berbagai jenis pintu dengan kebutuhan penguncian yang presisi dan tahan lama.
           </p>
 
@@ -52,7 +52,7 @@
           <img
             :src="productImage"
             alt="Mortise Lock 910"
-            class="rounded-2xl shadow-lg w-full aspect-video object-contain bg-[#1a1a1a]"
+            class="rounded-2xl shadow-lg w-full aspect-video object-contain bg-white"
           />
         </div>
       </div>
@@ -64,20 +64,20 @@
           <img
             :src="ukuranImage"
             alt="Ukuran Door Lock 910"
-            class="rounded-xl shadow-md max-w-xl w-full bg-[#1a1a1a] p-4 cursor-zoom-in"
+            class="rounded-xl shadow-md max-w-xl w-full bg-white p-4 cursor-zoom-in"
             @click="toggleZoom"
           />
-          <p class="text-sm text-gray-400 mt-4 text-center">*Gambar hanya ilustrasi ukuran secara proporsional</p>
+          <p class="text-sm text-gray-500 mt-4 text-center">*Gambar hanya ilustrasi ukuran secara proporsional</p>
         </div>
       </div>
 
       <!-- Zoom Modal -->
       <div
         v-if="isZoomOpen"
-        class="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
+        class="fixed inset-0 bg-white bg-opacity-90 z-50 flex items-center justify-center p-4"
         @click.self="toggleZoom"
       >
-        <div class="bg-[#111] p-4 md:p-6 rounded-xl shadow-2xl max-w-4xl w-full">
+        <div class="bg-white p-4 md:p-6 rounded-xl shadow-2xl max-w-4xl w-full">
           <img
             :src="ukuranImage"
             alt="Zoomed Ukuran Door Lock 910"
@@ -96,7 +96,7 @@ import { RouterLink } from 'vue-router'
 import { ref } from 'vue'
 
 import hitam from '@/assets/product/mortise-lock/910/hitam.png'
-import ukuran from '@/assets/product/mortise-lock/910/ukuran-putih.png'
+import ukuran from '@/assets/product/mortise-lock/910/ukuran-hitam.png'
 
 const productImage = hitam
 const ukuranImage = ukuran
