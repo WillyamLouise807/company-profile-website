@@ -1,18 +1,18 @@
 <template>
-  <div class="bg-black">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 py-10 mt-10 font-poppins text-white">
+  <div class="bg-white">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 py-10 mt-10 font-poppins text-black">
       <!-- Breadcrumb -->
       <nav class="text-xs text-gray-400 mb-6" aria-label="Breadcrumb">
         <ol class="flex flex-wrap items-center gap-2">
           <li>
-            <RouterLink to="/product" class="hover:underline text-white font-medium">Product</RouterLink>
+            <RouterLink to="/product" class="hover:underline text-black font-medium">Product</RouterLink>
           </li>
           <li>/</li>
           <li>
-            <RouterLink to="/produk/floor-hinge" class="hover:underline text-white font-medium">Floor Hinge</RouterLink>
+            <RouterLink to="/produk/floor-hinge" class="hover:underline text-black font-medium">Floor Hinge</RouterLink>
           </li>
           <li>/</li>
-          <li class="text-white font-semibold">V53</li>
+          <li class="text-black font-semibold">V53</li>
         </ol>
       </nav>
 
@@ -54,7 +54,7 @@
               :key="selectedImage"
               :src="selectedImage"
               :alt="selectedViewLabel"
-              class="rounded-2xl shadow-lg w-full aspect-video object-contain bg-[#1a1a1a]"
+              class="rounded-2xl shadow-lg w-full aspect-video object-contain bg-white"
             />
           </transition>
 
@@ -70,7 +70,7 @@
               }"
               @click="selectView(view)"
             >
-              <div class="text-white text-sm font-semibold capitalize">
+              <div class="text-black text-sm font-semibold capitalize">
                 {{ view.label }}
               </div>
             </div>
@@ -85,10 +85,10 @@
           <img
             :src="ukuranImage"
             alt="Ukuran Floor Hinge v53"
-            class="rounded-xl shadow-md max-w-xl w-full bg-[#1a1a1a] p-4 cursor-zoom-in"
+            class="rounded-xl shadow-md max-w-xl w-full bg-white p-4 cursor-zoom-in"
             @click="toggleZoom"
           />
-          <p class="text-sm text-gray-400 mt-4 text-center">*Gambar hanya ilustrasi ukuran secara proporsional</p>
+          <p class="text-sm text-gray-5 00 mt-4 text-center">*Gambar hanya ilustrasi ukuran secara proporsional</p>
         </div>
       </div>
 
@@ -98,7 +98,7 @@
         class="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
         @click.self="toggleZoom"
       >
-        <div class="bg-[#111] p-4 md:p-6 rounded-xl shadow-2xl max-w-4xl w-full">
+        <div class="bg-white p-4 md:p-6 rounded-xl shadow-2xl max-w-4xl w-full">
           <img
             :src="ukuranImage"
             alt="Zoomed Ukuran Floor Hinge v53"
@@ -118,15 +118,15 @@ import { ref, computed } from 'vue'
 
 import luar from '@/assets/product/floor-hinge/v53/luar.png'
 import dalam from '@/assets/product/floor-hinge/v53/dalam.png'
-import ukuran from '@/assets/product/floor-hinge/v53/ukuran-putih.png'
+import ukuran from '@/assets/product/floor-hinge/v53/ukuran-hitam.png'
 
 const views = [
   { name: 'depan', label: 'Tampak Depan', image: luar },
   { name: 'belakang', label: 'Tampak Belakang', image: dalam }
 ]
 
-const selectedView = ref(views[0].name)
-const selectedImage = ref(views[0].image)
+const selectedView = ref(views[0]!.name)
+const selectedImage = ref(views[0]!.image)
 const ukuranImage = ukuran
 
 const selectedViewLabel = computed(() => {

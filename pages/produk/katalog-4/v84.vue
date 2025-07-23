@@ -125,8 +125,8 @@ const views = [
   { name: 'belakang', label: 'Tampak Belakang', image: dalam }
 ]
 
-const selectedView = ref(views[0].name)
-const selectedImage = ref(views[0].image)
+const selectedView = ref(views[0]!.name)
+const selectedImage = ref(views[0]!.image)
 const ukuranImage = ukuran
 
 const selectedViewLabel = computed(() => {

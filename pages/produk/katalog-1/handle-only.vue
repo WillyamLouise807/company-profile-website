@@ -122,10 +122,10 @@ import { RouterLink } from 'vue-router'
 import { ref, computed } from 'vue'
 
 import snss from '@/assets/product/door-lock/handle-only/sn-ss.png'
-import ukuran from '@/assets/product/door-lock/handle-only/ukuran-putih.png'
+import ukuran from '@/assets/product/door-lock/handle-only/ukuran-hitam.png'
 
 const colors = [
-  { name: 'sn-ss', label: 'Stainless Steel / Satin Nickel', hex: '#bdc3c7', image: snss }
+  { name: 'sn-ss', label: 'SN / SS', hex: '#bdc3c7', image: snss }
 ]
 
 const selectedColor = ref(colors[0]?.name ?? '')

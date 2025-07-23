@@ -74,7 +74,7 @@
       <!-- Zoom Modal -->
       <div
         v-if="isZoomOpen"
-        class="fixed inset-0 bg-white bg-opacity-90 z-50 flex items-center justify-center p-4"
+        class="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
         @click.self="toggleZoom"
       >
         <div class="bg-white p-4 md:p-6 rounded-xl shadow-2xl max-w-4xl w-full">

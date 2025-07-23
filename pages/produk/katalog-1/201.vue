@@ -135,7 +135,7 @@ const colors = [
   { name: 'hitam', label: 'Hitam', hex: '#1f1f1f', image: hitam },
   { name: 'cokelat', label: 'Cokelat', hex: '#8B4513', image: cokelat },
   { name: 'putih', label: 'Putih', hex: '#eeeeee', image: putih },
-  { name: 'sn-ss', label: 'Stainless Steel / Satin Nickel', hex: '#bdc3c7', image: snss }
+  { name: 'sn-ss', label: 'SN / SS', hex: '#bdc3c7', image: snss }
 ]
 
 const selectedColor = ref(colors[0]?.name ?? '')

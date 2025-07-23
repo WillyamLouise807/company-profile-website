@@ -87,6 +87,34 @@ const pullHandleProducts = [
     slug: "handle-p",
     image: new URL('@/assets/product/pull-handle/handle-p.png', import.meta.url).href
   },
+  {
+    id: 3,
+    name: "Handle D",
+    description: "Handle tarik model D bahan aluminium berkualitas",
+    slug: "handle-d",
+    image: new URL('@/assets/product/pull-handle/handle-d.png', import.meta.url).href
+  },
+  {
+    id: 4,
+    name: "Handle S",
+    description: "Handle tarik model D bahan aluminium berkualitas",
+    slug: "handle-s",
+    image: new URL('@/assets/product/pull-handle/handle-d.png', import.meta.url).href
+  },
+  {
+    id: 5,
+    name: "Handle B",
+    description: "Handle tarik model D bahan aluminium berkualitas",
+    slug: "handle-b",
+    image: new URL('@/assets/product/pull-handle/handle-d.png', import.meta.url).href
+  },
+  {
+    id: 6,
+    name: "Handle H",
+    description: "Handle tarik model D bahan aluminium berkualitas",
+    slug: "handle-h",
+    image: new URL('@/assets/product/pull-handle/handle-d.png', import.meta.url).href
+  },
   // Tambahkan kembali produk lainnya di sini jika dibutuhkan.
 ]
 </script>

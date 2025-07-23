@@ -96,13 +96,13 @@ const products = [
     image: new URL('@/assets/product/mortise-lock.png', import.meta.url).href,
     logo: new URL('@/assets/product/GLATINO - RED - LOGO.png', import.meta.url).href,
   },
-  // {
-  //   title: 'Cylinder',
-  //   description: 'View all Cylinder products',
-  //   slug: 'cylinder',
-  //   image: new URL('@/assets/product/cylinder.png', import.meta.url).href,
-  //   logo: new URL('@/assets/product/GLATINO - RED - LOGO.png', import.meta.url).href,
-  // },
+  {
+    title: 'Cylinder',
+    description: 'View all Cylinder products',
+    slug: 'cylinder',
+    image: new URL('@/assets/product/cylinder.png', import.meta.url).href,
+    logo: new URL('@/assets/product/GLATINO - RED - LOGO.png', import.meta.url).href,
+  },
   // {
   //   title: 'Floor Hinge',
   //   description: 'View all Floor Hinge products',
