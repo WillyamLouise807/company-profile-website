@@ -114,7 +114,6 @@ import { ref, computed } from 'vue'
 
 import beige from '@/assets/product/window-lock/crescent-lock/beige.png'
 import cokelat from '@/assets/product/window-lock/crescent-lock/cokelat.png'
-import cream from '@/assets/product/window-lock/crescent-lock/cream.png'
 import hitam from '@/assets/product/window-lock/crescent-lock/hitam.png'
 import putih from '@/assets/product/window-lock/crescent-lock/putih.png'
 import silver from '@/assets/product/window-lock/crescent-lock/silver.png'
@@ -123,7 +122,6 @@ import ukuran from '@/assets/product/window-lock/crescent-lock/ukuran-hitam.png'
 const colors = [
   { name: 'beige', label: 'Beige', hex: '#f5f5dc', image: beige },
   { name: 'cokelat', label: 'Cokelat', hex: '#8b4513', image: cokelat },
-  { name: 'cream', label: 'Cream', hex: '#fffdd0', image: cream },
   { name: 'hitam', label: 'Hitam', hex: '#1f1f1f', image: hitam },
   { name: 'putih', label: 'Putih', hex: '#ffffff', image: putih },
   { name: 'silver', label: 'Silver', hex: '#cccccc', image: silver }
