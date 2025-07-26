@@ -184,15 +184,15 @@ function toggleZoom() {
 }
 
 const katalogLinks = [
-  { slug: '202', name: '202', image: new URL('@/assets/product/door-lock/202.png', import.meta.url).href },
-  { slug: '820', name: '820', image: new URL('@/assets/product/door-lock/820.png', import.meta.url).href },
-  { slug: '839', name: '839', image: new URL('@/assets/product/door-lock/839.png', import.meta.url).href },
-  { slug: '939', name: '939', image: new URL('@/assets/product/door-lock/939.png', import.meta.url).href },
-  { slug: '989', name: '989', image: new URL('@/assets/product/door-lock/989.png', import.meta.url).href },
+  { slug: '202', name: 'Set 202', image: new URL('@/assets/product/door-lock/202.png', import.meta.url).href },
+  { slug: '820', name: 'Set 820', image: new URL('@/assets/product/door-lock/820.png', import.meta.url).href },
+  { slug: '839', name: 'Set 839', image: new URL('@/assets/product/door-lock/839.png', import.meta.url).href },
+  { slug: '939', name: 'Set 939', image: new URL('@/assets/product/door-lock/939.png', import.meta.url).href },
+  { slug: '989', name: 'Set 989', image: new URL('@/assets/product/door-lock/989.png', import.meta.url).href },
   { slug: 'handle-only', name: 'Handle Only', image: new URL('@/assets/product/door-lock/handle-only.png', import.meta.url).href },
-  { slug: 'expanda', name: 'Expanda', image: new URL('@/assets/product/door-lock/expanda.png', import.meta.url).href },
-  { slug: '802', name: '802', image: new URL('@/assets/product/door-lock/802.png', import.meta.url).href },
-  { slug: '902', name: '902', image: new URL('@/assets/product/door-lock/902.png', import.meta.url).href },
+  { slug: 'expanda', name: 'Set Expanda', image: new URL('@/assets/product/door-lock/expanda.png', import.meta.url).href },
+  { slug: '802', name: 'Set 802', image: new URL('@/assets/product/door-lock/802.png', import.meta.url).href },
+  { slug: '902', name: 'Set 902', image: new URL('@/assets/product/door-lock/902.png', import.meta.url).href },
 ];
 </script>
 
