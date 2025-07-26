@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 py-10 mt-10 font-poppins text-black">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 py-10 mt-10 font-poppins text-black">
       <!-- Breadcrumb -->
       <nav class="text-xs text-gray-400 mb-6" aria-label="Breadcrumb">
         <ol class="flex flex-wrap items-center gap-2">
@@ -28,11 +28,8 @@
           <div class="mb-6 space-y-1">
             <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
             <p class="capitalize text-sm sm:text-base">Warna: {{ selectedColorLabel }}</p>
-            <p class="capitalize text-sm sm:text-base">Ukuran: 25 x 150 mm</p>
             <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
             <p class="capitalize text-sm sm:text-base">Material: Aluminium Finishing Stainless</p>
-            <p class="capitalize text-sm sm:text-base">Ukuran: 200 x 500 mm</p>
-            <p class="capitalize text-sm sm:text-base">Ukuran: 150 x 450 mm</p>
             <p class="capitalize text-sm sm:text-base">Kelengkapan: 1 pasang handle & sekrup pemasangan</p>
           </div>
 

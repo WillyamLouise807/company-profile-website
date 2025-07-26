@@ -15,47 +15,52 @@
       <div class="absolute bottom-0 left-0 right-0 h-48 z-[-1] bg-gradient-to-b from-transparent to-white"></div>
 
       <!-- Text Content -->
-      <div class="relative z-10 px-4 max-w-4xl text-white">
-        <h1 class="text-xl sm:text-2xl md:text-3xl font-semibold leading-relaxed mb-6">
-          Di balik setiap produk dan layanan yang kami hadirkan, terdapat tim berdedikasi yang bekerja dengan integritas, keahlian, dan semangat untuk terus berkembang.
-        </h1>
-        <button
-          @click="scrollToStructure"
-          class="bg-white text-black px-6 py-3 rounded-full hover:bg-gray-300 transition"
-        >
-          See More
-        </button>
-      </div>
+      <FadeInOnScroll direction="up">
+        <div class="relative z-10 px-4 max-w-4xl text-white">
+          <h1 class="text-xl sm:text-2xl md:text-3xl font-semibold leading-relaxed mb-6">
+            Di balik setiap produk dan layanan yang kami hadirkan, terdapat tim berdedikasi yang bekerja dengan integritas, keahlian, dan semangat untuk terus berkembang.
+          </h1>
+          <button
+            @click="scrollToStructure"
+            class="bg-white text-black px-6 py-3 rounded-full hover:bg-gray-300 transition"
+          >
+            See More
+          </button>
+        </div>
+      </FadeInOnScroll>
     </section>
 
    <!-- Struktur Organisasi -->
-    <section id="structure-section" class="py-16 px-4 md:px-20 bg-gradient-to-b from-transparent to-white">
-      <div class="bg-white text-black font-poppins py-16 px-4 sm:px-6 lg:px-12">
-    <div class="max-w-full mx-auto text-center">
-      <h2 class="text-2xl sm:text-3xl font-bold mb-6">Struktur Organisasi</h2>
+    <FadeInOnScroll direction="down">
+      <section id="structure-section" class="py-16 px-4 md:px-20 bg-gradient-to-b from-transparent to-white">
+        <div class="bg-white text-black font-poppins py-16 px-4 sm:px-6 lg:px-12">
+          <div class="max-w-full mx-auto text-center">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-6">Struktur Organisasi</h2>
 
-      <img
-        :src="strukturOrganisasi"
-        alt="Struktur Organisasi"
-        class="rounded-xl shadow-md mx-auto w-full cursor-zoom-in bg-gray-100 p-4"
-        @click="toggleZoom"
-      />
+            <img
+              :src="strukturOrganisasi"
+              alt="Struktur Organisasi"
+              class="rounded-xl shadow-md mx-auto w-full cursor-zoom-in bg-gray-100 p-4"
+              @click="toggleZoom"
+            />
 
-      <p class="text-sm text-gray-500 mt-3">Klik gambar untuk memperbesar</p>
+            <p class="text-sm text-gray-500 mt-3">Klik gambar untuk memperbesar</p>
 
-      <!-- Modal Zoom -->
-      <div
-        v-if="isZoomOpen"
-        class="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-4"
-        @click.self="toggleZoom"
-      >
-        <div class="bg-[#111] p-4 md:p-6 rounded-xl shadow-2xl max-w-5xl w-full">
-          <img :src="strukturOrganisasi" alt="Zoomed Struktur Organisasi" class="w-full object-contain" />
+            <!-- Modal Zoom -->
+            <div
+              v-if="isZoomOpen"
+              class="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-4"
+              @click.self="toggleZoom"
+            >
+              <div class="bg-[#111] p-4 md:p-6 rounded-xl shadow-2xl max-w-5xl w-full">
+                <img :src="strukturOrganisasi" alt="Zoomed Struktur Organisasi" class="w-full object-contain" />
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-    </section>
+      </section>
+    </FadeInOnScroll>
+    
 
     <!-- 🔍 Zoom Modal -->
     <div
@@ -68,6 +73,24 @@
         alt="Zoom Struktur Organisasi"
         class="max-w-full max-h-full object-contain rounded-xl shadow-2xl"
       />
+    </div>
+
+    <!-- Penjelasan Warna -->
+    <div class="max-w-screen-2xl mx-auto my-12 px-4 sm:px-8 grid grid-cols-1 md:grid-cols-2 gap-6 ">
+      <div
+        v-for="(item, index) in colorDescriptions"
+        :key="index"
+        class="flex items-start space-x-4"
+      >
+        <div
+          class="w-6 h-6 mt-1 rounded-sm flex-shrink-0"
+          :style="{ backgroundColor: item.color }"
+        ></div>
+        <div>
+          <p class="font-semibold text-gray-700">{{ item.title }}</p>
+          <p class="text-sm italic text-gray-600">{{ item.subtitle }}</p>
+        </div>
+      </div>
     </div>
 
     <FooterComponent />
@@ -85,11 +108,36 @@ const toggleZoom = () => {
   isZoomOpen.value = !isZoomOpen.value
 }
 
-
 const scrollToStructure = () => {
-  const el = document.getElementById('structure-section')
-  el?.scrollIntoView({ behavior: 'smooth' })
-}
+  const target = document.getElementById('structure-section');
+  if (!target) return;
+
+  const startY = window.scrollY;
+  const endY = target.getBoundingClientRect().top + window.scrollY;
+  const duration = 1500; // ms
+  const startTime = performance.now();
+
+  const animateScroll = (currentTime) => {
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    const easeInOut = progress < 0.5
+      ? 2 * progress * progress
+      : -1 + (4 - 2 * progress) * progress;
+
+    window.scrollTo(0, startY + (endY - startY) * easeInOut);
+
+    if (elapsed < duration) {
+      requestAnimationFrame(animateScroll);
+    }
+  };
+
+  requestAnimationFrame(animateScroll);
+};
+
+// const scrollToStructure = () => {
+//   const el = document.getElementById('structure-section')
+//   el?.scrollIntoView({ behavior: 'smooth' })
+// }
 
 const colorDescriptions = [
   {

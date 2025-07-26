@@ -1,18 +1,18 @@
 <template>
-  <div class="bg-black">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 py-10 mt-10 font-poppins text-white">
+  <div class="bg-white">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 py-10 mt-10 font-poppins text-black">
       <!-- Breadcrumb -->
       <nav class="text-xs text-gray-400 mb-6" aria-label="Breadcrumb">
         <ol class="flex flex-wrap items-center gap-2">
           <li>
-            <RouterLink to="/product" class="hover:underline text-white font-medium">Product</RouterLink>
+            <RouterLink to="/product" class="hover:underline text-black font-medium">Product</RouterLink>
           </li>
           <li>/</li>
           <li>
-            <RouterLink to="/produk/floor-hinge" class="hover:underline text-white font-medium">Floor Hinge</RouterLink>
+            <RouterLink to="/produk/floor-hinge" class="hover:underline text-black font-medium">Floor Hinge</RouterLink>
           </li>
           <li>/</li>
-          <li class="text-white font-semibold">V84</li>
+          <li class="text-black font-semibold">V84</li>
         </ol>
       </nav>
 
@@ -21,7 +21,7 @@
         <!-- Deskripsi -->
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Floor Hinge V84</h1>
-          <p class="text-gray-400 text-base sm:text-lg mb-6 leading-relaxed">
+          <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
             Engsel lantai Glatino seri V84 hadir sebagai solusi ideal untuk pintu berat yang membutuhkan pergerakan stabil dan aman. Dengan desain komplit dalam satu set, produk ini memudahkan pemasangan serta memberikan daya tahan dan keamanan ekstra pada sistem buka tutup pintu.
           </p>
 
@@ -30,7 +30,7 @@
             <p class="capitalize text-sm sm:text-base">Tampilan: {{ selectedViewLabel }}</p>
             <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
             <p class="capitalize text-sm sm:text-base">Jenis: Floor Hinge (Engsel Lantai)</p>
-            <p class="capitalize text-sm sm:text-base">Tipe: V84 & V84</p>
+            <p class="capitalize text-sm sm:text-base">Tipe: V84</p>
           </div>
 
           <!-- Marketplace -->
@@ -54,7 +54,7 @@
               :key="selectedImage"
               :src="selectedImage"
               :alt="selectedViewLabel"
-              class="rounded-2xl shadow-lg w-full aspect-video object-contain bg-[#1a1a1a]"
+              class="rounded-2xl shadow-lg w-full aspect-video object-contain bg-white"
             />
           </transition>
 
@@ -70,7 +70,7 @@
               }"
               @click="selectView(view)"
             >
-              <div class="text-white text-sm font-semibold capitalize">
+              <div class="text-black text-sm font-semibold capitalize">
                 {{ view.label }}
               </div>
             </div>
@@ -85,10 +85,10 @@
           <img
             :src="ukuranImage"
             alt="Ukuran Floor Hinge v84"
-            class="rounded-xl shadow-md max-w-xl w-full bg-[#1a1a1a] p-4 cursor-zoom-in"
+            class="rounded-xl shadow-md max-w-xl w-full bg-white p-4 cursor-zoom-in"
             @click="toggleZoom"
           />
-          <p class="text-sm text-gray-400 mt-4 text-center">*Gambar hanya ilustrasi ukuran secara proporsional</p>
+          <p class="text-sm text-gray-500 mt-4 text-center">*Gambar hanya ilustrasi ukuran secara proporsional</p>
         </div>
       </div>
 
@@ -98,7 +98,7 @@
         class="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
         @click.self="toggleZoom"
       >
-        <div class="bg-[#111] p-4 md:p-6 rounded-xl shadow-2xl max-w-4xl w-full">
+        <div class="bg-white p-4 md:p-6 rounded-xl shadow-2xl max-w-4xl w-full">
           <img
             :src="ukuranImage"
             alt="Zoomed Ukuran Floor Hinge v84"
@@ -118,7 +118,7 @@ import { ref, computed } from 'vue'
 
 import luar from '@/assets/product/floor-hinge/v84/luar.png'
 import dalam from '@/assets/product/floor-hinge/v84/dalam.png'
-import ukuran from '@/assets/product/floor-hinge/v84/ukuran-putih.png'
+import ukuran from '@/assets/product/floor-hinge/v84/ukuran-hitam.png'
 
 const views = [
   { name: 'depan', label: 'Tampak Depan', image: luar },

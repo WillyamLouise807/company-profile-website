@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 py-10 mt-10 font-poppins text-black">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 py-10 mt-10 font-poppins text-black">
       <!-- Breadcrumb -->
       <nav class="text-xs text-gray-400 mb-6" aria-label="Breadcrumb">
         <ol class="flex flex-wrap items-center gap-2">
@@ -21,7 +21,7 @@
         <!-- Deskripsi -->
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Cylinder 65155</h1>
-          <p class="text-gray-400 text-base sm:text-lg mb-6 leading-relaxed">
+          <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
             Cylinder Lock Tabung dari Glatino dirancang untuk memberikan perlindungan optimal dengan fitur keamanan tinggi seperti anti-pick dan anti-drill. Terbuat dari aluminium premium dengan finishing chrome, produk ini cocok untuk berbagai kebutuhan penguncian, baik rumah tinggal maupun ruang komersial.
           </p>
 
@@ -70,7 +70,7 @@
             class="rounded-xl shadow-md max-w-xl w-full bg-white p-4 cursor-zoom-in"
             @click="toggleZoom"
           />
-          <p class="text-sm text-gray-400 mt-4 text-center">*Gambar hanya ilustrasi ukuran secara proporsional</p>
+          <p class="text-sm text-gray-500 mt-4 text-center">*Gambar hanya ilustrasi ukuran secara proporsional</p>
         </div>
       </div>
 

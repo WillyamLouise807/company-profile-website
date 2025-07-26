@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 py-10 mt-10 font-poppins text-black">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 py-10 mt-10 font-poppins text-black">
       <!-- Breadcrumb -->
       <nav class="text-xs text-gray-500 mb-6" aria-label="Breadcrumb">
         <ol class="flex flex-wrap items-center gap-2">
@@ -115,8 +115,35 @@
           />
         </div>
       </div>
+
+      <!-- Link Produk Lain di Katalog Sama -->
+      <div class="border-t border-gray-200 my-20 py-8">
+        <h2 class="text-2xl font-bold text-center mb-8 text-red-700">SEE OUR OTHER PRODUCT IN THIS CATALOG</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 px-4 sm:px-6 lg:px-8">
+          <NuxtLink
+            v-for="item in katalogLinks"
+            :key="item.slug"
+            :to="`/produk/katalog-1/${item.slug}`"
+            class="group block bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition overflow-hidden"
+          >
+            <img
+              :src="item.image"
+              :alt="item.name"
+              class="w-full h-32 object-contain mx-auto transition-transform duration-300 group-hover:scale-105 bg-white"
+            />
+            <div class="bg-gray-50 text-center py-4 px-2">
+              <div class="text-red-600 font-semibold text-sm">{{ item.name }}</div>
+              
+            </div>
+          </NuxtLink>
+
+        </div>
+      </div>
+
     </div>
   </div>
+  
+  
   <FooterComponent />
 </template>
 
@@ -155,6 +182,18 @@ const isZoomOpen = ref(false)
 function toggleZoom() {
   isZoomOpen.value = !isZoomOpen.value
 }
+
+const katalogLinks = [
+  { slug: '202', name: '202', image: new URL('@/assets/product/door-lock/202.png', import.meta.url).href },
+  { slug: '820', name: '820', image: new URL('@/assets/product/door-lock/820.png', import.meta.url).href },
+  { slug: '839', name: '839', image: new URL('@/assets/product/door-lock/839.png', import.meta.url).href },
+  { slug: '939', name: '939', image: new URL('@/assets/product/door-lock/939.png', import.meta.url).href },
+  { slug: '989', name: '989', image: new URL('@/assets/product/door-lock/989.png', import.meta.url).href },
+  { slug: 'handle-only', name: 'Handle Only', image: new URL('@/assets/product/door-lock/handle-only.png', import.meta.url).href },
+  { slug: 'expanda', name: 'Expanda', image: new URL('@/assets/product/door-lock/expanda.png', import.meta.url).href },
+  { slug: '802', name: '802', image: new URL('@/assets/product/door-lock/802.png', import.meta.url).href },
+  { slug: '902', name: '902', image: new URL('@/assets/product/door-lock/902.png', import.meta.url).href },
+];
 </script>
 
 <style scoped>

@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 py-10 mt-10 font-poppins text-black">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 py-10 mt-10 font-poppins text-black">
       <!-- Breadcrumb -->
       <nav class="text-xs text-gray-400 mb-6" aria-label="Breadcrumb">
         <ol class="flex flex-wrap items-center gap-2">
@@ -80,7 +80,7 @@
           </div>
 
           <!-- Ukuran -->
-          <div class="flex flex-wrap gap-4 mt-4 justify-start">
+          <div class="grid grid-cols-2 w-full gap-4 mt-4 justify-start">
             <button
               v-for="size in sizes"
               :key="size"

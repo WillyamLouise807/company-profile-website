@@ -30,21 +30,26 @@
     <section class="relative text-white font-poppins">
               
       <!-- HERO SECTION -->
-      <section class="relative min-h-screen flex items-center justify-center z-10 text-white font-poppins">
+      <FadeInOnScroll direction="up">
+        <section class="relative min-h-screen flex items-center justify-center z-10 text-white font-poppins">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
           <div class="p-6 md:p-10 rounded-2xl flex flex-col md:flex-row items-center gap-8 md:gap-14 max-w-6xl mx-auto shadow-md backdrop-blur-sm ">
             
             <!-- Image -->
-            <div class="flex justify-center items-center">
+            <FadeInOnScroll direction="right">
+              <div class="flex justify-center items-center">
               <img
-                src="assets/index/gambar awal.png"
+                src="assets/index/gambar awal-1.png"
                 alt="Gambar Utama"
-                class="rounded-lg w-64 h-72 md:w-80 md:h-96 object-cover"
+                class="rounded-lg w-64 h-72 md:w-80 md:h-96 shadow-sm object-cover"
               />
             </div>
+            </FadeInOnScroll>
+            
 
             <!-- Text Content -->
-            <div class="flex flex-col justify-center items-center md:items-start text-center md:text-left max-w-lg h-full">
+            <FadeInOnScroll direction="left">
+            <div  class="flex flex-col justify-center items-center md:items-start text-center md:text-left max-w-lg h-full">
               <h1 class="text-2xl md:text-4xl font-extrabold text-red-600 leading-snug mb-6">
                 MENCIPTAKAN <br />
                 AKSESORIS ALUMUNIUM <br />
@@ -58,100 +63,105 @@
                 About Us
               </button>
             </div>
+            </FadeInOnScroll>
+            
           </div>
         </div>
       </section>
+      </FadeInOnScroll>
 
       <!-- ABOUT GBJ SECTION -->      
-      <section id="about-gbj" class="relative z-10 bg-white/90 py-20">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
-          <div class="bg-grey/10 backdrop-blur-sm shadow-xl rounded-2xl p-6 sm:p-10 flex flex-col md:flex-row gap-10 w-full max-w-6xl items-center md:items-start">
-            
-            <!-- Gambar -->
+      <section id="about-gbj" class="relative z-10 bg-white/90 py-48 px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto bg-grey/10 backdrop-blur-sm shadow-xl rounded-2xl p-6 sm:p-10 flex flex-col md:flex-row gap-10 items-center md:items-start">
+          
+          <!-- Gambar -->
+          <FadeInOnScroll direction="right">
             <div class="w-full md:w-auto flex justify-center md:justify-start">
               <img
-                src="assets/index/gambar awal.png"
+                src="assets/index/gambar awal-1.png"
                 alt="Gambar Utama"
-                class="rounded-xl object-contain w-full max-w-md md:max-w-lg lg:max-w-xl h-auto transition duration-300"
+                class="rounded-xl object-contain w-full h-auto max-w-md md:max-w-lg lg:max-w-xl transition duration-300"
               />
             </div>
-            
-            <!-- Konten Teks -->
+          </FadeInOnScroll>
+
+          <!-- Konten Teks -->
+          <FadeInOnScroll direction="left">
             <div class="text-black w-full space-y-4 text-sm sm:text-base leading-relaxed">
-              <h3 class="text-xl sm:text-2xl font-bold text-red-500">About GBJ</h3>
-              <div class="text-lg md:text-lg sm:text-2xl">
+              <h3 class="text-xl sm:text-5xl font-bold text-red-500">About GBJ</h3>
+              <div class="text-lg md:text-sm sm:text-2xl space-y-4">
                 <p><strong>PT Global Bestindo Jaya</strong> merupakan perusahaan yang bergerak di bidang penyediaan perangkat keamanan dan sistem penguncian pintu untuk properti dan bangunan.</p>
-
                 <p>Berawal dari Batam sejak tahun 2015, kami resmi berdiri di Jakarta pada tahun 2018 sebagai bentuk ekspansi dan komitmen kami untuk menjangkau pasar nasional yang lebih luas.</p>
-
                 <p>Melalui merek <strong>Glatino</strong>, kami menghadirkan solusi produk-produk berkualitas tinggi yang dirancang untuk memenuhi kebutuhan keamanan rumah dan bangunan modern di Indonesia.</p>
-
                 <p>Jutaan unit produk Glatino telah digunakan di berbagai proyek perumahan, gedung perkantoran, hingga properti komersial di seluruh Indonesia.</p>        
-
                 <p><strong>Bersama Glatino, hidup lebih aman, nyaman, dan cerdas.</strong></p>
               </div>
             </div>
+          </FadeInOnScroll>
 
-          </div>
         </div>
       </section>
 
-      <!-- MISSION & VISION -->
-      <div class="relative z-10 bg-red-600/90 py-12">
-        <div class="container mx-auto rounded-2xl p-6 md:p-10 text-white backdrop-blur-sm">
-          <div class="flex flex-col md:flex-row justify-between items-start gap-8">
+
+      <!-- MISSION, VISION, CATALOG & EVENTS -->
+      <section class="relative z-10 bg-red-700/90 py-12 px-4 sm:px-6 lg:px-8 rounded-t-3xl">
+        <!-- MISSION & VISION -->
+        <div class="container mx-auto rounded-2xl p-6 md:p-10 text-white backdrop-blur-sm mb-12">
+          <FadeInOnScroll direction="down">
+            <div class="flex flex-col md:flex-row justify-between items-start gap-8">
             
-            <!-- Mission -->
-            <div class="flex items-start gap-4 flex-1">
-              <img src="assets/index/mission.png" alt="Mission" class="w-10 h-10 mt-1" />
-              <div>
-                <h3 class="text-lg font-bold mb-2">Our Mission</h3>
-                <ul class="list-disc pl-5 space-y-2 text-sm md:text-base leading-relaxed">
-                  <li>
-                    Menyediakan produk-produk penguncian dan aksesoris pintu berkualitas tinggi dengan harga kompetitif dan teknologi terkini.
-                  </li>
-                  <li>
-                    Mengutamakan pelayanan prima dan kepuasan pelanggan dalam setiap aspek bisnis kami.
-                  </li>
-                  <li>
-                    Meningkatkan kapabilitas sumber daya manusia melalui pelatihan berkelanjutan untuk menciptakan layanan yang profesional dan responsif.
-                  </li>
-                  <li>
-                    Menjadi mitra terpercaya bagi pelaku industri properti di Indonesia dan Asia Tenggara.
-                  </li>
-                </ul>
+              <!-- Mission -->
+              <div class="flex items-start gap-4 flex-1">
+                <img src="assets/index/mission.png" alt="Mission" class="w-10 h-10 mt-1" />
+                <div>
+                  <h3 class="text-lg font-bold mb-2">Our Mission</h3>
+                  <ul class="list-disc pl-5 space-y-2 text-sm md:text-base leading-relaxed">
+                    <li>
+                      Menyediakan produk-produk penguncian dan aksesoris pintu berkualitas tinggi dengan harga kompetitif dan teknologi terkini.
+                    </li>
+                    <li>
+                      Mengutamakan pelayanan prima dan kepuasan pelanggan dalam setiap aspek bisnis kami.
+                    </li>
+                    <li>
+                      Meningkatkan kapabilitas sumber daya manusia melalui pelatihan berkelanjutan untuk menciptakan layanan yang profesional dan responsif.
+                    </li>
+                    <li>
+                      Menjadi mitra terpercaya bagi pelaku industri properti di Indonesia dan Asia Tenggara.
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
 
-            <!-- Vision -->
-            <div class="flex items-start gap-4 flex-1">
-              <img src="assets/index/vision.png" alt="Vision" class="w-10 h-10 mt-1" />
-              <div>
-                <h3 class="text-lg font-bold mb-2">Our Vision</h3>
-                <p class="text-sm md:text-base leading-relaxed">
-                  Dengan mengusung semangat <span class="italic"> "Smart Security for Modern Living"</span>, PT Global Bestindo Jaya berkomitmen menjadi perusahaan penyedia solusi keamanan rumah dan bangunan yang terdepan, terpercaya, dan inovatif di Indonesia.
-                </p>
-                <p class="mt-4 text-sm md:text-base leading-relaxed">
-                  Kami memiliki visi untuk membentuk masa depan industri keamanan yang lebih pintar dan praktis melalui produk-produk smart security seperti akses pintu berbasis sidik jari, pengenalan wajah, dan kontrol suara. Kami juga terus berupaya mengedukasi masyarakat Indonesia akan pentingnya sistem keamanan modern dalam kehidupan sehari-hari.
-                </p>
+              <!-- Vision -->
+              <div class="flex items-start gap-4 flex-1">
+                <img src="assets/index/vision.png" alt="Vision" class="w-10 h-10 mt-1" />
+                <div>
+                  <h3 class="text-lg font-bold mb-2">Our Vision</h3>
+                  <p class="text-sm md:text-base leading-relaxed">
+                     Dengan mengusung semangat <span class="italic"> "Smart Security for Modern Living"</span>, PT Global Bestindo Jaya berkomitmen menjadi perusahaan penyedia solusi keamanan rumah dan bangunan yang terdepan, terpercaya, dan inovatif di Indonesia.
+                  </p>
+                  <p class="mt-4 text-sm md:text-base leading-relaxed">
+                     Kami memiliki visi untuk membentuk masa depan industri keamanan yang lebih pintar dan praktis melalui produk-produk smart security seperti akses pintu berbasis sidik jari, pengenalan wajah, dan kontrol suara. Kami juga terus berupaya mengedukasi masyarakat Indonesia akan pentingnya sistem keamanan modern dalam kehidupan sehari-hari.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+          </FadeInOnScroll>
         </div>
-      </div>
 
-
-      <!-- CATALOG & EVENTS -->
-      <div class="relative z-10 bg-red-600/90 rounded-t-3xl py-12 px-4 sm:px-6 lg:px-8 my-12">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <!-- CATALOG & EVENTS -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto my-36">
+          <!-- Events -->
           <div class="bg-white p-6 rounded-3xl text-black backdrop-blur-sm">
-            <h2 class="text-3xl text-center font-semibold mb-4">Events</h2>
+            <h2 class="text-3xl text-center font-semibold mb-12">Events</h2>
             <p class="text-sm font-semibold">27 Juli, 2025 09:30 AM - 12:00 PM WIB</p>
             <p class="text-xs mb-6">Bakti Sosial Panti Asuhan</p>
             <a href="#" class="text-sm underline block mt-16 text-center">View All &gt;</a>
           </div>
+
+          <!-- Product -->
           <div class="bg-white p-6 rounded-3xl text-black backdrop-blur-sm">
-            <h2 class="text-3xl text-center font-semibold mb-4">Our Product</h2>
+            <h2 class="text-3xl text-center font-semibold mb-12">Our Product</h2>
             <div class="bg-gray-200 h-48 w-48 mb-2 mx-auto"></div>
             <p class="text-center text-sm mb-4">Engsel Pintu</p>
             <div class="bg-gray-200 h-48 w-48 mb-2 mx-auto"></div>
@@ -159,7 +169,7 @@
             <a href="/product" class="text-sm underline block mt-16 text-center">View All &gt;</a>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- TIMELINE SECTION - PUTIH MERAH -->
       <div class="min-h-screen flex items-center justify-center relative z-10">
@@ -234,7 +244,6 @@
 
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
-
 
 // Import FooterComponent dari file yang sama di folder 'pages'
 import FooterComponent from '../components/footer.vue'
@@ -345,14 +354,40 @@ onBeforeUnmount(() => {
   window.removeEventListener('resize', handleCardScroll);
 });
 
+// const scrollToSection = () => {
+//   const section = document.getElementById('about-gbj');
+//   if (section) {
+//     section.scrollIntoView({ 
+//       behavior: 'smooth',
+//       block: 'start'
+//     });
+//   }
+// };
+
 const scrollToSection = () => {
-  const section = document.getElementById('about-gbj');
-  if (section) {
-    section.scrollIntoView({ 
-      behavior: 'smooth',
-      block: 'start'
-    });
-  }
+  const target = document.getElementById('about-gbj');
+  if (!target) return;
+
+  const startY = window.scrollY;
+  const endY = target.getBoundingClientRect().top + window.scrollY;
+  const duration = 1500; // ms
+  const startTime = performance.now();
+
+  const animateScroll = (currentTime) => {
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    const easeInOut = progress < 0.5
+      ? 2 * progress * progress
+      : -1 + (4 - 2 * progress) * progress;
+
+    window.scrollTo(0, startY + (endY - startY) * easeInOut);
+
+    if (elapsed < duration) {
+      requestAnimationFrame(animateScroll);
+    }
+  };
+
+  requestAnimationFrame(animateScroll);
 };
 </script>
 

@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-white border-t border-red-700 text-black px-6 py-10 lg:px-20 font-poppins">
-    <div class="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div class="max-w-screen-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
       
       <!-- Company Info -->
       <div>
@@ -43,11 +43,11 @@
       <div>
         <h3 class="text-lg font-semibold text-red-600 mb-4">Products</h3>
         <ul class="space-y-2">
-          <li><a href="#" class="hover:text-red-500">Engsel</a></li>
-          <li><a href="#" class="hover:text-red-500">Rambuncis Jendela</a></li>
-          <li><a href="#" class="hover:text-red-500">Roller Roda</a></li>
-          <li><a href="#" class="hover:text-red-500">Kunci Tabung</a></li>
-          <li><a href="#" class="hover:text-red-500">Handle Pintu</a></li>
+          <li><a href="#" class="hover:text-red-500">Door Lock</a></li>
+          <li><a href="#" class="hover:text-red-500">Mortise Lock</a></li>
+          <li><a href="#" class="hover:text-red-500">Cylinder</a></li>
+          <li><a href="#" class="hover:text-red-500">Floor Hinge</a></li>
+          <li><a href="#" class="hover:text-red-500">Patch Fitting</a></li>
         </ul>
       </div>
 

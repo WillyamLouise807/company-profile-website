@@ -143,6 +143,25 @@ onMounted(() => {
     window.addEventListener('scroll', handleScroll)
   }
 })
+const isScrollListenerAttached = ref(false)
+
+watch(
+  () => route.path,
+  (newPath) => {
+    if (newPath === '/') {
+      nextTick(() => {
+        window.addEventListener('scroll', handleScroll)
+        isScrollListenerAttached.value = true
+        handleScroll()
+      })
+    } else if (isScrollListenerAttached.value) {
+      window.removeEventListener('scroll', handleScroll)
+      isScrollListenerAttached.value = false
+    }
+  },
+  { immediate: true }
+)
+
 onBeforeUnmount(() => {
   window.removeEventListener('scroll', handleScroll)
 })

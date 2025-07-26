@@ -2,7 +2,7 @@
   <div class="font-poppins">
     <!-- Hero Section Kategori -->
     <section class="relative w-full h-screen overflow-hidden font-poppins">
-      <!-- Background -->
+      <!-- Background --> 
       <div
         class="absolute inset-0 bg-cover bg-center bg-no-repeat z-[-3]"
         :style="{ backgroundImage: `url(${bgImage})` }"
@@ -31,7 +31,7 @@
 
     <!-- Daftar Produk Pull Handle -->
     <section class="py-16 px-4 sm:px-6 lg:px-12 bg-white">
-      <div class="max-w-7xl mx-auto">
+      <div class="container mx-auto">
         <h2 class="text-2xl sm:text-3xl font-bold mb-8 text-center text-red-700">Produk Pull Handle</h2>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -97,23 +97,30 @@ const pullHandleProducts = [
   {
     id: 4,
     name: "Handle S",
-    description: "Handle tarik model D bahan aluminium berkualitas",
+    description: "Handle tarik model S bahan aluminium berkualitas",
     slug: "handle-s",
-    image: new URL('@/assets/product/pull-handle/handle-d.png', import.meta.url).href
+    image: new URL('@/assets/product/pull-handle/handle-s.png', import.meta.url).href
   },
   {
     id: 5,
     name: "Handle B",
-    description: "Handle tarik model D bahan aluminium berkualitas",
+    description: "Handle tarik model B bahan aluminium berkualitas",
     slug: "handle-b",
-    image: new URL('@/assets/product/pull-handle/handle-d.png', import.meta.url).href
+    image: new URL('@/assets/product/pull-handle/handle-b.png', import.meta.url).href
   },
   {
     id: 6,
     name: "Handle H",
-    description: "Handle tarik model D bahan aluminium berkualitas",
+    description: "Handle tarik model H bahan aluminium berkualitas",
     slug: "handle-h",
-    image: new URL('@/assets/product/pull-handle/handle-d.png', import.meta.url).href
+    image: new URL('@/assets/product/pull-handle/handle-h.png', import.meta.url).href
+  },
+  {
+    id: 7,
+    name: "Handle 21",
+    description: "Handle tarik model 21 bahan aluminium berkualitas",
+    slug: "handle-21",
+    image: new URL('@/assets/product/pull-handle/handle-21.png', import.meta.url).href
   },
   // Tambahkan kembali produk lainnya di sini jika dibutuhkan.
 ]

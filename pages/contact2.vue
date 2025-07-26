@@ -209,7 +209,7 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import axios from 'axios'
+import emailjs from '@emailjs/browser';
 
 const namaDepan = ref('')
 const namaBelakang = ref('')
@@ -219,26 +219,65 @@ const phone = ref('')
 const message = ref('')
 
 const submitForm = async () => {
+  // Validasi form
+  if (!namaDepan.value || !email.value || !message.value) {
+    alert('Nama Depan, Email, dan Pesan wajib diisi!')
+    return
+  }
+
   try {
-    const res = await axios.post('http://localhost:3000/send-email', {
-      namaDepan: namaDepan.value,
-      namaBelakang: namaBelakang.value,
-      email: email.value,
+    // Credentials EmailJS
+    const serviceID = 'service_eanyvvs'
+    const templateID = 'template_9fvsc9u'
+    const userID = 'X-LFzr-3ZKRiOwoZd' // User ID (Public Key)
+
+    // Dapatkan tanggal dan waktu sekarang
+    const now = new Date()
+    const date = now.toLocaleString('id-ID', {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit'
+    })
+    const year = now.getFullYear().toString()
+
+    // Kirim email
+    await emailjs.send(serviceID, templateID, {
+      from_name: `${namaDepan.value} ${namaBelakang.value}`,
+      from_email: email.value,
       subject: subject.value,
       phone: phone.value,
       message: message.value,
-    })
+      date: date,   // variabel baru untuk tanggal lengkap
+      year: year    // variabel baru untuk tahun saja
+    }, userID)
 
-    alert('Email berhasil dikirim!')
-  } catch (error: any) {
-  console.error('DETAIL ERROR:', error?.response?.data || error)
-  alert('Terjadi kesalahan saat mengirim email.')
+    // Tampilkan alert sukses
+    alert('Pesan berhasil dikirim! Terima kasih.')
+
+    // Reset form
+    namaDepan.value = ''
+    namaBelakang.value = ''
+    email.value = ''
+    subject.value = ''
+    phone.value = ''
+    message.value = ''
+
+  } catch (error) {
+    console.error('Error:', error)
+    
+    // Tampilkan error spesifik jika ada
+    if (error instanceof Error) {
+      alert(`Terjadi kesalahan: ${error.message}`)
+    } else {
+      alert('Maaf, terjadi kesalahan. Silakan coba lagi.')
+    }
   }
 }
 
-
 import FooterComponent from '../components/footer.vue'
-
 import bgImage from '@/assets/contact/bg-image.png'
 </script>
 

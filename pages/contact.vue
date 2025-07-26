@@ -26,101 +26,114 @@
 
     <div class="container mx-auto px-4 mt-16 py-8 sm:py-16">
       <!-- Judul -->
-      <h1 class="text-xl text-center text-black sm:text-2xl md:text-3xl font-semibold leading-relaxed mb-4">
-        Contact Us
-      </h1>
-      <p class="text-sm text-center sm:text-base md:text-lg text-black/80 mb-6">
-        Kami senang mendengar dari Anda! Isi formulir di bawah dan kami akan segera menghubungi Anda kembali.
-      </p>
+      <FadeInOnScroll direction="up">
+        <h1 class="text-xl text-center text-black sm:text-2xl md:text-3xl font-semibold leading-relaxed mb-4">
+          Contact Us
+        </h1>
+        <p class="text-sm text-center sm:text-base md:text-lg text-black/80 mb-6">
+          Kami senang mendengar dari Anda! Isi formulir di bawah dan kami akan segera menghubungi Anda kembali.
+        </p>        
+      </FadeInOnScroll>
+
 
       <!-- Form -->
-      <div class="mx-auto bg-white/10 backdrop-blur-sm rounded-xl p-6 sm:p-8 shadow-2xl mb-10">
-        <form action="https://formspree.io/f/xeozjzdz" method="POST">
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-            <!-- Nama Depan -->
-            <div>
-              <label class="block text-sm text-black font-semibold mb-2">Nama Depan</label>
-              <input
-                name="first_name"
-                type="text"
-                placeholder="Nama Depan"
-                required
-                class="w-full px-4 py-3 rounded-lg border border-red-300 bg-white focus:ring-red-700 focus:border-red-700"
-              />
-            </div>
-            <!-- Nama Belakang -->
-            <div>
-              <label class="block text-sm text-black font-semibold mb-2">Nama Belakang</label>
-              <input
-                name="last_name"
-                type="text"
-                placeholder="Nama Belakang"
-                required
-                class="w-full px-4 py-3 rounded-lg border border-red-300 bg-white focus:ring-red-700 focus:border-red-700"
-              />
-            </div>
-            <!-- Email -->
-            <div class="sm:col-span-2">
-              <label class="block text-sm text-black font-semibold mb-2">Email</label>
-              <input
-                name="email"
-                type="email"
-                placeholder="Email"
-                required
-                class="w-full px-4 py-3 rounded-lg border border-red-300 bg-white focus:ring-red-700 focus:border-red-700"
-              />
-            </div>
-            <!-- Subject -->
-            <div class="sm:col-span-2">
-              <label class="block text-sm text-black font-semibold mb-2">Subject</label>
-              <input
-                name="subject"
-                type="text"
-                placeholder="Subject"
-                class="w-full px-4 py-3 rounded-lg border border-red-300 bg-white focus:ring-red-700 focus:border-red-700"
-              />
-            </div>
-            <!-- Nomor Telepon -->
-            <div class="sm:col-span-2">
-              <label class="block text-sm text-black font-semibold mb-2">Telp</label>
-              <div class="flex">
-                <span class="inline-flex items-center px-4 bg-red-100 border border-r-0 border-red-300 text-red-700 rounded-l-lg">
-                  +62
-                </span>
+      <FadeInOnScroll direction="right">
+        <!-- Form Section (Top) -->
+        <div class="mx-auto bg-transparent bg-opacity-90 backdrop-blur-sm rounded-xl p-6 sm:p-8 shadow-2xl mb-10">
+          <form @submit.prevent="submitForm">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+              <!-- First Name -->
+              <div>
+                <label class="block text-sm text-black font-semibold mb-2">Nama Depan</label>
                 <input
-                  name="phone"
-                  type="tel"
-                  placeholder="821-0123-4567"
-                  class="w-full px-4 py-3 rounded-r-lg border border-red-300 bg-white focus:ring-red-700 focus:border-red-700"
+                  v-model="namaDepan"
+                  type="text"
+                  placeholder="Nama Depan"
+                  class="w-full px-4 py-3 rounded-lg border border-red-300 bg-white focus:ring-red-700 focus:border-red-700"
                 />
               </div>
-            </div>
-            <!-- Pesan -->
-            <div class="sm:col-span-2">
-              <label class="block text-sm text-black font-semibold mb-2">Pesan</label>
-              <textarea
-                name="message"
-                rows="4"
-                placeholder="Tuliskan pesan yang ingin Anda sampaikan pada kami!"
-                class="w-full px-4 py-3 rounded-lg border border-red-300 bg-white focus:ring-red-700 focus:border-red-700"
-              ></textarea>
-            </div>
-            <!-- Honeypot -->
-            <input type="text" name="_gotcha" style="display:none" />
-            <input type="hidden" name="_next" value="/thanks" />
-          </div>
 
-          <!-- Tombol Submit -->
-          <div class="flex justify-end mt-6 sm:mt-8">
-            <button
-              type="submit"
-              class="px-6 py-2.5 hover:bg-red-700 text-white rounded-lg bg-red-600 transition duration-300"
-            >
-              Kirim
-            </button>
-          </div>
-        </form>
-      </div>
+              <!-- Last Name -->
+              <div>
+                <label class="block text-sm text-black font-semibold mb-2">Nama Belakang</label>
+                <input
+                  v-model="namaBelakang"
+                  type="text"
+                  placeholder="Nama Belakang"
+                  class="w-full px-4 py-3 rounded-lg border border-red-300 bg-white focus:ring-red-700 focus:border-red-700"
+                />
+              </div>
+
+              <!-- Email -->
+              <div class="sm:col-span-2">
+                <label class="block text-sm text-black font-semibold mb-2">Email</label>
+                <input
+                  v-model="email"
+                  type="email"
+                  placeholder="Email"
+                  class="w-full px-4 py-3 rounded-lg border border-red-300 bg-white focus:ring-red-700 focus:border-red-700"
+                />
+              </div>
+
+              <!-- Subject -->
+              <div class="sm:col-span-2">
+                <label class="block text-sm text-black font-semibold mb-2">Subject</label>
+                <input
+                  v-model="subject"
+                  type="text"
+                  placeholder="Subject"
+                  class="w-full px-4 py-3 rounded-lg border border-red-300 bg-white focus:ring-red-700 focus:border-red-700"
+                />
+              </div>
+
+              <!-- Phone -->
+              <div class="sm:col-span-2">
+                <label class="block text-sm text-black font-semibold mb-2">Telp</label>
+                <div class="flex">
+                  <span class="inline-flex items-center px-4 bg-red-50 border border-r-0 border-red-300 text-red-700 rounded-l-lg">
+                    +62
+                  </span>
+                  <input
+                    v-model="phone"
+                    type="tel"
+                    placeholder="821-0123-4567"
+                    class="w-full px-4 py-3 rounded-r-lg border border-red-300 bg-white focus:ring-red-700 focus:border-red-700"
+                  />
+                </div>
+              </div>
+
+              <!-- Message -->
+              <div class="sm:col-span-2">
+                <label class="block text-sm text-black font-semibold mb-2">Pesan</label>
+                <textarea
+                  v-model="message"
+                  rows="4"
+                  placeholder="Tuliskan pesan yang ingin Anda sampaikan pada kami!"
+                  class="w-full px-4 py-3 rounded-lg border border-red-300 bg-white focus:ring-red-700 focus:border-red-700"
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="flex justify-end mt-6 sm:mt-8 space-x-4">
+              <button
+                type="button"
+                @click="resetForm"
+                class="px-6 py-2.5 bg-white border border-red-700 text-red-700 rounded-lg hover:bg-red-50 transition duration-300"
+              >
+                Batalkan
+              </button>
+              <button
+                type="submit"
+                class="px-6 py-2.5 bg-red-700 text-white rounded-lg hover:bg-black transition duration-300"
+              >
+                Kirim
+              </button>
+            </div>
+          </form>
+        </div>
+      </FadeInOnScroll>
+      
 
       <!-- Informasi Kontak -->
       <div class="container mx-auto py-10 px-4 text-black">
@@ -214,8 +227,85 @@
 </template>
 
 <script lang="ts" setup>
-import FooterComponent from '../components/footer.vue'
+import { ref } from 'vue'
+import emailjs from '@emailjs/browser';
 
+const namaDepan = ref('')
+const namaBelakang = ref('')
+const email = ref('')
+const subject = ref('')
+const phone = ref('')
+const message = ref('')
+
+const submitForm = async () => {
+  // Validasi form
+  if (!namaDepan.value || !email.value || !message.value) {
+    alert('Nama Depan, Email, dan Pesan wajib diisi!')
+    return
+  }
+
+  try {
+    // Credentials EmailJS
+    const serviceID = 'service_eanyvvs'
+    const templateID = 'template_9fvsc9u'
+    const userID = 'X-LFzr-3ZKRiOwoZd' // User ID (Public Key)
+
+    // Dapatkan tanggal dan waktu sekarang
+    const now = new Date()
+    const date = now.toLocaleString('id-ID', {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit'
+    })
+    const year = now.getFullYear().toString()
+
+    // Kirim email
+    await emailjs.send(serviceID, templateID, {
+      from_name: `${namaDepan.value} ${namaBelakang.value}`,
+      from_email: email.value,
+      subject: subject.value,
+      phone: phone.value,
+      message: message.value,
+      date: date,   // variabel baru untuk tanggal lengkap
+      year: year    // variabel baru untuk tahun saja
+    }, userID)
+
+    // Tampilkan alert sukses
+    alert('Pesan berhasil dikirim! Terima kasih.')
+
+    // Reset form
+    namaDepan.value = ''
+    namaBelakang.value = ''
+    email.value = ''
+    subject.value = ''
+    phone.value = ''
+    message.value = ''
+
+  } catch (error) {
+    console.error('Error:', error)
+    
+    // Tampilkan error spesifik jika ada
+    if (error instanceof Error) {
+      alert(`Terjadi kesalahan: ${error.message}`)
+    } else {
+      alert('Maaf, terjadi kesalahan. Silakan coba lagi.')
+    }
+  }
+}
+
+const resetForm = () => {
+  namaDepan.value = ''
+  namaBelakang.value = ''
+  email.value = ''
+  subject.value = ''
+  phone.value = ''
+  message.value = ''
+}
+
+import FooterComponent from '../components/footer.vue'
 import bgImage from '@/assets/contact/bg-image.png'
 </script>
 
