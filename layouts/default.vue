@@ -139,7 +139,7 @@ const handleScroll = () => {
 }
 
 onMounted(() => {
-  if (route.path === '/') {
+  if (process.client && route.path === '/') {
     window.addEventListener('scroll', handleScroll)
   }
 })
@@ -148,15 +148,17 @@ const isScrollListenerAttached = ref(false)
 watch(
   () => route.path,
   (newPath) => {
-    if (newPath === '/') {
-      nextTick(() => {
-        window.addEventListener('scroll', handleScroll)
-        isScrollListenerAttached.value = true
-        handleScroll()
-      })
-    } else if (isScrollListenerAttached.value) {
-      window.removeEventListener('scroll', handleScroll)
-      isScrollListenerAttached.value = false
+    if (process.client) {
+      if (newPath === '/') {
+        nextTick(() => {
+          window.addEventListener('scroll', handleScroll)
+          isScrollListenerAttached.value = true
+          handleScroll()
+        })
+      } else if (isScrollListenerAttached.value) {
+        window.removeEventListener('scroll', handleScroll)
+        isScrollListenerAttached.value = false
+      }
     }
   },
   { immediate: true }

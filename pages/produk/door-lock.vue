@@ -73,7 +73,7 @@ const doorLockProducts = [
   {
     id: 1,
     name: "GLT-201",
-    description: "Elan Series Set Kunci Pintu Hight Quality Material Aluminium",
+    description: "Full Set Kunci Pintu Hight Quality Material Aluminium",
     slug: "201",
     image: new URL('@/assets/product/door-lock/201.png', import.meta.url).href
   },
@@ -87,7 +87,7 @@ const doorLockProducts = [
   {
     id: 3,
     name: "GT-820",
-    description: "Lock Case Kunci Pintu Set Premium Stainless Steel",
+    description: "Lock Set Case Kunci Pintu Set Premium Stainless Steel",
     slug: "820",
     image: new URL('@/assets/product/door-lock/820.png', import.meta.url).href
   },
@@ -136,7 +136,7 @@ const doorLockProducts = [
   {
     id: 10,
     name: "902",
-    description: "Bathroom Buddy Kunci Kamar mandi Material Aluminium Anti Karat",
+    description: "Bathroom Buddy Set Kunci Kamar mandi Material Aluminium Anti Karat",
     slug: "902",
     image: new URL('@/assets/product/door-lock/902.png', import.meta.url).href
   }

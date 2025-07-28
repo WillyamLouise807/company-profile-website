@@ -9,10 +9,10 @@
           </li>
           <li>/</li>
           <li>
-            <RouterLink to="/produk/patch-fitting" class="hover:underline text-black font-medium">Patch Fitting</RouterLink>
+            <RouterLink to="/produk/engsel-casement" class="hover:underline text-black font-medium">Engsel Casement</RouterLink>
           </li>
           <li>/</li>
-          <li class="text-black font-semibold">PT-20</li>
+          <li class="text-black font-semibold">Kuningan</li>
         </ol>
       </nav>
 
@@ -20,26 +20,28 @@
       <div class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Patch Fitting PT-20</h1>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Engsel Kuningan</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Patch Fitting Glatino merupakan solusi praktis dan kokoh untuk sistem pemasangan kaca pada pintu, jendela, atau partisi. Dengan berbagai tipe yang tersedia, patch fitting ini dirancang untuk memberikan kekuatan, kestabilan, dan tampilan estetis pada instalasi kaca.
+            Engsel Casement dari Glatino hadir dengan material kuningan berkualitas yang kuat, tahan lama, dan mendukung fungsi buka-tutup jendela atau pintu dengan lebih halus. Tersedia dalam berbagai ukuran mulai dari 8 inch hingga 24 inch, cocok untuk berbagai kebutuhan konstruksi dan desain bangunan Anda.
           </p>
 
           <div class="mb-6 space-y-1">
             <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
             <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Jenis: Patch Fitting</p>
-            <p class="capitalize text-sm sm:text-base">Tipe: PT-20 (Top)</p>
+            <p class="capitalize text-sm sm:text-base">Tipe: Engsel Casement</p>
+            <p class="capitalize text-sm sm:text-base">Material: Kuningan</p>
+            <p class="capitalize text-sm sm:text-base">Ukuran: 8” - 24”</p>
+            <p class="capitalize text-sm sm:text-base">Penggunaan: Pintu & Jendela Aluminium / Kayu</p>
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
             <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
-              <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
+              <a href="https://www.tokopedia.com/glatino-official-store/glatino-engsel-kuningan-casement-premium-penyangga-jendela-pintu-stainless-steel-ukuran-8-24-1731627272119355092?extParam=whid%3D18402450%26src%3Dshop&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="@/assets/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
-              <a href="https://shopee.co.id/Glatino-Patch-Fitting-Alat-Penghubung-Kaca-Bahan-Aluminium-All-Type-PT10-PT24-i.1442585495.26274110618?sp_atk=b81d3124-174e-4d1a-b086-04b56f27c935&xptdk=b81d3124-174e-4d1a-b086-04b56f27c935" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
+              <a href="https://shopee.co.id/Glatino-Engsel-Kuningan-Casement-Premium-Penyangga-Jendela-Pintu-Stainless-Steel-Ukuran-8-24--i.1442585495.24490461668?sp_atk=1bd9539e-5ca7-492a-b63c-e4a6620c0e23&xptdk=1bd9539e-5ca7-492a-b63c-e4a6620c0e23" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="@/assets/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>
@@ -49,7 +51,7 @@
         <!-- Gambar Produk -->
         <div class="flex justify-center items-center w-full">
           <img
-            src="@/assets/product/patch-fitting/pt-20/produk.png"
+            src="@/assets/product/engsel-casement/kuningan/produk.png"
             alt="Patch Fitting PT-20"
             class="rounded-2xl shadow-lg w-full aspect-video object-contain bg-white"
           />
@@ -61,7 +63,7 @@
         <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
         <div class="flex flex-col items-center">
           <img
-            src="@/assets/product/patch-fitting/pt-20/ukuran-hitam.png"
+            src="@/assets/product/engsel-casement/kuningan/ukuran-hitam.png"
             alt="Ukuran Patch Fitting PT-20"
             class="rounded-xl shadow-md max-w-xl w-full bg-white p-4 cursor-zoom-in"
             @click="toggleZoom"
@@ -78,7 +80,7 @@
       >
         <div class="bg-white p-4 md:p-6 rounded-xl shadow-2xl max-w-4xl w-full">
           <img
-            src="@/assets/product/patch-fitting/pt-20/ukuran-hitam.png"
+            src="@/assets/product/engsel-casement/kuningan/ukuran-hitam.png"
             alt="Zoomed Ukuran Patch Fitting PT-20"
             class="w-full object-contain"
           />

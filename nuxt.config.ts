@@ -1,15 +1,21 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+// nuxt.config.ts
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
   modules: [
     '@nuxtjs/tailwindcss',
-     '@nuxtjs/google-fonts'
+    '@nuxtjs/google-fonts'
   ],
-   googleFonts: {
+  googleFonts: {
     families: {
       Poppins: [300, 400, 500, 600, 700],
     },
     display: 'swap',
   },
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    }
+  }
 })

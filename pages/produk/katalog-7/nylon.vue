@@ -20,16 +20,18 @@
       <div class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Patch Fitting Nylon</h1>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Engsel Nylon</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Patch Fitting Glatino merupakan solusi praktis dan kokoh untuk sistem pemasangan kaca pada pintu, jendela, atau partisi. Dengan berbagai tipe yang tersedia, patch fitting ini dirancang untuk memberikan kekuatan, kestabilan, dan tampilan estetis pada instalasi kaca.
+            Engsel Casement Glatino berbahan nylon dirancang untuk memberikan kemudahan dalam membuka dan menutup jendela atau pintu dengan lancar dan aman. Tersedia dalam ukuran 8 inch hingga 24 inch, cocok digunakan untuk berbagai jenis kusen dan desain interior.
           </p>
 
           <div class="mb-6 space-y-1">
             <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
             <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Jenis: Patch Fitting</p>
-            <p class="capitalize text-sm sm:text-base">Tipe: Nylon (Bottom)</p>
+            <p class="capitalize text-sm sm:text-base">Tipe: Engsel Casement</p>
+            <p class="capitalize text-sm sm:text-base">Material: Nylon</p>
+            <p class="capitalize text-sm sm:text-base">Ukuran: 8” - 24”</p>
+            <p class="capitalize text-sm sm:text-base">Penggunaan: Jendela dan Pintu Aluminium / Kayu</p>
           </div>
 
           <!-- Marketplace -->
@@ -39,7 +41,7 @@
               <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="@/assets/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
-              <a href="https://shopee.co.id/glatino.official" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
+              <a href="https://shopee.co.id/Glatino-Engsel-CasementPro-Material-Nylon-Series-Steel-Penyangga-Jendela-Pintu-430-i.1442585495.28173482764?sp_atk=0cb135e7-f7d2-4550-b151-44b2bbfd45f8&xptdk=0cb135e7-f7d2-4550-b151-44b2bbfd45f8" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="@/assets/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>
