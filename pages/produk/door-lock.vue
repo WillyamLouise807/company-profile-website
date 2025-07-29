@@ -80,14 +80,14 @@ const doorLockProducts = [
   {
     id: 2,
     name: "GLT-202",
-    description: "Lock Set Type Bahan Aluminium Kunci Pintu Set Handle Lengkap",
+    description: "Lock Full Set Type Bahan Aluminium Kunci Pintu Set Handle Lengkap",
     slug: "202",
     image: new URL('@/assets/product/door-lock/202.png', import.meta.url).href
   },
   {
     id: 3,
     name: "GT-820",
-    description: "Lock Set Case Kunci Pintu Set Premium Stainless Steel",
+    description: "Lock Full Set Case Kunci Pintu Set Premium Stainless Steel",
     slug: "820",
     image: new URL('@/assets/product/door-lock/820.png', import.meta.url).href
   },
@@ -101,7 +101,7 @@ const doorLockProducts = [
   {
     id: 5,
     name: "GLT-939",
-    description: "Luxlock Set Kunci Pintu Material Aluminium Anti Karat",
+    description: "Luxlock Full Set Kunci Pintu Material Aluminium Anti Karat",
     slug: "939",
     image: new URL('@/assets/product/door-lock/939.png', import.meta.url).href
   },

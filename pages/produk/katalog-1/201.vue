@@ -136,10 +136,8 @@
               
             </div>
           </NuxtLink>
-
         </div>
       </div>
-
     </div>
   </div>
   
@@ -184,6 +182,7 @@ function toggleZoom() {
 }
 
 const katalogLinks = [
+  // { slug: '201', name: 'Set 201', image: new URL('@/assets/product/door-lock/201.png', import.meta.url).href },
   { slug: '202', name: 'Set 202', image: new URL('@/assets/product/door-lock/202.png', import.meta.url).href },
   { slug: '820', name: 'Set 820', image: new URL('@/assets/product/door-lock/820.png', import.meta.url).href },
   { slug: '839', name: 'Set 839', image: new URL('@/assets/product/door-lock/839.png', import.meta.url).href },
