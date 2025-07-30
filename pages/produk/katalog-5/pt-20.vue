@@ -84,6 +84,29 @@
           />
         </div>
       </div>
+
+      <!-- Link Produk Lain di Katalog Sama -->
+      <div class="border-t border-gray-200 my-20 py-8">
+        <h2 class="text-2xl font-bold text-center mb-8 text-red-700">SEE OUR OTHER PRODUCT IN THIS CATALOG</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 px-4 sm:px-6 lg:px-8">
+          <NuxtLink
+            v-for="item in katalogLinks"
+            :key="item.slug"
+            :to="`/produk/katalog-5/${item.slug}`"
+            class="group block bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition overflow-hidden"
+          >
+            <img
+              :src="item.image"
+              :alt="item.name"
+              class="w-full h-32 object-contain mx-auto transition-transform duration-300 group-hover:scale-105 bg-white"
+            />
+            <div class="bg-gray-50 text-center py-4 px-2">
+              <div class="text-red-600 font-semibold text-sm">{{ item.name }}</div>
+              
+            </div>
+          </NuxtLink>
+        </div>
+      </div>
     </div>
   </div>
   <FooterComponent />
@@ -97,6 +120,15 @@ const isZoomOpen = ref(false)
 function toggleZoom() {
   isZoomOpen.value = !isZoomOpen.value
 }
+
+const katalogLinks = [
+  { slug: 'pt-10', name: 'Set PT-10', image: new URL('@/assets/product/patch-fitting/pt-10.png', import.meta.url).href },
+  // { slug: 'pt-20', name: 'Set PT-20', image: new URL('@/assets/product/patch-fitting/pt-20.png', import.meta.url).href },
+  { slug: 'pt-24', name: 'Set PT-24', image: new URL('@/assets/product/patch-fitting/pt-24.png', import.meta.url).href },
+  { slug: 'pt-30', name: 'Set PT-30', image: new URL('@/assets/product/patch-fitting/pt-30.png', import.meta.url).href },
+  { slug: 'pt-40', name: 'Set PT-40', image: new URL('@/assets/product/patch-fitting/pt-40.png', import.meta.url).href },
+  { slug: 'pt-50', name: 'Set PT-50', image: new URL('@/assets/product/patch-fitting/pt-50.png', import.meta.url).href },
+];
 </script>
 
 <style scoped>
