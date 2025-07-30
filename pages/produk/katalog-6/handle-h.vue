@@ -121,6 +121,29 @@
           <img :src="zoomedImage" alt="Zoomed" class="w-full object-contain" />
         </div>
       </div>
+
+      <!-- Link Produk Lain di Katalog Sama -->
+      <div class="border-t border-gray-200 my-20 py-8">
+        <h2 class="text-2xl font-bold text-center mb-8 text-red-700">SEE OUR OTHER PRODUCT IN THIS CATALOG</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 px-4 sm:px-6 lg:px-8">
+          <NuxtLink
+            v-for="item in katalogLinks"
+            :key="item.slug"
+            :to="`/produk/katalog-6/${item.slug}`"
+            class="group block bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition overflow-hidden"
+          >
+            <img
+              :src="item.image"
+              :alt="item.name"
+              class="w-full h-32 object-contain mx-auto transition-transform duration-300 group-hover:scale-105 bg-white"
+            />
+            <div class="bg-gray-50 text-center py-4 px-2">
+              <div class="text-red-600 font-semibold text-sm">{{ item.name }}</div>
+              
+            </div>
+          </NuxtLink>
+        </div>
+      </div>
     </div>
   </div>
   <FooterComponent />
@@ -206,6 +229,16 @@ function zoomImage(src: string) {
   zoomedImage.value = src
   isZoomOpen.value = true
 }
+
+const katalogLinks = [
+  { slug: 'handle-c', name: 'Handle C', image: new URL('@/assets/product/pull-handle/handle-c.png', import.meta.url).href },
+  { slug: 'handle-p', name: 'Handle P', image: new URL('@/assets/product/pull-handle/handle-p.png', import.meta.url).href },
+  { slug: 'handle-d', name: 'Handle D', image: new URL('@/assets/product/pull-handle/handle-d.png', import.meta.url).href },
+  { slug: 'handle-s', name: 'Handle S', image: new URL('@/assets/product/pull-handle/handle-s.png', import.meta.url).href },
+  { slug: 'handle-b', name: 'Handle B', image: new URL('@/assets/product/pull-handle/handle-b.png', import.meta.url).href },
+  // { slug: 'handle-h', name: 'Handle H', image: new URL('@/assets/product/pull-handle/handle-h.png', import.meta.url).href },
+  { slug: 'handle-21', name: 'Handle 21', image: new URL('@/assets/product/pull-handle/handle-21.png', import.meta.url).href },
+];
 </script>
 
 <style scoped>
