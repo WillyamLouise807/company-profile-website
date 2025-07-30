@@ -106,6 +106,30 @@
           />
         </div>
       </div>
+
+      <!-- Link Produk Lain di Katalog Sama -->
+      <div class="border-t border-gray-200 my-20 py-8">
+        <h2 class="text-2xl font-bold text-center mb-8 text-red-700">SEE OUR OTHER PRODUCT IN THIS CATALOG</h2>
+        <div class="flex justify-center">
+          <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 gap-4">
+            <NuxtLink
+              v-for="item in katalogLinks"
+              :key="item.slug"
+              :to="`/produk/katalog-4/${item.slug}`"
+              class="group block bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition overflow-hidden w-40 sm:w-44"
+            >
+              <img
+                :src="item.image"
+                :alt="item.name"
+                class="w-full h-32 object-contain mx-auto transition-transform duration-300 group-hover:scale-105 bg-white"
+              />
+              <div class="bg-gray-50 text-center py-4 px-2">
+                <div class="text-red-600 font-semibold text-sm">{{ item.name }}</div>
+              </div>
+            </NuxtLink>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <FooterComponent />
@@ -142,6 +166,11 @@ const isZoomOpen = ref(false)
 function toggleZoom() {
   isZoomOpen.value = !isZoomOpen.value
 }
+
+const katalogLinks = [
+  { slug: 'v53', name: 'Set V53', image: new URL('@/assets/product/floor-hinge/v53.png', import.meta.url).href },
+  // { slug: 'v54', name: 'Set V54', image: new URL('@/assets/product/floor-hinge/v84.png', import.meta.url).href },
+];
 </script>
 
 <style scoped>
