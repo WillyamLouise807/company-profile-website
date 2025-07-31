@@ -175,6 +175,13 @@ const products = [
     image: new URL('@/assets/product/window-lock.png', import.meta.url).href,
     logo: new URL('@/assets/product/GLATINO - RED - LOGO.png', import.meta.url).href,
   },
+  {
+    title: 'Alumunium Lock',
+    description: 'View all Alumunium Lock products',
+    slug: 'alumunium-lock',
+    image: new URL('@/assets/product/alumunium-lock.png', import.meta.url).href,
+    logo: new URL('@/assets/product/GLATINO - RED - LOGO.png', import.meta.url).href,
+  },
 ]
 </script>
 
