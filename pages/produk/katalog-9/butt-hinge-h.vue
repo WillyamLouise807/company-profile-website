@@ -40,7 +40,7 @@
               <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" rel="noopener noreferrer">
                 <img src="@/assets/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
-              <a href="https://shopee.co.id/glatino.official" target="_blank" rel="noopener noreferrer">
+              <a href="https://shopee.co.id/Glatino-Engsel-Stainlees-Sus-H-304-Material-Stainless-Hinge-Steel-i.1442585495.28625500839?sp_atk=32c410ef-bc32-4034-93b7-c0d4066b149d&xptdk=32c410ef-bc32-4034-93b7-c0d4066b149d" target="_blank" rel="noopener noreferrer">
                 <img src="@/assets/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>

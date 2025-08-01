@@ -36,10 +36,10 @@
           <div class="mb-8">
             <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
-              <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.tokopedia.com/glatino-official-store/glatino-engsel-piano-stainlees-bahan-aluminium-premium-anti-karat-panjang-180-cm-1730968751764768494?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer">
                 <img src="@/assets/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
-              <a href="https://shopee.co.id/glatino.official" target="_blank" rel="noopener noreferrer">
+              <a href="https://shopee.co.id/Glatino-Engsel-Piano-Stainlees-Panjang-180Cm-Material-Aluminium-i.1442585495.28576388144?sp_atk=a02b44e0-8c98-4413-b894-ebb4ed8287e0&xptdk=a02b44e0-8c98-4413-b894-ebb4ed8287e0https://shopee.co.id/Glatino-Engsel-Piano-Stainlees-Panjang-180Cm-Material-Aluminium-i.1442585495.28576388144?sp_atk=a02b44e0-8c98-4413-b894-ebb4ed8287e0&xptdk=a02b44e0-8c98-4413-b894-ebb4ed8287e0" target="_blank" rel="noopener noreferrer">
                 <img src="@/assets/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>

@@ -31,10 +31,10 @@
           <div class="mb-8">
             <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
-              <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" class="hover:scale-105 transition-transform">
+              <a href="https://www.tokopedia.com/glatino-official-store/glatino-set-kunci-pintu-aluminium-premium-sliding-door-swing-door-aluminium-anti-karat-1730966994543478510?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" class="hover:scale-105 transition-transform">
                 <img src="@/assets/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
-              <a href="https://shopee.co.id/glatino.official" target="_blank" class="hover:scale-105 transition-transform">
+              <a href="https://shopee.co.id/Glatino-Set-Kunci-Pintu-Sliding-Door-Swing-Door-Material-Aluminium-i.1442585495.27276513651?sp_atk=adecdcc1-92bc-4781-b6a2-42acd1950a45&xptdk=adecdcc1-92bc-4781-b6a2-42acd1950a45" target="_blank" class="hover:scale-105 transition-transform">
                 <img src="@/assets/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>

@@ -36,10 +36,10 @@
           <div class="mb-8">
             <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
-              <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
+              <a href="https://www.tokopedia.com/glatino-official-store/glatino-kunci-pintu-set-sliding-almunium-a7-indikator-premium-handleset-1731020221529360110?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="@/assets/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
-              <a href="https://shopee.co.id/glatino.official" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
+              <a href="https://shopee.co.id/Glatino-Kunci-Pintu-Set-Sliding-Almunium-A7-Indikator-Premium-Handle-set-i.1442585495.26074084526?sp_atk=1d6d04fa-3e1b-46cf-9ae6-4e88733a1f7d&xptdk=1d6d04fa-3e1b-46cf-9ae6-4e88733a1f7d" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="@/assets/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>

@@ -37,10 +37,10 @@
           <div class="mb-8">
             <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
-              <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.tokopedia.com/glatino-official-store/glatino-engsel-pintu-butt-hinge-stainless-steel-4-3-untuk-rumah-kualitas-premium-1730959960062789358?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer">
                 <img src="@/assets/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
-              <a href="https://shopee.co.id/glatino.official" target="_blank" rel="noopener noreferrer">
+              <a href="https://shopee.co.id/Glatino-Engsel-Pintu-Butt-Hinge-Stainless-Steel-4-3-Anti-Karat-Material-Aluminium-High-Quality-i.1442585495.29773360746?sp_atk=387cee51-cf85-4611-a407-2d89171720b6&xptdk=387cee51-cf85-4611-a407-2d89171720b6" target="_blank" rel="noopener noreferrer">
                 <img src="@/assets/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>
