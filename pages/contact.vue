@@ -1,5 +1,5 @@
 <template>
-  <div class="relative min-h-screen">
+  <div class="relative min-h-screen font-poppins">
     <!-- Background image untuk semua device -->
     <div class="absolute inset-0 -z-10">
       <!-- Smartphone -->
@@ -310,6 +310,9 @@ import bgImage from '@/assets/contact/bg-image.png'
 </script>
 
 <style scoped>
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
 /* Responsive adjustments */
 @media (max-width: 1024px) {
   .lg\:border-r {
