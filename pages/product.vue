@@ -183,10 +183,17 @@ const products = [
     logo: new URL('@/assets/product/GLATINO - RED - LOGO.png', import.meta.url).href,
   },
   {
-    title: 'Katalog 10',
-    description: 'View all Katalog 10 products',
-    slug: 'alumunium-lock',
-    image: new URL('@/assets/product/alumunium-lock.png', import.meta.url).href,
+    title: 'Door Closer',
+    description: 'View all Door Closer products',
+    slug: 'door-closer',
+    image: new URL('@/assets/product/door-closer.png', import.meta.url).href,
+    logo: new URL('@/assets/product/GLATINO - RED - LOGO.png', import.meta.url).href,
+  },
+  {
+    title: 'Flush Handle',
+    description: 'View all Flush Handle products',
+    slug: 'flush-handle',
+    image: new URL('@/assets/product/flush-handle.png', import.meta.url).href,
     logo: new URL('@/assets/product/GLATINO - RED - LOGO.png', import.meta.url).href,
   },
 ]
