@@ -154,18 +154,33 @@
           <!-- Events -->
           <div class="bg-white p-6 rounded-3xl text-black backdrop-blur-sm">
             <h2 class="text-3xl text-center font-semibold mb-12">Events</h2>
-            <p class="text-sm font-semibold">27 Juli, 2025 09:30 AM - 12:00 PM WIB</p>
-            <p class="text-xs mb-6">Bakti Sosial Panti Asuhan</p>
-            <a href="#" class="text-sm underline block mt-16 text-center">View All &gt;</a>
+            <!-- Link wrapper -->
+            <NuxtLink
+              to="/event/bakti-sosial-july-2025"
+              class="group block transition duration-200"
+            >
+              <p class="text-sm font-semibold group-hover:text-red-800">
+                27 Juli, 2025 09:30 AM - 12:00 PM WIB
+              </p>
+              <p class="text-xs mb-6 group-hover:text-red-800">
+                Bakti Sosial Yayasan Yatim Piatu & Dhuafa Angku Budi Sati Bhakti Pertiwi
+              </p>
+            </NuxtLink>
+            <a href="/article-page" class="text-sm underline block mt-16 text-center">View All &gt;</a>
           </div>
 
           <!-- Product -->
           <div class="bg-white p-6 rounded-3xl text-black backdrop-blur-sm">
             <h2 class="text-3xl text-center font-semibold mb-12">Our Product</h2>
-            <div class="bg-gray-200 h-48 w-48 mb-2 mx-auto"></div>
-            <p class="text-center text-sm mb-4">Engsel Pintu</p>
-            <div class="bg-gray-200 h-48 w-48 mb-2 mx-auto"></div>
-            <p class="text-center text-sm mb-4">Engsel Pintu</p>
+            <NuxtLink to="/produk/door-lock" class="block w-48 mx-auto mb-6 hover:opacity-90 transition">
+              <img src="/asset/product/Door-Lock.png" alt="Door Lock" class="w-full h-48 object-contain mb-2" />
+              <p class="text-center text-sm hover:text-red-600">Door Lock</p>
+            </NuxtLink>
+
+            <NuxtLink to="/produk/mortise-lock" class="block w-48 mx-auto mb-6 hover:opacity-90 transition">
+              <img src="/asset/product/mortise-lock.png" alt="Mortise Lock" class="w-full h-48 object-contain mb-2" />
+              <p class="text-center text-sm hover:text-red-600">Mortise Lock</p>
+            </NuxtLink>
             <a href="/product" class="text-sm underline block mt-16 text-center">View All &gt;</a>
           </div>
         </div>

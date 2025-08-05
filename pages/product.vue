@@ -24,9 +24,9 @@
 
             <!-- Badges -->
             <div class="flex gap-4 justify-center items-center mb-6">
-              <img src="/assets/index/badge-premium.png" class="w-16 h-16" />
-              <img src="/assets/index/badge-best.png" class="w-16 h-16" />
-              <img src="/assets/index/badge-10years.png" class="w-16 h-16" />
+              <img src="/asset/index/badge-premium.png" class="w-16 h-16" />
+              <img src="/asset/index/badge-best.png" class="w-16 h-16" />
+              <img src="/asset/index/badge-10years.png" class="w-16 h-16" />
             </div>
 
             <button
@@ -81,13 +81,8 @@
 </template>
 
 <script setup lang="ts">
-import bgImage from '@/assets/product/bg-awal.jpg'
+import bgImage from '/asset/product/bg-awal.jpg'
 import FooterComponent from '../components/footer.vue'
-
-// const scrollToProduct = () => {
-//   const el = document.getElementById('product-catalog')
-//   el?.scrollIntoView({ behavior: 'smooth' })
-// }
 
 const scrollToProduct = () => {
   const target = document.getElementById('product-catalog');
@@ -123,78 +118,78 @@ const products = [
     title: 'Door Lock',
     description: 'View all Door Lock products',
     slug: 'door-lock',
-    image: new URL('@/assets/product/Door-Lock.png', import.meta.url).href,
-    logo: new URL('@/assets/product/GLATINO - RED - LOGO.png', import.meta.url).href,
+    image: '/asset/product/Door-Lock.png',
+    logo: '/asset/product/GLATINO - RED - LOGO.png',
   },
   {
     title: 'Mortise Lock',
     description: 'View all Mortise Lock products',
     slug: 'mortise-lock',
-    image: new URL('@/assets/product/mortise-lock.png', import.meta.url).href,
-    logo: new URL('@/assets/product/GLATINO - RED - LOGO.png', import.meta.url).href,
+    image: '/asset/product/mortise-lock.png',
+    logo: '/asset/product/GLATINO - RED - LOGO.png',
   },
   {
     title: 'Cylinder',
     description: 'View all Cylinder products',
     slug: 'cylinder',
-    image: new URL('@/assets/product/cylinder.png', import.meta.url).href,
-    logo: new URL('@/assets/product/GLATINO - RED - LOGO.png', import.meta.url).href,
+    image: '/asset/product/cylinder.png',
+    logo: '/asset/product/GLATINO - RED - LOGO.png',
   },
   {
     title: 'Floor Hinge',
     description: 'View all Floor Hinge products',
     slug: 'floor-hinge',
-    image: new URL('@/assets/product/floor-hinge.png', import.meta.url).href,
-    logo: new URL('@/assets/product/GLATINO - RED - LOGO.png', import.meta.url).href,
+    image: '/asset/product/floor-hinge.png',
+    logo: '/asset/product/GLATINO - RED - LOGO.png',
   },
   {
     title: 'Patch Fitting',
     description: 'View all Patch Fitting products',
     slug: 'patch-fitting',
-    image: new URL('@/assets/product/patch-fitting.png', import.meta.url).href,
-    logo: new URL('@/assets/product/GLATINO - RED - LOGO.png', import.meta.url).href,
+    image: '/asset/product/patch-fitting.png',
+    logo: '/asset/product/GLATINO - RED - LOGO.png',
   },
   {
     title: 'Pull Handle',
     description: 'View all Pull Handle products',
     slug: 'pull-handle',
-    image: new URL('@/assets/product/pull-handle.png', import.meta.url).href,
-    logo: new URL('@/assets/product/GLATINO - RED - LOGO.png', import.meta.url).href,
+    image: '/asset/product/pull-handle.png',
+    logo: '/asset/product/GLATINO - RED - LOGO.png',
   },
   {
     title: 'Engsel Casement',
     description: 'View all Engsel Casement products',
     slug: 'engsel-casement',
-    image: new URL('@/assets/product/engsel-casement.png', import.meta.url).href,
-    logo: new URL('@/assets/product/GLATINO - RED - LOGO.png', import.meta.url).href,
+    image: '/asset/product/engsel-casement.png',
+    logo: '/asset/product/GLATINO - RED - LOGO.png',
   },
   {
     title: 'Window Lock',
     description: 'View all Window Lock products',
     slug: 'window-lock',
-    image: new URL('@/assets/product/window-lock.png', import.meta.url).href,
-    logo: new URL('@/assets/product/GLATINO - RED - LOGO.png', import.meta.url).href,
+    image: '/asset/product/window-lock.png',
+    logo: '/asset/product/GLATINO - RED - LOGO.png',
   },
   {
     title: 'Alumunium Lock',
     description: 'View all Alumunium Lock products',
     slug: 'alumunium-lock',
-    image: new URL('@/assets/product/alumunium-lock.png', import.meta.url).href,
-    logo: new URL('@/assets/product/GLATINO - RED - LOGO.png', import.meta.url).href,
+    image: '/asset/product/alumunium-lock.png',
+    logo: '/asset/product/GLATINO - RED - LOGO.png',
   },
   {
     title: 'Door Closer',
     description: 'View all Door Closer products',
     slug: 'door-closer',
-    image: new URL('@/assets/product/door-closer.png', import.meta.url).href,
-    logo: new URL('@/assets/product/GLATINO - RED - LOGO.png', import.meta.url).href,
+    image: '/asset/product/door-closer.png',
+    logo: '/asset/product/GLATINO - RED - LOGO.png',
   },
   {
     title: 'Flush Handle',
     description: 'View all Flush Handle products',
     slug: 'flush-handle',
-    image: new URL('@/assets/product/flush-handle.png', import.meta.url).href,
-    logo: new URL('@/assets/product/GLATINO - RED - LOGO.png', import.meta.url).href,
+    image: '/asset/product/flush-handle.png',
+    logo: '/asset/product/GLATINO - RED - LOGO.png',
   },
 ]
 </script>
