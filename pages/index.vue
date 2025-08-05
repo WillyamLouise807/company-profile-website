@@ -451,7 +451,8 @@ const scrollToSection = () => {
   overflow: visible !important;        /* Allow text overflow */
   text-overflow: unset !important;     /* No ellipsis (...) */
   display: block !important;           /* Normal block display */
-  -webkit-line-clamp: unset !important; /* No line limit */
+  line-clamp: unset !important;
+  -webkit-line-clamp: unset !important;
   -webkit-box-orient: unset !important; /* Reset orientation */
   white-space: normal !important;      /* Normal text wrapping */
   word-wrap: break-word !important;    /* Break long words */
