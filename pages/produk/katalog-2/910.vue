@@ -38,10 +38,10 @@
             <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
             <div class="flex flex-wrap justify-center md:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store/glatino-mortise-lock-body-perol-cylinder-material-aluminium-premium-anti-karat-1731013661260220142?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
-                <img src="@/assets/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
+                <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
               <a href="https://shopee.co.id/Glatino-Set-Mortise-Lock-Body-Perol-Cylinder-Material-Aluminium-i.1442585495.29626773379?sp_atk=a53c9c2e-8b96-4aee-92c7-af1f8dd11340&xptdk=a53c9c2e-8b96-4aee-92c7-af1f8dd11340" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
-                <img src="@/assets/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
+                <img src="/asset/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>
           </div>
@@ -119,8 +119,8 @@ import FooterComponent from '@/components/footer.vue'
 import { RouterLink } from 'vue-router'
 import { ref } from 'vue'
 
-import hitam from '@/assets/product/mortise-lock/910/hitam.png'
-import ukuran from '@/assets/product/mortise-lock/910/ukuran-hitam.png'
+import hitam from '/asset/product/mortise-lock/910/hitam.png'
+import ukuran from '/asset/product/mortise-lock/910/ukuran-hitam.png'
 
 const productImage = hitam
 const ukuranImage = ukuran
@@ -131,10 +131,10 @@ function toggleZoom() {
 }
 
 const katalogLinks = [
-  { slug: '808', name: 'Set 808', image: new URL('@/assets/product/mortise-lock/808.png', import.meta.url).href },
-  { slug: '909', name: 'Set 909', image: new URL('@/assets/product/mortise-lock/909.png', import.meta.url).href },
-  // { slug: '910', name: 'Set 910', image: new URL('@/assets/product/mortise-lock/910.png', import.meta.url).href },
-  { slug: '911', name: 'Set 911', image: new URL('@/assets/product/mortise-lock/911.png', import.meta.url).href },
+  { slug: '808', name: 'Set 808', image: '/asset/product/mortise-lock/808.png' },
+  { slug: '909', name: 'Set 909', image: '/asset/product/mortise-lock/909.png' },
+  // { slug: '910', name: 'Set 910', image: '/asset/product/mortise-lock/910.png' },
+  { slug: '911', name: 'Set 911', image: '/asset/product/mortise-lock/911.png' },
 ];
 </script>
 

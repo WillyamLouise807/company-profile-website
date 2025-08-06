@@ -68,7 +68,7 @@
 </template>
 
 <script lang="ts" setup>
-import bgImage from '@/assets/product/mortise-lock/mortise-lock-banner.png';
+import bgImage from '/asset/product/mortise-lock/mortise-lock-banner.png';
 import FooterComponent from '@/components/footer.vue';
 
 const mortiseLockProducts = [
@@ -77,30 +77,30 @@ const mortiseLockProducts = [
     name: "GLT-808",
     description: "Mortise Lock Body Perol + Cylinder Material Aluminium Premium Anti Karat",
     slug: "808",
-    image: new URL('@/assets/product/mortise-lock/808.png', import.meta.url).href
+    image: '/asset/product/mortise-lock/808.png'
   },
   {
     id: 2,
     name: "GLT-909",
     description: "Mortise Lock Body Perol + Cylinder Material Aluminium Premium Anti Karat",
     slug: "909",
-    image: new URL('@/assets/product/mortise-lock/909.png', import.meta.url).href
+    image: '/asset/product/mortise-lock/909.png'
   },
   {
     id: 3,
     name: "GT-910",
     description: "Mortise Lock Body Perol + Cylinder Material Aluminium Premium Anti Karat",
     slug: "910",
-    image: new URL('@/assets/product/mortise-lock/910.png', import.meta.url).href
+    image: '/asset/product/mortise-lock/910.png'
   },
   {
     id: 4,
     name: "GLT-911",
     description: "Mortise Lock Body Perol + Cylinder Material Aluminium Premium Anti Karat",
     slug: "911",
-    image: new URL('@/assets/product/mortise-lock/911.png', import.meta.url).href
-  },
-];
+    image: '/asset/product/mortise-lock/911.png'
+  }
+]
 </script>
 
 <style>
