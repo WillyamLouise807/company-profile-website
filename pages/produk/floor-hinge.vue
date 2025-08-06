@@ -66,7 +66,7 @@
 </template>
 
 <script lang="ts" setup>
-import bgImage from '@/assets/product/floor-hinge/floor-hinge-banner.png';
+import bgImage from '/asset/product/floor-hinge/floor-hinge-banner.png';
 import FooterComponent from '@/components/footer.vue';
 
 const floorHingeProduts = [
@@ -75,14 +75,14 @@ const floorHingeProduts = [
     name: "V53",
     description: "Set Engsel lantai Material Aluminium Anti Karat",
     slug: "v53",
-    image: new URL('@/assets/product/floor-hinge/v53.png', import.meta.url).href
+    image: '/asset/product/floor-hinge/v53.png'
   },
   {
     id: 2,
     name: "V84",
     description: "Set Engsel lantai Material Aluminium Anti Karat",
     slug: "v84",
-    image: new URL('@/assets/product/floor-hinge/v84.png', import.meta.url).href
+    image: '/asset/product/floor-hinge/v84.png'
   },
 ];
 </script>

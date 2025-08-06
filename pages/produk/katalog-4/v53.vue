@@ -38,10 +38,10 @@
             <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
-                <img src="@/assets/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
+                <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
               <a href="https://shopee.co.id/Glatino-Floor-Hinge-V53-V84-Set-Engsel-lantai-Material-Aluminium-Anti-Karat-i.1442585495.24290665306?sp_atk=9f703df0-2611-42d2-989a-cede323bc4c8&xptdk=9f703df0-2611-42d2-989a-cede323bc4c8" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
-                <img src="@/assets/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
+                <img src="/asset/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>
           </div>
@@ -140,9 +140,9 @@ import FooterComponent from '@/components/footer.vue'
 import { RouterLink } from 'vue-router'
 import { ref, computed } from 'vue'
 
-import luar from '@/assets/product/floor-hinge/v53/luar.png'
-import dalam from '@/assets/product/floor-hinge/v53/dalam.png'
-import ukuran from '@/assets/product/floor-hinge/v53/ukuran-hitam.png'
+import luar from '/asset/product/floor-hinge/v53/luar.png'
+import dalam from '/asset/product/floor-hinge/v53/dalam.png'
+import ukuran from '/asset/product/floor-hinge/v53/ukuran-hitam.png'
 
 const views = [
   { name: 'depan', label: 'Tampak Depan', image: luar },
@@ -168,8 +168,8 @@ function toggleZoom() {
 }
 
 const katalogLinks = [
-  // { slug: 'v53', name: 'Set V53', image: new URL('@/assets/product/floor-hinge/v53.png', import.meta.url).href },
-  { slug: 'v84', name: 'Set V84', image: new URL('@/assets/product/floor-hinge/v84.png', import.meta.url).href },
+  // { slug: 'v53', name: 'Set V53', image: '/asset/product/floor-hinge/v53.png' },
+  { slug: 'v84', name: 'Set V84', image: '/asset/product/floor-hinge/v84.png' },
 ];
 </script>
 
