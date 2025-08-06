@@ -73,55 +73,55 @@ import bgImage from '@/assets/product/pull-handle/pull-handle-banner.png';
 import FooterComponent from '@/components/footer.vue'
 
 const pullHandleProducts = [
-  {
-    id: 1,
-    name: "Handle C",
-    description: "Handle tarik model C bahan aluminium tahan karat",
-    slug: "handle-c",
-    image: new URL('@/assets/product/pull-handle/handle-c.png', import.meta.url).href
-  },
-  {
-    id: 2,
-    name: "Handle P",
-    description: "Handle tarik model P bahan aluminium berkualitas",
-    slug: "handle-p",
-    image: new URL('@/assets/product/pull-handle/handle-p.png', import.meta.url).href
-  },
-  {
-    id: 3,
-    name: "Handle D",
-    description: "Handle tarik model D bahan aluminium berkualitas",
-    slug: "handle-d",
-    image: new URL('@/assets/product/pull-handle/handle-d.png', import.meta.url).href
-  },
-  {
-    id: 4,
-    name: "Handle S",
-    description: "Handle tarik model S bahan aluminium berkualitas",
-    slug: "handle-s",
-    image: new URL('@/assets/product/pull-handle/handle-s.png', import.meta.url).href
-  },
-  {
-    id: 5,
-    name: "Handle B",
-    description: "Handle tarik model B bahan aluminium berkualitas",
-    slug: "handle-b",
-    image: new URL('@/assets/product/pull-handle/handle-b.png', import.meta.url).href
-  },
-  {
-    id: 6,
-    name: "Handle H",
-    description: "Handle tarik model H bahan aluminium berkualitas",
-    slug: "handle-h",
-    image: new URL('@/assets/product/pull-handle/handle-h.png', import.meta.url).href
-  },
-  {
-    id: 7,
-    name: "Handle 21",
-    description: "Handle tarik model 21 bahan aluminium berkualitas",
-    slug: "handle-21",
-    image: new URL('@/assets/product/pull-handle/handle-21.png', import.meta.url).href
-  },
+{
+  id: 1,
+  name: "Handle C",
+  description: "Handle tarik model C bahan aluminium tahan karat",
+  slug: "handle-c",
+  image: "/asset/product/pull-handle/handle-c.png"
+},
+{
+  id: 2,
+  name: "Handle P",
+  description: "Handle tarik model P bahan aluminium berkualitas",
+  slug: "handle-p",
+  image: "/asset/product/pull-handle/handle-p.png"
+},
+{
+  id: 3,
+  name: "Handle D",
+  description: "Handle tarik model D bahan aluminium berkualitas",
+  slug: "handle-d",
+  image: "/asset/product/pull-handle/handle-d.png"
+},
+{
+  id: 4,
+  name: "Handle S",
+  description: "Handle tarik model S bahan aluminium berkualitas",
+  slug: "handle-s",
+  image: "/asset/product/pull-handle/handle-s.png"
+},
+{
+  id: 5,
+  name: "Handle B",
+  description: "Handle tarik model B bahan aluminium berkualitas",
+  slug: "handle-b",
+  image: "/asset/product/pull-handle/handle-b.png"
+},
+{
+  id: 6,
+  name: "Handle H",
+  description: "Handle tarik model H bahan aluminium berkualitas",
+  slug: "handle-h",
+  image: "/asset/product/pull-handle/handle-h.png"
+},
+{
+  id: 7,
+  name: "Handle 21",
+  description: "Handle tarik model 21 bahan aluminium berkualitas",
+  slug: "handle-21",
+  image: "/asset/product/pull-handle/handle-21.png"
+}
   // Tambahkan kembali produk lainnya di sini jika dibutuhkan.
 ]
 </script>

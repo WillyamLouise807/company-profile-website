@@ -40,10 +40,10 @@
             <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
             <div class="flex flex-wrap justify-center md:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store/glatino-handle-h-pipa-material-stainlees-anti-karat-termurah-dan-aman-untuk-pintu-kaca-1730975638225323758?extParam=whid%3D18402450%26src%3Dshop&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
-                <img src="@/assets/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
+                <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
               <a href="https://shopee.co.id/Glatino-Pull-Handle-H-Pipa-Material-Stainlees-Aluminium-Untuk-Pintu-Kaca-i.1442585495.27176659975?sp_atk=d2814509-f110-45b5-8c77-fd96c6847ded&xptdk=d2814509-f110-45b5-8c77-fd96c6847ded" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
-                <img src="@/assets/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
+                <img src="/asset/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>
           </div>
@@ -103,7 +103,7 @@
         <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
         <div class="flex justify-center">
           <img
-            src="@/assets/product/pull-handle/handle-b/ukuran-hitam.png"
+            src="/asset/product/pull-handle/handle-b/ukuran-hitam.png"
             alt="Dimensi Handle B"
             class="rounded-xl shadow-md max-w-md w-full bg-white p-4 cursor-zoom-in"
             @click="zoomImage(ukuranImage)"
@@ -154,19 +154,19 @@ import FooterComponent from '@/components/footer.vue'
 import { RouterLink } from 'vue-router'
 import { ref, computed } from 'vue'
 
-import ukuranImage from '@/assets/product/pull-handle/handle-h/ukuran-hitam.png'
+import ukuranImage from '/asset/product/pull-handle/handle-h/ukuran-hitam.png'
 
-import hitam321 from '@/assets/product/pull-handle/handle-h/hitam-321.png'
-import hitam322 from '@/assets/product/pull-handle/handle-h/hitam-322.png'
-import hitam323 from '@/assets/product/pull-handle/handle-h/hitam-323.png'
-import hitam324 from '@/assets/product/pull-handle/handle-h/hitam-324.png'
-import hitam325 from '@/assets/product/pull-handle/handle-h/hitam-325.png'
+import hitam321 from '/asset/product/pull-handle/handle-h/hitam-321.png'
+import hitam322 from '/asset/product/pull-handle/handle-h/hitam-322.png'
+import hitam323 from '/asset/product/pull-handle/handle-h/hitam-323.png'
+import hitam324 from '/asset/product/pull-handle/handle-h/hitam-324.png'
+import hitam325 from '/asset/product/pull-handle/handle-h/hitam-325.png'
 
-import sn321 from '@/assets/product/pull-handle/handle-h/sn-ss-321.png'
-import sn322 from '@/assets/product/pull-handle/handle-h/sn-ss-322.png'
-import sn323 from '@/assets/product/pull-handle/handle-h/sn-ss-323.png'
-import sn324 from '@/assets/product/pull-handle/handle-h/sn-ss-324.png'
-import sn325 from '@/assets/product/pull-handle/handle-h/sn-ss-325.png'
+import sn321 from '/asset/product/pull-handle/handle-h/sn-ss-321.png'
+import sn322 from '/asset/product/pull-handle/handle-h/sn-ss-322.png'
+import sn323 from '/asset/product/pull-handle/handle-h/sn-ss-323.png'
+import sn324 from '/asset/product/pull-handle/handle-h/sn-ss-324.png'
+import sn325 from '/asset/product/pull-handle/handle-h/sn-ss-325.png'
 
 const colors = [
   {
@@ -231,13 +231,13 @@ function zoomImage(src: string) {
 }
 
 const katalogLinks = [
-  { slug: 'handle-c', name: 'Handle C', image: new URL('@/assets/product/pull-handle/handle-c.png', import.meta.url).href },
-  { slug: 'handle-p', name: 'Handle P', image: new URL('@/assets/product/pull-handle/handle-p.png', import.meta.url).href },
-  { slug: 'handle-d', name: 'Handle D', image: new URL('@/assets/product/pull-handle/handle-d.png', import.meta.url).href },
-  { slug: 'handle-s', name: 'Handle S', image: new URL('@/assets/product/pull-handle/handle-s.png', import.meta.url).href },
-  { slug: 'handle-b', name: 'Handle B', image: new URL('@/assets/product/pull-handle/handle-b.png', import.meta.url).href },
-  // { slug: 'handle-h', name: 'Handle H', image: new URL('@/assets/product/pull-handle/handle-h.png', import.meta.url).href },
-  { slug: 'handle-21', name: 'Handle 21', image: new URL('@/assets/product/pull-handle/handle-21.png', import.meta.url).href },
+  { slug: 'handle-c', name: 'Handle C', image: '/asset/product/pull-handle/handle-c.png'},
+  { slug: 'handle-p', name: 'Handle P', image: '/asset/product/pull-handle/handle-p.png'},
+  { slug: 'handle-d', name: 'Handle D', image: '/asset/product/pull-handle/handle-d.png'},
+  { slug: 'handle-s', name: 'Handle S', image: '/asset/product/pull-handle/handle-s.png'},
+  { slug: 'handle-b', name: 'Handle B', image: '/asset/product/pull-handle/handle-b.png'},
+  // { slug: 'handle-h', name: 'Handle H', image: '/asset/product/pull-handle/handle-h.png'},
+  { slug: 'handle-21', name: 'Handle 21', image: '/asset/product/pull-handle/handle-21.png'},
 ];
 </script>
 

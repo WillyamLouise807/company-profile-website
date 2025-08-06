@@ -37,10 +37,10 @@
             <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
             <div class="flex flex-wrap justify-center md:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
-                <img src="@/assets/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
+                <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
               <a href="https://shopee.co.id/glatino.official" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
-                <img src="@/assets/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
+                <img src="/asset/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>
           </div>
@@ -114,8 +114,8 @@ import { RouterLink } from 'vue-router'
 import { ref } from 'vue'
 
 // Hanya satu warna dan satu ukuran
-import productImage from '@/assets/product/pull-handle/handle-21/sn-ss.png'
-import ukuranImage from '@/assets/product/pull-handle/handle-21/ukuran-hitam.png' // jika memang sama
+import productImage from '/asset/product/pull-handle/handle-21/sn-ss.png'
+import ukuranImage from '/asset/product/pull-handle/handle-21/ukuran-hitam.png' // jika memang sama
 
 const selectedColorLabel = 'SN/SS'
 const selectedSizeLabel = '32 x 350 mm'
@@ -134,13 +134,13 @@ function zoomImage(src: string) {
 }
 
 const katalogLinks = [
-  { slug: 'handle-c', name: 'Handle C', image: new URL('@/assets/product/pull-handle/handle-c.png', import.meta.url).href },
-  { slug: 'handle-p', name: 'Handle P', image: new URL('@/assets/product/pull-handle/handle-p.png', import.meta.url).href },
-  { slug: 'handle-d', name: 'Handle D', image: new URL('@/assets/product/pull-handle/handle-d.png', import.meta.url).href },
-  { slug: 'handle-s', name: 'Handle S', image: new URL('@/assets/product/pull-handle/handle-s.png', import.meta.url).href },
-  { slug: 'handle-b', name: 'Handle B', image: new URL('@/assets/product/pull-handle/handle-b.png', import.meta.url).href },
-  { slug: 'handle-h', name: 'Handle H', image: new URL('@/assets/product/pull-handle/handle-h.png', import.meta.url).href },
-  // { slug: 'handle-21', name: 'Handle 21', image: new URL('@/assets/product/pull-handle/handle-21.png', import.meta.url).href },
+  { slug: 'handle-c', name: 'Handle C', image: '/asset/product/pull-handle/handle-c.png'},
+  { slug: 'handle-p', name: 'Handle P', image: '/asset/product/pull-handle/handle-p.png'},
+  { slug: 'handle-d', name: 'Handle D', image: '/asset/product/pull-handle/handle-d.png'},
+  { slug: 'handle-s', name: 'Handle S', image: '/asset/product/pull-handle/handle-s.png'},
+  { slug: 'handle-b', name: 'Handle B', image: '/asset/product/pull-handle/handle-b.png'},
+  { slug: 'handle-h', name: 'Handle H', image: '/asset/product/pull-handle/handle-h.png'},
+  // { slug: 'handle-21', name: 'Handle 21', image: '/asset/product/pull-handle/handle-21.png'},
 ];
 </script>
 
