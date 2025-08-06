@@ -15,7 +15,15 @@
       <!-- Desktop/Tablet Menu -->
       <nav class="hidden md:flex flex-wrap items-center space-x-4 text-sm lg:text-base">
         <NuxtLink to="/" @click.prevent="scrollToTop" :class="[activeSection === 'home' && route.path === '/' ? 'text-red-600 font-bold' : 'hover:text-red-500']">Home</NuxtLink>
-        <NuxtLink to="/" @click.prevent="scrollToAbout" :class="[activeSection === 'about' && route.path === '/' ? 'text-red-600 font-bold' : 'hover:text-red-500']">About Us</NuxtLink>
+        <NuxtLink to="/" @click.prevent="scrollToAbout"
+          :class="[
+            (activeSection === 'about' && route.path === '/') ||
+            route.path === '/article-page' ||
+            route.path.startsWith('/event') ? 'text-red-600 font-bold' : 'hover:text-red-500'
+          ]"
+        >
+          About Us
+        </NuxtLink>
         <NuxtLink to="/product" @click="closeMenus" :class="[route.path.startsWith('/product') || route.path.startsWith('/produk') ? 'text-red-600 font-bold' : 'hover:text-red-500']">Product</NuxtLink>
         <NuxtLink to="/team" @click="closeMenus" :class="[route.path === '/team' ? 'text-red-600 font-bold' : 'hover:text-red-500']">Team</NuxtLink>
         <NuxtLink to="/contact" @click="closeMenus" :class="[route.path === '/contact' ? 'text-red-600 font-bold' : 'hover:text-red-500']">Contact</NuxtLink>

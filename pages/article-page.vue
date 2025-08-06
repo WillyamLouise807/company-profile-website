@@ -80,7 +80,7 @@ const articles = [
   {
     title: 'Bakti Sosial Yayasan Yatim Piatu & Dhuafa Angku Budi Sati Bhakti Pertiwi.',
     description:
-      'Glatino turut mengadakan bakti sosial di panti asuhan sebagai bentuk kepedulian terhadap sesama.',
+      'Pada tanggal 27 Juli 2025, Heartifact dengan penuh semangat menyelenggarakan sebuah kegiatan Bakti Sosial yang bertujuan untuk memberikan dampak positif dan menghadirkan..',
     date: '27 Juli 2025',
     image: '/article/baksos-1.jpg',
     link: '/event/bakti-sosial-july-2025',
