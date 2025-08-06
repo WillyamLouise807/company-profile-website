@@ -157,14 +157,14 @@ const sizes = ['3', '4']
 
 // Variasi gambar
 const images = {
-  'hitam-3': new URL('/asset/product/alumunium-lock/butt-hinge-nylon/hitam-3inch.png', import.meta.url).href,
-  'hitam-4': new URL('/asset/product/alumunium-lock/butt-hinge-nylon/hitam-4inch.png', import.meta.url).href,
-  'putih-3': new URL('/asset/product/alumunium-lock/butt-hinge-nylon/putih-3inch.png', import.meta.url).href,
-  'putih-4': new URL('/asset/product/alumunium-lock/butt-hinge-nylon/putih-4inch.png', import.meta.url).href,
-  'cokelat-3': new URL('/asset/product/alumunium-lock/butt-hinge-nylon/cokelat-3inch.png', import.meta.url).href,
-  'cokelat-4': new URL('/asset/product/alumunium-lock/butt-hinge-nylon/cokelat-4inch.png', import.meta.url).href,
-  'silver-3': new URL('/asset/product/alumunium-lock/butt-hinge-nylon/silver-3inch.png', import.meta.url).href,
-  'silver-4': new URL('/asset/product/alumunium-lock/butt-hinge-nylon/silver-4inch.png', import.meta.url).href,
+  'hitam-3': '/asset/product/alumunium-lock/butt-hinge-nylon/hitam-3inch.png',
+  'hitam-4': '/asset/product/alumunium-lock/butt-hinge-nylon/hitam-4inch.png',
+  'putih-3': '/asset/product/alumunium-lock/butt-hinge-nylon/putih-3inch.png',
+  'putih-4': '/asset/product/alumunium-lock/butt-hinge-nylon/putih-4inch.png',
+  'cokelat-3': '/asset/product/alumunium-lock/butt-hinge-nylon/cokelat-3inch.png',
+  'cokelat-4': '/asset/product/alumunium-lock/butt-hinge-nylon/cokelat-4inch.png',
+  'silver-3': '/asset/product/alumunium-lock/butt-hinge-nylon/silver-3inch.png',
+  'silver-4': '/asset/product/alumunium-lock/butt-hinge-nylon/silver-4inch.png'
 }
 
 // Gunakan satu gambar ukuran saja

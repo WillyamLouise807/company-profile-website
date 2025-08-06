@@ -43,13 +43,17 @@
         </p>
 
         <div class="text-gray-800 space-y-6 text-base sm:text-lg text-justify leading-relaxed">
-          <p>
-            Pada tanggal <strong>27 Juli 2025</strong>, Heartifact dengan penuh semangat menyelenggarakan sebuah kegiatan <strong>Bakti Sosial</strong> yang bertujuan untuk memberikan dampak positif dan menghadirkan kebahagiaan bagi sesama. Kegiatan ini berlangsung di <em>Yayasan Yatim Piatu & Dhuafa Angku Budi Sati Bhakti Pertiwi</em>, sebuah tempat yang menjadi rumah bagi anak-anak yatim dan kaum dhuafa yang luar biasa. Momen ini menjadi bagian dari komitmen kami untuk terus aktif dalam kegiatan sosial dan memperkuat nilai-nilai kemanusiaan dalam setiap langkah yang kami ambil.
-          </p>
+          <FadeInOnScroll direction="down">
+            <p>
+              Pada tanggal <strong>27 Juli 2025</strong>, Heartifact dengan penuh semangat menyelenggarakan sebuah kegiatan <strong>Bakti Sosial</strong> yang bertujuan untuk memberikan dampak positif dan menghadirkan kebahagiaan bagi sesama. Kegiatan ini berlangsung di <em>Yayasan Yatim Piatu & Dhuafa Angku Budi Sati Bhakti Pertiwi</em>, sebuah tempat yang menjadi rumah bagi anak-anak yatim dan kaum dhuafa yang luar biasa. Momen ini menjadi bagian dari komitmen kami untuk terus aktif dalam kegiatan sosial dan memperkuat nilai-nilai kemanusiaan dalam setiap langkah yang kami ambil.
+            </p>
+          </FadeInOnScroll>
 
-          <p>
-            Sejak pagi hari, tim Heartifact telah bersiap-siap membawa energi positif ke lokasi kegiatan. Setibanya di yayasan, kami disambut dengan antusias oleh anak-anak dan para pengurus. Setelah sesi pembukaan yang singkat, acara dimulai dengan <strong>ice breaking</strong> — serangkaian permainan seru yang dirancang untuk mencairkan suasana dan membangun kedekatan antara tim kami dan anak-anak. Tawa riang, senyuman, dan canda terekam jelas, menciptakan atmosfer hangat yang langsung terasa akrab.
-          </p>
+          <FadeInOnScroll direction="down">
+            <p>
+              Sejak pagi hari, tim Heartifact telah bersiap-siap membawa energi positif ke lokasi kegiatan. Setibanya di yayasan, kami disambut dengan antusias oleh anak-anak dan para pengurus. Setelah sesi pembukaan yang singkat, acara dimulai dengan <strong>ice breaking</strong> — serangkaian permainan seru yang dirancang untuk mencairkan suasana dan membangun kedekatan antara tim kami dan anak-anak. Tawa riang, senyuman, dan canda terekam jelas, menciptakan atmosfer hangat yang langsung terasa akrab.
+            </p>
+          </FadeInOnScroll>
 
           <p>
             Setelah suasana semakin cair, kami melanjutkan dengan permainan <strong>tebak gambar</strong>. Aktivitas ini bukan hanya menghibur, tetapi juga mengasah daya ingat, kreativitas, dan kerja sama antar anak-anak. Dengan penuh semangat, mereka mencoba menebak berbagai gambar lucu dan edukatif yang kami tampilkan. Setiap jawaban yang benar disambut dengan tepuk tangan dan sorakan gembira, memperlihatkan antusiasme luar biasa dari para peserta.
@@ -84,7 +88,7 @@
       <!-- Grid Galeri Acak -->
       <div class="columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4">
         <img
-          v-for="i in 12"
+          v-for="i in 13"
           :key="i"
           :src="`/article/galeri${i}.jpg`"
           alt="Dokumentasi"

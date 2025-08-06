@@ -139,9 +139,9 @@
 <script lang="ts" setup>
 import { ref, computed } from 'vue'
 
-const imageTerbuka = new URL('/asset/product/alumunium-lock/engsel-piano/terbuka.png', import.meta.url).href
-const imageTertutup = new URL('/asset/product/alumunium-lock/engsel-piano/tertutup.png', import.meta.url).href
-const ukuranImage = new URL('/asset/product/alumunium-lock/engsel-piano/ukuran-hitam.png', import.meta.url).href
+const imageTerbuka = '/asset/product/alumunium-lock/engsel-piano/terbuka.png'
+const imageTertutup = '/asset/product/alumunium-lock/engsel-piano/tertutup.png'
+const ukuranImage = '/asset/product/alumunium-lock/engsel-piano/ukuran-hitam.png'
 
 const isOpen = ref(true)
 const isZoomOpen = ref(false)

@@ -138,13 +138,13 @@ const isZoomOpen = ref(false)
 
 // Gambar berdasarkan ukuran
 const images = {
-  '3': new URL('/asset/product/alumunium-lock/butt-hinge-ss/ss-3inch.png', import.meta.url).href,
-  '4': new URL('/asset/product/alumunium-lock/butt-hinge-ss/ss-4inch.png', import.meta.url).href,
+  '3': '/asset/product/alumunium-lock/butt-hinge-ss/ss-3inch.png',
+  '4': '/asset/product/alumunium-lock/butt-hinge-ss/ss-4inch.png',
 }
 
 // Gambar dimensi opsional (ganti jika punya)
 const ukuranImage = computed(() =>
-  new URL('/asset/product/alumunium-lock/butt-hinge-nylon/ukuran-hitam.png', import.meta.url).href
+  '/asset/product/alumunium-lock/butt-hinge-nylon/ukuran-hitam.png'
 )
 
 const selectedImage = computed(() => images[selectedSize.value])

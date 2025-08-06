@@ -146,14 +146,13 @@ const colors: ColorOption[] = [
 ]
 
 const images: Record<ColorName, string> = {
-  hitam: new URL('/asset/product/alumunium-lock/engsel-salon/hitam.png', import.meta.url).href,
-  putih: new URL('/asset/product/alumunium-lock/engsel-salon/putih.png', import.meta.url).href,
-  cokelat: new URL('/asset/product/alumunium-lock/engsel-salon/ss.png', import.meta.url).href,
-  beige: new URL('/asset/product/alumunium-lock/engsel-salon/beige.png', import.meta.url).href,
+  hitam: '/asset/product/alumunium-lock/engsel-salon/hitam.png',
+  putih: '/asset/product/alumunium-lock/engsel-salon/putih.png',
+  cokelat: '/asset/product/alumunium-lock/engsel-salon/ss.png',
+  beige: '/asset/product/alumunium-lock/engsel-salon/beige.png',
 }
 
-const ukuranImage = new URL('/asset/product/alumunium-lock/engsel-salon/ukuran-hitam.png', import.meta.url).href
-
+const ukuranImage = '/asset/product/alumunium-lock/engsel-salon/ukuran-hitam.png'
 const selectedColor = ref<ColorOption>(colors[0]!)
 const isZoomOpen = ref(false)
 

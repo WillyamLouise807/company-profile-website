@@ -113,8 +113,8 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 
-const productImage = new URL('/asset/product/alumunium-lock/but-hinge-h/ss.png', import.meta.url).href
-const ukuranImage = new URL('/asset/product/alumunium-lock/but-hinge-h/ukuran-putih.png', import.meta.url).href
+const productImage = '/asset/product/alumunium-lock/but-hinge-h/ss.png'
+const ukuranImage = '/asset/product/alumunium-lock/but-hinge-h/ukuran-putih.png'
 
 const isZoomOpen = ref(false)
 
