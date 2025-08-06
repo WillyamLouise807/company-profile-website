@@ -39,10 +39,10 @@
             <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store/glatino-glt-939-luxlock-set-kunci-pintu-material-aluminium-anti-karat-1731487235139405550" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
-                <img src="@/assets/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
+                <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
               <a href="https://shopee.co.id/Glatino-GLT-939-Luxlock-Set-Kunci-Pintu-Material-Aluminium-Anti-Karat-i.1442585495.28772754108" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
-                <img src="@/assets/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
+                <img src="/asset/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>
           </div>
@@ -145,11 +145,11 @@ import FooterComponent from '@/components/footer.vue'
 import { RouterLink } from 'vue-router'
 import { ref, computed } from 'vue'
 
-import hitam from '@/assets/product/door-lock/939/hitam.png'
-import cokelat from '@/assets/product/door-lock/939/cokelat.png'
-import putih from '@/assets/product/door-lock/939/putih.png'
-import snss from '@/assets/product/door-lock/939/sn-ss.png'
-import ukuran from '@/assets/product/door-lock/939/ukuran-hitam.png'
+import hitam from '/asset/product/door-lock/939/hitam.png'
+import cokelat from '/asset/product/door-lock/939/cokelat.png'
+import putih from '/asset/product/door-lock/939/putih.png'
+import snss from '/asset/product/door-lock/939/sn-ss.png'
+import ukuran from '/asset/product/door-lock/939/ukuran-hitam.png'
 
 const colors = [
   { name: 'hitam', label: 'Hitam', hex: '#1f1f1f', image: hitam },
@@ -177,16 +177,16 @@ function toggleZoom() {
 }
 
 const katalogLinks = [
-  { slug: '201', name: 'Set 201', image: new URL('@/assets/product/door-lock/201.png', import.meta.url).href },
-  { slug: '202', name: 'Set 202', image: new URL('@/assets/product/door-lock/202.png', import.meta.url).href },
-  { slug: '820', name: 'Set 820', image: new URL('@/assets/product/door-lock/820.png', import.meta.url).href },
-  { slug: '839', name: 'Set 839', image: new URL('@/assets/product/door-lock/839.png', import.meta.url).href },
-  // { slug: '939', name: 'Set 939', image: new URL('@/assets/product/door-lock/939.png', import.meta.url).href },
-  { slug: '989', name: 'Set 989', image: new URL('@/assets/product/door-lock/989.png', import.meta.url).href },
-  { slug: 'handle-only', name: 'Handle Only', image: new URL('@/assets/product/door-lock/handle-only.png', import.meta.url).href },
-  { slug: 'expanda', name: 'Set Expanda', image: new URL('@/assets/product/door-lock/expanda.png', import.meta.url).href },
-  { slug: '802', name: 'Set 802', image: new URL('@/assets/product/door-lock/802.png', import.meta.url).href },
-  { slug: '902', name: 'Set 902', image: new URL('@/assets/product/door-lock/902.png', import.meta.url).href },
+  { slug: '201', name: 'Set 201', image: '/asset/product/door-lock/201.png' },
+  { slug: '202', name: 'Set 202', image: '/asset/product/door-lock/202.png' },
+  { slug: '820', name: 'Set 820', image: '/asset/product/door-lock/820.png' },
+  { slug: '839', name: 'Set 839', image: '/asset/product/door-lock/839.png' },
+  // { slug: '939', name: 'Set 939', image: '/asset/product/door-lock/939.png' },
+  { slug: '989', name: 'Set 989', image: '/asset/product/door-lock/989.png' },
+  { slug: 'handle-only', name: 'Handle Only', image: '/asset/product/door-lock/handle-only.png' },
+  { slug: 'expanda', name: 'Set Expanda', image: '/asset/product/door-lock/expanda.png' },
+  { slug: '802', name: 'Set 802', image: '/asset/product/door-lock/802.png' },
+  { slug: '902', name: 'Set 902', image: '/asset/product/door-lock/902.png' }
 ];
 </script>
 

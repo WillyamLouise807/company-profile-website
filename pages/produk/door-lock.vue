@@ -75,70 +75,70 @@ const doorLockProducts = [
     name: "GLT-201",
     description: "Full Set Kunci Pintu Hight Quality Material Aluminium",
     slug: "201",
-    image: new URL('@/assets/product/door-lock/201.png', import.meta.url).href
+    image: "/asset/product/door-lock/201.png"
   },
   {
     id: 2,
     name: "GLT-202",
     description: "Lock Full Set Type Bahan Aluminium Kunci Pintu Set Handle Lengkap",
     slug: "202",
-    image: new URL('@/assets/product/door-lock/202.png', import.meta.url).href
+    image: "/asset/product/door-lock/202.png"
   },
   {
     id: 3,
     name: "GT-820",
     description: "Lock Full Set Case Kunci Pintu Set Premium Stainless Steel",
     slug: "820",
-    image: new URL('@/assets/product/door-lock/820.png', import.meta.url).href
+    image: "/asset/product/door-lock/820.png"
   },
   {
     id: 4,
     name: "GLT-839",
     description: "KeyPro Set Kunci Pintu Handle Premium Door Lock Aluminium",
     slug: "839",
-    image: new URL('@/assets/product/door-lock/839.png', import.meta.url).href
+    image: "/asset/product/door-lock/839.png"
   },
   {
     id: 5,
     name: "GLT-939",
     description: "Luxlock Full Set Kunci Pintu Material Aluminium Anti Karat",
     slug: "939",
-    image: new URL('@/assets/product/door-lock/939.png', import.meta.url).href
+    image: "/asset/product/door-lock/939.png"
   },
   {
     id: 6,
     name: "GLT-989",
     description: "LockExpert Set Kunci Pintu Premium Material Aluminium Anti Karat",
     slug: "989",
-    image: new URL('@/assets/product/door-lock/989.png', import.meta.url).href
+    image: "/asset/product/door-lock/989.png"
   },
   {
     id: 7,
     name: "Handle Only",
     description: "Kepala Handle SS 201/ Tarikan Tanam Pintu Geser Sliding Door Material Aluminium",
     slug: "handle-only",
-    image: new URL('@/assets/product/door-lock/handle-only.png', import.meta.url).href
+    image: "/asset/product/door-lock/handle-only.png"
   },
   {
     id: 8,
     name: "Expanda",
     description: "Set Kunci Pintu Handle Kawat Nyamuk Type Door Loock Premium",
     slug: "expanda",
-    image: new URL('@/assets/product/door-lock/expanda.png', import.meta.url).href
+    image: "/asset/product/door-lock/expanda.png"
   },
   {
     id: 9,
     name: "802",
     description: "LockStyle Set Kunci Pintu Untuk Kamar Mandi Bahan Aluminium Anti Karat",
     slug: "802",
-    image: new URL('@/assets/product/door-lock/802.png', import.meta.url).href
+    image: "/asset/product/door-lock/802.png"
   },
   {
     id: 10,
     name: "902",
     description: "Bathroom Buddy Set Kunci Kamar mandi Material Aluminium Anti Karat",
     slug: "902",
-    image: new URL('@/assets/product/door-lock/902.png', import.meta.url).href
+    image: "/asset/product/door-lock/902.png"
   }
 ]
 </script>

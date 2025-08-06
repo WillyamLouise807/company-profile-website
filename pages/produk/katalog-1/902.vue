@@ -39,10 +39,10 @@
             <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
             <div class="flex flex-wrap justify-center md:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
-                <img src="@/assets/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
+                <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
               <a href="https://shopee.co.id/Glatino-Bathroom-Buddy-902-Kunci-Kamar-mandi-Material-Aluminium-Anti-Karat-i.1442585495.28825492512?sp_atk=adcd4877-f6ad-4a04-99bf-d46a45dc84d9&xptdk=adcd4877-f6ad-4a04-99bf-d46a45dc84d9" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
-                <img src="@/assets/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
+                <img src="/asset/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>
           </div>
@@ -169,16 +169,16 @@ import { RouterLink } from 'vue-router'
 import { ref, computed } from 'vue'
 
 // Gambar produk
-import hitam25 from '@/assets/product/door-lock/902/hitam-25.png'
-import hitam30 from '@/assets/product/door-lock/902/hitam-30.png'
-import beige25 from '@/assets/product/door-lock/902/beige-25.png'
-import beige30 from '@/assets/product/door-lock/902/beige-30.png'
-import putih25 from '@/assets/product/door-lock/902/putih-25.png'
-import putih30 from '@/assets/product/door-lock/902/putih-30.png'
+import hitam25 from '/asset/product/door-lock/902/hitam-25.png'
+import hitam30 from '/asset/product/door-lock/902/hitam-30.png'
+import beige25 from '/asset/product/door-lock/902/beige-25.png'
+import beige30 from '/asset/product/door-lock/902/beige-30.png'
+import putih25 from '/asset/product/door-lock/902/putih-25.png'
+import putih30 from '/asset/product/door-lock/902/putih-30.png'
 
 // Gambar dimensi
-import ukuran25 from '@/assets/product/door-lock/902/ukuran-hitam.png'
-import ukuran30 from '@/assets/product/door-lock/902/ukuran-hitam.png'
+import ukuran25 from '/asset/product/door-lock/902/ukuran-hitam.png'
+import ukuran30 from '/asset/product/door-lock/902/ukuran-hitam.png'
 
 // Warna & gambar berdasarkan ukuran
 const colors = [
@@ -237,16 +237,16 @@ function zoomImage(src: string) {
 }
 
 const katalogLinks = [
-  { slug: '201', name: 'Set 201', image: new URL('@/assets/product/door-lock/201.png', import.meta.url).href },
-  { slug: '202', name: 'Set 202', image: new URL('@/assets/product/door-lock/202.png', import.meta.url).href },
-  { slug: '820', name: 'Set 820', image: new URL('@/assets/product/door-lock/820.png', import.meta.url).href },
-  { slug: '839', name: 'Set 839', image: new URL('@/assets/product/door-lock/839.png', import.meta.url).href },
-  { slug: '939', name: 'Set 939', image: new URL('@/assets/product/door-lock/939.png', import.meta.url).href },
-  { slug: '989', name: 'Set 989', image: new URL('@/assets/product/door-lock/989.png', import.meta.url).href },
-  { slug: 'handle-only', name: 'Handle Only', image: new URL('@/assets/product/door-lock/handle-only.png', import.meta.url).href },
-  { slug: 'expanda', name: 'Set Expanda', image: new URL('@/assets/product/door-lock/expanda.png', import.meta.url).href },
-  { slug: '802', name: 'Set 802', image: new URL('@/assets/product/door-lock/802.png', import.meta.url).href },
-  // { slug: '902', name: 'Set 902', image: new URL('@/assets/product/door-lock/902.png', import.meta.url).href },
+  { slug: '201', name: 'Set 201', image: '/asset/product/door-lock/201.png' },
+  { slug: '202', name: 'Set 202', image: '/asset/product/door-lock/202.png' },
+  { slug: '820', name: 'Set 820', image: '/asset/product/door-lock/820.png' },
+  { slug: '839', name: 'Set 839', image: '/asset/product/door-lock/839.png' },
+  { slug: '939', name: 'Set 939', image: '/asset/product/door-lock/939.png' },
+  { slug: '989', name: 'Set 989', image: '/asset/product/door-lock/989.png' },
+  { slug: 'handle-only', name: 'Handle Only', image: '/asset/product/door-lock/handle-only.png' },
+  { slug: 'expanda', name: 'Set Expanda', image: '/asset/product/door-lock/expanda.png' },
+  { slug: '802', name: 'Set 802', image: '/asset/product/door-lock/802.png' },
+  // { slug: '902', name: 'Set 902', image: '/asset/product/door-lock/902.png' }
 ];
 </script>
 
