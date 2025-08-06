@@ -37,10 +37,10 @@
             <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store/glatino-rambuncis-casement-handle-pengunci-pegangan-jendela-material-aluminium-1730960389032281838?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
-                <img src="@/assets/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
+                <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
               <a href="https://shopee.co.id/Glatino-Rambuncis-Casement-Handle-Pengunci-Pegangan-Jendela-Material-Aluminium-i.1442585495.27623743499?sp_atk=8adbb290-1a55-4f6b-93f3-2db7d565fa2c&xptdk=8adbb290-1a55-4f6b-93f3-2db7d565fa2c" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
-                <img src="@/assets/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
+                <img src="/asset/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>
           </div>
@@ -137,16 +137,16 @@ import { RouterLink } from 'vue-router'
 import { ref, computed } from 'vue'
 
 // Gambar produk
-import beige from '@/assets/product/window-lock/casement-lock/beige.png'
-import cokelat from '@/assets/product/window-lock/casement-lock/cokelat.png'
-import cream from '@/assets/product/window-lock/casement-lock/cream.png'
-import hitam from '@/assets/product/window-lock/casement-lock/hitam.png'
-import putih from '@/assets/product/window-lock/casement-lock/putih.png'
-import silver from '@/assets/product/window-lock/casement-lock/silver.png'
+import beige from '/asset/product/window-lock/casement-lock/beige.png'
+import cokelat from '/asset/product/window-lock/casement-lock/cokelat.png'
+import cream from '/asset/product/window-lock/casement-lock/cream.png'
+import hitam from '/asset/product/window-lock/casement-lock/hitam.png'
+import putih from '/asset/product/window-lock/casement-lock/putih.png'
+import silver from '/asset/product/window-lock/casement-lock/silver.png'
 
 // Ukuran
-import ukuranHitam from '@/assets/product/window-lock/casement-lock/ukuran-hitam.png'
-import ukuranPutih from '@/assets/product/window-lock/casement-lock/ukuran-putih.png'
+import ukuranHitam from '/asset/product/window-lock/casement-lock/ukuran-hitam.png'
+import ukuranPutih from '/asset/product/window-lock/casement-lock/ukuran-putih.png'
 
 const colors = [
   { name: 'beige', label: 'Beige', hex: '#f5f5dc', image: beige, ukuran: ukuranHitam },
@@ -181,8 +181,8 @@ function toggleZoom() {
 }
 
 const katalogLinks = [
-  // { slug: 'casement-lock', name: 'Casement Lock', image: new URL('@/assets/product/window-lock/casement-lock.png', import.meta.url).href },
-  { slug: 'crescent-lock', name: 'Crescent Lock', image: new URL('@/assets/product/window-lock/crescent-lock.png', import.meta.url).href },
+  // { slug: 'casement-lock', name: 'Casement Lock', image: '/asset/product/window-lock/casement-lock.png'},
+  { slug: 'crescent-lock', name: 'Crescent Lock', image: '/asset/product/window-lock/crescent-lock.png'},
 ];
 </script>
 

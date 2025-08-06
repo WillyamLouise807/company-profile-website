@@ -66,24 +66,24 @@
 </template>
 
 <script lang="ts" setup>
-import bgImage from '@/assets/product/window-lock/window-lock-banner.png';
+import bgImage from '/asset/product/window-lock/window-lock-banner.png';
 import FooterComponent from '@/components/footer.vue';
 
 const floorHingeProduts = [
-  {
-    id: 1,
-    name: "Casement Lock",
-    description: "Set Engsel lantai Material Aluminium Anti Karat",
-    slug: "casement-lock",
-    image: new URL('@/assets/product/window-lock/casement-lock.png', import.meta.url).href
-  },
-  {
-    id: 2,
-    name: "Crescent Lock",
-    description: "Set Engsel lantai Material Aluminium Anti Karat",
-    slug: "crescent-lock",
-    image: new URL('@/assets/product/window-lock/crescent-lock.png', import.meta.url).href
-  },
+{
+  id: 1,
+  name: "Casement Lock",
+  description: "Set Engsel lantai Material Aluminium Anti Karat",
+  slug: "casement-lock",
+  image: "/asset/product/window-lock/casement-lock.png"
+},
+{
+  id: 2,
+  name: "Crescent Lock",
+  description: "Set Engsel lantai Material Aluminium Anti Karat",
+  slug: "crescent-lock",
+  image: "/asset/product/window-lock/crescent-lock.png"
+}
 ];
 </script>
 

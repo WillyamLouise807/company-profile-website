@@ -37,10 +37,10 @@
             <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" class="hover:scale-105 transition-transform">
-                <img src="@/assets/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
+                <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
               <a href="https://shopee.co.id/glatino.official" target="_blank" class="hover:scale-105 transition-transform">
-                <img src="@/assets/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
+                <img src="/asset/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>
           </div>
@@ -136,12 +136,12 @@ import FooterComponent from '@/components/footer.vue'
 import { RouterLink } from 'vue-router'
 import { ref, computed } from 'vue'
 
-import beige from '@/assets/product/window-lock/crescent-lock/beige.png'
-import cokelat from '@/assets/product/window-lock/crescent-lock/cokelat.png'
-import hitam from '@/assets/product/window-lock/crescent-lock/hitam.png'
-import putih from '@/assets/product/window-lock/crescent-lock/putih.png'
-import silver from '@/assets/product/window-lock/crescent-lock/silver.png'
-import ukuran from '@/assets/product/window-lock/crescent-lock/ukuran-hitam.png'
+import beige from '/asset/product/window-lock/crescent-lock/beige.png'
+import cokelat from '/asset/product/window-lock/crescent-lock/cokelat.png'
+import hitam from '/asset/product/window-lock/crescent-lock/hitam.png'
+import putih from '/asset/product/window-lock/crescent-lock/putih.png'
+import silver from '/asset/product/window-lock/crescent-lock/silver.png'
+import ukuran from '/asset/product/window-lock/crescent-lock/ukuran-hitam.png'
 
 const colors = [
   { name: 'beige', label: 'Beige', hex: '#f5f5dc', image: beige },
@@ -165,8 +165,8 @@ function toggleZoom() {
 }
 
 const katalogLinks = [
-  { slug: 'casement-lock', name: 'Casement Lock', image: new URL('@/assets/product/window-lock/casement-lock.png', import.meta.url).href },
-  // { slug: 'crescent-lock', name: 'Crescent Lock', image: new URL('@/assets/product/window-lock/crescent-lock.png', import.meta.url).href },
+  { slug: 'casement-lock', name: 'Casement Lock', image: '/asset/product/window-lock/casement-lock.png'},
+  // { slug: 'crescent-lock', name: 'Crescent Lock', image: '/asset/product/window-lock/crescent-lock.png'},
 ];
 </script>
 
