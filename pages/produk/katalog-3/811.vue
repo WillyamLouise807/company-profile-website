@@ -41,10 +41,10 @@
             <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
             <div class="flex flex-wrap justify-center md:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store/glatino-cylinder-pro-kunci-tabung-pengaman-bahan-aluminium-anti-karat-harga-terjangkau-1730966763212343022?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
-                <img src="@/assets/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
+                <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
               <a href="https://shopee.co.id/Glatino-Cylinder-Pro-Kunci-Tabung-Pengaman-Material-Aluminium-i.1442585495.29675790039?sp_atk=820b6c40-f5dc-4964-b993-41f7754e80df&xptdk=820b6c40-f5dc-4964-b993-41f7754e80df" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
-                <img src="@/assets/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
+                <img src="/asset/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>
           </div>
@@ -122,8 +122,8 @@ import FooterComponent from '@/components/footer.vue'
 import { RouterLink } from 'vue-router'
 import { ref } from 'vue'
 
-import hitam from '@/assets/product/cylinder/811/hitam.png'
-import ukuran from '@/assets/product/cylinder/811/ukuran-hitam.png'
+import hitam from '/asset/product/cylinder/811/hitam.png'
+import ukuran from '/asset/product/cylinder/811/ukuran-hitam.png'
 
 const productImage = hitam
 const ukuranImage = ukuran
@@ -134,10 +134,10 @@ function toggleZoom() {
 }
 
 const katalogLinks = [
-  { slug: '65155', name: 'Set 65155', image: new URL('@/assets/product/cylinder/65155.png', import.meta.url).href },
-  { slug: '65155-et', name: 'Set 65155-et', image: new URL('@/assets/product/cylinder/65155-et.png', import.meta.url).href },
-  { slug: '810', name: 'Set 810', image: new URL('@/assets/product/cylinder/810.png', import.meta.url).href },
-  // { slug: '811', name: 'Set 811', image: new URL('@/assets/product/cylinder/811.png', import.meta.url).href },
+  { slug: '65155', name: 'Set 65155', image: '/asset/product/cylinder/65155.png'},
+  { slug: '65155-et', name: 'Set 65155-et', image: '/asset/product/cylinder/65155-et.png'},
+  { slug: '810', name: 'Set 810', image: '/asset/product/cylinder/810.png'},
+  // { slug: '811', name: 'Set 811', image: '/asset/product/cylinder/811.png'},
 ];
 </script>
 

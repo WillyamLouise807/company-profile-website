@@ -68,7 +68,7 @@
 </template>
 
 <script lang="ts" setup>
-import bgImage from '@/assets/product/cylinder/cylinder-banner.png';
+import bgImage from '/asset/product/cylinder/cylinder-banner.png';
 import FooterComponent from '@/components/footer.vue';
 
 const cylinderProducts = [
@@ -77,28 +77,28 @@ const cylinderProducts = [
     name: "CY65155",
     description: "Cylinder Pro Kunci Tabung Pengaman Material Aluminium",
     slug: "65155",
-    image: new URL('@/assets/product/cylinder/65155.png', import.meta.url).href
+    image: '/asset/product/cylinder/65155.png'
   },
   {
     id: 2,
     name: "CY6515-ET",
     description: "Cylinder Pro Kunci Tabung Pengaman Material Aluminium",
     slug: "65155-et",
-    image: new URL('@/assets/product/cylinder/65155-et.png', import.meta.url).href
+    image: '/asset/product/cylinder/65155-et.png'
   },
   {
     id: 3,
     name: "GLT-810",
     description: "Cylinder Pro Kunci Tabung Pengaman Material Aluminium",
     slug: "810",
-    image: new URL('@/assets/product/cylinder/810.png', import.meta.url).href
+    image: '/asset/product/cylinder/810.png'
   },
   {
     id: 4,
     name: "GLT-811",
     description: "Cylinder Pro Kunci Tabung Pengaman Material Aluminium",
     slug: "811",
-    image: new URL('@/assets/product/cylinder/811.png', import.meta.url).href
+    image: '/asset/product/cylinder/811.png'
   },
 ];
 </script>
