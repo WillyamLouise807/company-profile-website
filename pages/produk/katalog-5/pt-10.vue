@@ -37,10 +37,10 @@
             <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
-                <img src="@/assets/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
+                <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
               <a href="https://shopee.co.id/Glatino-Patch-Fitting-Alat-Penghubung-Kaca-Bahan-Aluminium-All-Type-PT10-PT24-i.1442585495.26274110618?sp_atk=b81d3124-174e-4d1a-b086-04b56f27c935&xptdk=b81d3124-174e-4d1a-b086-04b56f27c935" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
-                <img src="@/assets/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
+                <img src="/asset/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>
           </div>
@@ -49,7 +49,7 @@
         <!-- Gambar Produk -->
         <div class="flex justify-center items-center w-full">
           <img
-            src="@/assets/product/patch-fitting/pt-10/produk.png"
+            src="/asset/product/patch-fitting/pt-10/produk.png"
             alt="Patch Fitting PT-10"
             class="rounded-2xl shadow-lg w-full aspect-video object-contain bg-white"
           />
@@ -61,7 +61,7 @@
         <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
         <div class="flex flex-col items-center">
           <img
-            src="@/assets/product/patch-fitting/pt-10/ukuran-hitam.png"
+            src="/asset/product/patch-fitting/pt-10/ukuran-hitam.png"
             alt="Ukuran Patch Fitting PT-10"
             class="rounded-xl shadow-md max-w-xl w-full bg-white p-4 cursor-zoom-in"
             @click="toggleZoom"
@@ -78,7 +78,7 @@
       >
         <div class="bg-white p-4 md:p-6 rounded-xl shadow-2xl max-w-4xl w-full">
           <img
-            src="@/assets/product/patch-fitting/pt-10/ukuran-hitam.png"
+            src="/asset/product/patch-fitting/pt-10/ukuran-hitam.png"
             alt="Zoomed Ukuran Patch Fitting PT-10"
             class="w-full object-contain"
           />
@@ -122,12 +122,12 @@ function toggleZoom() {
 }
 
 const katalogLinks = [
-  // { slug: 'pt-10', name: 'Set PT-10', image: new URL('@/assets/product/patch-fitting/pt-10.png', import.meta.url).href },
-  { slug: 'pt-20', name: 'Set PT-20', image: new URL('@/assets/product/patch-fitting/pt-20.png', import.meta.url).href },
-  { slug: 'pt-24', name: 'Set PT-24', image: new URL('@/assets/product/patch-fitting/pt-24.png', import.meta.url).href },
-  { slug: 'pt-30', name: 'Set PT-30', image: new URL('@/assets/product/patch-fitting/pt-30.png', import.meta.url).href },
-  { slug: 'pt-40', name: 'Set PT-40', image: new URL('@/assets/product/patch-fitting/pt-40.png', import.meta.url).href },
-  { slug: 'pt-50', name: 'Set PT-50', image: new URL('@/assets/product/patch-fitting/pt-50.png', import.meta.url).href },
+  // { slug: 'pt-10', name: 'Set PT-10', image: '/asset/product/patch-fitting/pt-10.png' },
+  { slug: 'pt-20', name: 'Set PT-20', image: '/asset/product/patch-fitting/pt-20.png' },
+  { slug: 'pt-24', name: 'Set PT-24', image: '/asset/product/patch-fitting/pt-24.png' },
+  { slug: 'pt-30', name: 'Set PT-30', image: '/asset/product/patch-fitting/pt-30.png' },
+  { slug: 'pt-40', name: 'Set PT-40', image: '/asset/product/patch-fitting/pt-40.png' },
+  { slug: 'pt-50', name: 'Set PT-50', image: '/asset/product/patch-fitting/pt-50.png' }
 ];
 </script>
 

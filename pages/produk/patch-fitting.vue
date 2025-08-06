@@ -62,13 +62,12 @@
         </div>
       </div>
     </section>
-
     <FooterComponent />
   </div>
 </template>
 
 <script lang="ts" setup>
-import bgImage from '@/assets/product/patch-fitting/patch-fitting-banner.png';
+import bgImage from '/asset/product/patch-fitting/patch-fitting-banner.png';
 import FooterComponent from '@/components/footer.vue';
 
 const floorHingeProduts = [
@@ -77,42 +76,42 @@ const floorHingeProduts = [
     name: "PT-10",
     description: "Set Engsel lantai Material Aluminium Anti Karat",
     slug: "pt-10",
-    image: new URL('@/assets/product/patch-fitting/pt-10.png', import.meta.url).href
+    image: '/asset/product/patch-fitting/pt-10.png'
   },
   {
     id: 2,
     name: "PT-20",
     description: "Set Engsel lantai Material Aluminium Anti Karat",
     slug: "pt-20",
-    image: new URL('@/assets/product/patch-fitting/pt-20.png', import.meta.url).href
+    image: '/asset/product/patch-fitting/pt-20.png'
   },
   {
     id: 3,
     name: "PT-24",
     description: "Set Engsel lantai Material Aluminium Anti Karat",
     slug: "pt-24",
-    image: new URL('@/assets/product/patch-fitting/pt-24.png', import.meta.url).href
+    image: '/asset/product/patch-fitting/pt-24.png'
   },
   {
     id: 4,
     name: "PT-30",
     description: "Set Engsel lantai Material Aluminium Anti Karat",
     slug: "pt-30",
-    image: new URL('@/assets/product/patch-fitting/pt-30.png', import.meta.url).href
+    image: '/asset/product/patch-fitting/pt-30.png'
   },
   {
     id: 5,
     name: "PT-40",
     description: "Set Engsel lantai Material Aluminium Anti Karat",
     slug: "pt-40",
-    image: new URL('@/assets/product/patch-fitting/pt-40.png', import.meta.url).href
+    image: '/asset/product/patch-fitting/pt-40.png'
   },
   {
     id: 6,
     name: "PT-50",
     description: "Set Engsel lantai Material Aluminium Anti Karat",
     slug: "pt-50",
-    image: new URL('@/assets/product/patch-fitting/pt-50.png', import.meta.url).href
+    image: '/asset/product/patch-fitting/pt-50.png'
   },
 ];
 </script>
