@@ -39,10 +39,10 @@
             <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
-                <img src="@/assets/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
+                <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
               <a href="https://shopee.co.id/Glatino-Engsel-CasementPro-Material-Nylon-Series-Steel-Penyangga-Jendela-Pintu-430-i.1442585495.28173482764?sp_atk=0cb135e7-f7d2-4550-b151-44b2bbfd45f8&xptdk=0cb135e7-f7d2-4550-b151-44b2bbfd45f8" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
-                <img src="@/assets/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
+                <img src="/asset/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>
           </div>
@@ -51,7 +51,7 @@
         <!-- Gambar Produk -->
         <div class="flex justify-center items-center w-full">
           <img
-            src="@/assets/product/engsel-casement/nylon/produk.png"
+            src="/asset/product/engsel-casement/nylon/produk.png"
             alt="Patch Fitting nylon"
             class="rounded-2xl shadow-lg w-full aspect-video object-contain bg-white"
           />
@@ -63,7 +63,7 @@
         <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
         <div class="flex flex-col items-center">
           <img
-            src="@/assets/product/engsel-casement/nylon/ukuran-hitam.png"
+            src="/asset/product/engsel-casement/nylon/ukuran-hitam.png"
             alt="Ukuran Patch Fitting nylon"
             class="rounded-xl shadow-md max-w-xl w-full bg-white p-4 cursor-zoom-in"
             @click="toggleZoom"
@@ -80,7 +80,7 @@
       >
         <div class="bg-white p-4 md:p-6 rounded-xl shadow-2xl max-w-4xl w-full">
           <img
-            src="@/assets/product/engsel-casement/nylon/ukuran-hitam.png"
+            src="/asset/product/engsel-casement/nylon/ukuran-hitam.png"
             alt="Zoomed Ukuran Patch Fitting nylon"
             class="w-full object-contain"
           />
@@ -125,9 +125,9 @@ function toggleZoom() {
 }
 
 const katalogLinks = [
-  // { slug: 'nylon', name: 'Nylon', image: new URL('@/assets/product/engsel-casement/nylon.png', import.meta.url).href },
-  { slug: 'kuningan', name: 'Kuningan', image: new URL('@/assets/product/engsel-casement/kuningan.png', import.meta.url).href },
-  { slug: '2-profile', name: '2 Profile', image: new URL('@/assets/product/engsel-casement/2-profile.png', import.meta.url).href },
+  // { slug: 'nylon', name: 'Nylon', image: '/asset/product/engsel-casement/nylon.png' },
+  { slug: 'kuningan', name: 'Kuningan', image: '/asset/product/engsel-casement/kuningan.png' },
+  { slug: '2-profile', name: '2 Profile', image: '/asset/product/engsel-casement/2-profile.png' },
 ];
 </script>
 

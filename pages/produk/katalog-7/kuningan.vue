@@ -39,10 +39,10 @@
             <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store/glatino-engsel-kuningan-casement-premium-penyangga-jendela-pintu-stainless-steel-ukuran-8-24-1731627272119355092?extParam=whid%3D18402450%26src%3Dshop&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
-                <img src="@/assets/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
+                <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
               <a href="https://shopee.co.id/Glatino-Engsel-Kuningan-Casement-Premium-Penyangga-Jendela-Pintu-Stainless-Steel-Ukuran-8-24--i.1442585495.24490461668?sp_atk=1bd9539e-5ca7-492a-b63c-e4a6620c0e23&xptdk=1bd9539e-5ca7-492a-b63c-e4a6620c0e23" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
-                <img src="@/assets/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
+                <img src="/asset/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>
           </div>
@@ -51,7 +51,7 @@
         <!-- Gambar Produk -->
         <div class="flex justify-center items-center w-full">
           <img
-            src="@/assets/product/engsel-casement/kuningan/produk.png"
+            src="/asset/product/engsel-casement/kuningan/produk.png"
             alt="Patch Fitting PT-20"
             class="rounded-2xl shadow-lg w-full aspect-video object-contain bg-white"
           />
@@ -63,7 +63,7 @@
         <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
         <div class="flex flex-col items-center">
           <img
-            src="@/assets/product/engsel-casement/kuningan/ukuran-hitam.png"
+            src="/asset/product/engsel-casement/kuningan/ukuran-hitam.png"
             alt="Ukuran Patch Fitting PT-20"
             class="rounded-xl shadow-md max-w-xl w-full bg-white p-4 cursor-zoom-in"
             @click="toggleZoom"
@@ -80,7 +80,7 @@
       >
         <div class="bg-white p-4 md:p-6 rounded-xl shadow-2xl max-w-4xl w-full">
           <img
-            src="@/assets/product/engsel-casement/kuningan/ukuran-hitam.png"
+            src="/asset/product/engsel-casement/kuningan/ukuran-hitam.png"
             alt="Zoomed Ukuran Patch Fitting PT-20"
             class="w-full object-contain"
           />
@@ -125,9 +125,9 @@ function toggleZoom() {
 }
 
 const katalogLinks = [
-  { slug: 'nylon', name: 'Nylon', image: new URL('@/assets/product/engsel-casement/nylon.png', import.meta.url).href },
-  // { slug: 'kuningan', name: 'Kuningan', image: new URL('@/assets/product/engsel-casement/kuningan.png', import.meta.url).href },
-  { slug: '2-profile', name: '2 Profile', image: new URL('@/assets/product/engsel-casement/2-profile.png', import.meta.url).href },
+  { slug: 'nylon', name: 'Nylon', image: '/asset/product/engsel-casement/nylon.png' },
+  // { slug: 'kuningan', name: 'Kuningan', image: '/asset/product/engsel-casement/kuningan.png' },
+  { slug: '2-profile', name: '2 Profile', image: '/asset/product/engsel-casement/2-profile.png' },
 ];
 </script>
 

@@ -72,27 +72,27 @@ import bgImage from '@/assets/product/engsel-casement/engsel-casement-banner.png
 import FooterComponent from '@/components/footer.vue';
 
 const floorHingeProduts = [
-  {
-    id: 1,
-    name: "Nylon",
-    description: "Set Engsel lantai Material Aluminium Anti Karat",
-    slug: "nylon",
-    image: new URL('@/assets/product/engsel-casement/nylon.png', import.meta.url).href
-  },
-  {
-    id: 2,
-    name: "Kuningan",
-    description: "Set Engsel lantai Material Aluminium Anti Karat",
-    slug: "kuningan",
-    image: new URL('@/assets/product/engsel-casement/kuningan.png', import.meta.url).href
-  },
-  {
-    id: 3,
-    name: "2 Profile",
-    description: "Set Engsel lantai Material Aluminium Anti Karat",
-    slug: "2-profile",
-    image: new URL('@/assets/product/engsel-casement/2-profile.png', import.meta.url).href
-  },
+{
+  id: 1,
+  name: "Nylon",
+  description: "Set Engsel lantai Material Aluminium Anti Karat",
+  slug: "nylon",
+  image: "/asset/product/engsel-casement/nylon.png"
+},
+{
+  id: 2,
+  name: "Kuningan",
+  description: "Set Engsel lantai Material Aluminium Anti Karat",
+  slug: "kuningan",
+  image: "/asset/product/engsel-casement/kuningan.png"
+},
+{
+  id: 3,
+  name: "2 Profile",
+  description: "Set Engsel lantai Material Aluminium Anti Karat",
+  slug: "2-profile",
+  image: "/asset/product/engsel-casement/2-profile.png"
+}
 ];
 </script>
 
