@@ -37,10 +37,10 @@
             <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store/glatino-kunci-pintu-set-sliding-almunium-a7-indikator-premium-handleset-1731020221529360110?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
-                <img src="@/assets/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
+                <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
               <a href="https://shopee.co.id/Glatino-Kunci-Pintu-Set-Sliding-Almunium-A7-Indikator-Premium-Handle-set-i.1442585495.26074084526?sp_atk=1d6d04fa-3e1b-46cf-9ae6-4e88733a1f7d&xptdk=1d6d04fa-3e1b-46cf-9ae6-4e88733a1f7d" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
-                <img src="@/assets/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
+                <img src="/asset/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>
           </div>
@@ -136,15 +136,15 @@ import { RouterLink } from 'vue-router'
 import { ref, computed } from 'vue'
 
 // Gambar produk
-import beige from '@/assets/product/alumunium-lock/a7/beige.png'
-import cokelat from '@/assets/product/alumunium-lock/a7/cokelat.png'
-import hitam from '@/assets/product/alumunium-lock/a7/hitam.png'
-import putih from '@/assets/product/alumunium-lock/a7/putih.png'
-import ss from '@/assets/product/alumunium-lock/a7/ss.png'
+import beige from '/asset/product/alumunium-lock/a7/beige.png'
+import cokelat from '/asset/product/alumunium-lock/a7/cokelat.png'
+import hitam from '/asset/product/alumunium-lock/a7/hitam.png'
+import putih from '/asset/product/alumunium-lock/a7/putih.png'
+import ss from '/asset/product/alumunium-lock/a7/ss.png'
 
 // Ukuran
-import ukuranHitam from '@/assets/product/alumunium-lock/a7/ukuran-hitam.png'
-import ukuranPutih from '@/assets/product/alumunium-lock/a7/ukuran-putih.png'
+import ukuranHitam from '/asset/product/alumunium-lock/a7/ukuran-hitam.png'
+import ukuranPutih from '/asset/product/alumunium-lock/a7/ukuran-putih.png'
 
 const colors = [
   { name: 'beige', label: 'Beige', hex: '#f5f5dc', image: beige, ukuran: ukuranPutih },
@@ -178,15 +178,15 @@ function toggleZoom() {
 }
 
 const katalogLinks = [
-  { slug: '41054', name: 'Swing Lock 41054', image: new URL('@/assets/product/alumunium-lock/41054.png', import.meta.url).href },
-  { slug: '41055', name: 'Swing Lock 41055', image: new URL('@/assets/product/alumunium-lock/41055.png', import.meta.url).href },
-  { slug: '41066', name: 'Swing Lock 41066', image: new URL('@/assets/product/alumunium-lock/41066.png', import.meta.url).href },
-  // { slug: 'a7', name: 'A7', image: new URL('@/assets/product/alumunium-lock/a7.png', import.meta.url).href },
-  { slug: 'butt-hinge-nylon', name: 'Butt Hinge Nylon', image: new URL('@/assets/product/alumunium-lock/butt-hinge-nylon.png', import.meta.url).href },
-  { slug: 'butt-hinge-ss', name: 'Butt Hinge SS', image: new URL('@/assets/product/alumunium-lock/butt-hinge-ss.png', import.meta.url).href },
-  { slug: 'butt-hinge-h', name: 'Butt Hinge H', image: new URL('@/assets/product/alumunium-lock/butt-hinge-h.png', import.meta.url).href },
-  { slug: 'engsel-piano', name: 'Engsel Piano', image: new URL('@/assets/product/alumunium-lock/engsel-piano.png', import.meta.url).href },
-  { slug: 'engsel-salon', name: 'Engsel Piano', image: new URL('@/assets/product/alumunium-lock/engsel-salon.png', import.meta.url).href },
+  { slug: '41054', name: 'Swing Lock 41054', image: '/asset/product/alumunium-lock/41054.png' },
+  { slug: '41055', name: 'Swing Lock 41055', image: '/asset/product/alumunium-lock/41055.png' },
+  { slug: '41066', name: 'Swing Lock 41066', image: '/asset/product/alumunium-lock/41066.png' },
+  // { slug: 'a7', name: 'A7', image: '/asset/product/alumunium-lock/a7.png' },
+  { slug: 'butt-hinge-nylon', name: 'Butt Hinge Nylon', image: '/asset/product/alumunium-lock/butt-hinge-nylon.png' },
+  { slug: 'butt-hinge-ss', name: 'Butt Hinge SS', image: '/asset/product/alumunium-lock/butt-hinge-ss.png' },
+  { slug: 'butt-hinge-h', name: 'Butt Hinge H', image: '/asset/product/alumunium-lock/butt-hinge-h.png' },
+  { slug: 'engsel-piano', name: 'Engsel Piano', image: '/asset/product/alumunium-lock/engsel-piano.png' },
+  { slug: 'engsel-salon', name: 'Engsel Salon', image: '/asset/product/alumunium-lock/engsel-salon.png' }
 ];
 </script>
 

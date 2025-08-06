@@ -38,10 +38,10 @@
             <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store/glatino-engsel-salon-9-inch-atau-engsel-penahan-sikutan-jendela-lipat-material-aluminium-anti-karat-1730972977255319278?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer">
-                <img src="@/assets/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
+                <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
               <a href="https://shopee.co.id/mall/search?keyword=salon&shop=1442585495" target="_blank" rel="noopener noreferrer">
-                <img src="@/assets/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
+                <img src="/asset/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>
           </div>
@@ -146,13 +146,13 @@ const colors: ColorOption[] = [
 ]
 
 const images: Record<ColorName, string> = {
-  hitam: new URL('@/assets/product/alumunium-lock/engsel-salon/hitam.png', import.meta.url).href,
-  putih: new URL('@/assets/product/alumunium-lock/engsel-salon/putih.png', import.meta.url).href,
-  cokelat: new URL('@/assets/product/alumunium-lock/engsel-salon/ss.png', import.meta.url).href,
-  beige: new URL('@/assets/product/alumunium-lock/engsel-salon/beige.png', import.meta.url).href,
+  hitam: new URL('/asset/product/alumunium-lock/engsel-salon/hitam.png', import.meta.url).href,
+  putih: new URL('/asset/product/alumunium-lock/engsel-salon/putih.png', import.meta.url).href,
+  cokelat: new URL('/asset/product/alumunium-lock/engsel-salon/ss.png', import.meta.url).href,
+  beige: new URL('/asset/product/alumunium-lock/engsel-salon/beige.png', import.meta.url).href,
 }
 
-const ukuranImage = new URL('@/assets/product/alumunium-lock/engsel-salon/ukuran-hitam.png', import.meta.url).href
+const ukuranImage = new URL('/asset/product/alumunium-lock/engsel-salon/ukuran-hitam.png', import.meta.url).href
 
 const selectedColor = ref<ColorOption>(colors[0]!)
 const isZoomOpen = ref(false)
@@ -168,15 +168,15 @@ const toggleZoom = () => {
 }
 
 const katalogLinks = [
-  { slug: '41054', name: 'Swing Lock 41054', image: new URL('@/assets/product/alumunium-lock/41054.png', import.meta.url).href },
-  { slug: '41055', name: 'Swing Lock 41055', image: new URL('@/assets/product/alumunium-lock/41055.png', import.meta.url).href },
-  { slug: '41066', name: 'Swing Lock 41066', image: new URL('@/assets/product/alumunium-lock/41066.png', import.meta.url).href },
-  { slug: 'a7', name: 'A7', image: new URL('@/assets/product/alumunium-lock/a7.png', import.meta.url).href },
-  { slug: 'butt-hinge-nylon', name: 'Butt Hinge Nylon', image: new URL('@/assets/product/alumunium-lock/butt-hinge-nylon.png', import.meta.url).href },
-  { slug: 'butt-hinge-ss', name: 'Butt Hinge SS', image: new URL('@/assets/product/alumunium-lock/butt-hinge-ss.png', import.meta.url).href },
-  { slug: 'butt-hinge-h', name: 'Butt Hinge H', image: new URL('@/assets/product/alumunium-lock/butt-hinge-h.png', import.meta.url).href },
-  { slug: 'engsel-piano', name: 'Engsel Piano', image: new URL('@/assets/product/alumunium-lock/engsel-piano.png', import.meta.url).href },
-  // { slug: 'engsel-salon', name: 'Engsel Piano', image: new URL('@/assets/product/alumunium-lock/engsel-salon.png', import.meta.url).href },
+  { slug: '41054', name: 'Swing Lock 41054', image: '/asset/product/alumunium-lock/41054.png' },
+  { slug: '41055', name: 'Swing Lock 41055', image: '/asset/product/alumunium-lock/41055.png' },
+  { slug: '41066', name: 'Swing Lock 41066', image: '/asset/product/alumunium-lock/41066.png' },
+  { slug: 'a7', name: 'A7', image: '/asset/product/alumunium-lock/a7.png' },
+  { slug: 'butt-hinge-nylon', name: 'Butt Hinge Nylon', image: '/asset/product/alumunium-lock/butt-hinge-nylon.png' },
+  { slug: 'butt-hinge-ss', name: 'Butt Hinge SS', image: '/asset/product/alumunium-lock/butt-hinge-ss.png' },
+  { slug: 'butt-hinge-h', name: 'Butt Hinge H', image: '/asset/product/alumunium-lock/butt-hinge-h.png' },
+  { slug: 'engsel-piano', name: 'Engsel Piano', image: '/asset/product/alumunium-lock/engsel-piano.png' },
+  // { slug: 'engsel-salon', name: 'Engsel Salon', image: '/asset/product/alumunium-lock/engsel-salon.png' }
 ];
 </script>
 
