@@ -223,12 +223,12 @@
                     activeCard === index ? 'scale-105 opacity-100 z-10 shadow-lg' : 'scale-95 opacity-80'
                   ]"
                 >
-                  <div class="rounded-lg overflow-hidden mb-6 bg-gray-200 w-full h-[240px] flex-shrink-0">
+                  <div class="rounded-lg overflow-hidden mb-6 w-full h-[240px] flex-shrink-0">
                     <img 
                       :src="timelineImages[index]" 
                       alt=""
                       draggable="false"
-                      class="w-full h-full object-contain select-none pointer-events-none"
+                      class=" h-full object-contain select-none pointer-events-none"
                     />
                   </div>
                   <h3 class="text-xl font-bold text-red-600 mb-4">{{ year }}</h3>
@@ -264,14 +264,14 @@ import { ref, onMounted, onBeforeUnmount } from 'vue'
 import FooterComponent from '../components/footer.vue'
 
 //Import Gambar Our Journey
-import img2018 from '@/assets/index/2018.jpeg'
-import img2019 from '@/assets/index/2019.jpeg'
-import img2020 from '@/assets/index/2020.jpeg'
-import img2021 from '@/assets/index/2021.jpeg'
-import img2022 from '@/assets/index/2022.jpeg'
-import img2023 from '@/assets/index/2023.jpeg'
-import img2024 from '@/assets/index/2024.jpeg'
-import img2025 from '@/assets/index/2025.jpeg'
+import img2018 from '/asset/index/2018.jpg'
+import img2019 from '/asset/index/2019.png'
+import img2020 from '/asset/index/2020.jpg'
+import img2021 from '/asset/index/2021.jpg'
+import img2022 from '/asset/index/2022.png'
+import img2023 from '/asset/index/2023.jpeg'
+import img2024 from '/asset/index/2024.jpg'
+import img2025 from '/asset/index/2025.png'
 
 // Timeline data
 const timelineYears = [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
