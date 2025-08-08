@@ -145,7 +145,7 @@ function toggleZoom() {
 }
 
 const katalogLinks = [
-  { slug: '41054', name: 'Swing Lock 41054', image: '/asset/product/alumunium-lock/41054.png' },
+  // { slug: '41054', name: 'Swing Lock 41054', image: '/asset/product/alumunium-lock/41054.png' },
   { slug: '41055', name: 'Swing Lock 41055', image: '/asset/product/alumunium-lock/41055.png' },
   { slug: '41066', name: 'Swing Lock 41066', image: '/asset/product/alumunium-lock/41066.png' },
   { slug: 'a7', name: 'A7', image: '/asset/product/alumunium-lock/a7.png' },
