@@ -29,10 +29,10 @@
       </div>
     </section>
 
-    <!-- Produk door-closer -->
-    <!-- <section class="py-16 px-4 sm:px-6 lg:px-12 bg-white">
+    <!-- Produk Flush Handle -->
+    <section class="py-16 px-4 sm:px-6 lg:px-12 bg-white">
       <div class="container mx-auto">
-        <h2 class="text-2xl sm:text-3xl font-bold mb-8 text-center text-red-700">Produk door-closer</h2>
+        <h2 class="text-2xl sm:text-3xl font-bold mb-8 text-center text-red-700">Produk Flush Handle</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div 
@@ -49,7 +49,7 @@
               <h3 class="text-xl font-semibold mb-2">{{ product.name }}</h3>
               <p class="text-sm text-gray-600 mb-4">{{ product.description }}</p>
               <NuxtLink 
-                :to="`/produk/katalog-3/${product.slug}`"
+                :to="`/produk/katalog-11/${product.slug}`"
                 class="bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded-full inline-flex items-center transition"
               >
                 Detail Produk
@@ -61,7 +61,7 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <FooterComponent />
   </div>
@@ -71,36 +71,50 @@
 import bgImage from '@/assets/product/flush-handle/flush-handle-banner.png';
 import FooterComponent from '@/components/footer.vue';
 
-// const doorCloserProducts = [
-//   {
-//     id: 1,
-//     name: "CY65155",
-//     description: "flush-handle Pro Kunci Tabung Pengaman Material Aluminium",
-//     slug: "65155",
-//     image: new URL('@/assets/product/flush-handle/65155.png', import.meta.url).href
-//   },
-//   {
-//     id: 2,
-//     name: "CY6515-ET",
-//     description: "flush-handle Pro Kunci Tabung Pengaman Material Aluminium",
-//     slug: "65155-et",
-//     image: new URL('@/assets/product/flush-handle/65155-et.png', import.meta.url).href
-//   },
-//   {
-//     id: 3,
-//     name: "GLT-810",
-//     description: "flush-handle Pro Kunci Tabung Pengaman Material Aluminium",
-//     slug: "810",
-//     image: new URL('@/assets/product/flush-handle/810.png', import.meta.url).href
-//   },
-//   {
-//     id: 4,
-//     name: "GLT-811",
-//     description: "flush-handle Pro Kunci Tabung Pengaman Material Aluminium",
-//     slug: "811",
-//     image: new URL('@/assets/product/flush-handle/811.png', import.meta.url).href
-//   },
-// ];
+const doorCloserProducts = [
+  {
+    id: 1,
+    name: "Zinc",
+    description: "Handle Tanam Zinc Berfungsi Untuk Penahan Pintu Stainlees",
+    slug: "zinc",
+    image:'/asset/product/flush-handle/zinc.png'
+  },
+  {
+    id: 2,
+    name: "Alumunium",
+    description: "Flush Handle Pegangan Pintu Geser type Datar Material Aluminium",
+    slug: "alumunium",
+    image:'/asset/product/flush-handle/alumunium.png'
+  },
+  {
+    id: 3,
+    name: "SS-201",
+    description: "Kepala Handle SS 201/ Tarikan Tanam Pintu Geser Sliding Door Material Aluminium",
+    slug: "ss-201",
+    image:'/asset/product/flush-handle/ss-201.png'
+  },
+  {
+    id: 4,
+    name: "Roller Shutter Lock",
+    description: "Roller Shutter Lock / Center lock Material Aluminium Anti Karat",
+    slug: "roller-shutter-lock",
+    image:'/asset/product/flush-handle/roller-shutter-lock.png'
+  },
+  {
+    id: 5,
+    name: "Bracket Ikan",
+    description: "Bracket Ikan Aluminium Gagang Pintu Kaca Anti Karat Stainless Steel",
+    slug: "bracket-ikan",
+    image:'/asset/product/flush-handle/bracket-ikan.png'
+  },
+  {
+    id: 6,
+    name: "Handle Bambu",
+    description: "Handle Bambo Material Aluminium Gagang Pintu Kaca Anti Karat Stainlees Steel",
+    slug: "handle-bambu",
+    image:'/asset/product/flush-handle/handle-bambu.png'
+  },
+];
 </script>
 
 <style>
