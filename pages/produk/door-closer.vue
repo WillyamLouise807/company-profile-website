@@ -30,7 +30,7 @@
     </section>
 
     <!-- Produk door-closer -->
-    <!-- <section class="py-16 px-4 sm:px-6 lg:px-12 bg-white">
+    <section class="py-16 px-4 sm:px-6 lg:px-12 bg-white">
       <div class="container mx-auto">
         <h2 class="text-2xl sm:text-3xl font-bold mb-8 text-center text-red-700">Produk door-closer</h2>
 
@@ -49,7 +49,7 @@
               <h3 class="text-xl font-semibold mb-2">{{ product.name }}</h3>
               <p class="text-sm text-gray-600 mb-4">{{ product.description }}</p>
               <NuxtLink 
-                :to="`/produk/katalog-3/${product.slug}`"
+                :to="`/produk/katalog-10/${product.slug}`"
                 class="bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded-full inline-flex items-center transition"
               >
                 Detail Produk
@@ -61,7 +61,7 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <FooterComponent />
   </div>
@@ -71,36 +71,15 @@
 import bgImage from '@/assets/product/door-closer/door-closer-banner.png';
 import FooterComponent from '@/components/footer.vue';
 
-// const doorCloserProducts = [
-//   {
-//     id: 1,
-//     name: "CY65155",
-//     description: "door-closer Pro Kunci Tabung Pengaman Material Aluminium",
-//     slug: "65155",
-//     image: new URL('@/assets/product/door-closer/65155.png', import.meta.url).href
-//   },
-//   {
-//     id: 2,
-//     name: "CY6515-ET",
-//     description: "door-closer Pro Kunci Tabung Pengaman Material Aluminium",
-//     slug: "65155-et",
-//     image: new URL('@/assets/product/door-closer/65155-et.png', import.meta.url).href
-//   },
-//   {
-//     id: 3,
-//     name: "GLT-810",
-//     description: "door-closer Pro Kunci Tabung Pengaman Material Aluminium",
-//     slug: "810",
-//     image: new URL('@/assets/product/door-closer/810.png', import.meta.url).href
-//   },
-//   {
-//     id: 4,
-//     name: "GLT-811",
-//     description: "door-closer Pro Kunci Tabung Pengaman Material Aluminium",
-//     slug: "811",
-//     image: new URL('@/assets/product/door-closer/811.png', import.meta.url).href
-//   },
-// ];
+const doorCloserProducts = [
+  {
+    id: 1,
+    name: "Door Closer",
+    description: "Door Closer Pro Kunci Tabung Pengaman Material Aluminium",
+    slug: "door-closer",
+    image: '/asset/product/door-closer/door-closer.png'
+  },
+];
 </script>
 
 <style>
