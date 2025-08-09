@@ -27,29 +27,30 @@
         </div>
       </div>
 
-      <!-- Useful Links -->
-      <div>
-        <h3 class="text-lg font-semibold text-red-600 mb-4">Useful Links</h3>
-        <ul class="space-y-2">
-          <li><a href="#" class="hover:text-red-500">Home</a></li>
-          <li><a href="#" class="hover:text-red-500">About us</a></li>
-          <li><a href="#" class="hover:text-red-500">Product</a></li>
-          <li><a href="#" class="hover:text-red-500">Team</a></li>
-          <li><a href="#" class="hover:text-red-500">Online Store</a></li>
-        </ul>
-      </div>
+<!-- Useful Links -->
+<div>
+  <h3 class="text-lg font-semibold text-red-600 mb-4">Useful Links</h3>
+  <ul class="space-y-2">
+    <li><NuxtLink to="/" class="hover:text-red-500">Home</NuxtLink></li>
+    <li><NuxtLink to="/#about-gbj" class="hover:text-red-500">About us</NuxtLink></li>
+    <li><NuxtLink to="/product" class="hover:text-red-500">Product</NuxtLink></li>
+    <li><NuxtLink to="/team" class="hover:text-red-500">Team</NuxtLink></li>
+    <li><NuxtLink to="/article-page" class="hover:text-red-500">Event</NuxtLink></li>
+  </ul>
+</div>
 
-      <!-- Products -->
-      <div>
-        <h3 class="text-lg font-semibold text-red-600 mb-4">Products</h3>
-        <ul class="space-y-2">
-          <li><a href="#" class="hover:text-red-500">Door Lock</a></li>
-          <li><a href="#" class="hover:text-red-500">Mortise Lock</a></li>
-          <li><a href="#" class="hover:text-red-500">Cylinder</a></li>
-          <li><a href="#" class="hover:text-red-500">Floor Hinge</a></li>
-          <li><a href="#" class="hover:text-red-500">Patch Fitting</a></li>
-        </ul>
-      </div>
+<!-- Products -->
+<div>
+  <h3 class="text-lg font-semibold text-red-600 mb-4">Products</h3>
+  <ul class="space-y-2">
+    <li><NuxtLink to="/produk/door-lock" class="hover:text-red-500">Door Lock</NuxtLink></li>
+    <li><NuxtLink to="/produk/mortise-lock" class="hover:text-red-500">Mortise Lock</NuxtLink></li>
+    <li><NuxtLink to="/produk/cylinder" class="hover:text-red-500">Cylinder</NuxtLink></li>
+    <li><NuxtLink to="/produk/floor-hinge" class="hover:text-red-500">Floor Hinge</NuxtLink></li>
+    <li><NuxtLink to="/produk/patch-fitting" class="hover:text-red-500">Patch Fitting</NuxtLink></li>
+  </ul>
+</div>
+
 
       <!-- Contact Info -->
       <div>

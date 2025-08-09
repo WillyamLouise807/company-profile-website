@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white">
-    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 py-10 mt-10 font-poppins text-black">
+    <div class="container mx-auto px-4 sm:px-6 py-10 mt-10 font-poppins text-black">
       <!-- Breadcrumb -->
       <nav class="text-xs text-gray-500 mb-6" aria-label="Breadcrumb">
         <ol class="flex flex-wrap items-center gap-2">
@@ -12,7 +12,7 @@
             <RouterLink to="/produk/door-closer" class="hover:underline text-black font-medium">Door Closer</RouterLink>
           </li>
           <li>/</li>
-          <li class="text-black font-semibold">201</li>
+          <li class="text-black font-semibold">Door Closer</li>
         </ol>
       </nav>
 
@@ -93,13 +93,17 @@
           <img
             src="/asset/product/door-closer/ukuran-hitam-1.png"
             alt="Ukuran 1"
-            class="rounded-xl shadow-md bg-white p-4 cursor-zoom-in object-contain h-72"
+            class="rounded-xl shadow-md bg-white p-4 cursor-zoom-in object-contain 
+                  w-full sm:w-3/4 md:w-1/2 
+                  h-56 sm:h-60 md:h-64 lg:h-72 xl:h-80"
             @click="openZoom('/asset/product/door-closer/ukuran-hitam-1.png')"
           />
           <img
             src="/asset/product/door-closer/ukuran-hitam-2.png"
             alt="Ukuran 2"
-            class="rounded-xl shadow-md bg-white p-4 cursor-zoom-in object-contain h-72"
+            class="rounded-xl shadow-md bg-white p-4 cursor-zoom-in object-contain 
+                  w-full sm:w-3/4 md:w-1/2 
+                  h-56 sm:h-60 md:h-64 lg:h-72 xl:h-80"
             @click="openZoom('/asset/product/door-closer/ukuran-hitam-2.png')"
           />
         </div>
