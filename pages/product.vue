@@ -191,6 +191,13 @@ const products = [
     image: '/asset/product/flush-handle.png',
     logo: '/asset/product/GLATINO - RED - LOGO.png',
   },
+  {
+    title: 'Accessories',
+    description: 'View all Accessories products',
+    slug: 'accessories',
+    image: '/asset/product/accessories.png',
+    logo: '/asset/product/GLATINO - RED - LOGO.png',
+  },
 ]
 </script>
 

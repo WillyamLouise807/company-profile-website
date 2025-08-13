@@ -53,7 +53,7 @@
         <!-- Gambar Produk -->
         <div class="flex justify-center items-center w-full">
           <img
-            src="/asset/product/flush-handle/ss-201/produk.png"
+            src="/asset/product/flush-handle/bracket-ikan/produk.png"
             alt="Patch Fitting PT-10"
             class="rounded-2xl shadow-lg w-full aspect-video object-contain bg-white"
           />
@@ -65,7 +65,7 @@
         <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
         <div class="flex flex-col items-center">
           <img
-            src="/asset/product/flush-handle/ss-201/ukuran-hitam.png"
+            src="/asset/product/flush-handle/bracket-ikan/ukuran-hitam.png"
             alt="Ukuran Patch Fitting PT-10"
             class="rounded-xl shadow-md max-w-xl w-full bg-white p-4 cursor-zoom-in"
             @click="toggleZoom"
@@ -82,7 +82,7 @@
       >
         <div class="bg-white p-4 md:p-6 rounded-xl shadow-2xl max-w-4xl w-full">
           <img
-            src="/asset/product/flush-handle/ss-201/ukuran-hitam.png"
+            src="/asset/product/flush-handle/bracket-ikan/ukuran-hitam.png"
             alt="Zoomed Ukuran Patch Fitting PT-10"
             class="w-full object-contain"
           />
