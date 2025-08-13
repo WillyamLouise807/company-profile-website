@@ -198,6 +198,13 @@ const products = [
     image: '/asset/product/accessories.png',
     logo: '/asset/product/GLATINO - RED - LOGO.png',
   },
+  {
+    title: 'Sliding Rail',
+    description: 'View all Sliding Rail products',
+    slug: 'sliding-rail',
+    image: '/asset/product/sliding-rail.png',
+    logo: '/asset/product/GLATINO - RED - LOGO.png',
+  },
 ]
 </script>
 
