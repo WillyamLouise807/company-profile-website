@@ -205,6 +205,13 @@ const products = [
     image: '/asset/product/sliding-rail.png',
     logo: '/asset/product/GLATINO - RED - LOGO.png',
   },
+  {
+    title: 'Roller',
+    description: 'View all Roller products',
+    slug: 'roller',
+    image: '/asset/product/roller.png',
+    logo: '/asset/product/GLATINO - RED - LOGO.png',
+  },
 ]
 </script>
 
