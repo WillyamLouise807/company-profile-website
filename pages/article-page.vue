@@ -1,37 +1,39 @@
 <template>
-
-    <div class="w-full h-auto overflow-hidden mt-16 rounded-2xl">
-      <img
-        src="/article/banner.jpg"
-        alt="Article & Event Banner"
-        class="w-full h-auto"
+  <!-- Banner Responsive -->
+  <div class="w-full mt-16 rounded-2xl overflow-hidden relative">
+    <!-- Smartphone -->
+    <div class="relative block sm:hidden">
+      <img 
+        src="/article/banner-handphone.png" 
+        alt="Banner Handphone"
+        class="w-full h-auto object-cover"
       />
+     
     </div>
 
+    <!-- Tablet -->
+    <div class="relative hidden sm:block lg:hidden">
+      <img 
+        src="/article/banner-tablet.png" 
+        alt="Banner Tablet"
+        class="w-full h-auto object-cover"
+      />
+
+    </div>
+
+    <!-- Desktop -->
+    <div class="relative hidden lg:block">
+      <img 
+        src="/article/banner-dekstop.png" 
+        alt="Banner Desktop"
+        class="w-full h-auto object-cover"
+      />
+
+    </div>
+  </div>
+
+  <!-- Content -->
   <div class="bg-[#ffffff] container mx-auto py-12 px-4 sm:px-8 text-black font-poppins">
-
-    <!-- Hero Header -->
-    <!-- <div class="w-full bg-black rounded-2xl overflow-hidden mb-10">
-      <div class="grid grid-cols-1 md:grid-cols-3 min-h-[300px]">
-        Bagian Tulisan (66%)
-        <div class="col-span-2 flex flex-col items-center justify-center text-center px-6 sm:px-12 bg-black bg-opacity-90 text-white">
-          <h1 class="text-3xl sm:text-4xl font-bold mb-4">Article & Event</h1>
-          <p class="text-sm sm:text-base text-gray-300 max-w-xl">
-            Temukan informasi terbaru seputar produk, acara, dan kegiatan kami.
-          </p>
-        </div>
-
-        Bagian Gambar (33%)
-        <div class="relative flex items-center justify-center">
-          <img
-            src="/article/banner.jpg"
-            alt="Article Banner"
-            class="max-h-[280px] w-auto object-contain"
-          />
-        </div>
-      </div>
-    </div> -->
-
     <!-- Breadcrumb -->
     <nav class="text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
       <ol class="flex items-center gap-2">
@@ -55,13 +57,20 @@
           :alt="article.title"
           class="w-full h-auto object-cover"
         />
-        <div class="p-6">
-          <p class="text-sm text-gray-500 mb-1">{{ article.date }}</p>
-          <h2 class="text-2xl font-semibold mb-2">{{ article.title }}</h2>
-          <p class="text-md text-gray-600 mb-4 line-clamp-3">{{ article.description }}</p>
+        <div class="p-4 sm:p-6 lg:p-8">
+          <p class="text-xs sm:text-sm lg:text-base text-gray-500 mb-1">{{ article.date }}</p>
+          
+          <h2 class="text-lg sm:text-xl lg:text-2xl font-semibold mb-2 leading-snug">
+            {{ article.title }}
+          </h2>
+          
+          <p class="text-xs sm:text-sm lg:text-base text-gray-600 mb-4 line-clamp-3 leading-relaxed">
+            {{ article.description }}
+          </p>
+          
           <NuxtLink
             :to="article.link"
-            class="text-red-600 hover:underline text-sm font-medium"
+            class="text-red-600 hover:underline text-xs sm:text-sm lg:text-base font-medium"
           >
             Read more &rarr;
           </NuxtLink>
@@ -69,11 +78,11 @@
       </div>
     </div>
   </div>
+
   <FooterComponent />
 </template>
 
 <script setup>
-// Import FooterComponent dari file yang sama di folder 'pages'
 import FooterComponent from '../components/footer.vue'
 
 const articles = [
@@ -85,70 +94,6 @@ const articles = [
     image: '/article/baksos-1.jpg',
     link: '/event/bakti-sosial-july-2025',
   },
-  // {
-  //   title: 'Pameran Produk Baru 2025',
-  //   description:
-  //     'Kami memperkenalkan berbagai produk terbaru dengan fitur unggulan pada pameran di Jakarta Convention Center.',
-  //   date: '15 Juni 2025',
-  //   image: '/article/pameran-2025.jpg',
-  //   link: '/event/article/pameran-2025',
-  // },
-  // {
-  //   title: 'Kunjungan Ke Pabrik',
-  //   description:
-  //     'Rekanan bisnis kami diajak untuk melihat langsung proses produksi di pabrik Glatino.',
-  //   date: '20 Mei 2025',
-  //   image: '/article/factory-visit.jpg',
-  //   link: '/event/article/factory-visit',
-  // },
-  // {
-  //   title: 'Bakti Sosial Panti Asuhan',
-  //   description:
-  //     'Glatino turut mengadakan bakti sosial di panti asuhan sebagai bentuk kepedulian terhadap sesama.',
-  //   date: '27 Juli 2025',
-  //   image: '/article/baksos-1.jpg',
-  //   link: '/event/bakti-sosial-july-2025',
-  // },
-  // {
-  //   title: 'Pameran Produk Baru 2025',
-  //   description:
-  //     'Kami memperkenalkan berbagai produk terbaru dengan fitur unggulan pada pameran di Jakarta Convention Center.',
-  //   date: '15 Juni 2025',
-  //   image: '/article/pameran-2025.jpg',
-  //   link: '/event/article/pameran-2025',
-  // },
-  // {
-  //   title: 'Kunjungan Ke Pabrik',
-  //   description:
-  //     'Rekanan bisnis kami diajak untuk melihat langsung proses produksi di pabrik Glatino.',
-  //   date: '20 Mei 2025',
-  //   image: '/article/factory-visit.jpg',
-  //   link: '/event/article/factory-visit',
-  // },
-  // {
-  //   title: 'Bakti Sosial Panti Asuhan',
-  //   description:
-  //     'Glatino turut mengadakan bakti sosial di panti asuhan sebagai bentuk kepedulian terhadap sesama.',
-  //   date: '27 Juli 2025',
-  //   image: '/article/baksos-1.jpg',
-  //   link: '/event/bakti-sosial-july-2025',
-  // },
-  // {
-  //   title: 'Pameran Produk Baru 2025',
-  //   description:
-  //     'Kami memperkenalkan berbagai produk terbaru dengan fitur unggulan pada pameran di Jakarta Convention Center.',
-  //   date: '15 Juni 2025',
-  //   image: '/article/pameran-2025.jpg',
-  //   link: '/event/article/pameran-2025',
-  // },
-  // {
-  //   title: 'Kunjungan Ke Pabrik',
-  //   description:
-  //     'Rekanan bisnis kami diajak untuk melihat langsung proses produksi di pabrik Glatino.',
-  //   date: '20 Mei 2025',
-  //   image: '/article/factory-visit.jpg',
-  //   link: '/event/article/factory-visit',
-  // },
 ]
 </script>
 
