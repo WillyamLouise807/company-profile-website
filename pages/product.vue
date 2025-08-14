@@ -212,6 +212,13 @@ const products = [
     image: '/asset/product/roller.png',
     logo: '/asset/product/GLATINO - RED - LOGO.png',
   },
+  {
+    title: 'Roller Caster',
+    description: 'View all Roller Caster products',
+    slug: 'roller-caster',
+    image: '/asset/product/roller-caster.png',
+    logo: '/asset/product/GLATINO - RED - LOGO.png',
+  },
 ]
 </script>
 
