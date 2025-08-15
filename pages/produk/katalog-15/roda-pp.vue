@@ -89,6 +89,30 @@
           </div>
         </div>
       </div>
+
+      <!-- Link Produk Lain -->
+      <div class="border-t border-gray-200 my-20 py-8">
+        <h2 class="text-2xl font-bold text-center mb-8 text-red-700">SEE OUR OTHER PRODUCT IN THIS CATALOG</h2>
+        <div class="flex justify-center">
+          <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 gap-4">
+            <NuxtLink
+              v-for="item in katalogLinks"
+              :key="item.slug"
+              :to="`/produk/katalog-15/${item.slug}`"
+              class="group block bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition overflow-hidden w-40 sm:w-44"
+            >
+              <img
+                :src="item.image"
+                :alt="item.name"
+                class="w-full h-32 object-contain mx-auto transition-transform duration-300 group-hover:scale-105 bg-white"
+              />
+              <div class="bg-gray-50 text-center py-4 px-2">
+                <div class="text-red-600 font-semibold text-sm">{{ item.name }}</div>
+              </div>
+            </NuxtLink>
+          </div>
+        </div>
+      </div>
     </div>
 
     <FooterComponent />
@@ -121,10 +145,14 @@ const selectedVariant = computed<Variant>(() => {
   return variants[selectedIndex.value] ?? variants[0]!
 })
 
-
 function selectVariant(index: number) {
   selectedIndex.value = index
 }
+
+const katalogLinks = [
+  { slug: 'roda-rubber', name: 'Roda Rubber', image: '/asset/product/roller-caster/roda-rubber.png' },
+  // { slug: 'roda-pp', name: 'Roda PP', image: '/asset/product/roller-caster/roda-pp.png' },
+]
 </script>
 
 <style scoped>
