@@ -12,7 +12,7 @@
             <RouterLink to="/produk/glass-clip" class="hover:underline text-black font-medium">Glass Clip</RouterLink>
           </li>
           <li>/</li>
-          <li class="text-black font-semibold">Glass Clip V</li>
+          <li class="text-black font-semibold">Glass Clip U</li>
         </ol>
       </nav>
 
@@ -20,19 +20,35 @@
       <div class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Glass Clip V</h1>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Glass Clip U</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Glass Clip V berfungsi untuk menghubungkan panel kaca dengan rangka aluminium atau besi, 
+            Glass Clip U berfungsi untuk menghubungkan panel kaca dengan rangka aluminium atau besi, 
             memberikan kekuatan dan tampilan yang rapi. Tersedia dalam dua warna elegan untuk menyesuaikan desain Anda.
           </p>
 
           <div class="mb-6 space-y-1">
             <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
             <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
+            <p class="capitalize text-sm sm:text-base">Tipe: U</p>
+            <p class="capitalize text-sm sm:text-base">Material: Stainless Steel SUS 304</p>
+            <p class="capitalize text-sm sm:text-base">Finishing: Kilap (Polished Chrome)</p>
             <p class="capitalize text-sm sm:text-base">Warna: {{ selectedColorLabel }}</p>
-            <p class="capitalize text-sm sm:text-base">Material: Aluminium</p>
-            <p class="capitalize text-sm sm:text-base">Dimensi: 42 x 120 mm</p>
-            <p class="capitalize text-sm sm:text-base">Tipe: Glass Clip V</p>
+            <p class="capitalize text-sm sm:text-base">Ketebalan Bahan: 4 mm</p>
+            <p class="capitalize text-sm sm:text-base">Kapasitas Kaca: 8–10 mm</p>
+            <p class="capitalize text-sm sm:text-base">Fitur: Tahan karat, anti gores, anti korosi, dan pintu kembali otomatis saat terbuka ±25–30°</p>
+          </div>
+
+          <!-- Marketplace -->
+          <div class="mb-8">
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
+              <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
+                <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
+              </a>
+              <a href="https://shopee.co.id/glatino.official" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
+                <img src="/asset/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
+              </a>
+            </div>
           </div>
         </div>
 

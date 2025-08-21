@@ -22,27 +22,27 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Sliding Door 380</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Sliding Door 380 adalah rel berkualitas tinggi yang dirancang khusus untuk pintu geser. 
-            Dengan desain yang kuat dan tahan lama, rel ini memastikan pergerakan pintu yang lancar dan stabil.
+            Caster Roda 380 Glatino dirancang untuk memberikan mobilitas yang halus, aman, dan tahan lama pada berbagai peralatan atau furnitur. Dengan pilihan ukuran beragam dan kapasitas beban hingga 150 kg, caster ini hadir dengan fitur anti-selip dan anti-korosi, sehingga cocok digunakan di berbagai kondisi.
           </p>
 
           <div class="mb-6 space-y-1">
             <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
             <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Jenis: Tarikan Tanam Pintu Dorong / Sliding</p>
-            <p class="capitalize text-sm sm:text-base">Material: Stainless Steel</p>
-            <p class="capitalize text-sm sm:text-base">Dimensi: 42 x 120 mm</p>
-            <p class="capitalize text-sm sm:text-base">Kelengkapan: Baut / Sekrup</p>
+            <p class="capitalize text-sm sm:text-base">Jenis: Caster Roda (Tetap, Putar, atau Kombinasi)</p>
+            <p class="capitalize text-sm sm:text-base">Diameter Roda: 50mm, 60mm, 75mm, 100mm</p>
+            <p class="capitalize text-sm sm:text-base">Lebar Roda: 20mm, 25mm, 30mm</p>
+            <p class="capitalize text-sm sm:text-base">Tinggi Caster: 50mm, 60mm, 75mm, 100mm</p>
+            <p class="capitalize text-sm sm:text-base">Kapasitas Beban: 50kg, 100kg, 150kg</p>
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
             <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
-              <a href="https://www.tokopedia.com/glatino-official-store/glatino-premium-handle-kepala-ss-201-tarikan-tanam-pintu-geser-sliding-door-premium-material-aluminium-1730967235252553454" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
+              <a href="https://www.tokopedia.com/glatino-official-store/glatino-roller-caster-aluminium-bahan-roda-ppc-for-roda-untuk-troli-kursi-meja-etalase-grobak-trolley-furniture-roller-1730966481009477358?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
-              <a href="https://shopee.co.id/Glatino-Kepala-Handle-SS-201-Tarikan-Tanam-Pintu-Geser-Sliding-Door-Material-Aluminium-i.1442585495.28627348249" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
+              <a href="https://shopee.co.id/Glatino-Roller-Caster-Aluminium-Bahan-Roda-PPC-for-Roda-Untuk-Troli-Kursi-Meja-Etalase-Grobak-Trolley-Furniture-i.1442585495.27875800042" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>

@@ -12,7 +12,7 @@
             <RouterLink to="/produk/accessories" class="hover:underline text-black font-medium">Accessories</RouterLink>
           </li>
           <li>/</li>
-          <li class="text-black font-semibold">Engsel Sendok Mini</li>
+          <li class="text-black font-semibold">Engsel Sendok</li>
         </ol>
       </nav>
 
@@ -20,7 +20,7 @@
       <div class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Engsel Sendok Mini</h1>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Engsel Sendok</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
             Tarikan Tanam Stainless Glatino dirancang khusus untuk pintu dorong atau sliding, laci, dan lemari. Dengan desain simpel namun elegan, tarikan ini menjadi pelengkap sempurna untuk perabot rumah Anda.
           </p>
@@ -40,7 +40,7 @@
           <div class="mb-8">
             <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
-              <a href="https://www.tokopedia.com/glatino-official-store/glatino-premium-handle-kepala-ss-201-tarikan-tanam-pintu-geser-sliding-door-premium-material-aluminium-1730967235252553454?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
+              <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
               <a href="https://shopee.co.id/Glatino-Kepala-Handle-SS-201-Tarikan-Tanam-Pintu-Geser-Sliding-Door-Material-Aluminium-i.1442585495.28627348249?sp_atk=127ef288-484e-4934-8b7a-0e1b875e6b3a&xptdk=127ef288-484e-4934-8b7a-0e1b875e6b3a" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
@@ -162,7 +162,9 @@ const katalogLinks = [
   { slug: 'camlock', name: 'Camlock', image: '/asset/product/accessories/camlock.png' },
   { slug: 'silicone', name: 'Silicone', image: '/asset/product/accessories/silicone.png' },
   { slug: 'tembak-silicone', name: 'Tembak Silicone', image: '/asset/product/accessories/tembak-silicone.png' },
-  // { slug: 'rell-laci-fe', name: 'Rell Laci FE', image: '/asset/product/accessories/rell-laci-fe.png' },
+  { slug: 'rell-laci-fe', name: 'Rell Laci FE', image: '/asset/product/accessories/rell-laci-fe.png' },
+  { slug: 'rell-laci-fe-slowmo', name: 'Rell Laci FE Slowmo', image: '/asset/product/accessories/rell-laci-fe-slowmo.png' },
+  // { slug: 'engsel-sendok-mini', name: 'Engsel Sendok Mini', image: '/asset/product/accessories/engsel-sendok-mini.png' }
 ];
 </script>
 

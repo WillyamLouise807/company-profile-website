@@ -22,26 +22,30 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Rell Laci FE</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Tarikan Tanam Stainless Glatino dirancang khusus untuk pintu dorong atau sliding, laci, dan lemari. Dengan desain simpel namun elegan, tarikan ini menjadi pelengkap sempurna untuk perabot rumah Anda.
+            Rel Laci Aluminium Glatino dirancang untuk memberikan pergerakan laci yang halus, kokoh, dan tahan lama. Terbuat dari material aluminium berkualitas, rel ini mampu menahan beban berat sehingga ideal untuk berbagai jenis laci, baik di rumah maupun perkantoran.
           </p>
 
           <div class="mb-6 space-y-1">
             <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
             <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Jenis: Tarikan Tanam Pintu Dorong / Sliding</p>
-            <p class="capitalize text-sm sm:text-base">Material: Stainless Steel</p>
-            <p class="capitalize text-sm sm:text-base">Dimensi: 42 x 120 mm</p>
-            <p class="capitalize text-sm sm:text-base">Kelengkapan: Baut / Sekrup</p>
+            <p class="capitalize text-sm sm:text-base">Jenis: Rel Laci Aluminium</p>
+            <p class="capitalize text-sm sm:text-base">Material: Aluminium kuat dan tahan lama</p>
+
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Ukuran:</h2>
+            <p class="capitalize text-sm sm:text-base">- 12" (300 mm)</p>
+            <p class="capitalize text-sm sm:text-base">- 14" (350 mm)</p>
+            <p class="capitalize text-sm sm:text-base">- 16" (400 mm)</p>                        
+            <p class="capitalize text-sm sm:text-base">- 18" (450 mm)</p>            
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
             <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
-              <a href="https://www.tokopedia.com/glatino-official-store/glatino-premium-handle-kepala-ss-201-tarikan-tanam-pintu-geser-sliding-door-premium-material-aluminium-1730967235252553454" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
+              <a href="https://www.tokopedia.com/glatino-official-store/glatino-rel-laci-full-extension-double-2x-tarik-bahan-aluminium-material-premium-1730960902167627502?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
-              <a href="https://shopee.co.id/Glatino-Kepala-Handle-SS-201-Tarikan-Tanam-Pintu-Geser-Sliding-Door-Material-Aluminium-i.1442585495.28627348249" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
+              <a href="https://shopee.co.id/Glatino-Rel-Laci-Full-Extension-Double-2x-Tarik-Material-Aluminium-i.1442585495.29276658647" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>
@@ -77,7 +81,7 @@
       </div>
 
       <!-- Dimensi -->
-      <div class="mt-14 border-t border-gray-700 pt-10">
+      <!-- <div class="mt-14 border-t border-gray-700 pt-10">
         <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
         <div class="flex flex-col items-center">
           <img
@@ -88,7 +92,7 @@
           />
           <p class="text-sm text-gray-500 mt-4 text-center">*Gambar hanya ilustrasi ukuran secara proporsional</p>
         </div>
-      </div>
+      </div> -->
 
       <!-- Zoom Modal -->
       <div

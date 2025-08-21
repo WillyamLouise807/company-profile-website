@@ -22,16 +22,17 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Mohair</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Tarikan Tanam Stainless Glatino dirancang khusus untuk pintu dorong atau sliding, laci, dan lemari. Dengan desain simpel namun elegan, tarikan ini menjadi pelengkap sempurna untuk perabot rumah Anda.
+            Tali Bulu Mohair Glatino dirancang untuk memberikan pergerakan pintu yang lebih halus, stabil, dan aman. Terbuat dari bahan berkualitas tinggi, tali ini kuat, tahan lama, dan mudah dipasang tanpa memerlukan peralatan khusus.
           </p>
 
           <div class="mb-6 space-y-1">
             <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
             <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Jenis: Tarikan Tanam Pintu Dorong / Sliding</p>
-            <p class="capitalize text-sm sm:text-base">Material: Stainless Steel</p>
-            <p class="capitalize text-sm sm:text-base">Dimensi: 42 x 120 mm</p>
-            <p class="capitalize text-sm sm:text-base">Kelengkapan: Baut / Sekrup</p>
+            <p class="capitalize text-sm sm:text-base">Jenis: Tali Bulu Mohair (Besar)</p>
+            <p class="capitalize text-sm sm:text-base">Dimensi Ukuran: 1.1 x 0.7 x 175 Meter</p>
+            <p class="capitalize text-sm sm:text-base">Warna: Abu-Abu / Grey, Hitam / Black, Brown / Coklat</p>
+            <p class="capitalize text-sm sm:text-base">Fungsi Utama: Mengatur gerakan pintu, meningkatkan keamanan, dan memberikan kenyamanan penggunaan</p>
+            <p class="capitalize text-sm sm:text-base">Kelebihan: Bahan kuat & tahan lama, pemasangan mudah, harga kompetitif</p>
 
 
           </div>
@@ -40,10 +41,10 @@
           <div class="mb-8">
             <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
-              <a href="https://www.tokopedia.com/glatino-official-store/glatino-premium-handle-kepala-ss-201-tarikan-tanam-pintu-geser-sliding-door-premium-material-aluminium-1730967235252553454?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
+              <a href="https://www.tokopedia.com/glatino-official-store/glatino-bulu-mohair-lebar-1-1x7-panjang-175-meter-merek-berfungsi-sebagai-pengatur-gerakan-pintu-1731013790857463534?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
-              <a href="https://shopee.co.id/Glatino-Kepala-Handle-SS-201-Tarikan-Tanam-Pintu-Geser-Sliding-Door-Material-Aluminium-i.1442585495.28627348249?sp_atk=127ef288-484e-4934-8b7a-0e1b875e6b3a&xptdk=127ef288-484e-4934-8b7a-0e1b875e6b3a" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
+              <a href="https://shopee.co.id/Glatino-Bulu-Mohair-lebar-1-1x7-Panjang-175-Meter-Merek-Berfungsi-Sebagai-Pengatur-gerakan-Pintu-i.1442585495.25041630601" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>
@@ -61,7 +62,7 @@
       </div>
 
       <!-- Dimensi -->
-      <div class="mt-14 border-t border-gray-700 pt-10">
+      <!-- <div class="mt-14 border-t border-gray-700 pt-10">
         <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
         <div class="flex flex-col items-center">
           <img
@@ -72,7 +73,7 @@
           />
           <p class="text-sm text-gray-500 mt-4 text-center">*Gambar hanya ilustrasi ukuran secara proporsional</p>
         </div>
-      </div>
+      </div> -->
 
       <!-- Zoom Modal -->
       <div
