@@ -246,9 +246,13 @@ const submitForm = async () => {
 
   try {
     // Credentials EmailJS
-    const serviceID = 'service_eanyvvs'
-    const templateID = 'template_9fvsc9u'
-    const userID = 'X-LFzr-3ZKRiOwoZd' // User ID (Public Key)
+    // const serviceID = 'service_eanyvvs' (email willyamlouise4@gmail.com)
+    // const templateID = 'template_9fvsc9u'
+    // const userID = 'X-LFzr-3ZKRiOwoZd'
+    // Email: GBJ  
+    const serviceID = 'service_e1lek5j'
+    const templateID = 'template_ukexk3u'
+    const userID = 'LKCShlSrviQRS_Xcd' // User ID (Public Key)
 
     // Dapatkan tanggal dan waktu sekarang
     const now = new Date()
