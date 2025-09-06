@@ -116,7 +116,7 @@
       <!-- Link Produk Lain -->
       <div class="border-t border-gray-200 my-20 py-8">
         <h2 class="text-2xl font-bold text-center mb-8 text-red-700">SEE OUR OTHER PRODUCT IN THIS CATALOG</h2>
-         <div class="flex justify-center">
+        <div class="flex justify-center">
           <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4">
             <NuxtLink
               v-for="item in katalogLinks"
