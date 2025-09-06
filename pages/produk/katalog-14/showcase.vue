@@ -35,10 +35,10 @@
           <div class="mb-8">
             <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
-              <a href="https://www.tokopedia.com/glatino-official-store/glatino-premium-handle-kepala-ss-201-tarikan-tanam-pintu-geser-sliding-door-premium-material-aluminium-1730967235252553454" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
+              <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
-              <a href="https://shopee.co.id/Glatino-Kepala-Handle-SS-201-Tarikan-Tanam-Pintu-Geser-Sliding-Door-Material-Aluminium-i.1442585495.28627348249" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
+              <a href="https://shopee.co.id/Glatino-Showcase-Big-Small-Material-Aluminium-Untuk-Pintu-Etalase-Kaca-i.1442585495.24891584447" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>
@@ -152,8 +152,8 @@ import besar from '/asset/product/roller/showcase/besar.png'
 import kecil from '/asset/product/roller/showcase/kecil.png'
 
 const views = [
-  { name: 'depan', label: 'Tampak Depan', image: besar },
-  { name: 'belakang', label: 'Tampak Belakang', image: kecil }
+  { name: 'depan', label: 'Showcase Besar', image: besar },
+  { name: 'belakang', label: 'Showcase Kecil', image: kecil }
 ]
 
 const selectedView = ref(views[0]!.name)
