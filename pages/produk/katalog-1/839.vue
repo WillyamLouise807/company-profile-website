@@ -31,7 +31,7 @@
             <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
             <p class="capitalize text-sm sm:text-base">Material Stainless 8520 (85x20 mm)</p>
             <p class="capitalize text-sm sm:text-base">Cylinder Kuningan 60 mm + 3 Computer Key</p>
-            <p class="capitalize text-sm sm:text-base">Type GLT 839 / Kunci Pintu Aluminium 9055</p>
+            <p class="capitalize text-sm sm:text-base">Type 839</p>
           </div>
 
           <!-- Marketplace -->

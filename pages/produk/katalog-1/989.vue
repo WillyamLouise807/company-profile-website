@@ -31,7 +31,7 @@
             <p class="capitalize text-sm sm:text-base text-gray-800">Brand: Glatino</p>
             <p class="capitalize text-sm sm:text-base text-gray-800">Material: Stainless Steel</p>
             <p class="capitalize text-sm sm:text-base text-gray-800">Cylinder: Dilengkapi 3 Anak Kunci</p>
-            <p class="capitalize text-sm sm:text-base text-gray-800">Type: AL/GLT 989 WH / NB</p>
+            <p class="capitalize text-sm sm:text-base text-gray-800">Type 989</p>
           </div>
 
           <!-- Marketplace -->

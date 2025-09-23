@@ -32,6 +32,7 @@
             <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
             <p class="capitalize text-sm sm:text-base">Material: Stainless Steel</p>
             <p class="capitalize text-sm sm:text-base">Kelengkapan: 1 Set Perlu Dirakit & Siap Pasang</p>
+            <p class="capitalize text-sm sm:text-base">Type 902</p>
           </div>
 
           <!-- Marketplace -->

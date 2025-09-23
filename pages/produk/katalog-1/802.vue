@@ -32,6 +32,7 @@
             <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
             <p class="capitalize text-sm sm:text-base">Jenis: Kunci Pintu Kamar Mandi</p>
             <p class="capitalize text-sm sm:text-base">Kelengkapan: 1 Set Siap Pasang</p>
+            <p class="capitalize text-sm sm:text-base">Type 802</p>
             <p class="capitalize text-sm sm:text-base">Model: Knob (Putar)</p>
           </div>
 

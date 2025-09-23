@@ -35,7 +35,7 @@
             <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
             <p class="capitalize text-sm sm:text-base">Material Body Kunci Stainless</p>
             <p class="capitalize text-sm sm:text-base">Anak Kunci dapat 3pcs</p>
-            <p class="capitalize text-sm sm:text-base">Type AL/GLT 201 BL+BD</p>
+            <p class="capitalize text-sm sm:text-base">Type 201</p>
           </div>
 
           <!-- Marketplace -->

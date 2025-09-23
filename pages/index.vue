@@ -52,7 +52,7 @@
             <div  class="flex flex-col justify-center items-center md:items-start text-center md:text-left max-w-lg h-full">
               <h1 class="text-2xl md:text-4xl font-extrabold text-red-600 leading-snug mb-6">
                 MENCIPTAKAN <br />
-                AKSESORIS ALUMUNIUM <br />
+                AKSESORIS ALUMINIUM <br />
                 YANG BERKUALITAS
               </h1>
 
@@ -138,10 +138,10 @@
                 <div>
                   <h3 class="text-lg font-bold mb-2">Our Vision</h3>
                   <p class="text-sm md:text-base leading-relaxed">
-                     Dengan mengusung semangat <span class="italic"> "Smart Security for Modern Living"</span>, PT Global Bestindo Jaya berkomitmen menjadi perusahaan penyedia solusi keamanan rumah dan bangunan yang terdepan, terpercaya, dan inovatif di Indonesia.
+                    Dengan mengusung semangat <span class="italic"> "Smart Security for Modern Living"</span>, PT Global Bestindo Jaya berkomitmen menjadi perusahaan penyedia solusi keamanan rumah dan bangunan yang terdepan, terpercaya, dan inovatif di Indonesia.
                   </p>
                   <p class="mt-4 text-sm md:text-base leading-relaxed">
-                     Kami memiliki visi untuk membentuk masa depan industri keamanan yang lebih pintar dan praktis melalui produk-produk smart security seperti akses pintu berbasis sidik jari, pengenalan wajah, dan kontrol suara. Kami juga terus berupaya mengedukasi masyarakat Indonesia akan pentingnya sistem keamanan modern dalam kehidupan sehari-hari.
+                    Kami memiliki visi untuk membentuk masa depan industri keamanan yang lebih pintar dan praktis melalui produk-produk smart security seperti akses pintu berbasis sidik jari, pengenalan wajah, dan kontrol suara. Kami juga terus berupaya mengedukasi masyarakat Indonesia akan pentingnya sistem keamanan modern dalam kehidupan sehari-hari.
                   </p>
                 </div>
               </div>

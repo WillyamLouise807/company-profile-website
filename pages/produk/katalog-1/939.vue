@@ -31,7 +31,7 @@
             <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
             <p class="capitalize text-sm sm:text-base">Material: Face Plate Stainless Steel</p>
             <p class="capitalize text-sm sm:text-base">Cylinder: Zinc Alloy + 3 Anak Kunci Komputer</p>
-            <p class="capitalize text-sm sm:text-base">Type: AL/GLT 939</p>
+            <p class="capitalize text-sm sm:text-base">Type 939</p>
           </div>
 
           <!-- Marketplace -->

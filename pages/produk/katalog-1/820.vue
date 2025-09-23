@@ -30,7 +30,7 @@
             <p class="capitalize text-sm sm:text-base">Warna: {{ selectedColorLabel }}</p>
             <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
             <p class="capitalize text-sm sm:text-base">Material: Aluminium</p>
-            <p class="capitalize text-sm sm:text-base">Type: AL GLT HR-820</p>
+            <p class="capitalize text-sm sm:text-base">Type 820</p>
           </div>
 
           <!-- Marketplace -->

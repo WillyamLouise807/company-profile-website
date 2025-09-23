@@ -31,6 +31,7 @@
             <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
             <p class="capitalize text-sm sm:text-base">Material: Stainless Steel</p>
             <p class="capitalize text-sm sm:text-base">Jenis: Tarikan Tanam untuk Pintu Sliding/Furniture</p>
+            <p class="capitalize text-sm sm:text-base">Type 201 (Handle Only)</p>
             <p class="capitalize text-sm sm:text-base">Kelengkapan: Termasuk Baut/Skrup</p>
           </div>
 

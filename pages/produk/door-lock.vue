@@ -3,10 +3,10 @@
     <!-- Hero Section Kategori -->
     <section class="relative w-full h-screen overflow-hidden font-poppins">
       <!-- Background -->
-      <div
+      <!-- <div
         class="absolute inset-0 bg-cover bg-center bg-no-repeat z-[-3]"
         :style="{ backgroundImage: `url(${bgImage})` }"
-      ></div>
+      ></div> -->
       <div class="absolute inset-0 bg-white/70 backdrop-blur-sm z-[-2]"></div>
       <div class="absolute bottom-0 left-0 right-0 h-48 z-[-1] bg-gradient-to-b from-transparent to-white"></div>
 

@@ -32,6 +32,7 @@
             <p class="capitalize text-sm sm:text-base">Jenis: Kunci Pintu Expanda / Kawat Nyamuk</p>
             <p class="capitalize text-sm sm:text-base">Cylinder: Jantung Kuningan</p>
             <p class="capitalize text-sm sm:text-base">Kelengkapan: 3 Anak Kunci Kuningan</p>
+            <p class="capitalize text-sm sm:text-base">Type Expanda</p>
           </div>
 
           <!-- Marketplace -->

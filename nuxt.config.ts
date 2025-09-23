@@ -1,5 +1,9 @@
 // nuxt.config.ts
 export default defineNuxtConfig({
+  css: [
+    'swiper/css',
+    'swiper/css/navigation'
+  ],
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
   modules: [
