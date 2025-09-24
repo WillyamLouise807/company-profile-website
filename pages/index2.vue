@@ -323,9 +323,16 @@
   </section>
   
   <!-- Our Journey Section -->
-  <section>
+  <!-- <section>
     <div>
       <OurJourney />
+    </div>
+  </section> -->
+
+  <!-- Our Journey Section -->
+  <section>
+    <div>
+      <History />
     </div>
   </section>
 
@@ -333,6 +340,13 @@
   <section>
     <div>
       <LatestNews />
+    </div>
+  </section>
+
+  <!-- Uji Coba Section -->
+  <section>
+    <div>
+      <UjiCoba />
     </div>
   </section>
 
@@ -384,6 +398,8 @@ const scrollToSection = () => {
 
 import LatestNews from '~/components/LatestNews.vue'
 import OurJourney from '~/components/OurJourney.vue'
+import History from '~/components/History.vue'
+import UjiCoba from '~/components/UjiCoba.vue'
 import FooterComponent from '~/components/footer.vue'
 </script>
 
