@@ -84,12 +84,13 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue'
+import { ref, onMounted, onBeforeUnmount, nextTick, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 
 const isOpen = ref(false)
 const showStoreDropdown = ref(false)
 const activeSection = ref('home')
+const isScrollListenerAttached = ref(false)
 const route = useRoute()
 const router = useRouter()
 
@@ -106,6 +107,7 @@ const scrollToTop = () => {
   closeMenus()
   if (route.path === '/') {
     window.scrollTo({ top: 0, behavior: 'smooth' })
+    activeSection.value = 'home'
   } else {
     router.push('/')
   }
@@ -114,7 +116,7 @@ const scrollToTop = () => {
 const scrollToAbout = () => {
   closeMenus()
   if (route.path === '/') {
-    const about = document.getElementById('about-gbj')
+    const about = document.getElementById('about-us')
     if (about) {
       about.scrollIntoView({ behavior: 'smooth' })
     }
@@ -122,7 +124,7 @@ const scrollToAbout = () => {
     router.push('/').then(() => {
       nextTick(() => {
         const interval = setInterval(() => {
-          const about = document.getElementById('about-gbj')
+          const about = document.getElementById('about-us')
           if (about) {
             about.scrollIntoView({ behavior: 'smooth' })
             clearInterval(interval)
@@ -135,23 +137,27 @@ const scrollToAbout = () => {
 }
 
 const handleScroll = () => {
-  const about = document.getElementById('about-gbj')
-  const scrollPos = window.scrollY + window.innerHeight / 2
-  if (route.path === '/') {
-    if (about && scrollPos >= about.offsetTop) {
-      activeSection.value = 'about'
-    } else {
-      activeSection.value = 'home'
-    }
+  if (route.path !== '/') return
+  
+  const about = document.getElementById('about-us')
+  if (!about) return
+  
+  const scrollPos = window.scrollY + 150 // Offset dari top navbar
+  
+  if (scrollPos >= about.offsetTop) {
+    activeSection.value = 'about'
+  } else {
+    activeSection.value = 'home'
   }
 }
 
 onMounted(() => {
   if (process.client && route.path === '/') {
     window.addEventListener('scroll', handleScroll)
+    isScrollListenerAttached.value = true
+    handleScroll() // Initial check
   }
 })
-const isScrollListenerAttached = ref(false)
 
 watch(
   () => route.path,
@@ -159,13 +165,18 @@ watch(
     if (process.client) {
       if (newPath === '/') {
         nextTick(() => {
-          window.addEventListener('scroll', handleScroll)
-          isScrollListenerAttached.value = true
-          handleScroll()
+          if (!isScrollListenerAttached.value) {
+            window.addEventListener('scroll', handleScroll)
+            isScrollListenerAttached.value = true
+          }
+          handleScroll() // Check initial state
         })
-      } else if (isScrollListenerAttached.value) {
-        window.removeEventListener('scroll', handleScroll)
-        isScrollListenerAttached.value = false
+      } else {
+        if (isScrollListenerAttached.value) {
+          window.removeEventListener('scroll', handleScroll)
+          isScrollListenerAttached.value = false
+        }
+        activeSection.value = 'home' // Reset to home
       }
     }
   },
@@ -173,7 +184,9 @@ watch(
 )
 
 onBeforeUnmount(() => {
-  window.removeEventListener('scroll', handleScroll)
+  if (isScrollListenerAttached.value) {
+    window.removeEventListener('scroll', handleScroll)
+  }
 })
 </script>
 

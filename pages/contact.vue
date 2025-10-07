@@ -24,7 +24,7 @@
       <div class="absolute bottom-0 w-full h-screen bg-gradient-to-b from-transparent to-white"></div>
     </div>
 
-    <div class="container mx-auto px-4 mt-16 py-8 sm:py-16">
+    <div class="max-w-screen-xl mx-auto px-4 mt-16 py-8 sm:py-16">
       <!-- Judul -->
       <FadeInOnScroll direction="up">
         <h1 class="text-xl text-center text-black sm:text-2xl md:text-3xl font-semibold leading-relaxed mb-4">

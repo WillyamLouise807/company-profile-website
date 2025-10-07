@@ -28,9 +28,18 @@
           <div class="overflow-x-auto relative">
             <!-- Background Banner -->
             <div
-              class="absolute left-[384px] right-[-48px] top-[192px] h-[160px] bg-[url('/asset/index/2021-history.png')] bg-cover bg-center z-[1]"
+              class="absolute left-[384px] top-[192px] h-[160px] bg-[url('/asset/index/2021.png')] bg-cover bg-center z-[1]"
+              style="width: 2640px;"
             >
               <div class="absolute inset-0 bg-red-800/90"></div>
+              
+              <!-- Hexagon/Chevron Pointed End -->
+              <div class="absolute right-0 top-0 h-full w-20">
+                <div class="h-full relative"
+                    style="background-image: url('/asset/index/2021.png'); background-size: cover; background-position: center; clip-path: polygon(0 0, 75% 0, 100% 50%, 75% 100%, 0 100%);">
+                  <div class="absolute inset-0 bg-red-800/90"></div>
+                </div>
+              </div>
             </div>
 
             <div class="flex gap-0 min-h-[600px] w-max">
@@ -54,27 +63,27 @@
                 </div>
               </div>
 
-              <!-- Example Year Top -->
+              <!-- Year 2018 - TOP -->
               <div class="flex-shrink-0 relative w-80">
-                <div class="h-48 p-6 bg-white">
-                  <h3 class="text-gray-800 font-bold text-lg mb-2 tracking-wide text-red-500">PENDIRIAN PERUSAHAAN</h3>
-                  <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                <div class="p-7 bg-white text-right">
+                  <h3 class="text-gray-800 font-bold text-lg tracking-wide text-red-500">PENDIRIAN PERUSAHAAN</h3>
+                  <p class="text-gray-600 leading-relaxed">
                     PT Global Bestindo Jaya resmi berdiri dengan fokus pada produk berkualitas tinggi untuk kebutuhan nasional.
                   </p>
                 </div>
-                <div class="h-40 relative overflow-hidden flex items-start justify-center pt-1 z-10">
-                  <div class="text-6xl font-bold text-white leading-none relative z-10">›2018</div>
+                <div class="h-40 relative overflow-hidden flex items-start justify-end pr-1 z-10">
+                  <div class="text-8xl font-bold text-white leading-none relative z-10">›2018</div>
                 </div>
                 <div class="h-48 bg-white"></div>
               </div>
 
-              <!-- Example Year Bottom -->
-              <div class="flex-shrink-0 relative w-80">
+              <!-- Year 2019 - BOTTOM -->
+              <div class="flex-shrink-0 relative w-80 bg-white">
                 <div class="h-48 bg-white"></div>
-                <div class="h-40 relative overflow-hidden flex items-end justify-center pb-1 z-10">
-                  <div class="text-6xl font-bold text-white leading-none relative z-10">›2019</div>
+                <div class="h-40 relative overflow-hidden flex items-end justify-start pl-1 pb-1 z-10">
+                  <div class="text-8xl font-bold text-white leading-none relative z-10">›2019</div>
                 </div>
-                <div class="h-48 p-6 bg-white">
+                <div class="h-48 p-6 bg-white text-left">
                   <h3 class="text-gray-800 font-bold text-lg mb-2 tracking-wide text-red-500">EKSPANSI JARINGAN</h3>
                   <p class="text-gray-600 text-sm leading-relaxed mb-4">
                     Memperluas jaringan distribusi dan menjalin kemitraan strategis dengan berbagai mitra retail nasional.
@@ -84,14 +93,14 @@
 
               <!-- Year 2020 - TOP -->
               <div class="flex-shrink-0 relative w-80">
-                <div class="h-48 p-6 bg-white">
+                <div class="p-10 bg-white text-right">
                   <h3 class="text-gray-800 font-bold text-lg mb-2 tracking-wide text-red-500">PRODUK UNGGULAN</h3>
-                  <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                  <p class="text-gray-600 text-sm leading-relaxed">
                     Meluncurkan produk unggulan pertama yang menjadi fondasi pertumbuhan perusahaan.
                   </p>
                 </div>
-                <div class="h-40 relative overflow-hidden flex items-start justify-center pt-1 z-10">
-                  <div class="text-6xl font-bold text-white leading-none relative z-10">›2020</div>
+                <div class="h-40 relative overflow-hidden flex items-start justify-start pr-1 pt-1 z-10">
+                  <div class="text-8xl font-bold text-white leading-none relative z-10">›2020</div>
                 </div>
                 <div class="h-48 bg-white"></div>
               </div>
@@ -99,8 +108,8 @@
               <!-- Year 2021 - BOTTOM -->
               <div class="flex-shrink-0 relative w-80">
                 <div class="h-48 bg-white"></div>
-                <div class="h-40 relative overflow-hidden flex items-end justify-center pb-1 z-10">
-                  <div class="text-6xl font-bold text-white leading-none relative z-10">›2021</div>
+                <div class="h-40 relative overflow-hidden flex items-end justify-end pr-1 pb-1 z-10">
+                  <div class="text-8xl font-bold text-white leading-none relative z-10">›2021</div>
                 </div>
                 <div class="h-48 p-6 bg-white">
                   <h3 class="text-gray-800 font-bold text-lg mb-2 tracking-wide text-red-500">JANGKAUAN NASIONAL</h3>
@@ -118,8 +127,8 @@
                     Menghadirkan lini produk premium sebagai bentuk inovasi dan peningkatan standar kualitas.
                   </p>
                 </div>
-                <div class="h-40 relative overflow-hidden flex items-start justify-center pt-1 z-10">
-                  <div class="text-6xl font-bold text-white leading-none relative z-10">›2022</div>
+                <div class="h-40 relative overflow-hidden flex items-start justify-end pr-1 pt-1 z-10">
+                  <div class="text-8xl font-bold text-white leading-none relative z-10">›2022</div>
                 </div>
                 <div class="h-48 bg-white"></div>
               </div>
@@ -127,8 +136,8 @@
               <!-- Year 2023 - BOTTOM -->
               <div class="flex-shrink-0 relative w-80">
                 <div class="h-48 bg-white"></div>
-                <div class="h-40 relative overflow-hidden flex items-end justify-center pb-1 z-10">
-                  <div class="text-6xl font-bold text-white leading-none relative z-10">›2023</div>
+                <div class="h-40 relative overflow-hidden flex items-end justify-end pr-1 pb-1 z-10">
+                  <div class="text-8xl font-bold text-white leading-none relative z-10">›2023</div>
                 </div>
                 <div class="h-48 p-6 bg-white">
                   <h3 class="text-gray-800 font-bold text-lg mb-2 tracking-wide text-red-500">GUDANG SURABAYA</h3>
@@ -146,8 +155,8 @@
                     Diversifikasi usaha dan penguatan sistem operasional melalui integrasi teknologi digital.
                   </p>
                 </div>
-                <div class="h-40 relative overflow-hidden flex items-start justify-center pt-1 z-10">
-                  <div class="text-6xl font-bold text-white leading-none relative z-10">›2024</div>
+                <div class="h-40 relative overflow-hidden flex items-start justify-end pr-1 pt-1 z-10">
+                  <div class="text-8xl font-bold text-white leading-none relative z-10">›2024</div>
                 </div>
                 <div class="h-48 bg-white"></div>
               </div>
@@ -157,8 +166,8 @@
                 <div class="h-48 bg-white"></div>
                 <div class="h-40 relative z-10">
                   <!-- angka -->
-                  <div class="h-full relative overflow-hidden flex items-end justify-center pb-1">
-                    <div class="text-6xl font-bold text-white leading-none relative z-10">›2025</div>
+                  <div class="h-full relative overflow-hidden flex items-end justify-end pr-1 pb-1">
+                    <div class="text-8xl font-bold text-white leading-none relative z-10">›2025</div>
                   </div>
                   <!-- arrow merah di kanan -->            
                   <div class="absolute right-0 top-0 h-full w-12 z-0">
@@ -166,7 +175,6 @@
                       <div class="absolute inset-0 bg-red-700 opacity-70"></div>
                     </div>
                   </div>
-
                 </div>
                 <div class="h-48 p-6 bg-white relative">
                   <h3 class="text-gray-800 font-bold text-lg mb-2 tracking-wide text-red-500">TRANSFORMASI DIGITAL</h3>
@@ -193,30 +201,6 @@
         </div>
       </div>
     </div>
-
-    <!-- CTA -->
-    <!-- <div class="bg-gray-50 py-16">
-      <div class="max-w-4xl mx-auto text-center px-4">
-        <h3 class="text-3xl font-bold text-gray-800 mb-4">
-          Bergabunglah dalam Perjalanan Inovasi Kami
-        </h3>
-        <p class="text-gray-600 text-lg mb-8">
-          Dari tahun ke tahun, kami terus berkomitmen untuk menghadirkan solusi terbaik bagi kebutuhan industri Indonesia.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <button
-            class="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-full font-semibold transition duration-300"
-          >
-            Lihat Produk Kami
-          </button>
-          <button
-            class="border border-red-600 text-red-600 hover:bg-red-600 hover:text-white px-8 py-3 rounded-full font-semibold transition duration-300"
-          >
-            Hubungi Kami
-          </button>
-        </div>
-      </div>
-    </div> -->
   </section>
 </template>
 

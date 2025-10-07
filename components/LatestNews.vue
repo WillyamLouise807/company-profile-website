@@ -21,7 +21,7 @@
               <img
                 src="/article/baksos-1.jpg"
                 alt="article 1"
-                class="w-full h-auto object-cover mb-4 transition-transform duration-300 ease-in-out group-hover:scale-105"
+                class="w-full h-auto object-cover mb-4 transition-transform duration-300 ease-in-out rounded-xl group-hover:scale-105"
               />
             </div>
             <span class="uppercase text-red-500 text-xs font-semibold block mb-1">
@@ -40,7 +40,7 @@
         <!-- Right list -->
         <div class="flex flex-col divide-y">
           <!-- article item -->
-          <div class="flex gap-16 py-16">
+          <div class="flex gap-5 py-16">
             <div class="flex-1">
               <span class="uppercase text-red-500 text-xs font-semibold block mb-1">
                 CHARITY [Comming Soon]
@@ -55,11 +55,11 @@
             <img
               src="/article/baksos-1.jpg"
               alt="article 2"
-              class="w-auto h-24 object-cover flex-shrink-0"
+              class="w-auto h-32 rounded-xl object-cover flex-shrink-0"
             />
           </div>
 
-          <div class="flex gap-16 py-16">
+          <div class="flex gap-5 py-16">
             <div class="flex-1">
               <span class="uppercase text-red-500 text-xs font-semibold block mb-1">
                 CHARITY [Comming Soon]
@@ -74,11 +74,11 @@
             <img
               src="/article/baksos-1.jpg"
               alt="article 3"
-              class="w-auto h-24 object-cover flex-shrink-0"
+              class="w-auto h-32 rounded-xl object-cover flex-shrink-0"
             />
           </div>
 
-          <div class="flex gap-16 py-16">
+          <div class="flex gap-5 py-16">
             <div class="flex-1">
               <span class="uppercase text-red-500 text-xs font-semibold block mb-1">
                 CHARITY [Comming Soon]
@@ -93,7 +93,7 @@
             <img
               src="/article/baksos-1.jpg"
               alt="article 4"
-              class="w-auto h-24 object-cover flex-shrink-0"
+              class="w-auto h-32 rounded-xl object-cover flex-shrink-0"
             />
           </div>
         </div>
