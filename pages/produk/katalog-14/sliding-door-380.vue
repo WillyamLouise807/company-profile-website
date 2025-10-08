@@ -33,6 +33,12 @@
             <p class="capitalize text-sm sm:text-base">Lebar Roda: 20mm, 25mm, 30mm</p>
             <p class="capitalize text-sm sm:text-base">Tinggi Caster: 50mm, 60mm, 75mm, 100mm</p>
             <p class="capitalize text-sm sm:text-base">Kapasitas Beban: 50kg, 100kg, 150kg</p>
+
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Get:</h2>
+            <p class="capitalize text-sm sm:text-base">- Nylon + Iron</p>
+            <p class="capitalize text-sm sm:text-base">- Load 20 KG</p> 
+            <p class="capitalize text-sm sm:text-base">- Aluminium AS-380</p> 
+            <p class="capitalize text-sm sm:text-base">- Black Doff</p>                                    
           </div>
 
           <!-- Marketplace -->

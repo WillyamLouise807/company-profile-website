@@ -33,6 +33,9 @@
             <p class="capitalize text-sm sm:text-base">Dimensi: 42 x 120 mm</p>
             <p class="capitalize text-sm sm:text-base">Kelengkapan: Baut / Sekrup</p>
 
+            <h2 class="text-lg sm:text-xl font-semibold mb-2 pt-1">Load Lifting Power:</h2>
+            <p class="capitalize text-sm sm:text-base">- Vertical: 150 KG</p>
+            <p class="capitalize text-sm sm:text-base">- Horizontal: 130 KG</p>
 
           </div>
 

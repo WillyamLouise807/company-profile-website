@@ -220,11 +220,11 @@ const selectedColor = ref(colors[0]?.name ?? '')
 const selectedSize = ref<typeof sizes[number]>('321')
 
 const sizeLabels: Record<string, string> = {
-  '25': '25 x 200 mm',
-  '321': '32 x 300 mm',
-  '322': '32 x 350 mm',
-  '323': '32 x 400 mm',
-  '324': '32 x 600 mm'
+  '25': '25 x 200 cc',
+  '321': '25 x 300 cc',
+  '322': '25 x 350 cc',
+  '323': '25 x 400 cc',
+  '324': '25 x 600 cc'
 }
 
 const selectedColorLabel = computed(() => {

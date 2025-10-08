@@ -27,9 +27,10 @@
 
           <div class="mb-6 space-y-1">
             <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Ukuran: 1.8 m</p>
+            <p class="capitalize text-sm sm:text-base">Ukuran: 1.800 MM</p>
             <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Tipe: Engsel Piano</p>
+            <p class="capitalize text-sm sm:text-base">Varian: Stainless & Iron</p>
+            <p class="capitalize text-sm sm:text-base">Stainless Material: SUS 201 SS</p>
           </div>
 
           <!-- Marketplace -->

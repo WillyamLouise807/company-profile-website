@@ -29,8 +29,13 @@
             <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
             <p class="capitalize text-sm sm:text-base">Tampilan: {{ selectedViewLabel }}</p>
             <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Jenis: Floor Hinge (Engsel Lantai)</p>
-            <p class="capitalize text-sm sm:text-base">Tipe: V84 & V53</p>
+            <p class="capitalize text-sm sm:text-base">Size (L x W x H): 253 x 103 x 0</p>
+            <p class="capitalize text-sm sm:text-base">Door Weight: 70 - 80 kgs</p>
+            <p class="capitalize text-sm sm:text-base">Diameter Cylinder: 36mm Double Cylinder</p>
+            <p class="capitalize text-sm sm:text-base">Max Door Width: 900mm</p>
+            <p class="capitalize text-sm sm:text-base">Cover Material: SS 201 (1.0mm thick)</p>
+            <p class="capitalize text-sm sm:text-base">Open Angle: 90° with double bearings wooden fitting</p>
+            <p class="capitalize text-sm sm:text-base">Cement thickness: Iron 1.2mm (Outer Container)</p>
           </div>
 
           <!-- Marketplace -->

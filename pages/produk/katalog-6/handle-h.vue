@@ -80,7 +80,7 @@
           </div>
 
           <!-- Ukuran -->
-          <div class="flex flex-wrap gap-4 mt-4 justify-start">
+          <div class="flex flex-wrap gap-4 mt-4 justify-center">
             <button
               v-for="size in sizes"
               :key="size"
@@ -200,11 +200,11 @@ const selectedColor = ref(colors[0]?.name ?? '')
 const selectedSize = ref<typeof sizes[number]>('321')
 
 const sizeLabels: Record<string, string> = {
-  '321': '32 x 300 x 450 mm',
-  '322': '32 x 350 x 500 mm',
-  '323': '32 x 400 x 600 mm',
-  '324': '32 x 600 x 800 mm',
-  '325': '32 x 800 x 1000 mm'
+  '321': '25 x 38 x 300 x 450 mm',
+  '322': '25 x 38 x 350 x 500 mm',
+  '323': '25 x 38 x 400 x 600 mm',
+  '324': '25 x 38 x 600 x 800 mm',
+  '325': '25 x 38 x 800 x 1000 mm'
 }
 
 const selectedColorLabel = computed(() => {

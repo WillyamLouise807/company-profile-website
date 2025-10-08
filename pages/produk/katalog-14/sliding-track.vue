@@ -32,7 +32,13 @@
             <p class="capitalize text-sm sm:text-base">Jenis: Tarikan Tanam Pintu Dorong / Sliding</p>
             <p class="capitalize text-sm sm:text-base">Material: Stainless Steel</p>
             <p class="capitalize text-sm sm:text-base">Dimensi: 42 x 120 mm</p>
-            <p class="capitalize text-sm sm:text-base">Kelengkapan: Baut / Sekrup</p>
+            
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Get:</h2>
+            <p class="capitalize text-sm sm:text-base">- 2 Set Roda Atas</p>
+            <p class="capitalize text-sm sm:text-base">- 1 Pcs Guide</p> 
+            <p class="capitalize text-sm sm:text-base">- 2 Pcs Stoper</p> 
+            <p class="capitalize text-sm sm:text-base">- Premium Quality</p>                        
+            <p class="capitalize text-sm sm:text-base">- Anti Karat</p>                                          
           </div>
 
           <!-- Marketplace -->

@@ -28,14 +28,17 @@
           <div class="mb-6 space-y-1">
             <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
             <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Jenis: Rel Laci Aluminium</p>
-            <p class="capitalize text-sm sm:text-base">Material: Aluminium kuat dan tahan lama</p>
+            <p class="capitalize text-sm sm:text-base">Material: Cold Rolled Steal</p>
+            <p class="capitalize text-sm sm:text-base">Finish: 2 inc</p>
+            <p class="capitalize text-sm sm:text-base">Thickness: 0.6 x 0.6 x 0.6 mm</p>
 
             <h2 class="text-lg sm:text-xl font-semibold mb-2">Ukuran:</h2>
-            <p class="capitalize text-sm sm:text-base">- 12" (300 mm)</p>
-            <p class="capitalize text-sm sm:text-base">- 14" (350 mm)</p>
-            <p class="capitalize text-sm sm:text-base">- 16" (400 mm)</p>                        
-            <p class="capitalize text-sm sm:text-base">- 18" (450 mm)</p>            
+            <p class="capitalize text-sm sm:text-base">- 250 mm</p>
+            <p class="capitalize text-sm sm:text-base">- 300 mm</p> 
+            <p class="capitalize text-sm sm:text-base">- 350 mm</p> 
+            <p class="capitalize text-sm sm:text-base">- 400 mm</p>                        
+            <p class="capitalize text-sm sm:text-base">- 450 mm</p>                            
+            <p class="capitalize text-sm sm:text-base">- 500 mm</p>         
           </div>
 
           <!-- Marketplace -->

@@ -12,7 +12,7 @@
             <RouterLink to="/produk/pull-handle" class="hover:underline text-black font-medium">Pull Handle</RouterLink>
           </li>
           <li>/</li>
-          <li class="text-black font-semibold">Handle B</li>
+          <li class="text-black font-semibold">Handle Bulat</li>
         </ol>
       </nav>
 
@@ -20,7 +20,7 @@
       <div class="flex flex-col-reverse md:grid md:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Pull Handle B</h1>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Pull Handle Bulat</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
             Pull Handle Glatino Model B dirancang dengan bentuk ergonomis dan material aluminium finishing stainless. Handle ini cocok digunakan untuk berbagai jenis pintu kaca, aluminium maupun kayu dengan tampilan elegan dan kekuatan maksimal.
           </p>
@@ -80,7 +80,7 @@
           </div>
 
           <!-- Ukuran -->
-          <div class="flex flex-wrap gap-4 mt-4 justify-start">
+          <div class="grid grid-cols-3 w-full gap-4 mt-4 justify-start">
             <button
               v-for="size in sizes"
               :key="size"
@@ -161,18 +161,21 @@ import hitam322 from '/asset/product/pull-handle/handle-b/hitam-322.png'
 import hitam323 from '/asset/product/pull-handle/handle-b/hitam-323.png'
 import hitam324 from '/asset/product/pull-handle/handle-b/hitam-324.png'
 import hitam325 from '/asset/product/pull-handle/handle-b/hitam-325.png'
+import hitam326 from '/asset/product/pull-handle/handle-b/hitam-326.png'
 
 import putih321 from '/asset/product/pull-handle/handle-b/putih-321.png'
 import putih322 from '/asset/product/pull-handle/handle-b/putih-322.png'
 import putih323 from '/asset/product/pull-handle/handle-b/putih-323.png'
 import putih324 from '/asset/product/pull-handle/handle-b/putih-324.png'
 import putih325 from '/asset/product/pull-handle/handle-b/putih-325.png'
+import putih326 from '/asset/product/pull-handle/handle-b/putih-326.png'
 
 import sn321 from '/asset/product/pull-handle/handle-b/sn-ss-321.png'
 import sn322 from '/asset/product/pull-handle/handle-b/sn-ss-322.png'
 import sn323 from '/asset/product/pull-handle/handle-b/sn-ss-323.png'
 import sn324 from '/asset/product/pull-handle/handle-b/sn-ss-324.png'
 import sn325 from '/asset/product/pull-handle/handle-b/sn-ss-325.png'
+import sn326 from '/asset/product/pull-handle/handle-b/sn-ss-326.png'
 
 const colors = [
   {
@@ -184,7 +187,8 @@ const colors = [
       '322': hitam322,
       '323': hitam323,
       '324': hitam324,
-      '325': hitam325
+      '325': hitam325,
+      '326': hitam326
     }
   },
   {
@@ -196,7 +200,8 @@ const colors = [
       '322': putih322,
       '323': putih323,
       '324': putih324,
-      '325': putih325
+      '325': putih325,
+      '326': putih326
     }
   },
   {
@@ -208,21 +213,23 @@ const colors = [
       '322': sn322,
       '323': sn323,
       '324': sn324,
-      '325': sn325
+      '325': sn325,
+      '326': sn326
     }
   }
 ]
 
-const sizes = ['321', '322', '323', '324', '325'] as const
+const sizes = ['321', '322', '323', '324', '325', '326'] as const
 const selectedColor = ref(colors[0]?.name ?? '')
 const selectedSize = ref<typeof sizes[number]>('321')
 
 const sizeLabels: Record<string, string> = {
-  '321': '32 x 300 x 450 mm',
-  '322': '32 x 350 x 500 mm',
-  '323': '32 x 400 x 600 mm',
-  '324': '32 x 600 x 800 mm',
-  '325': '32 x 800 x 1000 mm'
+  '321': '30 x 300cc x 450 cc',
+  '322': '32 x 350cc x 500 cc',
+  '323': '32 x 400cc x 600 cc',
+  '324': '32 x 600cc x 800 cc',
+  '325': '32 x 800cc x 1000 cc',
+  '326': '32 x 1000cc x 1200 cc'
 }
 
 const selectedColorLabel = computed(() => {

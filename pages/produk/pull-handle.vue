@@ -82,8 +82,8 @@ const pullHandleProducts = [
 },
 {
   id: 2,
-  name: "Handle P",
-  description: "Handle tarik model P bahan aluminium berkualitas",
+  name: "Handle Pisang",
+  description: "Handle tarik model Pisang bahan aluminium berkualitas",
   slug: "handle-p",
   image: "/asset/product/pull-handle/handle-p.png"
 },

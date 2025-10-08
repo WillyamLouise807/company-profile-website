@@ -29,10 +29,11 @@
             <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
             <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
             <p class="capitalize text-sm sm:text-base">Jenis: Silicone Asam / Sealant Asam / Lem Kaca / Lem Tembak</p>
-            <p class="capitalize text-sm sm:text-base">Berat Isi: 300 gr</p>
+            <p class="capitalize text-sm sm:text-base">Berat Bersih: 300 gr</p>
             <p class="capitalize text-sm sm:text-base">Kualitas: High Quality</p>
             <p class="capitalize text-sm sm:text-base">Fungsi: Merekatkan dan menutup celah pada kaca, logam, dan berbagai permukaan lainnya</p>
             <p class="capitalize text-sm sm:text-base">Kelebihan: Daya rekat kuat, tahan lama, hasil rapi</p>
+            <p class="capitalize text-sm sm:text-base">Color: White | Black | Brown | Clear</p>
           </div>
 
           <!-- Marketplace -->

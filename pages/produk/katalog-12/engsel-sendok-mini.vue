@@ -27,13 +27,9 @@
 
           <div class="mb-6 space-y-1">
             <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Jenis: Tarikan Tanam Pintu Dorong / Sliding</p>
-            <p class="capitalize text-sm sm:text-base">Material: Stainless Steel</p>
-            <p class="capitalize text-sm sm:text-base">Dimensi: 42 x 120 mm</p>
-            <p class="capitalize text-sm sm:text-base">Kelengkapan: Baut / Sekrup</p>
-
-
+            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>            
+            <p class="capitalize text-sm sm:text-base">Material: Cold Rolled Steel</p>
+            <p class="capitalize text-sm sm:text-base">Finishing: Nickel</p>          
           </div>
 
           <!-- Marketplace -->
@@ -50,13 +46,31 @@
           </div>
         </div>
 
-        <!-- Gambar Produk -->
-        <div class="flex justify-center items-center w-full">
-          <img
-            src="/asset/product/accessories/engsel-sendok-mini/produk.png"
-            alt="Accessories Engsel Sendok Mini"
-            class="rounded-2xl shadow-lg w-full aspect-video object-contain bg-white"
-          />
+        <!-- Galeri Gambar -->
+        <div class="space-y-6 flex flex-col items-center w-full">
+          <transition name="fade" mode="out-in">
+            <img
+              :key="selectedImage"
+              :src="selectedImage"
+              alt="Camlock"
+              class="rounded-2xl shadow-lg w-full aspect-video object-contain bg-white"
+            />
+          </transition>
+
+          <!-- Thumbnail -->
+          <div class="grid grid-cols-2 gap-4">
+            <img
+              v-for="(image, index) in images"
+              :key="index"
+              :src="image"
+              @click="selectedImage = image"
+              class="rounded-xl cursor-pointer border-2 h-48 object-contain"
+              :class="{
+                'border-red-600': selectedImage === image,
+                'border-transparent': selectedImage !== image
+              }"
+            />
+          </div>
         </div>
       </div>
 
@@ -132,6 +146,13 @@
 import FooterComponent from '@/components/footer.vue'
 import { ref } from 'vue'
 
+
+const images = [
+  '/asset/product/accessories/engsel-sendok-mini/produk-1.png',
+  '/asset/product/accessories/engsel-sendok-mini/produk-2.png'
+]
+
+const selectedImage = ref(images[0])
 const isZoomOpen = ref(false)
 const zoomImage = ref('')
 
@@ -145,8 +166,8 @@ function toggleZoom() {
 }
 
 const dimensiImages = [
-  { src: '/asset/product/accessories/engsel-sendok-mini/ukuran-besar.png', label: 'Ukuran Besar' },
-  { src: '/asset/product/accessories/engsel-sendok-mini/ukuran-mini.png', label: 'Ukuran Mini' }
+  { src: '/asset/product/accessories/engsel-sendok-mini/ukuran-besar.png', label: 'Ukuran Sendok Bengkok' },
+  { src: '/asset/product/accessories/engsel-sendok-mini/ukuran-mini.png', label: 'Ukuran Sendok Lurus' }
 ]
 
 

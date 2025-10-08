@@ -27,10 +27,9 @@
 
           <div class="mb-6 space-y-1">
             <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Ukuran: 4"</p>
+            <p class="capitalize text-sm sm:text-base">Ukuran: 4 x 3 x 2 MM</p>
             <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Tipe: Butt Hinge H</p>
-            <p class="capitalize text-sm sm:text-base">Warna: Stainless</p>
+            <p class="capitalize text-sm sm:text-base">Stainless Material: SUS 201 SS</p>    
           </div>
 
           <!-- Marketplace -->

@@ -29,10 +29,17 @@
           <div class="mb-6 space-y-1">
             <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
             <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Jenis: Tarikan Tanam Pintu Dorong / Sliding</p>
-            <p class="capitalize text-sm sm:text-base">Material: Stainless Steel</p>
-            <p class="capitalize text-sm sm:text-base">Dimensi: 42 x 120 mm</p>
-            <p class="capitalize text-sm sm:text-base">Kelengkapan: Baut / Sekrup</p>
+            <p class="capitalize text-sm sm:text-base">Material: Cold Rolled Steal</p>
+            <p class="capitalize text-sm sm:text-base">Finish: 2 inc</p>
+            <p class="capitalize text-sm sm:text-base">Thickness: 1.0 x 1.0 x 1.2 mm</p>
+
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Ukuran:</h2>
+            <p class="capitalize text-sm sm:text-base">- 250 mm</p>
+            <p class="capitalize text-sm sm:text-base">- 300 mm</p> 
+            <p class="capitalize text-sm sm:text-base">- 350 mm</p> 
+            <p class="capitalize text-sm sm:text-base">- 400 mm</p>                        
+            <p class="capitalize text-sm sm:text-base">- 450 mm</p>                            
+            <p class="capitalize text-sm sm:text-base">- 500 mm</p>
           </div>
 
           <!-- Marketplace -->

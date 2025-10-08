@@ -12,15 +12,15 @@
             <RouterLink to="/produk/pull-handle" class="hover:underline text-black font-medium">Pull Handle</RouterLink>
           </li>
           <li>/</li>
-          <li class="text-black font-semibold">Handle S</li>
+          <li class="text-black font-semibold">Handle Shower</li>
         </ol>
       </nav>
 
-      <!-- Product Section -->
+      <!-- Product Content -->
       <div class="flex flex-col-reverse md:grid md:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Pull Handle S</h1>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Pull Handle Shower</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
             Pull Handle Shower Glatino PHS 2050 hadir dengan material stainless steel berkualitas dan finishing kilap tebal yang elegan. Desainnya cocok untuk kebutuhan kamar mandi modern, memberikan kesan bersih dan mewah sekaligus daya tahan tinggi terhadap karat dan kelembapan.
           </p>
@@ -28,12 +28,15 @@
           <div class="mb-6 space-y-1">
             <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
             <p class="capitalize text-sm sm:text-base">Warna: {{ selectedColorLabel }}</p>
+            <p class="capitalize text-sm sm:text-base">Ukuran: {{ sizeLabels[selectedSize] }}</p>
             <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
             <p class="capitalize text-sm sm:text-base">Material: Aluminium Finishing Stainless</p>
-            <p class="capitalize text-sm sm:text-base">Kelengkapan: 1 pasang handle & sekrup pemasangan</p>
+            <p class="capitalize text-sm sm:text-base">Model: Pull Handle Type S</p>
+            <p class="capitalize text-sm sm:text-base">Kelengkapan: 1 Pasang Handle, Baut Panjang, Kunci L</p>
           </div>
 
           <!-- Marketplace -->
+           <!-- Marketplace -->
           <div class="mb-8">
             <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
             <div class="flex flex-wrap justify-center md:justify-start items-center gap-6">
@@ -86,6 +89,23 @@
               </p>
             </div>
           </div>
+
+          <!-- Ukuran -->
+          <div class="grid grid-cols-2 w-full gap-4 mt-4 justify-start">
+            <button
+              v-for="size in sizes"
+              :key="size"
+              @click="selectedSize = size"
+              :class="[ 
+                'px-4 py-2 border rounded-lg text-sm font-semibold',
+                selectedSize === size
+                  ? 'bg-red-600 text-white border-red-600'
+                  : 'bg-gray-100 text-red-700 border-gray-600 hover:bg-gray-200'
+              ]"
+            >
+              {{ sizeLabels[size] }}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -95,7 +115,7 @@
         <div class="flex justify-center">
           <img
             :src="currentUkuranImage"
-            alt="Dimensi Handle S"
+            alt="Dimensi Handle D"
             class="rounded-xl shadow-md max-w-md w-full bg-white p-4 cursor-zoom-in"
             @click="zoomImage(currentUkuranImage)"
           />
@@ -145,37 +165,53 @@ import FooterComponent from '@/components/footer.vue'
 import { RouterLink } from 'vue-router'
 import { ref, computed } from 'vue'
 
-import hitam from '/asset/product/pull-handle/handle-s/hitam.png'
-import snss from '/asset/product/pull-handle/handle-s/sn-ss.png'
+import hitam1545 from '/asset/product/pull-handle/handle-s/hitam-1545.png'
+import hitam2050 from '/asset/product/pull-handle/handle-s/hitam-2050.png'
+import sn1545 from '/asset/product/pull-handle/handle-s/sn-ss-1545.png'
+import sn2050 from '/asset/product/pull-handle/handle-s/sn-ss-2050.png'
 
 import ukuranHitam from '/asset/product/pull-handle/handle-s/ukuran-hitam.png'
 import ukuranPutih from '/asset/product/pull-handle/handle-s/ukuran-putih.png'
+
+const sizes = ['1545', '2050'] as const
+const sizeLabels: Record<string, string> = {
+  '1545': '25 x 150cc x 450cc',
+  '2050': '25 x 200cc x 500cc'
+}
 
 const colors = [
   {
     name: 'hitam',
     label: 'Hitam',
     hex: '#1f1f1f',
-    image: hitam,
+    images: {
+      '1545': hitam1545,
+      '2050': hitam2050
+    },
     ukuran: ukuranHitam
   },
   {
     name: 'sn',
     label: 'SN/SS',
     hex: '#cccccc',
-    image: snss,
-    ukuran: ukuranHitam // gunakan ukuranPutih jika ada versi berbeda
+    images: {
+      '1545': sn1545,
+      '2050': sn2050
+    },
+    ukuran: ukuranHitam // Bisa disesuaikan jika SN punya gambar khusus
   }
 ]
 
 const selectedColor = ref(colors[0]?.name ?? '')
+const selectedSize = ref<typeof sizes[number]>('1545')
 
 const selectedColorLabel = computed(() => {
   return colors.find(c => c.name === selectedColor.value)?.label || ''
 })
 
 const selectedImage = computed(() => {
-  return colors.find(c => c.name === selectedColor.value)?.image || ''
+  const color = colors.find(c => c.name === selectedColor.value)
+  return color?.images[selectedSize.value] || ''
 })
 
 const currentUkuranImage = computed(() => {

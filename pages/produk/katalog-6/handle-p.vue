@@ -12,7 +12,7 @@
             <RouterLink to="/produk/pull-handle" class="hover:underline text-black font-medium">Pull Handle</RouterLink>
           </li>
           <li>/</li>
-          <li class="text-black font-semibold">Handle P</li>
+          <li class="text-black font-semibold">Handle Pisang</li>
         </ol>
       </nav>
 
@@ -20,7 +20,7 @@
       <div class="flex flex-col-reverse md:grid md:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Pull Handle P</h1>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Pull Handle Pisang</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
             Pull Handle Glatino Model C hadir dengan desain ergonomis dan finishing stainless yang elegan. Cocok digunakan pada pintu aluminium, kaca, maupun kayu, handle ini menawarkan kemudahan penggunaan serta tampilan yang rapi dan modern.
           </p>
@@ -80,7 +80,7 @@
           </div>
 
           <!-- Ukuran -->
-          <div class="flex flex-wrap gap-4 mt-4 justify-start">
+          <div class="grid grid-cols-2 w-full gap-4 mt-4 justify-start">
             <button
               v-for="size in sizes"
               :key="size"
@@ -216,15 +216,14 @@ const colors = [
   }
 ]
 
-const sizes = ['251', '252', '30', '35'] as const
+const sizes = ['251', '252'] as const
 const selectedColor = ref(colors[0]?.name ?? '')
 const selectedSize = ref<typeof sizes[number]>('252')
 
 const sizeLabels: Record<string, string> = {
-  '251': '25 x 300 mm',
-  '252': '25 x 350 mm',
-  '30': '30 x 300 mm',
-  '35': '35 x 350 mm'
+  '251': '25 x 300 cc',
+  '252': '25 x 350 cc',
+
 }
 
 const selectedColorLabel = computed(() => {
