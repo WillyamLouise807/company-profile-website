@@ -217,7 +217,7 @@ type Banner = {
 
 const banners: Banner[] = [
   {
-    desktopImage: '/asset/banner_produk/banner_dekstop1.png',
+    desktopImage: '/asset/banner_produk/banner_dekstop_1.png',
     mobileImage: '/asset/banner_produk/banner_mobile1.png',
     categoryImage: '/asset/product/GLATINO - RED - LOGO.png',
     title: 'Smart Door Lock',
@@ -226,7 +226,7 @@ const banners: Banner[] = [
     link: '/produk/door-lock'
   },
   {
-    desktopImage: '/asset/banner_produk/banner_dekstop1.png',
+    desktopImage: '/asset/banner_produk/banner_dekstop_2.png',
     mobileImage: '/asset/banner_produk/banner_mobile1.png',
     categoryImage: '/asset/product/GLATINO - RED - LOGO.png',
     title: 'Mortise Lock',
@@ -235,7 +235,7 @@ const banners: Banner[] = [
     link: '/produk/mortise-lock'
   },
   {
-    desktopImage: '/asset/banner_produk/banner_dekstop1.png',
+    desktopImage: '/asset/banner_produk/banner_dekstop_3.png',
     mobileImage: '/asset/banner_produk/banner_mobile1.png',
     categoryImage: '/asset/product/GLATINO - RED - LOGO.png',
     title: 'Patch Fitting',
@@ -244,7 +244,7 @@ const banners: Banner[] = [
     link: '/produk/patch-fitting'
   },
   {
-    desktopImage: '/asset/banner_produk/banner_dekstop1.png',
+    desktopImage: '/asset/banner_produk/banner_dekstop_4.png',
     mobileImage: '/asset/banner_produk/banner_mobile1.png',
     categoryImage: '/asset/product/GLATINO - RED - LOGO.png',
     title: 'Door Closer Premium',
