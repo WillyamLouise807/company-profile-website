@@ -60,7 +60,7 @@
         <div class="min-w-max flex flex-col">
 
           <!-- ROW 1: DESKRIPSI ATAS -->
-          <div class="flex">
+          <div class="flex justify-between items-end">
             <!-- Awal Banner -->
             <div class="flex-shrink-0 w-[125px] pl-6 pr-6 pt-6"></div>
             <!-- 2018 kosong (bawah) -->
@@ -89,11 +89,16 @@
             <div class="flex-shrink-0 w-[400px] pl-6 pr-6 pt-6"></div>
             <!-- 2023 deskripsi atas -->
             <div class="flex-shrink-0 w-[400px] pl-6 pr-6 pt-6">
-              <div class="bg-white p-4">
+              <div class="bg-white p-4">                
                 <h3 class="text-red-600 font-bold mb-2 text-xl uppercase">Gudang Surabaya Dibuka</h3>
                 <p class="text-gray-600 text-xs">
                   Tahun 2023, perusahaan membuka gudang baru di Surabaya. Fasilitas ini jadi pusat logistik untuk mempercepat pengiriman ke Indonesia Timur. Seperti menambah “jantung” baru, layanan jadi lebih cepat dan pelanggan di timur merasakan kualitas yang sama.
                 </p>
+                <img
+                  src="/asset/index/gudang.png"
+                  alt="Gudang Surabaya"
+                  class="w-[200px] h-auto mt-3 object-cover"
+                />
               </div>
             </div>
             <!-- 2024 kosong -->
@@ -175,7 +180,7 @@
           </div>
 
           <!-- ROW 3: DESKRIPSI BAWAH -->
-          <div class="flex">
+          <div class="flex justify-between items-start">
             <!-- Awal Banner -->
             <div class="flex-shrink-0 w-[125px] pl-6 pr-6 pb-6"></div>
             <!-- 2018 deskripsi bawah -->
