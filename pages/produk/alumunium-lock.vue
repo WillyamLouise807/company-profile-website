@@ -14,13 +14,13 @@
       <div class="container mx-auto h-full px-4 relative z-10 flex flex-col">
         <!-- Breadcrumb -->
         <div class="text-red-700 text-sm opacity-90 pt-20 sm:pt-28 md:pt-36">
-          <NuxtLink to="/product" class="hover:underline text-red-600 font-medium">Product</NuxtLink> / <span class="text-gray-600">Alumunium Lock</span>
+          <NuxtLink to="/product" class="hover:underline text-red-600 font-medium">Product</NuxtLink> / <span class="text-gray-600">Aluminium Lock</span>
         </div>
 
         <!-- Hero Text Centered -->
         <div class="flex-grow flex items-center justify-center">
           <div class="text-center max-w-2xl mx-auto text-red-800 transform -translate-y-6">
-            <h1 class="text-3xl sm:text-4xl font-bold leading-relaxed mb-4">Alumunium Lock Series</h1>
+            <h1 class="text-3xl sm:text-4xl font-bold leading-relaxed mb-4">Aluminium Lock Series</h1>
             <p class="text-base sm:text-lg text-gray-700">
               Kunci berkualitas tinggi untuk sistem jendela dan pintu aluminium, menghadirkan keamanan maksimal dengan desain ramping dan konstruksi tahan lama.
             </p>
@@ -32,7 +32,7 @@
     <!-- Daftar Produk dalam Kategori -->
     <section class="py-16 px-4 sm:px-6 lg:px-12 bg-white">
       <div class="container mx-auto">
-        <h2 class="text-2xl sm:text-3xl font-bold mb-8 text-center text-red-700">Produk Alumunium Lock</h2>
+        <h2 class="text-2xl sm:text-3xl font-bold mb-8 text-center text-red-700">Produk Aluminium Lock</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div 

@@ -220,8 +220,8 @@ const banners: Banner[] = [
     desktopImage: '/asset/banner_produk/banner_dekstop_1.png',
     mobileImage: '/asset/banner_produk/banner_mobile1.png',
     categoryImage: '/asset/product/GLATINO - RED - LOGO.png',
-    title: 'Smart Door Lock',
-    description: 'Keamanan rumah Anda dengan teknologi pintar terkini',
+    title: 'Door Lock Series',
+    description: 'Perpaduan berbagai macam bentuk dan warna dirancang khusus untuk mempercantik pintu Anda',
     buttonText: 'Lihat Produk Door Lock',
     link: '/produk/door-lock'
   },
@@ -229,28 +229,28 @@ const banners: Banner[] = [
     desktopImage: '/asset/banner_produk/banner_dekstop_2.png',
     mobileImage: '/asset/banner_produk/banner_mobile1.png',
     categoryImage: '/asset/product/GLATINO - RED - LOGO.png',
-    title: 'Mortise Lock',
-    description: 'Keamanan rumah Anda dengan teknologi pintar terkini',
-    buttonText: 'Lihat Produk Mortise Lock',
-    link: '/produk/mortise-lock'
+    title: 'Aluminium Lock',
+    description: 'Kunci berkualitas tinggi untuk sistem jendela dan pintu aluminium, menghadirkan keamanan maksimal dengan desain ramping dan konstruksi tahan lama.',
+    buttonText: 'Lihat Produk Aluminium Lock',
+    link: '/produk/alumunium-lock'
   },
   {
     desktopImage: '/asset/banner_produk/banner_dekstop_3.png',
     mobileImage: '/asset/banner_produk/banner_mobile1.png',
     categoryImage: '/asset/product/GLATINO - RED - LOGO.png',
-    title: 'Patch Fitting',
-    description: 'Keamanan rumah Anda dengan teknologi pintar terkini',
-    buttonText: 'Lihat Produk Patch Fitting',
-    link: '/produk/patch-fitting'
+    title: 'Pull Handle',
+    description: 'Gagang pintu stylish dan ergonomis untuk berbagai jenis pintu, memberikan sentuhan modern dan kenyamanan saat digunakan.',
+    buttonText: 'Lihat Produk Pull Handle',
+    link: '/produk/pull-handle'
   },
   {
     desktopImage: '/asset/banner_produk/banner_dekstop_4.png',
     mobileImage: '/asset/banner_produk/banner_mobile1.png',
     categoryImage: '/asset/product/GLATINO - RED - LOGO.png',
-    title: 'Door Closer Premium',
-    description: 'Solusi penutup pintu otomatis yang handal dan berkualitas tinggi',
-    buttonText: 'Lihat Produk Door Closer',
-    link: '/produk/door-closer'
+    title: 'Mortise Lock',
+    description: 'Kunci pintu mortise berkualitas tinggi dengan mekanisme tahan lama, memberikan keamanan optimal dan kemudahan penggunaan untuk berbagai jenis pintu.',
+    buttonText: 'Lihat Produk Mortise Lock',
+    link: '/produk/mortise-lock'
   }
 ]
 
@@ -303,7 +303,7 @@ const products = [
     slug: 'cylinder',
     image: '/asset/product/cylinder.png',
     logo: '/asset/product/GLATINO - RED - LOGO.png',
-  },
+  }, 
   {
     title: 'Floor Hinge',
     description: 'View all Floor Hinge products',
