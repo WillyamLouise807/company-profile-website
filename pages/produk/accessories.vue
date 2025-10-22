@@ -62,7 +62,8 @@
         </div>
       </div>
     </section>
-
+    
+    <!-- Footer Component -->
     <FooterComponent />
   </div>
 </template>
@@ -95,7 +96,7 @@ const doorCloserProducts = [
   },
   {
     id: 4,
-    name: "Glass Clip P",
+    name: "Glass Clip Persegi",
     description: "Klip kaca P stainless steel sebagai penahan kaca bentuk P untuk sambungan",
     slug: "glass-clip-p",
     image: '/asset/product/accessories/glass-clip-p.png'
@@ -169,6 +170,13 @@ const doorCloserProducts = [
     description: "Engsel sendok mini stainless steel untuk pintu kabinet kecil dan ringan",
     slug: "engsel-sendok-mini",
     image: '/asset/product/accessories/engsel-sendok-mini.png'
+  },
+  {
+    id: 14,
+    name: "Bracket Ikan",
+    description: "Bracket ikan stainless steel untuk sambungan sudut kuat pada furniture",
+    slug: "bracket-ikan",
+    image: '/asset/product/accessories/bracket-ikan.png'
   },
 ];
 </script>

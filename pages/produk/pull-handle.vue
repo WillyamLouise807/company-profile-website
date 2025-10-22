@@ -96,21 +96,21 @@ const pullHandleProducts = [
 },
 {
   id: 4,
-  name: "Handle S",
+  name: "Handle Shower",
   description: "Handle tarik model S bahan aluminium berkualitas",
   slug: "handle-s",
   image: "/asset/product/pull-handle/handle-s.png"
 },
 {
   id: 5,
-  name: "Handle B",
+  name: "Handle H Bulat",
   description: "Handle tarik model B bahan aluminium berkualitas",
   slug: "handle-b",
   image: "/asset/product/pull-handle/handle-b.png"
 },
 {
   id: 6,
-  name: "Handle H",
+  name: "Handle H Hollow",
   description: "Handle tarik model H bahan aluminium berkualitas",
   slug: "handle-h",
   image: "/asset/product/pull-handle/handle-h.png"

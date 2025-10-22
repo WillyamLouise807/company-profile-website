@@ -100,13 +100,13 @@ const doorCloserProducts = [
     slug: "roller-shutter-lock",
     image:'/asset/product/flush-handle/roller-shutter-lock.png'
   },
-  {
-    id: 5,
-    name: "Bracket Ikan",
-    description: "Bracket Ikan Aluminium Gagang Pintu Kaca Anti Karat Stainless Steel",
-    slug: "bracket-ikan",
-    image:'/asset/product/flush-handle/bracket-ikan.png'
-  },
+  // {
+  //   id: 5,
+  //   name: "Bracket Ikan",
+  //   description: "Bracket Ikan Aluminium Gagang Pintu Kaca Anti Karat Stainless Steel",
+  //   slug: "bracket-ikan",
+  //   image:'/asset/product/flush-handle/bracket-ikan.png'
+  // },
   {
     id: 6,
     name: "Handle Bambu",

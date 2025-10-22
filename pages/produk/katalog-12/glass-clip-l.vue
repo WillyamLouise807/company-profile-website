@@ -218,6 +218,7 @@ const katalogLinks = [
   { slug: 'silicone', name: 'Silicone', image: '/asset/product/accessories/silicone.png' },
   { slug: 'tembak-silicone', name: 'Tembak Silicone', image: '/asset/product/accessories/tembak-silicone.png' },
   { slug: 'rell-laci-fe', name: 'Rell Laci FE', image: '/asset/product/accessories/rell-laci-fe.png' },
+  { slug: 'bracket-ikan', name: 'Bracket Ikan', image: '/asset/product/accessories/bracket-ikan.png' }
 ];
 </script>
 

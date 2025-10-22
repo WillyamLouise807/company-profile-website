@@ -184,7 +184,7 @@ import ukuran30 from '/asset/product/door-lock/802/ukuran-hitam.png'
 
 const colors = [
   { name: 'hitam', label: 'Hitam', hex: '#1f1f1f', images: { '25': hitam25, '30': hitam30 } },
-  { name: 'beige', label: 'Beige', hex: '#8B4513', images: { '25': beige25, '30': beige30 } },
+  { name: 'beige', label: 'Cokelat', hex: '#8B4513', images: { '25': beige25, '30': beige30 } },
   { name: 'putih', label: 'Putih', hex: '#eeeeee', images: { '25': putih25, '30': putih30 } }
 ]
 
