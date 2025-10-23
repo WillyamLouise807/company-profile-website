@@ -164,9 +164,11 @@ const selectedImage = computed(() => {
   return colors.find(c => c.name === selectedColor.value)?.image || ''
 })
 
-const ukuranImage = computed(() => {
-  return colors.find(c => c.name === selectedColor.value)?.ukuran || ukuranPutih
-})
+// const ukuranImage = computed(() => {
+//   return colors.find(c => c.name === selectedColor.value)?.ukuran || ukuranPutih
+// })
+
+const ukuranImage = ukuranHitam
 
 function selectColor(color: typeof colors[number]) {
   selectedColor.value = color.name

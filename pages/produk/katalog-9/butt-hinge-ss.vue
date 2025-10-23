@@ -37,10 +37,18 @@
           <div class="mb-8">
             <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
-              <a href="https://www.tokopedia.com/glatino-official-store/glatino-engsel-pintu-butt-hinge-stainless-steel-4-3-untuk-rumah-kualitas-premium-1730959960062789358?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.tokopedia.com/glatino-official-store/glatino-engsel-pintu-butt-hinge-stainless-steel-4-3-untuk-rumah-kualitas-premium-1730959960062789358"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
-              <a href="https://shopee.co.id/Glatino-Engsel-Pintu-Butt-Hinge-Stainless-Steel-4-3-Anti-Karat-Material-Aluminium-High-Quality-i.1442585495.29773360746?sp_atk=387cee51-cf85-4611-a407-2d89171720b6&xptdk=387cee51-cf85-4611-a407-2d89171720b6" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://shopee.co.id/Glatino-Engsel-Pintu-Butt-Hinge-Stainless-Steel-4-3-Anti-Karat-Material-Aluminium-High-Quality-i.1442585495.29773360746"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src="/asset/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>
@@ -53,7 +61,7 @@
             <img
               :key="selectedImage"
               :src="selectedImage"
-              alt="Butt Hinge SS"
+              :alt="`Butt Hinge SS ${selectedSize} Inch`"
               class="rounded-2xl shadow-lg w-full aspect-video object-contain bg-white"
             />
           </transition>
@@ -77,31 +85,41 @@
       </div>
 
       <!-- Dimensi -->
-      <div class="mt-14 border-t border-gray-700 pt-10">
+      <div class="mt-14 border-t border-gray-200 pt-10">
         <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
-        <div class="flex flex-col items-center">
-          <img
-            :src="ukuranImage"
-            alt="Dimensi"
-            class="rounded-xl shadow-md max-w-xl w-full bg-white p-4 cursor-zoom-in"
-            @click="toggleZoom"
-          />
-          <p class="text-sm text-gray-500 mt-4 text-center">*Gambar hanya ilustrasi ukuran secara proporsional</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div
+            v-for="(item, index) in ukuranImages"
+            :key="index"
+            class="flex flex-col items-center"
+          >
+            <img
+              :src="item.src"
+              :alt="'Ukuran ' + item.label"
+              class="rounded-xl shadow-md max-w-md w-full p-4 cursor-zoom-in"
+              @click="zoomImage(item.src)"
+            />
+            <p class="text-sm text-gray-500 mt-2 text-center">*Ukuran {{ item.label }}</p>
+          </div>
         </div>
       </div>
 
-      <!-- Zoom Modal -->
+      <!-- Zoom -->
       <div
         v-if="isZoomOpen"
         class="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
         @click.self="toggleZoom"
       >
         <div class="bg-white p-4 md:p-6 rounded-xl shadow-2xl max-w-4xl w-full">
-          <img :src="ukuranImage" alt="Zoomed Ukuran" class="w-full object-contain" />
+          <img
+            :src="zoomedImage"
+            alt="Zoomed Ukuran Butt Hinge SS"
+            class="w-full object-contain"
+          />
         </div>
       </div>
 
-      <!-- Link Produk Lain di Katalog Sama -->
+      <!-- Katalog Produk Lain -->
       <div class="border-t border-gray-200 my-20 py-8">
         <h2 class="text-2xl font-bold text-center mb-8 text-red-700">SEE OUR OTHER PRODUCT IN THIS CATALOG</h2>
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 px-4 sm:px-6 lg:px-8">
@@ -118,7 +136,6 @@
             />
             <div class="bg-gray-50 text-center py-4 px-2">
               <div class="text-red-600 font-semibold text-sm">{{ item.name }}</div>
-              
             </div>
           </NuxtLink>
         </div>
@@ -131,43 +148,47 @@
 <script setup>
 import { ref, computed } from 'vue'
 
-// Ukuran yang tersedia
 const sizes = ['3', '4']
 const selectedSize = ref(sizes[0])
 const isZoomOpen = ref(false)
 
-// Gambar berdasarkan ukuran
+// Gambar utama per ukuran
 const images = {
   '3': '/asset/product/alumunium-lock/butt-hinge-ss/ss-3inch.png',
   '4': '/asset/product/alumunium-lock/butt-hinge-ss/ss-4inch.png',
 }
-
-// Gambar dimensi opsional (ganti jika punya)
-const ukuranImage = computed(() =>
-  '/asset/product/alumunium-lock/butt-hinge-nylon/ukuran-hitam.png'
-)
-
 const selectedImage = computed(() => images[selectedSize.value])
+
+// Gambar dimensi (gunakan path langsung, karena di folder public)
+const ukuranImages = [
+  { label: '3 Inch', src: '/asset/product/alumunium-lock/butt-hinge-ss/ukuran-3inch.png' },
+  { label: '4 Inch', src: '/asset/product/alumunium-lock/butt-hinge-ss/ukuran-4inch.png' }
+]
 
 const selectSize = (size) => {
   selectedSize.value = size
 }
 
+const zoomedImage = ref('')
+const zoomImage = (src) => {
+  zoomedImage.value = src
+  isZoomOpen.value = true
+}
 const toggleZoom = () => {
   isZoomOpen.value = !isZoomOpen.value
 }
 
+// Produk lain
 const katalogLinks = [
   { slug: '41054', name: 'Swing Lock 41054', image: '/asset/product/alumunium-lock/41054.png' },
   { slug: '41055', name: 'Swing Lock 41055', image: '/asset/product/alumunium-lock/41055.png' },
   { slug: '41066', name: 'Swing Lock 41066', image: '/asset/product/alumunium-lock/41066.png' },
   { slug: 'a7', name: 'A7', image: '/asset/product/alumunium-lock/a7.png' },
   { slug: 'butt-hinge-nylon', name: 'Butt Hinge Nylon', image: '/asset/product/alumunium-lock/butt-hinge-nylon.png' },
-  // { slug: 'butt-hinge-ss', name: 'Butt Hinge SS', image: '/asset/product/alumunium-lock/butt-hinge-ss.png' },
   { slug: 'butt-hinge-h', name: 'Butt Hinge H', image: '/asset/product/alumunium-lock/butt-hinge-h.png' },
   { slug: 'engsel-piano', name: 'Engsel Piano', image: '/asset/product/alumunium-lock/engsel-piano.png' },
   { slug: 'engsel-salon', name: 'Engsel Salon', image: '/asset/product/alumunium-lock/engsel-salon.png' }
-];
+]
 </script>
 
 <style scoped>

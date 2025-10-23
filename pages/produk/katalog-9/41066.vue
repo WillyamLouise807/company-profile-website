@@ -53,7 +53,7 @@
           </transition>
 
           <!-- Galeri Thumbnail -->
-          <div class="grid grid-cols-2 gap-4">
+          <div class="grid grid-cols-4 gap-4">
             <img
               v-for="(image, index) in images"
               :key="index"
@@ -129,12 +129,14 @@ import { ref } from 'vue'
 // Galeri Gambar
 import gambar1 from '/asset/product/alumunium-lock/41066/gambar-1.png'
 import gambar2 from '/asset/product/alumunium-lock/41066/gambar-2.png'
+import gambar3 from '/asset/product/alumunium-lock/41066/gambar-3.png'
+import gambar4 from '/asset/product/alumunium-lock/41066/gambar-4.png'
 
 // Gambar ukuran
 import ukuranHitam from '/asset/product/alumunium-lock/41066/ukuran-hitam.png'
 // import ukuranPutih from '/asset/product/alumunium-lock/41066/ukuran-putih.png' // Jika diperlukan
 
-const images = [gambar1, gambar2]
+const images = [gambar1, gambar2, gambar3, gambar4]
 const selectedImage = ref(images[0])
 const ukuranImage = ukuranHitam
 

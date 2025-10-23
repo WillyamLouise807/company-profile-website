@@ -91,27 +91,37 @@
       </div>
 
       <!-- Dimensi -->
-      <div class="mt-14 border-t border-gray-700 pt-10">
+      <div class="mt-14 border-t border-gray-200 pt-10">
         <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
-        <div class="flex flex-col items-center">
-          <img
-            :src="ukuranImage"
-            alt="Dimensi"
-            class="rounded-xl shadow-md max-w-xl w-full bg-white p-4 cursor-zoom-in"
-            @click="toggleZoom"
-          />
-          <p class="text-sm text-gray-500 mt-4 text-center">*Gambar hanya ilustrasi ukuran secara proporsional</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div
+            v-for="(item, index) in ukuranImages"
+            :key="index"
+            class="flex flex-col items-center"
+          >
+            <img
+              :src="item.src"
+              :alt="'Ukuran ' + item.label"
+              class="rounded-xl shadow-md max-w-md w-full p-4 cursor-zoom-in"
+              @click="zoomImage(item.src)"
+            />
+            <p class="text-sm text-gray-500 mt-2 text-center">*Ukuran {{ item.label }}</p>
+          </div>
         </div>
       </div>
 
-      <!-- Zoom Modal -->
+      <!-- Zoom -->
       <div
         v-if="isZoomOpen"
         class="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
         @click.self="toggleZoom"
       >
         <div class="bg-white p-4 md:p-6 rounded-xl shadow-2xl max-w-4xl w-full">
-          <img :src="ukuranImage" alt="Zoomed Ukuran" class="w-full object-contain" />
+          <img
+            :src="zoomedImage"
+            alt="Zoomed Ukuran Door Lock 802"
+            class="w-full object-contain"
+          />
         </div>
       </div>
 
@@ -168,9 +178,16 @@ const images = {
 }
 
 // Gunakan satu gambar ukuran saja
-const ukuranImage = computed(() =>
-  new URL('/asset/product/alumunium-lock/butt-hinge-nylon/ukuran-hitam.png', import.meta.url).href
-)
+// Gambar dimensi
+import ukuran3 from '/asset/product/alumunium-lock/butt-hinge-nylon/ukuran-3inch.png'
+import ukuran4 from '/asset/product/alumunium-lock/butt-hinge-nylon/ukuran-4inch.png'
+
+const ukuranImages = [
+  { label: '3 Inch', src: ukuran3 },
+  { label: '4 Inch', src: ukuran4 }
+]
+
+
 
 // State
 const selectedColor = ref(colors[0])
@@ -190,6 +207,14 @@ const selectColor = (color) => {
 const selectSize = (size) => {
   selectedSize.value = size
 }
+
+const zoomedImage = ref('')
+
+const zoomImage = (src) => {
+  zoomedImage.value = src
+  isZoomOpen.value = true
+}
+
 
 const toggleZoom = () => {
   isZoomOpen.value = !isZoomOpen.value

@@ -114,13 +114,13 @@ const floorHingeProduts = [
   slug: "butt-hinge-ss",
   image: "/asset/product/alumunium-lock/butt-hinge-ss.png"
 },
-// {
-//   id: 7,
-//   name: "Butt Hinge H",
-//   description: "Kunci Pintu Set Sliding Almunium A7 Indikator Premium Handle set",
-//   slug: "butt-hinge-h",
-//   image: "/asset/product/alumunium-lock/butt-hinge-h.png"
-// },
+{
+  id: 7,
+  name: "Butt Hinge H",
+  description: "Kunci Pintu Set Sliding Almunium A7 Indikator Premium Handle set",
+  slug: "butt-hinge-h",
+  image: "/asset/product/alumunium-lock/butt-hinge-h.png"
+},
 {
   id: 8,
   name: "Engsel Piano",

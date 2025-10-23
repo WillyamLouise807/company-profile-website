@@ -59,7 +59,7 @@
               :key="index"
               :src="image"
               @click="selectedImage = image"
-              class="rounded-xl cursor-pointer border-2"
+              class="rounded-xl cursor-pointer border-2 h-28 w-full object-contain bg-white p-2"
               :class="{
                 'border-red-600': selectedImage === image,
                 'border-transparent': selectedImage !== image
