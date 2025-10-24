@@ -177,7 +177,6 @@ const images = {
   'silver-4': '/asset/product/alumunium-lock/butt-hinge-nylon/silver-4inch.png'
 }
 
-// Gunakan satu gambar ukuran saja
 // Gambar dimensi
 import ukuran3 from '/asset/product/alumunium-lock/butt-hinge-nylon/ukuran-3inch.png'
 import ukuran4 from '/asset/product/alumunium-lock/butt-hinge-nylon/ukuran-4inch.png'
@@ -186,8 +185,6 @@ const ukuranImages = [
   { label: '3 Inch', src: ukuran3 },
   { label: '4 Inch', src: ukuran4 }
 ]
-
-
 
 // State
 const selectedColor = ref(colors[0])

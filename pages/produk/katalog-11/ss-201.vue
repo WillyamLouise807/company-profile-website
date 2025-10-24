@@ -130,7 +130,7 @@ const katalogLinks = [
   { slug: 'alumunium', name: 'Set aluminium', image: '/asset/product/flush-handle/alumunium.png' },
   // { slug: 'ss-201', name: 'SS 201', image: '/asset/product/flush-handle/ss-201.png' },
   { slug: 'roller-shutter-lock', name: 'Set roller shutter', image: '/asset/product/flush-handle/roller-shutter-lock.png' },
-  { slug: 'bracket-ikan', name: 'Bracket Ikan', image: '/asset/product/flush-handle/bracket-ikan.png' },
+  { slug: 'handle-swing', name: 'Handle Swing', image: '/asset/product/flush-handle/handle-swing.png' },
   { slug: 'handle-bambu', name: 'Set Handle Bambu', image: '/asset/product/flush-handle/handle-bambu.png' },
 ];
 </script>
