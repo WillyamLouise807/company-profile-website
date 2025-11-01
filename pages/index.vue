@@ -408,7 +408,7 @@
       <!-- Text + Form -->
       <FadeInOnScroll direction="up">
         <div class="order-2 md:order-1 pb-16 md:py-24">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 md:text-white text-red-900 mt-10 md:mt-0">
             Kami senang bisa terhubung dengan Anda.
           </h2>
           <p class="mb-8 text-gray-300">

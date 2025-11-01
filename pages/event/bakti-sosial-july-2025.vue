@@ -90,10 +90,10 @@
         <img
           v-for="i in 13"
           :key="i"
-          :src="`/article/galeri${i}.jpg`"
+          :src="`/article/batch1/galeri${i}.jpg`"
           alt="Dokumentasi"
           class="w-full rounded-xl cursor-zoom-in hover:scale-105 transition duration-300 shadow-md"
-          @click="openModal(`/article/galeri${i}.jpg`)"
+          @click="openModal(`/article/batch1/galeri${i}.jpg`)"
         />
       </div>
 

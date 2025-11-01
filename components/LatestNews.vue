@@ -39,25 +39,32 @@
 
         <!-- Right list -->
         <div class="flex flex-col divide-y">
-          <!-- article item -->
-          <div class="flex gap-5 py-16">
+          <!-- article item -->        
+          <NuxtLink
+            to="/event/bakti-sosial-october-2025"
+            class="flex gap-5 py-16 group transition"
+          >
             <div class="flex-1">
               <span class="uppercase text-red-500 text-xs font-semibold block mb-1">
-                CHARITY [Comming Soon]
+                CHARITY
               </span>
-              <h4 class="text-md font-semibold text-gray-900">
-                Trouble sleeping? This moon-shaped bedside light might help
+              <h4
+                class="text-md font-semibold text-gray-900 transition-colors duration-300"
+              >
+                Bakti Sosial Bodhiarama Meditation Centre, Bogor
               </h4>
               <p class="text-gray-500 text-sm mt-1">
-                12 June 2020 | By Rob Verger
+                26 Oktober 2025 | By Heartifact
               </p>
             </div>
-            <img
-              src="/article/baksos-1.jpg"
-              alt="article 2"
-              class="w-auto h-32 rounded-xl object-cover flex-shrink-0"
-            />
-          </div>
+            <div class="overflow-hidden rounded-xl flex-shrink-0 w-48 h-32">
+              <img
+                src="/article/baksos-2.jpg"
+                alt="Bakti Sosial Bodhiarama Meditation Centre"
+                class="w-auto h-32 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+              />
+            </div>
+          </NuxtLink>
 
           <div class="flex gap-5 py-16">
             <div class="flex-1">
@@ -74,7 +81,7 @@
             <img
               src="/article/baksos-1.jpg"
               alt="article 3"
-              class="w-auto h-32 rounded-xl object-cover flex-shrink-0"
+              class="w-auto h-32 rounded-xl object-cover flex-shrink-0 w-48 h-32"
             />
           </div>
 
@@ -93,7 +100,7 @@
             <img
               src="/article/baksos-1.jpg"
               alt="article 4"
-              class="w-auto h-32 rounded-xl object-cover flex-shrink-0"
+              class="w-auto h-32 rounded-xl object-cover flex-shrink-0 w-48 h-32"
             />
           </div>
         </div>
