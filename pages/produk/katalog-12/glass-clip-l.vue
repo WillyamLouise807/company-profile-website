@@ -9,7 +9,7 @@
           </li>
           <li>/</li>
           <li>
-            <RouterLink to="/produk/glass-clip" class="hover:underline text-black font-medium">Glass Clip</RouterLink>
+            <RouterLink to="/produk/accessories" class="hover:underline text-black font-medium">Accessories</RouterLink>
           </li>
           <li>/</li>
           <li class="text-black font-semibold">Glass Clip L</li>

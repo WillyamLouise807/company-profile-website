@@ -1,4 +1,7 @@
 <template>
+  <!--  Kalo Mau Update Website Run dit terminal
+    npm install
+    npx nuxi generate-->
   <!-- Main container with background -->
   <div class="relative">
     <!-- Background image for all devices -->
