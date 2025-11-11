@@ -73,173 +73,153 @@
 
   <section id="about-us" class="relative z-10 bg-[url('asset/bg-repeat.jpg')] bg-repeat py-24 px-4 sm:px-6 lg:px-8">
     <div class="max-w-screen-2xl mx-auto">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">PRODUCT RANGE</h2>
+  <div class="text-center mb-12">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">PRODUCT RANGE</h2>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!-- Reusable Card -->
+    <NuxtLink 
+      to="/produk/door-lock"
+      class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
+    >
+      <div class="h-48 flex justify-center items-center overflow-hidden bg-white">
+        <img 
+          src="/asset/product/Door-Lock.png" 
+          alt="Door Lock" 
+          class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
+        />
       </div>
-      
-      <!-- Grid 3 kolom -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Card Door Lock -->
-        <NuxtLink 
-          to="/produk/door-lock"
-          class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
-        >
-          <div class="h-48 overflow-hidden">
-            <img 
-              src="/asset/product/Door-Lock.png" 
-              alt="Door Lock" 
-              class="w-auto h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            />
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Door Lock</h3>
-            <div class="flex justify-between items-center">
-              <span class="text-red-600 font-medium text-sm inline-flex items-center group-hover:underline">
-                View
-              </span>
-              <span class="text-red-600 transform group-hover:translate-x-1 transition-transform">→</span>
-            </div>
-          </div>
-        </NuxtLink>
-
-
-        <!-- Card Patch Fitting -->
-        <NuxtLink 
-          to="/produk/patch-fitting"
-          class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
-        >
-          <div
-            class="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
-          >
-            <div class="h-48 overflow-hidden">
-              <img 
-                src="/asset/product/patch-fitting.png" 
-                alt="Patch Fitting" 
-                class="w-auto h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">Patch Fitting</h3>
-              <div class="flex justify-between items-center">
-                <a href="#" class="text-red-600 font-medium text-sm inline-flex items-center group-hover:underline">
-                  View
-                </a>
-                <span class="text-red-600 transform group-hover:translate-x-1 transition-transform">→</span>
-              </div>
-            </div>
-          </div>
-        </NuxtLink>
-
-        <!-- Card Sliding Rail -->
-        <NuxtLink 
-          to="/produk/patch-fitting"
-          class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
-        >
-          <div
-            class="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
-          >
-            <div class="h-48 overflow-hidden">
-              <img 
-                src="/asset/product/sliding-rail.png" 
-                alt="Sliding Rail" 
-                class="w-auto h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">Sliding Rail</h3>
-              <div class="flex justify-between items-center">
-                <a href="#" class="text-red-600 font-medium text-sm inline-flex items-center group-hover:underline">
-                  View
-                </a>
-                <span class="text-red-600 transform group-hover:translate-x-1 transition-transform">→</span>
-              </div>
-            </div>
-          </div>
-        </NuxtLink>
-        
-
-        <!-- Card Aluminium Lock -->
-        <NuxtLink 
-          to="/produk/alumunium-lock"          
-          class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
-        >
-          <div
-            class="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
-          >
-            <div class="h-48 overflow-hidden">
-              <img 
-                src="/asset/product/alumunium-lock.png" 
-                alt="Aluminium Lock" 
-                class="w-auto h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">Aluminium Lock</h3>
-              <div class="flex justify-between items-center">
-                <a href="#" class="text-red-600 font-medium text-sm inline-flex items-center group-hover:underline">
-                  View
-                </a>
-                <span class="text-red-600 transform group-hover:translate-x-1 transition-transform">→</span>
-              </div>
-            </div>
-          </div>
-        </NuxtLink>
-
-        <!-- Card Roller Caster -->
-        <NuxtLink 
-          to="/produk/roller-caster"
-          class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
-        >
-          <div
-            class="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
-          >
-            <div class="h-48 overflow-hidden">
-              <img 
-                src="/asset/product/roller-caster.png" 
-                alt="Roller Caster" 
-                class="w-auto h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">Roller Caster</h3>
-              <div class="flex justify-between items-center">
-                <a href="#" class="text-red-600 font-medium text-sm inline-flex items-center group-hover:underline">
-                  View
-                </a>
-                <span class="text-red-600 transform group-hover:translate-x-1 transition-transform">→</span>
-              </div>
-            </div>
-          </div>
-        </NuxtLink>
-
-        <!-- Card Mortise Lock -->
-        <NuxtLink 
-          to="/produk/mortise-lock"
-          class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
-        >
-          <div
-            class="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
-          >
-            <div class="h-48 overflow-hidden">
-              <img 
-                src="/asset/product/mortise-lock.png" 
-                alt="Mortise Lock" 
-                class="w-auto h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">Mortise Lock</h3>
-              <div class="flex justify-between items-center">
-                <a href="#" class="text-red-600 font-medium text-sm inline-flex items-center group-hover:underline">
-                  View
-                </a>
-                <span class="text-red-600 transform group-hover:translate-x-1 transition-transform">→</span>
-              </div>
-            </div>
-          </div>        
-        </NuxtLink>
+      <div class="p-6">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Door Lock</h3>
+        <div class="flex justify-between items-center">
+          <span class="text-red-600 font-medium text-sm inline-flex items-center group-hover:underline">
+            View
+          </span>
+          <span class="text-red-600 transform group-hover:translate-x-1 transition-transform">→</span>
+        </div>
       </div>
-    </div>
+    </NuxtLink>
+
+
+    <NuxtLink 
+      to="/produk/patch-fitting"
+      class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
+    >
+      <div class="h-48 flex justify-center items-center overflow-hidden bg-white">
+        <img 
+          src="/asset/product/patch-fitting.png" 
+          alt="Patch Fitting" 
+          class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
+        />
+      </div>
+      <div class="p-6">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Patch Fitting</h3>
+        <div class="flex justify-between items-center">
+          <span class="text-red-600 font-medium text-sm inline-flex items-center group-hover:underline">
+            View
+          </span>
+          <span class="text-red-600 transform group-hover:translate-x-1 transition-transform">→</span>
+        </div>
+      </div>
+    </NuxtLink>
+
+
+    <NuxtLink 
+      to="/produk/sliding-rail"
+      class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
+    >
+      <div class="h-48 flex justify-center items-center overflow-hidden bg-white">
+        <img 
+          src="/asset/product/sliding-rail.png" 
+          alt="Sliding Rail" 
+          class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
+        />
+      </div>
+      <div class="p-6">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Sliding Rail</h3>
+        <div class="flex justify-between items-center">
+          <span class="text-red-600 font-medium text-sm inline-flex items-center group-hover:underline">
+            View
+          </span>
+          <span class="text-red-600 transform group-hover:translate-x-1 transition-transform">→</span>
+        </div>
+      </div>
+    </NuxtLink>
+
+
+    <NuxtLink 
+      to="/produk/alumunium-lock"
+      class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
+    >
+      <div class="h-48 flex justify-center items-center overflow-hidden bg-white">
+        <img 
+          src="/asset/product/alumunium-lock.png" 
+          alt="Aluminium Lock" 
+          class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
+        />
+      </div>
+      <div class="p-6">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Aluminium Lock</h3>
+        <div class="flex justify-between items-center">
+          <span class="text-red-600 font-medium text-sm inline-flex items-center group-hover:underline">
+            View
+          </span>
+          <span class="text-red-600 transform group-hover:translate-x-1 transition-transform">→</span>
+        </div>
+      </div>
+    </NuxtLink>
+
+
+    <NuxtLink 
+      to="/produk/roller-caster"
+      class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
+    >
+      <div class="h-48 flex justify-center items-center overflow-hidden bg-white">
+        <img 
+          src="/asset/product/roller-caster.png" 
+          alt="Roller Caster" 
+          class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
+        />
+      </div>
+      <div class="p-6">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Roller Caster</h3>
+        <div class="flex justify-between items-center">
+          <span class="text-red-600 font-medium text-sm inline-flex items-center group-hover:underline">
+            View
+          </span>
+          <span class="text-red-600 transform group-hover:translate-x-1 transition-transform">→</span>
+        </div>
+      </div>
+    </NuxtLink>
+
+
+    <NuxtLink 
+      to="/produk/mortise-lock"
+      class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
+    >
+      <div class="h-48 flex justify-center items-center overflow-hidden bg-white">
+        <img 
+          src="/asset/product/mortise-lock.png" 
+          alt="Mortise Lock" 
+          class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
+        />
+      </div>
+      <div class="p-6">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Mortise Lock</h3>
+        <div class="flex justify-between items-center">
+          <span class="text-red-600 font-medium text-sm inline-flex items-center group-hover:underline">
+            View
+          </span>
+          <span class="text-red-600 transform group-hover:translate-x-1 transition-transform">→</span>
+        </div>
+      </div>
+    </NuxtLink>
+
+  </div>
+</div>
+
   </section>
 
   <!-- Penjelasan GBJ -->
@@ -411,10 +391,10 @@
       <!-- Text + Form -->
       <FadeInOnScroll direction="up">
         <div class="order-2 md:order-1 pb-16 md:py-24">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4 md:text-white text-red-900 mt-10 md:mt-0">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 md:text-white text-red-600 mt-10 md:mt-0">
             Kami senang bisa terhubung dengan Anda.
           </h2>
-          <p class="mb-8 text-gray-300">
+          <p class="mb-8 text-white md:text-gray-300">
             Hubungi kami untuk informasi lebih lanjut mengenai produk, layanan, atau peluang kemitraan. Tim kami akan merespons dengan cepat dan memberikan solusi terbaik untuk kebutuhan Anda.
           </p>
 
@@ -432,8 +412,12 @@
               bg-cover bg-center 
               px-6 py-3 
               rounded-full 
-              transition 
-              mx-1 my-1">
+              transition
+              duration-300
+              hover:scale-105
+              hover:brightness-110
+              mx-1 my-1
+            ">
             Go to Contact Form
           </NuxtLink>
           </div>
