@@ -143,19 +143,21 @@
           <div class="absolute top-0 bottom-0 left-1/3 w-px bg-gray-300 hidden md:block"></div>
           <div class="absolute top-0 bottom-0 left-2/3 w-px bg-gray-300 hidden md:block"></div>
 
+          <!-- Item 1 -->
           <div class="flex flex-col">
-            <img src="/article/baksos-1.jpg" alt="" class="w-full h-auto object-cover mb-2" />
+            <img src="/article/baksos-2.jpg" alt="Bakti Sosial Bodhiarama Meditation Centre" class="w-full h-auto object-cover mb-2" />
             <span class="uppercase text-red-500 text-xs font-semibold block mb-1">
-              COMMING SOON
+              CHARITY
             </span>
             <h4 class="text-md font-semibold text-gray-900">
-              COMMING SOON
+              Bakti Sosial Bodhiarama Meditation Centre, Bogor
             </h4>
             <p class="text-gray-500 text-sm mt-1">
-              12 June 2020 | By Rob Verger
+              26 Oktober 2025 | By Heartifact
             </p>
           </div>
 
+          <!-- Item 2 (tetap, tidak diubah karena hanya diminta memindahkan satu artikel) -->
           <div class="flex flex-col">
             <img src="/article/baksos-1.jpg" alt="" class="w-full h-auto object-cover mb-2" />
             <span class="uppercase text-red-500 text-xs font-semibold block mb-1">
@@ -169,6 +171,7 @@
             </p>
           </div>
 
+          <!-- Item 3 -->
           <div class="flex flex-col">
             <img src="/article/baksos-1.jpg" alt="" class="w-full h-auto object-cover mb-2" />
             <span class="uppercase text-red-500 text-xs font-semibold block mb-1">
