@@ -8,7 +8,7 @@
         <p class="mb-3">Follow us more in:</p>
         <div class="flex space-x-4">
           <!-- Instagram Icon -->
-          <a href="https://www.instagram.com/heartifact_id?utm_source=ig_web_button_share_sheet&igsh=OWpuZW5sYThkNnNy" target="_blank" rel="noopener noreferrer" class="p-2 border border-black rounded hover:bg-red-600 transition">
+          <a href="https://www.instagram.com/glatino_official/" target="_blank" rel="noopener noreferrer" class="p-2 border border-black rounded hover:bg-red-600 transition">
             <svg fill="#000000" viewBox="0 0 32 32" class="w-6 h-6" xmlns="http://www.w3.org/2000/svg">
               <path d="M22.3,8.4c-0.8,0-1.4,0.6-1.4,1.4s0.6,1.4,1.4,1.4c0.8,0,1.4-0.6,1.4-1.4S23.1,8.4,22.3,8.4z"/>
               <path d="M16,10.2c-3.3,0-5.9,2.7-5.9,5.9s2.7,5.9,5.9,5.9s5.9-2.7,5.9-5.9S19.3,10.2,16,10.2z M16,19.9

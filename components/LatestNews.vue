@@ -67,22 +67,28 @@
           </NuxtLink>
 
           <div class="flex gap-5 py-16">
-            <div class="flex-1">
-              <span class="uppercase text-red-500 text-xs font-semibold block mb-1">
-                CHARITY [Comming Soon]
-              </span>
-              <h4 class="text-md font-semibold text-gray-900">
-                A simple background photo is forcing Android users to factory reset smartphones
-              </h4>
-              <p class="text-gray-500 text-sm mt-1">
-                8 June 2020 | By Stan Horaczek
-              </p>
-            </div>
-            <img
-              src="/article/baksos-1.jpg"
-              alt="article 3"
-              class="w-auto h-32 rounded-xl object-cover flex-shrink-0 w-48 h-32"
-            />
+            <NuxtLink
+              to="/event/bakti-sosial-july-2025"
+              class="flex gap-5 group flex-1"
+            >
+              <div class="flex-1">
+                <span class="uppercase text-red-500 text-xs font-semibold block mb-1">
+                  CHARITY
+                </span>
+                <h4 class="text-md font-semibold text-gray-900">
+                  Bakti Sosial Yayasan Yatim Piatu & Dhuafa Angku Budi Sati Bhakti Pertiwi.
+                </h4>
+                <p class="text-gray-500 text-sm mt-1">
+                  27 July 2025 | By Heartifact
+                </p>
+              </div>
+
+              <img
+                src="/article/baksos-1.jpg"
+                alt="article baksos"
+                class="w-auto h-32 rounded-xl object-cover flex-shrink-0 w-48 h-32 transition-transform duration-300 ease-in-out group-hover:scale-105"
+              />
+            </NuxtLink>
           </div>
 
           <div class="flex gap-5 py-16">
