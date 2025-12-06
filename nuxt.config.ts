@@ -21,5 +21,9 @@ export default defineNuxtConfig({
       tailwindcss: {},
       autoprefixer: {},
     }
+  },
+  // ✅ Tambahkan ini supaya bisa jadi static site
+  nitro: {
+    preset: 'static'
   }
 })

@@ -49,12 +49,11 @@
         <!-- Kiri: Text (order 2 di hp, order 1 di desktop) -->
         <div class="flex flex-col justify-center items-start text-left order-2 md:order-1 px-4 md:px-0">
           <FadeInOnScroll direction="up">
-            <div class="text-2xl md:text-6xl font-extrabold text-red-700 leading-snug mb-6">
-              <p>PT GLOBAL BESTINDO</p>
-              <p>JAYA</p>
+            <div class="text-xl md:text-5xl font-extrabold text-red-700 leading-snug mb-6">
+              <p>PT GLOBAL BESTINDO JAYA</p>
             </div>
             <div class="text-red-700 text-sm md:text-lg mb-12">
-              <p>Menciptakan aksesoris aluminium yang berkualitas</p>
+              <p>Menciptakan Aksesoris Aluminium yang Berkualitas</p>
             </div>
             <div>
               <button

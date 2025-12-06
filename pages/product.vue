@@ -218,7 +218,7 @@ type Banner = {
 const banners: Banner[] = [
   {
     desktopImage: '/asset/banner_produk/banner_dekstop_1.png',
-    mobileImage: '/asset/banner_produk/banner_mobile1.png',
+    mobileImage: '/asset/banner_produk/banner_mobile_1.png',
     categoryImage: '/asset/product/GLATINO - RED - LOGO.png',
     title: 'Door Lock Series',
     description: 'Perpaduan berbagai macam bentuk dan warna dirancang khusus untuk mempercantik pintu Anda',
@@ -227,7 +227,7 @@ const banners: Banner[] = [
   },
   {
     desktopImage: '/asset/banner_produk/banner_dekstop_2.png',
-    mobileImage: '/asset/banner_produk/banner_mobile1.png',
+    mobileImage: '/asset/banner_produk/banner_mobile_2.png',
     categoryImage: '/asset/product/GLATINO - RED - LOGO.png',
     title: 'Aluminium Lock',
     description: 'Kunci berkualitas tinggi untuk sistem jendela dan pintu aluminium, menghadirkan keamanan maksimal dengan desain ramping dan konstruksi tahan lama.',
@@ -236,7 +236,7 @@ const banners: Banner[] = [
   },
   {
     desktopImage: '/asset/banner_produk/banner_dekstop_3.png',
-    mobileImage: '/asset/banner_produk/banner_mobile1.png',
+    mobileImage: '/asset/banner_produk/banner_mobile_3.png',
     categoryImage: '/asset/product/GLATINO - RED - LOGO.png',
     title: 'Pull Handle',
     description: 'Gagang pintu stylish dan ergonomis untuk berbagai jenis pintu, memberikan sentuhan modern dan kenyamanan saat digunakan.',
@@ -245,7 +245,7 @@ const banners: Banner[] = [
   },
   {
     desktopImage: '/asset/banner_produk/banner_dekstop_4.png',
-    mobileImage: '/asset/banner_produk/banner_mobile1.png',
+    mobileImage: '/asset/banner_produk/banner_mobile_4.png',
     categoryImage: '/asset/product/GLATINO - RED - LOGO.png',
     title: 'Mortise Lock',
     description: 'Kunci pintu mortise berkualitas tinggi dengan mekanisme tahan lama, memberikan keamanan optimal dan kemudahan penggunaan untuk berbagai jenis pintu.',
