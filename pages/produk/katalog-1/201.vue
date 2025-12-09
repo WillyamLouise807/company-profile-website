@@ -9,7 +9,7 @@
           </li>
           <li>/</li>
           <li>
-            <RouterLink to="/produk/door-lock" class="hover:underline text-black font-medium">Door Lock</RouterLink>
+            <RouterLink to="/produk/handle-roses" class="hover:underline text-black font-medium">Handle Roses</RouterLink>
           </li>
           <li>/</li>
           <li class="text-black font-semibold">201</li>
@@ -119,23 +119,24 @@
       <!-- Link Produk Lain di Katalog Sama -->
       <div class="border-t border-gray-200 my-20 py-8">
         <h2 class="text-2xl font-bold text-center mb-8 text-red-700">SEE OUR OTHER PRODUCT IN THIS CATALOG</h2>
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 px-4 sm:px-6 lg:px-8">
-          <NuxtLink
-            v-for="item in katalogLinks"
-            :key="item.slug"
-            :to="`/produk/katalog-1/${item.slug}`"
-            class="group block bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition overflow-hidden"
-          >
-            <img
-              :src="item.image"
-              :alt="item.name"
-              class="w-full h-32 object-contain mx-auto transition-transform duration-300 group-hover:scale-105 bg-white"
-            />
-            <div class="bg-gray-50 text-center py-4 px-2">
-              <div class="text-red-600 font-semibold text-sm">{{ item.name }}</div>
-              
-            </div>
-          </NuxtLink>
+        <div class="flex justify-center">
+          <div class="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4">
+            <NuxtLink
+              v-for="item in katalogLinks"
+              :key="item.slug"
+              :to="`/produk/katalog-1/${item.slug}`"
+              class="group block bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition overflow-hidden w-40 sm:w-44"
+            >
+              <img
+                :src="item.image"
+                :alt="item.name"
+                class="w-full h-32 object-contain mx-auto transition-transform duration-300 group-hover:scale-105 bg-white"
+              />
+              <div class="bg-gray-50 text-center py-4 px-2">
+                <div class="text-red-600 font-semibold text-sm">{{ item.name }}</div>
+              </div>
+            </NuxtLink>
+          </div>
         </div>
       </div>
     </div>
@@ -185,13 +186,7 @@ const katalogLinks = [
   // { slug: '201', name: 'Set 201', image: '/asset/product/door-lock/201.png' },
   { slug: '202', name: 'Set 202', image: '/asset/product/door-lock/202.png' },
   { slug: '820', name: 'Set 820', image: '/asset/product/door-lock/820.png' },
-  { slug: '839', name: 'Set 839', image: '/asset/product/door-lock/839.png' },
-  { slug: '939', name: 'Set 939', image: '/asset/product/door-lock/939.png' },
-  { slug: '989', name: 'Set 989', image: '/asset/product/door-lock/989.png' },
   { slug: 'handle-only', name: 'Handle Only', image: '/asset/product/door-lock/handle-only.png' },
-  { slug: 'expanda', name: 'Set Expanda', image: '/asset/product/door-lock/expanda.png' },
-  { slug: '802', name: 'Set 802', image: '/asset/product/door-lock/802.png' },
-  { slug: '902', name: 'Set 902', image: '/asset/product/door-lock/902.png' }
 ]
 
 </script>

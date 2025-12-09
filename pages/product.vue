@@ -220,10 +220,10 @@ const banners: Banner[] = [
     desktopImage: '/asset/banner_produk/banner_dekstop_1.png',
     mobileImage: '/asset/banner_produk/banner_mobile_1.png',
     categoryImage: '/asset/product/GLATINO - RED - LOGO.png',
-    title: 'Door Lock Series',
+    title: 'Handle Roses Series',
     description: 'Perpaduan berbagai macam bentuk dan warna dirancang khusus untuk mempercantik pintu Anda',
-    buttonText: 'Lihat Produk Door Lock',
-    link: '/produk/door-lock'
+    buttonText: 'Lihat Produk Handle Roses',
+    link: '/produk/handle-roses'
   },
   {
     desktopImage: '/asset/banner_produk/banner_dekstop_2.png',
@@ -284,12 +284,26 @@ const scrollToProduct = () => {
 
 const products = [
   {
-    title: 'Door Lock',
-    description: 'View all Door Lock products',
-    slug: 'door-lock',
-    image: '/asset/product/Door-Lock.png',
+    title: 'Handle Roses',
+    description: 'View all Handle Roses products',
+    slug: 'handle-roses',
+    image: '/asset/product/handle-roses.png',
     logo: '/asset/product/GLATINO - RED - LOGO.png',
   },
+  {
+    title: 'Lever Handle Plate',
+    description: 'View all Lever Handle Plate products',
+    slug: 'lever-handle-plate',
+    image: '/asset/product/lever-handle-plate.png',
+    logo: '/asset/product/GLATINO - RED - LOGO.png',
+  },
+  // {
+  //   title: 'Door Lock',
+  //   description: 'View all Door Lock products',
+  //   slug: 'door-lock',
+  //   image: '/asset/product/Door-Lock.png',
+  //   logo: '/asset/product/GLATINO - RED - LOGO.png',
+  // },
   {
     title: 'Mortise Lock',
     description: 'View all Mortise Lock products',

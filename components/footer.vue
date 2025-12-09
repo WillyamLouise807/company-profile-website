@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-white border-t border-red-700 text-black px-6 py-10 lg:px-20 font-poppins">
-    <div class="max-w-screen-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div class="max-w-screen-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
       
       <!-- Company Info -->
       <div>
@@ -27,37 +27,36 @@
         </div>
       </div>
 
-<!-- Useful Links -->
-<div>
-  <h3 class="text-lg font-semibold text-red-600 mb-4">Useful Links</h3>
-  <ul class="space-y-2">
-    <li><NuxtLink to="/" class="hover:text-red-500">Home</NuxtLink></li>
-    <li><NuxtLink to="/#about-gbj" class="hover:text-red-500">About us</NuxtLink></li>
-    <li><NuxtLink to="/product" class="hover:text-red-500">Product</NuxtLink></li>
-    <li><NuxtLink to="/team" class="hover:text-red-500">Team</NuxtLink></li>
-    <li><NuxtLink to="/article-page" class="hover:text-red-500">Event</NuxtLink></li>
-  </ul>
-</div>
+      <!-- Useful Links -->
+      <div>
+        <h3 class="text-lg font-semibold text-red-600 mb-4">Useful Links</h3>
+        <ul class="space-y-2">
+          <li><NuxtLink to="/" class="hover:text-red-500">Home</NuxtLink></li>
+          <li><NuxtLink to="/#about-gbj" class="hover:text-red-500">About us</NuxtLink></li>
+          <li><NuxtLink to="/product" class="hover:text-red-500">Product</NuxtLink></li>
+          <li><NuxtLink to="/team" class="hover:text-red-500">Team</NuxtLink></li>
+          <li><NuxtLink to="/article-page" class="hover:text-red-500">Event</NuxtLink></li>
+        </ul>
+      </div>
 
-<!-- Products -->
-<div>
-  <h3 class="text-lg font-semibold text-red-600 mb-4">Products</h3>
-  <ul class="space-y-2">
-    <li><NuxtLink to="/produk/door-lock" class="hover:text-red-500">Door Lock</NuxtLink></li>
-    <li><NuxtLink to="/produk/mortise-lock" class="hover:text-red-500">Mortise Lock</NuxtLink></li>
-    <li><NuxtLink to="/produk/cylinder" class="hover:text-red-500">Cylinder</NuxtLink></li>
-    <li><NuxtLink to="/produk/floor-hinge" class="hover:text-red-500">Floor Hinge</NuxtLink></li>
-    <li><NuxtLink to="/produk/patch-fitting" class="hover:text-red-500">Patch Fitting</NuxtLink></li>
-  </ul>
-</div>
-
+      <!-- Products -->
+      <div>
+        <h3 class="text-lg font-semibold text-red-600 mb-4">Products</h3>
+        <ul class="space-y-2">
+          <li><NuxtLink to="/produk/door-lock" class="hover:text-red-500">Door Lock</NuxtLink></li>
+          <li><NuxtLink to="/produk/mortise-lock" class="hover:text-red-500">Mortise Lock</NuxtLink></li>
+          <li><NuxtLink to="/produk/cylinder" class="hover:text-red-500">Cylinder</NuxtLink></li>
+          <li><NuxtLink to="/produk/floor-hinge" class="hover:text-red-500">Floor Hinge</NuxtLink></li>
+          <li><NuxtLink to="/produk/patch-fitting" class="hover:text-red-500">Patch Fitting</NuxtLink></li>
+        </ul>
+      </div>
 
       <!-- Contact Info -->
       <div>
         <h3 class="text-lg font-semibold text-red-600 mb-4">Contact Us</h3>
         <p>Jurumudi Batuceper Km.19 No.37<br />Kota Tangerang, Banten 15000<br />Indonesia</p>
         <p class="mt-2"><strong>Phone:</strong> +62 213 8764 362</p>
-        <p><strong>Email:</strong> globalbestindojaya.gbj@gmail.com</p>
+        <p><strong>Email:</strong> office.globalbestindojaya@gmail.com</p>
       </div>
     </div>
   </footer>
