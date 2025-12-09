@@ -20,7 +20,7 @@
       <div class="flex flex-col-reverse md:grid md:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Door Lock 202</h1>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Handle Roses 202</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
             Desain elegan & lengkap dengan material Stainless SUS 304. Warna menarik, kuat, dan cocok untuk berbagai jenis pintu rumah Anda.
           </p>

@@ -20,7 +20,7 @@
       <div class="flex flex-col-reverse md:grid md:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-black">Door Lock 201 - SS</h1>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-black">Handle Only 201 - SS</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
             Tarikan tanam Glatino ini merupakan solusi praktis untuk pintu dorong, lemari, atau laci dengan desain simpel dan material stainless yang kuat. Cocok untuk melengkapi tampilan furniture rumah agar lebih rapi dan fungsional.
           </p>

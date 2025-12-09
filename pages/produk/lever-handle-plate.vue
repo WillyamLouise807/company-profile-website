@@ -72,43 +72,43 @@ import FooterComponent from '@/components/footer.vue'
 const doorLockProducts = [
   {
     id: 1,
-    name: "GLT-839",
+    name: "LHP-839",
     description: "KeyPro Set Kunci Pintu Handle Premium Door Lock Aluminium",
     slug: "839",
     image: "/asset/product/door-lock/839.png"
   },
   {
     id: 2,
-    name: "GLT-939",
+    name: "LHP-939",
     description: "Luxlock Full Set Kunci Pintu Material Aluminium Anti Karat",
     slug: "939",
     image: "/asset/product/door-lock/939.png"
   },
   {
     id: 3,
-    name: "GLT-989",
+    name: "LHP-989",
     description: "LockExpert Set Kunci Pintu Premium Material Aluminium Anti Karat",
     slug: "989",
     image: "/asset/product/door-lock/989.png"
   },
   {
     id: 5,
-    name: "Expanda",
-    description: "Set Kunci Pintu Handle Kawat Nyamuk Type Door Loock Premium",
+    name: "EXP-GLT",
+    description: "Kunci Expanda Handle Plate Material Aluminium Anti Karat",
     slug: "expanda",
     image: "/asset/product/door-lock/expanda.png"
   },
   {
     id: 5,
-    name: "802",
-    description: "LockStyle Set Kunci Pintu Untuk Kamar Mandi Bahan Aluminium Anti Karat",
+    name: "KM-802",
+    description: "Kunci kamar Mandi Handle Plate Material Aluminium Anti Karat",
     slug: "802",
     image: "/asset/product/door-lock/802.png"
   },
   {
     id: 6,
-    name: "902",
-    description: "Bathroom Buddy Set Kunci Kamar mandi Material Aluminium Anti Karat",
+    name: "KM-902",
+    description: "Kunci kamar Mandi Handle Plate Material Stainless Steel Anti Karat",
     slug: "902",
     image: "/asset/product/door-lock/902.png"
   }

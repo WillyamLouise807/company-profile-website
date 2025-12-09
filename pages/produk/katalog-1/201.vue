@@ -20,7 +20,7 @@
       <div class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Door Lock 201</h1>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Handle Roses 201</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
             Dengan desain simpel dan pilihan warna yang elegan, handle pintu Glatino Model C 
             bisa jadi pilihan tepat untuk melengkapi tampilan pintu rumah Anda. Terbuat dari 

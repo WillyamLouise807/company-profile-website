@@ -175,14 +175,10 @@ function toggleZoom() {
   isZoomOpen.value = !isZoomOpen.value
 }
 
-const katalogLinks = [
-  { slug: '201', name: 'Set 201', image: '/asset/product/door-lock/201.png' },
-  { slug: '202', name: 'Set 202', image: '/asset/product/door-lock/202.png' },
-  { slug: '820', name: 'Set 820', image: '/asset/product/door-lock/820.png' },
+const katalogLinks = [  
   { slug: '839', name: 'Set 839', image: '/asset/product/door-lock/839.png' },
   { slug: '939', name: 'Set 939', image: '/asset/product/door-lock/939.png' },
-  // { slug: '989', name: 'Set 989', image: '/asset/product/door-lock/989.png' },
-  { slug: 'handle-only', name: 'Handle Only', image: '/asset/product/door-lock/handle-only.png' },
+  // { slug: '989', name: 'Set 989', image: '/asset/product/door-lock/989.png' },  
   { slug: 'expanda', name: 'Set Expanda', image: '/asset/product/door-lock/expanda.png' },
   { slug: '802', name: 'Set 802', image: '/asset/product/door-lock/802.png' },
   { slug: '902', name: 'Set 902', image: '/asset/product/door-lock/902.png' }

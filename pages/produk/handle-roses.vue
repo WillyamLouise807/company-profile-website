@@ -72,28 +72,28 @@ import FooterComponent from '@/components/footer.vue'
 const doorLockProducts = [
   {
     id: 1,
-    name: "GLT-201",
+    name: "HR-201",
     description: "Full Set Kunci Pintu Hight Quality Material Aluminium",
     slug: "201",
     image: "/asset/product/door-lock/201.png"
   },
   {
     id: 2,
-    name: "GLT-202",
+    name: "HR-202",
     description: "Lock Full Set Type Bahan Aluminium Kunci Pintu Set Handle Lengkap",
     slug: "202",
     image: "/asset/product/door-lock/202.png"
   },
   {
     id: 3,
-    name: "GT-820",
+    name: "HR-820",
     description: "Lock Full Set Case Kunci Pintu Set Premium Stainless Steel",
     slug: "820",
     image: "/asset/product/door-lock/820.png"
   },
     {
     id: 4,
-    name: "Handle Only",
+    name: "Handle Only 201 SS",
     description: "Kepala Handle SS 201/ Tarikan Tanam Pintu Geser Sliding Door Material Aluminium",
     slug: "handle-only",
     image: "/asset/product/door-lock/handle-only.png"
