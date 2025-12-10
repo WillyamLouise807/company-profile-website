@@ -171,7 +171,7 @@
                     class="w-full h-full object-cover" />
               </div>
               <div class="flex-shrink-0 w-[125px] h-[256px]">
-                <img src="/asset/index/depan.png"
+                <img src="/asset/index/belakang.png"
                     alt=""
                     class="w-full h-full object-cover" />
               </div>
