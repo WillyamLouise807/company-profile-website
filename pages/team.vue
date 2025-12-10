@@ -30,7 +30,7 @@
       </FadeInOnScroll>
     </section>
 
-   <!-- Struktur Organisasi -->
+    <!-- Struktur Organisasi -->
     <FadeInOnScroll direction="down">
       <section id="structure-section" class="py-16 px-4 md:px-20 bg-gradient-to-b from-transparent to-white">
         <div class="bg-white text-black font-poppins py-16 px-4 sm:px-6 lg:px-12">
@@ -49,31 +49,91 @@
             <!-- Modal Zoom -->
             <div
               v-if="isZoomOpen"
-              class="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-4"
+              class="fixed inset-0 z-50 bg-black bg-opacity-95 flex flex-col items-center justify-center"
               @click.self="toggleZoom"
             >
-              <div class="bg-[#111] p-4 md:p-6 rounded-xl shadow-2xl max-w-5xl w-full">
-                <img :src="strukturOrganisasi" alt="Zoomed Struktur Organisasi" class="w-full object-contain" />
+              <!-- Close Button -->
+              <button
+                @click="toggleZoom"
+                class="absolute top-4 right-4 text-white bg-black/50 hover:bg-black/70 rounded-full w-10 h-10 flex items-center justify-center transition z-10"
+              >
+                ✕
+              </button>
+
+              <!-- Zoom Controls -->
+              <div class="absolute top-4 left-4 flex flex-col gap-2 z-10">
+                <button
+                  @click="zoomIn"
+                  class="text-white bg-black/50 hover:bg-black/70 rounded-full w-10 h-10 flex items-center justify-center transition text-xl"
+                  title="Zoom In (Ctrl + Scroll)"
+                >
+                  +
+                </button>
+                <button
+                  @click="zoomOut"
+                  class="text-white bg-black/50 hover:bg-black/70 rounded-full w-10 h-10 flex items-center justify-center transition text-xl"
+                  title="Zoom Out (Ctrl + Scroll)"
+                >
+                  −
+                </button>
+                <button
+                  @click="resetZoom"
+                  class="text-white bg-black/50 hover:bg-black/70 rounded-full w-10 h-10 flex items-center justify-center transition text-xs"
+                  title="Reset Zoom"
+                >
+                  ⟲
+                </button>
+              </div>
+
+              <!-- Zoom Level Indicator -->
+              <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white bg-black/50 px-4 py-2 rounded-full text-sm z-10">
+                {{ Math.round(zoomLevel * 100) }}%
+              </div>
+
+              <!-- Scrollable Container (seperti Figma) -->
+              <div
+                ref="zoomContainer"
+                class="w-full h-full overflow-auto"
+                @wheel="onWheelZoom"
+                style="cursor: default;"
+              >
+                <div 
+                  class="inline-block"
+                  :style="{
+                    width: `${baseImageWidth * zoomLevel}px`,
+                    height: `${baseImageHeight * zoomLevel}px`,
+                    minWidth: '100%',
+                    minHeight: '100%'
+                  }"
+                >
+                  <div class="w-full h-full flex items-center justify-center">
+                    <img
+                      ref="zoomImage"
+                      :src="strukturOrganisasi"
+                      alt="Zoomed Struktur Organisasi"
+                      class="select-none"
+                      :style="{ 
+                        width: `${baseImageWidth * zoomLevel}px`,
+                        height: 'auto'
+                      }"
+                      draggable="false"
+                      @load="onImageLoad"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Instructions -->
+              <div class="absolute bottom-4 right-4 text-white/70 text-xs text-right z-10">
+                <p class="hidden md:block">Ctrl + Scroll untuk zoom</p>
+                <p class="hidden md:block">Shift + Scroll untuk horizontal scroll</p>
+                <p class="md:hidden">Pinch untuk zoom</p>
               </div>
             </div>
           </div>
         </div>
       </section>
     </FadeInOnScroll>
-    
-
-    <!-- 🔍 Zoom Modal -->
-    <div
-      v-if="isZoomOpen"
-      class="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-4"
-      @click.self="toggleZoom"
-    >
-      <img
-        src="@/assets/team/struktur-organisasi.png"
-        alt="Zoom Struktur Organisasi"
-        class="max-w-full max-h-full object-contain rounded-xl shadow-2xl"
-      />
-    </div>
 
     <!-- Penjelasan Warna -->
     <div class="max-w-screen-2xl mx-auto my-12 px-4 sm:px-8 grid grid-cols-1 md:grid-cols-2 gap-6 ">
@@ -101,11 +161,105 @@
 // Import FooterComponent dari file yang sama di folder 'pages'
 import FooterComponent from '../components/footer.vue'
 import strukturOrganisasi from '@/assets/team/struktur-organisasi.png'
-import bgImage from '@/assets/team/bg-img-team.jpeg'
+import bgImage from '/asset/team/bg-img-team.jpeg'
 
 const isZoomOpen = ref(false)
+const zoomLevel = ref(1)
+const zoomContainer = ref(null)
+const zoomImage = ref(null)
+const baseImageWidth = ref(1200)
+const baseImageHeight = ref(800)
+
 const toggleZoom = () => {
   isZoomOpen.value = !isZoomOpen.value
+  if (isZoomOpen.value) {
+    zoomLevel.value = 1
+    // Center the image after opening
+    setTimeout(() => {
+      if (zoomContainer.value) {
+        const container = zoomContainer.value
+        container.scrollLeft = (container.scrollWidth - container.clientWidth) / 2
+        container.scrollTop = (container.scrollHeight - container.clientHeight) / 2
+      }
+    }, 10)
+  }
+}
+
+const onImageLoad = (e) => {
+  baseImageWidth.value = e.target.naturalWidth
+  baseImageHeight.value = e.target.naturalHeight
+}
+
+const zoomIn = () => {
+  const oldZoom = zoomLevel.value
+  zoomLevel.value = Math.min(zoomLevel.value + 0.3, 5)
+  adjustScrollAfterZoom(oldZoom, zoomLevel.value)
+}
+
+const zoomOut = () => {
+  const oldZoom = zoomLevel.value
+  zoomLevel.value = Math.max(zoomLevel.value - 0.3, 0.5)
+  adjustScrollAfterZoom(oldZoom, zoomLevel.value)
+}
+
+const resetZoom = () => {
+  zoomLevel.value = 1
+  if (zoomContainer.value) {
+    const container = zoomContainer.value
+    setTimeout(() => {
+      container.scrollLeft = (container.scrollWidth - container.clientWidth) / 2
+      container.scrollTop = (container.scrollHeight - container.clientHeight) / 2
+    }, 10)
+  }
+}
+
+const adjustScrollAfterZoom = (oldZoom, newZoom) => {
+  if (!zoomContainer.value) return
+  
+  const container = zoomContainer.value
+  const rect = container.getBoundingClientRect()
+  const centerX = container.scrollLeft + rect.width / 2
+  const centerY = container.scrollTop + rect.height / 2
+  
+  const zoomRatio = newZoom / oldZoom
+  
+  setTimeout(() => {
+    container.scrollLeft = centerX * zoomRatio - rect.width / 2
+    container.scrollTop = centerY * zoomRatio - rect.height / 2
+  }, 10)
+}
+
+const onWheelZoom = (e) => {
+  // Ctrl + Scroll untuk zoom (seperti Figma)
+  if (e.ctrlKey || e.metaKey) {
+    e.preventDefault()
+    const oldZoom = zoomLevel.value
+    const delta = e.deltaY > 0 ? -0.1 : 0.1
+    zoomLevel.value = Math.max(0.5, Math.min(5, zoomLevel.value + delta))
+    
+    // Zoom ke arah posisi mouse
+    if (zoomContainer.value) {
+      const container = zoomContainer.value
+      const rect = container.getBoundingClientRect()
+      const mouseX = e.clientX - rect.left + container.scrollLeft
+      const mouseY = e.clientY - rect.top + container.scrollTop
+      
+      const zoomRatio = zoomLevel.value / oldZoom
+      
+      setTimeout(() => {
+        container.scrollLeft = mouseX * zoomRatio - (e.clientX - rect.left)
+        container.scrollTop = mouseY * zoomRatio - (e.clientY - rect.top)
+      }, 10)
+    }
+  }
+  // Shift + Scroll untuk horizontal scroll (seperti Figma)
+  else if (e.shiftKey) {
+    e.preventDefault()
+    if (zoomContainer.value) {
+      zoomContainer.value.scrollLeft += e.deltaY
+    }
+  }
+  // Default scroll vertikal tetap berfungsi tanpa modifier
 }
 
 const scrollToStructure = () => {
@@ -133,11 +287,6 @@ const scrollToStructure = () => {
 
   requestAnimationFrame(animateScroll);
 };
-
-// const scrollToStructure = () => {
-//   const el = document.getElementById('structure-section')
-//   el?.scrollIntoView({ behavior: 'smooth' })
-// }
 
 const colorDescriptions = [
   {

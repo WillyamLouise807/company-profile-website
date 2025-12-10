@@ -121,57 +121,57 @@
           <div class="relative">
             <!-- background panjang -->
             <div class="absolute inset-0 bg-cover bg-center"></div>
-            <div class="absolute inset-0 bg-sky-500"></div> <!-- bg-red-900/10 -->
+            <div class="absolute inset-0"></div> <!-- bg-red-900/10 -->
 
             <div class="relative z-10 flex">
               <!-- Awal Banner -->
               <div class="flex-shrink-0 w-[125px] h-[256px]">
-                <img src="/asset/index/2021-history.png"
+                <img src="/asset/index/depan.png"
                     alt=""
                     class="w-full h-full object-cover" />
               </div>
               <div class="flex-shrink-0 w-[400px] h-[256px]">
-                <img src="/asset/index/2021-history.png"
+                <img src="/asset/index/2018.png"
                     alt=""
                     class="w-full h-full object-cover" />
               </div>
               <div class="flex-shrink-0 w-[400px] h-[256px]">
-                <img src="/asset/index/2021-history.png"
+                <img src="/asset/index/2019.png"
                     alt=""
                     class="w-full h-full object-cover" />
               </div>
               <div class="flex-shrink-0 w-[400px] h-[256px]">
-                <img src="/asset/index/2021-history.png"
+                <img src="/asset/index/2020.png"
                     alt=""
                     class="w-full h-full object-cover" />
               </div>
               <div class="flex-shrink-0 w-[400px] h-[256px]">
-                <img src="/asset/index/2021-history.png"
+                <img src="/asset/index/2021.png"
                     alt=""
                     class="w-full h-full object-cover" />
               </div>
               <div class="flex-shrink-0 w-[400px] h-[256px]">
-                <img src="/asset/index/2021-history.png"
+                <img src="/asset/index/2022.png"
                     alt=""
                     class="w-full h-full object-cover" />
               </div>
               <div class="flex-shrink-0 w-[400px] h-[256px]">
-                <img src="/asset/index/2021-history.png"
+                <img src="/asset/index/2023.png"
                     alt=""
                     class="w-full h-full object-cover" />
               </div>
               <div class="flex-shrink-0 w-[400px] h-[256px]">
-                <img src="/asset/index/2021-history.png"
+                <img src="/asset/index/2024.png"
                     alt=""
                     class="w-full h-full object-cover" />
               </div>
               <div class="flex-shrink-0 w-[400px] h-[256px]">
-                <img src="/asset/index/2021-history.png"
+                <img src="/asset/index/2025.png"
                     alt=""
                     class="w-full h-full object-cover" />
               </div>
               <div class="flex-shrink-0 w-[125px] h-[256px]">
-                <img src="/asset/index/2021-history.png"
+                <img src="/asset/index/depan.png"
                     alt=""
                     class="w-full h-full object-cover" />
               </div>
