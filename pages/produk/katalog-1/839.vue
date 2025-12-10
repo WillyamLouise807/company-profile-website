@@ -20,7 +20,7 @@
       <div class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Door Lock 839</h1>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Lever Handle Plate 839</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
             Handle kunci pintu Glatino GLT 839 dirancang khusus untuk pintu aluminium 9055. Dilengkapi lockcase stainless dan silinder kuningan berkualitas, set ini memberikan keamanan optimal dengan desain yang tetap modern dan fungsional.
           </p>

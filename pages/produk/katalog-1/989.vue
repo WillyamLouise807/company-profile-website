@@ -9,7 +9,7 @@
           </li>
           <li>/</li>
           <li>
-            <RouterLink to="/produk/door-lock" class="hover:underline text-gray-700 font-medium">Door Lock</RouterLink>
+            <RouterLink to="/produk/lever-handle-plate" class="hover:underline text-gray-700 font-medium">Lever Handle Plate</RouterLink>
           </li>
           <li>/</li>
           <li class="text-black font-semibold">989</li>
@@ -20,7 +20,7 @@
       <div class="flex flex-col-reverse md:grid md:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-3xl sm:text-4xl font-bold mb-4 text-black">Door Lock 989</h1>
+          <h1 class="text-3xl sm:text-4xl font-bold mb-4 text-black">Lever Handle Plate 989</h1>
           <p class="text-base sm:text-lg text-gray-700 mb-6 leading-relaxed">
             Glatino AL/GLT 989 dirancang sebagai solusi handle set lengkap untuk pintu aluminium atau kayu minimalis. Dilengkapi silinder dan 3 anak kunci, produk ini memberikan kemudahan dalam penggunaan serta keamanan yang andal untuk berbagai jenis ruangan.
           </p>

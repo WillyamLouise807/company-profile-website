@@ -9,7 +9,7 @@
           </li>
           <li>/</li>
           <li>
-            <RouterLink to="/produk/door-lock" class="hover:underline text-black font-medium">Door Lock</RouterLink>
+            <RouterLink to="/produk/lever-handle-plate" class="hover:underline text-black font-medium">Lever Handle Plate</RouterLink>
           </li>
           <li>/</li>
           <li class="text-black font-semibold">939</li>
@@ -20,7 +20,7 @@
       <div class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Door Lock 939</h1>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Lever Handle Plate 939</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
             Handle pintu Glatino AL/GLT 939 dirancang khusus untuk profil aluminium 9055. Dengan material stainless steel pada face plate dan silinder berbahan zinc alloy, set ini menawarkan ketahanan dan keamanan yang seimbang, cocok untuk kebutuhan rumah maupun ruang kerja.
           </p>

@@ -9,7 +9,7 @@
           </li>
           <li>/</li>
           <li>
-            <RouterLink to="/produk/door-lock" class="hover:underline text-black font-medium">Door Lock</RouterLink>
+            <RouterLink to="/produk/lever-handle-plate" class="hover:underline text-black font-medium">Lever Handle Plate</RouterLink>
           </li>
           <li>/</li>
           <li class="text-black font-semibold">902</li>
@@ -20,7 +20,7 @@
       <div class="flex flex-col-reverse md:grid md:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Door Lock 902</h1>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Lever Handle Plate 902</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
             Kunci pintu kamar mandi Glatino hadir dengan material stainless steel yang tahan karat, menjadikannya pilihan ideal untuk area lembap seperti kamar mandi. Sudah lengkap dalam satu set, produk ini hanya perlu dirakit dan langsung siap dipasang.
           </p>
