@@ -73,42 +73,42 @@ import FooterComponent from '@/components/footer.vue';
 const floorHingeProduts = [
   {
     id: 1,
-    name: "PT-10",
+    name: "PT-10 Bottom",
     description: "Set Engsel lantai Material Aluminium Anti Karat",
     slug: "pt-10",
     image: '/asset/product/patch-fitting/pt-10.png'
   },
   {
     id: 2,
-    name: "PT-20",
+    name: "PT-20 Top",
     description: "Set Engsel lantai Material Aluminium Anti Karat",
     slug: "pt-20",
     image: '/asset/product/patch-fitting/pt-20.png'
   },
   {
     id: 3,
-    name: "PT-24",
+    name: "PT-24 Pivot",
     description: "Set Engsel lantai Material Aluminium Anti Karat",
     slug: "pt-24",
     image: '/asset/product/patch-fitting/pt-24.png'
   },
   {
     id: 4,
-    name: "PT-30",
+    name: "PT-30 Top/Pivot",
     description: "Set Engsel lantai Material Aluminium Anti Karat",
     slug: "pt-30",
     image: '/asset/product/patch-fitting/pt-30.png'
   },
   {
     id: 5,
-    name: "PT-40",
+    name: "PT-40 Angle",
     description: "Set Engsel lantai Material Aluminium Anti Karat",
     slug: "pt-40",
     image: '/asset/product/patch-fitting/pt-40.png'
   },
   {
     id: 6,
-    name: "PT-50",
+    name: "PT-50 Lock",
     description: "Set Engsel lantai Material Aluminium Anti Karat",
     slug: "pt-50",
     image: '/asset/product/patch-fitting/pt-50.png'

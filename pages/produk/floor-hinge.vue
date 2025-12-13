@@ -72,14 +72,14 @@ import FooterComponent from '@/components/footer.vue';
 const floorHingeProduts = [
   {
     id: 1,
-    name: "V53",
+    name: "FH-53",
     description: "Set Engsel lantai Material Aluminium Anti Karat",
     slug: "v53",
     image: '/asset/product/floor-hinge/v53.png'
   },
   {
     id: 2,
-    name: "V84",
+    name: "FH-84",
     description: "Set Engsel lantai Material Aluminium Anti Karat",
     slug: "v84",
     image: '/asset/product/floor-hinge/v84.png'

@@ -117,7 +117,7 @@ const pullHandleProducts = [
 },
 {
   id: 7,
-  name: "Handle 21",
+  name: "Handle 21 SS",
   description: "Handle tarik model 21 bahan aluminium berkualitas",
   slug: "handle-21",
   image: "/asset/product/pull-handle/handle-21.png"

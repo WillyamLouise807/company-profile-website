@@ -90,7 +90,7 @@
             <!-- 2023 deskripsi atas -->
             <div class="flex-shrink-0 w-[400px] pl-6 pr-6 pt-6">
               <div class="bg-white p-4">                
-                <h3 class="text-red-600 font-bold mb-2 text-xl uppercase">Gudang Surabaya Dibuka</h3>
+                <h3 class="text-red-600 font-bold mb-2 text-xl uppercase">Gudang Surabaya Resmi Beroperasi</h3>
                 <p class="text-gray-600 text-xs">
                   Tahun 2023, perusahaan membuka gudang baru di Surabaya. Fasilitas ini jadi pusat logistik untuk mempercepat pengiriman ke Indonesia Timur. Seperti menambah “jantung” baru, layanan jadi lebih cepat dan pelanggan di timur merasakan kualitas yang sama.
                 </p>
@@ -108,7 +108,7 @@
               <div class="bg-white p-4">
                 <h3 class="text-red-600 font-bold mb-2 text-xl uppercase">Menyapa Dunia Maya</h3>
                 <p class="text-gray-600 text-xs">
-                  Akhirnya, 2025 jadi awal transformasi digital. PT Global Bestindo Jaya meluncurkan akun Instagram resmi—jendela baru untuk bercerita langsung kepada konsumen, membangun kedekatan, dan memperluas jangkauan secara online. Sebuah langkah kecil yang jadi awal perjalanan besar di dunia maya.
+                  Akhirnya, 2025 jadi awal perubahan transformasi digital. PT Global Bestindo Jaya, dengan meluncurkan akun Instagram resmi—jendela baru untuk bercerita langsung kepada konsumen, membangun kedekatan, dan memperluas jangkauan secara online. Sebuah langkah kecil yang jadi awal perjalanan besar di dunia maya.
                 </p>
               </div>
             </div>

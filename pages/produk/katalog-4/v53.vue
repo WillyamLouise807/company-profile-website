@@ -12,7 +12,7 @@
             <RouterLink to="/produk/floor-hinge" class="hover:underline text-black font-medium">Floor Hinge</RouterLink>
           </li>
           <li>/</li>
-          <li class="text-black font-semibold">V53</li>
+          <li class="text-black font-semibold">FH-53</li>
         </ol>
       </nav>
 
@@ -20,9 +20,9 @@
       <div class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Floor Hinge V53</h1>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Floor Hinge FH-53</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Engsel lantai Glatino seri V53 hadir sebagai solusi ideal untuk pintu berat yang membutuhkan pergerakan stabil dan aman. Dengan desain komplit dalam satu set, produk ini memudahkan pemasangan serta memberikan daya tahan dan keamanan ekstra pada sistem buka tutup pintu.
+            Engsel lantai Glatino seri FH-53 hadir sebagai solusi ideal untuk pintu berat yang membutuhkan pergerakan stabil dan aman. Dengan desain komplit dalam satu set, produk ini memudahkan pemasangan serta memberikan daya tahan dan keamanan ekstra pada sistem buka tutup pintu.
           </p>
 
           <div class="mb-6 space-y-1">
@@ -174,7 +174,7 @@ function toggleZoom() {
 
 const katalogLinks = [
   // { slug: 'v53', name: 'Set V53', image: '/asset/product/floor-hinge/v53.png' },
-  { slug: 'v84', name: 'Set V84', image: '/asset/product/floor-hinge/v84.png' },
+  { slug: 'v84', name: 'Set FH-84', image: '/asset/product/floor-hinge/v84.png' },
 ];
 </script>
 

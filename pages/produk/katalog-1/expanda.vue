@@ -20,7 +20,7 @@
       <div class="flex flex-col-reverse md:grid md:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-black">Lever Handle Plate Expanda</h1>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-black">Kunci Expanda</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
             Kunci pintu expanda dari Glatino dirancang khusus untuk pintu kawat nyamuk dengan sistem penguncian yang praktis dan aman. Menggunakan silinder jantung kuningan dan dilengkapi 3 anak kunci, produk ini cocok digunakan untuk menjaga sirkulasi udara tetap lancar tanpa mengorbankan keamanan.
           </p>

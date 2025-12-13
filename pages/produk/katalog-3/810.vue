@@ -135,7 +135,7 @@ function toggleZoom() {
 
 const katalogLinks = [
   { slug: '65155', name: 'Set 65155', image: '/asset/product/cylinder/65155.png'},
-  { slug: '65155-et', name: 'Set 65155-et', image: '/asset/product/cylinder/65155-et.png'},
+  { slug: '65155-et', name: 'Set ET65', image: '/asset/product/cylinder/65155-et.png'},
   // { slug: '810', name: 'Set 810', image: '/asset/product/cylinder/810.png'},
   { slug: '811', name: 'Set 811', image: '/asset/product/cylinder/811.png'},
 ];

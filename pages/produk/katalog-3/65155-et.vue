@@ -12,7 +12,7 @@
             <RouterLink to="/produk/cylinder" class="hover:underline text-black font-medium">Cylinder</RouterLink>
           </li>
           <li>/</li>
-          <li class="text-black font-semibold">65155-ET</li>
+          <li class="text-black font-semibold">ET65-PUTAR</li>
         </ol>
       </nav>
 
@@ -20,7 +20,7 @@
       <div class="flex flex-col-reverse md:grid md:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Cylinder 65155-ET</h1>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Cylinder ET65-PUTAR</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
             Cylinder Lock Tabung dari Glatino dirancang untuk memberikan perlindungan optimal dengan fitur keamanan tinggi seperti anti-pick dan anti-drill. Terbuat dari aluminium premium dengan finishing chrome, produk ini cocok untuk berbagai kebutuhan penguncian, baik rumah tinggal maupun ruang komersial.
           </p>

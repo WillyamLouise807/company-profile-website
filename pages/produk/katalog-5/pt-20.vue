@@ -12,7 +12,7 @@
             <RouterLink to="/produk/patch-fitting" class="hover:underline text-black font-medium">Patch Fitting</RouterLink>
           </li>
           <li>/</li>
-          <li class="text-black font-semibold">PT-20</li>
+          <li class="text-black font-semibold">PT-20 Top</li>
         </ol>
       </nav>
 
@@ -20,7 +20,7 @@
       <div class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Patch Fitting PT-20</h1>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Patch Fitting PT-20 Top</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
             Patch Fitting Glatino merupakan solusi praktis dan kokoh untuk sistem pemasangan kaca pada pintu, jendela, atau partisi. Dengan berbagai tipe yang tersedia, patch fitting ini dirancang untuk memberikan kekuatan, kestabilan, dan tampilan estetis pada instalasi kaca.
           </p>

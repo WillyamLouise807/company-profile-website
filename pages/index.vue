@@ -241,7 +241,7 @@
 
       <!-- Kanan: Gambar file:giant-glass-building.jpg-->
       <div class="bg-gray-100">
-        <img src="/asset/index/building.png" alt="Building" class="w-full h-112 object-cover" />
+        <img src="/asset/index/gambar awal-1.png" alt="Building" class="w-full h-112 object-cover" />
       </div>
     </div>
 

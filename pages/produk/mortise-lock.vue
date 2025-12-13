@@ -74,29 +74,29 @@ import FooterComponent from '@/components/footer.vue';
 const mortiseLockProducts = [
   {
     id: 1,
-    name: "GLT-808",
-    description: "Mortise Lock Body Perol + Cylinder Material Aluminium Premium Anti Karat",
+    name: "808",
+    description: "Mortise Lock Body Lock Perol 20 mm + Cyl 65 mm",
     slug: "808",
     image: '/asset/product/mortise-lock/808.png'
   },
   {
     id: 2,
-    name: "GLT-909",
-    description: "Mortise Lock Body Perol + Cylinder Material Aluminium Premium Anti Karat",
+    name: "909",
+    description: "Mortise Lock Body Lock Perol 30 mm + Cyl 65 mm",
     slug: "909",
     image: '/asset/product/mortise-lock/909.png'
   },
   {
     id: 3,
-    name: "GT-910",
-    description: "Mortise Lock Body Perol + Cylinder Material Aluminium Premium Anti Karat",
+    name: "910",
+    description: "Mortise Lock Body Lock 20 mm + Cyl 65 mm",
     slug: "910",
     image: '/asset/product/mortise-lock/910.png'
   },
   {
     id: 4,
-    name: "GLT-911",
-    description: "Mortise Lock Body Perol + Cylinder Material Aluminium Premium Anti Karat",
+    name: "911",
+    description: "Mortise Lock Body Lock 30 mm + Cyl 65 mm",
     slug: "911",
     image: '/asset/product/mortise-lock/911.png'
   }

@@ -138,41 +138,55 @@ const doorCloserProducts = [
   },
   {
     id: 10,
-    name: "Silicone",
+    name: "Silicone Acetoxy",
     description: "Silicone sealant serbaguna untuk menutup celah dan sambungan",
     slug: "silicone",
     image: '/asset/product/accessories/silicone.png'
   },
   {
     id: 11,
-    name: "Tembak Silicone",
+    name: "Silicone Gun",
     description: "Alat tembak silicone material baja untuk aplikasi lem silicone dengan rapi",
     slug: "tembak-silicone",
     image: '/asset/product/accessories/tembak-silicone.png'
   },
   {
     id: 12,
-    name: "Rell Laci FE",
+    name: "Silicone Sausage Neutral",
+    description: "Silicone sausage neutral untuk perekat dan sealant tahan air berkualitas tinggi",
+    slug: "silicone-sausage-neutral",
+    image: '/asset/product/accessories/silicone-sosis.png'
+  },
+  {
+    id: 13,
+    name: "Silicone Gun Sosis",
+    description: "Alat tembak silicone material baja untuk aplikasi lem silicone dengan rapi",
+    slug: "silicone-gun-sosis",
+    image: '/asset/product/accessories/silicone-gun-sosis.png'
+  },
+  {
+    id: 14,
+    name: "Rell Laci FE 30 NB",
     description: "Rel laci full extension baja untuk membuka laci penuh dengan lancar",
     slug: "rell-laci-fe",
     image: '/asset/product/accessories/rell-laci-fe.png'
   },
   {
-    id: 13,
-    name: "Rell Laci FE Slowmo",
+    id: 15,
+    name: "Rell Laci FE 37 Black",
     description: "Rel laci full extension slowmotion baja untuk membuka laci halus tanpa benturan",
     slug: "rell-laci-fe-slowmo",
     image: '/asset/product/accessories/rell-laci-fe-slowmo.png'
   },
   {
-    id: 14,
+    id: 16,
     name: "Engsel Sendok Mini",
     description: "Engsel sendok mini stainless steel untuk pintu kabinet kecil dan ringan",
     slug: "engsel-sendok-mini",
     image: '/asset/product/accessories/engsel-sendok-mini.png'
   },
   {
-    id: 14,
+    id: 17,
     name: "Bracket Ikan",
     description: "Bracket ikan stainless steel untuk sambungan sudut kuat pada furniture",
     slug: "bracket-ikan",

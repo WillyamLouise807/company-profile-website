@@ -12,7 +12,7 @@
             <RouterLink to="/produk/accessories" class="hover:underline text-black font-medium">Accessories</RouterLink>
           </li>
           <li>/</li>
-          <li class="text-black font-semibold">Rell Laci FE</li>
+          <li class="text-black font-semibold">Rell Laci FE 30 NB</li>
         </ol>
       </nav>
 
@@ -20,7 +20,7 @@
       <div class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Rell Laci FE</h1>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Rell Laci FE 30 NB</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
             Rel Laci Aluminium Glatino dirancang untuk memberikan pergerakan laci yang halus, kokoh, dan tahan lama. Terbuat dari material aluminium berkualitas, rel ini mampu menahan beban berat sehingga ideal untuk berbagai jenis laci, baik di rumah maupun perkantoran.
           </p>
@@ -166,6 +166,8 @@ const katalogLinks = [
   { slug: 'camlock', name: 'Camlock', image: '/asset/product/accessories/camlock.png' },
   { slug: 'silicone', name: 'Silicone', image: '/asset/product/accessories/silicone.png' },
   { slug: 'tembak-silicone', name: 'Tembak Silicone', image: '/asset/product/accessories/tembak-silicone.png' },
+  { slug: 'silicone-sausage-neutral', name: 'Silicone Sausage Neutral', image: '/asset/product/accessories/silicone-sosis.png' },
+  { slug: 'silicone-gun-sosis', name: 'Silicone Gun Sosis', image: '/asset/product/accessories/silicone-gun-sosis.png' },
     // { slug: 'rell-laci-fe', name: 'Rell Laci FE', image: '/asset/product/accessories/rell-laci-fe.png' },
   { slug: 'rell-laci-fe-slowmo', name: 'Rell Laci FE Slowmo', image: '/asset/product/accessories/rell-laci-fe-slowmo.png' },
   { slug: 'engsel-sendok-mini', name: 'Engsel Sendok Mini', image: '/asset/product/accessories/engsel-sendok-mini.png' },
