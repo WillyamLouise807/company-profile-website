@@ -367,13 +367,13 @@ const products = [
     image: '/asset/product/door-closer.png',
     logo: '/asset/product/GLATINO - RED - LOGO.png',
   },
-  {
-    title: 'Flush Handle',
-    description: 'View all Flush Handle products',
-    slug: 'flush-handle',
-    image: '/asset/product/flush-handle.png',
-    logo: '/asset/product/GLATINO - RED - LOGO.png',
-  },
+  // {
+  //   title: 'Flush Handle',
+  //   description: 'View all Flush Handle products',
+  //   slug: 'flush-handle',
+  //   image: '/asset/product/flush-handle.png',
+  //   logo: '/asset/product/GLATINO - RED - LOGO.png',
+  // },
   {
     title: 'Accessories',
     description: 'View all Accessories products',

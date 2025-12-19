@@ -39,7 +39,7 @@
               <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
-              <a href="https://shopee.co.id/Glatino-Kepala-Handle-SS-201-Tarikan-Tanam-Pintu-Geser-Sliding-Door-Material-Aluminium-i.1442585495.28627348249?sp_atk=127ef288-484e-4934-8b7a-0e1b875e6b3a&xptdk=127ef288-484e-4934-8b7a-0e1b875e6b3a" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
+              <a href="https://shopee.co.id/Glatino-Kepala-Handle-SS-201-Tarikan-Tanam-Pintu-Geser-Sliding-Door-Material-Aluminium-i.1442585495.28627348249" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>
@@ -52,13 +52,13 @@
             <img
               :key="selectedImage"
               :src="selectedImage"
-              alt="Camlock"
+              alt="Engsel Sendok"
               class="rounded-2xl shadow-lg w-full aspect-video object-contain bg-white"
             />
           </transition>
 
           <!-- Thumbnail -->
-          <div class="grid grid-cols-2 gap-4">
+          <div class="grid grid-cols-3 gap-4">
             <img
               v-for="(image, index) in images"
               :key="index"
@@ -78,7 +78,7 @@
       <div class="mt-14 border-t border-gray-700 pt-10">
         <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 place-items-center">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 place-items-center">
           <div
             v-for="(item, index) in dimensiImages"
             :key="index"
@@ -108,16 +108,17 @@
         <div class="bg-white p-4 md:p-6 rounded-xl shadow-2xl max-w-4xl w-full">
           <img
             :src="zoomImage"
-            alt="Zoomed Ukuran Accessories Engsel Sendok Mini"
+            alt="Zoom Dimensi Engsel Sendok"
             class="w-full object-contain"
           />
         </div>
       </div>
 
-
-      <!-- Link Produk Lain di Katalog Sama -->
+      <!-- Link Produk Lain -->
       <div class="border-t border-gray-200 my-20 py-8">
-        <h2 class="text-2xl font-bold text-center mb-8 text-red-700">SEE OUR OTHER PRODUCT IN THIS CATALOG</h2>
+        <h2 class="text-2xl font-bold text-center mb-8 text-red-700">
+          SEE OUR OTHER PRODUCT IN THIS CATALOG
+        </h2>
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 px-4 sm:px-6 lg:px-8">
           <NuxtLink
             v-for="item in katalogLinks"
@@ -132,7 +133,6 @@
             />
             <div class="bg-gray-50 text-center py-4 px-2">
               <div class="text-red-600 font-semibold text-sm">{{ item.name }}</div>
-              
             </div>
           </NuxtLink>
         </div>
@@ -146,10 +146,10 @@
 import FooterComponent from '@/components/footer.vue'
 import { ref } from 'vue'
 
-
 const images = [
-  '/asset/product/accessories/engsel-sendok-mini/produk-1.png',
-  '/asset/product/accessories/engsel-sendok-mini/produk-2.png'
+  '/asset/product/accessories/engsel-sendok-mini/produk-1.png', // Lurus
+  '/asset/product/accessories/engsel-sendok-mini/produk-2.png', // Bengkok
+  '/asset/product/accessories/engsel-sendok-mini/produk-3.png'  // Semi Bengkok
 ]
 
 const selectedImage = ref(images[0])
@@ -166,10 +166,19 @@ function toggleZoom() {
 }
 
 const dimensiImages = [
-  { src: '/asset/product/accessories/engsel-sendok-mini/ukuran-besar.png', label: 'Ukuran Sendok Bengkok' },
-  { src: '/asset/product/accessories/engsel-sendok-mini/ukuran-mini.png', label: 'Ukuran Sendok Lurus' }
+  {
+    src: '/asset/product/accessories/engsel-sendok-mini/ukuran-sendok-lurus.png',
+    label: 'Ukuran Sendok Lurus'
+  },
+  {
+    src: '/asset/product/accessories/engsel-sendok-mini/ukuran-sendok-bengkok.png',
+    label: 'Ukuran Sendok Bengkok'
+  },
+  {
+    src: '/asset/product/accessories/engsel-sendok-mini/ukuran-sendok-semi-bengkok.png',
+    label: 'Ukuran Sendok Semi Bengkok'
+  }
 ]
-
 
 const katalogLinks = [
   { slug: 'glass-to-wall', name: 'Glass To Wall', image: '/asset/product/accessories/glass-to-wall.png' },
@@ -187,9 +196,8 @@ const katalogLinks = [
   { slug: 'silicone-gun-sosis', name: 'Silicone Gun Sosis', image: '/asset/product/accessories/silicone-gun-sosis.png' },
   { slug: 'rell-laci-fe', name: 'Rell Laci FE', image: '/asset/product/accessories/rell-laci-fe.png' },
   { slug: 'rell-laci-fe-slowmo', name: 'Rell Laci FE Slowmo', image: '/asset/product/accessories/rell-laci-fe-slowmo.png' },
-  // { slug: 'engsel-sendok-mini', name: 'Engsel Sendok Mini', image: '/asset/product/accessories/engsel-sendok-mini.png' }
   { slug: 'bracket-ikan', name: 'Bracket Ikan', image: '/asset/product/accessories/bracket-ikan.png' }
-];
+]
 </script>
 
 <style scoped>

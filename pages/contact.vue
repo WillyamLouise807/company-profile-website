@@ -198,7 +198,7 @@
               </div>
               <div>
                 <h4 class="text-lg font-semibold text-red-600">Email</h4>
-                <p>globalbestindojaya.gbj@gmail.com</p>
+                <p>office.globalbestindojaya@gmail.com</p>
               </div>
             </div>
           </div>
