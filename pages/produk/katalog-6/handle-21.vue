@@ -9,7 +9,7 @@
           <li>/</li>
           <li><RouterLink to="/produk/pull-handle" class="hover:underline text-black font-medium">Pull Handle</RouterLink></li>
           <li>/</li>
-          <li class="text-black font-semibold">Handle 21</li>
+          <li class="text-black font-semibold">Pull Handle 21 SS</li>
         </ol>
       </nav>
 
@@ -17,7 +17,7 @@
       <div class="flex flex-col-reverse md:grid md:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Pull Handle 21</h1>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Pull Handle 21 SS</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
             Pull Handle Glatino tipe 21 dengan finishing SN/SS memberikan sentuhan elegan dan kokoh untuk pintu aluminium, kayu, atau kaca Anda.
           </p>
@@ -134,13 +134,13 @@ function zoomImage(src: string) {
 }
 
 const katalogLinks = [
-  { slug: 'handle-c', name: 'Handle C', image: '/asset/product/pull-handle/handle-c.png'},
-  { slug: 'handle-p', name: 'Handle P', image: '/asset/product/pull-handle/handle-p.png'},
-  { slug: 'handle-d', name: 'Handle D', image: '/asset/product/pull-handle/handle-d.png'},
-  { slug: 'handle-s', name: 'Handle S', image: '/asset/product/pull-handle/handle-s.png'},
-  { slug: 'handle-b', name: 'Handle B', image: '/asset/product/pull-handle/handle-b.png'},
-  { slug: 'handle-h', name: 'Handle H', image: '/asset/product/pull-handle/handle-h.png'},
-  // { slug: 'handle-21', name: 'Handle 21', image: '/asset/product/pull-handle/handle-21.png'},
+{ slug: 'handle-c', name: 'Pull Handle C', image: '/asset/product/pull-handle/handle-c.png'},
+  { slug: 'handle-p', name: 'Pull Handle P', image: '/asset/product/pull-handle/handle-p.png'},
+  { slug: 'handle-d', name: 'Pull Handle D', image: '/asset/product/pull-handle/handle-d.png'},
+  { slug: 'handle-s', name: 'Pull Handle S', image: '/asset/product/pull-handle/handle-s.png'},
+  { slug: 'handle-b', name: 'Pull Handle B', image: '/asset/product/pull-handle/handle-b.png'},
+  { slug: 'handle-h', name: 'Pull Handle H', image: '/asset/product/pull-handle/handle-h.png'},
+  // { slug: 'handle-21', name: 'Pull Handle 21 SS', image: '/asset/product/pull-handle/handle-21.png'},
 ];
 </script>
 

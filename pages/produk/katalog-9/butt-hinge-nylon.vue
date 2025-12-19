@@ -128,7 +128,7 @@
       <!-- Link Produk Lain di Katalog Sama -->
       <div class="border-t border-gray-200 my-20 py-8">
         <h2 class="text-2xl font-bold text-center mb-8 text-red-700">SEE OUR OTHER PRODUCT IN THIS CATALOG</h2>
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2 px-4 sm:px-6 lg:px-8">
           <NuxtLink
             v-for="item in katalogLinks"
             :key="item.slug"
@@ -218,15 +218,19 @@ const toggleZoom = () => {
 }
 
 const katalogLinks = [
-  { slug: '41054', name: 'Swing Lock 41054', image: '/asset/product/alumunium-lock/41054.png' },
-  { slug: '41055', name: 'Swing Lock 41055', image: '/asset/product/alumunium-lock/41055.png' },
-  { slug: '41066', name: 'Swing Lock 41066', image: '/asset/product/alumunium-lock/41066.png' },
-  { slug: 'a7', name: 'A7', image: '/asset/product/alumunium-lock/a7.png' },
+  { slug: 'casement-lock', name: 'Casement Lock', image: '/asset/product/alumunium-lock/casement-lock.png'},
+  { slug: 'crescent-lock', name: 'Crescent Lock', image: '/asset/product/alumunium-lock/crescent-lock.png'},
+  { slug: 'a7', name: 'Sliding Lock A7', image: '/asset/product/alumunium-lock/a7.png' },
+  { slug: 'zinc', name: 'Flush Handle  zinc', image: '/asset/product/alumunium-lock/zinc.png' },
+  { slug: 'alumunium', name: 'Flush Handle  Aluminium', image: '/asset/product/alumunium-lock/alumunium.png' },
+  { slug: 'ss-201', name: 'Flush Handle 201', image: '/asset/product/alumunium-lock/ss-201.png' },
+  { slug: 'flushbolt', name: 'Flush Handle Flushbolt', image: '/asset/product/alumunium-lock/flushbolt.png' }, 
   // { slug: 'butt-hinge-nylon', name: 'Butt Hinge Nylon', image: '/asset/product/alumunium-lock/butt-hinge-nylon.png' },
   { slug: 'butt-hinge-ss', name: 'Butt Hinge SS', image: '/asset/product/alumunium-lock/butt-hinge-ss.png' },
   { slug: 'butt-hinge-h', name: 'Butt Hinge H', image: '/asset/product/alumunium-lock/butt-hinge-h.png' },
-  { slug: 'engsel-piano', name: 'Engsel Piano', image: '/asset/product/alumunium-lock/engsel-piano.png' },
-  { slug: 'engsel-salon', name: 'Engsel Salon', image: '/asset/product/alumunium-lock/engsel-salon.png' }
+  { slug: '41054', name: 'Swing Lock 41054', image: '/asset/product/alumunium-lock/41054.png' },
+  { slug: '41055', name: 'Swing Lock 41055', image: '/asset/product/alumunium-lock/41055.png' },
+  { slug: '41066', name: 'Swing Lock 41066', image: '/asset/product/alumunium-lock/41066.png' },
 ];
 </script>
 

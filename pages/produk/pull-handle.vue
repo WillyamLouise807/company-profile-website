@@ -75,49 +75,49 @@ import FooterComponent from '@/components/footer.vue'
 const pullHandleProducts = [
 {
   id: 1,
-  name: "Handle C",
+  name: "Pull Handle C",
   description: "Handle tarik model C bahan aluminium tahan karat",
   slug: "handle-c",
   image: "/asset/product/pull-handle/handle-c.png"
 },
 {
   id: 2,
-  name: "Handle Pisang",
+  name: "Pull Handle Pisang",
   description: "Handle tarik model Pisang bahan aluminium berkualitas",
   slug: "handle-p",
   image: "/asset/product/pull-handle/handle-p.png"
 },
 {
   id: 3,
-  name: "Handle D",
+  name: "Pull Handle D",
   description: "Handle tarik model D bahan aluminium berkualitas",
   slug: "handle-d",
   image: "/asset/product/pull-handle/handle-d.png"
 },
 {
   id: 4,
-  name: "Handle Shower",
+  name: "Pull Handle Shower",
   description: "Handle tarik model S bahan aluminium berkualitas",
   slug: "handle-s",
   image: "/asset/product/pull-handle/handle-s.png"
 },
 {
   id: 5,
-  name: "Handle H Bulat",
+  name: "Pull Handle H Bulat",
   description: "Handle tarik model B bahan aluminium berkualitas",
   slug: "handle-b",
   image: "/asset/product/pull-handle/handle-b.png"
 },
 {
   id: 6,
-  name: "Handle H Hollow",
+  name: "Pull Handle H Hollow",
   description: "Handle tarik model H bahan aluminium berkualitas",
   slug: "handle-h",
   image: "/asset/product/pull-handle/handle-h.png"
 },
 {
   id: 7,
-  name: "Handle 21 SS",
+  name: "Pull Handle 21 SS",
   description: "Handle tarik model 21 bahan aluminium berkualitas",
   slug: "handle-21",
   image: "/asset/product/pull-handle/handle-21.png"

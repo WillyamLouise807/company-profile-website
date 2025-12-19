@@ -72,69 +72,111 @@ import bgImage from '@/assets/product/alumunium-lock/alumunium-lock-banner.png';
 import FooterComponent from '@/components/footer.vue';
 
 const floorHingeProduts = [
-{
-  id: 1,
-  name: "Swing Lock 41054",
-  description: "Kunci Pintu Set Sliding Almunium A7 Indikator Premium Handle set",
-  slug: "41054",
-  image: "/asset/product/alumunium-lock/41054.png"
-},
-{
-  id: 2,
-  name: "Swing Lock 41055",
-  description: "Set Engsel lantai Material Aluminium Anti Karat",
-  slug: "41055",
-  image: "/asset/product/alumunium-lock/41055.png"
-},
-{
-  id: 3,
-  name: "Swing Lock 41066",
-  description: "Kunci Pintu Set Sliding Almunium A7 Indikator Premium Handle set",
-  slug: "41066",
-  image: "/asset/product/alumunium-lock/41066.png"
-},
-{
-  id: 4,
-  name: "A7",
-  description: "Kunci Pintu Set Sliding Almunium A7 Indikator Premium Handle set",
-  slug: "a7",
-  image: "/asset/product/alumunium-lock/a7.png"
-},
-{
-  id: 5,
-  name: "Butt Hinge Nylon",
-  description: "Kunci Pintu Set Sliding Almunium A7 Indikator Premium Handle set",
-  slug: "butt-hinge-nylon",
-  image: "/asset/product/alumunium-lock/butt-hinge-nylon.png"
-},
-{
-  id: 6,
-  name: "Butt Hinge SS",
-  description: "Set Engsel lantai Material Aluminium Anti Karat",
-  slug: "butt-hinge-ss",
-  image: "/asset/product/alumunium-lock/butt-hinge-ss.png"
-},
-{
-  id: 7,
-  name: "Butt Hinge H",
-  description: "Kunci Pintu Set Sliding Almunium A7 Indikator Premium Handle set",
-  slug: "butt-hinge-h",
-  image: "/asset/product/alumunium-lock/butt-hinge-h.png"
-},
-{
-  id: 8,
-  name: "Engsel Piano",
-  description: "Set Engsel lantai Material Aluminium Anti Karat",
-  slug: "engsel-piano",
-  image: "/asset/product/alumunium-lock/engsel-piano.png"
-},
-{
-  id: 9,
-  name: "Engsel Salon",
-  description: "Set Engsel lantai Material Aluminium Anti Karat",
-  slug: "engsel-salon",
-  image: "/asset/product/alumunium-lock/engsel-salon.png"
-}
+  {
+    id: 1,
+    name: "Crescent Lock",
+    description: "Set Engsel lantai Material Aluminium Anti Karat",
+    slug: "crescent-lock",
+    image: "/asset/product/alumunium-lock/crescent-lock.png"
+  },
+  {
+    id: 2,
+    name: "Casement Lock",
+    description: "Set Engsel lantai Material Aluminium Anti Karat",
+    slug: "casement-lock",
+    image: "/asset/product/alumunium-lock/casement-lock.png"
+  },
+  {
+    id: 3,
+    name: "Sliding Lock A7",
+    description: "Kunci Pintu Set Sliding Almunium A7 Indikator Premium Handle set",
+    slug: "a7",
+    image: "/asset/product/alumunium-lock/a7.png"
+  },
+  {
+    id: 4,
+    name: "Flush Handle Zinc",
+    description: "Handle Tanam Zinc Berfungsi Untuk Penahan Pintu Stainlees",
+    slug: "zinc",
+    image:'/asset/product/alumunium-lock/zinc.png'
+  },
+  {
+    id: 5,
+    name: "Flush Handle Aluminium",
+    description: "Flush Handle Pegangan Pintu Geser type Datar Material Aluminium",
+    slug: "alumunium",
+    image:'/asset/product/alumunium-lock/alumunium.png'
+  },
+  {
+    id: 6,
+    name: "Flush Handle SS-201",
+    description: "Kepala Handle SS 201/ Tarikan Tanam Pintu Geser Sliding Door Material Aluminium",
+    slug: "ss-201",
+    image:'/asset/product/alumunium-lock/ss-201.png'
+  },
+  {
+    id: 7,
+    name: "Flush Handle Flushbolt",
+    description: "Handle Tanam Flushbolt Berfungsi Untuk Penahan Pintu Stainlees",
+    slug: "flushbolt",
+    image:'/asset/product/alumunium-lock/flushbolt.png'
+  },
+  {
+    id: 8,
+    name: "Butt Hinge Nylon",
+    description: "Kunci Pintu Set Sliding Almunium A7 Indikator Premium Handle set",
+    slug: "butt-hinge-nylon",
+    image: "/asset/product/alumunium-lock/butt-hinge-nylon.png"
+  },
+  {
+    id: 9,
+    name: "Butt Hinge SS",
+    description: "Set Engsel lantai Material Aluminium Anti Karat",
+    slug: "butt-hinge-ss",
+    image: "/asset/product/alumunium-lock/butt-hinge-ss.png"
+  },
+  {
+    id: 10,
+    name: "Butt Hinge H",
+    description: "Set Engsel lantai Material Aluminium Anti Karat",
+    slug: "butt-hinge-h",
+    image: "/asset/product/alumunium-lock/butt-hinge-h.png"
+  },
+  {
+    id: 11,
+    name: "Swing Lock 41054",
+    description: "Set Engsel lantai Material Aluminium Anti Karat",
+    slug: "41054",
+    image: "/asset/product/alumunium-lock/41054.png"
+  },
+  {
+    id: 12,
+    name: "Sliding Lock 41055",
+    description: "Set Engsel lantai Material Aluminium Anti Karat",
+    slug: "41055",
+    image: "/asset/product/alumunium-lock/41055.png"
+  },
+  {
+    id: 13,
+    name: "Sliding Lock Kait Besar 41066",
+    description: "Set Engsel lantai Material Aluminium Anti Karat",
+    slug: "41066",
+    image: "/asset/product/alumunium-lock/41066.png"
+  },
+  // {
+  //   id: 13,
+  //   name: "Engsel Piano",
+  //   description: "Set Engsel lantai Material Aluminium Anti Karat",
+  //   slug: "engsel-piano",
+  //   image: "/asset/product/alumunium-lock/engsel-piano.png"
+  // },
+  // {
+  //   id: 14,
+  //   name: "Engsel Salon",
+  //   description: "Set Engsel lantai Material Aluminium Anti Karat",
+  //   slug: "engsel-salon",
+  //   image: "/asset/product/alumunium-lock/engsel-salon.png"
+  // }
 ];
 </script>
 

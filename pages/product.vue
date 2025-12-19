@@ -346,13 +346,13 @@ const products = [
     image: '/asset/product/engsel-casement.png',
     logo: '/asset/product/GLATINO - RED - LOGO.png',
   },
-  {
-    title: 'Window Lock',
-    description: 'View all Window Lock products',
-    slug: 'window-lock',
-    image: '/asset/product/window-lock.png',
-    logo: '/asset/product/GLATINO - RED - LOGO.png',
-  },
+  // {
+  //   title: 'Window Lock',
+  //   description: 'View all Window Lock products',
+  //   slug: 'window-lock',
+  //   image: '/asset/product/window-lock.png',
+  //   logo: '/asset/product/GLATINO - RED - LOGO.png',
+  // },
   {
     title: 'Alumunium Lock',
     description: 'View all Alumunium Lock products',

@@ -12,7 +12,7 @@
             <RouterLink to="/produk/pull-handle" class="hover:underline text-black font-medium">Pull Handle</RouterLink>
           </li>
           <li>/</li>
-          <li class="text-black font-semibold">Handle Shower</li>
+          <li class="text-black font-semibold">Pull Handle Shower</li>
         </ol>
       </nav>
 
@@ -35,8 +35,7 @@
             <p class="capitalize text-sm sm:text-base">Kelengkapan: 1 Pasang Handle, Baut Panjang, Kunci L</p>
           </div>
 
-          <!-- Marketplace -->
-           <!-- Marketplace -->
+          <!-- Marketplace -->          
           <div class="mb-8">
             <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
             <div class="flex flex-wrap justify-center md:justify-start items-center gap-6">
@@ -233,13 +232,13 @@ function zoomImage(src: string) {
 }
 
 const katalogLinks = [
-  { slug: 'handle-c', name: 'Handle C', image: '/asset/product/pull-handle/handle-c.png'},
-  { slug: 'handle-p', name: 'Handle P', image: '/asset/product/pull-handle/handle-p.png'},
-  { slug: 'handle-d', name: 'Handle D', image: '/asset/product/pull-handle/handle-d.png'},
-  // { slug: 'handle-s', name: 'Handle S', image: '/asset/product/pull-handle/handle-s.png'},
-  { slug: 'handle-b', name: 'Handle B', image: '/asset/product/pull-handle/handle-b.png'},
-  { slug: 'handle-h', name: 'Handle H', image: '/asset/product/pull-handle/handle-h.png'},
-  { slug: 'handle-21', name: 'Handle 21', image: '/asset/product/pull-handle/handle-21.png'},
+  { slug: 'handle-c', name: 'Pull Handle C', image: '/asset/product/pull-handle/handle-c.png'},
+  { slug: 'handle-p', name: 'Pull Handle P', image: '/asset/product/pull-handle/handle-p.png'},
+  { slug: 'handle-d', name: 'Pull Handle D', image: '/asset/product/pull-handle/handle-d.png'},
+  // { slug: 'handle-s', name: 'Pull Handle S', image: '/asset/product/pull-handle/handle-s.png'},
+  { slug: 'handle-b', name: 'Pull Handle B', image: '/asset/product/pull-handle/handle-b.png'},
+  { slug: 'handle-h', name: 'Pull Handle H', image: '/asset/product/pull-handle/handle-h.png'},
+  { slug: 'handle-21', name: 'Pull Handle 21 SS', image: '/asset/product/pull-handle/handle-21.png'},
 ];
 </script>
 
