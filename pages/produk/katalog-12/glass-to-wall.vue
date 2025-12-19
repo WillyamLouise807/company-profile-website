@@ -12,7 +12,7 @@
             <RouterLink to="/produk/accessories" class="hover:underline text-black font-medium">Accessories</RouterLink>
           </li>
           <li>/</li>
-          <li class="text-black font-semibold">Glass To Wall</li>
+          <li class="text-black font-semibold">Shower Hinger 90°</li>
         </ol>
       </nav>
 
@@ -20,7 +20,7 @@
       <div class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Glass To Wall</h1>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Shower Hinger 90°</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
             Engsel Pintu Kaca ke Tembok Glatino dirancang untuk memberikan tampilan minimalis sekaligus kekuatan maksimal. Menggunakan material stainless steel SUS 304, engsel ini tahan karat, awet, dan mampu mengembalikan pintu ke posisi semula secara otomatis.
           </p>
@@ -128,23 +128,29 @@ function toggleZoom() {
 }
 
 const katalogLinks = [
-  // { slug: 'glass-to-wall', name: 'Glass To Wall', image: '/asset/product/accessories/glass-to-wall.png' },
-  { slug: 'glass-to-glass', name: 'Glass To Glass', image: '/asset/product/accessories/glass-to-glass.png' },
+  // { slug: 'glass-to-wall', name: 'Shower Hinger 90°', image: '/asset/product/accessories/glass-to-wall.png' },
+  { slug: 'glass-to-glass', name: 'Shower Hinger 180°', image: '/asset/product/accessories/glass-to-glass.png' },
   { slug: 'glass-clip-l', name: 'Glass Clip L', image: '/asset/product/accessories/glass-clip-l.png' },
-  { slug: 'glass-clip-p', name: 'Glass Clip P', image: '/asset/product/accessories/glass-clip-p.png' },
+  { slug: 'glass-clip-p', name: 'Glass Clip Persegi', image: '/asset/product/accessories/glass-clip-p.png' },
   { slug: 'glass-clip-u', name: 'Glass Clip U', image: '/asset/product/accessories/glass-clip-u.png' },
-  { slug: 'glass-suction', name: 'Glass Suction', image: '/asset/product/accessories/glass-suction.png' },
-  { slug: 'rivet', name: 'Rivet', image: '/asset/product/accessories/rivet.png' },
-  { slug: 'mohair', name: 'Mohair', image: '/asset/product/accessories/mohair.png' },
-  { slug: 'camlock', name: 'Camlock', image: '/asset/product/accessories/camlock.png' },
-  { slug: 'silicone', name: 'Silicone', image: '/asset/product/accessories/silicone.png' },
-  { slug: 'tembak-silicone', name: 'Tembak Silicone', image: '/asset/product/accessories/tembak-silicone.png' },
+  { slug: 'glass-suction', name: 'Glass Suction Plate', image: '/asset/product/accessories/glass-suction.png' },
+  { slug: 'handle-bamboo', name: 'Handle Bamboo', image: '/asset/product/accessories/handle-bamboo.png' },  
+  { slug: 'handle-swing', name: 'Handle Swing', image: '/asset/product/accessories/handle-swing.png' },
+  { slug: 'bracket-ikan', name: 'Bracket Ikan', image: '/asset/product/accessories/bracket-ikan.png' },
+  { slug: 'rivet', name: 'Aluminium Blind Rivet', image: '/asset/product/accessories/rivet.png' },
+  { slug: 'roller-shutter-lock', name: 'Roller Shutter Lock', image: '/asset/product/accessories/roller-shutter-lock.png' },
+  { slug: 'engsel-salon', name: 'Engsel Salon', image: '/asset/product/accessories/engsel-salon.png' },
+  { slug: 'silicone', name: 'Silicone Acetoxy', image: '/asset/product/accessories/silicone.png' },
+  { slug: 'tembak-silicone', name: 'Silicone Gun', image: '/asset/product/accessories/tembak-silicone.png' },
   { slug: 'silicone-sausage-neutral', name: 'Silicone Sausage Neutral', image: '/asset/product/accessories/silicone-sosis.png' },
   { slug: 'silicone-gun-sosis', name: 'Silicone Gun Sosis', image: '/asset/product/accessories/silicone-gun-sosis.png' },
-  { slug: 'rell-laci-fe', name: 'Rell Laci FE', image: '/asset/product/accessories/rell-laci-fe.png' },
-  { slug: 'rell-laci-fe-slowmo', name: 'Rell Laci FE Slowmo', image: '/asset/product/accessories/rell-laci-fe-slowmo.png' },
+  { slug: 'mohair', name: 'Karet Mohair Big', image: '/asset/product/accessories/mohair.png' },
+  { slug: 'engsel-piano-stainless', name: 'Engsel Piano Stainless', image: '/asset/product/accessories/engsel-piano-stainless.png' },  
+  { slug: 'engsel-piano-iron', name: 'Engsel Piano Iron', image: '/asset/product/accessories/engsel-piano-iron.png' },
+  { slug: 'camlock', name: 'Camlock', image: '/asset/product/accessories/camlock.png' },   
+  { slug: 'rell-laci-fe', name: 'Rell Laci FE 30 NB', image: '/asset/product/accessories/rell-laci-fe.png' },
+  { slug: 'rell-laci-fe-slowmo', name: 'Rell Laci FE 37 Black', image: '/asset/product/accessories/rell-laci-fe-slowmo.png' },
   { slug: 'engsel-sendok-mini', name: 'Engsel Sendok Mini', image: '/asset/product/accessories/engsel-sendok-mini.png' },
-  { slug: 'bracket-ikan', name: 'Bracket Ikan', image: '/asset/product/accessories/bracket-ikan.png' }
 ];
 </script>
 
