@@ -106,7 +106,7 @@
           <NuxtLink
             v-for="item in katalogLinks"
             :key="item.slug"
-            :to="`/produk/katalog-9/${item.slug}`"
+            :to="`/produk/katalog-12/${item.slug}`"
             class="group block bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition overflow-hidden"
           >
             <img

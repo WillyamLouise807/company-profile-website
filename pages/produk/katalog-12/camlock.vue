@@ -118,7 +118,7 @@
               class="w-full h-32 object-contain mx-auto transition-transform duration-300 group-hover:scale-105 bg-white"
             />
             <div class="bg-gray-50 text-center py-4 px-2">
-              <div class="text-red-600 font-semibold text-sm">{{ item.name }}</div>
+              <div class="text-red-600 font-semibold text-sm">{{ item.name }}</div>              
             </div>
           </NuxtLink>
         </div>
