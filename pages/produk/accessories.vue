@@ -119,8 +119,8 @@ const doorCloserProducts = [
     id: 7,
     name: "Handle Bamboo",
     description: "Handle bambu Kotak Glatino hadir dengan desain kokoh dan keamanan tinggi.",
-    slug: "handle-bambu",
-    image: '/asset/product/accessories/handle-bambu.png'
+    slug: "handle-bamboo",
+    image: '/asset/product/accessories/handle-bamboo.png'
   },
   {
     id: 8,
