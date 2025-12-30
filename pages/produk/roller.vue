@@ -79,7 +79,7 @@ const rollerProducts = [
   },
   {
     id: 2,
-    name: "Roda Pintu Lipat",
+    name: "Roda Pintu Lipat 360",
     description: "Roda pintu lipat kuat dan halus untuk memudahkan pergerakan pintu lipat",
     slug: "roda-pintu-lipat",
     image: '/asset/product/roller/roda-pintu-lipat.png'
@@ -97,6 +97,13 @@ const rollerProducts = [
     description: "Roller sliding door 380 kokoh dan awet untuk pintu geser berukuran besar",
     slug: "sliding-door-380",
     image: '/asset/product/roller/sliding-door-380.png'
+  },
+  {
+    id: 5,
+    name: "Sliding Door 75",
+    description: "Roller sliding door 75 kokoh dan awet untuk pintu geser berukuran besar",
+    slug: "sliding-door-75",
+    image: '/asset/product/roller/sliding-door-75.png'
   },
 ];
 </script>

@@ -191,6 +191,7 @@ const katalogLinks = [
   { slug: 'roda-pintu-lipat', name: 'Roda Pintu Lipat', image: '/asset/product/roller/roda-pintu-lipat.png' },
   // { slug: 'showcase', name: 'Showcase', image: '/asset/product/roller/showcase.png' },
   { slug: 'sliding-door-380', name: 'Sliding Door 380', image: '/asset/product/roller/sliding-door-380.png' },
+  { slug: 'sliding-door-75', name: 'Sliding Door 75', image: '/asset/product/roller/sliding-door-75.png' },
 ]
 </script>
 

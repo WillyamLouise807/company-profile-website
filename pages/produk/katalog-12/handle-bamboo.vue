@@ -177,7 +177,7 @@ const isZoomOpen = ref(false)
 function toggleZoom() {
   isZoomOpen.value = !isZoomOpen.value
 }
-  
+
 const katalogLinks = [
   { slug: 'glass-to-wall', name: 'Shower Hinger 90°', image: '/asset/product/accessories/glass-to-wall.png' },
   { slug: 'glass-to-glass', name: 'Shower Hinger 180°', image: '/asset/product/accessories/glass-to-glass.png' },

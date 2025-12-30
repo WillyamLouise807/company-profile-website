@@ -72,18 +72,116 @@ import FooterComponent from '@/components/footer.vue';
 const rollerProducts = [
   {
     id: 1,
-    name: "Roda Gepeng Rubber",
-    description: "Sliding track berkualitas untuk jalur pergerakan pintu geser yang lancar dan stabil",
-    slug: "roda-rubber",
-    image: '/asset/product/roller-caster/roda-rubber.png'
+    name: "Roda Gepeng Rubber 2\" Tanpa Rem",
+    description: "Roda pintu lipat kuat dan halus untuk memudahkan pergerakan pintu lipat",
+    slug: "roda-gepeng-rubber-2-tanpa-rem",
+    image: '/asset/product/roller-caster/roda-gepeng-rubber-2-tanpa-rem.png'
   },
   {
     id: 2,
-    name: "Roda Gepeng PP",
+    name: "Roda Gepeng Rubber 2\" Dengan Rem",
     description: "Roda pintu lipat kuat dan halus untuk memudahkan pergerakan pintu lipat",
-    slug: "roda-pp",
-    image: '/asset/product/roller-caster/roda-pp.png'
+    slug: "roda-gepeng-rubber-2-dengan-rem",
+    image: '/asset/product/roller-caster/roda-gepeng-rubber-2-dengan-rem.png'
   },
+  {
+    id: 3,
+    name: "Roda RC 2\" Bulat",
+    description: "Roda pintu lipat kuat dan halus untuk memudahkan pergerakan pintu lipat",
+    slug: "roda-rc-2-bulat",
+    image: '/asset/product/roller-caster/roda-rc-2-bulat.png'
+  },
+  {
+    id: 4,
+    name: "Roda Gepeng Red PP 2\" Tanpa Rem",
+    description: "Roda pintu lipat kuat dan halus untuk memudahkan pergerakan pintu lipat",
+    slug: "roda-gepeng-red-pp-2-tanpa-rem",
+    image: '/asset/product/roller-caster/roda-gepeng-red-pp-2-tanpa-rem.png'
+  },
+  {
+    id: 5,
+    name: "Roda Gepeng Red PP 2\" Dengan Rem",
+    description: "Roda pintu lipat kuat dan halus untuk memudahkan pergerakan pintu lipat",
+    slug: "roda-gepeng-red-pp-2-dengan-rem",
+    image: '/asset/product/roller-caster/roda-gepeng-red-pp-2-dengan-rem.png'
+  },
+  {
+    id: 6,
+    name: "Roda Gepeng Nylon 2\" Tanpa Rem",
+    description: "Roda pintu lipat kuat dan halus untuk memudahkan pergerakan pintu lipat",
+    slug: "roda-gepeng-nylon-2-tanpa-rem",
+    image: '/asset/product/roller-caster/roda-gepeng-nylon-2-tanpa-rem.png'
+  },
+  {
+    id: 7,
+    name: "Roda Gepeng Nylon 2\" Dengan Rem",
+    description: "Roda pintu lipat kuat dan halus untuk memudahkan pergerakan pintu lipat",
+    slug: "roda-gepeng-nylon-2-dengan-rem",
+    image: '/asset/product/roller-caster/roda-gepeng-nylon-2-dengan-rem.png'
+  },
+  {
+    id: 8,
+    name: "Roda Gepeng White PP 3\" Tanpa Rem",
+    description: "Roda pintu lipat kuat dan halus untuk memudahkan pergerakan pintu lipat",
+    slug: "roda-gepeng-white-pp-3-tanpa-rem",
+    image: '/asset/product/roller-caster/roda-gepeng-white-pp-3-tanpa-rem.png'
+  },
+  {
+    id: 9,
+    name: "Roda Gepeng White PP 3\" Dengan Rem",
+    description: "Roda pintu lipat kuat dan halus untuk memudahkan pergerakan pintu lipat",
+    slug: "roda-gepeng-white-pp-3-dengan-rem",
+    image: '/asset/product/roller-caster/roda-gepeng-white-pp-3-dengan-rem.png'
+  },
+  {
+    id: 10,
+    name: "Roda Gepeng Rubber 3\" Tanpa Rem",
+    description: "Sliding track berkualitas untuk jalur pergerakan pintu geser yang lancar dan stabil",
+    slug: "roda-gepeng-rubber-3-tanpa-rem",
+    image: '/asset/product/roller-caster/roda-gepeng-rubber-3-tanpa-rem.png'
+  },
+  {
+    id: 11,
+    name: "Roda Gepeng Rubber 3\" Dengan Rem",
+    description: "Sliding track berkualitas untuk jalur pergerakan pintu geser yang lancar dan stabil",
+    slug: "roda-gepeng-rubber-3-dengan-rem",
+    image: '/asset/product/roller-caster/roda-gepeng-rubber-3-dengan-rem.png'
+  },
+  {
+    id: 12,
+    name: "Roda Fixed Caster Orange 2\" Tanpa Rem",
+    description: "Sliding track berkualitas untuk jalur pergerakan pintu geser yang lancar dan stabil",
+    slug: "roda-fixed-caster-orange-2-tanpa-rem",
+    image: '/asset/product/roller-caster/roda-fixed-caster-orange-2-tanpa-rem.png'
+  },
+  {
+    id: 13,
+    name: "Roda Swivel Caster Orange 2\" Tanpa Rem",
+    description: "Sliding track berkualitas untuk jalur pergerakan pintu geser yang lancar dan stabil",
+    slug: "roda-swivel-caster-orange-2-tanpa-rem",
+    image: '/asset/product/roller-caster/roda-swivel-caster-orange-2-tanpa-rem.png'
+  },
+  {
+    id: 14,
+    name: "Roda Swivel Caster Orange 2\" Dengan Rem",
+    description: "Sliding track berkualitas untuk jalur pergerakan pintu geser yang lancar dan stabil",
+    slug: "roda-swivel-caster-orange-2-dengan-rem",
+    image: '/asset/product/roller-caster/roda-swivel-caster-orange-2-dengan-rem.png'
+  },
+  // {
+  //   id: 12,
+  //   name: "Roda Gepeng Rubber",
+  //   description: "Sliding track berkualitas untuk jalur pergerakan pintu geser yang lancar dan stabil",
+  //   slug: "roda-rubber",
+  //   image: '/asset/product/roller-caster/roda-rubber.png'
+  // },
+  // {
+  //   id: 13,
+  //   name: "Roda Gepeng PP",
+  //   description: "Roda pintu lipat kuat dan halus untuk memudahkan pergerakan pintu lipat",
+  //   slug: "roda-pp",
+  //   image: '/asset/product/roller-caster/roda-pp.png'
+  // },
 ];
 </script>
 
