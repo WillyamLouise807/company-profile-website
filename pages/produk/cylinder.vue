@@ -75,28 +75,28 @@ const cylinderProducts = [
   {
     id: 1,
     name: "CY65155",
-    description: "Cylinder Pro Kunci Tabung Pengaman Material Aluminium",
+    description: "",
     slug: "65155",
     image: '/asset/product/cylinder/65155.png'
   },
   {
     id: 2,
     name: "ET65-PUTAR",
-    description: "Cylinder Pro Kunci Tabung Pengaman Material Aluminium",
+    description: "",
     slug: "65155-et",
     image: '/asset/product/cylinder/65155-et.png'
   },
   {
     id: 3,
     name: "810",
-    description: "Cylinder Pro Kunci Tabung Pengaman Material Aluminium",
+    description: "",
     slug: "810",
     image: '/asset/product/cylinder/810.png'
   },
   {
     id: 4,
     name: "811",
-    description: "Cylinder Pro Kunci Tabung Pengaman Material Aluminium",
+    description: "",
     slug: "811",
     image: '/asset/product/cylinder/811.png'
   },

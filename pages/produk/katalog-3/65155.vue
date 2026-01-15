@@ -22,23 +22,18 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Cylinder 65155</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Cylinder Lock Tabung dari Glatino dirancang untuk memberikan perlindungan optimal dengan fitur keamanan tinggi seperti anti-pick dan anti-drill. Terbuat dari aluminium premium dengan finishing chrome, produk ini cocok untuk berbagai kebutuhan penguncian, baik rumah tinggal maupun ruang komersial.
+            Glatino's Cylinder Lock is designed to provide optimal protection with high-security features like anti-pick and anti-drill. Made of premium aluminum with a chrome finish, this product is suitable for a variety of locking needs, both in residential and commercial spaces.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>   
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Jenis: Cylinder Lock Tabung</p>
-            <p class="capitalize text-sm sm:text-base">Material: Aluminium Premium</p>
-            <p class="capitalize text-sm sm:text-base">Finishing: Chrome</p>
-            <p class="capitalize text-sm sm:text-base">Kunci: 3 Anak Kunci</p>
-            <p class="capitalize text-sm sm:text-base">Jumlah Pin: 5 pin, 6 pin</p>
-            <p class="capitalize text-sm sm:text-base">Tipe Kunci: Putar (Turnkey)</p>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>   
+            <p class="capitalize text-sm sm:text-base">Cylinder Swing + Rotate</p>
+            <p class="capitalize text-sm sm:text-base">3 Comp Key</p> 
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available in Marketplace:</h2>
             <div class="flex flex-wrap justify-center md:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store/glatino-cylinder-pro-kunci-tabung-pengaman-bahan-aluminium-anti-karat-harga-terjangkau-1730966763212146414?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
@@ -62,7 +57,7 @@
 
       <!-- Dimensi -->
       <div class="mt-14 border-t border-gray-700 pt-10">
-        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Product Dimensions</h2>
         <div class="flex flex-col items-center">
           <img
             :src="ukuranImage"
@@ -70,7 +65,7 @@
             class="rounded-xl shadow-md max-w-xl w-full bg-white p-4 cursor-zoom-in"
             @click="toggleZoom"
           />
-          <p class="text-sm text-gray-500 mt-4 text-center">*Gambar hanya ilustrasi ukuran secara proporsional</p>
+          <p class="text-sm text-gray-500 mt-4 text-center">*This image is for illustration purposes only</p>
         </div>
       </div>
 
