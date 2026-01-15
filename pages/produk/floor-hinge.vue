@@ -7,14 +7,14 @@
         class="absolute inset-0 bg-cover bg-center bg-no-repeat z-[-3]"
         :style="{ backgroundImage: `url(${bgImage})` }"
       ></div>
-      <div class="absolute inset-0 bg-white/70 backdrop-blur-sm z-[-2]"></div>
+      <div class="absolute inset-0  backdrop-blur-sm z-[-2]"></div>
       <div class="absolute bottom-0 left-0 right-0 h-48 z-[-1] bg-gradient-to-b from-transparent to-white"></div>
 
       <!-- Content Container -->
       <div class="container mx-auto h-full px-4 relative z-10 flex flex-col">
         <!-- Breadcrumb -->
         <div class="text-red-700 text-sm opacity-90 pt-20 sm:pt-28 md:pt-36">
-          <NuxtLink to="/product" class="hover:underline text-red-600 font-medium">Product</NuxtLink> / <span class="text-gray-600">Floor Hinge</span>
+          <NuxtLink to="/product" class="hover:underline text-red-600 font-medium">Product</NuxtLink> / <span class="text-gray-100">Floor Hinge</span>
         </div>
 
         <!-- Hero Text Centered -->
@@ -66,21 +66,21 @@
 </template>
 
 <script lang="ts" setup>
-import bgImage from '/asset/product/floor-hinge/floor-hinge-banner.png';
+import bgImage from '/asset/product/floor-hinge/floor-hinge-banner.jpg';
 import FooterComponent from '@/components/footer.vue';
 
 const floorHingeProduts = [
   {
     id: 1,
     name: "FH-53",
-    description: "Set Engsel lantai Material Aluminium Anti Karat",
+    description: "",
     slug: "v53",
     image: '/asset/product/floor-hinge/v53.png'
   },
   {
     id: 2,
     name: "FH-84",
-    description: "Set Engsel lantai Material Aluminium Anti Karat",
+    description: "",
     slug: "v84",
     image: '/asset/product/floor-hinge/v84.png'
   },

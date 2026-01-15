@@ -22,13 +22,12 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Floor Hinge FH-84</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Engsel lantai Glatino seri FH-84 hadir sebagai solusi ideal untuk pintu berat yang membutuhkan pergerakan stabil dan aman. Dengan desain komplit dalam satu set, produk ini memudahkan pemasangan serta memberikan daya tahan dan keamanan ekstra pada sistem buka tutup pintu.
+            The Glatino FH-84 series floor hinges are the ideal solution for heavy doors requiring stable and secure movement. With a complete, one-piece design, this product simplifies installation and provides extra durability and security for the door opening and closing system.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Tampilan: {{ selectedViewLabel }}</p>
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>
+            <p class="capitalize text-sm sm:text-base">View: {{ selectedViewLabel }}</p>            
             <p class="capitalize text-sm sm:text-base">Size (L x W x H): 310 x 107 x 44</p>
             <p class="capitalize text-sm sm:text-base">Door Weight: 100 - 120 kgs</p>
             <p class="capitalize text-sm sm:text-base">Diameter Cylinder: 30mm Double Cylinder</p>
@@ -40,7 +39,7 @@
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available in Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
@@ -85,7 +84,7 @@
 
       <!-- Dimensi -->
       <div class="mt-14 border-t border-gray-700 pt-10">
-        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Product Dimensions</h2>
         <div class="flex flex-col items-center">
           <img
             :src="ukuranImage"
@@ -93,7 +92,7 @@
             class="rounded-xl shadow-md max-w-xl w-full bg-white p-4 cursor-zoom-in"
             @click="toggleZoom"
           />
-          <p class="text-sm text-gray-500 mt-4 text-center">*Gambar hanya ilustrasi ukuran secara proporsional</p>
+          <p class="text-sm text-gray-500 mt-4 text-center">*This image is for illustration purposes only</p>
         </div>
       </div>
 
