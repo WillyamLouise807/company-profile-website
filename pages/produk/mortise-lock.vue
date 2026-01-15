@@ -7,7 +7,7 @@
         class="absolute inset-0 bg-cover bg-center bg-no-repeat z-[-3]"
         :style="{ backgroundImage: `url(${bgImage})` }"
       ></div>
-      <div class="absolute inset-0 bg-white/70 backdrop-blur-sm z-[-2]"></div>
+      <div class="absolute inset-0 bg-white/40 backdrop-blur-sm z-[-2]"></div>
       <div class="absolute bottom-0 left-0 right-0 h-48 z-[-1] bg-gradient-to-b from-transparent to-white"></div>
 
       <!-- Content Container -->
@@ -75,28 +75,28 @@ const mortiseLockProducts = [
   {
     id: 1,
     name: "808",
-    description: "Mortise Lock Body Lock Perol 20 mm + Cyl 65 mm",
+    description: "",
     slug: "808",
     image: '/asset/product/mortise-lock/808.png'
   },
   {
     id: 2,
     name: "909",
-    description: "Mortise Lock Body Lock Perol 30 mm + Cyl 65 mm",
+    description: "",
     slug: "909",
     image: '/asset/product/mortise-lock/909.png'
   },
   {
     id: 3,
     name: "910",
-    description: "Mortise Lock Body Lock 20 mm + Cyl 65 mm",
+    description: "",
     slug: "910",
     image: '/asset/product/mortise-lock/910.png'
   },
   {
     id: 4,
     name: "911",
-    description: "Mortise Lock Body Lock 30 mm + Cyl 65 mm",
+    description: "",
     slug: "911",
     image: '/asset/product/mortise-lock/911.png'
   }
