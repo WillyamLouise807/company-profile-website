@@ -2,227 +2,124 @@
   <!--  Kalo Mau Update Website Run dit terminal
     npm install
     npx nuxi generate-->
-  <!-- Main container with background -->
-  <div class="relative">
-    <!-- Background image for all devices -->
-    <div class="absolute inset-0 -z-10">
-      <!-- Smartphone -->
-      <img 
-        src="/asset/bg-image-smartphone.jpg" 
-        alt="Background Mobile"
-        class="block sm:hidden w-full h-screen object-cover"
-      />
-      <!-- Tablet -->
-      <img 
-        src="/asset/bg-image-tablet.jpg" 
-        alt="Background Tablet"
-        class="hidden sm:block lg:hidden w-full h-screen object-cover"
-      />
-      <!-- Desktop -->
-      <img 
-        src="/asset/bg-image-dekstop.jpg" 
-        alt="Background Desktop"
-        class="hidden lg:block w-full h-screen object-cover"
-      />
-
-      <!-- NEW: Gradient fade to white at bottom -->
-      <div class="absolute bottom-0 w-full h-screen bg-gradient-to-b from-transparent to-white"></div>
-    </div>
-  </div>
-
-  <!-- Section Awal -->
-<section>
-  <div class="font-poppins">
-    <div class="max-w-screen-2xl mx-auto px-4">
-      <!-- grid responsive -->
-      <div class="grid grid-cols-1 md:grid-cols-2 h-screen md:h-auto">
-        
-        <!-- Kanan: Gambar (order 1 di hp, order 2 di desktop) -->
-        <div class="flex justify-center md:justify-end items-center order-1 md:order-2">
+  
+  <!-- Section Awal dengan Carousel Banner -->
+  <section class="relative w-full h-screen overflow-hidden">
+    <!-- Background Carousel -->
+    <div class="absolute inset-0 w-full h-full">
+      <TransitionGroup name="fade">
+        <div
+          v-for="(banner, index) in banners"
+          :key="index"
+          v-show="currentSlide === index"
+          class="absolute inset-0 w-full h-full transition-opacity duration-700"
+        >
+          <!-- Smartphone -->
           <img 
-            src="/asset/index/gambar awal-2.png" 
-            alt="Gambar Awal" 
-            class="w-full max-w-[800px] h-auto object-contain"
+            :src="banner.bgMobile" 
+            alt="Background Mobile"
+            class="block sm:hidden w-full h-full object-cover"
           />
-        </div>       
-
-        <!-- Kiri: Text (order 2 di hp, order 1 di desktop) -->
-        <div class="flex flex-col justify-center items-start text-left order-2 md:order-1 px-4 md:px-0">
-          <FadeInOnScroll direction="up">
-            <div class="text-xl md:text-5xl font-extrabold text-red-700 leading-snug mb-6">
-              <p>PT GLOBAL BESTINDO JAYA</p>
-            </div>
-            <div class="text-red-700 text-sm md:text-lg mb-12">
-              <p>Menciptakan Aksesoris Aluminium yang Berkualitas</p>
-            </div>
-            <div>
-              <button
-                @click="scrollToSection"
-                class="bg-red-700 hover:bg-red-800 text-white px-20 py-3 rounded-full font-semibold transition duration-300 pulse-btn"
-              >
-                FIND OUT MORE
-              </button>
-            </div>           
-          </FadeInOnScroll>          
-        </div>         
-      </div>      
+          <!-- Tablet -->
+          <img 
+            :src="banner.bgTablet" 
+            alt="Background Tablet"
+            class="hidden sm:block lg:hidden w-full h-full object-cover"
+          />
+          <!-- Desktop -->
+          <img 
+            :src="banner.bgDesktop" 
+            alt="Background Desktop"
+            class="hidden lg:block w-full h-full object-cover"
+          />
+          
+          <!-- Gradient fade to white at bottom -->
+          <div class="absolute bottom-0 w-full h-screen bg-gradient-to-b from-transparent to-white"></div>
+        </div>
+      </TransitionGroup>
     </div>
-  </div>
-</section>
 
-  <section id="about-us" class="relative z-10 bg-[url('asset/bg-repeat.jpg')] bg-repeat py-24 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-screen-2xl mx-auto">
-  <div class="text-center mb-12">
-    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">PRODUCT RANGE</h2>
-  </div>
+    <!-- Content -->
+    <div class="font-poppins relative z-10 h-full">
+      <div class="max-w-screen-2xl mx-auto px-4 h-full">
+        <div class="grid grid-cols-1 md:grid-cols-2 h-screen md:h-auto">
+          
+          <!-- Kanan: Gambar (order 1 di hp, order 2 di desktop) - Hanya muncul kalau bukan fullImageOnly -->
+          <div v-if="!activeBanner.fullImageOnly" class="flex justify-center md:justify-end items-center order-1 md:order-2">
+            <TransitionGroup name="slide-fade">
+              <img 
+                v-for="(banner, index) in banners"
+                :key="index"
+                v-show="currentSlide === index && banner.image"
+                :src="banner.image" 
+                :alt="banner.title || 'Banner'" 
+                class="w-full max-w-[800px] h-auto object-contain transition-all duration-700"
+              />
+            </TransitionGroup>
+          </div>       
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-    <!-- Reusable Card -->
-    <NuxtLink 
-      to="/produk/door-lock"
-      class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
-    >
-      <div class="h-48 flex justify-center items-center overflow-hidden bg-white">
-        <img 
-          src="/asset/product/Door-Lock.png" 
-          alt="Door Lock" 
-          class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
-        />
-      </div>
-      <div class="p-6">
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">Door Lock</h3>
-        <div class="flex justify-between items-center">
-          <span class="text-red-600 font-medium text-sm inline-flex items-center group-hover:underline">
-            View
-          </span>
-          <span class="text-red-600 transform group-hover:translate-x-1 transition-transform">→</span>
+          <!-- Kiri: Text (order 2 di hp, order 1 di desktop) - Hanya muncul kalau bukan fullImageOnly -->
+          <div v-if="!activeBanner.fullImageOnly" class="flex flex-col justify-center items-start text-left order-2 md:order-1 px-4 md:px-0">
+            <FadeInOnScroll direction="up">
+              <TransitionGroup name="text-fade" mode="out-in">
+                <div :key="currentSlide" class="transition-all duration-500">
+                  <div class="text-xl md:text-5xl font-extrabold text-red-700 leading-snug mb-6">
+                    <p>{{ activeBanner.title }}</p>
+                  </div>
+                  <div class="text-red-700 text-sm md:text-lg mb-12">
+                    <p>{{ activeBanner.description }}</p>
+                  </div>
+                  <div v-if="activeBanner.buttonText">
+                    <button
+                      @click="scrollToSection"
+                      class="bg-red-700 hover:bg-red-800 text-white px-20 py-3 rounded-full font-semibold transition duration-300 pulse-btn"
+                    >
+                      {{ activeBanner.buttonText }}
+                    </button>
+                  </div>
+                </div>
+              </TransitionGroup>
+            </FadeInOnScroll>          
+          </div>         
         </div>
       </div>
-    </NuxtLink>
+    </div>
 
-
-    <NuxtLink 
-      to="/produk/patch-fitting"
-      class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
+    <!-- Navigation Buttons -->
+    <button
+      @click="prevSlide"
+      class="hidden md:block absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-20 bg-white/30 hover:bg-white/50 backdrop-blur-sm text-gray-800 p-3 rounded-full transition-all duration-300 hover:scale-110 shadow-lg"
     >
-      <div class="h-48 flex justify-center items-center overflow-hidden bg-white">
-        <img 
-          src="/asset/product/patch-fitting.png" 
-          alt="Patch Fitting" 
-          class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
-        />
-      </div>
-      <div class="p-6">
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">Patch Fitting</h3>
-        <div class="flex justify-between items-center">
-          <span class="text-red-600 font-medium text-sm inline-flex items-center group-hover:underline">
-            View
-          </span>
-          <span class="text-red-600 transform group-hover:translate-x-1 transition-transform">→</span>
-        </div>
-      </div>
-    </NuxtLink>
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
 
-
-    <NuxtLink 
-      to="/produk/sliding-rail"
-      class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
+    <button
+      @click="nextSlide"
+      class="hidden md:block absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 bg-white/30 hover:bg-white/50 backdrop-blur-sm text-gray-800 p-3 rounded-full transition-all duration-300 hover:scale-110 shadow-lg"
     >
-      <div class="h-48 flex justify-center items-center overflow-hidden bg-white">
-        <img 
-          src="/asset/product/sliding-rail.png" 
-          alt="Sliding Rail" 
-          class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
-        />
-      </div>
-      <div class="p-6">
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">Sliding Rail</h3>
-        <div class="flex justify-between items-center">
-          <span class="text-red-600 font-medium text-sm inline-flex items-center group-hover:underline">
-            View
-          </span>
-          <span class="text-red-600 transform group-hover:translate-x-1 transition-transform">→</span>
-        </div>
-      </div>
-    </NuxtLink>
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
 
-
-    <NuxtLink 
-      to="/produk/alumunium-lock"
-      class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
-    >
-      <div class="h-48 flex justify-center items-center overflow-hidden bg-white">
-        <img 
-          src="/asset/product/alumunium-lock.png" 
-          alt="Aluminium Lock" 
-          class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
-        />
-      </div>
-      <div class="p-6">
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">Aluminium Lock</h3>
-        <div class="flex justify-between items-center">
-          <span class="text-red-600 font-medium text-sm inline-flex items-center group-hover:underline">
-            View
-          </span>
-          <span class="text-red-600 transform group-hover:translate-x-1 transition-transform">→</span>
-        </div>
-      </div>
-    </NuxtLink>
-
-
-    <NuxtLink 
-      to="/produk/roller-caster"
-      class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
-    >
-      <div class="h-48 flex justify-center items-center overflow-hidden bg-white">
-        <img 
-          src="/asset/product/roller-caster.png" 
-          alt="Roller Caster" 
-          class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
-        />
-      </div>
-      <div class="p-6">
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">Roller Caster</h3>
-        <div class="flex justify-between items-center">
-          <span class="text-red-600 font-medium text-sm inline-flex items-center group-hover:underline">
-            View
-          </span>
-          <span class="text-red-600 transform group-hover:translate-x-1 transition-transform">→</span>
-        </div>
-      </div>
-    </NuxtLink>
-
-
-    <NuxtLink 
-      to="/produk/mortise-lock"
-      class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
-    >
-      <div class="h-48 flex justify-center items-center overflow-hidden bg-white">
-        <img 
-          src="/asset/product/mortise-lock.png" 
-          alt="Mortise Lock" 
-          class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
-        />
-      </div>
-      <div class="p-6">
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">Mortise Lock</h3>
-        <div class="flex justify-between items-center">
-          <span class="text-red-600 font-medium text-sm inline-flex items-center group-hover:underline">
-            View
-          </span>
-          <span class="text-red-600 transform group-hover:translate-x-1 transition-transform">→</span>
-        </div>
-      </div>
-    </NuxtLink>
-
-  </div>
-</div>
-
-  </section>
+    <!-- Indicator Dots -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-3">
+      <button
+        v-for="(banner, index) in banners"
+        :key="index"
+        @click="goToSlide(index)"
+        class="transition-all duration-800"
+        :class="currentSlide === index 
+          ? 'w-12 h-1.5 bg-red-600 rounded-full' 
+          : 'w-8 h-1.5 bg-gray-400 hover:bg-gray-600 rounded-full'"
+      ></button>
+    </div>
+  </section> 
 
   <!-- Penjelasan GBJ -->
-  <section class="relative font-poppins bg-[url('asset/bg-repeat.jpg')] bg-repeat pb-12">
+  <section  id="about-us" class="relative font-poppins bg-[url('asset/bg-repeat.jpg')] bg-repeat pb-12">
     <!-- Grid kiri kanan -->
     <div class="grid md:grid-cols-2">
       <!-- Kiri: Background merah + teks -->
@@ -233,27 +130,21 @@
             <p><strong>PT Global Bestindo Jaya</strong> merupakan perusahaan yang bergerak di bidang penyediaan perangkat keamanan dan sistem penguncian pintu untuk properti dan bangunan.</p> <br>
                 <p>Berawal dari Batam sejak tahun 2015, kami resmi berdiri di Jakarta pada tahun 2018 sebagai bentuk ekspansi dan komitmen kami untuk menjangkau pasar nasional yang lebih luas.</p> <br>
                 <p>Melalui merek <strong>Glatino</strong>, kami menghadirkan solusi produk-produk berkualitas tinggi yang dirancang untuk memenuhi kebutuhan keamanan rumah dan bangunan modern di Indonesia.</p> <br>
-                <!-- <p>Jutaan unit produk Glatino telah digunakan di berbagai proyek perumahan, gedung perkantoran, hingga properti komersial di seluruh Indonesia.</p>         -->
                 <p><strong>Bersama Glatino, hidup lebih aman, nyaman, dan cerdas.</strong></p>
           </p>
         </div>
       </div>
 
-      <!-- Kanan: Gambar file:giant-glass-building.jpg-->
+      <!-- Kanan: Gambar -->
       <div class="bg-gray-100">
         <img src="/asset/index/gambar awal-1.png" alt="Building" class="w-full h-112 object-cover" />
       </div>
     </div>
 
     <!-- 3 Card putih yang overlap -->
-    <div
-      class="max-w-screen-xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6 -mt-12 relative z-10"
-    >
-      <div
-        class="bg-white rounded-xl shadow-lg p-6 flex items-center gap-5 hover:shadow-xl transition"
-      >
+    <div class="max-w-screen-xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6 -mt-12 relative z-10">
+      <div class="bg-white rounded-xl shadow-lg p-6 flex items-center gap-5 hover:shadow-xl transition">
         <div class="text-red-600 text-3xl">
-          <!-- icon -->
           <img src="/asset/index/industry.png" alt="Experience" class="w-10 h-auto" />
         </div>
         <div>
@@ -262,11 +153,8 @@
         </div>
       </div>
 
-      <div
-        class="bg-white rounded-xl shadow-lg p-6 flex items-center gap-5 hover:shadow-xl transition"
-      >
+      <div class="bg-white rounded-xl shadow-lg p-6 flex items-center gap-5 hover:shadow-xl transition">
         <div class="text-red-600 text-3xl">
-          <!-- icon -->
           <img src="/asset/index/professional.png" alt="Professional" class="w-10 h-auto" />
         </div>
         <div>
@@ -275,11 +163,8 @@
         </div>
       </div>
 
-      <div
-        class="bg-white rounded-xl shadow-lg p-6 flex items-center gap-5 hover:shadow-xl transition"
-      >
+      <div class="bg-white rounded-xl shadow-lg p-6 flex items-center gap-5 hover:shadow-xl transition">
         <div class="text-red-600 text-3xl">
-          <!-- icon -->
           <img src="/asset/index/best.png" alt="Quality" class="w-10 h-auto" />
         </div>
         <div>
@@ -292,7 +177,6 @@
   
   <!-- Visi Misi Section -->
   <section class="relative bg-[url('/asset/bg-repeat.jpg')] bg-cover bg-center font-poppins pb-12 text-black">
-
     <div class="relative max-w-screen-xl mx-auto px-6 py-16">
       <!-- VISION -->
       <FadeInOnScroll direction="up">
@@ -313,7 +197,6 @@
           </p>
         </div>
       </FadeInOnScroll>
-      
 
       <!-- MISSION -->
       <FadeInOnScroll direction="up">
@@ -353,24 +236,156 @@
     </div>
   </section>
   
-  <!-- Our Journey Section -->
-  <!-- <section>
-    <div>
-      <OurJourney />
-    </div>
-  </section> -->
-
-  <!-- Our Journey Section -->
-  <!-- <section>
-    <div>
-      <History />
-    </div>
-  </section>  -->
-  
   <!-- Uji Coba Section -->
   <section>
     <div>
       <UjiCoba />
+    </div>
+  </section>
+
+  <!-- Product Range Section -->
+  <section id="product-range" class="relative z-10 bg-[url('asset/bg-repeat.jpg')] bg-repeat py-24 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">PRODUCT RANGE</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Reusable Card -->
+        <NuxtLink 
+          to="/produk/handle-roses"
+          class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
+        >
+          <div class="h-48 flex justify-center items-center overflow-hidden bg-white">
+            <img 
+              src="/asset/product/Door-Lock.png" 
+              alt="Door Lock" 
+              class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Handle Roses</h3>
+            <div class="flex justify-between items-center">
+              <span class="text-red-600 font-medium text-sm inline-flex items-center group-hover:underline">
+                View
+              </span>
+              <span class="text-red-600 transform group-hover:translate-x-1 transition-transform">→</span>
+            </div>
+          </div>
+        </NuxtLink>
+
+        <NuxtLink 
+          to="/produk/patch-fitting"
+          class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
+        >
+          <div class="h-48 flex justify-center items-center overflow-hidden bg-white">
+            <img 
+              src="/asset/product/patch-fitting.png" 
+              alt="Patch Fitting" 
+              class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Patch Fitting</h3>
+            <div class="flex justify-between items-center">
+              <span class="text-red-600 font-medium text-sm inline-flex items-center group-hover:underline">
+                View
+              </span>
+              <span class="text-red-600 transform group-hover:translate-x-1 transition-transform">→</span>
+            </div>
+          </div>
+        </NuxtLink>
+
+        <NuxtLink 
+          to="/produk/sliding-rail"
+          class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
+        >
+          <div class="h-48 flex justify-center items-center overflow-hidden bg-white">
+            <img 
+              src="/asset/product/sliding-rail.png" 
+              alt="Sliding Rail" 
+              class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Sliding Rail</h3>
+            <div class="flex justify-between items-center">
+              <span class="text-red-600 font-medium text-sm inline-flex items-center group-hover:underline">
+                View
+              </span>
+              <span class="text-red-600 transform group-hover:translate-x-1 transition-transform">→</span>
+            </div>
+          </div>
+        </NuxtLink>
+
+        <NuxtLink 
+          to="/produk/alumunium-lock"
+          class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
+        >
+          <div class="h-48 flex justify-center items-center overflow-hidden bg-white">
+            <img 
+              src="/asset/product/alumunium-lock.png" 
+              alt="Aluminium Lock" 
+              class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Aluminium Lock</h3>
+            <div class="flex justify-between items-center">
+              <span class="text-red-600 font-medium text-sm inline-flex items-center group-hover:underline">
+                View
+              </span>
+              <span class="text-red-600 transform group-hover:translate-x-1 transition-transform">→</span>
+            </div>
+          </div>
+        </NuxtLink>
+
+        <NuxtLink 
+          to="/produk/roller-caster"
+          class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
+        >
+          <div class="h-48 flex justify-center items-center overflow-hidden bg-white">
+            <img 
+              src="/asset/product/roller-caster.png" 
+              alt="Roller Caster" 
+              class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Roller Caster</h3>
+            <div class="flex justify-between items-center">
+              <span class="text-red-600 font-medium text-sm inline-flex items-center group-hover:underline">
+                View
+              </span>
+              <span class="text-red-600 transform group-hover:translate-x-1 transition-transform">→</span>
+            </div>
+          </div>
+        </NuxtLink>
+
+        <NuxtLink 
+          to="/produk/mortise-lock"
+          class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
+        >
+          <div class="h-48 flex justify-center items-center overflow-hidden bg-white">
+            <img 
+              src="/asset/product/mortise-lock.png" 
+              alt="Mortise Lock" 
+              class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Mortise Lock</h3>
+            <div class="flex justify-between items-center">
+              <span class="text-red-600 font-medium text-sm inline-flex items-center group-hover:underline">
+                View
+              </span>
+              <span class="text-red-600 transform group-hover:translate-x-1 transition-transform">→</span>
+            </div>
+          </div>
+        </NuxtLink>
+
+      </div>
     </div>
   </section>
 
@@ -422,7 +437,6 @@
           </div>
         </div>
       </FadeInOnScroll>
-      
 
       <!-- Laptop Image -->
       <FadeInOnScroll>
@@ -432,7 +446,6 @@
               class="w-[640px] h-auto -mt-6 md:-mt-10 md:-ml-16 relative z-20 floating" />
         </div>
       </FadeInOnScroll>
-      <!-- -mt-12 = geser ke atas 3rem; md:-mt-16 = 4rem di layar besar -->
     </div>
   </section>
 
@@ -440,13 +453,117 @@
 </template>
 
 <script lang="ts" setup>
+import { ref, computed, onMounted, onUnmounted } from 'vue'
+
+// State untuk carousel
+const currentSlide = ref(0)
+let autoPlayInterval: ReturnType<typeof setInterval> | null = null
+
+// Data banner carousel - GANTI GAMBAR DI SINI
+// Data banner carousel - UPDATE BANNER 3
+interface Banner {
+  bgDesktop: string
+  bgTablet: string
+  bgMobile: string
+  image: string
+  title: string
+  description: string
+  buttonText: string
+  buttonAction: 'about-us' | 'product-range' | 'custom'
+  fullImageOnly?: boolean // Flag untuk menampilkan full image saja
+}
+
+const banners: Banner[] = [
+  {
+    bgDesktop: '/asset/bg-image-dekstop.jpg',
+    bgTablet: '/asset/bg-image-tablet.jpg',
+    bgMobile: '/asset/bg-image-smartphone.jpg',
+    image: '/asset/index/gambar awal-2.png',
+    title: 'PT GLOBAL BESTINDO JAYA',
+    description: 'Menciptakan Aksesoris Aluminium yang Berkualitas',
+    buttonText: 'FIND OUT MORE',
+    buttonAction: 'about-us'
+  },
+  {
+    bgDesktop: '/asset/bg-image-dekstop.jpg',
+    bgTablet: '/asset/bg-image-tablet.jpg',
+    bgMobile: '/asset/bg-image-smartphone.jpg',
+    image: '/asset/index/gambar awal-1.png',
+    title: 'PRODUK BERKUALITAS TINGGI',
+    description: 'Solusi Keamanan Rumah Modern dengan Teknologi Terkini',
+    buttonText: 'LIHAT PRODUK',
+    buttonAction: 'product-range'
+  },
+  {
+    // BANNER 3 - FULL IMAGE ONLY
+    bgDesktop: '/asset/index/banner3-pc.jpeg',
+    bgTablet: '/asset/index/banner3-tablet.jpeg',
+    bgMobile: '/asset/index/banner3-mobile.jpeg',
+    image: '', // Kosongkan karena tidak digunakan
+    title: '', // Kosongkan
+    description: '', // Kosongkan
+    buttonText: '', // Kosongkan
+    buttonAction: 'about-us',
+    fullImageOnly: true // Set true untuk menampilkan full image saja
+  }
+]
+
+// Computed property untuk banner aktif
+const activeBanner = computed<Banner>(() => {
+  return banners[currentSlide.value] || banners[0]!
+})
+
+// Fungsi carousel
+const nextSlide = () => {
+  currentSlide.value = (currentSlide.value + 1) % banners.length
+}
+
+const prevSlide = () => {
+  currentSlide.value = currentSlide.value === 0 ? banners.length - 1 : currentSlide.value - 1
+}
+
+const goToSlide = (index: number) => {
+  currentSlide.value = index
+}
+
+// Auto play - ganti setiap 5 detik
+const startAutoPlay = () => {
+  if (banners.length > 1) {
+    autoPlayInterval = setInterval(nextSlide, 5000)
+  }
+}
+
+const stopAutoPlay = () => {
+  if (autoPlayInterval) {
+    clearInterval(autoPlayInterval)
+  }
+}
+
+onMounted(() => {
+  startAutoPlay()
+})
+
+onUnmounted(() => {
+  stopAutoPlay()
+})
+
+// Scroll function - dinamis sesuai buttonAction
 const scrollToSection = () => {
-  const target = document.getElementById('about-us');
+  const action = activeBanner.value.buttonAction;
+  let targetId = '';
+  
+  if (action === 'about-us') {
+    targetId = 'about-us';
+  } else if (action === 'product-range') {
+    targetId = 'product-range';
+  }
+  
+  const target = document.getElementById(targetId);
   if (!target) return;
 
   const startY = window.scrollY;
   const endY = target.getBoundingClientRect().top + window.scrollY;
-  const duration = 1500; // ms
+  const duration = 1500;
   const startTime = performance.now();
 
   const animateScroll = (currentTime: number) => {
@@ -467,14 +584,13 @@ const scrollToSection = () => {
 };
 
 import LatestNews from '~/components/LatestNews.vue'
-import OurJourney from '~/components/OurJourney.vue'
-import History from '~/components/History.vue'
 import UjiCoba from '~/components/UjiCoba.vue'
 import FooterComponent from '~/components/footer.vue'
 </script>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 .font-poppins {
   font-family: 'Poppins', sans-serif;
 }
@@ -484,7 +600,7 @@ import FooterComponent from '~/components/footer.vue'
     transform: scale(1);
   }
   50% {
-    transform: scale(1.08); /* membesar sedikit */
+    transform: scale(1.08);
   }
 }
 
@@ -497,11 +613,55 @@ import FooterComponent from '~/components/footer.vue'
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-12px); /* naik 12px */
+    transform: translateY(-12px);
   }
 }
 
 .floating {
   animation: float 3s ease-in-out infinite;
 }
-</style>5433543
+
+/* Transition untuk carousel */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.7s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-fade-enter-active {
+  transition: all 0.7s ease;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.5s ease;
+}
+
+.slide-fade-enter-from {
+  transform: translateX(30px);
+  opacity: 0;
+}
+
+.slide-fade-leave-to {
+  transform: translateX(-30px);
+  opacity: 0;
+}
+
+.text-fade-enter-active,
+.text-fade-leave-active {
+  transition: all 0.5s ease;
+}
+
+.text-fade-enter-from {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.text-fade-leave-to {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+</style>

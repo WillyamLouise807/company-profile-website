@@ -22,21 +22,21 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Lever Handle Plate 839</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Handle kunci pintu Glatino GLT 839 dirancang khusus untuk pintu aluminium 9055. Dilengkapi lockcase stainless dan silinder kuningan berkualitas, set ini memberikan keamanan optimal dengan desain yang tetap modern dan fungsional.
+            The Glatino GLT 839 door lock handle is specially designed for 9055 aluminum doors. Equipped with a stainless steel lockcase and a quality brass cylinder, this set provides optimal security with a design that remains modern and functional.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Warna: {{ selectedColorLabel }}</p>
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Material Stainless 8520 (85x20 mm)</p>
-            <p class="capitalize text-sm sm:text-base">Cylinder Kuningan 60 mm + 3 Computer Key</p>
-            <p class="capitalize text-sm sm:text-base">Type 839</p>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>            
+            <p class="capitalize text-sm sm:text-base">LHP 839 1 Set:</p>
+            <p class="capitalize text-sm sm:text-base">- Handle 2pcs</p>            
+            <p class="capitalize text-sm sm:text-base">- Body lock 20 mm 1pcs Stainless</p>
+            <p class="capitalize text-sm sm:text-base">- Cyl 65 mm 1pcs (3 Comp Keys)</p> 
+            <p class="capitalize text-sm sm:text-base">- Color: {{ selectedColorLabel }}</p>          
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available On Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store/glatino-glt-839-keypro-set-kunci-pintu-handle-premium-door-lock-aluminium-1731488448606340846" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
@@ -85,7 +85,7 @@
 
       <!-- Dimensi -->
       <div class="mt-14 border-t border-gray-200 pt-10">
-        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Product Dimensions</h2>
         <div class="flex flex-col items-center">
           <img
             :src="ukuranImage"
@@ -93,7 +93,7 @@
             class="rounded-xl shadow-md max-w-xl w-full bg-white p-4 cursor-zoom-in"
             @click="toggleZoom"
           />
-          <p class="text-sm text-gray-500 mt-4 text-center">*Gambar hanya ilustrasi ukuran secara proporsional</p>
+          <p class="text-sm text-gray-500 mt-4 text-center">*The image is only an illustration of the proportional size.</p>
         </div>
       </div>
 
@@ -152,10 +152,10 @@ import snss from '/asset/product/door-lock/839/sn-ss.png'
 import ukuran from '/asset/product/door-lock/839/ukuran-hitam.png'
 
 const colors = [
-  { name: 'hitam', label: 'Hitam', hex: '#1f1f1f', image: hitam },
-  { name: 'cokelat', label: 'Cokelat', hex: '#8B4513', image: cokelat },
-  { name: 'putih', label: 'Putih', hex: '#eeeeee', image: putih },
-  { name: 'sn-ss', label: 'SN / SS', hex: '#bdc3c7', image: snss }
+  { name: 'hitam', label: 'Black', hex: '#1f1f1f', image: hitam },
+  { name: 'cokelat', label: 'Brown', hex: '#8B4513', image: cokelat },
+  { name: 'putih', label: 'White', hex: '#eeeeee', image: putih },
+  { name: 'sn-ss', label: 'SN', hex: '#bdc3c7', image: snss }
 ]
 
 const selectedColor = ref(colors[0]?.name ?? '')

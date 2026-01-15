@@ -20,24 +20,23 @@
       <div class="flex flex-col-reverse md:grid md:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-black">Kunci Expanda</h1>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-black">Expanda Key</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Kunci pintu expanda dari Glatino dirancang khusus untuk pintu kawat nyamuk dengan sistem penguncian yang praktis dan aman. Menggunakan silinder jantung kuningan dan dilengkapi 3 anak kunci, produk ini cocok digunakan untuk menjaga sirkulasi udara tetap lancar tanpa mengorbankan keamanan.
+            Glatino's Expanda door lock is specifically designed for mosquito screen doors, offering a practical and secure locking system. Featuring a brass heart cylinder and three keys, this product is ideal for maintaining smooth air circulation without compromising security.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Warna: {{ selectedColorLabel }}</p>
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Jenis: Kunci Pintu Expanda / Kawat Nyamuk</p>
-            <p class="capitalize text-sm sm:text-base">Cylinder: Jantung Kuningan</p>
-            <p class="capitalize text-sm sm:text-base">Kelengkapan: 3 Anak Kunci Kuningan</p>
-            <p class="capitalize text-sm sm:text-base">Type Expanda</p>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>
+            <p class="capitalize text-sm sm:text-base">Color: {{ selectedColorLabel }}</p>            
+            <p class="capitalize text-sm sm:text-base">Expanda 1 Set:</p>
+            <p class="capitalize text-sm sm:text-base">- Door Handle 2pcs</p>
+            <p class="capitalize text-sm sm:text-base">- Body Lock</p>
+            <p class="capitalize text-sm sm:text-base">- Comp Key 3pcs</p>
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available On Marketplace:</h2>
             <div class="flex flex-wrap justify-center md:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store/glatino-expanda-set-kunci-pintu-handle-kawat-nyamuk-type-door-loock-premium-1731496278257469166" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
@@ -61,7 +60,7 @@
           </transition>
 
           <!-- Warna -->
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 w-full">
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 w-full">
             <div
               v-for="(color, index) in colors"
               :key="index"
@@ -86,7 +85,7 @@
 
       <!-- Dimensi -->
       <div class="mt-14 border-t border-gray-200 pt-10">
-        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Product Dimensions</h2>
         <div class="flex flex-col items-center">
           <img
             :src="ukuranImage"
@@ -94,7 +93,7 @@
             class="rounded-xl shadow-md max-w-xl w-full bg-gray-100 p-4 cursor-zoom-in"
             @click="toggleZoom"
           />
-          <p class="text-sm text-gray-500 mt-4 text-center">*Gambar hanya ilustrasi ukuran secara proporsional</p>
+          <p class="text-sm text-gray-500 mt-4 text-center">*The image is only an illustration of the proportional size</p>
         </div>
       </div>
 
@@ -149,14 +148,14 @@ import { ref, computed } from 'vue'
 import hitam from '/asset/product/door-lock/Expanda/hitam.png'
 import cokelat from '/asset/product/door-lock/Expanda/cokelat.png'
 import putih from '/asset/product/door-lock/Expanda/putih.png'
-import snss from '/asset/product/door-lock/Expanda/sn-ss.png'
+// import snss from '/asset/product/door-lock/Expanda/sn-ss.png'
 import ukuran from '/asset/product/door-lock/Expanda/ukuran-hitam.png'
 
 const colors = [
-  { name: 'hitam', label: 'Hitam', hex: '#1f1f1f', image: hitam },
-  { name: 'cokelat', label: 'Cokelat', hex: '#8B4513', image: cokelat },
-  { name: 'putih', label: 'Putih', hex: '#eeeeee', image: putih },
-  { name: 'sn-ss', label: 'SN / SS', hex: '#bdc3c7', image: snss }
+  { name: 'hitam', label: 'Black', hex: '#1f1f1f', image: hitam },
+  { name: 'cokelat', label: 'Brown', hex: '#8B4513', image: cokelat },
+  { name: 'putih', label: 'White', hex: '#eeeeee', image: putih },
+  // { name: 'sn-ss', label: 'SN / SS', hex: '#bdc3c7', image: snss }
 ]
 
 const selectedColor = ref(colors[0]?.name ?? '')

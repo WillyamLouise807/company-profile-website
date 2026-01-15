@@ -3,11 +3,11 @@
     <!-- Hero Section Kategori -->
     <section class="relative w-full h-screen overflow-hidden font-poppins">
       <!-- Background -->
-      <!-- <div
+      <div
         class="absolute inset-0 bg-cover bg-center bg-no-repeat z-[-3]"
         :style="{ backgroundImage: `url(${bgImage})` }"
-      ></div> -->
-      <div class="absolute inset-0 bg-white/70 backdrop-blur-sm z-[-2]"></div>
+      ></div>
+      <div class="absolute inset-0 bg-white/40 backdrop-blur-sm z-[-2]"></div>
       <div class="absolute bottom-0 left-0 right-0 h-48 z-[-1] bg-gradient-to-b from-transparent to-white"></div>
 
       <!-- Content Container -->
@@ -66,49 +66,49 @@
 </template>
 
 <script lang="ts" setup>
-import bgImage from '@/assets/product/door-lock/door-lock-banner.jpg';
+import bgImage from '/asset/product/door-lock/lever-handle-plate-banner.png';
 import FooterComponent from '@/components/footer.vue'
 
 const doorLockProducts = [
   {
     id: 1,
     name: "LHP-839",
-    description: "KeyPro Set Kunci Pintu Handle Premium Door Lock Aluminium",
+    description: "",
     slug: "839",
     image: "/asset/product/door-lock/839.png"
   },
   {
     id: 2,
     name: "LHP-939",
-    description: "Luxlock Full Set Kunci Pintu Material Aluminium Anti Karat",
+    description: "",
     slug: "939",
     image: "/asset/product/door-lock/939.png"
   },
   {
     id: 3,
     name: "LHP-989",
-    description: "LockExpert Set Kunci Pintu Premium Material Aluminium Anti Karat",
+    description: "",
     slug: "989",
     image: "/asset/product/door-lock/989.png"
   },
   {
     id: 5,
     name: "EXP-GLT",
-    description: "Kunci Expanda Handle Plate Material Aluminium Anti Karat",
+    description: "",
     slug: "expanda",
     image: "/asset/product/door-lock/expanda.png"
   },
   {
     id: 5,
     name: "KM-802",
-    description: "Kunci kamar Mandi Handle Plate Material Aluminium Anti Karat",
+    description: "",
     slug: "802",
     image: "/asset/product/door-lock/802.png"
   },
   {
     id: 6,
     name: "KM-902",
-    description: "Kunci kamar Mandi Handle Plate Material Stainless Steel Anti Karat",
+    description: "",
     slug: "902",
     image: "/asset/product/door-lock/902.png"
   }

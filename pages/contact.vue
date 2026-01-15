@@ -165,7 +165,16 @@
               </div>
               <div>
                 <h4 class="text-lg font-semibold text-red-600">Call Us</h4>
-                <p>+62 213 8764 362</p>
+                <p class="mt-2">
+                  <strong>Phone:</strong>
+                  <a
+                    href="https://wa.me/6288809873224?text=Halo%20saya%20ingin%20bertanya"
+                    target="_blank"
+                    class=" hover:underline"
+                  >
+                    +62 213 8764 362
+                  </a>
+                </p>
               </div>
             </div>
             <!-- Email -->

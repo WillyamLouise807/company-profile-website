@@ -20,24 +20,20 @@
       <div class="flex flex-col-reverse md:grid md:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Kunci Kamar Mandi 902</h1>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Bathroom Door Lock 902</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Kunci pintu kamar mandi Glatino hadir dengan material stainless steel yang tahan karat, menjadikannya pilihan ideal untuk area lembap seperti kamar mandi. Sudah lengkap dalam satu set, produk ini hanya perlu dirakit dan langsung siap dipasang.
+            The Glatino bathroom door lock is made of rust-resistant stainless steel, making it an ideal choice for damp areas like bathrooms. It comes complete as a single set, requiring only assembly and is ready to install.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Warna: {{ selectedColorLabel }}</p>
-            <p class="capitalize text-sm sm:text-base">Ukuran: {{ selectedSize }}</p>
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Material: Stainless Steel</p>
-            <p class="capitalize text-sm sm:text-base">Kelengkapan: 1 Set Perlu Dirakit & Siap Pasang</p>
-            <p class="capitalize text-sm sm:text-base">Type 902</p>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>
+            <p class="capitalize text-sm sm:text-base">Color: {{ selectedColorLabel }}</p>
+            <p class="capitalize text-sm sm:text-base">Size: {{ selectedSize }}</p>                        
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available on Marketplace:</h2>
             <div class="flex flex-wrap justify-center md:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
@@ -103,7 +99,7 @@
 
       <!-- Dimensi -->
       <div class="mt-14 border-t border-gray-700 pt-10">
-        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Product Dimensions</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div
             v-for="(item, index) in ukuranImages"
@@ -116,7 +112,7 @@
               class="rounded-xl shadow-md max-w-md w-full bg-white p-4 cursor-zoom-in"
               @click="zoomImage(item.src)"
             />
-            <p class="text-sm text-gray-400 mt-2 text-center">*Ukuran {{ item.label }}</p>
+            <p class="text-sm text-gray-400 mt-2 text-center">*Size {{ item.label }}</p>
           </div>
         </div>
       </div>
@@ -185,19 +181,19 @@ import ukuran30 from '/asset/product/door-lock/902/ukuran-hitam.png'
 const colors = [
   {
     name: 'hitam',
-    label: 'Hitam',
+    label: 'Black',
     hex: '#1f1f1f',
     images: { '25': hitam25, '30': hitam30 }
   },
   {
     name: 'beige',
-    label: 'Beige',
+    label: 'Brown',
     hex: '#8B4513',
     images: { '25': beige25, '30': beige30 }
   },
   {
     name: 'putih',
-    label: 'Putih',
+    label: 'White',
     hex: '#eeeeee',
     images: { '25': putih25, '30': putih30 }
   }

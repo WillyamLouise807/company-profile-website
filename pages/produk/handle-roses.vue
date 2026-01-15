@@ -3,11 +3,11 @@
     <!-- Hero Section Kategori -->
     <section class="relative w-full h-screen overflow-hidden font-poppins">
       <!-- Background -->
-      <!-- <div
+      <div
         class="absolute inset-0 bg-cover bg-center bg-no-repeat z-[-3]"
         :style="{ backgroundImage: `url(${bgImage})` }"
-      ></div> -->
-      <div class="absolute inset-0 bg-white/70 backdrop-blur-sm z-[-2]"></div>
+      ></div>
+      <div class="absolute inset-0 bg-white/40 backdrop-blur-sm z-[-2]"></div>
       <div class="absolute bottom-0 left-0 right-0 h-48 z-[-1] bg-gradient-to-b from-transparent to-white"></div>
 
       <!-- Content Container -->
@@ -66,35 +66,35 @@
 </template>
 
 <script lang="ts" setup>
-import bgImage from '@/assets/product/door-lock/door-lock-banner.jpg';
+import bgImage from '/asset/product/door-lock/door-lock-banner.png';
 import FooterComponent from '@/components/footer.vue'
 
 const doorLockProducts = [
   {
     id: 1,
     name: "HR-201",
-    description: "Full Set Kunci Pintu Hight Quality Material Aluminium",
+    description: "",
     slug: "201",
     image: "/asset/product/door-lock/201.png"
   },
   {
     id: 2,
     name: "HR-202",
-    description: "Lock Full Set Type Bahan Aluminium Kunci Pintu Set Handle Lengkap",
+    description: "",
     slug: "202",
     image: "/asset/product/door-lock/202.png"
   },
   {
     id: 3,
     name: "HR-820",
-    description: "Lock Full Set Case Kunci Pintu Set Premium Stainless Steel",
+    description: "",
     slug: "820",
     image: "/asset/product/door-lock/820.png"
   },
     {
     id: 4,
     name: "Handle Only 201 SS",
-    description: "Kepala Handle SS 201/ Tarikan Tanam Pintu Geser Sliding Door Material Aluminium",
+    description: "",
     slug: "handle-only",
     image: "/asset/product/door-lock/handle-only.png"
   },

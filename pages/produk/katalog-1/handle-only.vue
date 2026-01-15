@@ -22,22 +22,21 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-black">Handle Only 201 - SS</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Tarikan tanam Glatino ini merupakan solusi praktis untuk pintu dorong, lemari, atau laci dengan desain simpel dan material stainless yang kuat. Cocok untuk melengkapi tampilan furniture rumah agar lebih rapi dan fungsional.
+            This Glatino recessed pull is a practical solution for sliding doors, cabinets, or drawers, featuring a simple design and strong stainless steel material. It's perfect for enhancing the look of your home's furnishings, making them more presentable and functional.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Warna: {{ selectedColorLabel }}</p>
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Material: Stainless Steel</p>
-            <p class="capitalize text-sm sm:text-base">Jenis: Tarikan Tanam untuk Pintu Sliding/Furniture</p>
-            <p class="capitalize text-sm sm:text-base">Type 201 (Handle Only)</p>
-            <p class="capitalize text-sm sm:text-base">Kelengkapan: Termasuk Baut/Skrup</p>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>                                             
+            <p class="capitalize text-sm sm:text-base">GLT 201 (No Body):</p>            
+            <p class="capitalize text-sm sm:text-base">- Handle 2pcs</p>
+            <p class="capitalize text-sm sm:text-base">- Cover key hole 2 set</p>
+            <p class="capitalize text-sm sm:text-base">- Material Stainless Steel 201</p>
+            <!-- <p class="capitalize text-sm sm:text-base">Warna: {{ selectedColorLabel }}</p> -->
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available On Marketplace:</h2>
             <div class="flex flex-wrap justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store/glatino-premium-handle-kepala-ss-201-tarikan-tanam-pintu-geser-sliding-door-premium-material-aluminium-1730967235252553454?extParam=whid%3D18402450%26src%3Dshop&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
@@ -86,7 +85,7 @@
 
       <!-- Dimensi -->
       <div class="mt-14 border-t border-gray-300 pt-10">
-        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left text-black">Dimensi Produk</h2>
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left text-black">Product Dimensions</h2>
         <div class="flex flex-col items-center">
           <img
             :src="ukuranImage"
@@ -94,7 +93,7 @@
             class="rounded-xl shadow-md max-w-xl w-full bg-gray-100 p-4 cursor-zoom-in"
             @click="toggleZoom"
           />
-          <p class="text-sm text-gray-500 mt-4 text-center">*Gambar hanya ilustrasi ukuran secara proporsional</p>
+          <p class="text-sm text-gray-500 mt-4 text-center">*The image is only an illustration of the proportional size.</p>
         </div>
       </div>
 
@@ -150,7 +149,7 @@ import snss from '/asset/product/door-lock/handle-only/sn-ss.png'
 import ukuran from '/asset/product/door-lock/handle-only/ukuran-hitam.png'
 
 const colors = [
-  { name: 'sn-ss', label: 'SN / SS', hex: '#bdc3c7', image: snss }
+  { name: 'sn-ss', label: 'SS', hex: '#bdc3c7', image: snss }
 ]
 
 const selectedColor = ref(colors[0]?.name ?? '')

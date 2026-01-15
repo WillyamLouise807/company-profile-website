@@ -20,25 +20,20 @@
       <div class="flex flex-col-reverse md:grid md:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Kunci Kamar Mandi 802</h1>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Bathroom Door Lock 802</h1>
           <p class="text-gray-600 text-base sm:text-lg mb-6 leading-relaxed">
-            Kunci pintu kamar mandi dari Glatino hadir dengan model knob yang simpel dan praktis. Sudah lengkap dalam satu set, produk ini siap langsung dipasang untuk memberikan kenyamanan dan privasi di area kamar mandi Anda.
+            Glatino's bathroom door lock features a simple and practical knob design. Complete as a set, this product is ready to install immediately, providing comfort and privacy in your bathroom.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Warna: {{ selectedColorLabel }}</p>
-            <p class="capitalize text-sm sm:text-base">Ukuran: {{ selectedSize }}</p>
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Jenis: Kunci Pintu Kamar Mandi</p>
-            <p class="capitalize text-sm sm:text-base">Kelengkapan: 1 Set Siap Pasang</p>
-            <p class="capitalize text-sm sm:text-base">Type 802</p>
-            <p class="capitalize text-sm sm:text-base">Model: Knob (Putar)</p>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>
+            <p class="capitalize text-sm sm:text-base">Color: {{ selectedColorLabel }}</p>
+            <p class="capitalize text-sm sm:text-base">Size: {{ selectedSize }}</p>                        
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available on Marketplace:</h2>
             <div class="flex flex-wrap justify-center md:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store/glatino-km-802-lockstyle-set-kunci-pintu-untuk-kamar-mandi-bahan-aluminium-anti-karat-1731490150199035630" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
@@ -96,7 +91,7 @@
                   : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-100'
               ]"
             >
-              Ukuran {{ size }}
+              Size {{ size }}
             </button>
           </div>
         </div>
@@ -104,7 +99,7 @@
 
       <!-- Dimensi -->
       <div class="mt-14 border-t border-gray-200 pt-10">
-        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Product Dimensions</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div
             v-for="(item, index) in ukuranImages"
@@ -117,7 +112,7 @@
               class="rounded-xl shadow-md max-w-md w-full bg-gray-100 p-4 cursor-zoom-in"
               @click="zoomImage(item.src)"
             />
-            <p class="text-sm text-gray-500 mt-2 text-center">*Ukuran {{ item.label }}</p>
+            <p class="text-sm text-gray-500 mt-2 text-center">*Size {{ item.label }}</p>
           </div>
         </div>
       </div>
@@ -183,9 +178,9 @@ import ukuran25 from '/asset/product/door-lock/802/ukuran-hitam.png'
 import ukuran30 from '/asset/product/door-lock/802/ukuran-hitam.png'
 
 const colors = [
-  { name: 'hitam', label: 'Hitam', hex: '#1f1f1f', images: { '25': hitam25, '30': hitam30 } },
-  { name: 'beige', label: 'Cokelat', hex: '#8B4513', images: { '25': beige25, '30': beige30 } },
-  { name: 'putih', label: 'Putih', hex: '#eeeeee', images: { '25': putih25, '30': putih30 } }
+  { name: 'hitam', label: 'Black', hex: '#1f1f1f', images: { '25': hitam25, '30': hitam30 } },
+  { name: 'beige', label: 'Brown', hex: '#8B4513', images: { '25': beige25, '30': beige30 } },
+  { name: 'putih', label: 'White', hex: '#eeeeee', images: { '25': putih25, '30': putih30 } }
 ]
 
 const selectedColor = ref(colors[0]?.name ?? '')

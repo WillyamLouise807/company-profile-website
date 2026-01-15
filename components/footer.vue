@@ -55,7 +55,16 @@
       <div>
         <h3 class="text-lg font-semibold text-red-600 mb-4">Contact Us</h3>
         <p>Jurumudi Batuceper Km.19 No.37<br />Kota Tangerang, Banten 15000<br />Indonesia</p>
-        <p class="mt-2"><strong>Phone:</strong> +62 213 8764 362</p>
+        <p class="mt-2">
+          <strong>Phone:</strong>
+          <a
+            href="https://wa.me/6288809873224?text=Halo%20saya%20ingin%20bertanya"
+            target="_blank"
+            class=" hover:underline"
+          >
+            +62 213 8764 362
+          </a>
+        </p>
         <p><strong>Email:</strong> office.globalbestindojaya@gmail.com</p>
       </div>
     </div>
