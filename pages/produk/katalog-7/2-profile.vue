@@ -22,21 +22,19 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Engsel 2 Profile</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            ngsel Casement dari Glatino hadir dengan material 2 profile berkualitas yang kuat, tahan lama, dan mendukung fungsi buka-tutup jendela atau pintu dengan lebih halus. Tersedia dalam berbagai ukuran mulai dari 8 inch hingga 24 inch, cocok untuk berbagai kebutuhan konstruksi dan desain bangunan Anda.
+            The Glatino 2-Profile Casement Hinge is the ideal solution for your aluminum or wooden doors and windows. With its robust design and high-quality materials, this hinge ensures optimal performance and long-lasting durability.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Tipe: Engsel Casement</p>
-            <p class="capitalize text-sm sm:text-base">Material: 2 Profile</p>
-            <p class="capitalize text-sm sm:text-base">Ukuran: 8” - 24”</p>
-            <p class="capitalize text-sm sm:text-base">Penggunaan: Pintu & Jendela Aluminium / Kayu</p>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>
+            <p class="capitalize text-sm sm:text-base">Code: GAA05 2 Profile</p>            
+            <p class="capitalize text-sm sm:text-base">Material: Iron</p>
+            <p class="capitalize text-sm sm:text-base">Size: 8” - 24”</p>            
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available on Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
@@ -59,7 +57,7 @@
       </div>
 
       <!-- Dimensi -->
-      <div class="mt-14 border-t border-gray-700 pt-24">
+      <!-- <div class="mt-14 border-t border-gray-700 pt-24">
         <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
         <div class="flex flex-col items-center">
           <img
@@ -70,7 +68,7 @@
           />
           <p class="text-sm text-gray-500 mt-4 text-center">*Gambar hanya ilustrasi ukuran secara proporsional</p>
         </div>
-      </div>
+      </div> -->
 
       <!-- Zoom Modal -->
       <div

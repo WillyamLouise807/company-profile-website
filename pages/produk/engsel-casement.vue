@@ -7,21 +7,21 @@
         class="absolute inset-0 bg-cover bg-center bg-no-repeat z-[-3]"
         :style="{ backgroundImage: `url(${bgImage})` }"
       ></div>
-      <div class="absolute inset-0 bg-white/70 backdrop-blur-sm z-[-2]"></div>
+      <div class="absolute inset-0 bg-white/40 backdrop-blur-sm z-[-2]"></div>
       <div class="absolute bottom-0 left-0 right-0 h-48 z-[-1] bg-gradient-to-b from-transparent to-white"></div>
 
       <!-- Content Container -->
       <div class="container mx-auto h-full px-4 relative z-10 flex flex-col">
         <!-- Breadcrumb -->
         <div class="text-red-700 text-sm opacity-90 pt-20 sm:pt-28 md:pt-36">
-          <NuxtLink to="/product" class="hover:underline text-red-600 font-medium">Product</NuxtLink> / <span class="text-gray-600">Engsel Casement</span>
+          <NuxtLink to="/product" class="hover:underline text-red-600 font-medium">Product</NuxtLink> / <span class="text-gray-100">Engsel Casement</span>
         </div>
 
         <!-- Hero Text Centered -->
         <div class="flex-grow flex items-center justify-center">
           <div class="text-center max-w-2xl mx-auto text-red-800 transform -translate-y-6">
             <h1 class="text-3xl sm:text-4xl font-bold leading-relaxed mb-4">Engsel Casement Series</h1>
-            <p class="text-base sm:text-lg text-gray-700">
+            <p class="text-base sm:text-lg text-gray-100">
               Engsel berkualitas tinggi untuk jendela dan pintu casement, dengan daya tahan maksimal dan gerakan yang stabil.
             </p>
           </div>
@@ -68,28 +68,28 @@
 </template>
 
 <script lang="ts" setup>
-import bgImage from '@/assets/product/engsel-casement/engsel-casement-banner.png';
+import bgImage from '/asset/product/engsel-casement/engsel-casement-banner.png';
 import FooterComponent from '@/components/footer.vue';
 
 const floorHingeProduts = [
 {
   id: 1,
   name: "Nylon",
-  description: "Set Engsel lantai Material Aluminium Anti Karat",
+  description: "",
   slug: "nylon",
   image: "/asset/product/engsel-casement/nylon.png"
 },
 {
   id: 2,
   name: "Kuningan",
-  description: "Set Engsel lantai Material Aluminium Anti Karat",
+  description: "",
   slug: "kuningan",
   image: "/asset/product/engsel-casement/kuningan.png"
 },
 {
   id: 3,
   name: "2 Profile",
-  description: "Set Engsel lantai Material Aluminium Anti Karat",
+  description: "",
   slug: "2-profile",
   image: "/asset/product/engsel-casement/2-profile.png"
 }

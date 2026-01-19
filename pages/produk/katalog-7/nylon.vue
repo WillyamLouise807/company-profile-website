@@ -22,21 +22,19 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Engsel Nylon</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Engsel Casement Glatino berbahan nylon dirancang untuk memberikan kemudahan dalam membuka dan menutup jendela atau pintu dengan lancar dan aman. Tersedia dalam ukuran 8 inch hingga 24 inch, cocok digunakan untuk berbagai jenis kusen dan desain interior.
+            The Glatino Nylon Casement Hinge is designed to provide smooth operation and durability for your aluminum or wooden doors and windows. Made from high-quality nylon material, this hinge offers excellent resistance to wear and tear, ensuring long-lasting performance.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Tipe: Engsel Casement</p>
-            <p class="capitalize text-sm sm:text-base">Material: Nylon</p>
-            <p class="capitalize text-sm sm:text-base">Ukuran: 8” - 24”</p>
-            <p class="capitalize text-sm sm:text-base">Penggunaan: Jendela dan Pintu Aluminium / Kayu</p>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>
+            <p class="capitalize text-sm sm:text-base">Code: GAA05</p>            
+            <p class="capitalize text-sm sm:text-base">Material: Nylon Iron Slider Stainless Steel 430</p>
+            <p class="capitalize text-sm sm:text-base">Size: 8” - 24”</p> 
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available on Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
@@ -60,7 +58,7 @@
 
       <!-- Dimensi -->
       <div class="mt-14 border-t border-gray-700 nylon">
-        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Product Dimensions</h2>
         <div class="flex flex-col items-center">
           <img
             src="/asset/product/engsel-casement/nylon/ukuran-hitam.png"
@@ -68,7 +66,7 @@
             class="rounded-xl shadow-md max-w-xl w-full bg-white p-4 cursor-zoom-in"
             @click="toggleZoom"
           />
-          <p class="text-sm text-gray-500 mt-4 text-center">*Gambar hanya ilustrasi ukuran secara proporsional</p>
+          <p class="text-sm text-gray-500 mt-4 text-center">*This image is only an illustration of the product dimensions</p>
         </div>
       </div>
 
