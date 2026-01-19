@@ -22,19 +22,18 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Patch Fitting PT-40 Angle</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Patch Fitting Glatino merupakan solusi praktis dan kokoh untuk sistem pemasangan kaca pada pintu, jendela, atau partisi. Dengan berbagai tipe yang tersedia, patch fitting ini dirancang untuk memberikan kekuatan, kestabilan, dan tampilan estetis pada instalasi kaca.
+            Glatino patch fittings are a practical and robust solution for installing glass in doors, windows, or partitions. Available in various styles, these patch fittings are designed to provide strength, stability, and aesthetic appeal to glass installations.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Jenis: Patch Fitting</p>
-            <p class="capitalize text-sm sm:text-base">Tipe: PT-40 (Angle)</p>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>
+            <p class="capitalize text-sm sm:text-base">Door Thicknness: 8-12 mm</p>
+            <p class="capitalize text-sm sm:text-base">Material: Stainless Steel SUS 304</p>
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available in Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
@@ -58,7 +57,7 @@
 
       <!-- Dimensi -->
       <div class="mt-14 border-t border-gray-700 pt-40">
-        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Product Dimensions</h2>
         <div class="flex flex-col items-center">
           <img
             src="/asset/product/patch-fitting/pt-40/ukuran-hitam.png"
@@ -66,7 +65,7 @@
             class="rounded-xl shadow-md max-w-xl w-full bg-white p-4 cursor-zoom-in"
             @click="toggleZoom"
           />
-          <p class="text-sm text-gray-500 mt-4 text-center">*Gambar hanya ilustrasi ukuran secara proporsional</p>
+          <p class="text-sm text-gray-500 mt-4 text-center">*This image is only an illustration of the product dimensions</p>
         </div>
       </div>
 

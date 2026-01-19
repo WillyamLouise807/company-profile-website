@@ -26,12 +26,12 @@
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>
-            <p class="capitalize text-sm sm:text-base">Color: {{ selectedColorLabel }}</p>            
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>                    
             <p class="capitalize text-sm sm:text-base">Expanda 1 Set:</p>
             <p class="capitalize text-sm sm:text-base">- Door Handle 2pcs</p>
             <p class="capitalize text-sm sm:text-base">- Body Lock</p>
             <p class="capitalize text-sm sm:text-base">- Comp Key 3pcs</p>
+            <p class="capitalize text-sm sm:text-base">- Color: {{ selectedColorLabel }}</p>
           </div>
 
           <!-- Marketplace -->
