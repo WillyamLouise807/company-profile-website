@@ -22,22 +22,25 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Pull Handle H</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Handle Pintu Stainless Glatino berbentuk H dengan pipa bulat dirancang untuk memberi kesan kokoh dan elegan. Cocok dipasang pada pintu kaca, kayu, hingga aluminium, menjadikannya pilihan serbaguna untuk hunian atau ruang komersial modern.
+            The Glatino H-shaped stainless steel door handle with rounded pipes is designed for a sturdy and elegant look. Suitable for glass, wood, and aluminum doors, it makes a versatile choice for modern residential or commercial spaces.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Warna: {{ selectedColorLabel }}</p>
-            <p class="capitalize text-sm sm:text-base">Ukuran: {{ sizeLabels[selectedSize] }}</p>
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Material: Aluminium Finishing Stainless</p>
-            <p class="capitalize text-sm sm:text-base">Model: Pull Handle Type B</p>
-            <p class="capitalize text-sm sm:text-base">Kelengkapan: 1 Pasang Handle, Baut Panjang, Kunci L</p>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description</h2>
+            <p class="capitalize text-sm sm:text-base">Color: {{ selectedColorLabel }}</p>
+            <p class="capitalize text-sm sm:text-base">Size:</p>
+            <p class="capitalize text-sm sm:text-base">- PHH-3045: 25 × 38 × 300cc × 450cc</p>
+            <p class="capitalize text-sm sm:text-base">- PHH-3550: 25 × 38 × 350cc × 500cc</p>
+            <p class="capitalize text-sm sm:text-base">- PHH-4060: 25 × 38 × 400cc × 600cc</p>
+            <p class="capitalize text-sm sm:text-base">- PHH-6080: 25 × 38 × 600cc × 800cc</p>
+            <p class="capitalize text-sm sm:text-base">- PHH-80100: 25 × 38 × 800cc × 1000cc</p>
+            <p class="capitalize text-sm sm:text-base">- PHH-100120: 25 × 38 × 1000cc × 1200cc</p>    
+            <!-- <p class="capitalize text-sm sm:text-base">Size: {{ sizeLabels[selectedSize] }}</p>           -->
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available on Marketplace:</h2>
             <div class="flex flex-wrap justify-center md:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store/glatino-handle-h-pipa-material-stainlees-anti-karat-termurah-dan-aman-untuk-pintu-kaca-1730975638225323758?extParam=whid%3D18402450%26src%3Dshop&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
@@ -80,7 +83,7 @@
           </div>
 
           <!-- Ukuran -->
-          <div class="flex flex-wrap gap-4 mt-4 justify-center">
+          <!-- <div class="flex flex-wrap gap-4 mt-4 justify-center">
             <button
               v-for="size in sizes"
               :key="size"
@@ -94,13 +97,13 @@
             >
               {{ sizeLabels[size] }}
             </button>
-          </div>
+          </div> -->
         </div>
       </div>
 
       <!-- Dimensi -->
       <div class="mt-14 border-t border-gray-700 pt-10">
-        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Product Dimensions</h2>
         <div class="flex justify-center">
           <img
             src="/asset/product/pull-handle/handle-b/ukuran-hitam.png"
@@ -171,7 +174,7 @@ import sn325 from '/asset/product/pull-handle/handle-h/sn-ss-325.png'
 const colors = [
   {
     name: 'hitam',
-    label: 'Hitam',
+    label: 'Black',
     hex: '#1f1f1f',
     images: {
       '321': hitam321,
@@ -183,7 +186,7 @@ const colors = [
   },
   {
     name: 'sn',
-    label: 'SN/SS',
+    label: 'SSS',
     hex: '#cccccc',
     images: {
       '321': sn321,
@@ -235,7 +238,7 @@ const katalogLinks = [
   { slug: 'handle-p', name: 'Pull Handle P', image: '/asset/product/pull-handle/handle-p.png'},
   { slug: 'handle-d', name: 'Pull Handle D', image: '/asset/product/pull-handle/handle-d.png'},
   { slug: 'handle-s', name: 'Pull Handle S', image: '/asset/product/pull-handle/handle-s.png'},
-  { slug: 'handle-b', name: 'Pull Handle B', image: '/asset/product/pull-handle/handle-b.png'},
+  { slug: 'handle-b', name: 'Pull Handle Bulat', image: '/asset/product/pull-handle/handle-b.png'},
   // { slug: 'handle-h', name: 'Pull Handle H', image: '/asset/product/pull-handle/handle-h.png'},
   { slug: 'handle-21', name: 'Pull Handle 21 SS', image: '/asset/product/pull-handle/handle-21.png'},
 ];

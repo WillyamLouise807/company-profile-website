@@ -7,7 +7,7 @@
         class="absolute inset-0 bg-cover bg-center bg-no-repeat z-[-3]"
         :style="{ backgroundImage: `url(${bgImage})` }"
       ></div>
-      <div class="absolute inset-0 bg-white/70 backdrop-blur-sm z-[-2]"></div>
+      <div class="absolute inset-0 bg-white/40 backdrop-blur-sm z-[-2]"></div>
       <div class="absolute bottom-0 left-0 right-0 h-48 z-[-1] bg-gradient-to-b from-transparent to-white"></div>
 
       <!-- Content Container -->
@@ -69,56 +69,56 @@
 
 <script lang="ts" setup>
 // ✅ Ganti nama array jadi relevan
-import bgImage from '@/assets/product/pull-handle/pull-handle-banner.png';
+import bgImage from '/asset/product/pull-handle/pull-handle-banner.png';
 import FooterComponent from '@/components/footer.vue'
 
 const pullHandleProducts = [
 {
   id: 1,
   name: "Pull Handle C",
-  description: "Handle tarik model C bahan aluminium tahan karat",
+  description: "",
   slug: "handle-c",
   image: "/asset/product/pull-handle/handle-c.png"
 },
 {
   id: 2,
   name: "Pull Handle Pisang",
-  description: "Handle tarik model Pisang bahan aluminium berkualitas",
+  description: "",
   slug: "handle-p",
   image: "/asset/product/pull-handle/handle-p.png"
 },
 {
   id: 3,
   name: "Pull Handle D",
-  description: "Handle tarik model D bahan aluminium berkualitas",
+  description: "",
   slug: "handle-d",
   image: "/asset/product/pull-handle/handle-d.png"
 },
 {
   id: 4,
   name: "Pull Handle Shower",
-  description: "Handle tarik model S bahan aluminium berkualitas",
+  description: "",
   slug: "handle-s",
   image: "/asset/product/pull-handle/handle-s.png"
 },
 {
   id: 5,
   name: "Pull Handle H Bulat",
-  description: "Handle tarik model B bahan aluminium berkualitas",
+  description: "",
   slug: "handle-b",
   image: "/asset/product/pull-handle/handle-b.png"
 },
 {
   id: 6,
   name: "Pull Handle H Hollow",
-  description: "Handle tarik model H bahan aluminium berkualitas",
+  description: "",
   slug: "handle-h",
   image: "/asset/product/pull-handle/handle-h.png"
 },
 {
   id: 7,
   name: "Pull Handle 21 SS",
-  description: "Handle tarik model 21 bahan aluminium berkualitas",
+  description: "",
   slug: "handle-21",
   image: "/asset/product/pull-handle/handle-21.png"
 }

@@ -22,22 +22,25 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Pull Handle Bulat</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Pull Handle Glatino Model B dirancang dengan bentuk ergonomis dan material aluminium finishing stainless. Handle ini cocok digunakan untuk berbagai jenis pintu kaca, aluminium maupun kayu dengan tampilan elegan dan kekuatan maksimal.
+            The Glatino Model B Pull Handle is ergonomically designed and made of stainless steel. This handle is suitable for various types of glass, aluminum, and wood doors, offering an elegant appearance and maximum strength.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Warna: {{ selectedColorLabel }}</p>
-            <p class="capitalize text-sm sm:text-base">Ukuran: {{ sizeLabels[selectedSize] }}</p>
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Material: Aluminium Finishing Stainless</p>
-            <p class="capitalize text-sm sm:text-base">Model: Pull Handle Type B</p>
-            <p class="capitalize text-sm sm:text-base">Kelengkapan: 1 Pasang Handle, Baut Panjang, Kunci L</p>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>
+            <p class="capitalize text-sm sm:text-base">Color: {{ selectedColorLabel }}</p>
+            <p class="capitalize text-sm sm:text-base">Size:</p>                
+            <p class="capitalize text-sm sm:text-base">- PHB-3245: 30 × 300cc × 450cc</p>
+            <p class="capitalize text-sm sm:text-base">- PHB-3250: 32 × 350cc × 500cc</p>
+            <p class="capitalize text-sm sm:text-base">- PHB-3260: 32 × 400cc × 600cc</p>
+            <p class="capitalize text-sm sm:text-base">- PHB-3280: 32 × 600cc × 800cc</p>
+            <p class="capitalize text-sm sm:text-base">- PHB-32100: 32 × 800cc × 1000cc</p>
+            <p class="capitalize text-sm sm:text-base">- PHB-32120: 32 × 1000cc × 1200cc</p>                       
+            <!-- <p class="capitalize text-sm sm:text-base">Size: {{ sizeLabels[selectedSize] }}</p>         -->
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available on Marketplace:</h2>
             <div class="flex flex-wrap justify-center md:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
@@ -80,7 +83,7 @@
           </div>
 
           <!-- Ukuran -->
-          <div class="grid grid-cols-3 w-full gap-4 mt-4 justify-start">
+          <!-- <div class="grid grid-cols-3 w-full gap-4 mt-4 justify-start">
             <button
               v-for="size in sizes"
               :key="size"
@@ -94,13 +97,13 @@
             >
               {{ sizeLabels[size] }}
             </button>
-          </div>
+          </div> -->
         </div>
       </div>
 
       <!-- Dimensi -->
       <div class="mt-14 border-t border-gray-700 pt-10">
-        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Product Dimensions</h2>
         <div class="flex justify-center">
           <img
             src="/asset/product/pull-handle/handle-b/ukuran-hitam.png"
@@ -180,7 +183,7 @@ import sn326 from '/asset/product/pull-handle/handle-b/sn-ss-326.png'
 const colors = [
   {
     name: 'hitam',
-    label: 'Hitam',
+    label: 'Black',
     hex: '#1f1f1f',
     images: {
       '321': hitam321,
@@ -193,7 +196,7 @@ const colors = [
   },
   {
     name: 'putih',
-    label: 'Putih',
+    label: 'White',
     hex: '#eeeeee',
     images: {
       '321': putih321,
@@ -206,7 +209,7 @@ const colors = [
   },
   {
     name: 'sn',
-    label: 'SN/SS',
+    label: 'PSS+SSS',
     hex: '#cccccc',
     images: {
       '321': sn321,

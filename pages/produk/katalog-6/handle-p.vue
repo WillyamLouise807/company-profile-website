@@ -22,22 +22,21 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Pull Handle Pisang</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Pull Handle Glatino Model C hadir dengan desain ergonomis dan finishing stainless yang elegan. Cocok digunakan pada pintu aluminium, kaca, maupun kayu, handle ini menawarkan kemudahan penggunaan serta tampilan yang rapi dan modern.
+            The Glatino Banana Pull Handle is an aluminum pull handle with a stainless steel finish, ergonomically designed for comfortable use on a variety of door types. Available in several colors and sizes to meet your needs.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Warna: {{ selectedColorLabel }}</p>
-            <p class="capitalize text-sm sm:text-base">Ukuran: {{ sizeLabels[selectedSize] }}</p>
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Material: Aluminium Finishing Stainless</p>
-            <p class="capitalize text-sm sm:text-base">Model: Pull Handle Type P</p>
-            <p class="capitalize text-sm sm:text-base">Kelengkapan: 1 Pasang Handle, Baut Panjang, Kunci L</p>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>
+            <p class="capitalize text-sm sm:text-base">Color: {{ selectedColorLabel }}</p>            
+            <p class="capitalize text-sm sm:text-base">Size:</p>
+            <p class="capitalize text-sm sm:text-base">- PHP-AS30: 25 × 300</p>
+            <p class="capitalize text-sm sm:text-base">- PHP-AS35: 25 × 350</p>
+            <!-- <p class="capitalize text-sm sm:text-base">Size: {{ sizeLabels[selectedSize] }}</p> -->
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available on Marketplace:</h2>
             <div class="flex flex-wrap justify-center md:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
@@ -80,7 +79,7 @@
           </div>
 
           <!-- Ukuran -->
-          <div class="grid grid-cols-2 w-full gap-4 mt-4 justify-start">
+          <!-- <div class="grid grid-cols-2 w-full gap-4 mt-4 justify-start">
             <button
               v-for="size in sizes"
               :key="size"
@@ -94,13 +93,13 @@
             >
               {{ sizeLabels[size] }}
             </button>
-          </div>
+          </div> -->
         </div>
       </div>
 
       <!-- Dimensi -->
       <div class="mt-14 border-t border-gray-700 pt-10">
-        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Product Dimensions</h2>
         <div class="flex justify-center">
           <img
             src="/asset/product/pull-handle/handle-p/ukuran-hitam.png"
@@ -180,7 +179,7 @@ import ukuranPutih from '/asset/product/pull-handle/handle-p/ukuran-putih.png'
 const colors = [
   {
     name: 'hitam',
-    label: 'Hitam',
+    label: 'Black',
     hex: '#1f1f1f',
     images: {
       '251': hitam251,
@@ -192,7 +191,7 @@ const colors = [
   },
   {
     name: 'putih',
-    label: 'Putih',
+    label: 'White',
     hex: '#eeeeee',
     images: {
       '251': putih251,
@@ -204,7 +203,7 @@ const colors = [
   },
   {
     name: 'sn',
-    label: 'SN/SS',
+    label: 'PSS',
     hex: '#cccccc',
     images: {
       '251': sn251,
@@ -254,7 +253,7 @@ const katalogLinks = [
   // { slug: 'handle-p', name: 'Pull Handle P', image: '/asset/product/pull-handle/handle-p.png'},
   { slug: 'handle-d', name: 'Pull Handle D', image: '/asset/product/pull-handle/handle-d.png'},
   { slug: 'handle-s', name: 'Pull Handle S', image: '/asset/product/pull-handle/handle-s.png'},
-  { slug: 'handle-b', name: 'Pull Handle B', image: '/asset/product/pull-handle/handle-b.png'},
+  { slug: 'handle-b', name: 'Pull Handle Bulat', image: '/asset/product/pull-handle/handle-b.png'},
   { slug: 'handle-h', name: 'Pull Handle H', image: '/asset/product/pull-handle/handle-h.png'},
   { slug: 'handle-21', name: 'Pull Handle 21 SS', image: '/asset/product/pull-handle/handle-21.png'},
 ];
