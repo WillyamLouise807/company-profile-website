@@ -22,21 +22,19 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Door Closer</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Door Closer Glatino dirancang untuk memberikan kenyamanan dan keamanan ekstra pada pintu Anda. Dengan mekanisme penutup otomatis, produk ini membantu menjaga suhu ruangan, mengurangi kebisingan, dan meningkatkan keamanan secara praktis.
+            The Glatino Door Closer is designed to provide extra comfort and security for your door. With its automatic closing mechanism, this product helps maintain room temperature, reduces noise, and increases security in a practical way.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Tipe: Door Closer</p>
-            <p class="capitalize text-sm sm:text-base">Kapasitas Beban: 40-65 kg</p>
-            <p class="capitalize text-sm sm:text-base">Warna: {{ selectedColorLabel }}</p>
-            <p class="capitalize text-sm sm:text-base">Fungsi: Penutup pintu otomatis untuk menghemat energi, meningkatkan keamanan, mengurangi kebisingan, dan memberi kenyamanan penggunaan</p>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>                     
+            <p class="capitalize text-sm sm:text-base">Door Weight Max: 40kg</p>
+            <p class="capitalize text-sm sm:text-base">Type: Hold Open</p>
+            <p class="capitalize text-sm sm:text-base">Color: {{ selectedColorLabel }}</p>            
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available on Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store/glatino-glt-201-premiumcloser-kunci-pintu-set-handle-material-aluminium-1731487588150839022?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
@@ -86,7 +84,7 @@
       <!-- Dimensi -->
       <div class="mt-14 border-t border-gray-200 pt-10">
         <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">
-          Dimensi Produk
+          Product Dimensions
         </h2>
 
         <div class="flex flex-col md:flex-row items-center justify-center gap-6">
@@ -109,7 +107,7 @@
         </div>
 
         <p class="text-sm text-gray-500 mt-4 text-center">
-          *Gambar hanya ilustrasi ukuran secara proporsional
+          *This image is only an illustration of the product dimensions
         </p>
       </div>
 
@@ -144,9 +142,9 @@ import putih from '/asset/product/door-closer/putih.png'
 import silver from '/asset/product/door-closer/silver.png'
 
 const colors = [
-  { name: 'hitam', label: 'Hitam', hex: '#1f1f1f', image: hitam },
-  { name: 'cokelat', label: 'Cokelat', hex: '#8B4513', image: cokelat },
-  { name: 'putih', label: 'Putih', hex: '#eeeeee', image: putih },
+  { name: 'hitam', label: 'Black', hex: '#1f1f1f', image: hitam },
+  { name: 'cokelat', label: 'Brown', hex: '#402916', image: cokelat },
+  { name: 'putih', label: 'White', hex: '#eeeeee', image: putih },
   { name: 'silver', label: 'Silver', hex: '#bdc3c7', image: silver }
 ]
 

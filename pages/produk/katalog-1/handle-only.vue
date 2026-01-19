@@ -90,7 +90,7 @@
           <img
             :src="ukuranImage"
             alt="Ukuran Door Lock 201 - SS"
-            class="rounded-xl shadow-md max-w-xl w-full bg-gray-100 p-4 cursor-zoom-in"
+            class="rounded-xl shadow-md max-w-xl w-full p-4 cursor-zoom-in"
             @click="toggleZoom"
           />
           <p class="text-sm text-gray-500 mt-4 text-center">*The image is only an illustration of the proportional size.</p>

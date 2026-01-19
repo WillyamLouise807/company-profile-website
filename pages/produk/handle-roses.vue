@@ -94,7 +94,7 @@ const doorLockProducts = [
     {
     id: 4,
     name: "Handle Only 201 SS",
-    description: "",
+    description: "201-SS",
     slug: "handle-only",
     image: "/asset/product/door-lock/handle-only.png"
   },

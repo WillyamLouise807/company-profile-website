@@ -68,14 +68,14 @@
 </template>
 
 <script lang="ts" setup>
-import bgImage from '@/assets/product/door-closer/door-closer-banner.png';
+import bgImage from '/asset/product/door-closer/door-closer-banner.png';
 import FooterComponent from '@/components/footer.vue';
 
 const doorCloserProducts = [
   {
     id: 1,
     name: "Door Closer",
-    description: "Door Closer Pro Kunci Tabung Pengaman Material Aluminium",
+    description: "DC-072",
     slug: "door-closer",
     image: '/asset/product/door-closer/door-closer.png'
   },

@@ -118,7 +118,7 @@ const pullHandleProducts = [
 {
   id: 7,
   name: "Pull Handle 21 SS",
-  description: "",
+  description: "PH-21-GL",
   slug: "handle-21",
   image: "/asset/product/pull-handle/handle-21.png"
 }
