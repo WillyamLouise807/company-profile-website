@@ -22,20 +22,20 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Butt Hinge SS</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Engsel stainless steel berkualitas tinggi, tahan lama dan anti karat. Tersedia dalam dua ukuran.
+            High-quality stainless steel hinges are durable and rust-resistant. Available in two sizes.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Warna: Stainless Steel (SS)</p>
-            <p class="capitalize text-sm sm:text-base">Ukuran: {{ selectedSize }}"</p>
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Tipe: Butt Hinge SS</p>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>                       
+            <p class="capitalize text-sm sm:text-base">Size: {{ selectedSize }}"</p>  
+            <p class="text-sm sm:text-base">- 3 × 2.5 × 2 mm (3 Inch)</p>
+            <p class="text-sm sm:text-base">- 4 × 3 × 2 mm (4 Inch)</p>            
+            <p class="capitalize text-sm sm:text-base">- Material: Stainless Steel SUS 304 D</p>
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available on Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a
                 href="https://www.tokopedia.com/glatino-official-store/glatino-engsel-pintu-butt-hinge-stainless-steel-4-3-untuk-rumah-kualitas-premium-1730959960062789358"
@@ -86,7 +86,7 @@
 
       <!-- Dimensi -->
       <div class="mt-14 border-t border-gray-200 pt-10">
-        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Product Dimensions</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div
             v-for="(item, index) in ukuranImages"
@@ -99,7 +99,7 @@
               class="rounded-xl shadow-md max-w-md w-full p-4 cursor-zoom-in"
               @click="zoomImage(item.src)"
             />
-            <p class="text-sm text-gray-500 mt-2 text-center">*Ukuran {{ item.label }}</p>
+            <p class="text-sm text-gray-500 mt-2 text-center">*Size {{ item.label }}</p>
           </div>
         </div>
       </div>

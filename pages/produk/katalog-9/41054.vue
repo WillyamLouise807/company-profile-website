@@ -8,7 +8,7 @@
           <li>/</li>
           <li><RouterLink to="/produk/alumunium-lock" class="hover:underline text-black font-medium">Alumunium Lock</RouterLink></li>
           <li>/</li>
-          <li class="text-black font-semibold">41054</li>
+          <li class="text-black font-semibold">Swing Lock</li>
         </ol>
       </nav>
 
@@ -16,20 +16,20 @@
       <div class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Handle 41054</h1>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Swing Lock 41054</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Handle 41054 adalah handle aluminium elegan dengan desain modern dan kokoh. Cocok untuk berbagai kebutuhan pintu dan jendela aluminium.
+            Premium aluminum swing lock with elegant design and durable material. Ideal for sliding and swing doors.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="text-sm sm:text-base">Model: 41054</p>
-            <p class="text-sm sm:text-base">Material: Aluminium</p>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>
+            <p class="text-sm sm:text-base">Color: Chrome</p>
+            <p class="text-sm sm:text-base">Material: Copper, Zinc, Alloy, Iron, Aluminium Plate</p>
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available on Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store/glatino-set-kunci-pintu-aluminium-premium-sliding-door-swing-door-aluminium-anti-karat-1730966994543347438?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
@@ -71,15 +71,15 @@
 
       <!-- Dimensi Produk -->
       <div class="mt-14 border-t border-gray-700 pt-10">
-        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Product Dimensions</h2>
         <div class="flex flex-col items-center">
           <img
             :src="ukuranImage"
-            alt="Ukuran 41054"
+            alt="Product Dimensions"
             class="rounded-xl shadow-md max-w-xl w-full bg-white p-4 cursor-zoom-in"
             @click="toggleZoom"
           />
-          <p class="text-sm text-gray-500 mt-4 text-center">*Gambar hanya ilustrasi ukuran secara proporsional</p>
+          <p class="text-sm text-gray-500 mt-4 text-center">*Image is only an illustration of the size proportionally</p>
         </div>
       </div>
 

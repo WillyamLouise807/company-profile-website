@@ -22,19 +22,18 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Butt Hinge H</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Engsel aluminium model H berbahan stainless yang kokoh. Desain elegan untuk pintu modern.
+            Sturdy stainless steel H-shaped aluminum hinge. An elegant design for modern doors.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Ukuran: 4 x 3 x 2 MM</p>
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Stainless Material: SUS 201 SS</p>    
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>
+            <p class="capitalize text-sm sm:text-base">Size: 4 x 3 x 2 MM</p>
+            <p class="capitalize text-sm sm:text-base">Material: Stainless Steel SUS 304 D</p>            
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available on Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" rel="noopener noreferrer">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
@@ -58,15 +57,15 @@
 
       <!-- Dimensi -->
       <div class="mt-14 border-t border-gray-700 pt-10">
-        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Product Dimensions</h2>
         <div class="flex flex-col items-center">
           <img
             :src="ukuranImage"
-            alt="Dimensi"
+            alt="Product Dimensions"
             class="rounded-xl shadow-md max-w-xl w-full bg-white p-4 cursor-zoom-in"
             @click="toggleZoom"
           />
-          <p class="text-sm text-gray-500 mt-4 text-center">*Gambar hanya ilustrasi ukuran secara proporsional</p>
+          <p class="text-sm text-gray-500 mt-4 text-center">*Image is only an illustration of the size proportionally</p>
         </div>
       </div>
 
@@ -113,7 +112,7 @@
 import { ref } from 'vue'
 
 const productImage = '/asset/product/alumunium-lock/but-hinge-h/ss.png'
-const ukuranImage = '/asset/product/alumunium-lock/but-hinge-h/ukuran-putih.png'
+const ukuranImage = '/asset/product/alumunium-lock/but-hinge-h/ukuran-hitam.png'
 
 const isZoomOpen = ref(false)
 

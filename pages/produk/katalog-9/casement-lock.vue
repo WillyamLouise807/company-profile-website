@@ -22,19 +22,18 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Casement Lock</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Rambuncis Jendela Glatino 425 (4 Lubang) hadir sebagai solusi fungsional dan estetik untuk sistem buka-tutup jendela Anda. Terbuat dari aluminium 100%, produk ini kokoh, tahan lama, dan tersedia dalam berbagai warna elegan untuk menyesuaikan desain interior maupun eksterior rumah.
+            The Glatino Casement Lock is a reliable and aesthetically pleasing locking solution for your aluminum windows. With its ergonomic design and high-quality materials, this lock provides optimal security and ease of use.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Warna: {{ selectedColorLabel }}</p>
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Tipe: Rambuncis Jendela 425 (4 Lubang)</p>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>
+            <p class="capitalize text-sm sm:text-base">Color: {{ selectedColorLabel }}</p>
+            <p class="capitalize text-sm sm:text-base">Available for Left (L) & Right (R)</p>            
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available on Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store/glatino-rambuncis-casement-handle-pengunci-pegangan-jendela-material-aluminium-1730960389032281838?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
@@ -80,7 +79,7 @@
 
       <!-- Dimensi -->
       <div class="mt-14 border-t border-gray-700 pt-10">
-        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Product Dimensions</h2>
         <div class="flex flex-col items-center">
           <img
             :src="ukuranImage"
@@ -88,7 +87,7 @@
             class="rounded-xl shadow-md max-w-xl w-full bg-white p-4 cursor-zoom-in"
             @click="toggleZoom"
           />
-          <p class="text-sm text-gray-500 mt-4 text-center">*Gambar hanya ilustrasi ukuran secara proporsional</p>
+          <p class="text-sm text-gray-500 mt-4 text-center">*This image is only an illustration of the product dimensions</p>
         </div>
       </div>
 
@@ -149,12 +148,12 @@ import ukuranHitam from '/asset/product/alumunium-lock/casement-lock/ukuran-hita
 import ukuranPutih from '/asset/product/alumunium-lock/casement-lock/ukuran-putih.png'
 
 const colors = [
-  { name: 'beige', label: 'Beige', hex: '#f5f5dc', image: beige, ukuran: ukuranHitam },
-  { name: 'cokelat', label: 'Cokelat', hex: '#8b4513', image: cokelat, ukuran: ukuranHitam },
-  { name: 'cream', label: 'Cream', hex: '#fffdd0', image: cream, ukuran: ukuranHitam },
-  { name: 'hitam', label: 'Hitam', hex: '#1f1f1f', image: hitam, ukuran: ukuranHitam },
-  { name: 'putih', label: 'Putih', hex: '#ffffff', image: putih, ukuran: ukuranHitam },
-  { name: 'silver', label: 'Silver', hex: '#c0c0c0', image: silver, ukuran: ukuranHitam }
+  { name: 'beige', label: 'Beige', hex: '#171D2B', image: beige, ukuran: ukuranHitam },
+  { name: 'cokelat', label: 'Brown', hex: '#BDB080', image: cokelat, ukuran: ukuranHitam },
+  { name: 'cream', label: 'Cream', hex: '#FFFDED', image: cream, ukuran: ukuranHitam },
+  { name: 'hitam', label: 'Black', hex: '#1f1f1f', image: hitam, ukuran: ukuranHitam },
+  { name: 'putih', label: 'White', hex: '#ffffff', image: putih, ukuran: ukuranHitam },
+  { name: 'silver', label: 'Silver', hex: '#D3E1E3', image: silver, ukuran: ukuranHitam }
 ]
 
 const selectedColor = ref(colors[0]!.name)

@@ -7,7 +7,7 @@
         class="absolute inset-0 bg-cover bg-center bg-no-repeat z-[-3]"
         :style="{ backgroundImage: `url(${bgImage})` }"
       ></div>
-      <div class="absolute inset-0 bg-white/70 backdrop-blur-sm z-[-2]"></div>
+      <div class="absolute inset-0 bg-white/40 backdrop-blur-sm z-[-2]"></div>
       <div class="absolute bottom-0 left-0 right-0 h-48 z-[-1] bg-gradient-to-b from-transparent to-white"></div>
 
       <!-- Content Container -->
@@ -68,98 +68,98 @@
 </template>
 
 <script lang="ts" setup>
-import bgImage from '@/assets/product/alumunium-lock/alumunium-lock-banner.png';
+import bgImage from '/asset/product/alumunium-lock/alumunium-lock-banner.png';
 import FooterComponent from '@/components/footer.vue';
 
 const floorHingeProduts = [
   {
     id: 1,
     name: "Crescent Lock",
-    description: "Set Engsel lantai Material Aluminium Anti Karat",
+    description: "CL-GLT",
     slug: "crescent-lock",
     image: "/asset/product/alumunium-lock/crescent-lock.png"
   },
   {
     id: 2,
-    name: "Casement Lock",
-    description: "Set Engsel lantai Material Aluminium Anti Karat",
+    name: "Casement Handle",
+    description: "HT-8118",
     slug: "casement-lock",
     image: "/asset/product/alumunium-lock/casement-lock.png"
   },
   {
     id: 3,
     name: "Sliding Lock A7",
-    description: "Kunci Pintu Set Sliding Almunium A7 Indikator Premium Handle set",
+    description: "A7-GLT",
     slug: "a7",
     image: "/asset/product/alumunium-lock/a7.png"
   },
   {
     id: 4,
     name: "Flush Handle Zinc",
-    description: "Handle Tanam Zinc Berfungsi Untuk Penahan Pintu Stainlees",
+    description: "HCZP",
     slug: "zinc",
     image:'/asset/product/alumunium-lock/zinc.png'
   },
   {
     id: 5,
     name: "Flush Handle Aluminium",
-    description: "Flush Handle Pegangan Pintu Geser type Datar Material Aluminium",
+    description: "FH-135",
     slug: "alumunium",
     image:'/asset/product/alumunium-lock/alumunium.png'
   },
   {
     id: 6,
     name: "Flush Handle SS-201",
-    description: "Kepala Handle SS 201/ Tarikan Tanam Pintu Geser Sliding Door Material Aluminium",
+    description: "FH-201",
     slug: "ss-201",
     image:'/asset/product/alumunium-lock/ss-201.png'
   },
   {
     id: 7,
-    name: "Flush Handle Flushbolt",
-    description: "Handle Tanam Flushbolt Berfungsi Untuk Penahan Pintu Stainlees",
+    name: "Flushbolt",
+    description: "FB",
     slug: "flushbolt",
     image:'/asset/product/alumunium-lock/flushbolt.png'
   },
   {
     id: 8,
     name: "Butt Hinge Nylon",
-    description: "Kunci Pintu Set Sliding Almunium A7 Indikator Premium Handle set",
+    description: "EN",
     slug: "butt-hinge-nylon",
     image: "/asset/product/alumunium-lock/butt-hinge-nylon.png"
   },
   {
     id: 9,
     name: "Butt Hinge SS",
-    description: "Set Engsel lantai Material Aluminium Anti Karat",
+    description: "ES",
     slug: "butt-hinge-ss",
     image: "/asset/product/alumunium-lock/butt-hinge-ss.png"
   },
   {
     id: 10,
     name: "Butt Hinge H",
-    description: "Set Engsel lantai Material Aluminium Anti Karat",
+    description: "ES-432-H",
     slug: "butt-hinge-h",
     image: "/asset/product/alumunium-lock/butt-hinge-h.png"
   },
   {
     id: 11,
-    name: "Swing Lock 41054",
-    description: "Set Engsel lantai Material Aluminium Anti Karat",
+    name: "Swing Lock",
+    description: "41054",
     slug: "41054",
     image: "/asset/product/alumunium-lock/41054.png"
   },
   {
     id: 12,
-    name: "Sliding Lock 41055",
-    description: "Set Engsel lantai Material Aluminium Anti Karat",
+    name: "Sliding Lock",
+    description: "41055",
     slug: "41055",
     image: "/asset/product/alumunium-lock/41055.png"
   },
   {
     id: 13,
-    name: "Sliding Lock Kait Besar 41066",
-    description: "Set Engsel lantai Material Aluminium Anti Karat",
+    name: "Sliding Lock Kait Besar",
+    description: "41066",
     slug: "41066",
     image: "/asset/product/alumunium-lock/41066.png"
   },

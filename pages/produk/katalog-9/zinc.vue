@@ -22,22 +22,17 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Flush Handle Zinc</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Penahan Pintu Swing Glatino berbahan aluminium zinc dengan finishing powder coating yang kuat dan tahan lama. Dirancang khusus untuk pintu aluminium dengan sistem 2 pintu, tersedia dalam pilihan warna elegan: Silver, Beige, Hitam, dan Putih.
+            Glatino Swing Door Stopper is made of aluminum zinc with a strong and durable powder-coated finish. Specifically designed for aluminum doors with a 2-door system, it is available in elegant colors: Silver, Beige, Black, and White.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>            
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Jenis: Penahan Pintu Swing (2 Pintu)</p>
-            <p class="capitalize text-sm sm:text-base">Material: Aluminium Zinc</p>
-            <p class="capitalize text-sm sm:text-base">Finishing: Powder Coating</p>
-            <p class="capitalize text-sm sm:text-base">Warna: {{ selectedColorLabel }}</p>
-            <p class="capitalize text-sm sm:text-base">Pemasangan: Pintu Aluminium</p>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>                        
+            <p class="capitalize text-sm sm:text-base">Color: {{ selectedColorLabel }}</p>            
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available on Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store/glatino-flush-bolt-zinc-berfungsi-untuk-penahan-pintu-bahan-stainlees-hight-quality-premium-harga-terjangkau-1730960675811395310?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
@@ -86,7 +81,7 @@
 
       <!-- Dimensi -->
       <div class="mt-14 border-t border-gray-200 pt-10">
-        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Product Dimensions</h2>
         <div class="flex flex-col items-center">
           <img
             :src="ukuranImage"
@@ -94,7 +89,7 @@
             class="rounded-xl shadow-md max-w-xl w-full bg-white p-4 cursor-zoom-in"
             @click="toggleZoom"
           />
-          <p class="text-sm text-gray-500 mt-4 text-center">*Gambar hanya ilustrasi ukuran secara proporsional</p>
+          <p class="text-sm text-gray-500 mt-4 text-center">*This image is only an illustration of the product dimensions</p>
         </div>
       </div>
 
@@ -154,10 +149,10 @@ import snss from '/asset/product/alumunium-lock/zinc/sn.png'
 import ukuran from '/asset/product/alumunium-lock/zinc/ukuran-hitam.png'
 
 const colors = [
-  { name: 'hitam', label: 'Hitam', hex: '#1f1f1f', image: hitam },
-  { name: 'cokelat', label: 'Cokelat', hex: '#8B4513', image: cokelat },
-  { name: 'putih', label: 'Putih', hex: '#eeeeee', image: putih },
-  { name: 'sn-ss', label: 'SN', hex: '#bdc3c7', image: snss }
+  { name: 'hitam', label: 'Black', hex: '#1f1f1f', image: hitam },
+  { name: 'cokelat', label: 'NB', hex: '#8A8A84', image: cokelat },
+  { name: 'putih', label: 'White', hex: '#eeeeee', image: putih },
+  { name: 'sn-ss', label: 'AC', hex: '#BDB080', image: snss }
 ]
 
 const selectedColor = ref(colors[0]?.name ?? '')

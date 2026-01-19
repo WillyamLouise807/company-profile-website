@@ -22,20 +22,21 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Butt Hinge Nylon</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Engsel aluminium berkualitas dengan lapisan nylon tahan lama, tersedia dalam 4 warna dan 2 ukuran.
+            Quality aluminum hinges with durable nylon coating, available in 4 colors and 2 sizes.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Warna: {{ selectedColor.label }}</p>
-            <p class="capitalize text-sm sm:text-base">Ukuran: {{ selectedSize }}"</p>
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Tipe: Butt Hinge Nylon</p>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>                       
+            <p class="capitalize text-sm sm:text-base">Size: {{ selectedSize }}"</p>  
+            <p class="text-sm sm:text-base">- 3 × 2.5 × 2 mm (3 Inch)</p>
+            <p class="text-sm sm:text-base">- 4 × 3 × 2 mm (4 Inch)</p>
+            <p class="capitalize text-sm sm:text-base">- Color: {{ selectedColor.label }}</p> 
+            <p class="capitalize text-sm sm:text-base">- Material: Iron</p>
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available on Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store/glatino-engsel-pintu-baut-hinge-nylon-4-3-butt-premium-rumah-aman-dan-material-berkulitas-1730960131972761326?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
@@ -92,7 +93,7 @@
 
       <!-- Dimensi -->
       <div class="mt-14 border-t border-gray-200 pt-10">
-        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Product Dimensions</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div
             v-for="(item, index) in ukuranImages"
@@ -105,7 +106,7 @@
               class="rounded-xl shadow-md max-w-md w-full p-4 cursor-zoom-in"
               @click="zoomImage(item.src)"
             />
-            <p class="text-sm text-gray-500 mt-2 text-center">*Ukuran {{ item.label }}</p>
+            <p class="text-sm text-gray-500 mt-2 text-center">*Size {{ item.label }}</p>
           </div>
         </div>
       </div>
@@ -157,9 +158,9 @@ import { ref, computed } from 'vue'
 
 // Data warna dan ukuran
 const colors = [
-  { name: 'hitam', label: 'Hitam', hex: '#000' },
-  { name: 'putih', label: 'Putih', hex: '#fff' },
-  { name: 'cokelat', label: 'Cokelat', hex: '#5d4037' },
+  { name: 'hitam', label: 'Black', hex: '#000' },
+  { name: 'putih', label: 'White', hex: '#fff' },
+  { name: 'cokelat', label: 'Brown', hex: '#5d4037' },
   { name: 'silver', label: 'Silver', hex: '#ccc' },
 ]
 
