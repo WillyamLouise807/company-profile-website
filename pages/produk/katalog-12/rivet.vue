@@ -31,11 +31,11 @@
             <p class="capitalize text-sm sm:text-base">Color: White, Black, Brown</p>
 
             <h2 class="text-lg sm:text-xl font-semibold mb-2">Size:</h2>
-            <p class="capitalize text-sm sm:text-base">- Blind Rivet 1/8" x 3/8" (Code: 435)</p>
-            <p class="capitalize text-sm sm:text-base">- Blind Rivet 3.2 x 11 mm (Code: 440)</p>
-            <p class="capitalize text-sm sm:text-base">- Blind Rivet 3.2 x 13 mm (Code: 450)</p>
-            <p class="capitalize text-sm sm:text-base">- Blind Rivet 4 x 11 mm (Code: 540)</p>
-            <p class="capitalize text-sm sm:text-base">- Blind Rivet 4 x 13 mm (Code: 550)</p>            
+            <p class="capitalize text-sm sm:text-base">- Blind Rivet 1/8" × 3/8" (Code: 435)</p>
+            <p class="capitalize text-sm sm:text-base">- Blind Rivet 3.2 × 11 mm (Code: 440)</p>
+            <p class="capitalize text-sm sm:text-base">- Blind Rivet 3.2 × 13 mm (Code: 450)</p>
+            <p class="capitalize text-sm sm:text-base">- Blind Rivet 4 × 11 mm (Code: 540)</p>
+            <p class="capitalize text-sm sm:text-base">- Blind Rivet 4 × 13 mm (Code: 550)</p>            
           </div>
 
           <!-- Marketplace -->

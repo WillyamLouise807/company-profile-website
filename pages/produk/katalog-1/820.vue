@@ -61,7 +61,7 @@
           </transition>
 
           <!-- Warna -->
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 w-full">
+          <!-- <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 w-full">
             <div
               v-for="(color, index) in colors"
               :key="index"
@@ -80,7 +80,7 @@
                 {{ color.label }}
               </p>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
 

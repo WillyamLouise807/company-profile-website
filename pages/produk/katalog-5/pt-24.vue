@@ -27,8 +27,8 @@
 
           <div class="mb-6 space-y-1">
             <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>
-            <p class="capitalize text-sm sm:text-base">Thicknness: 2,5 mm</p>
-            <p class="capitalize text-sm sm:text-base">Material: Stainless Steel SUS 304</p>
+            <p class="capitalize text-sm sm:text-base">Material: Stainless Steel SUS 201</p>
+            <p class="capitalize text-sm sm:text-base">Thicknness: 2,5 mm</p>          
           </div>
 
           <!-- Marketplace -->

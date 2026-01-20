@@ -27,7 +27,7 @@
 
           <div class="mb-6 space-y-1">
             <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>          
-            <p class="capitalize text-sm sm:text-base">Double Cylinder (DC)</p>
+            <p class="capitalize text-sm sm:text-base">Double Swing</p>
             <p class="capitalize text-sm sm:text-base">3 Comp Key</p>            
           </div>
 

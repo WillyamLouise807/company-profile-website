@@ -28,7 +28,7 @@
           <div class="mb-6 space-y-1">
             <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>
             <p class="capitalize text-sm sm:text-base">View: {{ selectedViewLabel }}</p>            
-            <p class="capitalize text-sm sm:text-base">Size (L x W x H): 253 x 103 x 0</p>
+            <p class="capitalize text-sm sm:text-base">Size (L × W × H): 253 × 103 × 50</p>
             <p class="capitalize text-sm sm:text-base">Door Weight: 70 - 80 kgs</p>
             <p class="capitalize text-sm sm:text-base">Diameter Cylinder: 36mm Double Cylinder</p>
             <p class="capitalize text-sm sm:text-base">Max Door Width: 900mm</p>
