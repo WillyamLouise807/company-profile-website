@@ -12,7 +12,7 @@
             <RouterLink to="/produk/roller-caster" class="hover:underline text-black font-medium">Roller Caster</RouterLink>
           </li>
           <li>/</li>
-          <li class="text-black font-semibold">Roda Gepeng Nylon 2" Dengan Rem</li>
+          <li class="text-black font-semibold">Roda Gepeng PP 2"</li>
         </ol>
       </nav>
 
@@ -20,22 +20,21 @@
       <div class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Roda Gepeng Nylon 2" Dengan Rem</h1>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Roda Gepeng PP 2"</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Roda karet berkualitas tinggi untuk berbagai aplikasi industri dan komersial, menawarkan daya tahan, traksi, dan performa optimal dengan sistem rem.
+            High quality nylon wheels for a wide range of industrial and commercial applications, offering optimum durability, traction and performance with brake systems.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Jenis: Dengan Rem</p>            
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>            
+            <p class="capitalize text-sm sm:text-base">Size: 2 Inch</p> 
             <p class="capitalize text-sm sm:text-base">Material: Nylon</p>
-            <p class="capitalize text-sm sm:text-base">Dimensi: 2 Inch</p>            
+            <p class="capitalize text-sm sm:text-base">Type: With Brake</p>
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available on Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
@@ -124,20 +123,23 @@ function toggleZoom() {
 }
 
 const katalogLinks = [
-  { slug: 'roda-gepeng-rubber-2-tanpa-rem', name: 'Roda Gepeng Rubber 2" Tanpa Rem', image: '/asset/product/roller-caster/roda-gepeng-rubber-2-tanpa-rem.png' },
-  { slug: 'roda-gepeng-rubber-2-dengan-rem', name: 'Roda Gepeng Rubber 2" Dengan Rem', image: '/asset/product/roller-caster/roda-gepeng-rubber-2-dengan-rem.png' },
+  { slug: 'roda-gepeng-rubber-2-tanpa-rem', name: 'Roda Gepeng Rubber 2"', image: '/asset/product/roller-caster/roda-gepeng-rubber-2-tanpa-rem.png' },
+  { slug: 'roda-gepeng-rubber-2-dengan-rem', name: 'Roda Gepeng Rubber 2"', image: '/asset/product/roller-caster/roda-gepeng-rubber-2-dengan-rem.png' },
   { slug: 'roda-rc-2-bulat', name: 'Roda RC 2" Bulat', image: '/asset/product/roller-caster/roda-rc-2-bulat.png' },
-  { slug: 'roda-gepeng-red-pp-2-tanpa-rem', name: 'Roda Gepeng Red PP 2" Tanpa Rem', image: '/asset/product/roller-caster/roda-gepeng-red-pp-2-tanpa-rem.png' },
-  { slug: 'roda-gepeng-red-pp-2-dengan-rem', name: 'Roda Gepeng Red PP 2" Dengan Rem', image: '/asset/product/roller-caster/roda-gepeng-red-pp-2-dengan-rem.png' },
-  { slug: 'roda-gepeng-nylon-2-tanpa-rem', name: 'Roda Gepeng Nylon 2" Tanpa Rem', image: '/asset/product/roller-caster/roda-gepeng-nylon-2-tanpa-rem.png' },
-  // { slug: 'roda-gepeng-nylon-2-dengan-rem', name: 'Roda Gepeng Nylon 2" Dengan Rem', image: '/asset/product/roller-caster/roda-gepeng-nylon-2-dengan-rem.png' },
-  { slug: 'roda-gepeng-white-pp-3-tanpa-rem', name: 'Roda Gepeng White PP 3" Tanpa Rem', image: '/asset/product/roller-caster/roda-gepeng-white-pp-3-tanpa-rem.png' },
-  { slug: 'roda-gepeng-white-pp-3-dengan-rem', name: 'Roda Gepeng White PP 3" Dengan Rem', image: '/asset/product/roller-caster/roda-gepeng-white-pp-3-dengan-rem.png' },
-  { slug: 'roda-gepeng-rubber-3-tanpa-rem', name: 'Roda Gepeng Rubber 3" Tanpa Rem', image: '/asset/product/roller-caster/roda-gepeng-rubber-3-tanpa-rem.png' },
-  { slug: 'roda-gepeng-rubber-3-dengan-rem', name: 'Roda Gepeng Rubber 3" Dengan Rem', image: '/asset/product/roller-caster/roda-gepeng-rubber-3-dengan-rem.png' },  
-  { slug: 'roda-fixed-caster-orange-2-tanpa-rem', name: 'Roda Fixed Caster Orange 2" Tanpa Rem', image: '/asset/product/roller-caster/roda-fixed-caster-orange-2-tanpa-rem.png' },  
-  { slug: 'roda-swivel-caster-orange-2-tanpa-rem', name: 'Roda Swivel Caster Orange 2" Tanpa Rem', image: '/asset/product/roller-caster/roda-swivel-caster-orange-2-tanpa-rem.png' },
-  { slug: 'roda-swivel-caster-orange-2-dengan-rem', name: 'Roda Swivel Caster Orange 2" Dengan Rem', image: '/asset/product/roller-caster/roda-swivel-caster-orange-2-dengan-rem.png' },
+  { slug: 'roda-gepeng-red-pp-2-tanpa-rem', name: 'Roda Gepeng Red PP 2"', image: '/asset/product/roller-caster/roda-gepeng-red-pp-2-tanpa-rem.png' },
+  { slug: 'roda-gepeng-red-pp-2-dengan-rem', name: 'Roda Gepeng Red PP 2"', image: '/asset/product/roller-caster/roda-gepeng-red-pp-2-dengan-rem.png' },
+  { slug: 'roda-gepeng-nylon-2-tanpa-rem', name: 'Roda Gepeng Nylon 2"', image: '/asset/product/roller-caster/roda-gepeng-nylon-2-tanpa-rem.png' },
+  // { slug: 'roda-gepeng-nylon-2-dengan-rem', name: 'Roda Gepeng Nylon 2"', image: '/asset/product/roller-caster/roda-gepeng-nylon-2-dengan-rem.png' },
+  { slug: 'roda-gepeng-white-pp-3-tanpa-rem', name: 'Roda Gepeng White PP 3"', image: '/asset/product/roller-caster/roda-gepeng-white-pp-3-tanpa-rem.png' },
+  { slug: 'roda-gepeng-white-pp-3-dengan-rem', name: 'Roda Gepeng White PP 3"', image: '/asset/product/roller-caster/roda-gepeng-white-pp-3-dengan-rem.png' },
+  { slug: 'roda-gepeng-rubber-3-tanpa-rem', name: 'Roda Gepeng Rubber 3"', image: '/asset/product/roller-caster/roda-gepeng-rubber-3-tanpa-rem.png' },
+  { slug: 'roda-gepeng-rubber-3-dengan-rem', name: 'Roda Gepeng Rubber 3"', image: '/asset/product/roller-caster/roda-gepeng-rubber-3-dengan-rem.png' },  
+  { slug: 'roda-fixed-caster-orange-2-tanpa-rem', name: 'Roda Fixed Caster Orange 2"', image: '/asset/product/roller-caster/roda-fixed-caster-orange-2-tanpa-rem.png' },  
+  { slug: 'roda-swivel-caster-orange-2-tanpa-rem', name: 'Roda Swivel Caster Orange 2"', image: '/asset/product/roller-caster/roda-swivel-caster-orange-2-tanpa-rem.png' },
+  { slug: 'roda-swivel-caster-orange-2-dengan-rem', name: 'Roda Swivel Caster Orange 2"', image: '/asset/product/roller-caster/roda-swivel-caster-orange-2-dengan-rem.png' },
+  { slug: 'roda-fixed-caster-orange-3-tanpa-rem', name: 'Roda Fixed Caster Orange 3"', image: '/asset/product/roller-caster/roda-fixed-caster-orange-3-tanpa-rem.png' },  
+  { slug: 'roda-swivel-caster-orange-3-tanpa-rem', name: 'Roda Swivel Caster Orange 3"', image: '/asset/product/roller-caster/roda-swivel-caster-orange-3-tanpa-rem.png' },
+  { slug: 'roda-swivel-caster-orange-3-dengan-rem', name: 'Roda Swivel Caster Orange 3"', image: '/asset/product/roller-caster/roda-swivel-caster-orange-3-dengan-rem.png' },
 ];
 </script>
 
