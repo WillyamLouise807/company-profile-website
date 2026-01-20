@@ -22,23 +22,23 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Rell Laci FE 30 NB</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Rel Laci Aluminium Glatino dirancang untuk memberikan pergerakan laci yang halus, kokoh, dan tahan lama. Terbuat dari material aluminium berkualitas, rel ini mampu menahan beban berat sehingga ideal untuk berbagai jenis laci, baik di rumah maupun perkantoran.
+            Glatino Aluminum Drawer Rails are designed to provide smooth, sturdy, and durable drawer movement. Made from high-quality aluminum, these rails can withstand heavy loads, making them ideal for a wide range of drawers, both at home and in the office.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>
+            <p class="capitalize text-sm sm:text-base">Size: 30 MM normal slide</p>
             <p class="capitalize text-sm sm:text-base">Material: Cold Rolled Steal</p>
-            <p class="capitalize text-sm sm:text-base">Finish: 2 inc</p>
-            <p class="capitalize text-sm sm:text-base">Thickness: 0.6 x 0.6 x 0.6 mm</p>
+            <p class="capitalize text-sm sm:text-base">Color: Zinc</p>
+            <p class="capitalize text-sm sm:text-base">Thickness: 0.6 × 0.6 × 0.6 mm</p>
 
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Ukuran:</h2>
-            <p class="capitalize text-sm sm:text-base">- 250 mm</p>
-            <p class="capitalize text-sm sm:text-base">- 300 mm</p> 
-            <p class="capitalize text-sm sm:text-base">- 350 mm</p> 
-            <p class="capitalize text-sm sm:text-base">- 400 mm</p>                        
-            <p class="capitalize text-sm sm:text-base">- 450 mm</p>                            
-            <p class="capitalize text-sm sm:text-base">- 500 mm</p>         
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Available Size:</h2>
+            <p class="capitalize text-sm sm:text-base">- 250 MM</p>
+            <p class="capitalize text-sm sm:text-base">- 300 MM</p> 
+            <p class="capitalize text-sm sm:text-base">- 350 MM</p> 
+            <p class="capitalize text-sm sm:text-base">- 400 MM</p>                        
+            <p class="capitalize text-sm sm:text-base">- 450 MM</p>                            
+            <p class="capitalize text-sm sm:text-base">- 500 MM</p>         
           </div>
 
           <!-- Marketplace -->

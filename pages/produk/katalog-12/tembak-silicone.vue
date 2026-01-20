@@ -12,7 +12,7 @@
             <RouterLink to="/produk/accessories" class="hover:underline text-black font-medium">Accessories</RouterLink>
           </li>
           <li>/</li>
-          <li class="text-black font-semibold">Tembak Silicone</li>
+          <li class="text-black font-semibold">Silicone Gun</li>
         </ol>
       </nav>
 
@@ -20,25 +20,23 @@
       <div class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Tembak Silicone</h1>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Silicone Gun</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Tarikan Tanam Stainless Glatino dirancang khusus untuk pintu dorong atau sliding, laci, dan lemari. Dengan desain simpel namun elegan, tarikan ini menjadi pelengkap sempurna untuk perabot rumah Anda.
+            Silicone Gun is a high-quality steel tool designed for precise application of silicone sealants. It ensures smooth and even dispensing, making it ideal for sealing glass, metal, and other surfaces.
           </p>
 
-          <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
+          <!-- <div class="mb-6 space-y-1">
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>
             <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Jenis: Tarikan Tanam Pintu Dorong / Sliding</p>
+            <p class="capitalize text-sm sm:text-base">Type: Push Door / Sliding Handle</p>
             <p class="capitalize text-sm sm:text-base">Material: Stainless Steel</p>
-            <p class="capitalize text-sm sm:text-base">Dimensi: 42 x 120 mm</p>
-            <p class="capitalize text-sm sm:text-base">Kelengkapan: Baut / Sekrup</p>
-
-
-          </div>
+            <p class="capitalize text-sm sm:text-base">Dimensions: 42 x 120 mm</p>
+            <p class="capitalize text-sm sm:text-base">Complete with: Screws / Bolts</p>
+          </div> -->
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available on Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store/glatino-premium-handle-kepala-ss-201-tarikan-tanam-pintu-geser-sliding-door-premium-material-aluminium-1730967235252553454?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
@@ -61,7 +59,7 @@
       </div>
 
       <!-- Dimensi -->
-      <div class="mt-14 border-t border-gray-700 pt-10">
+      <!-- <div class="mt-14 border-t border-gray-700 pt-10">
         <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
         <div class="flex flex-col items-center">
           <img
@@ -72,10 +70,10 @@
           />
           <p class="text-sm text-gray-500 mt-4 text-center">*Gambar hanya ilustrasi ukuran secara proporsional</p>
         </div>
-      </div>
+      </div> -->
 
       <!-- Zoom Modal -->
-      <div
+      <!-- <div
         v-if="isZoomOpen"
         class="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
         @click.self="toggleZoom"
@@ -87,7 +85,7 @@
             class="w-full object-contain"
           />
         </div>
-      </div>
+      </div> -->
 
       <!-- Link Produk Lain di Katalog Sama -->
       <div class="border-t border-gray-200 my-20 py-8">

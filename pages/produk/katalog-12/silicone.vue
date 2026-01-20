@@ -12,7 +12,7 @@
             <RouterLink to="/produk/accessories" class="hover:underline text-black font-medium">Accessories</RouterLink>
           </li>
           <li>/</li>
-          <li class="text-black font-semibold">Silicone</li>
+          <li class="text-black font-semibold">Silicone Acetoxy</li>
         </ol>
       </nav>
 
@@ -20,25 +20,20 @@
       <div class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Silicone</h1>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Silicone Acetoxy</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Silicone Asam Glatino adalah pilihan tepat untuk kebutuhan sealing dan perekat kaca, logam, maupun material lainnya. Dengan kualitas tinggi dan daya rekat kuat, produk ini memastikan hasil yang rapat, tahan lama, dan rapi.
+            Glatino Acid Silicone is the perfect choice for sealing and bonding glass, metal, and other materials. With its high quality and strong adhesion, this product ensures tight, durable, and neat results.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Jenis: Silicone Asam / Sealant Asam / Lem Kaca / Lem Tembak</p>
-            <p class="capitalize text-sm sm:text-base">Berat Bersih: 300 gr</p>
-            <p class="capitalize text-sm sm:text-base">Kualitas: High Quality</p>
-            <p class="capitalize text-sm sm:text-base">Fungsi: Merekatkan dan menutup celah pada kaca, logam, dan berbagai permukaan lainnya</p>
-            <p class="capitalize text-sm sm:text-base">Kelebihan: Daya rekat kuat, tahan lama, hasil rapi</p>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>            
+            <p class="capitalize text-sm sm:text-base">Net Weight: 300 gr</p>            
             <p class="capitalize text-sm sm:text-base">Color: White | Black | Brown | Clear</p>
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available on Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store/glatino-premium-aceto-silicone-sealant-lem-tembak-kaca-hight-quality-1730967072423118574?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />

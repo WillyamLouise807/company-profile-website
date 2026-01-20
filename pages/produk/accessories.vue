@@ -76,161 +76,203 @@ const doorCloserProducts = [
   {
     id: 1,
     name: "Shower Hinger 90°",
-    description: "Connector kaca ke dinding stainless steel untuk menghubungkan panel kaca ke dinding",
+    description: "GW-90",
     slug: "glass-to-wall",
     image: '/asset/product/accessories/glass-to-wall.png'
   },
   {
     id: 2,
     name: "Shower Hinger 180°",
-    description: "Connector kaca ke kaca stainless steel untuk menyambungkan dua panel kaca",
+    description: "GG-180",
     slug: "glass-to-glass",
     image: '/asset/product/accessories/glass-to-glass.png'
   },
   {
     id: 3,
     name: "Glass Clip L",
-    description: "Klip kaca L stainless steel sebagai penahan kaca bentuk L untuk sudut",
+    description: "GCL-201",
     slug: "glass-clip-l",
     image: '/asset/product/accessories/glass-clip-l.png'
   },
   {
     id: 4,
     name: "Glass Clip Persegi",
-    description: "Klip kaca P stainless steel sebagai penahan kaca bentuk P untuk sambungan",
+    description: "GCP-201",
     slug: "glass-clip-p",
     image: '/asset/product/accessories/glass-clip-p.png'
   },
   {
     id: 5,
     name: "Glass Clip U",
-    description: "Klip kaca U stainless steel sebagai penahan kaca bentuk U untuk sudut lancip",
+    description: "GCU",
     slug: "glass-clip-u",
     image: '/asset/product/accessories/glass-clip-u.png'
   },
   {
     id: 6,
     name: "Glass Suction Plate",
-    description: "Glass suction cup alat angkat kaca untuk memudahkan pemindahan kaca berat",
+    description: "GSP-GLT",
     slug: "glass-suction",
     image: '/asset/product/accessories/glass-suction.png'
   },
   {
     id: 7,
+    name: "Rod Glass Connector",
+    description: "KPG-907",
+    slug: "rod-glass-connector",
+    image: '/asset/product/accessories/rod-glass-connector.png'
+  },
+  {
+    id: 8,
+    name: "Railing Glass Pins",
+    description: "KRG-039-4",
+    slug: "railing-glass-pins",
+    image: '/asset/product/accessories/railing-glass-pins.png'
+  },
+  {
+    id: 9,
+    name: "Wall Rod Connector",
+    description: "KWP-906",
+    slug: "wall-rod-connector",
+    image: '/asset/product/accessories/wall-rod-connector.png'
+  },
+  {
+    id: 10,
+    name: "Swivel Rod Connector",
+    description: "KPP-908",
+    slug: "swivel-rod-connector",
+    image: '/asset/product/accessories/swivel-rod-connector.png'
+  },
+  {
+    id: 11,
+    name: "Corner Scren Single",
+    description: "KV-078-SINGLE",
+    slug: "corner-screen-single",
+    image: '/asset/product/accessories/corner-screen-single.png'
+  },
+  {
+    id: 12,
+    name: "Corner Screen Double",
+    description: "KV-088-DOUBLE",
+    slug: "corner-screen-double",
+    image: '/asset/product/accessories/corner-screen-double.png'
+  },
+  {
+    id: 13,
     name: "Handle Bamboo",
-    description: "Handle bambu Kotak Glatino hadir dengan desain kokoh dan keamanan tinggi.",
+    description: "HB-18CM",
     slug: "handle-bamboo",
     image: '/asset/product/accessories/handle-bamboo.png'
   },
   {
-    id: 8,
+    id: 14,
     name: "Handle Swing",
-    description: "Handle Swing Glatino dirancang dengan tampilan minimalis dan fungsionalitas tinggi.",
+    description: "HS-21CM",
     slug: "handle-swing",
     image: '/asset/product/accessories/handle-swing.png'
   },
   {
-    id: 9,
+    id: 15,
     name: "Bracket Ikan",
-    description: "Bracket ikan stainless steel untuk sambungan sudut kuat pada furniture",
+    description: "BIA",
     slug: "bracket-ikan",
     image: '/asset/product/accessories/bracket-ikan.png'
   },
   {
-    id: 10,
+    id: 16,
     name: "Aluminium Blind Rivet",
-    description: "Paku rivet aluminium untuk sambungan permanen yang kuat dan anti karat",
+    description: "435-550",
     slug: "rivet",
     image: '/asset/product/accessories/rivet.png'
   },
   {
-    id: 11,
-    name: "Roller Shutter Lock",
-    description: "Kunci Tengah Manual Glatino dirancang untuk pintu rana rol dengan sistem penguncian praktis dan aman",
+    id: 17,
+    name: "Rolling Shutter Lock",
+    description: "H322-GLATINO",
     slug: "roller-shutter-lock",
     image: '/asset/product/accessories/roller-shutter-lock.png'
   },
   {
-    id: 12,
+    id: 18,
     name: "Engsel Salon",
-    description: "Engsel aluminium model salon, tersedia dalam 4 pilihan warna elegan dengan desain modern.",
+    description: "ES-9''",
     slug: "engsel-salon",
     image: '/asset/product/accessories/engsel-salon.png'
   },
   {
-    id: 13,
+    id: 19,
     name: "Silicone Acetoxy",
-    description: "Silicone sealant serbaguna untuk menutup celah dan sambungan",
+    description: "SLC",
     slug: "silicone",
     image: '/asset/product/accessories/silicone.png'
   },
   {
-    id: 14,
+    id: 20,
     name: "Silicone Gun",
-    description: "Alat tembak silicone material baja untuk aplikasi lem silicone dengan rapi",
+    description: "TS-GLT",
     slug: "tembak-silicone",
     image: '/asset/product/accessories/tembak-silicone.png'
   },
   {
-    id: 15,
+    id: 21,
     name: "Silicone Sausage Neutral",
-    description: "Silicone sausage neutral untuk perekat dan sealant tahan air berkualitas tinggi",
+    description: "SLC-S",
     slug: "silicone-sausage-neutral",
     image: '/asset/product/accessories/silicone-sosis.png'
   },
   {
-    id: 16,
+    id: 22,
     name: "Silicone Gun Sosis",
-    description: "Alat tembak silicone material baja untuk aplikasi lem silicone dengan rapi",
+    description: "TS-S-GLT",
     slug: "silicone-gun-sosis",
     image: '/asset/product/accessories/silicone-gun-sosis.png'
   },
   {
-    id: 17,
+    id: 23,
     name: "Karet Mohair Big",
-    description: "Seal mohair untuk pintu dan jendela membantu menghalangi debu dan udara masuk",
+    description: "MHR-GLT",
     slug: "mohair",
     image: '/asset/product/accessories/mohair.png'
   },
   {
-    id: 18,
+    id: 24,
     name: "Engsel Piano Stainless",
-    description: "Engsel piano stainless steel untuk pintu kabinet panjang dan kuat",
+    description: "EP-1.8-SS",
     slug: "engsel-piano-stainless",
     image: '/asset/product/accessories/engsel-piano-stainless.png'
   },
   {
-    id: 19,
+    id: 25,
     name: "Engsel Piano Iron",
-    description: "Engsel piano besi untuk pintu kabinet panjang dengan kekuatan ekstra",
+    description: "EP-3.5-IR",
     slug: "engsel-piano-iron",
     image: '/asset/product/accessories/engsel-piano-iron.png'
   },
   {
-    id: 20,
-    name: "Camlock",
-    description: "Kunci camlock zinc alloy untuk mengamankan laci lemari dan pintu kecil",
+    id: 26,
+    name: "Camlock Glatino",
+    description: "CL-103",
     slug: "camlock",
     image: '/asset/product/accessories/camlock.png'
   },
   {
-    id: 21,
+    id: 27,
     name: "Rell Laci FE 30 NB",
-    description: "Rel laci full extension baja untuk membuka laci penuh dengan lancar",
+    description: "SL.3305",
     slug: "rell-laci-fe",
     image: '/asset/product/accessories/rell-laci-fe.png'
   },
   {
-    id: 22,
+    id: 28,
     name: "Rell Laci FE 37 Black",
-    description: "Rel laci full extension slowmotion baja untuk membuka laci halus tanpa benturan",
+    description: "SL.3351",
     slug: "rell-laci-fe-slowmo",
     image: '/asset/product/accessories/rell-laci-fe-slowmo.png'
   },
   {
-    id: 23,
+    id: 29,
     name: "Engsel Sendok Mini",
-    description: "Engsel sendok mini stainless steel untuk pintu kabinet kecil dan ringan",
+    description: "CH.3387 - CH.3389",
     slug: "engsel-sendok-mini",
     image: '/asset/product/accessories/engsel-sendok-mini.png'
   },

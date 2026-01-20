@@ -22,25 +22,18 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Shower Hinger 90°</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Engsel Pintu Kaca ke Tembok Glatino dirancang untuk memberikan tampilan minimalis sekaligus kekuatan maksimal. Menggunakan material stainless steel SUS 304, engsel ini tahan karat, awet, dan mampu mengembalikan pintu ke posisi semula secara otomatis.
+            The Glatino Glass-to-Wall Door Hinges are designed for a minimalist look and maximum strength. Made from SUS 304 stainless steel, these hinges are rust-resistant, durable, and automatically return the door to its original position.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Tipe: Engsel Pintu Kaca ke Tembok 90° (Glass to Wall)</p>
-            <p class="capitalize text-sm sm:text-base">Material: Stainless Steel SUS 304</p>
-            <p class="capitalize text-sm sm:text-base">Finishing: Kilap (Polished Chrome)</p>
-            <p class="capitalize text-sm sm:text-base">Ketebalan Bahan: 4 mm</p>
-            <p class="capitalize text-sm sm:text-base">Kapasitas Kaca: 8–10 mm</p>
-            <p class="capitalize text-sm sm:text-base">Fitur: Tahan karat, anti gores, anti korosi, dan pintu kembali otomatis saat terbuka ±25–30°</p>
-
-
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>           
+            <p class="capitalize text-sm sm:text-base">Color: {{ selectedColorLabel }}</p>
+            <p class="text-sm sm:text-base">Application: Glass to Wall</p>
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available on Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
@@ -52,19 +45,41 @@
           </div>
         </div>
 
-        <!-- Gambar Produk -->
-        <div class="flex justify-center items-center w-full">
-          <img
-            src="/asset/product/accessories/glass-to-wall/produk.png"
-            alt="Accessories Glass To Wall"
-            class="rounded-2xl shadow-lg w-full aspect-video object-contain bg-white"
-          />
+        <!-- Gambar & Warna -->
+        <div class="space-y-6 flex flex-col items-center w-full">
+          <transition name="fade" mode="out-in">
+            <img
+              :key="selectedImage"
+              :src="selectedImage"
+              :alt="selectedColorLabel"
+              class="rounded-2xl shadow-lg w-full aspect-video object-contain bg-white"
+            />
+          </transition>
+
+          <!-- Pilihan Warna -->
+          <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 gap-4 w-full">
+            <div
+              v-for="(color, index) in colors"
+              :key="index"
+              class="group cursor-pointer text-center border rounded-xl p-3 transition hover:shadow-md"
+              :class="{
+                'ring-2 ring-red-600 border-red-600': selectedColor === color.name,
+                'border-gray-700': selectedColor !== color.name
+              }"
+              @click="selectColor(color)"
+            >
+              <div class="w-8 h-8 mx-auto rounded-full border" :style="{ backgroundColor: color.hex }" />
+              <p class="text-xs mt-2 font-medium capitalize group-hover:text-red-600">
+                {{ color.label }}
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- Dimensi -->
       <div class="mt-14 border-t border-gray-700 pt-10">
-        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Product Dimensions</h2>
         <div class="flex flex-col items-center">
           <img
             src="/asset/product/accessories/glass-to-wall/ukuran-hitam.png"
@@ -72,7 +87,7 @@
             class="rounded-xl shadow-md max-w-xl w-full bg-white p-4 cursor-zoom-in"
             @click="toggleZoom"
           />
-          <p class="text-sm text-gray-500 mt-4 text-center">*Gambar hanya ilustrasi ukuran secara proporsional</p>
+          <p class="text-sm text-gray-500 mt-4 text-center">*This image is only an illustration of the product dimensions</p>
         </div>
       </div>
 
@@ -120,7 +135,39 @@
 
 <script lang="ts" setup>
 import FooterComponent from '@/components/footer.vue'
-import { ref } from 'vue'
+import { RouterLink } from 'vue-router'
+import { ref, computed } from 'vue'
+
+// Gambar produk
+import hitam from '/asset/product/accessories/glass-to-wall/hitam.png'
+import sn from '/asset/product/accessories/glass-to-wall/sn.png'
+
+// Ukuran
+import ukuranHitam from '/asset/product/accessories/glass-to-wall/ukuran-hitam.png'
+
+
+const colors = [
+  { name: 'hitam', label: 'Black', hex: '#1f1f1f', image: hitam, ukuran: ukuranHitam },
+  { name: 'sn', label: 'PSS', hex: '#c0c0c0', image: sn, ukuran: ukuranHitam }
+]
+
+const selectedColor = ref(colors[0]!.name)
+
+const selectedColorLabel = computed(() => {
+  return colors.find(c => c.name === selectedColor.value)?.label || ''
+})
+
+const selectedImage = computed(() => {
+  return colors.find(c => c.name === selectedColor.value)?.image || ''
+})
+
+const ukuranImage = computed(() => {
+  return colors.find(c => c.name === selectedColor.value)?.ukuran || ukuranHitam
+})
+
+function selectColor(color: typeof colors[number]) {
+  selectedColor.value = color.name
+}
 
 const isZoomOpen = ref(false)
 function toggleZoom() {

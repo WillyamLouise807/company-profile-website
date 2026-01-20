@@ -22,20 +22,17 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Engsel Salon</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Engsel aluminium model salon, tersedia dalam 4 pilihan warna elegan dengan desain modern.
+            Salon style aluminum hinges, available in 4 elegant color choices with a modern design.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Warna: {{ selectedColor.label }}</p>
-            <p class="capitalize text-sm sm:text-base">Ukuran: 1 buah</p>
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Tipe: Engsel Salon</p>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>
+            <p class="capitalize text-sm sm:text-base">Color: {{ selectedColor.label }}</p>            
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available on Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store/glatino-engsel-salon-9-inch-atau-engsel-penahan-sikutan-jendela-lipat-material-aluminium-anti-karat-1730972977255319278?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
@@ -76,7 +73,7 @@
 
       <!-- Dimensi -->
       <div class="mt-14 border-t border-gray-700 pt-10">
-        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Product Dimensions</h2>
         <div class="flex flex-col items-center">
           <img
             :src="ukuranImage"
@@ -84,7 +81,7 @@
             class="rounded-xl shadow-md max-w-xl w-full bg-white p-4 cursor-zoom-in"
             @click="toggleZoom"
           />
-          <p class="text-sm text-gray-500 mt-4 text-center">*Gambar hanya ilustrasi ukuran secara proporsional</p>
+          <p class="text-sm text-gray-500 mt-4 text-center">*Image is only an illustration of the product dimensions</p>
         </div>
       </div>
 
@@ -139,10 +136,10 @@ interface ColorOption {
 }
 
 const colors: ColorOption[] = [
-  { name: 'hitam', label: 'Hitam', hex: '#000' },
-  { name: 'putih', label: 'Putih', hex: '#fff' },
-  { name: 'cokelat', label: 'Cokelat', hex: '#5d4037' },
-  { name: 'beige', label: 'Beige', hex: '#f5f5dc' },
+  { name: 'hitam', label: 'Black', hex: '#000' },
+  { name: 'putih', label: 'White', hex: '#fff' },
+  { name: 'cokelat', label: 'SN', hex: '#ADADAD' },
+  { name: 'beige', label: 'Beige', hex: '#171D2B' },
 ]
 
 const images: Record<ColorName, string> = {

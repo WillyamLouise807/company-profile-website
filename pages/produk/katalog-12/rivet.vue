@@ -12,7 +12,7 @@
             <RouterLink to="/produk/accessories" class="hover:underline text-black font-medium">Accessories</RouterLink>
           </li>
           <li>/</li>
-          <li class="text-black font-semibold">Rivet</li>
+          <li class="text-black font-semibold">Blind Rivet</li>
         </ol>
       </nav>
 
@@ -20,30 +20,27 @@
       <div class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Paku Rivet</h1>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Blind Rivet</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Paku Rivet adalah solusi sempurna untuk menyatukan berbagai material dengan kuat dan rapi. 
-            Dengan desain yang minimalis, paku ini cocok untuk berbagai aplikasi, mulai dari furnitur hingga konstruksi.
+            Rivets are the perfect solution for joining various materials securely and securely. With their minimalist design, these rivets are suitable for a variety of applications, from furniture to construction.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Type: 435</p>
-            <p class="capitalize text-sm sm:text-base">Satuan Penjualan: Per Box (tidak ecer)</p>
-            <p class="capitalize text-sm sm:text-base">Warna: Putih, Hitam, Coklat</p>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>            
+            <p class="capitalize text-sm sm:text-base">Material: Aluminum Coating</p>
+            <p class="capitalize text-sm sm:text-base">Color: White, Black, Brown</p>
 
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Ukuran:</h2>
-            <p class="capitalize text-sm sm:text-base">- Paku Rivet 1/8" x 3/8" (±950 pcs)</p>
-            <p class="capitalize text-sm sm:text-base">- Paku Rivet 3.2 x 13 mm (±950 pcs)</p>
-            <p class="capitalize text-sm sm:text-base">- Paku Rivet 4 x 13 mm (±450 pcs)</p>                        
-            <p class="capitalize text-sm sm:text-base">- Paku Rivet 3.2 x 11 mm (±950 pcs)</p>
-            <p class="capitalize text-sm sm:text-base">- Paku Rivet 4 x 11 mm (±450 pcs)</p>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Size:</h2>
+            <p class="capitalize text-sm sm:text-base">- Blind Rivet 1/8" x 3/8" (Code: 435)</p>
+            <p class="capitalize text-sm sm:text-base">- Blind Rivet 3.2 x 11 mm (Code: 440)</p>
+            <p class="capitalize text-sm sm:text-base">- Blind Rivet 3.2 x 13 mm (Code: 450)</p>
+            <p class="capitalize text-sm sm:text-base">- Blind Rivet 4 x 11 mm (Code: 540)</p>
+            <p class="capitalize text-sm sm:text-base">- Blind Rivet 4 x 13 mm (Code: 550)</p>            
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available on Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />

@@ -16,24 +16,24 @@
       <div class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Roller Shutter Lock</h1>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Rolling Shutter Lock</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Handle 41054 adalah handle aluminium elegan dengan desain modern dan kKunci Tengah Manual Glatino dirancang untuk pintu rana rol dengan sistem penguncian praktis dan aman. Ringan, ramah pengguna, serta cocok untuk penggunaan tugas berat.
+            The 41054 Handle is an elegant aluminum handle with a modern design and Glatino Manual Central Lock designed for roller shutter doors with a practical and secure locking system. It is lightweight, user-friendly, and suitable for heavy-duty use.
           </p>
 
-          <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
+          <!-- <div class="mb-6 space-y-1">
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>
             <p class="text-sm sm:text-base">Brand: Glatino</p>
             <p class="text-sm sm:text-base">Jenis: Kunci Tengah Rana Rol Manual</p>
             <p class="text-sm sm:text-base">Material: Baja + Aksesoris</p>
             <p class="text-sm sm:text-base">Kelengkapan: 2 Kunci & Aksesoris (batang datar baja tidak termasuk)</p>
             <p class="text-sm sm:text-base">Pemasangan: Menggunakan paku keling pada bilah pintu</p>
             <p class="text-sm sm:text-base">Kompatibilitas: Sebagian besar pintu rana rol</p>
-          </div>
+          </div> -->
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available on Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store/glatino-roller-shutter-lock-center-lock-material-aluminium-anti-karat-harga-terjangkau-1730973244951267054?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
@@ -75,7 +75,7 @@
 
       <!-- Dimensi Produk -->
       <div class="mt-14 border-t border-gray-700 pt-10">
-        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Product Dimensions</h2>
         <div class="flex flex-col items-center">
           <img
             :src="ukuranImage"
@@ -83,7 +83,7 @@
             class="rounded-xl shadow-md max-w-xl w-full bg-white p-4 cursor-zoom-in"
             @click="toggleZoom"
           />
-          <p class="text-sm text-gray-500 mt-4 text-center">*Gambar hanya ilustrasi ukuran secara proporsional</p>
+          <p class="text-sm text-gray-500 mt-4 text-center">*This image is only an illustration of the product dimensions</p>
         </div>
       </div>
 

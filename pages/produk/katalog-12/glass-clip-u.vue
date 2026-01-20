@@ -22,25 +22,18 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Glass Clip U</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Glass Clip U berfungsi untuk menghubungkan panel kaca dengan rangka aluminium atau besi, 
-            memberikan kekuatan dan tampilan yang rapi. Tersedia dalam dua warna elegan untuk menyesuaikan desain Anda.
+            The Glass Clip U connects glass panels to aluminum or metal frames, providing strength and a sleek appearance. Available in two elegant colors to match your design.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Tipe: U</p>
-            <p class="capitalize text-sm sm:text-base">Material: Stainless Steel SUS 304</p>
-            <p class="capitalize text-sm sm:text-base">Finishing: Kilap (Polished Chrome)</p>
-            <p class="capitalize text-sm sm:text-base">Warna: {{ selectedColorLabel }}</p>
-            <p class="capitalize text-sm sm:text-base">Ketebalan Bahan: 4 mm</p>
-            <p class="capitalize text-sm sm:text-base">Kapasitas Kaca: 8–10 mm</p>
-            <p class="capitalize text-sm sm:text-base">Fitur: Tahan karat, anti gores, anti korosi, dan pintu kembali otomatis saat terbuka ±25–30°</p>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>            
+            <p class="capitalize text-sm sm:text-base">Color: {{ selectedColorLabel }}</p>
+            <p class="text-sm sm:text-base">Application: Glass to Wall</p>           
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available on Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
@@ -86,7 +79,7 @@
 
       <!-- Dimensi -->
       <div class="mt-14 border-t border-gray-700 pt-10">
-        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Product Dimensions</h2>
         <div class="flex flex-col items-center">
           <img
             :src="ukuranImage"
@@ -94,7 +87,7 @@
             class="rounded-xl shadow-md max-w-xl w-full bg-white p-4 cursor-zoom-in"
             @click="toggleZoom"
           />
-          <p class="text-sm text-gray-500 mt-4 text-center">*Gambar hanya ilustrasi ukuran secara proporsional</p>
+          <p class="text-sm text-gray-500 mt-4 text-center">*Image is only an illustration of the product dimensions</p>
         </div>
       </div>
 
@@ -149,8 +142,8 @@ import sn from '/asset/product/accessories/glass-clip-u/sn.png'
 import ukuranHitam from '/asset/product/accessories/glass-clip-u/ukuran-hitam.png'
 
 const colors = [
-  { name: 'hitam', label: 'Hitam', hex: '#1f1f1f', image: hitam, ukuran: ukuranHitam },
-  { name: 'sn', label: 'SN', hex: '#c0c0c0', image: sn, ukuran: ukuranHitam }
+  { name: 'hitam', label: 'Black', hex: '#1f1f1f', image: hitam, ukuran: ukuranHitam },
+  { name: 'sn', label: 'PSS', hex: '#c0c0c0', image: sn, ukuran: ukuranHitam }
 ]
 
 const selectedColor = ref(colors[0]!.name)

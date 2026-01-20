@@ -27,19 +27,19 @@
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>
+            <p class="capitalize text-sm sm:text-base">Size: 35 MM normal slide</p>
             <p class="capitalize text-sm sm:text-base">Material: Cold Rolled Steal</p>
-            <p class="capitalize text-sm sm:text-base">Finish: 2 inc</p>
-            <p class="capitalize text-sm sm:text-base">Thickness: 1.0 x 1.0 x 1.2 mm</p>
+            <p class="capitalize text-sm sm:text-base">Color: Black</p>
+            <p class="capitalize text-sm sm:text-base">Thickness: 1.0 × 1.0 × 1.2 MM</p>
 
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Ukuran:</h2>
-            <p class="capitalize text-sm sm:text-base">- 250 mm</p>
-            <p class="capitalize text-sm sm:text-base">- 300 mm</p> 
-            <p class="capitalize text-sm sm:text-base">- 350 mm</p> 
-            <p class="capitalize text-sm sm:text-base">- 400 mm</p>                        
-            <p class="capitalize text-sm sm:text-base">- 450 mm</p>                            
-            <p class="capitalize text-sm sm:text-base">- 500 mm</p>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Available Size:</h2>
+            <p class="capitalize text-sm sm:text-base">- 250 MM</p>
+            <p class="capitalize text-sm sm:text-base">- 300 MM</p> 
+            <p class="capitalize text-sm sm:text-base">- 350 MM</p> 
+            <p class="capitalize text-sm sm:text-base">- 400 MM</p>                        
+            <p class="capitalize text-sm sm:text-base">- 450 MM</p>                            
+            <p class="capitalize text-sm sm:text-base">- 500 MM</p>         
           </div>
 
           <!-- Marketplace -->
@@ -85,7 +85,7 @@
       </div>
 
       <!-- Dimensi -->
-      <div class="mt-14 border-t border-gray-700 pt-10">
+      <!-- <div class="mt-14 border-t border-gray-700 pt-10">
         <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
         <div class="flex flex-col items-center">
           <img
@@ -96,10 +96,10 @@
           />
           <p class="text-sm text-gray-500 mt-4 text-center">*Gambar hanya ilustrasi ukuran secara proporsional</p>
         </div>
-      </div>
+      </div> -->
 
       <!-- Zoom Modal -->
-      <div
+      <!-- <div
         v-if="isZoomOpen"
         class="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
         @click.self="toggleZoom"
@@ -111,7 +111,7 @@
             class="w-full object-contain"
           />
         </div>
-      </div>
+      </div> -->
 
       <!-- Link Produk Lain -->
       <div class="border-t border-gray-200 my-20 py-8">

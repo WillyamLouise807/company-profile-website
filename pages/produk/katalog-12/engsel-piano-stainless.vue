@@ -22,15 +22,13 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Engsel Piano Stainless</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Engsel panjang model piano, cocok untuk aplikasi yang memerlukan sambungan lurus dan stabil. 
+            Long piano style hinge, suitable for applications that require a straight and stable connection.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Ukuran: 1800 MM</p>
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Varian: Stainless</p>
-            <p class="capitalize text-sm sm:text-base">Stainless Material: SUS 201 SS</p>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>
+            <p class="capitalize text-sm sm:text-base">Size: 1800 MM</p>            
+            <p class="capitalize text-sm sm:text-base">Material: Stainless Steel SUS 201</p>
           </div>
 
           <!-- Marketplace -->

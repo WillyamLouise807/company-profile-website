@@ -12,7 +12,7 @@
             <RouterLink to="/produk/accessories" class="hover:underline text-black font-medium">Accessories</RouterLink>
           </li>
           <li>/</li>
-          <li class="text-black font-semibold">Mohair</li>
+          <li class="text-black font-semibold">Karet Mohair Big</li>
         </ol>
       </nav>
 
@@ -20,26 +20,20 @@
       <div class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Mohair</h1>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Karet Mohair Big</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Tali Bulu Mohair Glatino dirancang untuk memberikan pergerakan pintu yang lebih halus, stabil, dan aman. Terbuat dari bahan berkualitas tinggi, tali ini kuat, tahan lama, dan mudah dipasang tanpa memerlukan peralatan khusus.
+            Mohair Rope Big is a high-quality weatherstripping solution designed to seal gaps around doors and windows. It helps to prevent drafts, reduce noise, and improve energy efficiency by providing an effective barrier against external elements.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Jenis: Tali Bulu Mohair (Besar)</p>
-            <p class="capitalize text-sm sm:text-base">Dimensi Ukuran: 1.1 x 0.7 x 175 Meter</p>
-            <p class="capitalize text-sm sm:text-base">Warna: Abu-Abu / Grey, Hitam / Black, Brown / Coklat</p>
-            <p class="capitalize text-sm sm:text-base">Fungsi Utama: Mengatur gerakan pintu, meningkatkan keamanan, dan memberikan kenyamanan penggunaan</p>
-            <p class="capitalize text-sm sm:text-base">Kelebihan: Bahan kuat & tahan lama, pemasangan mudah, harga kompetitif</p>
-
-
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>                        
+            <p class="capitalize text-sm sm:text-base">Color: Grey, Black, Brown</p>
+            <p class="capitalize text-sm sm:text-base">Size: 1.1 × 0.7 × 175 Meter</p>           
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available on Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store/glatino-bulu-mohair-lebar-1-1x7-panjang-175-meter-merek-berfungsi-sebagai-pengatur-gerakan-pintu-1731013790857463534?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />

@@ -22,25 +22,19 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Handle Swing</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Flush Handle Swing Glatino dirancang dengan tampilan minimalis dan fungsionalitas tinggi untuk memberikan kenyamanan serta keamanan maksimal pada pintu aluminium. Handle ini menggunakan sistem swing yang halus dan presisi, membuatnya ideal untuk pintu kabinet, lemari listrik, atau panel industri.
+            The Glatino Flush Handle Swing is designed with a minimalist look and high functionality to provide maximum comfort and security for aluminum doors. This handle uses a smooth and precise swing system, making it ideal for cabinet doors, electrical cabinets, or industrial panels.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>            
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Tipe: Flush Handle Swing</p>
-            <p class="capitalize text-sm sm:text-base">Material: Aluminium / Stainless Steel</p>
-            <p class="capitalize text-sm sm:text-base">Finishing: Chrome, Satin, Powder Coating</p>
-            <p class="capitalize text-sm sm:text-base">Warna: {{ selectedColorLabel }}</p>
-            <p class="capitalize text-sm sm:text-base">Ukuran: 18 cm (opsional sesuai kebutuhan pintu)</p>
-            <p class="capitalize text-sm sm:text-base">Sistem Penguncian: Dengan kunci (lock type) / Tanpa kunci (plain type)</p>
-            <p class="capitalize text-sm sm:text-base">Fitur Tambahan: Mekanisme swing lembut, tahan korosi, dan mudah dipasang</p>
-            <p class="capitalize text-sm sm:text-base">Aplikasi: Pintu kabinet, panel listrik, lemari kontrol, dan pintu aluminium</p>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>            
+            <p class="capitalize text-sm sm:text-base">Color: {{ selectedColorLabel }}</p>
+            <p class="capitalize text-sm sm:text-base">Material: Aluminium Coating</p>
+            <p class="capitalize text-sm sm:text-base">Size: 21 cm</p>  
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available on Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store/" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
@@ -89,7 +83,7 @@
 
       <!-- Dimensi -->
       <div class="mt-14 border-t border-gray-200 pt-10">
-        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Product Dimensions</h2>
         <div class="flex flex-col items-center">
           <img
             :src="ukuranImage"
@@ -97,7 +91,7 @@
             class="rounded-xl shadow-md max-w-xl w-full bg-white p-4 cursor-zoom-in"
             @click="toggleZoom"
           />
-          <p class="text-sm text-gray-500 mt-4 text-center">*Gambar hanya ilustrasi ukuran secara proporsional</p>
+          <p class="text-sm text-gray-500 mt-4 text-center">*The image is only an illustration of the proportional size.</p>
         </div>
       </div>
 
@@ -156,9 +150,9 @@ import snss from '/asset/product/flush-handle/handle-swing/silver.png'
 import ukuran from '/asset/product/flush-handle/handle-swing/ukuran-hitam.png'
 
 const colors = [
-  { name: 'hitam', label: 'Hitam', hex: '#1f1f1f', image: hitam },
-  { name: 'cokelat', label: 'Cokelat', hex: '#8B4513', image: cokelat },
-  { name: 'putih', label: 'Putih', hex: '#eeeeee', image: putih },
+  { name: 'hitam', label: 'Black', hex: '#1f1f1f', image: hitam },
+  { name: 'cokelat', label: 'Brown', hex: '#5d4037', image: cokelat },
+  { name: 'putih', label: 'White', hex: '#eeeeee', image: putih },
   { name: 'sn-ss', label: 'Silver', hex: '#bdc3c7', image: snss }
 ]
 
