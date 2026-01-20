@@ -7,21 +7,21 @@
         class="absolute inset-0 bg-cover bg-center bg-no-repeat z-[-3]"
         :style="{ backgroundImage: `url(${bgImage})` }"
       ></div>
-      <div class="absolute inset-0 bg-white/60 backdrop-blur-sm z-[-2]"></div>
+      <div class="absolute inset-0 bg-white/10 backdrop-blur-sm z-[-2]"></div>
       <div class="absolute bottom-0 left-0 right-0 h-48 z-[-1] bg-gradient-to-b from-transparent to-white"></div>
 
       <!-- Content Container -->
       <div class="container mx-auto h-full px-4 relative z-10 flex flex-col">
         <!-- Breadcrumb -->
         <div class="text-red-700 text-sm opacity-90 pt-20 sm:pt-28 md:pt-36">
-          <NuxtLink to="/product" class="hover:underline text-red-600 font-medium">Product</NuxtLink> / <span class="text-gray-600">Roller</span>
+          <NuxtLink to="/product" class="hover:underline text-red-600 font-medium">Product</NuxtLink> / <span class="text-gray-100">Roller</span>
         </div>
 
         <!-- Hero Text Centered -->
         <div class="flex-grow flex items-center justify-center">
           <div class="text-center max-w-2xl mx-auto text-red-800 transform -translate-y-6">
             <h1 class="text-3xl sm:text-4xl font-bold leading-relaxed mb-4">Roller Series</h1>
-            <p class="text-base sm:text-lg text-gray-600">Rangkaian roller presisi tinggi untuk pergerakan pintu dan jendela yang mulus, stabil, dan tahan lama.</p>
+            <p class="text-base sm:text-lg text-gray-100">Rangkaian roller presisi tinggi untuk pergerakan pintu dan jendela yang mulus, stabil, dan tahan lama.</p>
           </div>
         </div>
       </div>
@@ -73,35 +73,35 @@ const rollerProducts = [
   {
     id: 1,
     name: "Sliding Track",
-    description: "Sliding track berkualitas untuk jalur pergerakan pintu geser yang lancar dan stabil",
+    description: "ROLLER 3A",
     slug: "sliding-track",
     image: '/asset/product/roller/sliding-track.png'
   },
   {
     id: 2,
     name: "Roda Pintu Lipat 360",
-    description: "Roda pintu lipat kuat dan halus untuk memudahkan pergerakan pintu lipat",
+    description: "RPL-GLT",
     slug: "roda-pintu-lipat",
     image: '/asset/product/roller/roda-pintu-lipat.png'
   },
   {
     id: 3,
     name: "Showcase",
-    description: "Roller showcase presisi untuk pergerakan pintu kaca etalase yang ringan dan mulus",
+    description: "SC=SM-GL & SC-BIG-GL",
     slug: "showcase",
     image: '/asset/product/roller/showcase.png'
   },
   {
     id: 4,
     name: "Sliding Door 380",
-    description: "Roller sliding door 380 kokoh dan awet untuk pintu geser berukuran besar",
+    description: "SD-380-G",
     slug: "sliding-door-380",
     image: '/asset/product/roller/sliding-door-380.png'
   },
   {
     id: 5,
     name: "Sliding Door 75",
-    description: "Roller sliding door 75 kokoh dan awet untuk pintu geser berukuran besar",
+    description: "SD-75-G",
     slug: "sliding-door-75",
     image: '/asset/product/roller/sliding-door-75.png'
   },

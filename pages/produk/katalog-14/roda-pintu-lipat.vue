@@ -22,21 +22,24 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Roda Pintu Lipat 360</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Roda pintu lipat 360 derajat dirancang untuk memberikan kemudahan dalam pergerakan pintu lipat. Dengan desain yang kuat dan tahan lama, roda ini memastikan pergerakan halus dan stabil.
+            360-degree folding door wheels are designed to provide easy movement of the folding door. With a strong and durable design, these wheels ensure smooth and stable movement.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Jenis: Roda Pintu Lipat</p>
-            <p class="capitalize text-sm sm:text-base">Material: Stainless Steel</p>
-            <p class="capitalize text-sm sm:text-base">Dimensi: 42 x 120 mm</p>
-            <p class="capitalize text-sm sm:text-base">Application: Double Sliding Door</p>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>
+            <p class="capitalize text-sm sm:text-base">Application For:</p>
+            <p class="capitalize text-sm sm:text-base">- Double Sliding Door</p>
+            <p class="capitalize text-sm sm:text-base">Roda Pintu Lipat 360:</p>
+            <p class="capitalize text-sm sm:text-base">- 2 pcs Roda atas</p>
+            <p class="capitalize text-sm sm:text-base">- 1 pcs Bracket Atas</p>
+            <p class="capitalize text-sm sm:text-base">- 1 pcs Bracket bawah</p>
+            <p class="capitalize text-sm sm:text-base">- 1 set Pivot atas</p>
+            <p class="capitalize text-sm sm:text-base">- 1 set Pivot bawah</p>
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available on Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />

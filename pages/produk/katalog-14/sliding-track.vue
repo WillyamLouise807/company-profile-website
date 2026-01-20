@@ -22,23 +22,15 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Sliding Track</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Sliding Track adalah rel berkualitas tinggi yang dirancang khusus untuk pintu geser. 
-            Dengan desain yang kuat dan tahan lama, rel ini memastikan pergerakan pintu yang lancar dan stabil.
+            Sliding Track is a high-quality rail specifically designed for sliding doors. With its strong and durable design, this rail ensures smooth and stable door movement.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Jenis: Tarikan Tanam Pintu Dorong / Sliding</p>
-            <p class="capitalize text-sm sm:text-base">Material: Stainless Steel</p>
-            <p class="capitalize text-sm sm:text-base">Dimensi: 42 x 120 mm</p>
-            
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>          
             <h2 class="text-lg sm:text-xl font-semibold mb-2">Get:</h2>
             <p class="capitalize text-sm sm:text-base">- 2 Set Roda Atas</p>
             <p class="capitalize text-sm sm:text-base">- 1 Pcs Guide</p> 
-            <p class="capitalize text-sm sm:text-base">- 2 Pcs Stoper</p> 
-            <p class="capitalize text-sm sm:text-base">- Premium Quality</p>                        
-            <p class="capitalize text-sm sm:text-base">- Anti Karat</p>                                          
+            <p class="capitalize text-sm sm:text-base">- 2 Pcs Stoper</p>                                       
           </div>
 
           <!-- Marketplace -->

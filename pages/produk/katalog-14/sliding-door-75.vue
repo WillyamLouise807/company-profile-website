@@ -22,23 +22,21 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Sliding Door 75</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Sliding Door 75 dirancang untuk memberikan kemudahan dalam pergerakan pintu geser. Dengan desain yang kuat dan tahan lama, roda ini memastikan pergerakan halus dan stabil.
+            Sliding Door 75 is designed to provide ease in moving sliding doors. With a strong and durable design, these wheels ensure smooth and stable movement.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Jenis: Sliding Door 75</p>
-            <p class="capitalize text-sm sm:text-base">Material: Stainless Steel</p>            
-            <p class="capitalize text-sm sm:text-base">Roda: Nylon</p>            
-            <p class="capitalize text-sm sm:text-base">Color: Black</p>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>
+            <p class="capitalize text-sm sm:text-base">Material: Steel</p>
+            <p class="capitalize text-sm sm:text-base">Roda: Nylon</p>
+            <p class="capitalize text-sm sm:text-base">Color: Black</p>  
 
 
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available on Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
               <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
@@ -62,7 +60,7 @@
 
       <!-- Dimensi -->
       <div class="mt-14 border-t border-gray-700 pt-10">
-        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Product Dimensions</h2>
         <div class="flex flex-col items-center">
           <img
             src="/asset/product/roller/sliding-door-75/ukuran.png"
@@ -70,7 +68,7 @@
             class="rounded-xl shadow-md max-w-xl w-full bg-white p-4 cursor-zoom-in"
             @click="toggleZoom"
           />
-          <p class="text-sm text-gray-500 mt-4 text-center">*Gambar hanya ilustrasi ukuran secara proporsional</p>
+          <p class="text-sm text-gray-500 mt-4 text-center">*This image is only an illustration of the proportional size.</p>
         </div>
       </div>
 

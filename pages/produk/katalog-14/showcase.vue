@@ -22,23 +22,35 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Showcase</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Showcase adalah rel berkualitas tinggi yang dirancang khusus untuk pintu geser. 
-            Dengan desain yang kuat dan tahan lama, rel ini memastikan pergerakan pintu yang lancar dan stabil.
+            Showcase is a high-quality rail specifically designed for sliding doors.
+            With its strong and durable design, this rail ensures smooth and stable door movement.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>
+            <p class="capitalize text-sm sm:text-base">
+              Id: <span class="font-semibold">{{ selectedViewId }}</span>
+            </p>
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available on Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
-              <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
+              <a
+                href="https://www.tokopedia.com/glatino-official-store"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:scale-105 transition-transform"
+              >
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
-              <a href="https://shopee.co.id/Glatino-Showcase-Big-Small-Material-Aluminium-Untuk-Pintu-Etalase-Kaca-i.1442585495.24891584447" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
+              <a
+                href="https://shopee.co.id/Glatino-Showcase-Big-Small-Material-Aluminium-Untuk-Pintu-Etalase-Kaca-i.1442585495.24891584447"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:scale-105 transition-transform"
+              >
                 <img src="/asset/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>
@@ -78,7 +90,9 @@
 
       <!-- Dimensi -->
       <div class="mt-14 border-t border-gray-700 pt-10">
-        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Dimensi Produk</h2>
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">
+          Product Dimensions
+        </h2>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 place-items-center">
           <div
@@ -97,7 +111,7 @@
         </div>
 
         <p class="text-sm text-gray-500 mt-6 text-center">
-          *Gambar hanya ilustrasi ukuran secara proporsional
+          *This image is only an illustration of the proportional size.
         </p>
       </div>
 
@@ -116,11 +130,13 @@
         </div>
       </div>
 
-      <!-- Link Produk Lain -->
+      <!-- Produk Lain -->
       <div class="border-t border-gray-200 my-20 py-8">
-        <h2 class="text-2xl font-bold text-center mb-8 text-red-700">SEE OUR OTHER PRODUCT IN THIS CATALOG</h2>
+        <h2 class="text-2xl font-bold text-center mb-8 text-red-700">
+          SEE OUR OTHER PRODUCT IN THIS CATALOG
+        </h2>
         <div class="flex justify-center">
-          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4">
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4">
             <NuxtLink
               v-for="item in katalogLinks"
               :key="item.slug"
@@ -147,13 +163,24 @@
 <script lang="ts" setup>
 import FooterComponent from '@/components/footer.vue'
 import { ref, computed } from 'vue'
+import { RouterLink } from 'vue-router'
 
 import besar from '/asset/product/roller/showcase/besar.png'
 import kecil from '/asset/product/roller/showcase/kecil.png'
 
 const views = [
-  { name: 'depan', label: 'Showcase Besar', image: besar },
-  { name: 'belakang', label: 'Showcase Kecil', image: kecil }
+  {
+    name: 'big',
+    label: 'Showcase Big',
+    id: 'SC-BIG-GL',
+    image: besar
+  },
+  {
+    name: 'small',
+    label: 'Showcase Small',
+    id: 'SC-SM-GL',
+    image: kecil
+  }
 ]
 
 const selectedView = ref(views[0]!.name)
@@ -161,6 +188,10 @@ const selectedImage = ref(views[0]!.image)
 
 const selectedViewLabel = computed(() => {
   return views.find(v => v.name === selectedView.value)?.label || ''
+})
+
+const selectedViewId = computed(() => {
+  return views.find(v => v.name === selectedView.value)?.id || ''
 })
 
 function selectView(view: typeof views[number]) {
@@ -182,16 +213,15 @@ function toggleZoom() {
 }
 
 const dimensiImages = [
-  { src: '/asset/product/roller/showcase/ukuran-besar.png', label: 'Ukuran Besar' },
-  { src: '/asset/product/roller/showcase/ukuran-kecil.png', label: 'Ukuran Kecil' }
+  { src: '/asset/product/roller/showcase/ukuran-besar.png', label: 'Big Size' },
+  { src: '/asset/product/roller/showcase/ukuran-kecil.png', label: 'Small Size' }
 ]
 
 const katalogLinks = [
   { slug: 'sliding-track', name: 'Sliding Track', image: '/asset/product/roller/sliding-track.png' },
   { slug: 'roda-pintu-lipat', name: 'Roda Pintu Lipat', image: '/asset/product/roller/roda-pintu-lipat.png' },
-  // { slug: 'showcase', name: 'Showcase', image: '/asset/product/roller/showcase.png' },
   { slug: 'sliding-door-380', name: 'Sliding Door 380', image: '/asset/product/roller/sliding-door-380.png' },
-  { slug: 'sliding-door-75', name: 'Sliding Door 75', image: '/asset/product/roller/sliding-door-75.png' },
+  { slug: 'sliding-door-75', name: 'Sliding Door 75', image: '/asset/product/roller/sliding-door-75.png' }
 ]
 </script>
 
@@ -199,10 +229,12 @@ const katalogLinks = [
 .font-poppins {
   font-family: 'Poppins', sans-serif;
 }
-.fade-enter-active, .fade-leave-active {
+.fade-enter-active,
+.fade-leave-active {
   transition: opacity 0.3s ease;
 }
-.fade-enter-from, .fade-leave-to {
+.fade-enter-from,
+.fade-leave-to {
   opacity: 0;
 }
 </style>
