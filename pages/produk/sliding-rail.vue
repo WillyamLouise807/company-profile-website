@@ -73,14 +73,14 @@ const floorHingeProduts = [
   {
     id: 1,
     name: "Aluminium",
-    description: "Sliding rail aluminium ringan dan tahan karat untuk jalur pergerakan pintu geser yang halus",
+    description: "GLT A2 - GLT A6",
     slug: "aluminium",
     image: '/asset/product/sliding-rail/aluminium.png'
   },
   {
     id: 2,
     name: "Galvanis",
-    description: "Sliding rail galvanis kokoh dan anti karat untuk jalur pergerakan pintu geser yang awet dan stabil",
+    description: "SLD G2 - SLD G6",
     slug: "galvanis",
     image: '/asset/product/sliding-rail/galvanis.png'
   },

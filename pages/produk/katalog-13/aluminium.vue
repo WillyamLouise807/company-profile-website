@@ -20,42 +20,83 @@
       <div class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Sliding Rail Aluminium</h1>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
+            Sliding Rail Aluminium
+          </h1>
+
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Sliding Rail Aluminium adalah solusi sempurna untuk pintu geser Anda. Dengan desain yang elegan dan material aluminium berkualitas tinggi, produk ini menawarkan kekuatan dan daya tahan yang luar biasa.
+            Aluminum Sliding Rail is the perfect solution for your sliding door. With its elegant design and high-quality aluminum material, this product offers exceptional strength and durability.
           </p>
 
+          <!-- Variant Selector -->
+          <div class="mb-4">
+            <label class="block text-sm font-medium mb-1">Type:</label>
+            <select
+              v-model="selectedVariant"
+              class="border rounded-lg px-3 py-2 w-full sm:w-60"
+            >
+              <option
+                v-for="item in variants"
+                :key="item.code"
+                :value="item"
+              >
+                {{ item.type }}
+              </option>
+            </select>
+          </div>
+
+          <!-- Product Description -->
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Deskripsi Produk:</h2>
-            <p class="capitalize text-sm sm:text-base">Brand: Glatino</p>
-            <p class="capitalize text-sm sm:text-base">Jenis: Rel Pintu Sliding (Sliding Rail)</p>
-            <p class="capitalize text-sm sm:text-base">Material: Aluminium</p>
-            <p class="capitalize text-sm sm:text-base">Ukuran Tersedia: 1,6 m – 3 m</p>
-            <p class="capitalize text-sm sm:text-base">Kapasitas Beban: Maksimal 100 kg</p>
-            <p class="capitalize text-sm sm:text-base">Kelengkapan: Satu set rel + roda siap pasang</p>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>
+
+            <p class="capitalize text-sm sm:text-base">
+              Material: <span class="font-semibold">Aluminium</span>
+            </p>
+            <p class="capitalize text-sm sm:text-base">
+              Code: <span class="font-semibold">{{ selectedVariant.code }}</span>
+            </p>
+            <p class="capitalize text-sm sm:text-base">
+              Type: <span class="font-semibold">{{ selectedVariant.type }}</span>
+            </p>
+            <p class="capitalize text-sm sm:text-base">
+              Track: <span class="font-semibold">{{ selectedVariant.track }}</span>
+            </p>
+            <p class="capitalize text-sm sm:text-base">
+              Bracket: <span class="font-semibold">{{ selectedVariant.bracket }}</span>
+            </p>
+            <p class="capitalize text-sm sm:text-base">
+              Capacity Max: <span class="font-semibold">{{ selectedVariant.capacity }}</span>
+            </p>
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Tersedia di Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available in Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
-              <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
-                <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
+              <a
+                href="https://www.tokopedia.com/glatino-official-store"
+                target="_blank"
+                class="hover:scale-105 transition-transform"
+              >
+                <img src="/asset/product/tokopedia 1.png" class="w-14 sm:w-16" />
               </a>
-              <a href="https://shopee.co.id/Glatino-GLT-Rel-Pintu-Geser-Sliding-Rail-Material-Aluminium-1-6-3-Meter-i.1442585495.28623371180" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
-                <img src="/asset/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
+              <a
+                href="https://shopee.co.id/Glatino-GLT-Rel-Pintu-Geser-Sliding-Rail-Material-Aluminium-1-6-3-Meter-i.1442585495.28623371180"
+                target="_blank"
+                class="hover:scale-105 transition-transform"
+              >
+                <img src="/asset/product/shopee 1.png" class="w-14 sm:w-16" />
               </a>
             </div>
           </div>
         </div>
 
-        <!-- Galeri Gambar -->
+        <!-- Image Gallery -->
         <div class="space-y-6 flex flex-col items-center w-full">
           <transition name="fade" mode="out-in">
             <img
               :key="selectedImage"
               :src="selectedImage"
-              alt="Camlock"
               class="rounded-2xl shadow-lg w-full aspect-video object-contain bg-white"
             />
           </transition>
@@ -77,54 +118,56 @@
         </div>
       </div>
 
-      <!-- Link Produk Lain di Katalog Sama -->
+      <!-- Katalog -->
       <div class="border-t border-gray-200 my-20 py-8">
-        <h2 class="text-2xl font-bold text-center mb-8 text-red-700">SEE OUR OTHER PRODUCT IN THIS CATALOG</h2>
+        <h2 class="text-2xl font-bold text-center mb-8 text-red-700">
+          SEE OUR OTHER PRODUCT IN THIS CATALOG
+        </h2>
         <div class="flex justify-center">
-          <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 gap-4">
-            <NuxtLink
-              v-for="item in katalogLinks"
-              :key="item.slug"
-              :to="`/produk/katalog-13/${item.slug}`"
-              class="group block bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition overflow-hidden w-40 sm:w-44"
-            >
-              <img
-                :src="item.image"
-                :alt="item.name"
-                class="w-full h-32 object-contain mx-auto transition-transform duration-300 group-hover:scale-105 bg-white"
-              />
-              <div class="bg-gray-50 text-center py-4 px-2">
-                <div class="text-red-600 font-semibold text-sm">{{ item.name }}</div>
-              </div>
-            </NuxtLink>
-          </div>
+          <NuxtLink
+            v-for="item in katalogLinks"
+            :key="item.slug"
+            :to="`/produk/katalog-13/${item.slug}`"
+            class="block bg-white rounded-xl border shadow-sm hover:shadow-md transition w-44"
+          >
+            <img :src="item.image" class="w-full h-32 object-contain bg-white" />
+            <div class="bg-gray-50 text-center py-4 text-red-600 font-semibold text-sm">
+              {{ item.name }}
+            </div>
+          </NuxtLink>
         </div>
       </div>
     </div>
   </div>
+
   <FooterComponent />
 </template>
 
 <script lang="ts" setup>
-import FooterComponent from '@/components/footer.vue'
-import { RouterLink } from 'vue-router'
 import { ref } from 'vue'
+import { RouterLink } from 'vue-router'
+import FooterComponent from '@/components/footer.vue'
 
-// Import gambar
+// Images
 import produk1 from '/asset/product/sliding-rail/aluminium/produk-1.png'
 import produk2 from '/asset/product/sliding-rail/aluminium/produk-2.png'
 
 const images = [produk1, produk2]
 const selectedImage = ref(images[0])
 
-const isZoomOpen = ref(false)
-function toggleZoom() {
-  isZoomOpen.value = !isZoomOpen.value
-}
+// Product Variants
+const variants = [
+  { code: 'GLT - A2', type: 'A2', track: '1600 MM', bracket: '4 PCS', capacity: '80 KG' },
+  { code: 'GLT - A3', type: 'A3', track: '1800 MM', bracket: '4 PCS', capacity: '80 KG' },
+  { code: 'GLT - A4', type: 'A4', track: '2100 MM', bracket: '5 PCS', capacity: '80 KG' },
+  { code: 'GLT - A5', type: 'A5', track: '2400 MM', bracket: '6 PCS', capacity: '80 KG' },
+  { code: 'GLT - A6', type: 'A6', track: '3000 MM', bracket: '7 PCS', capacity: '100 KG' }
+]
+
+const selectedVariant = ref(variants[0]!)
 
 const katalogLinks = [
-  { slug: 'galvanis', name: 'Galvanis', image: '/asset/product/sliding-rail/galvanis.png' },
-
+  { slug: 'galvanis', name: 'Galvanis', image: '/asset/product/sliding-rail/galvanis.png' }
 ]
 </script>
 
