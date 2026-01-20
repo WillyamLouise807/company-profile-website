@@ -121,6 +121,27 @@
           <img :src="zoomImage" class="w-full object-contain" />
         </div>
       </div>
+      <div class="border-t border-gray-200 my-20 py-8">
+        <h2 class="text-2xl font-bold text-center mb-8 text-red-700">SEE OUR OTHER PRODUCT IN THIS CATALOG</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 px-4 sm:px-6 lg:px-8">
+          <NuxtLink
+            v-for="item in katalogLinks"
+            :key="item.slug"
+            :to="`/produk/katalog-12/${item.slug}`"
+            class="group block bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition overflow-hidden"
+          >
+            <img
+              :src="item.image"
+              :alt="item.name"
+              class="w-full h-32 object-contain mx-auto transition-transform duration-300 group-hover:scale-105 bg-white"
+            />
+            <div class="bg-gray-50 text-center py-4 px-2">
+              <div class="text-red-600 font-semibold text-sm">{{ item.name }}</div>
+              
+            </div>
+          </NuxtLink>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -177,6 +198,38 @@ const dimensiImages = [
     label: 'Semi Bengkok (Insert) AP.8.L4'
   }
 ]
+
+const katalogLinks = [
+  { slug: 'glass-to-wall', name: 'Shower Hinger 90°', image: '/asset/product/accessories/glass-to-wall.png' },
+  { slug: 'glass-to-glass', name: 'Shower Hinger 180°', image: '/asset/product/accessories/glass-to-glass.png' },
+  { slug: 'glass-clip-l', name: 'Glass Clip L', image: '/asset/product/accessories/glass-clip-l.png' },
+  { slug: 'glass-clip-p', name: 'Glass Clip Persegi', image: '/asset/product/accessories/glass-clip-p.png' },
+  { slug: 'glass-clip-u', name: 'Glass Clip U', image: '/asset/product/accessories/glass-clip-u.png' },
+  { slug: 'glass-suction', name: 'Glass Suction Plate', image: '/asset/product/accessories/glass-suction.png' },
+  { slug: 'rod-glass-connector', name: 'Rod Glass Connector', image: '/asset/product/accessories/rod-glass-connector.png' },
+  { slug: 'railing-glass-pins', name: 'Railing Glass Pins', image: '/asset/product/accessories/railing-glass-pins.png' },
+  { slug: 'wall-rod-connector', name: 'Wall Rod Connector', image: '/asset/product/accessories/wall-rod-connector.png' },
+  { slug: 'swivel-rod-connector', name: 'Swivel Rod Connector', image: '/asset/product/accessories/swivel-rod-connector.png' },
+  { slug: 'corner-screen-single', name: 'Corner Screen Single', image: '/asset/product/accessories/corner-screen-single.png' },
+  { slug: 'corner-screen-double', name: 'Corner Screen Double', image: '/asset/product/accessories/corner-screen-double.png' },
+  { slug: 'handle-bamboo', name: 'Handle Bamboo', image: '/asset/product/accessories/handle-bamboo.png' },  
+  { slug: 'handle-swing', name: 'Handle Swing', image: '/asset/product/accessories/handle-swing.png' },
+  { slug: 'bracket-ikan', name: 'Bracket Ikan', image: '/asset/product/accessories/bracket-ikan.png' },
+  { slug: 'rivet', name: 'Aluminium Blind Rivet', image: '/asset/product/accessories/rivet.png' },
+  { slug: 'roller-shutter-lock', name: 'Roller Shutter Lock', image: '/asset/product/accessories/roller-shutter-lock.png' },
+  { slug: 'engsel-salon', name: 'Engsel Salon', image: '/asset/product/accessories/engsel-salon.png' },
+  { slug: 'silicone', name: 'Silicone Acetoxy', image: '/asset/product/accessories/silicone.png' },
+  { slug: 'tembak-silicone', name: 'Silicone Gun', image: '/asset/product/accessories/tembak-silicone.png' },
+  { slug: 'silicone-sausage-neutral', name: 'Silicone Sausage Neutral', image: '/asset/product/accessories/silicone-sosis.png' },
+  { slug: 'silicone-gun-sosis', name: 'Silicone Gun Sosis', image: '/asset/product/accessories/silicone-gun-sosis.png' },
+  { slug: 'mohair', name: 'Karet Mohair Big', image: '/asset/product/accessories/mohair.png' },
+  { slug: 'engsel-piano-stainless', name: 'Engsel Piano Stainless', image: '/asset/product/accessories/engsel-piano-stainless.png' },  
+  { slug: 'engsel-piano-iron', name: 'Engsel Piano Iron', image: '/asset/product/accessories/engsel-piano-iron.png' },
+  { slug: 'camlock', name: 'Camlock', image: '/asset/product/accessories/camlock.png' },   
+  { slug: 'rell-laci-fe', name: 'Rell Laci FE 30 NB', image: '/asset/product/accessories/rell-laci-fe.png' },
+  { slug: 'rell-laci-fe-slowmo', name: 'Rell Laci FE 37 Black', image: '/asset/product/accessories/rell-laci-fe-slowmo.png' },
+  // { slug: 'engsel-sendok-mini', name: 'Engsel Sendok Mini', image: '/asset/product/accessories/engsel-sendok-mini.png' },
+];
 </script>
 
 <style scoped>

@@ -30,8 +30,6 @@
             <p class="capitalize text-sm sm:text-base">Material: Steel</p>
             <p class="capitalize text-sm sm:text-base">Roda: Nylon</p>
             <p class="capitalize text-sm sm:text-base">Color: Black</p>  
-
-
           </div>
 
           <!-- Marketplace -->
