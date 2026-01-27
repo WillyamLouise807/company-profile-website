@@ -7,21 +7,23 @@
         class="absolute inset-0 bg-cover bg-center bg-no-repeat z-[-3]"
         :style="{ backgroundImage: `url(${bgImage})` }"
       ></div>
-      <div class="absolute inset-0 bg-white/60 backdrop-blur-sm z-[-2]"></div>
+      <div class="absolute inset-0 bg-white/20 backdrop-blur-sm z-[-2]"></div>
       <div class="absolute bottom-0 left-0 right-0 h-48 z-[-1] bg-gradient-to-b from-transparent to-white"></div>
 
       <!-- Content Container -->
       <div class="container mx-auto h-full px-4 relative z-10 flex flex-col">
         <!-- Breadcrumb -->
         <div class="text-red-700 text-sm opacity-90 pt-20 sm:pt-28 md:pt-36">
-          <NuxtLink to="/product" class="hover:underline text-red-600 font-medium">Product</NuxtLink> / <span class="text-gray-600">Roller Caster</span>
+          <NuxtLink to="/product" class="hover:underline text-red-600 font-medium">Product</NuxtLink> / <span class="text-gray-100">Roller Caster</span>
         </div>
 
         <!-- Hero Text Centered -->
         <div class="flex-grow flex items-center justify-center">
           <div class="text-center max-w-2xl mx-auto text-red-800 transform -translate-y-6">
             <h1 class="text-3xl sm:text-4xl font-bold leading-relaxed mb-4">Roller Caster Series</h1>
-            <p class="text-base sm:text-lg text-gray-600">Koleksi roda caster berkualitas tinggi untuk pergerakan yang stabil, ringan, dan tahan lama pada berbagai aplikasi.</p>
+            <p class="text-base sm:text-lg text-gray-100">
+              A premium collection of high-quality caster wheels designed for smooth, stable, and long-lasting mobility across various applications.
+            </p>
           </div>
         </div>
       </div>
@@ -30,7 +32,7 @@
     <!-- Daftar Produk dalam Kategori -->
     <section class="py-16 px-4 sm:px-6 lg:px-12 bg-white">
       <div class="container mx-auto">
-        <h2 class="text-2xl sm:text-3xl font-bold mb-8 text-center text-red-700">Produk Roller Caster</h2>
+        <h2 class="text-2xl sm:text-3xl font-bold mb-8 text-center text-red-700">Roller Caster Products</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div 
@@ -66,7 +68,7 @@
 </template>
 
 <script lang="ts" setup>
-import bgImage from '/asset/product/roller/roller-banner.png';
+import bgImage from '/asset/product/roller-caster/roller-caster-banner.png';
 import FooterComponent from '@/components/footer.vue';
 
 const rollerProducts = [

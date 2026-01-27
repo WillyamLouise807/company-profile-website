@@ -107,7 +107,7 @@
           </transition>
 
           <!-- Thumbnail -->
-          <div class="grid grid-cols-2 gap-4">
+          <div class="grid grid-cols-3 gap-4">
             <img
               v-for="(image, index) in images"
               :key="index"
@@ -156,8 +156,9 @@ import FooterComponent from '@/components/footer.vue'
 // Images
 import produk1 from '/asset/product/sliding-rail/galvanis/produk-1.png'
 import produk2 from '/asset/product/sliding-rail/galvanis/produk-2.png'
+import produk3 from '/asset/product/sliding-rail/galvanis/produk-3.png'
 
-const images = [produk1, produk2]
+const images = [produk1, produk2, produk3]
 const selectedImage = ref(images[0]!)
 
 // Product Variants (GALVANIS)

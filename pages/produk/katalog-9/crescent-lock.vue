@@ -27,8 +27,7 @@
 
           <div class="mb-6 space-y-1">
             <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>
-            <p class="capitalize text-sm sm:text-base">Color: {{ selectedColorLabel }}</p>            
-            <!-- <p class="capitalize text-sm sm:text-base">Type: Crescent Lock</p> -->
+            <p class="capitalize text-sm sm:text-base">Color: {{ selectedColorLabel }}</p>
           </div>
 
           <!-- Marketplace -->
@@ -77,34 +76,52 @@
         </div>
       </div>
 
-      <!-- Dimensi -->
+      <!-- DIMENSI (DIUBAH: 2 GAMBAR) -->
       <div class="mt-14 border-t border-gray-700 pt-10">
-        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Product Dimensions</h2>
-        <div class="flex flex-col items-center">
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">
+          Product Dimensions
+        </h2>
+
+        <div class="flex flex-col md:flex-row items-center justify-center gap-6">
           <img
-            :src="ukuranImage"
-            alt="Ukuran Crescent Lock"
-            class="rounded-xl shadow-md max-w-6xl w-full bg-white p-4 cursor-zoom-in"
-            @click="toggleZoom"
+            src="/asset/product/alumunium-lock/crescent-lock/ukuran-1.png"
+            alt="Ukuran Crescent Lock 1"
+            class="rounded-xl shadow-md bg-white p-4 cursor-zoom-in object-contain 
+                   w-full sm:w-3/4 md:w-1/2 
+                   h-56 sm:h-60 md:h-64 lg:h-72 xl:h-80"
+            @click="openZoom('/asset/product/alumunium-lock/crescent-lock/ukuran-1.png')"
           />
-          <p class="text-sm text-gray-500 mt-4 text-center">*Image is only an illustration of the product dimensions</p>
+          <img
+            src="/asset/product/alumunium-lock/crescent-lock/ukuran-2.png"
+            alt="Ukuran Crescent Lock 2"
+            class="rounded-xl shadow-md bg-white p-4 cursor-zoom-in object-contain 
+                   w-full sm:w-3/4 md:w-1/2 
+                   h-56 sm:h-60 md:h-64 lg:h-72 xl:h-80"
+            @click="openZoom('/asset/product/alumunium-lock/crescent-lock/ukuran-2.png')"
+          />
         </div>
+
+        <p class="text-sm text-gray-500 mt-4 text-center">
+          *Image is only an illustration of the product dimensions
+        </p>
       </div>
 
       <!-- Zoom Modal -->
       <div
         v-if="isZoomOpen"
         class="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
-        @click.self="toggleZoom"
+        @click.self="closeZoom"
       >
         <div class="bg-white p-4 md:p-6 rounded-xl shadow-2xl max-w-4xl w-full">
-          <img :src="ukuranImage" alt="Zoomed" class="w-full object-contain" />
+          <img :src="zoomImage" alt="Zoomed" class="w-full object-contain" />
         </div>
       </div>
 
-      <!-- Link Produk Lain di Katalog Sama -->
+      <!-- Link Produk Lain -->
       <div class="border-t border-gray-200 my-20 py-8">
-        <h2 class="text-2xl font-bold text-center mb-8 text-red-700">SEE OUR OTHER PRODUCT IN THIS CATALOG</h2>
+        <h2 class="text-2xl font-bold text-center mb-8 text-red-700">
+          SEE OUR OTHER PRODUCT IN THIS CATALOG
+        </h2>
         <div class="flex justify-center">
           <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2 px-4 sm:px-6 lg:px-8">
             <NuxtLink
@@ -127,6 +144,7 @@
       </div>
     </div>
   </div>
+
   <FooterComponent />
 </template>
 
@@ -140,7 +158,6 @@ import cokelat from '/asset/product/alumunium-lock/crescent-lock/cokelat.png'
 import hitam from '/asset/product/alumunium-lock/crescent-lock/hitam.png'
 import putih from '/asset/product/alumunium-lock/crescent-lock/putih.png'
 import silver from '/asset/product/alumunium-lock/crescent-lock/silver.png'
-import ukuran from '/asset/product/alumunium-lock/crescent-lock/ukuran-hitam.png'
 
 const colors = [
   { name: 'beige', label: 'Beige', hex: '#171D2B', image: beige },
@@ -153,14 +170,22 @@ const colors = [
 const selectedColor = ref(colors[0]!.name)
 const selectedImage = computed(() => colors.find(c => c.name === selectedColor.value)?.image || '')
 const selectedColorLabel = computed(() => colors.find(c => c.name === selectedColor.value)?.label || '')
+
 function selectColor(color: typeof colors[number]) {
   selectedColor.value = color.name
 }
 
-const ukuranImage = ukuran
+// Zoom logic (KHUSUS DIMENSI)
 const isZoomOpen = ref(false)
-function toggleZoom() {
-  isZoomOpen.value = !isZoomOpen.value
+const zoomImage = ref('')
+
+function openZoom(image: string) {
+  zoomImage.value = image
+  isZoomOpen.value = true
+}
+
+function closeZoom() {
+  isZoomOpen.value = false
 }
 
 const katalogLinks = [

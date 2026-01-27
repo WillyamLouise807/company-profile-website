@@ -55,16 +55,16 @@
       <FadeInOnScroll direction="up">
         <div class="relative z-10 px-4 max-w-4xl text-white">
           <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6 drop-shadow-lg">
-            Tim Berdedikasi Kami
+            Our Dedicated Team
           </h1>
           <p class="text-base sm:text-lg md:text-xl leading-relaxed mb-8 drop-shadow-md">
-            Di balik setiap produk dan layanan yang kami hadirkan, terdapat tim berdedikasi yang bekerja dengan integritas, keahlian, dan semangat untuk terus berkembang.
+            Behind every product and service we deliver is a dedicated team working with integrity, expertise, and a passion for continuous improvement.
           </p>
           <button
             @click="scrollToStructure"
             class="bg-white text-black px-8 py-3 rounded-full hover:bg-gray-200 transition font-semibold shadow-lg"
           >
-            Lihat Struktur Tim
+            View Team Structure
           </button>
         </div>
       </FadeInOnScroll>
@@ -75,9 +75,9 @@
       <section id="structure-section" class="py-16 px-4 md:px-20 bg-white">
         <div class="max-w-7xl mx-auto">
           <div class="text-center mb-12">
-            <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-gray-800">Struktur Organisasi</h2>
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-gray-800">Organizational structure</h2>
             <p class="text-gray-600 max-w-2xl mx-auto">
-              Organisasi kami tersusun dengan struktur yang jelas untuk memastikan efisiensi dan kolaborasi yang optimal
+              Our organization is structured with a clear structure to ensure optimal efficiency and collaboration.
             </p>
           </div>
 
@@ -92,7 +92,7 @@
               <svg class="w-4 h-4 inline mr-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
               </svg>
-              Klik gambar untuk memperbesar dan melihat detail
+              Click image to zoom in and view details
             </p>
           </div>
 
@@ -175,9 +175,9 @@
 
             <!-- Instructions -->
             <div class="absolute bottom-4 right-4 text-white/80 text-sm text-right z-10 bg-black/50 px-4 py-2 rounded-lg">
-              <p class="hidden md:block">📌 Ctrl + Scroll untuk zoom</p>
-              <p class="hidden md:block">📌 Shift + Scroll untuk geser horizontal</p>
-              <p class="md:hidden">📌 Pinch untuk zoom</p>
+              <p class="hidden md:block">📌 Ctrl + Scroll for zoom</p>
+              <p class="hidden md:block">📌 Shift + Scroll for horizontal scroll</p>
+              <p class="md:hidden">📌 Pinch for zoom</p>
             </div>
           </div>
         </div>
@@ -188,9 +188,9 @@
     <section class="py-16 px-4 bg-gray-50">
       <div class="max-w-7xl mx-auto">
         <div class="text-center mb-12">
-          <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-gray-800">Makna Warna</h2>
+          <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-gray-800">Meaning of Colors</h2>
           <p class="text-gray-600 max-w-2xl mx-auto">
-            Setiap warna dalam struktur organisasi kami memiliki makna dan filosofi yang merepresentasikan nilai-nilai tim
+            Each color in our organizational structure has a meaning and philosophy that represents the team's values.
           </p>
         </div>
 

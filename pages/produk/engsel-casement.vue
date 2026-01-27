@@ -22,7 +22,7 @@
           <div class="text-center max-w-2xl mx-auto text-red-800 transform -translate-y-6">
             <h1 class="text-3xl sm:text-4xl font-bold leading-relaxed mb-4">Engsel Casement Series</h1>
             <p class="text-base sm:text-lg text-gray-100">
-              Engsel berkualitas tinggi untuk jendela dan pintu casement, dengan daya tahan maksimal dan gerakan yang stabil.
+              High-quality hinges for casement windows and doors, engineered for maximum durability and smooth, stable movement.
             </p>
           </div>
         </div>
@@ -32,7 +32,7 @@
     <!-- Produk Engsel Casement -->
     <section class="py-16 px-4 sm:px-6 lg:px-12 bg-white">
       <div class="container mx-auto">
-        <h2 class="text-2xl sm:text-3xl font-bold mb-8 text-center text-red-700">Produk Engsel Casement</h2>
+        <h2 class="text-2xl sm:text-3xl font-bold mb-8 text-center text-red-700">Engsel Casement Products</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div 

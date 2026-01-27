@@ -50,7 +50,7 @@
           </h2>
 
           <p class="text-md text-gray-600 leading-relaxed mt-4 pl-7">
-            Lahirnya PT Global Bestindo Jaya membuka jalan bagi industri nasional untuk menikmati produk-produk berkualitas tinggi, sama seperti mimpi para pendirinya untuk menghadirkan standar baru di tanah air. Inilah kisah tentang bagaimana perusahaan ini perlahan mengubah wajah industri Indonesia, dan membantu ribuan pelaku usaha memenuhi kebutuhannya dengan lebih baik.
+            The birth of PT Global Bestindo Jaya paved the way for national industry to enjoy high quality products, just like the dream of its founders to bring new standards to the country. This is the story of how this company is slowly changing the face of Indonesian industry, and helping thousands of business people meet their needs better.
           </p>
         </div>
       </div>
@@ -68,9 +68,9 @@
             <!-- 2019 deskripsi atas -->
             <div class="flex-shrink-0 w-[400px] pl-6 pr-6 pt-6">
               <div class="bg-white p-4">
-                <h3 class="text-red-600 font-bold mb-2 text-xl uppercase">Jaringan Mulai Melebar</h3>
+                <h3 class="text-red-600 font-bold mb-2 text-xl uppercase">Network Begins to Expand</h3>
                 <p class="text-gray-600 text-xs">
-                  Setahun berjalan, mereka tak tinggal diam. 2019 jadi saksi saat perusahaan memperluas jaringan distribusi dan menggandeng mitra-mitra ritel nasional. Produk yang tadinya hanya ada di beberapa titik, kini mulai mudah ditemui di berbagai daerah. Semuanya terasa seperti jalan yang kian terbuka lebar.
+                  A year on, they have not remained silent. 2019 witnessed the company expanding its distribution network and collaborating with national retail partners. Products that were previously only available in a few spots are now starting to be easily found in various regions. Everything feels like the road is increasingly wide open.
                 </p>
               </div>
             </div>
@@ -79,9 +79,9 @@
             <!-- 2021 deskripsi atas -->
             <div class="flex-shrink-0 w-[400px] pl-6 pr-6 pt-6">
               <div class="bg-white p-4">
-                <h3 class="text-red-600 font-bold mb-2 text-xl uppercase">Menyapa Nusantara</h3>
+                <h3 class="text-red-600 font-bold mb-2 text-xl uppercase">Greeting the Archipelago</h3>
                 <p class="text-gray-600 text-xs">
-                  Cerita berlanjut di 2021. Perusahaan memperkuat distribusi ke seluruh Indonesia. Dari kota besar hingga pelosok daerah, produk mereka kini hadir lebih dekat. Seperti kisah yang semakin seru, layanan pun jadi lebih merata ke seluruh penjuru negeri.
+                  The story continues in 2021. The company is strengthening distribution throughout Indonesia. From big cities to remote areas, their products are now closer. As the story becomes more exciting, services become more evenly distributed throughout the country.
                 </p>
               </div>
             </div>
@@ -90,9 +90,9 @@
             <!-- 2023 deskripsi atas -->
             <div class="flex-shrink-0 w-[400px] pl-6 pr-6 pt-6">
               <div class="bg-white p-4">                
-                <h3 class="text-red-600 font-bold mb-2 text-xl uppercase">Gudang Surabaya Resmi Beroperasi</h3>
+                <h3 class="text-red-600 font-bold mb-2 text-xl uppercase">Surabaya Warehouse Officially Operates</h3>
                 <p class="text-gray-600 text-xs">
-                  Tahun 2023, perusahaan membuka gudang baru di Surabaya. Fasilitas ini jadi pusat logistik untuk mempercepat pengiriman ke Indonesia Timur. Seperti menambah “jantung” baru, layanan jadi lebih cepat dan pelanggan di timur merasakan kualitas yang sama.
+                  In 2023, the company opens a new warehouse in Surabaya. This facility is a logistics center to speed up deliveries to Eastern Indonesia. Like adding a new "heart", service is faster and customers in the east experience the same quality.
                 </p>
                 <img
                   src="/asset/index/gudang.png"
@@ -106,9 +106,9 @@
             <!-- 2025 deskripsi atas -->
             <div class="flex-shrink-0 w-[400px] pl-6 pr-6 pt-6">
               <div class="bg-white p-4">
-                <h3 class="text-red-600 font-bold mb-2 text-xl uppercase">Menyapa Dunia Maya</h3>
+                <h3 class="text-red-600 font-bold mb-2 text-xl uppercase">Greeting the Digital World</h3>
                 <p class="text-gray-600 text-xs">
-                  Akhirnya, 2025 jadi awal perubahan transformasi digital. PT Global Bestindo Jaya, dengan meluncurkan akun Instagram resmi—jendela baru untuk bercerita langsung kepada konsumen, membangun kedekatan, dan memperluas jangkauan secara online. Sebuah langkah kecil yang jadi awal perjalanan besar di dunia maya.
+                  Finally, 2025 becomes the beginning of digital transformation. PT Global Bestindo Jaya, with the launch of its official Instagram account— a new window to directly tell stories to consumers, build closeness, and expand reach online. A small step that becomes the beginning of a big journey in the digital world.
                 </p>
               </div>
             </div>
@@ -186,9 +186,9 @@
             <!-- 2018 deskripsi bawah -->
             <div class="flex-shrink-0 w-[400px] pl-6 pr-6 pb-6">
               <div class="bg-white p-4">
-                <h3 class="text-red-600 font-bold mb-2 text-xl uppercase">Awal Sebuah Mimpi</h3>
+                <h3 class="text-red-600 font-bold mb-2 text-xl uppercase">A New Dream Begins</h3>
                 <p class="text-gray-600 text-xs">
-                  Semuanya bermula pada 2018. PT Global Bestindo Jaya lahir dari semangat menghadirkan produk berkualitas tinggi untuk masyarakat Indonesia. Di ruang kerja sederhana, visi besar dirumuskan, tenaga disatukan. Layaknya permulaan sebuah kisah panjang, tahun ini jadi pondasi untuk langkah-langkah berikutnya.
+                  Everything started in 2018. PT Global Bestindo Jaya was born from the spirit of delivering high-quality products to the Indonesian people. In a simple workspace, a grand vision was formulated, and efforts were unified. Like the beginning of a long story, this year became the foundation for future steps.
                 </p>
               </div>
             </div>
@@ -197,9 +197,9 @@
             <!-- 2020 deskripsi bawah -->
             <div class="flex-shrink-0 w-[400px] pl-6 pr-6 pb-6">
               <div class="bg-white p-4">
-                <h3 class="text-red-600 font-bold mb-2 text-xl uppercase">Produk Unggulan Pertama</h3>
+                <h3 class="text-red-600 font-bold mb-2 text-xl uppercase">First Premium Product</h3>
                 <p class="text-gray-600 text-xs">
-                  Tahun ini jadi titik penting. PT Global Bestindo Jaya meluncurkan produk unggulan pertamanya—hasil kerja keras dan riset panjang. Respon pasar positif, dan produk ini seakan jadi simbol bahwa mimpi mereka di tahun awal benar-benar berada di jalur yang tepat.
+                  This year became a pivotal point. PT Global Bestindo Jaya launched its first premium product— the result of hard work and extensive research. The market response was positive, and this product became a symbol that their initial dreams were on the right path.
                 </p>
               </div>
             </div>
@@ -208,9 +208,9 @@
             <!-- 2022 deskripsi bawah -->
             <div class="flex-shrink-0 w-[400px] pl-6 pr-6 pb-6">
               <div class="bg-white p-4">
-                <h3 class="text-red-600 font-bold mb-2 text-xl uppercase">Lini Premium Hadir</h3>
+                <h3 class="text-red-600 font-bold mb-2 text-xl uppercase">Premium Line Launch</h3>
                 <p class="text-gray-600 text-xs">
-                  Tahun ini bab baru dimulai. PT Global Bestindo Jaya meluncurkan lini produk premium—bukan sekadar produk baru, tapi bukti inovasi dan peningkatan kualitas. Dengan lini ini, mereka menjawab kebutuhan konsumen yang ingin standar lebih tinggi.
+                  This year marks a new beginning. PT Global Bestindo Jaya launches its premium product line— not just a new product, but proof of innovation and quality improvement. With this line, they meet the needs of consumers who want higher standards.
                 </p>
               </div>
             </div>
@@ -219,9 +219,9 @@
             <!-- 2024 deskripsi bawah -->
             <div class="flex-shrink-0 w-[400px] pl-6 pr-6 pb-6">
               <div class="bg-white p-4">
-                <h3 class="text-red-600 font-bold mb-2 text-xl uppercase">Teknologi Digital Masuk Cerita</h3>
+                <h3 class="text-red-600 font-bold mb-2 text-xl uppercase">Technology Digital Enters the Story</h3>
                 <p class="text-gray-600 text-xs">
-                  Memasuki 2024, PT Global Bestindo Jaya mulai mengintegrasikan teknologi digital ke dalam sistem operasionalnya. Proses jadi lebih cepat dan efisien—mulai dari stok, distribusi, sampai pelayanan pelanggan. Ini tanda mereka siap menghadapi era baru yang serba digital.
+                  Entering 2024, PT Global Bestindo Jaya begins integrating digital technology into its operational systems. Processes become faster and more efficient—from inventory, distribution, to customer service. This is a sign they are ready to face the new digital era.
                 </p>
               </div>
             </div>

@@ -59,7 +59,7 @@
         <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Product Dimensions</h2>
         <div class="flex flex-col items-center">
           <img
-            src="/asset/product/flush-handle/bracket-ikan/ukuran-hitam.png"
+            src="/asset/product/accessories/bracket-ikan/ukuran-hitam.png"
             alt="Ukuran Patch Fitting PT-10"
             class="rounded-xl shadow-md max-w-xl w-full bg-white p-4 cursor-zoom-in"
             @click="toggleZoom"
@@ -76,7 +76,7 @@
       >
         <div class="bg-white p-4 md:p-6 rounded-xl shadow-2xl max-w-4xl w-full">
           <img
-            src="/asset/product/flush-handle/bracket-ikan/ukuran-hitam.png"
+            src="/asset/product/accessories/bracket-ikan/ukuran-hitam.png"
             alt="Zoomed Ukuran Patch Fitting PT-10"
             class="w-full object-contain"
           />

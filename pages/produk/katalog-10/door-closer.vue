@@ -5,11 +5,15 @@
       <nav class="text-xs text-gray-500 mb-6" aria-label="Breadcrumb">
         <ol class="flex flex-wrap items-center gap-2">
           <li>
-            <RouterLink to="/product" class="hover:underline text-black font-medium">Product</RouterLink>
+            <RouterLink to="/product" class="hover:underline text-black font-medium">
+              Product
+            </RouterLink>
           </li>
           <li>/</li>
           <li>
-            <RouterLink to="/produk/door-closer" class="hover:underline text-black font-medium">Door Closer</RouterLink>
+            <RouterLink to="/produk/door-closer" class="hover:underline text-black font-medium">
+              Door Closer
+            </RouterLink>
           </li>
           <li>/</li>
           <li class="text-black font-semibold">Door Closer</li>
@@ -20,33 +24,53 @@
       <div class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Door Closer</h1>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
+            Door Closer
+          </h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            The Glatino Door Closer is designed to provide extra comfort and security for your door. With its automatic closing mechanism, this product helps maintain room temperature, reduces noise, and increases security in a practical way.
+            The Glatino Door Closer is designed to provide extra comfort and security for your door.
+            With its automatic closing mechanism, this product helps maintain room temperature,
+            reduces noise, and increases security in a practical way.
           </p>
 
           <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>                     
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">
+              Product Description:
+            </h2>
             <p class="capitalize text-sm sm:text-base">Door Weight Max: 40kg</p>
             <p class="capitalize text-sm sm:text-base">Type: Hold Open</p>
-            <p class="capitalize text-sm sm:text-base">Color: {{ selectedColorLabel }}</p>            
+            <p class="capitalize text-sm sm:text-base">
+              Color: {{ selectedColorLabel }}
+            </p>
           </div>
 
           <!-- Marketplace -->
           <div class="mb-8">
-            <h2 class="text-base sm:text-lg font-semibold mb-3">Available on Marketplace:</h2>
+            <h2 class="text-base sm:text-lg font-semibold mb-3">
+              Available on Marketplace:
+            </h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
-              <a href="https://www.tokopedia.com/glatino-official-store/glatino-glt-201-premiumcloser-kunci-pintu-set-handle-material-aluminium-1731487588150839022?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
+              <a
+                href="https://www.tokopedia.com/glatino-official-store"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:scale-105 transition-transform"
+              >
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
-              <a href="https://shopee.co.id/Glatino-GLT-201-Elan-Series-Set-Kunci-Pintu-Hight-Quality-Material-Aluminium-i.1442585495.26372729275?sp_atk=a07343d7-2cc8-4561-91fe-a127df6ebdec&xptdk=a07343d7-2cc8-4561-91fe-a127df6ebdec" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
+              <a
+                href="https://shopee.co.id/glatino.official"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:scale-105 transition-transform"
+              >
                 <img src="/asset/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>
           </div>
         </div>
 
-        <!-- Gambar & Pilihan Warna -->
+        <!-- Gambar & Warna -->
         <div class="space-y-6 flex flex-col items-center w-full">
           <transition name="fade" mode="out-in">
             <img
@@ -57,7 +81,6 @@
             />
           </transition>
 
-          <!-- Warna -->
           <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 w-full">
             <div
               v-for="(color, index) in colors"
@@ -87,22 +110,14 @@
           Product Dimensions
         </h2>
 
-        <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+        <div class="flex justify-center">
           <img
-            src="/asset/product/door-closer/ukuran-hitam-1.png"
-            alt="Ukuran 1"
-            class="rounded-xl shadow-md bg-white p-4 cursor-zoom-in object-contain 
-                  w-full sm:w-3/4 md:w-1/2 
-                  h-56 sm:h-60 md:h-64 lg:h-72 xl:h-80"
-            @click="openZoom('/asset/product/door-closer/ukuran-hitam-1.png')"
-          />
-          <img
-            src="/asset/product/door-closer/ukuran-hitam-2.png"
-            alt="Ukuran 2"
-            class="rounded-xl shadow-md bg-white p-4 cursor-zoom-in object-contain 
-                  w-full sm:w-3/4 md:w-1/2 
-                  h-56 sm:h-60 md:h-64 lg:h-72 xl:h-80"
-            @click="openZoom('/asset/product/door-closer/ukuran-hitam-2.png')"
+            src="/asset/product/door-closer/ukuran.png"
+            alt="Ukuran Door Closer"
+            class="rounded-xl shadow-md bg-white p-4 cursor-zoom-in object-contain
+                   w-full sm:w-3/4 md:w-2/3 lg:w-1/2
+                   h-64 sm:h-72 md:h-80 lg:h-96"
+            @click="openZoom()"
           />
         </div>
 
@@ -111,17 +126,18 @@
         </p>
       </div>
 
-      <!-- Zoom Modal -->
+      <!-- Zoom Modal (FIXED) -->
       <div
         v-if="isZoomOpen"
         class="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
         @click.self="closeZoom"
       >
-        <div class="bg-white p-4 md:p-6 rounded-xl shadow-2xl max-w-4xl w-full">
+        <div class="bg-white p-4 md:p-6 rounded-xl shadow-2xl max-w-5xl w-full">
           <img
+            v-if="zoomImage"
             :src="zoomImage"
-            alt="Zoomed Ukuran Door closer 201"
-            class="w-full object-contain"
+            alt="Zoomed Ukuran Door Closer"
+            class="w-full max-h-[80vh] object-contain"
           />
         </div>
       </div>
@@ -148,8 +164,8 @@ const colors = [
   { name: 'silver', label: 'Silver', hex: '#bdc3c7', image: silver }
 ]
 
-const selectedColor = ref(colors[0]?.name ?? '')
-const selectedImage = ref(colors[0]?.image ?? '')
+const selectedColor = ref(colors[0]?.name)
+const selectedImage = ref(colors[0]?.image)
 
 const selectedColorLabel = computed(() => {
   return colors.find(c => c.name === selectedColor.value)?.label || ''
@@ -160,12 +176,12 @@ function selectColor(color: typeof colors[number]) {
   selectedImage.value = color.image
 }
 
-// Zoom logic
+/* ZOOM FIX */
 const isZoomOpen = ref(false)
-const zoomImage = ref('')
+const zoomImage = ref('/asset/product/door-closer/ukuran.png')
 
-function openZoom(image: string) {
-  zoomImage.value = image
+function openZoom() {
+  zoomImage.value = '/asset/product/door-closer/ukuran.png'
   isZoomOpen.value = true
 }
 

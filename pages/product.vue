@@ -137,7 +137,7 @@
     <section class="bg-gray-100 text-black py-16 px-4 sm:px-6 lg:px-12 font-poppins">
       <div class="max-w-screen-xl mx-auto">
         <FadeInOnScroll direction="down">
-          <h2 class="text-3xl font-bold  mt-12 mb-10 text-center text-red-700">Kategori Produk</h2>
+          <h2 class="text-3xl font-bold  mt-12 mb-10 text-center text-red-700">Product Catalog</h2>
         </FadeInOnScroll>
 
         <FadeInOnScroll direction="up">
@@ -221,8 +221,8 @@ const banners: Banner[] = [
     mobileImage: '/asset/banner_produk/banner_mobile_1.png',
     categoryImage: '/asset/product/GLATINO - RED - LOGO.png',
     title: 'Handle Roses Series',
-    description: 'Perpaduan berbagai macam bentuk dan warna dirancang khusus untuk mempercantik pintu Anda',
-    buttonText: 'Lihat Produk Handle Roses',
+    description: 'A combination of various shapes and colors is specially designed to beautify your door.',
+    buttonText: 'Discover Our Handle Roses Collection',
     link: '/produk/handle-roses'
   },
   {
@@ -230,8 +230,8 @@ const banners: Banner[] = [
     mobileImage: '/asset/banner_produk/banner_mobile_2.png',
     categoryImage: '/asset/product/GLATINO - RED - LOGO.png',
     title: 'Aluminium Lock',
-    description: 'Kunci berkualitas tinggi untuk sistem jendela dan pintu aluminium, menghadirkan keamanan maksimal dengan desain ramping dan konstruksi tahan lama.',
-    buttonText: 'Lihat Produk Aluminium Lock',
+    description: 'Premium locks designed for aluminum window and door systems, offering maximum security with a sleek design and long-lasting durability.',
+    buttonText: 'Explore Our Aluminum Lock Products',
     link: '/produk/alumunium-lock'
   },
   {
@@ -239,8 +239,8 @@ const banners: Banner[] = [
     mobileImage: '/asset/banner_produk/banner_mobile_3.png',
     categoryImage: '/asset/product/GLATINO - RED - LOGO.png',
     title: 'Pull Handle',
-    description: 'Gagang pintu stylish dan ergonomis untuk berbagai jenis pintu, memberikan sentuhan modern dan kenyamanan saat digunakan.',
-    buttonText: 'Lihat Produk Pull Handle',
+    description: 'Stylish and ergonomic door handles designed for various types of doors, adding a modern touch while ensuring comfort in every use.',
+    buttonText: 'Discover Our Pull Handles',
     link: '/produk/pull-handle'
   },
   {
@@ -248,8 +248,8 @@ const banners: Banner[] = [
     mobileImage: '/asset/banner_produk/banner_mobile_4.png',
     categoryImage: '/asset/product/GLATINO - RED - LOGO.png',
     title: 'Mortise Lock',
-    description: 'Kunci pintu mortise berkualitas tinggi dengan mekanisme tahan lama, memberikan keamanan optimal dan kemudahan penggunaan untuk berbagai jenis pintu.',
-    buttonText: 'Lihat Produk Mortise Lock',
+    description: 'High-quality mortise door locks with a durable mechanism, delivering optimal security and ease of use for a wide range of door types.',
+    buttonText: 'Explore Our Mortise Lock Collection',
     link: '/produk/mortise-lock'
   }
 ]

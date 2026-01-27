@@ -22,7 +22,7 @@
           <div class="text-center max-w-2xl mx-auto text-red-800 transform -translate-y-6">
             <h1 class="text-3xl sm:text-4xl font-bold leading-relaxed mb-4">Cylinder Series</h1>
             <p class="text-base sm:text-lg text-gray-700">
-              Solusi kunci silinder inovatif yang dirancang untuk daya tahan, keamanan, dan kemudahan instalasi.
+              Innovative cylinder lock solutions designed for durability, enhanced security, and easy installation.
             </p>
           </div>
         </div>

@@ -21,7 +21,7 @@
         <div class="flex-grow flex items-center justify-center">
           <div class="text-center max-w-2xl mx-auto text-red-800 transform -translate-y-6">
             <h1 class="text-3xl sm:text-4xl font-bold leading-relaxed mb-4">Lever Handle Plate Series</h1>
-            <p class="text-base sm:text-lg text-gray-700">Koleksi lengkap kunci pintu premium dengan teknologi terkini</p>
+            <p class="text-base sm:text-lg text-gray-700">A complete collection of premium door locks with the latest technology</p>
           </div>
         </div>
       </div>
@@ -30,7 +30,7 @@
     <!-- Daftar Produk dalam Kategori -->
     <section class="py-16 px-4 sm:px-6 lg:px-12 bg-white">
       <div class="container mx-auto">
-        <h2 class="text-2xl sm:text-3xl font-bold mb-8 text-center text-red-700">Produk Lever Handle Plate</h2>
+        <h2 class="text-2xl sm:text-3xl font-bold mb-8 text-center text-red-700">Lever Handle Plate Products</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div 

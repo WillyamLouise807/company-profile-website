@@ -28,7 +28,7 @@
               CHARITY
             </span>
             <h3 class="text-xl font-semibold text-gray-900">
-              Bakti Sosial Yayasan Yatim Piatu & Dhuafa Angku Budi Sati Bhakti Pertiwi.
+              Charity Program of the Angku Budi Sati Bhakti Pertiwi Orphanage & Underprivileged Foundation
             </h3>
             <p class="text-gray-500 text-sm mt-1">
               27 July 2025 | By Heartifact
@@ -51,10 +51,10 @@
               <h4
                 class="text-md font-semibold text-gray-900 transition-colors duration-300"
               >
-                Bakti Sosial Bodhiarama Meditation Centre, Bogor
+                Charity Program of the Bodhiarama Meditation Centre, Bogor
               </h4>
               <p class="text-gray-500 text-sm mt-1">
-                26 Oktober 2025 | By Heartifact
+                26 October 2025 | By Heartifact
               </p>
             </div>
             <div class="overflow-hidden rounded-xl flex-shrink-0 w-48 h-32">
@@ -73,10 +73,10 @@
             >
               <div class="flex-1">
                 <span class="uppercase text-red-500 text-xs font-semibold block mb-1">
-                  CHARITY
+                  CHARITY [Comming Soon]
                 </span>
                 <h4 class="text-md font-semibold text-gray-900">
-                  Bakti Sosial Yayasan Yatim Piatu & Dhuafa Angku Budi Sati Bhakti Pertiwi.
+                  Charity Program of the Angku Budi Sati Bhakti Pertiwi Orphanage & Underprivileged Foundation
                 </h4>
                 <p class="text-gray-500 text-sm mt-1">
                   27 July 2025 | By Heartifact

@@ -22,7 +22,7 @@
           <div class="text-center max-w-2xl mx-auto text-red-800 transform -translate-y-6">
             <h1 class="text-3xl sm:text-4xl font-bold leading-relaxed mb-4">Mortise Lock Series</h1>
             <p class="text-base sm:text-lg text-gray-700">
-              Rangkaian kunci mortise berkualitas tinggi untuk keamanan maksimal dan daya tahan jangka panjang.
+              A premium range of high-quality mortise locks designed for maximum security and long-lasting durability
             </p>
           </div>
         </div>

@@ -21,24 +21,14 @@
             The 41054 Handle is an elegant aluminum handle with a modern design and Glatino Manual Central Lock designed for roller shutter doors with a practical and secure locking system. It is lightweight, user-friendly, and suitable for heavy-duty use.
           </p>
 
-          <!-- <div class="mb-6 space-y-1">
-            <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>
-            <p class="text-sm sm:text-base">Brand: Glatino</p>
-            <p class="text-sm sm:text-base">Jenis: Kunci Tengah Rana Rol Manual</p>
-            <p class="text-sm sm:text-base">Material: Baja + Aksesoris</p>
-            <p class="text-sm sm:text-base">Kelengkapan: 2 Kunci & Aksesoris (batang datar baja tidak termasuk)</p>
-            <p class="text-sm sm:text-base">Pemasangan: Menggunakan paku keling pada bilah pintu</p>
-            <p class="text-sm sm:text-base">Kompatibilitas: Sebagian besar pintu rana rol</p>
-          </div> -->
-
           <!-- Marketplace -->
           <div class="mb-8">
             <h2 class="text-base sm:text-lg font-semibold mb-3">Available on Marketplace:</h2>
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
-              <a href="https://www.tokopedia.com/glatino-official-store/glatino-roller-shutter-lock-center-lock-material-aluminium-anti-karat-harga-terjangkau-1730973244951267054?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" class="hover:scale-105 transition-transform">
+              <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
-              <a href="https://shopee.co.id/Glatino-Roller-Shutter-Lock-Center-lock-Material-Aluminium-Anti-Karat-i.1442585495.28577349970?sp_atk=20c44abf-2e82-4eaf-a674-204be013d5d0&xptdk=20c44abf-2e82-4eaf-a674-204be013d5d0" target="_blank" class="hover:scale-105 transition-transform">
+              <a href="https://shopee.co.id/glatino.official" target="_blank" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>
@@ -56,7 +46,6 @@
             />
           </transition>
 
-          <!-- Galeri Thumbnail -->
           <div class="grid grid-cols-3 gap-4 w-full">
             <img
               v-for="(image, index) in images"
@@ -73,34 +62,58 @@
         </div>
       </div>
 
-      <!-- Dimensi Produk -->
+      <!-- DIMENSI (FIX) -->
       <div class="mt-14 border-t border-gray-700 pt-10">
-        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Product Dimensions</h2>
-        <div class="flex flex-col items-center">
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">
+          Product Dimensions
+        </h2>
+
+        <div class="flex flex-col md:flex-row items-center justify-center gap-6">
           <img
-            :src="ukuranImage"
-            alt="Ukuran 41054"
-            class="rounded-xl shadow-md max-w-xl w-full bg-white p-4 cursor-zoom-in"
-            @click="toggleZoom"
+            src="/asset/product/accessories/roller-shutter-lock/ukuran-1.png"
+            alt="Ukuran 1"
+            class="rounded-xl shadow-md bg-white p-4 cursor-zoom-in object-contain
+                   w-full sm:w-3/4 md:w-1/2
+                   h-64 sm:h-72 md:h-80"
+            @click="openZoom('/asset/product/accessories/roller-shutter-lock/ukuran-1.png')"
           />
-          <p class="text-sm text-gray-500 mt-4 text-center">*This image is only an illustration of the product dimensions</p>
+          <img
+            src="/asset/product/accessories/roller-shutter-lock/ukuran-2.png"
+            alt="Ukuran 2"
+            class="rounded-xl shadow-md bg-white p-4 cursor-zoom-in object-contain
+                   w-full sm:w-3/4 md:w-1/2
+                   h-64 sm:h-72 md:h-80"
+            @click="openZoom('/asset/product/accessories/roller-shutter-lock/ukuran-2.png')"
+          />
         </div>
+
+        <p class="text-sm text-gray-500 mt-4 text-center">
+          *This image is only an illustration of the product dimensions
+        </p>
       </div>
 
-      <!-- Zoom Modal -->
+      <!-- ZOOM MODAL (FIX) -->
       <div
         v-if="isZoomOpen"
         class="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
-        @click.self="toggleZoom"
+        @click.self="closeZoom"
       >
-        <div class="bg-white p-4 md:p-6 rounded-xl shadow-2xl max-w-4xl w-full">
-          <img :src="ukuranImage" alt="Zoomed Ukuran" class="w-full object-contain" />
+        <div class="bg-white p-4 md:p-6 rounded-xl shadow-2xl max-w-5xl w-full">
+          <img
+            v-if="zoomImage"
+            :src="zoomImage"
+            alt="Zoomed Dimension"
+            class="w-full max-h-[80vh] object-contain"
+          />
         </div>
       </div>
 
-      <!-- Link Produk Lain di Katalog Sama -->
+      <!-- Katalog -->
       <div class="border-t border-gray-200 my-20 py-8">
-        <h2 class="text-2xl font-bold text-center mb-8 text-red-700">SEE OUR OTHER PRODUCT IN THIS CATALOG</h2>
+        <h2 class="text-2xl font-bold text-center mb-8 text-red-700">
+          SEE OUR OTHER PRODUCT IN THIS CATALOG
+        </h2>
+
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 px-4 sm:px-6 lg:px-8">
           <NuxtLink
             v-for="item in katalogLinks"
@@ -114,13 +127,14 @@
               class="w-full h-32 object-contain mx-auto transition-transform duration-300 group-hover:scale-105 bg-white"
             />
             <div class="bg-gray-50 text-center py-4 px-2">
-              <div class="text-red-600 font-semibold text-sm">{{ item.name }}</div>              
+              <div class="text-red-600 font-semibold text-sm">{{ item.name }}</div>
             </div>
           </NuxtLink>
         </div>
       </div>
     </div>
   </div>
+
   <FooterComponent />
 </template>
 
@@ -129,22 +143,24 @@ import FooterComponent from '@/components/footer.vue'
 import { RouterLink } from 'vue-router'
 import { ref } from 'vue'
 
-// Galeri Gambar
 import gambar1 from '/asset/product/accessories/roller-shutter-lock/gambar-1.png'
 import gambar2 from '/asset/product/accessories/roller-shutter-lock/gambar-2.png'
 import gambar3 from '/asset/product/accessories/roller-shutter-lock/gambar-3.png'
 
-// Gambar ukuran
-import ukuranHitam from '/asset/product/accessories/roller-shutter-lock/ukuran-hitam.png'
-// import ukuranPutih from '/asset/product/flush-handle/roller-shutter-lock/ukuran-putih.png' // Jika diperlukan
-
 const images = [gambar1, gambar2, gambar3]
 const selectedImage = ref(images[0])
-const ukuranImage = ukuranHitam
 
+/* ZOOM FIX */
 const isZoomOpen = ref(false)
-function toggleZoom() {
-  isZoomOpen.value = !isZoomOpen.value
+const zoomImage = ref('')
+
+function openZoom(image: string) {
+  zoomImage.value = image
+  isZoomOpen.value = true
+}
+
+function closeZoom() {
+  isZoomOpen.value = false
 }
 
 const katalogLinks = [

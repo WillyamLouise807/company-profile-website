@@ -143,11 +143,11 @@ import FooterComponent from '@/components/footer.vue'
 import { RouterLink } from 'vue-router'
 import { ref, computed } from 'vue'
 
-import hitam from '/asset/product/flush-handle/handle-swing/hitam.png'
-import cokelat from '/asset/product/flush-handle/handle-swing/cokelat.png'
-import putih from '/asset/product/flush-handle/handle-swing/putih.png'
-import snss from '/asset/product/flush-handle/handle-swing/silver.png'
-import ukuran from '/asset/product/flush-handle/handle-swing/ukuran-hitam.png'
+import hitam from '/asset/product/accessories/handle-swing/hitam.png'
+import cokelat from '/asset/product/accessories/handle-swing/cokelat.png'
+import putih from '/asset/product/accessories/handle-swing/putih.png'
+import snss from '/asset/product/accessories/handle-swing/silver.png'
+import ukuran from '/asset/product/accessories/handle-swing/ukuran.png'
 
 const colors = [
   { name: 'hitam', label: 'Black', hex: '#1f1f1f', image: hitam },

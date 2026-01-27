@@ -137,9 +137,9 @@
 <script lang="ts" setup>
 import { ref, computed } from 'vue'
 
-const imageTerbuka = '/asset/product/alumunium-lock/engsel-piano/terbuka.png'
-const imageTertutup = '/asset/product/alumunium-lock/engsel-piano/tertutup.png'
-const ukuranImage = '/asset/product/alumunium-lock/engsel-piano/ukuran-hitam.png'
+const imageTerbuka = '/asset/product/accessories/engsel-piano-iron/terbuka.png'
+const imageTertutup = '/asset/product/accessories/engsel-piano-iron/tertutup.png'
+const ukuranImage = '/asset/product/accessories/engsel-piano-iron/ukuran-hitam.png'
 
 const isOpen = ref(true)
 const isZoomOpen = ref(false)

@@ -31,7 +31,7 @@
           Contact Us
         </h1>
         <p class="text-sm text-center sm:text-base md:text-lg text-black/80 mb-6">
-          Kami senang mendengar dari Anda! Isi formulir di bawah dan kami akan segera menghubungi Anda kembali.
+          We’d love to hear from you! Please fill out the form below, and we’ll get back to you shortly
         </p>        
       </FadeInOnScroll>
 
@@ -44,22 +44,22 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
               <!-- First Name -->
               <div>
-                <label class="block text-sm text-black font-semibold mb-2">Nama Depan</label>
+                <label class="block text-sm text-black font-semibold mb-2">First name</label>
                 <input
                   v-model="namaDepan"
                   type="text"
-                  placeholder="Nama Depan"
+                  placeholder="First name"
                   class="w-full px-4 py-3 rounded-lg border border-red-300 bg-white focus:ring-red-700 focus:border-red-700"
                 />
               </div>
 
               <!-- Last Name -->
               <div>
-                <label class="block text-sm text-black font-semibold mb-2">Nama Belakang</label>
+                <label class="block text-sm text-black font-semibold mb-2">Last name</label>
                 <input
                   v-model="namaBelakang"
                   type="text"
-                  placeholder="Nama Belakang"
+                  placeholder="Last name"
                   class="w-full px-4 py-3 rounded-lg border border-red-300 bg-white focus:ring-red-700 focus:border-red-700"
                 />
               </div>
@@ -88,7 +88,7 @@
 
               <!-- Phone -->
               <div class="sm:col-span-2">
-                <label class="block text-sm text-black font-semibold mb-2">Telp</label>
+                <label class="block text-sm text-black font-semibold mb-2">Phone</label>
                 <div class="flex">
                   <span class="inline-flex items-center px-4 bg-red-50 border border-r-0 border-red-300 text-red-700 rounded-l-lg">
                     +62
@@ -104,11 +104,11 @@
 
               <!-- Message -->
               <div class="sm:col-span-2">
-                <label class="block text-sm text-black font-semibold mb-2">Pesan</label>
+                <label class="block text-sm text-black font-semibold mb-2">Message</label>
                 <textarea
                   v-model="message"
                   rows="4"
-                  placeholder="Tuliskan pesan yang ingin Anda sampaikan pada kami!"
+                  placeholder="Write the message you want to send to us!"
                   class="w-full px-4 py-3 rounded-lg border border-red-300 bg-white focus:ring-red-700 focus:border-red-700"
                 ></textarea>
               </div>

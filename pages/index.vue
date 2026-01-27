@@ -127,10 +127,10 @@
         <div class="max-w-xl mx-auto px-6 py-16 text-white">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">PT. GLOBAL BESTINDO JAYA</h2>
           <p class="mb-4">
-            <p><strong>PT Global Bestindo Jaya</strong> merupakan perusahaan yang bergerak di bidang penyediaan perangkat keamanan dan sistem penguncian pintu untuk properti dan bangunan.</p> <br>
-                <p>Berawal dari Batam sejak tahun 2015, kami resmi berdiri di Jakarta pada tahun 2018 sebagai bentuk ekspansi dan komitmen kami untuk menjangkau pasar nasional yang lebih luas.</p> <br>
-                <p>Melalui merek <strong>Glatino</strong>, kami menghadirkan solusi produk-produk berkualitas tinggi yang dirancang untuk memenuhi kebutuhan keamanan rumah dan bangunan modern di Indonesia.</p> <br>
-                <p><strong>Bersama Glatino, hidup lebih aman, nyaman, dan cerdas.</strong></p>
+            <p><strong>PT Global Bestindo Jaya</strong> is a company that operates in the field of providing security devices and door locking systems for properties and buildings.</p> <br>
+                <p>Starting from Batam in 2015, we were officially established in Jakarta in 2018 as a form of our expansion and commitment to reach a wider national market.</p> <br>
+                <p>Through the brand <strong>Glatino</strong>, we bring high-quality product solutions designed to meet the security needs of modern homes and buildings in Indonesia.</p> <br>
+                <p><strong>With Glatino, live safer, more comfortable, and smarter.</strong></p>
           </p>
         </div>
       </div>
@@ -186,14 +186,11 @@
           </span>
           <h2 class="text-4xl md:text-7xl font-bold mb-4">OUR VISION</h2>
           <p class="text-lg leading-relaxed text-red-500">
-            Dengan mengusung semangat <strong class="text-gray-800">"Smart Security for Modern Living"</strong>, 
-          PT Global Bestindo Jaya berkomitmen menjadi perusahaan penyedia solusi keamanan rumah 
-          dan bangunan yang terdepan, terpercaya, dan inovatif di Indonesia.
+            With the spirit of <strong class="text-gray-800">"Smart Security for Modern Living"</strong>, 
+          PT Global Bestindo Jaya is committed to becoming a leading, trusted, and innovative security solutions provider for homes and buildings in Indonesia.
           <br><br>
-          Kami memiliki visi untuk membentuk masa depan industri keamanan yang lebih pintar dan praktis 
-          melalui produk-produk smart security seperti akses pintu berbasis sidik jari, pengenalan wajah, 
-          dan kontrol suara. Kami juga terus berupaya mengedukasi masyarakat Indonesia akan pentingnya 
-          sistem keamanan modern dalam kehidupan sehari-hari.
+          We have a vision to shape the future of the security industry by creating a smarter and more practical environment 
+          through smart security products such as fingerprint-based door access, facial recognition and voice control. We also continue to strive to educate the Indonesian people about the importance of modern security systems in everyday life.          
           </p>
         </div>
       </FadeInOnScroll>
@@ -207,27 +204,27 @@
           <h2 class="text-4xl md:text-7xl font-bold mb-10">OUR MISSION</h2>
           <div class="space-y-8">
             <div>
-              <h3 class="text-xl font-bold text-gray-800 mb-1">PRODUK BERKUALITAS DAN TEKNOLOGI TERKINI</h3>
+              <h3 class="text-xl font-bold text-gray-800 mb-1">QUALITY PRODUCTS AND THE LATEST TECHNOLOGY</h3>
               <p class="text-red-500 font-bold text-lg">
-                Menyediakan produk-produk penguncian dan aksesoris pintu berkualitas tinggi dengan harga kompetitif dan teknologi terkini.
+                Providing high-quality door locking and door accessory products with competitive pricing and the latest technology.
               </p>
             </div>
             <div>
-              <h3 class="text-xl font-bold text-gray-800 mb-1">PELAYANAN PRIMA & KEPUASAN PELANGGAN</h3>
+              <h3 class="text-xl font-bold text-gray-800 mb-1">MAXIMAL SERVICE & CUSTOMER SATISFACTION</h3>
               <p class="text-red-500 font-bold text-lg">
-                Mengutamakan pelayanan prima dan kepuasan pelanggan dalam setiap aspek bisnis kami.
+                Prioritizing excellent service and customer satisfaction in every aspect of our business.
               </p>
             </div>
             <div>
-              <h3 class="text-xl font-bold text-gray-800 mb-1">PENGEMBANGAN SUMBER DAYA MANUSIA</h3>
+              <h3 class="text-xl font-bold text-gray-800 mb-1">HUMAN RESOURCE DEVELOPMENT</h3>
               <p class="text-red-500 font-bold text-lg">
-                Meningkatkan kapabilitas sumber daya manusia melalui pelatihan berkelanjutan untuk menciptakan layanan yang profesional dan responsif.
+                Increasing human resource capabilities through continuous training to create professional and responsive services.
               </p>
             </div>
             <div>
-              <h3 class="text-xl font-bold text-gray-800 mb-1">MENJADI MITRA TERPERCAYA</h3>
+              <h3 class="text-xl font-bold text-gray-800 mb-1">BECOMING A TRUSTED PARTNER</h3>
               <p class="text-red-500 font-bold text-lg">
-                Menjadi mitra terpercaya bagi pelaku industri properti di Indonesia dan Asia Tenggara.
+                Becoming a trusted partner for property industry players in Indonesia and Southeast Asia.
               </p>
             </div>
           </div>
@@ -406,10 +403,10 @@
       <FadeInOnScroll direction="up">
         <div class="order-2 md:order-1 pb-16 md:py-24">
           <h2 class="text-3xl md:text-4xl font-bold mb-4 md:text-white text-red-600 mt-10 md:mt-0">
-            Kami senang bisa terhubung dengan Anda.
+            We're happy to connect with you.
           </h2>
           <p class="mb-8 text-white md:text-gray-300">
-            Hubungi kami untuk informasi lebih lanjut mengenai produk, layanan, atau peluang kemitraan. Tim kami akan merespons dengan cepat dan memberikan solusi terbaik untuk kebutuhan Anda.
+            Contact us for more information about our products, services, or partnership opportunities. Our team will respond quickly and provide the best solutions for your needs.
           </p>
 
           <!-- Form -->
@@ -480,7 +477,7 @@ const banners: Banner[] = [
     bgMobile: '/asset/bg-image-smartphone.jpg',
     image: '/asset/index/gambar awal-2.png',
     title: 'PT GLOBAL BESTINDO JAYA',
-    description: 'Menciptakan Aksesoris Aluminium yang Berkualitas',
+    description: 'Creating Quality Aluminum Accessories',
     buttonText: 'FIND OUT MORE',
     buttonAction: 'about-us'
   },
@@ -489,9 +486,9 @@ const banners: Banner[] = [
     bgTablet: '/asset/bg-image-tablet.jpg',
     bgMobile: '/asset/bg-image-smartphone.jpg',
     image: '/asset/index/gambar awal-1.png',
-    title: 'PRODUK BERKUALITAS TINGGI',
-    description: 'Solusi Keamanan Rumah Modern dengan Teknologi Terkini',
-    buttonText: 'LIHAT PRODUK',
+    title: 'HIGH QUALITY PRODUCTS',
+    description: 'Modern Home Security Solutions with the Latest Technology',
+    buttonText: 'VIEW PRODUCTS',
     buttonAction: 'product-range'
   },
   {
