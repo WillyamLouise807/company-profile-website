@@ -25,7 +25,7 @@
           About Us
         </NuxtLink>
         <NuxtLink to="/product" @click="closeMenus" :class="[route.path.startsWith('/product') || route.path.startsWith('/produk') ? 'text-red-600 font-bold' : 'hover:text-red-500']">Product</NuxtLink>
-        <NuxtLink to="/team" @click="closeMenus" :class="[route.path === '/team' ? 'text-red-600 font-bold' : 'hover:text-red-500']">Team</NuxtLink>
+        <!-- <NuxtLink to="/team" @click="closeMenus" :class="[route.path === '/team' ? 'text-red-600 font-bold' : 'hover:text-red-500']">Team</NuxtLink> -->
         <NuxtLink to="/contact" @click="closeMenus" :class="[route.path === '/contact' ? 'text-red-600 font-bold' : 'hover:text-red-500']">Contact</NuxtLink>
 
         <!-- Online Store Dropdown -->
@@ -59,7 +59,7 @@
       <NuxtLink to="/" class="block" @click.prevent="scrollToTop" :class="[activeSection === 'home' && route.path === '/' ? 'text-red-600 font-bold' : 'hover:text-red-500']">Home</NuxtLink>
       <NuxtLink to="/" class="block" @click.prevent="scrollToAbout" :class="[activeSection === 'about' && route.path === '/' ? 'text-red-600 font-bold' : 'hover:text-red-500']">About Us</NuxtLink>
       <NuxtLink to="/product" class="block" @click="closeMenus" :class="[route.path.startsWith('/product') || route.path.startsWith('/produk') ? 'text-red-600 font-bold' : 'hover:text-red-500']">Product</NuxtLink>
-      <NuxtLink to="/team" class="block" @click="closeMenus" :class="[route.path === '/team' ? 'text-red-600 font-bold' : 'hover:text-red-500']">Team</NuxtLink>
+      <!-- <NuxtLink to="/team" class="block" @click="closeMenus" :class="[route.path === '/team' ? 'text-red-600 font-bold' : 'hover:text-red-500']">Team</NuxtLink> -->
       <NuxtLink to="/contact" class="block" @click="closeMenus" :class="[route.path === '/contact' ? 'text-red-600 font-bold' : 'hover:text-red-500']">Contact</NuxtLink>
 
       <!-- Online Store Dropdown (Mobile) -->
@@ -85,7 +85,7 @@
 
 <script setup>
 import { ref, onMounted, onBeforeUnmount, nextTick, watch } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
+import { useRoute, useRouter } from '#imports'
 
 const isOpen = ref(false)
 const showStoreDropdown = ref(false)

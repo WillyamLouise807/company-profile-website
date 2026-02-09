@@ -22,7 +22,7 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Engsel Salon</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Salon style aluminum hinges, available in 4 elegant color choices with a modern design.
+            A hinge used for doors or panels, allowing smooth opening and closing.
           </p>
 
           <div class="mb-6 space-y-1">
@@ -37,7 +37,7 @@
               <a href="https://www.tokopedia.com/glatino-official-store/glatino-engsel-salon-9-inch-atau-engsel-penahan-sikutan-jendela-lipat-material-aluminium-anti-karat-1730972977255319278?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
-              <a href="https://shopee.co.id/mall/search?keyword=salon&shop=1442585495" target="_blank" rel="noopener noreferrer">
+              <a href="https://shopee.co.id/Glatino-Engsel-Salon-9-Inch-Atau-Engsel-Penahan-Sikutan-Jendela-Lipat-Material-Aluminium-i.1442585495.27676552289?extraParams=%7B%22display_model_id%22%3A223815747766%2C%22model_selection_logic%22%3A2%7D&sp_atk=6801b9b3-3590-48e7-b9b8-89b9a5c6a984&xptdk=6801b9b3-3590-48e7-b9b8-89b9a5c6a984" target="_blank" rel="noopener noreferrer">
                 <img src="/asset/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>
@@ -51,48 +51,123 @@
               :key="selectedImage"
               :src="selectedImage"
               :alt="selectedColor.label"
-              class="rounded-2xl shadow-lg w-full aspect-video object-contain bg-white"
+              class="rounded-2xl shadow-lg w-full aspect-video object-contain bg-white cursor-zoom-in"
+              @click="openZoom(selectedImage)"
             />
           </transition>
 
-          <!-- Pilihan Warna -->
+          <!-- Warna -->
           <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 w-full">
             <div
-              v-for="color in colors"
-              :key="color.name"
+              v-for="(color, index) in colors"
+              :key="index"
               class="group cursor-pointer text-center border rounded-xl p-3 transition hover:shadow-md"
-              :class="{ 'ring-2 ring-red-600 border-red-600': selectedColor.name === color.name }"
+              :class="{
+                'ring-2 ring-red-600 border-red-600': selectedColor.name === color.name,
+                'border-gray-300': selectedColor.name !== color.name
+              }"
               @click="selectColor(color)"
             >
-              <div class="w-8 h-8 mx-auto rounded-full border" :style="{ backgroundColor: color.hex }" />
-              <p class="text-xs mt-2 font-medium capitalize group-hover:text-red-600">{{ color.label }}</p>
+              <div
+                class="w-8 h-8 mx-auto rounded-full border"
+                :style="{ backgroundColor: color.hex }"
+              />
+              <p class="text-xs mt-2 font-medium capitalize group-hover:text-red-600">
+                {{ color.label }}
+              </p>
             </div>
           </div>
         </div>
       </div>
 
       <!-- Dimensi -->
-      <div class="mt-14 border-t border-gray-700 pt-10">
+      <div class="mt-14 border-t border-gray-200 pt-10">
         <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">Product Dimensions</h2>
         <div class="flex flex-col items-center">
           <img
             :src="ukuranImage"
-            alt="Dimensi"
+            alt="Ukuran Engsel Salon"
             class="rounded-xl shadow-md max-w-xl w-full bg-white p-4 cursor-zoom-in"
-            @click="toggleZoom"
+            @click="openZoom(ukuranImage)"
           />
-          <p class="text-sm text-gray-500 mt-4 text-center">*Image is only an illustration of the product dimensions</p>
+          <p class="text-sm text-gray-500 mt-4 text-center">*The image is only an illustration of the proportional size.</p>
         </div>
       </div>
 
       <!-- Zoom Modal -->
       <div
         v-if="isZoomOpen"
-        class="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
-        @click.self="toggleZoom"
+        class="fixed inset-0 bg-white bg-opacity-95 z-50 flex items-center justify-center"
+        @click.self="closeZoom"
       >
-        <div class="bg-white p-4 md:p-6 rounded-xl shadow-2xl max-w-4xl w-full">
-          <img :src="ukuranImage" alt="Zoomed Ukuran" class="w-full object-contain" />
+        <!-- Close Button -->
+        <button
+          @click="closeZoom"
+          class="absolute top-4 right-4 z-10 bg-gray-100 rounded-full p-2 hover:bg-gray-100 transition"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+        <!-- Zoom Controls -->
+        <div class="absolute top-4 left-4 z-10 bg-gray-100 rounded-lg shadow-lg p-2 flex gap-2">
+          <button
+            @click="zoomIn"
+            class="p-2 hover:bg-gray-100 rounded transition"
+            title="Zoom In"
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+            </svg>
+          </button>
+          <button
+            @click="zoomOut"
+            class="p-2 hover:bg-gray-100 rounded transition"
+            title="Zoom Out"
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM13 10H7" />
+            </svg>
+          </button>
+          <button
+            @click="resetZoom"
+            class="p-2 hover:bg-gray-100 rounded transition"
+            title="Reset"
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Zoom Level Indicator -->
+        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-10 bg-gray-100 rounded-full px-4 py-2 shadow-lg">
+          <span class="text-sm font-medium">{{ Math.round(zoomLevel * 100) }}%</span>
+        </div>
+
+        <!-- Image Container -->
+        <div 
+          ref="zoomContainer"
+          class="relative w-full h-full overflow-hidden cursor-grab active:cursor-grabbing flex items-center justify-center"
+          @mousedown="startDrag"
+          @mousemove="drag"
+          @mouseup="stopDrag"
+          @mouseleave="stopDrag"
+          @wheel.prevent="handleWheel"
+          @click="handleImageClick"
+        >
+          <img
+            ref="zoomImageElement"
+            :src="zoomImage"
+            alt="Zoom View"
+            class="select-none pointer-events-none max-w-full max-h-full object-contain"
+            :style="{
+              transform: `translate(${translateX}px, ${translateY}px) scale(${zoomLevel})`,
+              transformOrigin: 'center center',
+              transition: isAnimating ? 'transform 0.3s ease-out' : 'none'
+            }"
+          />
         </div>
       </div>
 
@@ -113,7 +188,6 @@
             />
             <div class="bg-gray-50 text-center py-4 px-2">
               <div class="text-red-600 font-semibold text-sm">{{ item.name }}</div>
-              
             </div>
           </NuxtLink>
         </div>
@@ -123,8 +197,9 @@
   <FooterComponent />
 </template>
 
-
 <script lang="ts" setup>
+import FooterComponent from '@/components/footer.vue'
+import { RouterLink } from 'vue-router'
 import { ref, computed } from 'vue'
 
 type ColorName = 'hitam' | 'putih' | 'cokelat' | 'beige'
@@ -151,7 +226,6 @@ const images: Record<ColorName, string> = {
 
 const ukuranImage = '/asset/product/accessories/engsel-salon/ukuran-hitam.png'
 const selectedColor = ref<ColorOption>(colors[0]!)
-const isZoomOpen = ref(false)
 
 const selectedImage = computed(() => images[selectedColor.value.name])
 
@@ -159,8 +233,129 @@ const selectColor = (color: ColorOption) => {
   selectedColor.value = color
 }
 
-const toggleZoom = () => {
-  isZoomOpen.value = !isZoomOpen.value
+/* ===== ZOOM FUNCTIONALITY ===== */
+const isZoomOpen = ref(false)
+const zoomImage = ref('')
+const zoomLevel = ref(1)
+const translateX = ref(0)
+const translateY = ref(0)
+const isDragging = ref(false)
+const dragStartX = ref(0)
+const dragStartY = ref(0)
+const lastTranslateX = ref(0)
+const lastTranslateY = ref(0)
+const isAnimating = ref(false)
+const zoomContainer = ref<HTMLElement | null>(null)
+const zoomImageElement = ref<HTMLImageElement | null>(null)
+
+function openZoom(img: string) {
+  zoomImage.value = img
+  isZoomOpen.value = true
+  resetZoom()
+}
+
+function closeZoom() {
+  isZoomOpen.value = false
+  resetZoom()
+}
+
+function resetZoom() {
+  isAnimating.value = true
+  zoomLevel.value = 1
+  translateX.value = 0
+  translateY.value = 0
+  lastTranslateX.value = 0
+  lastTranslateY.value = 0
+  isDragging.value = false
+  
+  setTimeout(() => {
+    isAnimating.value = false
+  }, 300)
+}
+
+function zoomIn() {
+  isAnimating.value = true
+  zoomLevel.value = Math.min(zoomLevel.value + 0.5, 5)
+  
+  setTimeout(() => {
+    isAnimating.value = false
+  }, 300)
+}
+
+function zoomOut() {
+  isAnimating.value = true
+  zoomLevel.value = Math.max(zoomLevel.value - 0.5, 1)
+  
+  if (zoomLevel.value === 1) {
+    translateX.value = 0
+    translateY.value = 0
+    lastTranslateX.value = 0
+    lastTranslateY.value = 0
+  }
+  
+  setTimeout(() => {
+    isAnimating.value = false
+  }, 300)
+}
+
+function handleImageClick(e: MouseEvent) {
+  // Prevent closing modal when clicking image
+  e.stopPropagation()
+  
+  // Double zoom on click
+  if (zoomLevel.value < 2) {
+    isAnimating.value = true
+    zoomLevel.value = 2
+    
+    setTimeout(() => {
+      isAnimating.value = false
+    }, 300)
+  }
+}
+
+function handleWheel(e: WheelEvent) {
+  e.preventDefault()
+  
+  const delta = e.deltaY > 0 ? -0.1 : 0.1
+  isAnimating.value = false
+  zoomLevel.value = Math.max(1, Math.min(5, zoomLevel.value + delta))
+  
+  if (zoomLevel.value === 1) {
+    translateX.value = 0
+    translateY.value = 0
+    lastTranslateX.value = 0
+    lastTranslateY.value = 0
+  }
+}
+
+function startDrag(e: MouseEvent) {
+  if (zoomLevel.value <= 1) return
+  
+  isDragging.value = true
+  dragStartX.value = e.clientX - lastTranslateX.value
+  dragStartY.value = e.clientY - lastTranslateY.value
+  isAnimating.value = false
+}
+
+function drag(e: MouseEvent) {
+  if (!isDragging.value || zoomLevel.value <= 1) return
+  
+  const newX = e.clientX - dragStartX.value
+  const newY = e.clientY - dragStartY.value
+  
+  // Add boundaries to prevent dragging too far
+  const maxTranslate = 500 * zoomLevel.value
+  
+  translateX.value = Math.max(-maxTranslate, Math.min(maxTranslate, newX))
+  translateY.value = Math.max(-maxTranslate, Math.min(maxTranslate, newY))
+}
+
+function stopDrag() {
+  if (isDragging.value) {
+    lastTranslateX.value = translateX.value
+    lastTranslateY.value = translateY.value
+  }
+  isDragging.value = false
 }
 
 const katalogLinks = [
@@ -181,7 +376,6 @@ const katalogLinks = [
   { slug: 'bracket-ikan', name: 'Bracket Ikan', image: '/asset/product/accessories/bracket-ikan.png' },
   { slug: 'rivet', name: 'Aluminium Blind Rivet', image: '/asset/product/accessories/rivet.png' },
   { slug: 'roller-shutter-lock', name: 'Roller Shutter Lock', image: '/asset/product/accessories/roller-shutter-lock.png' },
-  // { slug: 'engsel-salon', name: 'Engsel Salon', image: '/asset/product/accessories/engsel-salon.png' },
   { slug: 'silicone', name: 'Silicone Acetoxy', image: '/asset/product/accessories/silicone.png' },
   { slug: 'tembak-silicone', name: 'Silicone Gun', image: '/asset/product/accessories/tembak-silicone.png' },
   { slug: 'silicone-sausage-neutral', name: 'Silicone Sausage Neutral', image: '/asset/product/accessories/silicone-sosis.png' },
@@ -196,8 +390,17 @@ const katalogLinks = [
 ];
 </script>
 
-<style>
+<style scoped>
 .font-poppins {
   font-family: 'Poppins', sans-serif;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>

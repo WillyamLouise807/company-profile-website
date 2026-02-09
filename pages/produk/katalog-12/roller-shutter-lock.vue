@@ -18,7 +18,7 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Rolling Shutter Lock</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            The 41054 Handle is an elegant aluminum handle with a modern design and Glatino Manual Central Lock designed for roller shutter doors with a practical and secure locking system. It is lightweight, user-friendly, and suitable for heavy-duty use.
+            A lock designed for rolling shutters, used to provide security and keep the shutter closed.
           </p>
 
           <!-- Marketplace -->
@@ -28,7 +28,7 @@
               <a href="https://www.tokopedia.com/glatino-official-store" target="_blank" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
-              <a href="https://shopee.co.id/glatino.official" target="_blank" class="hover:scale-105 transition-transform">
+              <a href="https://shopee.co.id/Glatino-Roller-Shutter-Lock-Center-lock-Material-Aluminium-Anti-Karat-i.1442585495.28577349970?extraParams=%7B%22display_model_id%22%3A195817528843%2C%22model_selection_logic%22%3A3%7D" target="_blank" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>
@@ -42,7 +42,8 @@
               :key="selectedImage"
               :src="selectedImage"
               alt="Gambar Produk"
-              class="rounded-2xl shadow-lg w-full aspect-video object-contain bg-white"
+              class="rounded-2xl shadow-lg w-full aspect-video object-contain bg-white cursor-zoom-in"
+              @click="openZoom(selectedImage)"
             />
           </transition>
 
@@ -51,8 +52,8 @@
               v-for="(image, index) in images"
               :key="index"
               :src="image"
-              @click="selectedImage = image"
-              class="rounded-xl cursor-pointer border-2"
+              @click="selectImage(image)"
+              class="rounded-xl cursor-pointer border-2 hover:opacity-80 transition"
               :class="{
                 'border-red-600': selectedImage === image,
                 'border-transparent': selectedImage !== image
@@ -62,7 +63,7 @@
         </div>
       </div>
 
-      <!-- DIMENSI (FIX) -->
+      <!-- DIMENSI -->
       <div class="mt-14 border-t border-gray-700 pt-10">
         <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-center md:text-left">
           Product Dimensions
@@ -92,18 +93,79 @@
         </p>
       </div>
 
-      <!-- ZOOM MODAL (FIX) -->
+      <!-- Zoom Modal -->
       <div
         v-if="isZoomOpen"
-        class="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
+        class="fixed inset-0 bg-white bg-opacity-95 z-50 flex items-center justify-center"
         @click.self="closeZoom"
       >
-        <div class="bg-white p-4 md:p-6 rounded-xl shadow-2xl max-w-5xl w-full">
+        <!-- Close Button -->
+        <button
+          @click="closeZoom"
+          class="absolute top-4 right-4 z-10 bg-gray-100 rounded-full p-2 hover:bg-gray-100 transition"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+        <!-- Zoom Controls -->
+        <div class="absolute top-4 left-4 z-10 bg-gray-100 rounded-lg shadow-lg p-2 flex gap-2">
+          <button
+            @click="zoomIn"
+            class="p-2 hover:bg-gray-100 rounded transition"
+            title="Zoom In"
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+            </svg>
+          </button>
+          <button
+            @click="zoomOut"
+            class="p-2 hover:bg-gray-100 rounded transition"
+            title="Zoom Out"
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM13 10H7" />
+            </svg>
+          </button>
+          <button
+            @click="resetZoom"
+            class="p-2 hover:bg-gray-100 rounded transition"
+            title="Reset"
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Zoom Level Indicator -->
+        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-10 bg-gray-100 rounded-full px-4 py-2 shadow-lg">
+          <span class="text-sm font-medium">{{ Math.round(zoomLevel * 100) }}%</span>
+        </div>
+
+        <!-- Image Container -->
+        <div 
+          ref="zoomContainer"
+          class="relative w-full h-full overflow-hidden cursor-grab active:cursor-grabbing flex items-center justify-center"
+          @mousedown="startDrag"
+          @mousemove="drag"
+          @mouseup="stopDrag"
+          @mouseleave="stopDrag"
+          @wheel.prevent="handleWheel"
+          @click="handleImageClick"
+        >
           <img
-            v-if="zoomImage"
+            ref="zoomImageElement"
             :src="zoomImage"
-            alt="Zoomed Dimension"
-            class="w-full max-h-[80vh] object-contain"
+            alt="Zoom View"
+            class="select-none pointer-events-none max-w-full max-h-full object-contain"
+            :style="{
+              transform: `translate(${translateX}px, ${translateY}px) scale(${zoomLevel})`,
+              transformOrigin: 'center center',
+              transition: isAnimating ? 'transform 0.3s ease-out' : 'none'
+            }"
           />
         </div>
       </div>
@@ -148,19 +210,135 @@ import gambar2 from '/asset/product/accessories/roller-shutter-lock/gambar-2.png
 import gambar3 from '/asset/product/accessories/roller-shutter-lock/gambar-3.png'
 
 const images = [gambar1, gambar2, gambar3]
-const selectedImage = ref(images[0])
+const selectedImage = ref(images[0]!)
 
-/* ZOOM FIX */
+function selectImage(image: string) {
+  selectedImage.value = image
+}
+
+/* ===== ZOOM FUNCTIONALITY ===== */
 const isZoomOpen = ref(false)
 const zoomImage = ref('')
+const zoomLevel = ref(1)
+const translateX = ref(0)
+const translateY = ref(0)
+const isDragging = ref(false)
+const dragStartX = ref(0)
+const dragStartY = ref(0)
+const lastTranslateX = ref(0)
+const lastTranslateY = ref(0)
+const isAnimating = ref(false)
+const zoomContainer = ref<HTMLElement | null>(null)
+const zoomImageElement = ref<HTMLImageElement | null>(null)
 
-function openZoom(image: string) {
-  zoomImage.value = image
+function openZoom(img: string) {
+  zoomImage.value = img
   isZoomOpen.value = true
+  resetZoom()
 }
 
 function closeZoom() {
   isZoomOpen.value = false
+  resetZoom()
+}
+
+function resetZoom() {
+  isAnimating.value = true
+  zoomLevel.value = 1
+  translateX.value = 0
+  translateY.value = 0
+  lastTranslateX.value = 0
+  lastTranslateY.value = 0
+  isDragging.value = false
+  
+  setTimeout(() => {
+    isAnimating.value = false
+  }, 300)
+}
+
+function zoomIn() {
+  isAnimating.value = true
+  zoomLevel.value = Math.min(zoomLevel.value + 0.5, 5)
+  
+  setTimeout(() => {
+    isAnimating.value = false
+  }, 300)
+}
+
+function zoomOut() {
+  isAnimating.value = true
+  zoomLevel.value = Math.max(zoomLevel.value - 0.5, 1)
+  
+  if (zoomLevel.value === 1) {
+    translateX.value = 0
+    translateY.value = 0
+    lastTranslateX.value = 0
+    lastTranslateY.value = 0
+  }
+  
+  setTimeout(() => {
+    isAnimating.value = false
+  }, 300)
+}
+
+function handleImageClick(e: MouseEvent) {
+  // Prevent closing modal when clicking image
+  e.stopPropagation()
+  
+  // Double zoom on click
+  if (zoomLevel.value < 2) {
+    isAnimating.value = true
+    zoomLevel.value = 2
+    
+    setTimeout(() => {
+      isAnimating.value = false
+    }, 300)
+  }
+}
+
+function handleWheel(e: WheelEvent) {
+  e.preventDefault()
+  
+  const delta = e.deltaY > 0 ? -0.1 : 0.1
+  isAnimating.value = false
+  zoomLevel.value = Math.max(1, Math.min(5, zoomLevel.value + delta))
+  
+  if (zoomLevel.value === 1) {
+    translateX.value = 0
+    translateY.value = 0
+    lastTranslateX.value = 0
+    lastTranslateY.value = 0
+  }
+}
+
+function startDrag(e: MouseEvent) {
+  if (zoomLevel.value <= 1) return
+  
+  isDragging.value = true
+  dragStartX.value = e.clientX - lastTranslateX.value
+  dragStartY.value = e.clientY - lastTranslateY.value
+  isAnimating.value = false
+}
+
+function drag(e: MouseEvent) {
+  if (!isDragging.value || zoomLevel.value <= 1) return
+  
+  const newX = e.clientX - dragStartX.value
+  const newY = e.clientY - dragStartY.value
+  
+  // Add boundaries to prevent dragging too far
+  const maxTranslate = 500 * zoomLevel.value
+  
+  translateX.value = Math.max(-maxTranslate, Math.min(maxTranslate, newX))
+  translateY.value = Math.max(-maxTranslate, Math.min(maxTranslate, newY))
+}
+
+function stopDrag() {
+  if (isDragging.value) {
+    lastTranslateX.value = translateX.value
+    lastTranslateY.value = translateY.value
+  }
+  isDragging.value = false
 }
 
 const katalogLinks = [
@@ -180,7 +358,6 @@ const katalogLinks = [
   { slug: 'handle-swing', name: 'Handle Swing', image: '/asset/product/accessories/handle-swing.png' },
   { slug: 'bracket-ikan', name: 'Bracket Ikan', image: '/asset/product/accessories/bracket-ikan.png' },
   { slug: 'rivet', name: 'Aluminium Blind Rivet', image: '/asset/product/accessories/rivet.png' },
-  // { slug: 'roller-shutter-lock', name: 'Roller Shutter Lock', image: '/asset/product/accessories/roller-shutter-lock.png' },
   { slug: 'engsel-salon', name: 'Engsel Salon', image: '/asset/product/accessories/engsel-salon.png' },
   { slug: 'silicone', name: 'Silicone Acetoxy', image: '/asset/product/accessories/silicone.png' },
   { slug: 'tembak-silicone', name: 'Silicone Gun', image: '/asset/product/accessories/tembak-silicone.png' },

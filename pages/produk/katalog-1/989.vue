@@ -22,15 +22,41 @@
         <div>
           <h1 class="text-3xl sm:text-4xl font-bold mb-4 text-black">Lever Handle Plate 989</h1>
           <p class="text-base sm:text-lg text-gray-700 mb-6 leading-relaxed">
-            The Glatino AL/GLT 989 is designed as a complete handle solution for minimalist aluminum or wooden doors. Equipped with a cylinder and three keys, this product offers ease of use and reliable security for a variety of rooms.          </p>
+            A handle with plate design used for doors, providing easy grip and operation.
+          </p>
 
           <div class="mb-6 space-y-1">
             <h2 class="text-lg sm:text-xl font-semibold mb-2 text-gray-900">Product Description:</h2>          
-            <p class="capitalize text-sm sm:text-base">HR 989 1 Set:</p>
+            <p class="capitalize text-sm sm:text-base">LHP 989 1 Set:</p>
             <p class="capitalize text-sm sm:text-base">- Handle 2pcs</p>            
             <p class="capitalize text-sm sm:text-base">- Body lock 30 mm 1pcs Stainless</p>
             <p class="capitalize text-sm sm:text-base">- Cyl 65 mm 1pcs (3 Comp Keys)</p>
             <p class="capitalize text-sm sm:text-base text-gray-800">- Color: {{ selectedColorLabel }}</p>
+          </div>
+
+          <!-- Accessories Section -->
+          <div class="mt-8 w-fit p-6 bg-gray-50 rounded-xl border border-gray-200">
+            <h3 class="text-lg sm:text-xl font-semibold mb-4 flex items-center gap-2 whitespace-nowrap">
+              <svg class="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Accessories Included
+            </h3>
+            <div class="flex gap-3">
+              <div
+                v-for="(accessory, index) in accessories"
+                :key="index"
+                class="bg-white rounded-lg p-3 border border-gray-200 hover:shadow-md transition cursor-zoom-in group w-24 sm:w-28"
+                @click="openZoom(accessory)"
+              >
+                <img
+                  :src="accessory"
+                  :alt="`Accessory ${index + 1}`"
+                  class="w-full h-16 sm:h-20 object-contain mb-2 group-hover:scale-105 transition-transform"
+                />
+                <!-- <p class="text-xs text-center text-gray-600">Item {{ index + 1 }}</p> -->
+              </div>
+            </div>
           </div>
 
           <!-- Marketplace -->
@@ -243,6 +269,13 @@ function selectColor(color: typeof colors[number]) {
   selectedColor.value = color.name
   selectedImage.value = color.image
 }
+
+/* ===== ACCESSORIES ===== */
+const accessories = [
+  '/asset/product/door-lock/989/aksesoris-1.png',
+  '/asset/product/door-lock/989/aksesoris-2.png',
+  '/asset/product/door-lock/989/aksesoris-3.png',
+]
 
 /* ===== DIMENSI ===== */
 const dimensiImages = [

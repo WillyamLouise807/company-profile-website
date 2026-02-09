@@ -22,7 +22,7 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Mortise Lock 911</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            The Glatino mortise lock is designed to provide maximum security while maintaining a sleek and modern appearance. Made from sturdy, premium aluminum, this product is suitable for a variety of doors requiring precise and durable locking.
+            The Glatino mortise lock made from sturdy, premium aluminum, this product is suitable for a variety of doors requiring precise and durable locking.
           </p>
 
           <div class="mb-6 space-y-1">

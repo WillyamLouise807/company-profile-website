@@ -145,7 +145,7 @@ const doorCloserProducts = [
   },
   {
     id: 11,
-    name: "Corner Scren Single",
+    name: "Corner Screen Single",
     description: "KV-078-SINGLE",
     slug: "corner-screen-single",
     image: '/asset/product/accessories/corner-screen-single.png'

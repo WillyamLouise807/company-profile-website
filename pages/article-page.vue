@@ -99,10 +99,18 @@ const articles = [
   {
     title: 'Bakti Sosial Bodhiarama Meditation Centre, Bogor',
     description:
-      'Pada tanggal 26 Oktober 2025, Heartifact dengan penuh semangat menyelenggarakan sebuah kegiatan Bakti Sosial yang bertujuan untuk memberikan dampak positif dan menghadirkan..',
+      'Heartifact dengan bangga melaporkan keberhasilan kegiatan Bakti Sosial yang diadakan pada tanggal 26 Oktober 2025 di Bodhiarama Meditation Centre, Bogor. Acara ini merupakan wujud nyata dari komitmen kami untuk berbagi kebahagiaan dan memberikan dukungan kepada mereka yang membutuhkan.',
     date: '26 Oktober 2025',
     image: '/article/baksos-2.jpg',
     link: '/event/bakti-sosial-october-2025',
+  },
+  {
+    title: 'Bakti Sosial Kemah Beth Salom, Tangerang',
+    description:
+      'Kegiatan Bakti Sosial yang diselenggarakan oleh Heartifact pada tanggal 31 Januari 2026 di Kemah Beth Salom, Tangerang, berhasil menciptakan momen kebahagiaan dan solidaritas yang mendalam bagi masyarakat sekitar. Acara ini tidak hanya memberikan bantuan materiil, tetapi juga mempererat tali persaudaraan di antara semua pihak yang terlibat.',
+    date: '31 Januari 2026',
+    image: '/article/baksos-3.jpg',
+    link: '/event/bakti-sosial-january-2026',
   },
 ]
 </script>

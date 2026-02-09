@@ -36,6 +36,31 @@
             <p class="capitalize text-sm sm:text-base">- Color: {{ selectedColorLabel }}</p>
           </div>
 
+          <!-- Accessories Section -->
+          <div class="mt-8 p-6 bg-gray-50 rounded-xl border border-gray-200">
+            <h3 class="text-lg sm:text-xl font-semibold mb-4 flex items-center gap-2">
+              <svg class="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Accessories Included
+            </h3>
+            <div class="grid grid-cols-2 sm:grid-cols-5 gap-3">
+              <div
+                v-for="(accessory, index) in accessories"
+                :key="index"
+                class="bg-white rounded-lg p-3 border border-gray-200 hover:shadow-md transition cursor-zoom-in group"
+                @click="openZoom(accessory)"
+              >
+                <img
+                  :src="accessory"
+                  :alt="`Accessory ${index + 1}`"
+                  class="w-full h-20 object-contain mb-2 group-hover:scale-105 transition-transform"
+                />
+                <!-- <p class="text-xs text-center text-gray-600">Item {{ index + 1 }}</p> -->
+              </div>
+            </div>
+          </div>
+
           <!-- Marketplace -->
           <div class="mb-8">
             <h2 class="text-base sm:text-lg font-semibold mb-3">Available on Marketplace:</h2>
@@ -247,6 +272,15 @@ function selectColor(color: typeof colors[number]) {
   selectedColor.value = color.name
   selectedImage.value = color.image
 }
+
+/* ===== ACCESSORIES ===== */
+const accessories = [
+  '/asset/product/door-lock/202/aksesoris-1.png',
+  '/asset/product/door-lock/202/aksesoris-2.png',
+  '/asset/product/door-lock/202/aksesoris-3.png',
+  '/asset/product/door-lock/202/aksesoris-4.png',
+  '/asset/product/door-lock/202/aksesoris-5.png',  
+]
 
 /* ===== DIMENSI ===== */
 const dimensiImages = [

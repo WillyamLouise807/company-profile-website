@@ -190,7 +190,7 @@
           PT Global Bestindo Jaya is committed to becoming a leading, trusted, and innovative security solutions provider for homes and buildings in Indonesia.
           <br><br>
           We have a vision to shape the future of the security industry by creating a smarter and more practical environment 
-          through smart security products such as fingerprint-based door access, facial recognition and voice control. We also continue to strive to educate the Indonesian people about the importance of modern security systems in everyday life.          
+          through smart security products such as fingerprint-based door access, facial recognition and connect to phone by apps. We also continue to strive to educate the Indonesian people about the importance of modern security systems in everyday life.          
           </p>
         </div>
       </FadeInOnScroll>
@@ -240,151 +240,50 @@
     </div>
   </section>
 
-  <!-- Product Range Section -->
-  <section id="product-range" class="relative z-10 bg-[url('asset/bg-repeat.jpg')] bg-repeat py-24 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-screen-2xl mx-auto">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">PRODUCT RANGE</h2>
+  <!-- Product Range Section - UPDATED PROFESSIONAL VERSION -->
+  <!-- <section id="product-range" class="relative z-10 overflow-hidden py-20 md:py-28">
+    Background Pattern
+    <div class="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-gray-50">
+      <div class="absolute inset-0 bg-[url('asset/bg-repeat.jpg')] bg-repeat opacity-30"></div>
+    </div>
+
+    <div class="relative max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+      Section Header
+      <div class="text-center mb-16 max-w-3xl mx-auto">
+        <div class="inline-block mb-4">
+          <span class="text-red-600 font-semibold text-sm tracking-wider uppercase"></span>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Product Range
+        </h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+          Discover our comprehensive selection of premium quality door and window hardware solutions
+        </p>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      Products Grid
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <ProductCard
+          v-for="product in products"
+          :key="product.slug"
+          :product="product"
+        />
+      </div>
 
-        <!-- Reusable Card -->
-        <NuxtLink 
-          to="/produk/handle-roses"
-          class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
+      View All Button (Optional)
+      <div class="text-center mt-12">
+        <NuxtLink
+          to="/product"
+          class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-red-600 to-red-700 text-white font-semibold rounded-lg hover:from-red-700 hover:to-red-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
         >
-          <div class="h-48 flex justify-center items-center overflow-hidden bg-white">
-            <img 
-              src="/asset/product/Door-Lock.png" 
-              alt="Door Lock" 
-              class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
-            />
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Handle Roses</h3>
-            <div class="flex justify-between items-center">
-              <span class="text-red-600 font-medium text-sm inline-flex items-center group-hover:underline">
-                View
-              </span>
-              <span class="text-red-600 transform group-hover:translate-x-1 transition-transform">→</span>
-            </div>
-          </div>
+          <span>View All Products</span>
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
         </NuxtLink>
-
-        <NuxtLink 
-          to="/produk/patch-fitting"
-          class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
-        >
-          <div class="h-48 flex justify-center items-center overflow-hidden bg-white">
-            <img 
-              src="/asset/product/patch-fitting.png" 
-              alt="Patch Fitting" 
-              class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
-            />
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Patch Fitting</h3>
-            <div class="flex justify-between items-center">
-              <span class="text-red-600 font-medium text-sm inline-flex items-center group-hover:underline">
-                View
-              </span>
-              <span class="text-red-600 transform group-hover:translate-x-1 transition-transform">→</span>
-            </div>
-          </div>
-        </NuxtLink>
-
-        <NuxtLink 
-          to="/produk/sliding-rail"
-          class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
-        >
-          <div class="h-48 flex justify-center items-center overflow-hidden bg-white">
-            <img 
-              src="/asset/product/sliding-rail.png" 
-              alt="Sliding Rail" 
-              class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
-            />
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Sliding Rail</h3>
-            <div class="flex justify-between items-center">
-              <span class="text-red-600 font-medium text-sm inline-flex items-center group-hover:underline">
-                View
-              </span>
-              <span class="text-red-600 transform group-hover:translate-x-1 transition-transform">→</span>
-            </div>
-          </div>
-        </NuxtLink>
-
-        <NuxtLink 
-          to="/produk/alumunium-lock"
-          class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
-        >
-          <div class="h-48 flex justify-center items-center overflow-hidden bg-white">
-            <img 
-              src="/asset/product/alumunium-lock.png" 
-              alt="Aluminium Lock" 
-              class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
-            />
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Aluminium Lock</h3>
-            <div class="flex justify-between items-center">
-              <span class="text-red-600 font-medium text-sm inline-flex items-center group-hover:underline">
-                View
-              </span>
-              <span class="text-red-600 transform group-hover:translate-x-1 transition-transform">→</span>
-            </div>
-          </div>
-        </NuxtLink>
-
-        <NuxtLink 
-          to="/produk/roller-caster"
-          class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
-        >
-          <div class="h-48 flex justify-center items-center overflow-hidden bg-white">
-            <img 
-              src="/asset/product/roller-caster.png" 
-              alt="Roller Caster" 
-              class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
-            />
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Roller Caster</h3>
-            <div class="flex justify-between items-center">
-              <span class="text-red-600 font-medium text-sm inline-flex items-center group-hover:underline">
-                View
-              </span>
-              <span class="text-red-600 transform group-hover:translate-x-1 transition-transform">→</span>
-            </div>
-          </div>
-        </NuxtLink>
-
-        <NuxtLink 
-          to="/produk/mortise-lock"
-          class="block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-200"
-        >
-          <div class="h-48 flex justify-center items-center overflow-hidden bg-white">
-            <img 
-              src="/asset/product/mortise-lock.png" 
-              alt="Mortise Lock" 
-              class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
-            />
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Mortise Lock</h3>
-            <div class="flex justify-between items-center">
-              <span class="text-red-600 font-medium text-sm inline-flex items-center group-hover:underline">
-                View
-              </span>
-              <span class="text-red-600 transform group-hover:translate-x-1 transition-transform">→</span>
-            </div>
-          </div>
-        </NuxtLink>
-
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Latest News Section -->
   <section>
@@ -451,6 +350,11 @@
 
 <script lang="ts" setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
+
 
 // State untuk carousel
 const currentSlide = ref(0)
@@ -505,6 +409,55 @@ const banners: Banner[] = [
   }
 ]
 
+// Data products untuk Product Range section
+const products = [
+  {
+    slug: 'handle-roses',
+    title: 'Handle Roses',
+    image: '/asset/product/Door-Lock.png',
+    description: 'Premium door handle with rose design',
+    badge: 'Popular',
+    badgeColor: 'bg-blue-500'
+  },
+  {
+    slug: 'patch-fitting',
+    title: 'Patch Fitting',
+    image: '/asset/product/patch-fitting.png',
+    description: 'Glass door patch fittings',
+    badge: 'New',
+    badgeColor: 'bg-green-500'
+  },
+  {
+    slug: 'sliding-rail',
+    title: 'Sliding Rail',
+    image: '/asset/product/sliding-rail.png',
+    description: 'Smooth sliding door rail system',
+    badge: null
+  },
+  {
+    slug: 'alumunium-lock',
+    title: 'Aluminium Lock',
+    image: '/asset/product/alumunium-lock.png',
+    description: 'Durable aluminium locking system',
+    badge: null
+  },
+  {
+    slug: 'roller-caster',
+    title: 'Roller Caster',
+    image: '/asset/product/roller-caster.png',
+    description: 'Heavy-duty roller casters',
+    badge: null
+  },
+  {
+    slug: 'mortise-lock',
+    title: 'Mortise Lock',
+    image: '/asset/product/mortise-lock.png',
+    description: 'Secure mortise lock mechanism',
+    badge: 'Best Seller',
+    badgeColor: 'bg-red-500'
+  }
+]
+
 // Computed property untuk banner aktif
 const activeBanner = computed<Banner>(() => {
   return banners[currentSlide.value] || banners[0]!
@@ -547,42 +500,44 @@ onUnmounted(() => {
 // Scroll function - dinamis sesuai buttonAction
 const scrollToSection = () => {
   const action = activeBanner.value.buttonAction;
-  let targetId = '';
-  
-  if (action === 'about-us') {
-    targetId = 'about-us';
-  } else if (action === 'product-range') {
-    targetId = 'product-range';
-  }
-  
-  const target = document.getElementById(targetId);
-  if (!target) return;
 
-  const startY = window.scrollY;
-  const endY = target.getBoundingClientRect().top + window.scrollY;
-  const duration = 1500;
-  const startTime = performance.now();
+  if (action === 'about-us' || action === 'product-range') {
+    const target = document.getElementById(action)
+    if (target) {
+      const startY = window.scrollY;
+      const endY = target.getBoundingClientRect().top + window.scrollY;
+      const duration = 1500;
+      const startTime = performance.now();
 
-  const animateScroll = (currentTime: number) => {
-    const elapsed = currentTime - startTime;
-    const progress = Math.min(elapsed / duration, 1);
-    const easeInOut = progress < 0.5
-      ? 2 * progress * progress
-      : -1 + (4 - 2 * progress) * progress;
+      const animateScroll = (currentTime: number) => {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const easeInOut = progress < 0.5
+          ? 2 * progress * progress
+          : -1 + (4 - 2 * progress) * progress;
 
-    window.scrollTo(0, startY + (endY - startY) * easeInOut);
+        window.scrollTo(0, startY + (endY - startY) * easeInOut);
 
-    if (elapsed < duration) {
+        if (elapsed < duration) {
+          requestAnimationFrame(animateScroll);
+        }
+      };
+
       requestAnimationFrame(animateScroll);
+    } else if (action === 'product-range') {
+      // Kalau elemen product-range tidak ada, langsung ke halaman /product
+      router.push('/product')
     }
-  };
+  } else if (action === 'custom') {
+    // misal buat tombol custom
+  }
+}
 
-  requestAnimationFrame(animateScroll);
-};
 
 import LatestNews from '~/components/LatestNews.vue'
 import UjiCoba from '~/components/UjiCoba.vue'
 import FooterComponent from '~/components/footer.vue'
+import ProductCard from '~/components/ProductCard.vue'
 </script>
 
 <style>

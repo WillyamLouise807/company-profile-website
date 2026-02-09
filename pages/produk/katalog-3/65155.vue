@@ -22,7 +22,7 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Cylinder 65155</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            Glatino's Cylinder Lock is designed to provide optimal protection with high-security features like anti-pick and anti-drill. Made of premium aluminum with a chrome finish, this product is suitable for a variety of locking needs, both in residential and commercial spaces.
+            Glatino's Cylinder 65155 Lock is designed to provide optimal protection.
           </p>
 
           <div class="mb-6 space-y-1">

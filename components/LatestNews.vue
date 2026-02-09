@@ -14,12 +14,12 @@
         <!-- Left big article -->
         <div class="lg:col-span-2">
           <NuxtLink
-            to="/event/bakti-sosial-july-2025"
+            to="/event/bakti-sosial-january-2026"
             class="block group"
           >
             <div class="overflow-hidden"> <!-- penting supaya gambar tidak keluar kotak -->
               <img
-                src="/article/baksos-1.jpg"
+                src="/article/baksos-3.jpg"
                 alt="article 1"
                 class="w-full h-auto object-cover mb-4 transition-transform duration-300 ease-in-out rounded-xl group-hover:scale-105"
               />
@@ -28,10 +28,10 @@
               CHARITY
             </span>
             <h3 class="text-xl font-semibold text-gray-900">
-              Charity Program of the Angku Budi Sati Bhakti Pertiwi Orphanage & Underprivileged Foundation
+              Charity Program Kemah Beth Salom, Tangerang
             </h3>
             <p class="text-gray-500 text-sm mt-1">
-              27 July 2025 | By Heartifact
+              31 January 2026 | By Heartifact
             </p>
           </NuxtLink>
         </div>
@@ -73,7 +73,7 @@
             >
               <div class="flex-1">
                 <span class="uppercase text-red-500 text-xs font-semibold block mb-1">
-                  CHARITY [Comming Soon]
+                  CHARITY
                 </span>
                 <h4 class="text-md font-semibold text-gray-900">
                   Charity Program of the Angku Budi Sati Bhakti Pertiwi Orphanage & Underprivileged Foundation
@@ -91,7 +91,7 @@
             </NuxtLink>
           </div>
 
-          <div class="flex gap-5 py-16">
+          <!-- <div class="flex gap-5 py-16">
             <div class="flex-1">
               <span class="uppercase text-red-500 text-xs font-semibold block mb-1">
                 CHARITY [Comming Soon]
@@ -108,7 +108,7 @@
               alt="article 4"
               class="w-auto h-32 rounded-xl object-cover flex-shrink-0 w-48 h-32"
             />
-          </div>
+          </div> -->
         </div>
       </div>
 
@@ -144,35 +144,45 @@
           <div class="absolute top-0 bottom-0 left-2/3 w-px bg-gray-300 hidden md:block"></div>
 
           <!-- Item 1 -->
-          <div class="flex flex-col">
-            <img src="/article/baksos-2.jpg" alt="Bakti Sosial Bodhiarama Meditation Centre" class="w-full h-auto object-cover mb-2" />
-            <span class="uppercase text-red-500 text-xs font-semibold block mb-1">
-              CHARITY
-            </span>
-            <h4 class="text-md font-semibold text-gray-900">
-              Bakti Sosial Bodhiarama Meditation Centre, Bogor
-            </h4>
-            <p class="text-gray-500 text-sm mt-1">
-              26 Oktober 2025 | By Heartifact
-            </p>
-          </div>
+          <NuxtLink
+            to="/event/bakti-sosial-october-2025"
+            class="block group"
+          >
+            <div class="flex flex-col">
+              <img src="/article/baksos-2.jpg" alt="Bakti Sosial Bodhiarama Meditation Centre" class="w-full h-auto object-cover mb-2" />
+              <span class="uppercase text-red-500 text-xs font-semibold block mb-1">
+                CHARITY
+              </span>
+              <h4 class="text-md font-semibold text-gray-900">
+                Bakti Sosial Bodhiarama Meditation Centre, Bogor
+              </h4>
+              <p class="text-gray-500 text-sm mt-1">
+                26 Oktober 2025 | By Heartifact
+              </p>
+            </div>
+          </NuxtLink>
 
           <!-- Item 2 (tetap, tidak diubah karena hanya diminta memindahkan satu artikel) -->
-          <div class="flex flex-col">
-            <img src="/article/baksos-1.jpg" alt="" class="w-full h-auto object-cover mb-2" />
-            <span class="uppercase text-red-500 text-xs font-semibold block mb-1">
-              COMMING SOON
-            </span>
-            <h4 class="text-md font-semibold text-gray-900">
-              COMMING SOON
-            </h4>
-            <p class="text-gray-500 text-sm mt-1">
-              8 June 2020 | By Stan Horaczek
-            </p>
-          </div>
+          <NuxtLink
+            to="/event/bakti-sosial-january-2026"
+            class="block group"
+          >  
+            <div class="flex flex-col">
+              <img src="/article/baksos-3.jpg" alt="" class="w-full h-auto object-cover mb-2" />
+              <span class="uppercase text-red-500 text-xs font-semibold block mb-1">
+                CHARITY
+              </span>
+              <h4 class="text-md font-semibold text-gray-900">
+                Bakti Sosial Kemah Beth Salom, Tangerang
+              </h4>
+              <p class="text-gray-500 text-sm mt-1">
+                31 January 2026 | By Heartifact
+              </p>
+            </div>
+          </NuxtLink>
 
           <!-- Item 3 -->
-          <div class="flex flex-col">
+          <!-- <div class="flex flex-col">
             <img src="/article/baksos-1.jpg" alt="" class="w-full h-auto object-cover mb-2" />
             <span class="uppercase text-red-500 text-xs font-semibold block mb-1">
               COMMING SOON
@@ -183,7 +193,7 @@
             <p class="text-gray-500 text-sm mt-1">
               5 June 2020 | By Rob Verger
             </p>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

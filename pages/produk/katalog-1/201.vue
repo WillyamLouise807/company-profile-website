@@ -22,7 +22,7 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Handle Roses 201</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            With a simple design and elegant color choices, the Glatino Model C door handle is the perfect choice
+            With a simple design and elegant color choices, the Glatino 201 door handle is the perfect choice
             to complement the look of your home's doors.
           </p>
 
@@ -34,6 +34,44 @@
             <p class="capitalize text-sm sm:text-base">- Body lock 30 mm 1pcs Stainless</p>
             <p class="capitalize text-sm sm:text-base">- Cover key hole 2pcs</p>
             <p class="capitalize text-sm sm:text-base">- Color: {{ selectedColorLabel }}</p>
+          </div>
+
+          <!-- Accessories Section -->
+          <div class="mt-8 p-6 bg-gray-50 rounded-xl border border-gray-200">
+            <h3 class="text-lg sm:text-xl font-semibold mb-4 flex items-center gap-2">
+              <svg class="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Accessories Included
+            </h3>
+            <div class="grid grid-cols-2 sm:grid-cols-6 gap-3">
+              <div
+                v-for="(accessory, index) in accessories"
+                :key="index"
+                class="bg-white rounded-lg p-3 border border-gray-200 hover:shadow-md transition cursor-zoom-in group"
+                @click="openZoom(accessory)"
+              >
+                <img
+                  :src="accessory"
+                  :alt="`Accessory ${index + 1}`"
+                  class="w-full h-20 object-contain mb-2 group-hover:scale-105 transition-transform"
+                />
+                <!-- <p class="text-xs text-center text-gray-600">Item {{ index + 1 }}</p> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Marketplace -->
+          <div class="my-8">
+            <h2 class="text-base sm:text-lg font-semibold mb-3">Available on Marketplace:</h2>
+            <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
+              <a href="https://www.tokopedia.com/glatino-official-store/glatino-glt-201-premiumlock-kunci-pintu-set-handle-material-aluminium-1731487588150839022?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
+                <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
+              </a>
+              <a href="https://shopee.co.id/Glatino-HR-201-Elan-Series-Set-Kunci-Pintu-Hight-Quality-Material-Aluminium-i.1442585495.26372729275?extraParams=%7B%22display_model_id%22%3A195700956559%2C%22model_selection_logic%22%3A3%7D&sp_atk=ad45dbca-f5ea-46e4-b7c3-48c7476fb3c6&xptdk=ad45dbca-f5ea-46e4-b7c3-48c7476fb3c6" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
+                <img src="/asset/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
+              </a>
+            </div>
           </div>
         </div>
 
@@ -232,6 +270,16 @@ function selectColor(color: typeof colors[number]) {
   selectedColor.value = color.name
   selectedImage.value = color.image
 }
+
+/* ===== ACCESSORIES ===== */
+const accessories = [
+  '/asset/product/door-lock/201/aksesoris-1.png',
+  '/asset/product/door-lock/201/aksesoris-2.png',
+  '/asset/product/door-lock/201/aksesoris-3.png',
+  '/asset/product/door-lock/201/aksesoris-4.png',
+  '/asset/product/door-lock/201/aksesoris-5.png',
+  '/asset/product/door-lock/201/aksesoris-6.png',
+]
 
 /* ===== DIMENSI ===== */
 const dimensiImages = [

@@ -22,7 +22,7 @@
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-black">Handle Only 201 - SS</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
-            This Glatino recessed pull is a practical solution for sliding doors, cabinets, or drawers, featuring a simple design and strong stainless steel material. It's perfect for enhancing the look of your home's furnishings, making them more presentable and functional.
+            The GLT 201 (No Body) is a premium handle set designed for aluminium doors, crafted from high-quality Stainless Steel 201 material.
           </p>
 
           <div class="mb-6 space-y-1">
@@ -32,6 +32,31 @@
             <p class="capitalize text-sm sm:text-base">- Cover key hole 2 set</p>
             <p class="capitalize text-sm sm:text-base">- Material Stainless Steel 201</p>
             <!-- <p class="capitalize text-sm sm:text-base">Warna: {{ selectedColorLabel }}</p> -->
+          </div>
+          
+          <!-- Accessories Section -->
+          <div class="mt-8 w-fit p-6 bg-gray-50 rounded-xl border border-gray-200">
+            <h3 class="text-lg sm:text-xl font-semibold mb-4 flex items-center gap-2 whitespace-nowrap">
+              <svg class="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Accessories Included
+            </h3>
+            <div class="flex gap-3">
+              <div
+                v-for="(accessory, index) in accessories"
+                :key="index"
+                class="bg-white rounded-lg p-3 border border-gray-200 hover:shadow-md transition cursor-zoom-in group w-24 sm:w-28"
+                @click="openZoom(accessory)"
+              >
+                <img
+                  :src="accessory"
+                  :alt="`Accessory ${index + 1}`"
+                  class="w-full h-16 sm:h-20 object-contain mb-2 group-hover:scale-105 transition-transform"
+                />
+                <p class="text-xs text-center text-gray-600">Item {{ index + 1 }}</p>
+              </div>
+            </div>
           </div>
 
           <!-- Marketplace -->
@@ -45,8 +70,8 @@
                 <img src="/asset/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>
-          </div>
-        </div>
+          </div>          
+        </div>        
 
         <!-- Gambar & Pilihan Warna -->
         <div class="space-y-6 flex flex-col items-center">
@@ -227,6 +252,13 @@ function selectColor(color: typeof colors[number]) {
   selectedColor.value = color.name
   selectedImage.value = color.image
 }
+
+/* ===== ACCESSORIES ===== */
+const accessories = [
+  '/asset/product/door-lock/handle-only/aksesoris-1.png',
+  '/asset/product/door-lock/handle-only/aksesoris-2.png',
+
+]
 
 /* ===== ZOOM FUNCTIONALITY ===== */
 const isZoomOpen = ref(false)

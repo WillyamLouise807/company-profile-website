@@ -151,12 +151,14 @@
               <img :src="product.logo" alt="Logo" class="h-14 mt-4 mb-2" />
 
               <!-- Produk Image dengan hover zoom -->
-              <div class="w-full px-4 overflow-hidden">
-                <img 
-                  :src="product.image" 
-                  :alt="product.title" 
-                  class="w-full max-h-60 object-contain mx-auto transition-transform duration-1000 group-hover:scale-110"
-                />
+              <div class="w-full px-4">
+                <div class="aspect-square w-full overflow-hidden rounded-lg bg-white flex items-center justify-center">
+                  <img 
+                    :src="product.image" 
+                    :alt="product.title" 
+                    class="w-full h-full object-contain transition-transform duration-1000 group-hover:scale-110"
+                  />
+                </div>
               </div>
 
               <!-- Text -->
@@ -174,7 +176,6 @@
             </div>
           </div>
         </FadeInOnScroll>
-
       </div>
     </section>
   </div>

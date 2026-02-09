@@ -37,6 +37,33 @@
             <p class="capitalize text-sm sm:text-base">Body Lock Size: {{ selectedSize }}</p>
           </div>
 
+          <!-- Accessories Section -->
+          <div class="mt-8 w-fit p-6 bg-gray-50 rounded-xl border border-gray-200">
+            <h3 class="text-lg sm:text-xl font-semibold mb-4 flex items-center gap-2 whitespace-nowrap">
+              <svg class="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Available Body:
+            </h3>
+            <div class="flex gap-3">
+              <div
+                v-for="(accessory, index) in accessories"
+                :key="index"
+                class="bg-white rounded-lg p-3 border border-gray-200 hover:shadow-md transition cursor-zoom-in group w-24 sm:w-28"
+                @click="openZoom(accessory)"
+              >
+                <img
+                  :src="accessory"
+                  :alt="`Accessory ${index + 1}`"
+                  class="w-full h-16 sm:h-20 object-contain mb-2 group-hover:scale-105 transition-transform"
+                />
+                <p class="text-xs text-center text-gray-600">
+                  {{ index === 0 ? '25 mm body' : '30 mm body' }}
+                </p>
+              </div>
+            </div>
+          </div>
+
           <!-- Marketplace -->
           <div class="mb-8">
             <h2 class="text-base sm:text-lg font-semibold mb-3">
@@ -297,6 +324,12 @@ function selectColor(color: typeof colors[number]) {
 const ukuranImages = [
   { label: '', src: ukuran1 },
   { label: '', src: ukuran2 }
+]
+
+/* ===== ACCESSORIES ===== */
+const accessories = [
+  '/asset/product/door-lock/902/aksesoris-1.png',
+  '/asset/product/door-lock/902/aksesoris-2.png',  
 ]
 
 /* ===== ZOOM FUNCTIONALITY ===== */

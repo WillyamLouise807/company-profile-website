@@ -89,7 +89,7 @@ const rollerProducts = [
   {
     id: 3,
     name: "Showcase",
-    description: "SC=SM-GL & SC-BIG-GL",
+    description: "SC-SM-GL & SC-BIG-GL",
     slug: "showcase",
     image: '/asset/product/roller/showcase.png'
   },
