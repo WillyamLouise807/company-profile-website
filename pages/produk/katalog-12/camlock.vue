@@ -60,20 +60,29 @@
           </transition>
 
           <!-- Thumbnail -->
-          <div class="grid grid-cols-2 gap-4">
-            <img
-              v-for="(image, index) in images"
-              :key="index"
-              :src="image"
-              @click="selectedImage = image"
-              class="rounded-xl cursor-pointer border-2 h-48 object-contain cursor-zoom-in"
-              :class="{
-                'border-red-600': selectedImage === image,
-                'border-transparent': selectedImage !== image
-              }"
-              @dblclick="openZoom(image)"
-            />
-          </div>
+          <div class="w-full flex justify-center">
+  <div class="inline-flex gap-6">
+    <div
+      v-for="(image, index) in images"
+      :key="index"
+      @click="selectedImage = image"
+      @dblclick="openZoom(image)"
+      class="w-40 h-40 bg-white rounded-xl border flex items-center justify-center cursor-pointer transition"
+      :class="{
+        'border-red-600 shadow-md': selectedImage === image,
+        'border-gray-200 hover:border-red-400': selectedImage !== image
+      }"
+    >
+      <img
+        :src="image"
+        alt="Thumbnail"
+        class="max-w-[80%] max-h-[80%] object-contain"
+      />
+    </div>
+  </div>
+</div>
+
+
         </div>
       </div>
 
