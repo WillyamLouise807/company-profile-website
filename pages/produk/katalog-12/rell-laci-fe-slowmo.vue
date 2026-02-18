@@ -20,7 +20,7 @@
       <div class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 items-start">
         <!-- Deskripsi -->
         <div>
-          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Rell Laci FE Black</h1>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Rell Laci FE 37 Black</h1>
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
             A black drawer slide designed to support drawers and provide smooth opening and closing
           </p>
@@ -56,31 +56,13 @@
         </div>
 
         <!-- Galeri Gambar -->
-        <div class="space-y-6 flex flex-col items-center w-full">
-          <transition name="fade" mode="out-in">
-            <img
-              :key="selectedImage"
-              :src="selectedImage"
-              alt="Camlock"
-              class="rounded-2xl shadow-lg w-full aspect-video object-contain bg-white cursor-zoom-in"
-              @click="openZoom(selectedImage)"
-            />
-          </transition>
-
-          <!-- Thumbnail -->
-          <div class="grid grid-cols-3 gap-4">
-            <img
-              v-for="(image, index) in images"
-              :key="index"
-              :src="image"
-              @click="selectedImage = image"
-              class="rounded-xl cursor-pointer border-2 h-48 object-contain cursor-zoom-in"
-              :class="{
-                'border-red-600': selectedImage === image,
-                'border-transparent': selectedImage !== image
-              }"
-            />
-          </div>
+        <div class="flex justify-center items-center w-full">
+          <img
+            src="/asset/product/accessories/rell-laci-fe-slowmo/produk.png"
+            alt="Rell Laci FE Slowmo"
+            class="rounded-2xl shadow-lg w-full aspect-video object-contain bg-white cursor-zoom-in"
+            @click="openZoom('/asset/product/accessories/rell-laci-fe-slowmo/produk.png')"
+          />
         </div>
       </div>
 

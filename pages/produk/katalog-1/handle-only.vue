@@ -66,7 +66,7 @@
               <a href="https://www.tokopedia.com/glatino-official-store/glatino-premium-handle-kepala-ss-201-tarikan-tanam-pintu-geser-sliding-door-premium-material-aluminium-1730967235252553454?extParam=whid%3D18402450%26src%3Dshop&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
-              <a href="https://shopee.co.id/Glatino-Kepala-Handle-SS-201-Tarikan-Tanam-Pintu-Geser-Sliding-Door-Material-Aluminium-i.1442585495.28627348249?sp_atk=60790ed3-001b-4063-bc43-3aa509e3167e&xptdk=60790ed3-001b-4063-bc43-3aa509e3167e" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
+              <a href="https://shopee.co.id/Glatino-Handle-HR-201-SS-ONLY-Non-Body-i.1442585495.47504736993?extraParams=%7B%22display_model_id%22%3A320436997012%2C%22model_selection_logic%22%3A3%7D&sp_atk=d5014e97-6273-4ce0-9896-99d702573d1b&xptdk=d5014e97-6273-4ce0-9896-99d702573d1b" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>

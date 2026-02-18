@@ -46,40 +46,13 @@
         </div>
 
         <!-- Gambar -->
-        <div class="space-y-6 flex flex-col items-center w-full">
-          <transition name="fade" mode="out-in">
-            <img
-              :key="activeImage"
-              :src="activeImage"
-              :alt="isOpen ? 'Engsel Terbuka' : 'Engsel Tertutup'"
-              class="rounded-2xl shadow-lg w-full aspect-video object-contain bg-white cursor-zoom-in"
-              @click="openZoom(activeImage)"
-            />
-          </transition>
-
-          <!-- Tombol toggle gambar -->
-          <div class="flex gap-4">
-            <button
-              class="px-4 py-2 border rounded-lg text-sm font-medium"
-              :class="{
-                'bg-red-600 text-white border-red-600': isOpen,
-                'border-gray-300 hover:border-gray-600': !isOpen
-              }"
-              @click="isOpen = true"
-            >
-              Terbuka
-            </button>
-            <button
-              class="px-4 py-2 border rounded-lg text-sm font-medium"
-              :class="{
-                'bg-red-600 text-white border-red-600': !isOpen,
-                'border-gray-300 hover:border-gray-600': isOpen
-              }"
-              @click="isOpen = false"
-            >
-              Tertutup
-            </button>
-          </div>
+        <div class="flex justify-center items-center w-full">
+          <img
+            src="/asset/product/accessories/engsel-piano-stainless/produk.png"
+            alt="Engsel Piano Stainless"
+            class="rounded-2xl shadow-lg w-full aspect-video object-contain bg-white cursor-zoom-in"
+            @click="openZoom('/asset/product/accessories/engsel-piano-stainless/produk.png')"
+          />
         </div>
       </div>
 

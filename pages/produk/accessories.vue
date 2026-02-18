@@ -271,7 +271,7 @@ const doorCloserProducts = [
   },
   {
     id: 29,
-    name: "Engsel Sendok Mini",
+    name: "Engsel Sendok",
     description: "CH.3387 - CH.3389",
     slug: "engsel-sendok-mini",
     image: '/asset/product/accessories/engsel-sendok-mini.png'

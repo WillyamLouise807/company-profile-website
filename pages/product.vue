@@ -1,6 +1,6 @@
 <template>
   <!-- Hero Section with Banner Carousel -->
-  <section class="relative w-full h-[75vh] overflow-hidden">
+  <section class="relative w-full min-h-[75vh] overflow-hidden">
     <!-- Background Carousel -->
     <div class="absolute inset-0 w-full h-full md:mt-18 mt-15">
       <TransitionGroup name="fade">
@@ -23,45 +23,45 @@
 
     <div class="font-poppins relative z-10 h-full">
       <div class="max-w-screen-2xl mx-auto px-4 h-full">
-        <!-- Grid desktop & Flex mobile -->
-        <div 
-          class="h-full"
-          :class="isMobile ? 'flex flex-col items-center justify-center text-center' : 'grid grid-cols-2 gap-8'"
-        >
-          <!-- Teks -->
-          <div 
-            class="flex flex-col justify-center px-4 md:px-8 py-10"
-            :class="isMobile ? 'items-center text-center' : 'items-start text-left'"
-          >
+        
+        <!-- Mobile: flex | Desktop: grid -->
+        <div class="h-full flex flex-col items-center justify-center text-center 
+                    md:grid md:grid-cols-2 md:gap-8 md:text-left">
+          
+          <!-- TEXT COLUMN -->
+          <div class="flex flex-col justify-center px-4 md:px-8 py-10 
+                      items-center text-center 
+                      md:items-start md:text-left">
+            
             <FadeInOnScroll direction="up">
-              <div :class="isMobile ? 'space-y-1 mt-10 max-w-md' : 'space-y-6 max-w-2xl'">
-                
-                <!-- Kategori sebagai Logo -->
-                <div class="md:items-start md:justify-start items-center justify-center flex">
+              
+              <div class="space-y-3 mt-10 max-w-md 
+                          md:space-y-6 md:max-w-2xl md:mt-0">
+
+                <!-- Category Logo -->
+                <div class="flex items-center justify-center md:justify-start">
                   <img 
-                    :src="banners[currentSlide]?.categoryImage" 
-                    alt="Category Logo" 
+                    :src="banners[currentSlide]?.categoryImage"
+                    alt="Category Logo"
                     class="h-10 md:h-20 object-contain"
                   />
                 </div>
 
                 <!-- Title -->
-                <h1 
-                  class="font-bold text-black drop-shadow-lg leading-tight"
-                  :class="isMobile ? 'text-2xl' : 'text-5xl lg:text-6xl'"
-                >
+                <h1 class="font-bold text-black drop-shadow-lg leading-tight 
+                          text-2xl 
+                          md:text-5xl lg:text-6xl">
                   {{ banners[currentSlide]?.title }}
                 </h1>
 
                 <!-- Description -->
-                <p 
-                  class="text-gray-800 leading-relaxed"
-                  :class="isMobile ? 'text-sm' : 'text-xl max-w-xl'"
-                >
+                <p class="text-gray-800 leading-relaxed 
+                          text-sm 
+                          md:text-xl md:max-w-xl">
                   {{ banners[currentSlide]?.description }}
                 </p>
 
-                <!-- Badges -->
+                <!-- Badges (Desktop Only) -->
                 <div class="hidden md:flex gap-4 items-start justify-start mb-6">
                   <img src="/asset/index/badge-premium.png" class="w-16 h-16" />
                   <img src="/asset/index/badge-best.png" class="w-16 h-16" />
@@ -73,8 +73,10 @@
                   <button
                     v-if="banners[currentSlide]?.action === 'scrollToProduct'"
                     @click="scrollToProduct"
-                    class="inline-block bg-red-600 hover:bg-red-700 text-white rounded-full transition-all shadow-xl font-semibold hover:scale-105 transform duration-300"
-                    :class="isMobile ? 'px-6 py-2 text-sm' : 'px-10 py-4 text-lg'"
+                    class="inline-block bg-red-600 hover:bg-red-700 text-white rounded-full 
+                          transition-all shadow-xl font-semibold hover:scale-105 transform duration-300
+                          px-6 py-2 text-sm
+                          md:px-10 md:py-4 md:text-lg"
                   >
                     {{ banners[currentSlide]?.buttonText }}
                   </button>
@@ -82,19 +84,23 @@
                   <NuxtLink
                     v-else
                     :to="banners[currentSlide]?.link || '/'"
-                    class="inline-block bg-red-600 hover:bg-red-700 text-white rounded-full transition-all shadow-xl font-semibold hover:scale-105 transform duration-300"
-                    :class="isMobile ? 'px-6 py-2 text-sm' : 'px-10 py-4 text-lg'"
+                    class="inline-block bg-red-600 hover:bg-red-700 text-white rounded-full 
+                          transition-all shadow-xl font-semibold hover:scale-105 transform duration-300
+                          px-6 py-2 text-sm
+                          md:px-10 md:py-4 md:text-lg"
                   >
                     {{ banners[currentSlide]?.buttonText }}
                   </NuxtLink>
                 </div>
+
               </div>
+
             </FadeInOnScroll>
           </div>
 
-          <!-- Kolom kanan untuk background kosong (desktop only) -->
-          <div v-if="!isMobile" class="hidden md:block"></div>
-          <div v-else class="flex-1"></div>
+          <!-- Empty right column (desktop only) -->
+          <div class="hidden md:block"></div>
+
         </div>
       </div>
     </div>
@@ -139,6 +145,11 @@
         <FadeInOnScroll direction="down">
           <h2 class="text-3xl font-bold  mt-12 mb-10 text-center text-red-700">Product Catalog</h2>
         </FadeInOnScroll>
+
+        <p class="text-center text-red-500">
+  Total products: {{ products.length }}
+</p>
+
 
         <FadeInOnScroll direction="up">
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

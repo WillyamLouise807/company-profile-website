@@ -12,7 +12,7 @@
             <RouterLink to="/produk/accessories" class="hover:underline text-black font-medium">Accessories</RouterLink>
           </li>
           <li>/</li>
-          <li class="text-black font-semibold">Engsel Sendok Mini</li>
+          <li class="text-black font-semibold">Engsel Sendok</li>
         </ol>
       </nav>
 
@@ -21,7 +21,7 @@
         <!-- Deskripsi -->
         <div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-2">
-            Engsel Sendok Mini
+            Engsel Sendok
           </h1>          
 
           <p class="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
@@ -32,7 +32,7 @@
             <h2 class="text-lg sm:text-xl font-semibold mb-2">Product Description:</h2>
             <!-- Dynamic Product ID -->
             <p class="text-sm sm:text-base font-semibold  mb-4">
-              {{ selectedProduct.name }}
+              Engsel Sendok {{ selectedProduct.name }}
             </p>
             <p class="text-sm sm:text-base font-semibold  mb-4">
               (ID {{ selectedProduct.id }})

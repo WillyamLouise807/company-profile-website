@@ -39,7 +39,7 @@
               <a href="https://www.tokopedia.com/glatino-official-store/glatino-premium-handle-kepala-ss-201-tarikan-tanam-pintu-geser-sliding-door-premium-material-aluminium-1730967235252553454?extParam=src%3Dshop%26whid%3D18402450&aff_unique_id=&channel=others&chain_key=" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/tokopedia 1.png" alt="Tokopedia" class="w-14 sm:w-16" />
               </a>
-              <a href="https://shopee.co.id/Glatino-Kepala-Handle-SS-201-Tarikan-Tanam-Pintu-Geser-Sliding-Door-Material-Aluminium-i.1442585495.28627348249?sp_atk=127ef288-484e-4934-8b7a-0e1b875e6b3a&xptdk=127ef288-484e-4934-8b7a-0e1b875e6b3a" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
+              <a href="https://shopee.co.id/Glatino-GSP-Glass-Suction-Plate-High-Quality-Kop-Kaca-i.1442585495.43977772435?extraParams=%7B%22display_model_id%22%3A310397502597%2C%22model_selection_logic%22%3A3%7D" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform">
                 <img src="/asset/product/shopee 1.png" alt="Shopee" class="w-14 sm:w-16" />
               </a>
             </div>

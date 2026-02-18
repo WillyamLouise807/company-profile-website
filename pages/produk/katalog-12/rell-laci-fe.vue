@@ -56,7 +56,7 @@
         </div>
 
         <!-- Galeri Gambar -->
-        <div class="space-y-6 flex flex-col items-center w-full">
+        <!-- <div class="space-y-6 flex flex-col items-center w-full">
           <transition name="fade" mode="out-in">
             <img
               :key="selectedImage"
@@ -67,7 +67,7 @@
             />
           </transition>
 
-          <!-- Thumbnail -->
+          Thumbnail
           <div class="grid grid-cols-2 gap-4">
             <img
               v-for="(image, index) in images"
@@ -81,6 +81,14 @@
               }"
             />
           </div>
+        </div> -->
+        <div class="flex justify-center items-center w-full">
+          <img
+            src="/asset/product/accessories/rell-laci-fe/produk.png"
+            alt="Rell Laci FE"
+            class="rounded-2xl shadow-lg w-full aspect-video object-contain bg-white cursor-zoom-in"
+            @click="openZoom('/asset/product/accessories/rell-laci-fe/produk.png')"
+          />
         </div>
       </div>
 
