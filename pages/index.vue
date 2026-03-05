@@ -337,9 +337,9 @@
       <!-- Laptop Image -->
       <FadeInOnScroll>
         <div class="order-1 md:order-2 flex justify-center md:justify-end relative">
-          <img src="/asset/index/laptop.png"
+          <img src="/asset/index/mockup-laptop.png"
               alt="Laptop" 
-              class="w-[640px] h-auto -mt-6 md:-mt-10 md:-ml-16 relative z-20 floating" />
+              class="w-[740px] h-auto -mt-6 md:-mt-10 md:-ml-16 relative z-20 floating" />
         </div>
       </FadeInOnScroll>
     </div>

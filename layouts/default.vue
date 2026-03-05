@@ -24,7 +24,7 @@
         >
           About Us
         </NuxtLink>
-        <NuxtLink to="/product" @click="closeMenus" :class="[route.path.startsWith('/product') || route.path.startsWith('/produk') ? 'text-red-600 font-bold' : 'hover:text-red-500']">Product</NuxtLink>
+        <!-- <NuxtLink to="/product" @click="closeMenus" :class="[route.path.startsWith('/product') || route.path.startsWith('/produk') ? 'text-red-600 font-bold' : 'hover:text-red-500']">Product</NuxtLink> -->
         <!-- <NuxtLink to="/team" @click="closeMenus" :class="[route.path === '/team' ? 'text-red-600 font-bold' : 'hover:text-red-500']">Team</NuxtLink> -->
         <NuxtLink to="/contact" @click="closeMenus" :class="[route.path === '/contact' ? 'text-red-600 font-bold' : 'hover:text-red-500']">Contact</NuxtLink>
 

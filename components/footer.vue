@@ -4,8 +4,8 @@
       
       <!-- Company Info -->
       <div>
-        <h2 class="text-2xl font-bold text-red-600 mb-4">PT Global Bestindo Jaya</h2>
-        <p class="mb-3">Follow us more in:</p>
+        <h2 class="text-2xl font-bold text-red-600 mb-4">PT Global Bestindo Jaya</h2>        
+        <p class="mb-3">Follow us more in:</p>        
         <div class="flex space-x-4">
           <!-- Instagram Icon -->
           <a href="https://www.instagram.com/glatino_official/" target="_blank" rel="noopener noreferrer" class="p-2 border border-black rounded hover:bg-red-600 transition">
@@ -24,7 +24,7 @@
               <path d="M96,80a8,8,0,1,1-8-8A7.99993,7.99993,0,0,1,96,80Zm-8,28.001a4,4,0,0,0-4,4v64a4,4,0,1,0,8,0v-64A4,4,0,0,0,88,108.001Zm60,0a31.92463,31.92463,0,0,0-24,10.86767V112.001a4,4,0,0,0-8,0v64a4,4,0,1,0,8,0v-36a24,24,0,0,1,48,0v36a4,4,0,1,0,8,0v-36A32.03619,32.03619,0,0,0,148,108.001ZM224,44V212a12.01375,12.01375,0,0,1-12,12H44a12.01375,12.01375,0,0,1-12-12V44A12.01359,12.01359,0,0,1,44,32H212A12.01359,12.01359,0,0,1,224,44Zm-8,0a4.00458,4.00458,0,0,0-4-4H44a4.00458,4.00458,0,0,0-4,4V212a4.00458,4.00458,0,0,0,4,4H212a4.00458,4.00458,0,0,0,4-4Z"/>
             </svg>
           </a>
-        </div>
+        </div>        
       </div>
 
       <!-- Useful Links -->
@@ -33,28 +33,28 @@
         <ul class="space-y-2">
           <li><NuxtLink to="/" class="hover:text-red-500">Home</NuxtLink></li>
           <li><NuxtLink to="/#about-gbj" class="hover:text-red-500">About us</NuxtLink></li>
-          <li><NuxtLink to="/product" class="hover:text-red-500">Product</NuxtLink></li>
-          <li><NuxtLink to="/team" class="hover:text-red-500">Team</NuxtLink></li>
+          <!-- <li><NuxtLink to="/product" class="hover:text-red-500">Product</NuxtLink></li> -->
+          <!-- <li><NuxtLink to="/team" class="hover:text-red-500">Team</NuxtLink></li> -->
           <li><NuxtLink to="/article-page" class="hover:text-red-500">Event</NuxtLink></li>
         </ul>
       </div>
 
       <!-- Products -->
       <div>
-        <h3 class="text-lg font-semibold text-red-600 mb-4">Products</h3>
-        <ul class="space-y-2">
-          <li><NuxtLink to="/produk/door-lock" class="hover:text-red-500">Door Lock</NuxtLink></li>
-          <li><NuxtLink to="/produk/mortise-lock" class="hover:text-red-500">Mortise Lock</NuxtLink></li>
-          <li><NuxtLink to="/produk/cylinder" class="hover:text-red-500">Cylinder</NuxtLink></li>
-          <li><NuxtLink to="/produk/floor-hinge" class="hover:text-red-500">Floor Hinge</NuxtLink></li>
-          <li><NuxtLink to="/produk/patch-fitting" class="hover:text-red-500">Patch Fitting</NuxtLink></li>
-        </ul>
+        <h3 class="text-lg font-semibold text-red-600 mb-4">VIsit Our Brand</h3>
+        <div class="space-y-2">
+          <img 
+              src="/asset/footer/logo-lengkap.png" 
+              alt="Glatino Premium" 
+              class="h-auto w-[200px] mb-4"
+            >
+        </div>
       </div>
 
       <!-- Contact Info -->
       <div>
         <h3 class="text-lg font-semibold text-red-600 mb-4">Contact Us</h3>
-        <p>Jurumudi Batuceper Km.19 No.37<br />Kota Tangerang, Banten 15000<br />Indonesia</p>
+        <p>Jurumudi Batuceper Km.19 No.37 Kota Tangerang, Banten 15000 Indonesia</p>
         <p class="mt-2">
           <strong>Phone:</strong>
           <a
