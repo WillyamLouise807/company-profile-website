@@ -393,7 +393,7 @@ const banners: Banner[] = [
     title: 'HIGH QUALITY PRODUCTS',
     description: 'Modern Home Security Solutions with the Latest Technology',
     buttonText: 'VIEW PRODUCTS',
-    buttonAction: 'product-range'
+    buttonAction: 'about-us'
   },
   {
     // BANNER 3 - FULL IMAGE ONLY
@@ -526,7 +526,7 @@ const scrollToSection = () => {
       requestAnimationFrame(animateScroll);
     } else if (action === 'product-range') {
       // Kalau elemen product-range tidak ada, langsung ke halaman /product
-      router.push('/product')
+      router.push('/')
     }
   } else if (action === 'custom') {
     // misal buat tombol custom

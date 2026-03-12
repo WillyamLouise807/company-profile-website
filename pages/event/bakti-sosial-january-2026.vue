@@ -3,7 +3,7 @@
     <!-- Hero Image -->
     <div class="w-full overflow-hidden mb-16 relative h-[320px] sm:h-[400px] lg:h-[640px]">
       <img
-        src="/article/baksos-2.jpg"
+        src="/article/baksos-3.jpg"
         alt="Bakti Sosial Juli 2025"
         class="absolute inset-0 w-full h-full object-cover"
       />
